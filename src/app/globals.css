@@ -1,11 +1,52 @@
 @import "tailwindcss";
 
+:root {
+  --bg: #FFFFFF;
+  --bg-grouped: #F2F2F7;
+  --card: #FFFFFF;
+  --label: #1C1C1E;
+  --label-2: #6E6E73;
+  --separator: #E5E5EA;
+  --accent: #007AFF;
+  --success: #34C759;
+  --error: #FF3B30;
+  --warning: #FF9500;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #000000;
+    --bg-grouped: #000000;
+    --card: #1C1C1E;
+    --label: #F5F5F7;
+    --label-2: #98989D;
+    --separator: #38383A;
+    --accent: #0A84FF;
+    --success: #30D158;
+    --error: #FF453A;
+    --warning: #FF9F0A;
+  }
+}
+
 @theme inline {
-  --color-lago: #10263A;
-  --color-lago-2: #24425C;
-  --color-sole: #F2B33D;
-  --color-verde: #1F7A74;
-  --color-fondo: #F4F5F0;
-  --font-display: var(--font-bricolage);
-  --font-sans: var(--font-figtree);
+  --color-bg: var(--bg);
+  --color-bg-grouped: var(--bg-grouped);
+  --color-card: var(--card);
+  --color-label: var(--label);
+  --color-label-2: var(--label-2);
+  --color-separator: var(--separator);
+  --color-accent: var(--accent);
+  --color-success: var(--success);
+  --color-error: var(--error);
+  --color-warning: var(--warning);
+  --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--bg);
+  color: var(--label);
 }
