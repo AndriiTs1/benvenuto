@@ -11,7 +11,9 @@ const STRANIERE = ALFABETO.filter((l) => l.straniera);
 
 const ETICHETTA = "text-[13px] font-semibold tracking-wide text-label-2 uppercase";
 
-export function ScopriAlfabeto({ onContinua }: { onContinua: () => void }) {
+type ScopriAlfabetoProps = { numero: string; titolo: string; onContinua: () => void };
+
+export function ScopriAlfabeto({ numero, titolo, onContinua }: ScopriAlfabetoProps) {
   const audioDisponibile = useSpeechAvailable();
   // Сразу показываем A; звук только по нажатию — без жеста браузер его не воспроизведёт.
   const [selezionata, setSelezionata] = useState<Lettera>(ALFABETO[0]);
@@ -27,9 +29,9 @@ export function ScopriAlfabeto({ onContinua }: { onContinua: () => void }) {
     ascolta(lettera);
   }
 
-  function griglia(lettere: Lettera[]) {
+  function griglia(lettere: Lettera[], righe: string) {
     return (
-      <div className="grid grid-cols-6 gap-2 sm:grid-cols-7">
+      <div className={`grid grid-cols-6 gap-2 sm:grid-cols-7 ${righe}`}>
         {lettere.map((lettera) => {
           const attiva = selezionata.lettera === lettera.lettera;
           const stile = attiva
@@ -43,10 +45,10 @@ export function ScopriAlfabeto({ onContinua }: { onContinua: () => void }) {
               type="button"
               aria-pressed={attiva}
               onClick={() => scegli(lettera)}
-              className={`relative flex h-14 flex-col items-center justify-center gap-1 rounded-[14px] transition active:scale-[0.96] ${FOCUS} ${stile}`}
+              className={`relative flex h-full max-h-[104px] min-h-[52px] w-full flex-col items-center justify-center gap-1 rounded-[16px] transition active:scale-[0.96] ${FOCUS} ${stile}`}
             >
-              <span className="text-[22px] leading-none font-semibold">{lettera.lettera}</span>
-              <span className={`text-[10px] leading-none ${attiva ? "text-bg/70" : "text-label-2"}`}>
+              <span className="text-[clamp(22px,5vh,44px)] leading-none font-semibold">{lettera.lettera}</span>
+              <span className={`text-[clamp(10px,1.5vh,14px)] leading-none ${attiva ? "text-bg/70" : "text-label-2"}`}>
                 {lettera.nome}
               </span>
               {!attiva && ascoltate.has(lettera.lettera) && (
@@ -65,7 +67,9 @@ export function ScopriAlfabeto({ onContinua }: { onContinua: () => void }) {
   return (
     <div className="-mt-2 flex flex-1 flex-col gap-3.5">
       <div>
-        <p className={ETICHETTA}>Lezione 1.1 · Scopri</p>
+        <p className={ETICHETTA}>
+          Lezione {numero} · {titolo}
+        </p>
         <h1 className="text-[28px] leading-tight font-bold tracking-tight">Ascolta le lettere</h1>
       </div>
 
@@ -89,7 +93,7 @@ export function ScopriAlfabeto({ onContinua }: { onContinua: () => void }) {
             type="button"
             aria-label="Ascolta di nuovo"
             onClick={() => ascolta(selezionata)}
-            className={`flex size-11 shrink-0 items-center justify-center rounded-full bg-bg-grouped text-label transition active:scale-95 ${FOCUS}`}
+            className={`flex size-11 shrink-0 items-center justify-center rounded-full border-0 bg-bg-grouped text-label transition active:scale-95 ${FOCUS}`}
           >
             <IconSpeaker className="size-5" />
           </button>
@@ -116,14 +120,15 @@ export function ScopriAlfabeto({ onContinua }: { onContinua: () => void }) {
         </span>
       </div>
 
-      {griglia(ITALIANE)}
-
-      <div>
-        <div className="mb-2 flex items-baseline justify-between">
+      {/* Плитки занимают всё свободное место до «Continua». Минимальные высоты сеток
+          (ряды по 52px) не дают им сжаться на низких экранах — там страница прокручивается. */}
+      <div className="flex flex-1 flex-col gap-2">
+        {griglia(ITALIANE, "min-h-[232px] flex-[4] grid-rows-4 sm:min-h-[172px] sm:flex-[3] sm:grid-rows-3")}
+        <div className="mt-1.5 flex items-baseline justify-between">
           <h2 className={ETICHETTA}>Lettere straniere</h2>
           <span className="text-[13px] text-label-2">kiwi, jeans, web…</span>
         </div>
-        {griglia(STRANIERE)}
+        {griglia(STRANIERE, "min-h-[52px] flex-[1] grid-rows-1")}
       </div>
 
       <div className="sticky bottom-0 -mx-5 mt-auto bg-bg-grouped/90 px-5 pt-3 pb-[max(1rem,env(safe-area-inset-bottom))] backdrop-blur">

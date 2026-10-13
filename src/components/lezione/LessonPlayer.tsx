@@ -8,26 +8,22 @@ import { EsercizioView, type Risultato } from "./EsercizioView";
 import { ScopriAlfabeto } from "./ScopriAlfabeto";
 import { CAPSULA, FOCUS, IconCheck, IconX, RIEMPIMENTO } from "./ui";
 
-type Fase = "intro" | "scopri" | "esercizi" | "fine";
+type Fase = "scopri" | "esercizi" | "fine";
 
 export function LessonPlayer({ lezione }: { lezione: LezioneContenuto }) {
-  const [fase, setFase] = useState<Fase>("intro");
+  const conScopri = Boolean(lezione.scopri);
+  // Урок начинается сразу со знакомства, а если его нет — с упражнений.
+  const faseIniziale: Fase = conScopri ? "scopri" : "esercizi";
+  const [fase, setFase] = useState<Fase>(faseIniziale);
   const [indice, setIndice] = useState(0);
   const [risultati, setRisultati] = useState<Risultato[]>([]);
 
   const totaleEsercizi = lezione.esercizi.length;
-  const conScopri = Boolean(lezione.scopri);
-  const primoEsercizio = conScopri ? 2 : 1;
-  // Шаги: intro, (scopri), упражнения, fine — прогресс считается по всем фазам.
+  const primoEsercizio = conScopri ? 1 : 0;
+  // Шаги: (scopri), упражнения, fine — прогресс считается по всем фазам.
   const passiTotali = primoEsercizio + totaleEsercizi;
   const passo =
-    fase === "intro"
-      ? 0
-      : fase === "scopri"
-        ? 1
-        : fase === "esercizi"
-          ? primoEsercizio + indice
-          : passiTotali;
+    fase === "scopri" ? 0 : fase === "esercizi" ? primoEsercizio + indice : passiTotali;
 
   function avanti(risultato: Risultato) {
     const nuovi = [...risultati, risultato];
@@ -42,7 +38,7 @@ export function LessonPlayer({ lezione }: { lezione: LezioneContenuto }) {
   }
 
   function ripeti() {
-    setFase("intro");
+    setFase(faseIniziale);
     setIndice(0);
     setRisultati([]);
   }
@@ -74,34 +70,10 @@ export function LessonPlayer({ lezione }: { lezione: LezioneContenuto }) {
         </header>
 
         <main className="mt-6 flex flex-1 flex-col">
-          {fase === "intro" && (
-            <>
-              <p className="text-[15px] text-label-2">Lezione {lezione.numero}</p>
-              <h1 className="text-[34px] leading-tight font-bold tracking-tight">{lezione.titolo}</h1>
-              <h2 className="mt-8 text-[17px] font-semibold">Imparerai</h2>
-              <ul className="mt-3 flex flex-col gap-3">
-                {lezione.imparerai.map((punto) => (
-                  <li key={punto} className="flex items-start gap-3 text-[17px]">
-                    <IconCheck className="mt-0.5 size-5 shrink-0 text-label-2" />
-                    {punto}
-                  </li>
-                ))}
-              </ul>
-              <p className="mt-6 text-[15px] text-label-2">circa {lezione.minuti} min</p>
-              <div className="mt-auto pt-8">
-                <button
-                  type="button"
-                  onClick={() => setFase(conScopri ? "scopri" : "esercizi")}
-                  className={CAPSULA}
-                >
-                  Inizia
-                </button>
-              </div>
-            </>
-          )}
-
           {fase === "scopri" && (
             <ScopriAlfabeto
+              numero={lezione.numero}
+              titolo={lezione.titolo}
               onContinua={() => {
                 setFase("esercizi");
                 window.scrollTo(0, 0);
