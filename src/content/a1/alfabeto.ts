@@ -1,4 +1,10 @@
-export type Lettera = { lettera: string; nome: string; esempio: string; straniera: boolean };
+export type Lettera = {
+  lettera: string;
+  nome: string;
+  esempio: string;
+  straniera: boolean;
+  nota?: string;
+};
 
 export const ALFABETO: Lettera[] = [
   { lettera: "A", nome: "a", esempio: "amico", straniera: false },
@@ -8,14 +14,14 @@ export const ALFABETO: Lettera[] = [
   { lettera: "E", nome: "e", esempio: "euro", straniera: false },
   { lettera: "F", nome: "effe", esempio: "famiglia", straniera: false },
   { lettera: "G", nome: "gi", esempio: "gatto", straniera: false },
-  { lettera: "H", nome: "acca", esempio: "hotel", straniera: false },
+  { lettera: "H", nome: "acca", esempio: "hotel", straniera: false, nota: "Non si pronuncia" },
   { lettera: "I", nome: "i", esempio: "isola", straniera: false },
   { lettera: "L", nome: "elle", esempio: "libro", straniera: false },
   { lettera: "M", nome: "emme", esempio: "mamma", straniera: false },
   { lettera: "N", nome: "enne", esempio: "notte", straniera: false },
   { lettera: "O", nome: "o", esempio: "occhio", straniera: false },
   { lettera: "P", nome: "pi", esempio: "pane", straniera: false },
-  { lettera: "Q", nome: "cu", esempio: "quattro", straniera: false },
+  { lettera: "Q", nome: "cu", esempio: "quattro", straniera: false, nota: "Quasi sempre seguita da U" },
   { lettera: "R", nome: "erre", esempio: "Roma", straniera: false },
   { lettera: "S", nome: "esse", esempio: "sole", straniera: false },
   { lettera: "T", nome: "ti", esempio: "treno", straniera: false },

@@ -48,7 +48,7 @@ export function LessonPlayer({ lezione }: { lezione: LezioneContenuto }) {
   }
 
   return (
-    <div className="min-h-dvh bg-bg text-label">
+    <div className={`min-h-dvh text-label ${fase === "scopri" ? "bg-bg-grouped" : "bg-bg"}`}>
       <div className="mx-auto flex min-h-dvh w-full max-w-md flex-col px-5 pt-[max(0.5rem,env(safe-area-inset-top))] pb-[max(1.5rem,env(safe-area-inset-bottom))] md:max-w-lg">
         <header className="flex items-center gap-3">
           <Link

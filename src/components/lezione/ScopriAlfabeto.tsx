@@ -4,76 +4,133 @@ import { useState } from "react";
 import { ALFABETO, type Lettera } from "@/content/a1/alfabeto";
 import { speak, useSpeechAvailable } from "@/lib/speech";
 import { AudioNonDisponibile } from "./AudioNonDisponibile";
-import { CAPSULA, FOCUS, RIEMPIMENTO } from "./ui";
+import { CAPSULA, FOCUS, IconSpeaker } from "./ui";
+
+const ITALIANE = ALFABETO.filter((l) => !l.straniera);
+const STRANIERE = ALFABETO.filter((l) => l.straniera);
+
+const ETICHETTA = "text-[13px] font-semibold tracking-wide text-label-2 uppercase";
 
 export function ScopriAlfabeto({ onContinua }: { onContinua: () => void }) {
   const audioDisponibile = useSpeechAvailable();
-  const [selezionata, setSelezionata] = useState<Lettera | null>(null);
+  // Сразу показываем A; звук только по нажатию — без жеста браузер его не воспроизведёт.
+  const [selezionata, setSelezionata] = useState<Lettera>(ALFABETO[0]);
+  const [ascoltate, setAscoltate] = useState<Set<string>>(() => new Set());
+
+  function ascolta(lettera: Lettera) {
+    speak(`${lettera.nome}. ${lettera.esempio}`);
+  }
 
   function scegli(lettera: Lettera) {
     setSelezionata(lettera);
-    speak(`${lettera.nome}. ${lettera.esempio}`);
+    setAscoltate((prima) => new Set(prima).add(lettera.lettera));
+    ascolta(lettera);
   }
 
   function griglia(lettere: Lettera[]) {
     return (
-      <div className="grid grid-cols-6 gap-1.5 sm:grid-cols-7">
-        {lettere.map((lettera) => (
-          <button
-            key={lettera.lettera}
-            type="button"
-            aria-pressed={selezionata?.lettera === lettera.lettera}
-            onClick={() => scegli(lettera)}
-            className={`flex min-h-[56px] flex-col items-center justify-center rounded-xl p-1 transition active:scale-[0.96] ${RIEMPIMENTO} ${FOCUS} ${
-              selezionata?.lettera === lettera.lettera ? "ring-2 ring-label" : ""
-            }`}
-          >
-            <span className="text-[22px] leading-tight font-bold">{lettera.lettera}</span>
-            <span className="text-[11px] leading-tight text-label-2">{lettera.nome}</span>
-          </button>
-        ))}
+      <div className="grid grid-cols-6 gap-2 sm:grid-cols-7">
+        {lettere.map((lettera) => {
+          const attiva = selezionata.lettera === lettera.lettera;
+          const stile = attiva
+            ? "bg-label text-bg"
+            : lettera.straniera
+              ? "border-[1.5px] border-dashed border-label-2/40 bg-transparent text-label"
+              : "bg-card text-label shadow-[0_1px_2px_rgba(0,0,0,0.05)] dark:shadow-none";
+          return (
+            <button
+              key={lettera.lettera}
+              type="button"
+              aria-pressed={attiva}
+              onClick={() => scegli(lettera)}
+              className={`relative flex h-14 flex-col items-center justify-center gap-1 rounded-[14px] transition active:scale-[0.96] ${FOCUS} ${stile}`}
+            >
+              <span className="text-[22px] leading-none font-semibold">{lettera.lettera}</span>
+              <span className={`text-[10px] leading-none ${attiva ? "text-bg/70" : "text-label-2"}`}>
+                {lettera.nome}
+              </span>
+              {!attiva && ascoltate.has(lettera.lettera) && (
+                <span
+                  aria-hidden="true"
+                  className="absolute top-1.5 right-1.5 size-[5px] rounded-full bg-success"
+                />
+              )}
+            </button>
+          );
+        })}
       </div>
     );
   }
 
   return (
-    <>
-      <h1 className="-mt-2 text-[28px] leading-tight font-bold tracking-tight">Ascolta le lettere</h1>
+    <div className="-mt-2 flex flex-1 flex-col gap-3.5">
+      <div>
+        <p className={ETICHETTA}>Lezione 1.1 · Scopri</p>
+        <h1 className="text-[28px] leading-tight font-bold tracking-tight">Ascolta le lettere</h1>
+      </div>
 
       <div
         aria-live="polite"
-        className={`mt-3 flex min-h-[88px] items-center gap-4 rounded-2xl p-4 ${RIEMPIMENTO}`}
+        className="flex items-center gap-4 rounded-3xl bg-card p-4 shadow-[0_1px_2px_rgba(0,0,0,0.04),0_8px_24px_rgba(0,0,0,0.06)] dark:shadow-none"
       >
-        {selezionata ? (
-          <>
-            <span className="w-12 shrink-0 text-center text-[44px] leading-none font-bold">
-              {selezionata.lettera}
-            </span>
-            <span>
-              <span className="block text-[20px] font-semibold">{selezionata.nome}</span>
-              <span className="block text-[15px] text-label-2">{selezionata.esempio}</span>
-            </span>
-          </>
-        ) : (
-          <span className="text-[17px] text-label-2">Tocca una lettera</span>
+        <span className="flex size-[92px] shrink-0 items-center justify-center rounded-[22px] bg-label text-[56px] font-bold text-bg">
+          {selezionata.lettera}
+        </span>
+        <div className="min-w-0 flex-1">
+          <p className="text-[28px] leading-tight font-semibold">{selezionata.nome}</p>
+          <p className="text-[17px] text-label-2">
+            <span className="font-bold text-label">{selezionata.esempio.charAt(0)}</span>
+            {selezionata.esempio.slice(1)}
+          </p>
+          {selezionata.nota && <p className="text-[13px] text-label-2">{selezionata.nota}</p>}
+        </div>
+        {audioDisponibile && (
+          <button
+            type="button"
+            aria-label="Ascolta di nuovo"
+            onClick={() => ascolta(selezionata)}
+            className={`flex size-11 shrink-0 items-center justify-center rounded-full bg-bg-grouped text-label transition active:scale-95 ${FOCUS}`}
+          >
+            <IconSpeaker className="size-5" />
+          </button>
         )}
       </div>
-      {!audioDisponibile && (
-        <div className="mt-2">
-          <AudioNonDisponibile />
+      {!audioDisponibile && <AudioNonDisponibile />}
+
+      <div className="flex items-center gap-2.5">
+        <div
+          role="progressbar"
+          aria-label="Lettere ascoltate"
+          aria-valuemin={0}
+          aria-valuemax={ALFABETO.length}
+          aria-valuenow={ascoltate.size}
+          className="h-1 flex-1 overflow-hidden rounded-full bg-separator"
+        >
+          <div
+            className="h-full rounded-full bg-success transition-[width] duration-300"
+            style={{ width: `${(ascoltate.size / ALFABETO.length) * 100}%` }}
+          />
         </div>
-      )}
+        <span className="text-[13px] text-label-2 tabular-nums">
+          {ascoltate.size} di {ALFABETO.length}
+        </span>
+      </div>
 
-      <div className="mt-3">{griglia(ALFABETO.filter((l) => !l.straniera))}</div>
+      {griglia(ITALIANE)}
 
-      <h2 className="mt-4 mb-1.5 text-[13px] text-label-2 uppercase">Lettere straniere</h2>
-      {griglia(ALFABETO.filter((l) => l.straniera))}
+      <div>
+        <div className="mb-2 flex items-baseline justify-between">
+          <h2 className={ETICHETTA}>Lettere straniere</h2>
+          <span className="text-[13px] text-label-2">kiwi, jeans, web…</span>
+        </div>
+        {griglia(STRANIERE)}
+      </div>
 
-      <div className="sticky bottom-0 -mx-5 mt-auto bg-bg/90 px-5 pt-3 pb-[max(1rem,env(safe-area-inset-bottom))] backdrop-blur">
+      <div className="sticky bottom-0 -mx-5 mt-auto bg-bg-grouped/90 px-5 pt-3 pb-[max(1rem,env(safe-area-inset-bottom))] backdrop-blur">
         <button type="button" onClick={onContinua} className={CAPSULA}>
           Continua
         </button>
       </div>
-    </>
+    </div>
   );
 }
