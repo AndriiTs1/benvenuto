@@ -5,7 +5,7 @@ type ListRowProps = {
   href?: string;
   leading: ReactNode;
   title: string;
-  subtitle?: string;
+  subtitle?: ReactNode;
   trailing?: ReactNode;
   first: boolean;
 };
