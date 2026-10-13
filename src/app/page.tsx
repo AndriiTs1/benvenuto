@@ -4,9 +4,9 @@ export default function Home() {
   return (
     <main className="flex min-h-dvh justify-center bg-bg text-label">
       <div className="flex w-full max-w-md flex-col px-6 pt-[max(4rem,env(safe-area-inset-top))] pb-[max(2.5rem,env(safe-area-inset-bottom))]">
-        <div className="flex flex-1 flex-col items-center justify-center py-10 text-center">
-          <h1 className="text-5xl font-bold tracking-tight md:text-6xl">benvenuto</h1>
-          <p className="mt-3 text-lg text-label-2 md:text-xl">
+        <div className="flex flex-1 flex-col items-center justify-center pt-10 pb-[12dvh] text-center">
+          <h1 className="text-5xl font-bold tracking-tight md:text-6xl">Benvenuto</h1>
+          <p className="mx-auto mt-3 max-w-xs text-center text-lg font-medium text-accent md:text-xl">
             Impara l&apos;italiano passo dopo passo
           </p>
         </div>
