@@ -8,29 +8,28 @@ import { CAPSULA, FOCUS, RIEMPIMENTO } from "./ui";
 
 export function ScopriAlfabeto({ onContinua }: { onContinua: () => void }) {
   const audioDisponibile = useSpeechAvailable();
-  const [inAscolto, setInAscolto] = useState<string | null>(null);
+  const [selezionata, setSelezionata] = useState<Lettera | null>(null);
 
-  async function ascolta(lettera: Lettera) {
-    setInAscolto(lettera.lettera);
-    await speak(`${lettera.nome}. ${lettera.esempio}`);
-    setInAscolto((attuale) => (attuale === lettera.lettera ? null : attuale));
+  function scegli(lettera: Lettera) {
+    setSelezionata(lettera);
+    speak(`${lettera.nome}. ${lettera.esempio}`);
   }
 
   function griglia(lettere: Lettera[]) {
     return (
-      <div className="grid grid-cols-3 gap-2.5 sm:grid-cols-4 md:grid-cols-5">
+      <div className="grid grid-cols-6 gap-1.5 sm:grid-cols-7">
         {lettere.map((lettera) => (
           <button
             key={lettera.lettera}
             type="button"
-            onClick={() => ascolta(lettera)}
-            className={`flex min-h-[84px] flex-col items-center justify-center rounded-2xl p-2 transition active:scale-[0.97] ${RIEMPIMENTO} ${FOCUS} ${
-              inAscolto === lettera.lettera ? "ring-2 ring-label" : ""
+            aria-pressed={selezionata?.lettera === lettera.lettera}
+            onClick={() => scegli(lettera)}
+            className={`flex min-h-[56px] flex-col items-center justify-center rounded-xl p-1 transition active:scale-[0.96] ${RIEMPIMENTO} ${FOCUS} ${
+              selezionata?.lettera === lettera.lettera ? "ring-2 ring-label" : ""
             }`}
           >
-            <span className="text-[30px] leading-none font-bold">{lettera.lettera}</span>
-            <span className="mt-1.5 text-[14px] font-medium">{lettera.nome}</span>
-            <span className="text-[12px] text-label-2">{lettera.esempio}</span>
+            <span className="text-[22px] leading-tight font-bold">{lettera.lettera}</span>
+            <span className="text-[11px] leading-tight text-label-2">{lettera.nome}</span>
           </button>
         ))}
       </div>
@@ -39,20 +38,38 @@ export function ScopriAlfabeto({ onContinua }: { onContinua: () => void }) {
 
   return (
     <>
-      <h1 className="text-[28px] leading-tight font-bold tracking-tight">Ascolta le lettere</h1>
-      <p className="mt-1 text-[17px] text-label-2">Tocca una lettera per sentire il suo nome</p>
+      <h1 className="-mt-2 text-[28px] leading-tight font-bold tracking-tight">Ascolta le lettere</h1>
+
+      <div
+        aria-live="polite"
+        className={`mt-3 flex min-h-[88px] items-center gap-4 rounded-2xl p-4 ${RIEMPIMENTO}`}
+      >
+        {selezionata ? (
+          <>
+            <span className="w-12 shrink-0 text-center text-[44px] leading-none font-bold">
+              {selezionata.lettera}
+            </span>
+            <span>
+              <span className="block text-[20px] font-semibold">{selezionata.nome}</span>
+              <span className="block text-[15px] text-label-2">{selezionata.esempio}</span>
+            </span>
+          </>
+        ) : (
+          <span className="text-[17px] text-label-2">Tocca una lettera</span>
+        )}
+      </div>
       {!audioDisponibile && (
-        <div className="mt-4">
+        <div className="mt-2">
           <AudioNonDisponibile />
         </div>
       )}
 
-      <div className="mt-6">{griglia(ALFABETO.filter((l) => !l.straniera))}</div>
+      <div className="mt-3">{griglia(ALFABETO.filter((l) => !l.straniera))}</div>
 
-      <h2 className="mt-8 mb-3 text-[20px] font-bold">Lettere straniere</h2>
+      <h2 className="mt-4 mb-1.5 text-[13px] text-label-2 uppercase">Lettere straniere</h2>
       {griglia(ALFABETO.filter((l) => l.straniera))}
 
-      <div className="mt-auto pt-8">
+      <div className="sticky bottom-0 -mx-5 mt-auto bg-bg/90 px-5 pt-3 pb-[max(1rem,env(safe-area-inset-bottom))] backdrop-blur">
         <button type="button" onClick={onContinua} className={CAPSULA}>
           Continua
         </button>
