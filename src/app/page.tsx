@@ -1,11 +1,47 @@
 import type { Metadata } from "next";
+import { cookies } from "next/headers";
 import Link from "next/link";
 import { PageTransition } from "@/components/PageTransition";
-import { CURRENT_LEVEL } from "@/lib/levels";
+import { CURRENT_LEVEL, LEVEL_COOKIE, isAvailableLevel, levelHref } from "@/lib/levels";
+
+// La pagina attende il cookie sul server (niente Suspense): il pulsante giusto arriva
+// già nell'HTML, senza segnaposto né comparsa ritardata.
+export const instant = false;
 
 export const metadata: Metadata = {
   title: `Benvenuto — Corso ${CURRENT_LEVEL}`,
 };
+
+const PULSANTE =
+  "flex h-[52px] w-full items-center justify-center rounded-full bg-label text-[17px] font-semibold text-bg transition hover:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-label active:scale-[0.98] active:opacity-80 md:w-80";
+
+// Chi ha già scelto un livello continua il corso; chi è nuovo inizia dalla scelta del livello.
+async function Azioni() {
+  const level = (await cookies()).get(LEVEL_COOKIE)?.value;
+
+  if (!isAvailableLevel(level)) {
+    return (
+      <Link href="/livello" transitionTypes={["nav-forward"]} className={PULSANTE}>
+        Inizia
+      </Link>
+    );
+  }
+
+  return (
+    <>
+      <Link href={levelHref(level)} transitionTypes={["nav-forward"]} className={PULSANTE}>
+        Continua il corso {level}
+      </Link>
+      <Link
+        href="/livello"
+        transitionTypes={["nav-forward"]}
+        className="mt-4 flex h-11 items-center justify-center self-center px-3 text-[15px] text-label-2 hover:text-label focus-visible:rounded-full focus-visible:outline-2 focus-visible:outline-label"
+      >
+        Cambia livello
+      </Link>
+    </>
+  );
+}
 
 export default function Home() {
   return (
@@ -24,13 +60,9 @@ export default function Home() {
             </p>
           </div>
 
-          <Link
-            href="/livello"
-            transitionTypes={["nav-forward"]}
-            className="flex h-[52px] w-full items-center justify-center rounded-full bg-label text-[17px] font-semibold text-bg transition hover:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-label active:scale-[0.98] active:opacity-80 md:mx-auto md:mt-10 md:w-80"
-          >
-            Inizia
-          </Link>
+          <div className="flex w-full flex-col items-stretch md:mt-10 md:items-center">
+            <Azioni />
+          </div>
         </div>
       </main>
     </PageTransition>

@@ -1,17 +1,8 @@
-import { cookies } from "next/headers";
-import { Suspense } from "react";
 import { BackButton } from "@/components/BackButton";
 import { PageTransition } from "@/components/PageTransition";
 import { ScegliLivello } from "@/components/livello/ScegliLivello";
 import { statisticheA2 } from "@/content/a2";
-import { CURRENT_LEVEL, LEVELS, LEVEL_COOKIE, isAvailableLevel, levelHref } from "@/lib/levels";
-
-// Chi ha già scelto un livello torna al suo corso, chi è nuovo al benvenuto.
-// Senza prefetch: la destinazione dipende dal cookie, e "/" con il cookie reindirizza a /a2.
-async function Indietro() {
-  const level = (await cookies()).get(LEVEL_COOKIE)?.value;
-  return <BackButton href={isAvailableLevel(level) ? levelHref(level) : "/"} prefetch={false} />;
-}
+import { CURRENT_LEVEL, LEVELS } from "@/lib/levels";
 
 export default function LivelloPage() {
   const corso = LEVELS.find((level) => level.code === CURRENT_LEVEL)!;
@@ -22,9 +13,7 @@ export default function LivelloPage() {
     <PageTransition>
       <main className="min-h-dvh bg-bg-grouped text-label">
         <div className="mx-auto w-full max-w-md px-4 pt-[max(1rem,env(safe-area-inset-top))] md:max-w-lg">
-          <Suspense fallback={<BackButton prefetch={false} />}>
-            <Indietro />
-          </Suspense>
+          <BackButton />
 
           <h1 className="mt-2 text-center text-[34px] leading-tight font-bold tracking-tight">
             Il tuo livello

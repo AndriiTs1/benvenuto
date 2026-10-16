@@ -2,11 +2,10 @@ import Link from "next/link";
 
 // Pulsante "Indietro" comune: cerchio con chevron + etichetta. Porta sempre a un
 // indirizzo preciso (non history.back), così funziona anche aprendo la pagina da un link.
-export function BackButton({ href = "/", prefetch }: { href?: string; prefetch?: boolean }) {
+export function BackButton({ href = "/" }: { href?: string }) {
   return (
     <Link
       href={href}
-      prefetch={prefetch}
       transitionTypes={["nav-back"]}
       aria-label="Indietro"
       className="group -ml-0.5 inline-flex h-11 items-center gap-2 rounded-full pr-2 text-[17px] text-label focus-visible:outline-none"

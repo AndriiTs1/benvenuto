@@ -18,7 +18,7 @@ export function ScegliLivello({
 
   function scegli() {
     document.cookie = `${LEVEL_COOKIE}=${code}; path=/; max-age=${LEVEL_COOKIE_MAX_AGE}; SameSite=Lax`;
-    // Svuota la cache di navigazione: altrimenti "/" resterebbe in cache senza redirect a /a2.
+    // Svuota la cache di navigazione: così "/" mostra subito "Continua il corso".
     router.refresh();
     router.push(levelHref(code), { transitionTypes: ["nav-forward"] });
   }
