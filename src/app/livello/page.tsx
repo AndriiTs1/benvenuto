@@ -1,8 +1,10 @@
 import { BackButton } from "@/components/BackButton";
+import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { PageTransition } from "@/components/PageTransition";
 import { ScegliLivello } from "@/components/livello/ScegliLivello";
 import { statisticheA2 } from "@/content/a2";
 import { CURRENT_LEVEL, LEVELS, type Level } from "@/lib/levels";
+import { linguaScelta } from "@/lib/lingua-scelta";
 import { livelloScelto } from "@/lib/livello-scelto";
 
 // Attende il cookie sul server: il testo del pulsante ("Inizia"/"Continua") arriva già nell'HTML.
@@ -51,14 +53,17 @@ function Gradino({ level, index }: { level: Level; index: number }) {
 
 export default async function LivelloPage() {
   const corso = LEVELS.find((level) => level.code === CURRENT_LEVEL)!;
-  const scelto = await livelloScelto();
-  const stats = statisticheA2();
+  const [scelto, locale] = await Promise.all([livelloScelto(), linguaScelta()]);
+  const stats = await statisticheA2(locale);
 
   return (
     <PageTransition>
       <main className="min-h-dvh bg-bg-grouped text-label">
         <div className="mx-auto w-full max-w-md px-4 pt-[max(1rem,env(safe-area-inset-top))] md:max-w-lg">
-          <BackButton />
+          <div className="flex items-center justify-between">
+            <BackButton />
+            <LanguageSwitcher locale={locale} />
+          </div>
 
           <h1 className="mt-2 text-center text-[34px] leading-tight font-bold tracking-tight">
             Il tuo livello

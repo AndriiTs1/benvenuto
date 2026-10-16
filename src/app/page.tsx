@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { PageTransition } from "@/components/PageTransition";
 import { CURRENT_LEVEL } from "@/lib/levels";
+import { linguaScelta } from "@/lib/lingua-scelta";
 import { livelloScelto } from "@/lib/livello-scelto";
 
 // La pagina attende il cookie sul server (niente Suspense): il pulsante giusto arriva
@@ -25,12 +27,17 @@ async function Azioni() {
   );
 }
 
-export default function Home() {
+export default async function Home() {
+  const locale = await linguaScelta();
+
   return (
     <PageTransition>
-      <main className="flex min-h-dvh justify-center bg-bg text-label">
-        <div className="flex w-full max-w-md flex-col px-6 pt-[max(4rem,env(safe-area-inset-top))] pb-[max(2.5rem,env(safe-area-inset-bottom))] md:max-w-xl md:justify-center md:py-16">
-          <div className="flex flex-1 flex-col items-center justify-center pt-10 pb-[12dvh] text-center md:flex-none md:p-0">
+      <main className="flex min-h-dvh flex-col bg-bg text-label">
+        <header className="mx-auto flex w-full max-w-md justify-end px-4 pt-[max(1rem,env(safe-area-inset-top))] md:max-w-lg">
+          <LanguageSwitcher locale={locale} />
+        </header>
+        <div className="mx-auto flex w-full max-w-md flex-1 flex-col px-6 pb-[max(2.5rem,env(safe-area-inset-bottom))] md:max-w-xl md:justify-center md:pb-24">
+          <div className="flex flex-1 flex-col items-center justify-center pt-6 pb-[12dvh] text-center md:flex-none md:p-0">
             <span className="rounded-full bg-label/[0.08] px-3 py-1 text-[13px] font-semibold text-label/70 dark:bg-label/[0.16]">
               Corso {CURRENT_LEVEL}
             </span>

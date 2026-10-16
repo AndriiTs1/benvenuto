@@ -121,3 +121,43 @@ body {
     animation-duration: 150ms;
   }
 }
+
+/* Pannello della lingua (components/LanguageSwitcher.tsx): dal basso su mobile, popover da md. */
+.lingua-sfondo {
+  animation: 250ms ease-out both lingua-fade;
+}
+
+.lingua-pannello {
+  animation: 250ms ease-out both lingua-su;
+}
+
+@media (min-width: 768px) {
+  .lingua-pannello {
+    animation: 150ms ease-out both lingua-popover;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lingua-pannello {
+    animation: 150ms ease-out both lingua-fade;
+  }
+}
+
+@keyframes lingua-fade {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes lingua-su {
+  from {
+    translate: 0 100%;
+  }
+}
+
+@keyframes lingua-popover {
+  from {
+    opacity: 0;
+    translate: 0 -4px;
+  }
+}
