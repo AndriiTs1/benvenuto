@@ -18,8 +18,11 @@ export function CourseHeader({
   if (!sezione) return null;
 
   return (
-    <div className="mt-2 md:text-center">
-      <h1 className="text-[34px] leading-tight font-bold tracking-tight md:text-5xl">{sezione.nome}</h1>
+    <div className="mt-2">
+      {/* data-titolo-grande: lo osserva CourseNavBar per mostrare il titolo piccolo. */}
+      <h1 data-titolo-grande className="text-[28px] leading-[1.15] font-bold tracking-[-0.02em] md:text-[40px]">
+        {sezione.nome}
+      </h1>
       <p lang={locale} className="mt-1 text-[15px] text-label-2 md:text-[17px]">
         {sottotitoli[sezione.slug]}
       </p>

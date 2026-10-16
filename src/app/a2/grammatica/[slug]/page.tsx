@@ -32,7 +32,7 @@ export default async function ArgomentoPage({ params }: PageProps<"/a2/grammatic
     <article className="space-y-6">
       <SegnaVisto topicId={argomento.id} />
 
-      <header className="md:text-center">
+      <header>
         <p className="text-[15px] text-label-2">
           Unità {argomento.unita} · Argomento {argomento.indice} di {argomento.totaleUnita}
         </p>

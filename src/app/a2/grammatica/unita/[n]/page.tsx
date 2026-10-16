@@ -26,7 +26,7 @@ export default async function UnitaPage({ params }: PageProps<"/a2/grammatica/un
 
   return (
     <div className="space-y-6">
-      <header className="md:text-center">
+      <header>
         <h1 className="text-[34px] leading-tight font-bold tracking-tight md:text-5xl">Unità {u.number}</h1>
         <p className="mt-1 text-[20px] font-semibold">{u.title}</p>
         <Tr locale={locale} as="p" className="text-[17px]">

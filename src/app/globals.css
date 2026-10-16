@@ -81,6 +81,12 @@ body {
   color: var(--label);
 }
 
+/* Anello di fuoco solo da tastiera (:focus-visible): col clic del mouse nessun contorno,
+   anche nei browser che lo disegnano su :focus (Safari). */
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
 /* Transizioni tra schermate (View Transitions, vedi components/PageTransition.tsx).
    Avanti: la nuova schermata entra da destra; indietro: al contrario. */
 ::view-transition {
