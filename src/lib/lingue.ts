@@ -1,10 +1,11 @@
 // Lingua delle spiegazioni (traduzioni, regole, note). L'interfaccia resta in italiano.
 export type Locale = "ru" | "uk" | "en";
 
-export const LOCALES: { code: Locale; nome: string }[] = [
-  { code: "ru", nome: "Русский" },
-  { code: "uk", nome: "Українська" },
-  { code: "en", nome: "English" },
+// Ordine e sigle del selettore. "UA" per l'ucraino (non "UK", che fa pensare al Regno Unito).
+export const LOCALES: { code: Locale; sigla: string; nome: string }[] = [
+  { code: "en", sigla: "EN", nome: "English" },
+  { code: "uk", sigla: "UA", nome: "Українська" },
+  { code: "ru", sigla: "RU", nome: "Русский" },
 ];
 
 export const DEFAULT_LOCALE: Locale = "ru";

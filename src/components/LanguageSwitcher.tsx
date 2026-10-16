@@ -8,62 +8,98 @@ function salvaLingua(code: Locale) {
   document.cookie = `${LANG_COOKIE}=${code}; path=/; max-age=${LANG_COOKIE_MAX_AGE}; SameSite=Lax`;
 }
 
-// Lingua delle spiegazioni: pulsante a capsula + pannello dal basso (mobile) / popover (md+).
+// Lingua delle spiegazioni: capsula con sigla + menu a tendina largo quanto il pulsante.
 export function LanguageSwitcher({ locale }: { locale: Locale }) {
   const router = useRouter();
   const [aperto, setAperto] = useState(false);
+  const contenitore = useRef<HTMLDivElement>(null);
   const pulsante = useRef<HTMLButtonElement>(null);
-  const pannello = useRef<HTMLDivElement>(null);
-  const titoloId = useId();
+  const lista = useRef<HTMLUListElement>(null);
+  const listaId = useId();
+  const attuale = LOCALES.find((opzione) => opzione.code === locale)!;
 
-  function chiudi() {
+  function opzioni() {
+    return [...(lista.current?.querySelectorAll<HTMLLIElement>('[role="option"]') ?? [])];
+  }
+
+  function chiudi(rimettiFuoco: boolean) {
     setAperto(false);
-    pulsante.current?.focus();
+    if (rimettiFuoco) pulsante.current?.focus();
   }
 
   function scegli(code: Locale) {
+    chiudi(true);
     salvaLingua(code);
-    chiudi();
-    router.refresh();
+    if (code !== locale) router.refresh();
   }
 
-  // All'apertura il fuoco va sulla lingua attuale.
+  // All'apertura il fuoco va sulla lingua attuale; un clic fuori chiude il menu.
   useEffect(() => {
     if (!aperto) return;
-    pannello.current?.querySelector<HTMLButtonElement>('[aria-checked="true"]')?.focus();
+    lista.current?.querySelector<HTMLLIElement>('[aria-selected="true"]')?.focus();
+
+    function fuori(event: PointerEvent) {
+      if (!contenitore.current?.contains(event.target as Node)) setAperto(false);
+    }
+    document.addEventListener("pointerdown", fuori);
+    return () => document.removeEventListener("pointerdown", fuori);
   }, [aperto]);
 
-  function onKeyDown(event: KeyboardEvent<HTMLDivElement>) {
-    if (event.key === "Escape") {
+  function onKeyDownPulsante(event: KeyboardEvent<HTMLButtonElement>) {
+    if (!aperto && ["ArrowDown", "Enter", " "].includes(event.key)) {
       event.preventDefault();
-      chiudi();
-      return;
+      setAperto(true);
     }
-    const opzioni = [...(pannello.current?.querySelectorAll<HTMLButtonElement>('[role="menuitemradio"]') ?? [])];
-    const attuale = opzioni.indexOf(document.activeElement as HTMLButtonElement);
-    const passo = { ArrowDown: 1, ArrowUp: -1, Tab: event.shiftKey ? -1 : 1 }[event.key];
-    if (passo === undefined) {
-      if (event.key === "Home") opzioni[0]?.focus();
-      if (event.key === "End") opzioni.at(-1)?.focus();
-      return;
+  }
+
+  function onKeyDownLista(event: KeyboardEvent<HTMLUListElement>) {
+    const elenco = opzioni();
+    const indice = elenco.indexOf(document.activeElement as HTMLLIElement);
+    switch (event.key) {
+      case "ArrowDown":
+      case "ArrowUp": {
+        event.preventDefault();
+        const passo = event.key === "ArrowDown" ? 1 : -1;
+        elenco[(indice + passo + elenco.length) % elenco.length]?.focus();
+        break;
+      }
+      case "Home":
+        event.preventDefault();
+        elenco[0]?.focus();
+        break;
+      case "End":
+        event.preventDefault();
+        elenco.at(-1)?.focus();
+        break;
+      case "Enter":
+      case " ":
+        event.preventDefault();
+        if (indice >= 0) scegli(LOCALES[indice].code);
+        break;
+      case "Escape":
+        event.preventDefault();
+        chiudi(true);
+        break;
+      case "Tab":
+        chiudi(false);
+        break;
     }
-    // Tab e frecce girano tra le opzioni: il fuoco resta nel pannello.
-    event.preventDefault();
-    opzioni[(attuale + passo + opzioni.length) % opzioni.length]?.focus();
   }
 
   return (
-    <div className="relative">
+    <div ref={contenitore} className="relative">
       <button
         ref={pulsante}
         type="button"
-        onClick={() => setAperto(true)}
-        aria-label="Lingua delle spiegazioni"
-        aria-haspopup="dialog"
+        onClick={() => (aperto ? chiudi(true) : setAperto(true))}
+        onKeyDown={onKeyDownPulsante}
+        aria-label={`Lingua delle spiegazioni: ${attuale.nome}`}
+        aria-haspopup="listbox"
         aria-expanded={aperto}
+        aria-controls={aperto ? listaId : undefined}
         className="group inline-flex h-11 items-center focus-visible:outline-none"
       >
-        <span className="flex h-10 items-center gap-1.5 rounded-full bg-label/[0.08] px-3 text-[15px] font-semibold text-label transition duration-150 group-hover:bg-label/[0.12] group-focus-visible:outline-2 group-focus-visible:outline-offset-2 group-focus-visible:outline-label group-active:scale-[0.94] group-active:bg-label/[0.16] dark:bg-label/[0.16] dark:group-hover:bg-label/[0.22] dark:group-active:bg-label/[0.28]">
+        <span className="flex h-10 items-center gap-1.5 rounded-full bg-label/[0.08] pr-2.5 pl-3 text-[15px] font-semibold text-label transition duration-150 group-hover:bg-label/[0.12] group-focus-visible:outline-2 group-focus-visible:outline-offset-2 group-focus-visible:outline-label group-active:scale-[0.94] group-active:bg-label/[0.16] dark:bg-label/[0.16] dark:group-hover:bg-label/[0.22] dark:group-active:bg-label/[0.28]">
           <svg
             aria-hidden="true"
             viewBox="0 0 24 24"
@@ -78,67 +114,53 @@ export function LanguageSwitcher({ locale }: { locale: Locale }) {
             <path d="M3 12h18" />
             <path d="M12 3c2.5 2.5 3.8 5.5 3.8 9s-1.3 6.5-3.8 9c-2.5-2.5-3.8-5.5-3.8-9S9.5 5.5 12 3z" />
           </svg>
-          {locale.toUpperCase()}
+          {attuale.sigla}
+          <svg
+            aria-hidden="true"
+            viewBox="0 0 24 24"
+            className={`size-3 transition-transform duration-150 ${aperto ? "rotate-180" : ""}`}
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="3"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <path d="M6 9l6 6 6-6" />
+          </svg>
         </span>
       </button>
 
       {aperto && (
-        <>
-          <div aria-hidden="true" onClick={chiudi} className="lingua-sfondo fixed inset-0 z-40 bg-black/30 md:bg-black/10" />
-          <div
-            ref={pannello}
-            role="dialog"
-            aria-modal="true"
-            aria-labelledby={titoloId}
-            onKeyDown={onKeyDown}
-            className="lingua-pannello fixed inset-x-0 bottom-0 z-50 rounded-t-3xl bg-card px-4 pt-5 pb-[max(1.5rem,env(safe-area-inset-bottom))] shadow-[0_-8px_30px_rgba(0,0,0,0.12)] md:absolute md:inset-x-auto md:top-12 md:right-0 md:bottom-auto md:w-72 md:rounded-2xl md:p-2 md:shadow-[0_8px_30px_rgba(0,0,0,0.16)]"
-          >
-            <h2
-              id={titoloId}
-              className="px-2 pb-3 text-center text-[17px] font-semibold md:px-3 md:pt-2 md:pb-2 md:text-left md:text-[13px] md:font-normal md:tracking-wide md:text-label-2 md:uppercase"
-            >
-              Lingua delle spiegazioni
-            </h2>
-            <div role="menu" aria-labelledby={titoloId} className="overflow-hidden rounded-2xl bg-bg-grouped md:rounded-xl md:bg-transparent">
-              {LOCALES.map((opzione, index) => {
-                const attiva = opzione.code === locale;
-                return (
-                  <button
-                    key={opzione.code}
-                    type="button"
-                    role="menuitemradio"
-                    aria-checked={attiva}
-                    lang={opzione.code}
-                    onClick={() => scegli(opzione.code)}
-                    className="flex min-h-12 w-full items-center pl-4 text-left text-[17px] text-label hover:bg-label/[0.04] focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-label md:rounded-lg md:pl-3"
-                  >
-                    <span
-                      className={`flex min-h-12 flex-1 items-center justify-between gap-3 self-stretch pr-4 md:pr-3 ${
-                        index > 0 ? "border-t border-separator md:border-0" : ""
-                      }`}
-                    >
-                      {opzione.nome}
-                      {attiva && (
-                        <svg
-                          aria-hidden="true"
-                          viewBox="0 0 24 24"
-                          className="size-5 shrink-0 text-label"
-                          fill="none"
-                          stroke="currentColor"
-                          strokeWidth="2.5"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        >
-                          <path d="M5 12.5l4.5 4.5L19 7.5" />
-                        </svg>
-                      )}
-                    </span>
-                  </button>
-                );
-              })}
-            </div>
-          </div>
-        </>
+        // Sotto la capsula (alta 40px dentro un pulsante da 44px): 42px + 6px di distacco.
+        <ul
+          ref={lista}
+          id={listaId}
+          role="listbox"
+          aria-label="Lingua delle spiegazioni"
+          onKeyDown={onKeyDownLista}
+          className="lingua-menu absolute inset-x-0 top-12 z-50 rounded-[14px] bg-card p-1 shadow-[0_8px_24px_rgba(0,0,0,0.14)] dark:shadow-[0_8px_24px_rgba(0,0,0,0.5)]"
+        >
+          {LOCALES.map((opzione) => {
+            const attiva = opzione.code === locale;
+            return (
+              <li
+                key={opzione.code}
+                role="option"
+                aria-selected={attiva}
+                aria-label={opzione.nome}
+                title={opzione.nome}
+                lang={opzione.code}
+                tabIndex={-1}
+                onClick={() => scegli(opzione.code)}
+                className={`flex h-10 cursor-pointer items-center justify-center rounded-[10px] text-[15px] text-label outline-none select-none hover:bg-label/[0.08] focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-label active:bg-label/[0.16] dark:hover:bg-label/[0.16] dark:active:bg-label/[0.24] ${
+                  attiva ? "bg-label/[0.08] font-semibold dark:bg-label/[0.16]" : ""
+                }`}
+              >
+                {opzione.sigla}
+              </li>
+            );
+          })}
+        </ul>
       )}
     </div>
   );
