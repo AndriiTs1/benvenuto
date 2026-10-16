@@ -17,18 +17,22 @@ export default async function A2Layout({ children }: { children: ReactNode }) {
   return (
     <PageTransition>
       <div className="min-h-dvh bg-bg-grouped text-label">
-        <header className="mx-auto w-full max-w-md px-4 pt-[max(1rem,env(safe-area-inset-top))] md:max-w-2xl">
-          <div className="flex items-center justify-between">
-            <BackButton href="/livello" />
-            <LanguageSwitcher locale={locale} />
+        <header className="mx-auto w-full max-w-188 px-4 pt-[max(1rem,env(safe-area-inset-top))]">
+          {/* Colonna di 720px (+ margini). Da md: Indietro · schede al centro · lingua; su mobile le schede sono la tab bar in basso. */}
+          <div className="grid grid-cols-[1fr_auto_1fr] items-center">
+            <div className="col-start-1 justify-self-start">
+              <BackButton href="/livello" label="Livelli" ariaLabel="Torna ai livelli" compattoSuTablet />
+            </div>
+            <CourseTabs base="/a2" />
+            <div className="col-start-3 justify-self-end">
+              <LanguageSwitcher locale={locale} />
+            </div>
           </div>
           <CourseHeader locale={locale} sottotitoli={testi.sezioni} />
         </header>
 
-        <CourseTabs base="/a2" />
-
         {/* Su mobile lascia spazio alla tab bar fissa (49px + safe area). */}
-        <main className="mx-auto w-full max-w-md px-4 pt-6 pb-[calc(49px+env(safe-area-inset-bottom)+1.5rem)] md:max-w-2xl md:pb-12">
+        <main className="mx-auto w-full max-w-188 px-4 pt-6 pb-[calc(49px+env(safe-area-inset-bottom)+1.5rem)] md:pb-12">
           {children}
         </main>
       </div>

@@ -45,9 +45,9 @@ export function CourseTabs({ base }: { base: string }) {
   return (
     <nav
       aria-label="Sezioni del corso"
-      className="fixed inset-x-0 bottom-0 z-40 border-t border-separator bg-bg/80 pb-[env(safe-area-inset-bottom)] backdrop-blur-[20px] md:static md:z-auto md:mt-6 md:border-0 md:bg-transparent md:pb-0 md:backdrop-blur-none"
+      className="fixed inset-x-0 bottom-0 z-40 border-t border-separator bg-bg/80 pb-[env(safe-area-inset-bottom)] backdrop-blur-[20px] md:static md:z-auto md:col-start-2 md:border-0 md:bg-transparent md:pb-0 md:backdrop-blur-none"
     >
-      <ul className="mx-auto flex h-[49px] max-w-md md:h-auto md:max-w-none md:justify-center md:gap-2">
+      <ul className="mx-auto flex h-[49px] max-w-md md:h-auto md:max-w-none md:justify-center md:gap-1">
         {SEZIONI.map((sezione) => {
           const href = `${base}/${sezione.slug}`;
           const attiva = pathname === href;
@@ -57,7 +57,7 @@ export function CourseTabs({ base }: { base: string }) {
                 href={href}
                 transitionTypes={["nav-tab"]}
                 aria-current={attiva ? "page" : undefined}
-                className={`flex flex-1 flex-col items-center justify-center gap-0.5 text-[10px] font-medium focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-label md:h-11 md:flex-row md:gap-2 md:rounded-full md:px-4 md:text-[15px] md:focus-visible:outline-offset-2 ${
+                className={`flex flex-1 flex-col items-center justify-center gap-0.5 text-[10px] font-medium focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-label md:h-11 md:flex-row md:gap-1.5 md:rounded-full md:px-2.5 md:text-[15px] md:focus-visible:outline-offset-2 ${
                   attiva ? `${sezione.colore} ${sezione.sfondo}` : "text-label-2 hover:text-label md:hover:bg-label/[0.06]"
                 }`}
               >

@@ -16,27 +16,40 @@ export function LanguageSwitcher({ locale }: { locale: Locale }) {
   const pulsante = useRef<HTMLButtonElement>(null);
   const lista = useRef<HTMLUListElement>(null);
   const listaId = useId();
+  // Aperto da tastiera: il fuoco entra nella lista. Col mouse resta sul pulsante,
+  // così dopo la scelta non compare l'anello di focus.
+  const daTastiera = useRef(false);
   const attuale = LOCALES.find((opzione) => opzione.code === locale)!;
 
   function opzioni() {
     return [...(lista.current?.querySelectorAll<HTMLLIElement>('[role="option"]') ?? [])];
   }
 
-  function chiudi(rimettiFuoco: boolean) {
+  function chiudi() {
+    // Il fuoco torna al pulsante solo se era nella lista (uso da tastiera).
+    if (lista.current?.contains(document.activeElement)) pulsante.current?.focus();
     setAperto(false);
-    if (rimettiFuoco) pulsante.current?.focus();
+  }
+
+  function apri(conTastiera: boolean) {
+    daTastiera.current = conTastiera;
+    setAperto(true);
   }
 
   function scegli(code: Locale) {
-    chiudi(true);
+    chiudi();
     salvaLingua(code);
     if (code !== locale) router.refresh();
   }
 
-  // All'apertura il fuoco va sulla lingua attuale; un clic fuori chiude il menu.
+  function focusAttuale() {
+    lista.current?.querySelector<HTMLLIElement>('[aria-selected="true"]')?.focus();
+  }
+
+  // Da tastiera il fuoco va sulla lingua attuale; un clic fuori chiude il menu.
   useEffect(() => {
     if (!aperto) return;
-    lista.current?.querySelector<HTMLLIElement>('[aria-selected="true"]')?.focus();
+    if (daTastiera.current) focusAttuale();
 
     function fuori(event: PointerEvent) {
       if (!contenitore.current?.contains(event.target as Node)) setAperto(false);
@@ -48,7 +61,14 @@ export function LanguageSwitcher({ locale }: { locale: Locale }) {
   function onKeyDownPulsante(event: KeyboardEvent<HTMLButtonElement>) {
     if (!aperto && ["ArrowDown", "Enter", " "].includes(event.key)) {
       event.preventDefault();
-      setAperto(true);
+      apri(true);
+    } else if (aperto && (event.key === "ArrowDown" || event.key === "ArrowUp")) {
+      // Aperto col mouse, poi frecce: si passa alla lista.
+      event.preventDefault();
+      focusAttuale();
+    } else if (aperto && event.key === "Escape") {
+      event.preventDefault();
+      chiudi();
     }
   }
 
@@ -78,10 +98,10 @@ export function LanguageSwitcher({ locale }: { locale: Locale }) {
         break;
       case "Escape":
         event.preventDefault();
-        chiudi(true);
+        chiudi();
         break;
       case "Tab":
-        chiudi(false);
+        setAperto(false);
         break;
     }
   }
@@ -91,7 +111,7 @@ export function LanguageSwitcher({ locale }: { locale: Locale }) {
       <button
         ref={pulsante}
         type="button"
-        onClick={() => (aperto ? chiudi(true) : setAperto(true))}
+        onClick={(event) => (aperto ? chiudi() : apri(event.detail === 0))}
         onKeyDown={onKeyDownPulsante}
         aria-label={`Lingua delle spiegazioni: ${attuale.nome}`}
         aria-haspopup="listbox"
@@ -151,6 +171,7 @@ export function LanguageSwitcher({ locale }: { locale: Locale }) {
                 title={opzione.nome}
                 lang={opzione.code}
                 tabIndex={-1}
+                onMouseDown={(event) => event.preventDefault()}
                 onClick={() => scegli(opzione.code)}
                 className={`flex h-10 cursor-pointer items-center justify-center rounded-[10px] text-[15px] text-label outline-none select-none hover:bg-label/[0.08] focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-label active:bg-label/[0.16] dark:hover:bg-label/[0.16] dark:active:bg-label/[0.24] ${
                   attiva ? "bg-label/[0.08] font-semibold dark:bg-label/[0.16]" : ""
