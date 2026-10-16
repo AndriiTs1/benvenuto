@@ -50,7 +50,7 @@ export function CourseTabs({ base }: { base: string }) {
       <ul className="mx-auto flex h-[49px] max-w-md md:h-auto md:max-w-none md:justify-center md:gap-1">
         {SEZIONI.map((sezione) => {
           const href = `${base}/${sezione.slug}`;
-          const attiva = pathname === href;
+          const attiva = pathname === href || pathname.startsWith(`${href}/`);
           return (
             <li key={sezione.slug} className="flex flex-1 md:flex-none">
               <Link

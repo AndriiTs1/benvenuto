@@ -1,9 +1,10 @@
 import type { ReactNode } from "react";
-import { BackButton } from "@/components/BackButton";
+import { CourseBack } from "@/components/corso/CourseBack";
 import { CourseHeader } from "@/components/corso/CourseHeader";
 import { CourseTabs } from "@/components/corso/CourseTabs";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { PageTransition } from "@/components/PageTransition";
+import { unitaPerSlug } from "@/content/a2/grammatica";
 import { dizionario } from "@/lib/i18n";
 import { linguaScelta } from "@/lib/lingua-scelta";
 
@@ -21,7 +22,7 @@ export default async function A2Layout({ children }: { children: ReactNode }) {
           {/* Colonna di 720px (+ margini). Da md: Indietro · schede al centro · lingua; su mobile le schede sono la tab bar in basso. */}
           <div className="grid grid-cols-[1fr_auto_1fr] items-center">
             <div className="col-start-1 justify-self-start">
-              <BackButton href="/livello" label="Livelli" ariaLabel="Torna ai livelli" compattoSuTablet />
+              <CourseBack unitaPerSlug={await unitaPerSlug(locale)} />
             </div>
             <CourseTabs base="/a2" />
             <div className="col-start-3 justify-self-end">

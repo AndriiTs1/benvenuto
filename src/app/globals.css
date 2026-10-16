@@ -16,6 +16,8 @@
   --color-vocab: #00788A;
   --color-exercises: #8944AB;
   --color-communicate: #A05A00;
+  /* Testo nella lingua delle spiegazioni (traduzioni, regole, note): 5.89:1 su bianco, 5.28:1 su bg-grouped */
+  --color-translation: #56657F;
   --color-grammar-soft: color-mix(in srgb, var(--color-grammar) 12%, transparent);
   --color-vocab-soft: color-mix(in srgb, var(--color-vocab) 12%, transparent);
   --color-exercises-soft: color-mix(in srgb, var(--color-exercises) 12%, transparent);
@@ -38,6 +40,7 @@
     --color-vocab: #40C8E0;
     --color-exercises: #BF5AF2;
     --color-communicate: #FFB340;
+    --color-translation: #A3B1C6; /* 7.83:1 su card, 9.66:1 su nero */
   }
 }
 
@@ -62,6 +65,7 @@
   --color-vocab: var(--color-vocab);
   --color-exercises: var(--color-exercises);
   --color-communicate: var(--color-communicate);
+  --color-translation: var(--color-translation);
   --color-grammar-soft: var(--color-grammar-soft);
   --color-vocab-soft: var(--color-vocab-soft);
   --color-exercises-soft: var(--color-exercises-soft);

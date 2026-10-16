@@ -13,7 +13,9 @@ export function CourseHeader({
   sottotitoli: Record<SezioneSlug, string>;
 }) {
   const pathname = usePathname();
-  const sezione = SEZIONI.find((s) => pathname.endsWith(`/${s.slug}`)) ?? SEZIONI[0];
+  const sezione = SEZIONI.find((s) => pathname.endsWith(`/${s.slug}`));
+  // Nelle pagine interne (unità, argomento) il titolo è della pagina stessa.
+  if (!sezione) return null;
 
   return (
     <div className="mt-2 md:text-center">
