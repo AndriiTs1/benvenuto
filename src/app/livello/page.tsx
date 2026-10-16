@@ -1,147 +1,95 @@
-"use client";
+import { cookies } from "next/headers";
+import { Suspense } from "react";
+import { BackButton } from "@/components/BackButton";
+import { PageTransition } from "@/components/PageTransition";
+import { ScegliLivello } from "@/components/livello/ScegliLivello";
+import { statisticheA2 } from "@/content/a2";
+import { CURRENT_LEVEL, LEVELS, LEVEL_COOKIE, isAvailableLevel, levelHref } from "@/lib/levels";
 
-import Link from "next/link";
-import { useState, useSyncExternalStore } from "react";
-import { LEVELS, LEVEL_STORAGE_KEY, type LevelCode } from "@/lib/levels";
-
-function isAvailableLevel(value: string | null): value is LevelCode {
-  return LEVELS.some((level) => level.code === value && level.available);
-}
-
-function readStoredLevel(): LevelCode | null {
-  try {
-    const stored = localStorage.getItem(LEVEL_STORAGE_KEY);
-    return isAvailableLevel(stored) ? stored : null;
-  } catch {
-    // localStorage non disponibile (es. navigazione privata)
-    return null;
-  }
-}
-
-function subscribeToStorage(onChange: () => void) {
-  window.addEventListener("storage", onChange);
-  return () => window.removeEventListener("storage", onChange);
+// Chi ha già scelto un livello torna al suo corso, chi è nuovo al benvenuto.
+// Senza prefetch: la destinazione dipende dal cookie, e "/" con il cookie reindirizza a /a2.
+async function Indietro() {
+  const level = (await cookies()).get(LEVEL_COOKIE)?.value;
+  return <BackButton href={isAvailableLevel(level) ? levelHref(level) : "/"} prefetch={false} />;
 }
 
 export default function LivelloPage() {
-  const storedLevel = useSyncExternalStore(subscribeToStorage, readStoredLevel, () => null);
-  const [picked, setPicked] = useState<LevelCode | null>(null);
-  const selected = picked ?? storedLevel ?? "A1";
-
-  function select(code: LevelCode) {
-    setPicked(code);
-    try {
-      localStorage.setItem(LEVEL_STORAGE_KEY, code);
-    } catch {
-      // localStorage non disponibile (es. navigazione privata)
-    }
-  }
+  const corso = LEVELS.find((level) => level.code === CURRENT_LEVEL)!;
+  const prossimamente = LEVELS.filter((level) => level.status === "in_development");
+  const stats = statisticheA2();
 
   return (
-    <main className="min-h-dvh bg-bg-grouped text-label">
-      <div className="mx-auto w-full max-w-md px-4 pt-[max(1rem,env(safe-area-inset-top))] md:max-w-lg">
-        <Link
-          href="/"
-          className="inline-flex h-11 items-center gap-1 text-[17px] text-label hover:opacity-70"
-        >
-          <svg
-            aria-hidden="true"
-            viewBox="0 0 24 24"
-            className="size-5"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2.25"
-            strokeLinecap="round"
-            strokeLinejoin="round"
+    <PageTransition>
+      <main className="min-h-dvh bg-bg-grouped text-label">
+        <div className="mx-auto w-full max-w-md px-4 pt-[max(1rem,env(safe-area-inset-top))] md:max-w-lg">
+          <Suspense fallback={<BackButton prefetch={false} />}>
+            <Indietro />
+          </Suspense>
+
+          <h1 className="mt-2 text-center text-[34px] leading-tight font-bold tracking-tight">
+            Il tuo livello
+          </h1>
+          <p className="mt-1 text-center text-[17px] text-balance text-label-2">
+            Inizia dal corso {CURRENT_LEVEL}. Gli altri livelli sono in sviluppo.
+          </p>
+
+          <ScegliLivello
+            code={corso.code}
+            className="mt-6 flex w-full flex-col items-center rounded-2xl bg-card p-5 text-center transition hover:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-label active:scale-[0.99] md:p-6"
           >
-            <path d="M15 5l-7 7 7 7" />
-          </svg>
-          Indietro
-        </Link>
+            <span className="flex size-12 items-center justify-center rounded-xl bg-label text-[17px] font-semibold text-bg">
+              {corso.code}
+            </span>
+            <span className="mt-3 flex flex-wrap items-center justify-center gap-x-2 gap-y-1">
+              <span className="text-[17px] font-semibold whitespace-nowrap md:text-xl">
+                {corso.code} · {corso.name}
+              </span>
+              <span className="rounded-full bg-bg-grouped px-2.5 py-0.5 text-[13px] font-semibold whitespace-nowrap">
+                Il tuo corso
+              </span>
+            </span>
+            <span className="mt-1 block text-[15px] text-balance text-label-2">{corso.description}</span>
+            <span className="mt-4 block w-full border-t border-separator pt-4 text-[15px] font-medium text-label-2">
+              <span className="text-grammar">{stats.argomenti} argomenti</span>
+              {" · "}
+              <span className="text-vocab">{stats.parole} parole</span>
+              {" · "}
+              <span className="text-exercises">{stats.esercizi} esercizi</span>
+            </span>
+          </ScegliLivello>
 
-        <h1 className="mt-2 text-[34px] leading-tight font-bold tracking-tight">
-          Scegli il tuo livello
-        </h1>
-        <p className="mt-1 text-[17px] text-label-2">Potrai cambiarlo in qualsiasi momento</p>
-
-        <div
-          role="radiogroup"
-          aria-label="Livello"
-          className="mt-6 overflow-hidden rounded-2xl bg-card"
-        >
-          {LEVELS.map((level, index) => {
-            const isSelected = level.code === selected;
-            return (
-              <button
-                key={level.code}
-                type="button"
-                role="radio"
-                aria-checked={isSelected}
-                aria-disabled={!level.available}
-                disabled={!level.available}
-                onClick={() => select(level.code)}
-                className={`flex min-h-[64px] w-full items-center gap-3 pl-4 text-left ${
-                  level.available
-                    ? "hover:bg-bg-grouped/60 focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-label active:bg-bg-grouped"
-                    : "cursor-default"
-                }`}
-              >
+          <h2 className="mt-8 mb-2 px-4 text-[13px] tracking-wide text-label-2 uppercase">
+            Prossimamente
+          </h2>
+          <div className="overflow-hidden rounded-2xl bg-card">
+            {prossimamente.map((level, index) => (
+              <div key={level.code} aria-disabled="true" className="flex min-h-12 items-center pl-4">
                 <span
-                  className={`flex size-10 shrink-0 items-center justify-center rounded-xl text-[15px] font-semibold ${
-                    level.available ? "bg-label text-bg" : "bg-bg-grouped text-label-2"
-                  }`}
-                >
-                  {level.code}
-                </span>
-                <span
-                  className={`flex min-h-[64px] flex-1 items-center gap-3 self-stretch py-3 pr-4 ${
+                  className={`flex min-h-12 flex-1 items-center justify-between gap-3 self-stretch pr-4 ${
                     index > 0 ? "border-t border-separator" : ""
                   }`}
                 >
-                  <span className="flex-1">
-                    <span
-                      className={`block text-[17px] font-semibold ${
-                        level.available ? "" : "text-label-2"
-                      }`}
-                    >
-                      {level.code} · {level.name}
-                    </span>
-                    <span className="block text-[15px] text-label-2">{level.description}</span>
+                  <span className="text-[17px] text-label-2">
+                    {level.code} · {level.name}
                   </span>
-                  {isSelected && (
-                    <svg
-                      aria-hidden="true"
-                      viewBox="0 0 24 24"
-                      className="size-5 shrink-0 text-label"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <path d="M5 12.5l4.5 4.5L19 7.5" />
-                    </svg>
-                  )}
-                  {!level.available && (
-                    <span className="shrink-0 rounded-full bg-bg-grouped px-2.5 py-1 text-[13px] text-label-2">
-                      Presto
-                    </span>
-                  )}
+                  <span className="shrink-0 rounded-full bg-bg-grouped px-2.5 py-1 text-[13px] whitespace-nowrap text-label-2">
+                    In sviluppo
+                  </span>
                 </span>
-              </button>
-            );
-          })}
-        </div>
+              </div>
+            ))}
+          </div>
 
-        <div className="sticky bottom-0 mt-8 bg-bg-grouped/85 pt-4 pb-[max(1.5rem,env(safe-area-inset-bottom))] backdrop-blur">
-          <Link
-            href="/percorso"
-            className="flex h-[52px] w-full items-center justify-center rounded-full bg-label text-[17px] font-semibold text-bg transition hover:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-label active:scale-[0.98] md:mx-auto md:w-80"
-          >
-            Continua con {selected}
-          </Link>
+          <div className="sticky bottom-0 mt-4 bg-bg-grouped/85 pt-4 pb-[max(1.5rem,env(safe-area-inset-bottom))] backdrop-blur">
+            <ScegliLivello
+              code={corso.code}
+              className="flex h-[52px] w-full items-center justify-center rounded-full bg-label text-[17px] font-semibold text-bg transition hover:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-label active:scale-[0.98] active:opacity-80 md:mx-auto md:w-80"
+            >
+              Inizia il corso {corso.code}
+            </ScegliLivello>
+          </div>
         </div>
-      </div>
-    </main>
+      </main>
+    </PageTransition>
   );
 }

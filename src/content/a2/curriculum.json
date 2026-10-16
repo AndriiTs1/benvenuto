@@ -1,0 +1,85 @@
+{
+ "level": "A2",
+ "title": "Italiano A2",
+ "units": [
+  {
+   "id": "u1",
+   "title": "Il presente",
+   "subtitle": "Настоящее время",
+   "topics": [
+    "g5-presente-regular",
+    "g5-presente-tu",
+    "g5-presente-irregular",
+    "g5-modali-presente",
+    "g5-riflessivi-presente",
+    "g5-piacere-mancare"
+   ]
+  },
+  {
+   "id": "u2",
+   "title": "Articoli e preposizioni",
+   "subtitle": "Артикли, предлоги, время",
+   "topics": [
+    "g1-articoli-determinativi",
+    "g4-preposizioni-articolate",
+    "g4-verbi-a-di",
+    "g4-ore"
+   ]
+  },
+  {
+   "id": "u3",
+   "title": "Il passato prossimo",
+   "subtitle": "Прошедшее завершённое",
+   "topics": [
+    "g5-passato-prossimo-base",
+    "g5-avverbi-passato",
+    "g4-tempo-da-per-fa",
+    "g5-reciproci",
+    "g5-coppia-tappe"
+   ]
+  },
+  {
+   "id": "u4",
+   "title": "L'imperfetto",
+   "subtitle": "Прошедшее незаконченное",
+   "topics": [
+    "g5-imperfetto",
+    "g5-imperfetto-vs-passato",
+    "g5-connettivi-conseguenza"
+   ]
+  },
+  {
+   "id": "u5",
+   "title": "Descrivere e raccontare",
+   "subtitle": "Описание человека и биография",
+   "topics": [
+    "g2-descrizione-persona",
+    "g5-prima-ora"
+   ]
+  },
+  {
+   "id": "u6",
+   "title": "Il futuro",
+   "subtitle": "Будущее время",
+   "topics": [
+    "g5-futuro-semplice"
+   ]
+  }
+ ],
+ "milestones": [
+  {
+   "id": "test-meta-corso",
+   "title": "Test metà corso",
+   "after_unit": "u5",
+   "covers": [
+    "u1",
+    "u2",
+    "u3",
+    "u4",
+    "u5"
+   ]
+  }
+ ],
+ "vocab_groups_source": "vocab.json → groups",
+ "copyright_rule": "Тексты и упражнения с полем source, содержащим «не для публикации», показывать только при флаге SHOW_TEXTBOOK_CONTENT=true"
+}

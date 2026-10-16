@@ -1,0 +1,2873 @@
+{
+ "level": "A2",
+ "groups": {
+  "1": "Артикли и существительные",
+  "2": "Прилагательные",
+  "3": "Местоимения",
+  "4": "Предлоги",
+  "5": "Глаголы"
+ },
+ "texts": [
+  {
+   "id": "L01",
+   "title": "La serata di lui",
+   "it": "Lui torna a casa: trova un messaggio e legge. Diventa molto felice: fa una danza di gioia, festeggia! Fuma una sigaretta e si rilassa. Dopo, cena da solo, lava i piatti e passa l'aspirapolvere: si annoia! Dopo le pulizie, si lava i denti e va a dormire solo. Ma non si addormenta, perché si agita, si stressa e piange.",
+   "ru": "Он возвращается домой: находит сообщение и читает. Он становится очень счастливым: танцует от радости, празднует! Выкуривает сигарету и расслабляется. Потом ужинает один, моет посуду и пылесосит: ему скучно! После уборки чистит зубы и идёт спать один. Но не может заснуть, потому что волнуется, нервничает и плачет."
+  },
+  {
+   "id": "L02",
+   "title": "Emozioni: mi piace, mi manca, mi arrabbio…",
+   "it": "Mi manca mio figlio. Mi piace la pizza. Mi arrabbio perché tu sei cattivo. Mi stresso quando ho tante cose da fare. Mi preoccupo per la famiglia. Mi innervosisco quando sono molto stanco! Mi agito per l'esame. Mi annoio quando guardo un film che non mi piace.",
+   "ru": "Я скучаю по сыну. Мне нравится пицца. Я злюсь, потому что ты злой. Я нервничаю, когда у меня много дел. Я беспокоюсь за семью. Я раздражаюсь, когда очень устал! Я волнуюсь из-за экзамена. Мне скучно, когда я смотрю фильм, который мне не нравится."
+  },
+  {
+   "id": "L04",
+   "title": "La giornata di Anna",
+   "it": "Alle 20:30 Anna saluta i figli, che guardano la TV, ed esce di casa. Arriva in discoteca, si cambia i vestiti e comincia a lavorare. Anna prende gli ordini, parla con i clienti, porta il cibo e le bevande e serve, mentre le persone ballano, bevono e si divertono (qualcuno beve troppo e si ubriaca!). Finisce di lavorare di notte, alle 2:30: si cambia ancora i vestiti e torna a casa. Quando arriva a casa, controlla i bambini, che già dormono.",
+   "ru": "В 20:30 Анна прощается с детьми, которые смотрят телевизор, и выходит из дома. Она приходит на дискотеку, переодевается и начинает работать. Анна принимает заказы, разговаривает с клиентами, приносит еду и напитки и обслуживает, пока люди танцуют, пьют и веселятся (кто-то пьёт слишком много и напивается!). Она заканчивает работу ночью, в 2:30: снова переодевается и возвращается домой. Придя домой, она проверяет детей, которые уже спят."
+  },
+  {
+   "id": "L06",
+   "title": "Peppino",
+   "source": "учебник (не для публикации в приложении как есть)",
+   "it": "Peppino è un ragazzo alto, magro, con gli occhi scuri. Ha 22 anni e fa il meccanico. Ha frequentato la scuola media fino a 14 anni, poi ha cominciato a lavorare in un'officina vicino a casa sua. Peppino ha una grande passione per i motori, ma il lavoro è faticoso: esce di casa ogni mattina alle 8, prende la moto e va all'officina, lavora fino alle 13, fa una pausa per il pranzo e alle 14.30 ricomincia a lavorare fino alle 18. Quando la sera torna a casa è molto stanco e va quasi sempre a letto prima delle 23. Il sabato sera, invece, va con gli amici in discoteca: può fare tranquillamente le ore piccole perché la domenica può dormire anche fino a mezzogiorno. Peppino vuole aprire un'officina tutta sua: comincerà a risparmiare, metterà da parte un po' di soldi ogni mese e chiederà anche un prestito in banca. Fra qualche anno comprerà un garage e così lavorerà da solo. All'inizio forse non guadagnerà molto, ma sarà sicuramente più soddisfatto.",
+   "ru": "Пеппино — высокий худой парень с тёмными глазами. Ему 22 года, он работает механиком. Он ходил в среднюю школу до 14 лет, потом начал работать в мастерской рядом с домом. Пеппино очень увлекается моторами, но работа утомительная: каждое утро в 8 он выходит из дома, садится на мотоцикл и едет в мастерскую, работает до 13, делает перерыв на обед и в 14:30 снова работает до 18. Когда вечером он возвращается домой, он очень устал и почти всегда ложится спать до 23. А вот в субботу вечером он ходит с друзьями на дискотеку: может спокойно гулять до утра, потому что в воскресенье можно спать хоть до полудня. Пеппино хочет открыть собственную мастерскую: он начнёт копить, будет откладывать немного денег каждый месяц и ещё возьмёт кредит в банке. Через несколько лет он купит гараж и так будет работать сам на себя. Вначале, может быть, он будет зарабатывать немного, но точно будет довольнее."
+  },
+  {
+   "id": "L08",
+   "title": "Cosa è successo ad Andrea ieri sera?",
+   "it": "Andrea è uscito di casa alle 20, ha preso la macchina e ha dato un passaggio agli amici. A un certo punto, un poliziotto ha fermato la macchina di Andrea. Il poliziotto ha dato una multa ad Andrea perché è passato con il semaforo rosso e aveva troppe persone in macchina! Poi, finalmente, Andrea e i suoi amici sono arrivati in centro a Milano e hanno visitato il Duomo. Dopo, Andrea ha lasciato gli amici ed è andato con la sua ragazza e hanno mangiato una pizza al ristorante. Dopo cena, si è cambiato la camicia velocemente ed è andato in discoteca: lì ha conosciuto un'altra ragazza, ha ballato e si è divertito.",
+   "ru": "Андреа вышел из дома в 20:00, взял машину и подвёз друзей. В какой-то момент полицейский остановил машину Андреа. Полицейский выписал Андреа штраф, потому что тот проехал на красный свет и в машине было слишком много людей! Потом наконец Андреа с друзьями добрались до центра Милана и осмотрели Дуомо. После этого Андреа оставил друзей и пошёл со своей девушкой, и они съели пиццу в ресторане. После ужина он быстро переодел рубашку и пошёл на дискотеку: там он познакомился с другой девушкой, танцевал и веселился."
+  },
+  {
+   "id": "L12",
+   "title": "Andrea, la mia compagna di scuola",
+   "note": "часть текста восстановлена по смыслу (обрезанные строки)",
+   "it": "Ho incontrato Andrea a scuola quando avevamo 15 anni. Era il mio primo giorno in una scuola nuova. Mi piaceva stare in fondo all'aula, così gli insegnanti non mi vedevano. Invece Andrea sedeva lì perché voleva dormire. Io e Andrea ascoltavamo molta musica insieme e lei mi ha fatto conoscere nuovi musicisti. È stato un anno di scuola molto tranquillo: non facevamo niente ed eravamo felici. Poi siamo andati all'università e ci siamo separati.",
+   "ru": "Я познакомился с Андреа в школе, когда нам было 15 лет. Это был мой первый день в новой школе. Мне нравилось сидеть в конце класса, так учителя меня не видели. А Андреа сидела там, потому что хотела спать. Мы с Андреа слушали много музыки вместе, и она познакомила меня с новыми музыкантами. Это был очень спокойный учебный год: мы ничего не делали и были счастливы. Потом мы поступили в университет и расстались."
+  },
+  {
+   "id": "L14",
+   "title": "La storia di Laura",
+   "note": "ответы на вопросы; вопросы восстановлены",
+   "it": "Sono nata a Napoli, in Campania, il 15 settembre del 1980. Ho studiato a Napoli e a Roma. A Napoli ho frequentato la scuola elementare da 6 a 10 anni, la scuola media da 11 a 14 anni e poi la scuola superiore per 5 anni, al Liceo Classico \"Genovesi\". Dopo il diploma di maturità classica, all'età di 19 anni mi sono trasferita a Roma, dove ho abitato per cinque anni e ho studiato Lingue Straniere all'università. Mi sono laureata nel 2004. Nel 2005 sono tornata a Napoli, dove ho fatto l'insegnante in una scuola privata. Lì ho conosciuto Matteo. Dopo quattro anni ci siamo sposati, siamo andati a vivere a Roma e abbiamo comprato un appartamento un po' fuori città. Tre anni fa è nato Leo, il nostro primo figlio. Per due anni sono stata mamma a tempo pieno; l'anno scorso ho ricominciato a insegnare nei corsi di italiano per stranieri.",
+   "ru": "Я родилась в Неаполе, в Кампании, 15 сентября 1980 года. Училась в Неаполе и в Риме. В Неаполе ходила в начальную школу с 6 до 10 лет, в среднюю — с 11 до 14, потом 5 лет в старшую школу, в классический лицей «Дженовези». После аттестата в 19 лет переехала в Рим, где прожила пять лет и изучала иностранные языки в университете. Окончила университет в 2004-м. В 2005-м вернулась в Неаполь и работала учительницей в частной школе. Там познакомилась с Маттео. Через четыре года мы поженились, переехали в Рим и купили квартиру немного за городом. Три года назад родился Лео, наш первый сын. Два года я была мамой на полный день; в прошлом году снова начала преподавать на курсах итальянского для иностранцев.",
+   "source": "учебник (не для публикации в приложении как есть)",
+   "questions": [
+    [
+     "a. Dove e quando è nata Laura?",
+     "È nata a Napoli il 15 settembre 1980."
+    ],
+    [
+     "b. Dove ha studiato?",
+     "Ha studiato a Napoli e a Roma."
+    ],
+    [
+     "c. Che studi ha fatto?",
+     "Ha frequentato la scuola elementare, la scuola media e il liceo classico; poi ha studiato Lingue Straniere all'università e si è laureata nel 2004."
+    ],
+    [
+     "d. Dove ha abitato?",
+     "Ha abitato a Napoli e a Roma."
+    ],
+    [
+     "e. Che lavori ha fatto?",
+     "Ha lavorato come insegnante in una scuola privata e nei corsi di italiano per stranieri; per due anni è stata mamma a tempo pieno."
+    ],
+    [
+     "f. Si è sposata? Ha figli?",
+     "Sì, si è sposata con Matteo e ha un figlio, Leo."
+    ]
+   ]
+  },
+  {
+   "id": "L19",
+   "title": "Prima e ora: Carlo, Matteo, Anna",
+   "note": "столбцы при распознавании перемешались; распределение по людям восстановлено по смыслу",
+   "it": "CARLO — Prima: aveva i capelli neri e ricci, aveva un naso grosso, non portava gli occhiali. Ora: ha i capelli più corti e rossi, ha cambiato il naso, si veste più elegante: ha cambiato stile. MATTEO — Prima: era bellissimo! Aveva i baffi biondi, aveva gli occhi azzurri, era più felice, si vestiva in modo più elegante. Ora: ha le rughe, gli è cresciuta la barba, i capelli sono più lunghi; è un po' triste e ha freddo. ANNA — Prima: era molto allegra, aveva i capelli corti e biondi, aveva grandi occhi blu, aveva le lentiggini. Ora: ha colorato i capelli di rosso, è sempre molto allegra, si trucca e porta gli orecchini. FELICIA — Prima: aveva i capelli ricci, neri, lunghi; aveva gli occhi grandi e verdi; era abbronzata. Ora: ha i capelli più corti e mossi, è diventata pallida, gli occhi e il naso sono cambiati. SIRENA — Prima: aveva i capelli rossi e lunghi, portava le trecce, non portava gli occhiali. Ora: è ingrassata, ha i capelli corti, porta gli occhiali, ha le rughe. GUIDO — Prima: era più magro, aveva i capelli corti, portava già gli occhiali. Ora: è ingrassato, ha le sopracciglia più grandi, ha i capelli più chiari, porta ancora gli occhiali, ma ha cambiato stile. ANTONIO — Prima: era molto magro, aveva i capelli lunghi, lisci e castani, portava gli occhiali. Ora: ha perso i capelli (è diventato pelato!), ha la barba e i baffi, non porta più gli occhiali: porta le lenti a contatto.",
+   "ru": "Карло — раньше: чёрные кудрявые волосы, большой нос, не носил очки. Сейчас: волосы короче и рыжие, изменил нос, одевается элегантнее — сменил стиль. Маттео — раньше был очень красивым, светлые усы, голубые глаза, был счастливее, одевался элегантнее. Сейчас: морщины, отрастил бороду, волосы длиннее; немного грустный и мёрзнет. Анна — раньше: очень весёлая, короткие светлые волосы, большие синие глаза, веснушки. Сейчас: покрасила волосы в рыжий, по-прежнему весёлая, красится и носит серьги. Фелиция — раньше: длинные чёрные кудрявые волосы, большие зелёные глаза, загорелая. Сейчас: волосы короче и волнистые, стала бледной, глаза и нос изменились. Сирена — раньше: длинные рыжие волосы, косы, без очков. Сейчас: поправилась, короткие волосы, носит очки, морщины. Гвидо — раньше: худее, короткие волосы, уже носил очки. Сейчас: поправился, брови больше, волосы светлее, по-прежнему в очках, но сменил стиль. Антонио — раньше: очень худой, длинные прямые каштановые волосы, носил очки. Сейчас: облысел, борода и усы, больше не носит очки — носит контактные линзы."
+  },
+  {
+   "id": "L21",
+   "title": "Un incontro importante (modello per il test)",
+   "note": "первая строка восстановлена по слову «ho visto» с доски",
+   "it": "[Un giorno, al parco, ho visto una ragazza.] Faceva una passeggiata con il suo cane. Andava al ristorante per incontrare degli amici. Era vestita elegante. Sono rimasto sorpreso perché era molto bella e di buon umore. Abbiamo iniziato a parlare e così ci siamo conosciuti.",
+   "ru": "[Однажды в парке я увидел девушку.] Она гуляла со своей собакой. Она шла в ресторан встретиться с друзьями. Она была элегантно одета. Я удивился, потому что она была очень красивой и в хорошем настроении. Мы начали разговаривать и так познакомились.",
+   "analysis": {
+    "imperfetto — descrizione del momento": [
+     "faceva",
+     "andava",
+     "era vestita",
+     "era bella e di buon umore"
+    ],
+    "passato prossimo — azioni precise, un'azione dopo un'altra": [
+     "ho visto",
+     "sono rimasto sorpreso",
+     "abbiamo iniziato",
+     "ci siamo conosciuti"
+    ]
+   }
+  },
+  {
+   "id": "L25",
+   "title": "Al pronto soccorso",
+   "status": "собрано, проработка позже",
+   "it": "Lisa ha mal di testa perché ha preso un colpo in testa. Prenderà una medicina. Francesco ha rotto il braccio perché ha giocato a rugby. Lui riposerà e metterà il gesso, farà una radiografia. La signora Verdi ha mangiato troppe caramelle, quindi ha mal di denti. Andrà dal dentista (pagherà molto!), prenderà un antidolorifico e si laverà meglio i denti. Beppino ha mal di testa e usa la stampella perché è caduto dalle scale. Starà a casa con un'infermiera, si riposerà e userà una sedia a rotelle.",
+   "ru": "Лиза: болит голова, потому что ударилась головой. Примет лекарство. Франческо сломал руку, играя в регби. Будет отдыхать, наложат гипс, сделает рентген. Синьора Верди съела слишком много конфет, поэтому болят зубы. Пойдёт к стоматологу (заплатит много!), примет обезболивающее и будет лучше чистить зубы. У Беппино болит голова и он на костыле, потому что упал с лестницы. Будет дома с медсестрой, отдохнёт и будет пользоваться инвалидным креслом.",
+   "grammar_note": "Схема: presente (сейчас: ha mal di testa) + perché + passato prossimo (причина: ha preso un colpo) → futuro (что будет: prenderà una medicina).",
+   "picture": "Картинка с 10 персонажами: Lisa (BANG — удар), Francesco (регби), Sig.ra Verdi (конфеты), Beppino (лестница), Carla (велосипед, колено), Sig.ra Bianchi (солнце), Martina (беременна), Sig. Rossi (бутылка), Luigi (футбол), Sig. Gianni (синяк под глазом; записка «XOXO 3-0»)."
+  },
+  {
+   "id": "L27",
+   "title": "Il Giorno dei Morti in Messico + futuro",
+   "status": "собрано, проработка позже",
+   "it": "Il 2 novembre, il «Giorno dei Morti», in Messico le persone cucineranno molto cibo perché i morti torneranno per mangiare; faranno una parata in città; decoreranno con fiori colorati il cammino per i morti, gli antenati (le persone di famiglia del passato). La festa durerà 3 giorni.",
+   "ru": "2 ноября, в «День мёртвых», в Мексике люди будут готовить много еды, потому что умершие вернутся поесть; устроят парад в городе; украсят разноцветными цветами путь для умерших — предков (родственников из прошлого). Праздник будет длиться 3 дня.",
+   "board_2": "Задания урока: 1. Che cosa farò da grande; 2. Previsioni per il nuovo anno; 3. Lettera della direttrice marketing. Futuro regolare: -are = -ere (abiterò), -ire → -ir… (partirò). Essere*: sarò, sarai, sarà, saremo, sarete, saranno (* irregolare). Lieto/a = felice (situazioni formali). Comunicarvi = comunicare a voi. Raggiungere = arrivare a: raggiungo la cima della montagna.",
+   "textbook": {
+    "source": "учебник ALMA Edizioni «Dieci», 7B «Il mio futuro», с. 30 (не для публикации в приложении как есть)",
+    "texts": {
+     "1 Che cosa farò da grande": "Tra vent'anni sarò laureata in psicologia e farò la psicologa. Mi sposerò e avrò due figli. Mio marito sarà un musicista o uno scrittore. Saremo una famiglia felice, ma non so dove abiteremo, forse in Italia, o forse andremo a vivere negli Stati Uniti. Per questo dovrò imparare molto bene l'inglese. (Alessia, 8 anni)",
+     "2 Previsioni per il nuovo anno": "Leone: Un problema con un collega di lavoro occuperà a lungo i vostri pensieri. Non gli date troppa importanza e pensate di più alla vostra salute. Pesci: Per voi la parola dell'anno sarà «trasformazione». Cambierete casa, partner o lavoro. Scorpione: Troppi problemi? Tranquilli: tra un mese finirà il periodo difficile. Se avrete pazienza, nel nuovo anno riuscirete a realizzare i vostri progetti. Successo.",
+     "3 Lettera della direttrice marketing": "Gentili Signori, sono lieta di comunicarvi che anche quest'anno raggiungeremo i nostri obiettivi e che avremo un risultato finale molto positivo. Infatti chiuderemo l'anno con un +15% di vendite. Vi informo inoltre che dal prossimo anno saremo partner di CommerceOne in Asia e in Europa.",
+     "4 Previsioni meteo": "Fine settimana di bel tempo su tutta l'Italia. Farà molto caldo, soprattutto al sud. In Sicilia, le temperature raggiungeranno i 40 gradi."
+    },
+    "extra_title": "Istruzioni per una vita felice (лишний заголовок)"
+   }
+  }
+ ],
+ "topics": [
+  {
+   "id": "g5-presente-regular",
+   "group": 5,
+   "title": "Presente indicativo — правильные глаголы",
+   "rule": "Основа + окончание. -ARE: -o, -i, -a, -iamo, -ate, -ano. -ERE: -o, -i, -e, -iamo, -ete, -ono. -IRE: -o, -i, -e, -iamo, -ite, -ono (часть глаголов на -ire с -isc-: finisco, preferisco).",
+   "table": [
+    [
+     "",
+     "tornare",
+     "leggere",
+     "dormire"
+    ],
+    [
+     "io",
+     "torno",
+     "leggo",
+     "dormo"
+    ],
+    [
+     "tu",
+     "torni",
+     "leggi",
+     "dormi"
+    ],
+    [
+     "lui/lei",
+     "torna",
+     "legge",
+     "dorme"
+    ],
+    [
+     "noi",
+     "torniamo",
+     "leggiamo",
+     "dormiamo"
+    ],
+    [
+     "voi",
+     "tornate",
+     "leggete",
+     "dormite"
+    ],
+    [
+     "loro",
+     "tornano",
+     "leggono",
+     "dormono"
+    ]
+   ],
+   "examples": [
+    "Lui torna a casa.",
+    "Trova un messaggio e legge.",
+    "Cena da solo e lava i piatti."
+   ],
+   "mistakes": [
+    "Глаголы на -giare/-ciare теряют i перед i: festeggiare → tu festeggi (не festeggii), mangiare → tu mangi.",
+    "Leggere/piangere: перед -o/-ono звук твёрдый [г]: leggo, piango; перед -i/-e мягкий [дж]: leggi, legge, piangi, piange.",
+    "Форма io всегда на -o (lavoro, corro, finisco), noi — на -iamo (parliamo, facciamo).",
+    "Aspettare — без предлога: aspetto l'autobus (не aspetto per l'autobus)."
+   ],
+   "lesson": "L01"
+  },
+  {
+   "id": "g5-presente-irregular",
+   "group": 5,
+   "title": "Presente — неправильные глаголы fare, andare",
+   "table": [
+    [
+     "",
+     "fare",
+     "andare",
+     "stare",
+     "uscire",
+     "salire",
+     "rimanere",
+     "bere"
+    ],
+    [
+     "io",
+     "faccio",
+     "vado",
+     "sto",
+     "esco",
+     "salgo",
+     "rimango",
+     "bevo"
+    ],
+    [
+     "tu",
+     "fai",
+     "vai",
+     "stai",
+     "esci",
+     "sali",
+     "rimani",
+     "bevi"
+    ],
+    [
+     "lui/lei",
+     "fa",
+     "va",
+     "sta",
+     "esce",
+     "sale",
+     "rimane",
+     "beve"
+    ],
+    [
+     "noi",
+     "facciamo",
+     "andiamo",
+     "stiamo",
+     "usciamo",
+     "saliamo",
+     "rimaniamo",
+     "beviamo"
+    ],
+    [
+     "voi",
+     "fate",
+     "andate",
+     "state",
+     "uscite",
+     "salite",
+     "rimanete",
+     "bevete"
+    ],
+    [
+     "loro",
+     "fanno",
+     "vanno",
+     "stanno",
+     "escono",
+     "salgono",
+     "rimangono",
+     "bevono"
+    ]
+   ],
+   "examples": [
+    "Fa una danza di gioia.",
+    "Va a dormire."
+   ],
+   "notes": [
+    "andare a + инфинитив = идти делать что-то: vado a dormire, vado a mangiare."
+   ],
+   "lesson": "L01"
+  },
+  {
+   "id": "g5-riflessivi-presente",
+   "group": 5,
+   "title": "Возвратные глаголы в presente",
+   "rule": "Возвратное местоимение (mi, ti, si, ci, vi, si) ставится перед глаголом. Отрицание non — перед местоимением.",
+   "table": [
+    [
+     "",
+     "rilassarsi"
+    ],
+    [
+     "io",
+     "mi rilasso"
+    ],
+    [
+     "tu",
+     "ti rilassi"
+    ],
+    [
+     "lui/lei",
+     "si rilassa"
+    ],
+    [
+     "noi",
+     "ci rilassiamo"
+    ],
+    [
+     "voi",
+     "vi rilassate"
+    ],
+    [
+     "loro",
+     "si rilassano"
+    ]
+   ],
+   "examples": [
+    "Si rilassa.",
+    "Si annoia!",
+    "Non si addormenta.",
+    "Si agita, si stressa."
+   ],
+   "mistakes": [
+    "Правильный порядок: non si addormenta (не si non addormenta).",
+    "С частями тела — артикль, а не притяжательное: si lava i denti (не lava i suoi denti).",
+    "В passato prossimo возвратные — всегда с essere: si è rilassato, si è addormentata."
+   ],
+   "more_examples": [
+    "Mi arrabbio perché tu sei cattivo.",
+    "Mi stresso quando ho tante cose da fare.",
+    "Mi preoccupo per la famiglia.",
+    "Mi innervosisco quando sono molto stanco!",
+    "Mi agito per l'esame.",
+    "Mi annoio quando guardo un film che non mi piace."
+   ],
+   "isc_table": [
+    [
+     "",
+     "innervosirsi (-isc-)"
+    ],
+    [
+     "io",
+     "mi innervosisco"
+    ],
+    [
+     "tu",
+     "ti innervosisci"
+    ],
+    [
+     "lui/lei",
+     "si innervosisce"
+    ],
+    [
+     "noi",
+     "ci innervosiamo"
+    ],
+    [
+     "voi",
+     "vi innervosite"
+    ],
+    [
+     "loro",
+     "si innervosiscono"
+    ]
+   ],
+   "emotions": [
+    [
+     "arrabbiarsi (con)",
+     "злиться (на кого-то)"
+    ],
+    [
+     "stressarsi",
+     "испытывать стресс от нагрузки"
+    ],
+    [
+     "preoccuparsi (per)",
+     "тревожиться за кого/что"
+    ],
+    [
+     "innervosirsi",
+     "раздражаться, терять терпение"
+    ],
+    [
+     "agitarsi (per)",
+     "волноваться перед чем-то"
+    ],
+    [
+     "annoiarsi",
+     "скучать (от безделья)"
+    ]
+   ],
+   "lesson": "L01, L02"
+  },
+  {
+   "id": "g5-piacere-mancare",
+   "group": 5,
+   "title": "Глаголы piacere и mancare (mi piace, mi manca)",
+   "rule": "Подлежащее — то, что нравится / чего не хватает. Глагол согласуется с ним: ед.ч. или инфинитив → 3 л. ед.ч. (piace, manca); мн.ч. → 3 л. мн.ч. (piacciono, mancano). Mi = a me («мне»), это не возвратное местоимение.",
+   "table": [
+    [
+     "кому",
+     "ед.ч.",
+     "мн.ч."
+    ],
+    [
+     "a me → mi",
+     "mi piace la pizza",
+     "mi piacciono le pizze"
+    ],
+    [
+     "a te → ti",
+     "ti manca tuo figlio",
+     "ti mancano i tuoi figli"
+    ],
+    [
+     "a lui → gli",
+     "gli piace",
+     "gli piacciono"
+    ],
+    [
+     "a lei → le",
+     "le piace",
+     "le piacciono"
+    ],
+    [
+     "a Lei (вежл.) → Le",
+     "Le piace",
+     "Le piacciono"
+    ],
+    [
+     "a noi → ci",
+     "ci piace",
+     "ci piacciono"
+    ],
+    [
+     "a voi → vi",
+     "vi piace",
+     "vi piacciono"
+    ],
+    [
+     "a loro → gli",
+     "gli piace",
+     "gli piacciono"
+    ]
+   ],
+   "examples": [
+    "Mi manca mio figlio.",
+    "Mi piace la pizza.",
+    "Mi piace leggere.",
+    "Un film che non mi piace."
+   ],
+   "mistakes": [
+    "Не «io piaccio la pizza», а «mi piace la pizza».",
+    "Мн.ч.: mi piacciono gli spaghetti (не mi piace gli spaghetti).",
+    "Скучать — два разных глагола: mi manca mio figlio (скучаю ПО кому-то) ≠ mi annoio (мне скучно).",
+    "Два разных mi: mi arrabbio — «я злюсь (себя)», подлежащее io; mi piace — «мне нравится», подлежащее — то, что нравится.",
+    "В passato prossimo — essere, причастие согласуется с подлежащим: mi è piaciuta la pizza, mi sono mancati i miei amici.",
+    "Mancare по всем лицам — кого не хватает, тот подлежащее: Ti manco? (ты скучаешь по мне?), Mi manchi (я скучаю по тебе), Mi manca mio figlio, Ti mancano i tuoi genitori?",
+    "La famiglia, la gente — ед.ч. по грамматике: ti manca la tua famiglia, mi piace la gente.",
+    "Imperfetto: piaceva (ед.ч. и инфинитив) / piacevano (мн.ч.). Местоимение по-прежнему «кому»: gli piaceva (ему), le piaceva (ей)."
+   ],
+   "lesson": "L02, L23",
+   "tenses": [
+    [
+     "",
+     "ед.ч. / инфинитив",
+     "мн.ч."
+    ],
+    [
+     "presente",
+     "mi piace la pizza / giocare",
+     "mi piacciono gli spaghetti"
+    ],
+    [
+     "imperfetto",
+     "mi piaceva la musica rock / giocare",
+     "mi piacevano i Beatles"
+    ],
+    [
+     "passato prossimo",
+     "mi è piaciuto il film / mi è piaciuta la pizza",
+     "mi sono piaciuti i libri / mi sono piaciute le canzoni"
+    ]
+   ],
+   "pronouns_note": "a me → mi piaceva, a te → ti piaceva, a lui → gli piaceva, a lei → le piaceva, a noi → ci piaceva, a voi → vi piaceva, a loro → gli piaceva"
+  },
+  {
+   "id": "g5-presente-tu",
+   "group": 5,
+   "title": "Presente: форма tu (вопросы «ты»)",
+   "rule": "Во всех трёх спряжениях форма tu оканчивается на -i: cammini, prendi, pulisci. Возвратные: ti + глагол (ti alzi, ti svegli, ti muovi).",
+   "table": [
+    [
+     "инфинитив",
+     "tu",
+     "что запомнить"
+    ],
+    [
+     "camminare",
+     "cammini",
+     "-are → -i"
+    ],
+    [
+     "prendere / mettere",
+     "prendi / metti",
+     "-ere → -i"
+    ],
+    [
+     "salire",
+     "sali",
+     "-ire → -i (но io salgo)"
+    ],
+    [
+     "pulire",
+     "pulisci",
+     "-isc-"
+    ],
+    [
+     "svegliarsi / lasciare",
+     "ti svegli / lasci",
+     "-iare: одна i"
+    ],
+    [
+     "mancare / cercare / pagare",
+     "manchi / cerchi / paghi",
+     "-care/-gare: + h"
+    ],
+    [
+     "andare / stare / uscire / rimanere",
+     "vai / stai / esci / rimani",
+     "неправильные"
+    ]
+   ],
+   "examples": [
+    "Come passi la giornata?",
+    "A che ora ti alzi?",
+    "Esci con gli amici la sera?",
+    "Come ti muovi in città?"
+   ],
+   "mistakes": [
+    "-iare: ti svegli, lasci, mangi (не svegli-i, lascii).",
+    "-care/-gare: cerchi, paghi, manchi — h сохраняет твёрдый звук.",
+    "uscire: в формах io/tu/lui/loro корень esc-: esco, esci, esce, escono; но usciamo, uscite."
+   ],
+   "lesson": "L03"
+  },
+  {
+   "id": "g1-articoli-determinativi",
+   "group": 1,
+   "title": "Определённый артикль (il, lo, l', la / i, gli, le)",
+   "rule": "Выбор зависит от рода и первой буквы следующего слова.",
+   "table": [
+    [
+     "",
+     "ед.ч.",
+     "мн.ч.",
+     "когда"
+    ],
+    [
+     "муж.",
+     "il",
+     "i",
+     "перед обычной согласной: il cibo → i cibi"
+    ],
+    [
+     "муж.",
+     "lo",
+     "gli",
+     "перед z, s+согласная, gn, ps, y: lo zaino → gli zaini, lo studente → gli studenti"
+    ],
+    [
+     "муж.",
+     "l'",
+     "gli",
+     "перед гласной: l'ordine → gli ordini, l'esame → gli esami"
+    ],
+    [
+     "жен.",
+     "la",
+     "le",
+     "перед согласной: la bevanda → le bevande"
+    ],
+    [
+     "жен.",
+     "l'",
+     "le",
+     "перед гласной: l'amica → le amiche"
+    ]
+   ],
+   "examples": [
+    "Prende gli ordini.",
+    "Parla con i clienti.",
+    "Porta il cibo e le bevande.",
+    "Controlla i bambini."
+   ],
+   "mistakes": [
+    "gli ordini, gli amici (не i ordini).",
+    "la persona — всегда жен. род, даже о мужчине: le persone.",
+    "Перед словом на гласную во мн.ч. апострофа нет: gli esami, le amiche (не gl'esami)."
+   ],
+   "lesson": "L04"
+  },
+  {
+   "id": "g4-verbi-a-di",
+   "group": 4,
+   "title": "Глагол + a / di + инфинитив",
+   "rule": "Некоторые глаголы присоединяют инфинитив через предлог. Предлог надо запоминать вместе с глаголом.",
+   "table": [
+    [
+     "+ a",
+     "+ di"
+    ],
+    [
+     "cominciare a lavorare",
+     "finire di lavorare"
+    ],
+    [
+     "iniziare a studiare",
+     "cercare di capire"
+    ],
+    [
+     "andare a dormire",
+     "smettere di fumare"
+    ],
+    [
+     "imparare a parlare",
+     "decidere di partire"
+    ]
+   ],
+   "examples": [
+    "Comincia a lavorare.",
+    "Finisce di lavorare di notte.",
+    "Va a dormire.",
+    "Cerco di non mangiare troppo."
+   ],
+   "mistakes": [
+    "Comincio a lavorare (не comincio lavorare).",
+    "Finisco di lavorare (не finisco a lavorare).",
+    "Без предлога: piacere, volere, potere, dovere + инфинитив: mi piace leggere, voglio dormire."
+   ],
+   "lesson": "L04"
+  },
+  {
+   "id": "g4-ore",
+   "group": 4,
+   "title": "Время: alle + час, di notte / di sera",
+   "rule": "«В X часов» = alle + число (le ore). Исключения: all'una, a mezzogiorno, a mezzanotte. Часть суток: di mattina, di pomeriggio, di sera, di notte.",
+   "table": [
+    [
+     "цифрами",
+     "словами"
+    ],
+    [
+     "alle 8:30",
+     "alle otto e mezza"
+    ],
+    [
+     "alle 20:30",
+     "alle venti e trenta / alle otto e mezza di sera"
+    ],
+    [
+     "alle 2:30",
+     "alle due e mezza (di notte)"
+    ],
+    [
+     "alle 9:15",
+     "alle nove e un quarto"
+    ],
+    [
+     "alle 9:45",
+     "alle dieci meno un quarto"
+    ],
+    [
+     "13:00",
+     "all'una"
+    ]
+   ],
+   "examples": [
+    "Alle 20:30 Anna esce di casa.",
+    "Finisce di lavorare di notte, alle 2:30."
+   ],
+   "mistakes": [
+    "Вечернее время в письме обычно 24-часовое: alle 20:30. Alle 8:30 без уточнения — утро.",
+    "Перед гласной e союз e часто становится ed: saluta i figli ed esce."
+   ],
+   "lesson": "L04"
+  },
+  {
+   "id": "g4-preposizioni-articolate",
+   "group": 4,
+   "title": "Предлог + артикль (alle, delle, all', nel…)",
+   "rule": "Предлоги a, di, da, in, su сливаются с определённым артиклем в одно слово.",
+   "table": [
+    [
+     "",
+     "il",
+     "lo",
+     "l'",
+     "la",
+     "i",
+     "gli",
+     "le"
+    ],
+    [
+     "a",
+     "al",
+     "allo",
+     "all'",
+     "alla",
+     "ai",
+     "agli",
+     "alle"
+    ],
+    [
+     "di",
+     "del",
+     "dello",
+     "dell'",
+     "della",
+     "dei",
+     "degli",
+     "delle"
+    ],
+    [
+     "da",
+     "dal",
+     "dallo",
+     "dall'",
+     "dalla",
+     "dai",
+     "dagli",
+     "dalle"
+    ],
+    [
+     "in",
+     "nel",
+     "nello",
+     "nell'",
+     "nella",
+     "nei",
+     "negli",
+     "nelle"
+    ],
+    [
+     "su",
+     "sul",
+     "sullo",
+     "sull'",
+     "sulla",
+     "sui",
+     "sugli",
+     "sulle"
+    ]
+   ],
+   "examples": [
+    "Va all'officina.",
+    "Esce alle 8.",
+    "Lavora fino alle 13.",
+    "Va a letto prima delle 23."
+   ],
+   "mistakes": [
+    "Часы — всегда с артиклем: alle 8, dalle 9 alle 17, prima delle 23 (но a mezzogiorno, a mezzanotte).",
+    "Без артикля в устойчивых выражениях: a casa, a letto, a scuola, in banca, in discoteca, in ufficio, in città.",
+    "con и per обычно не сливаются: con gli amici, per il pranzo."
+   ],
+   "lesson": "L06"
+  },
+  {
+   "id": "g2-descrizione-persona",
+   "group": 2,
+   "title": "Описание человека: внешность и характер (essere / avere / fare)",
+   "rule": "essere + прилагательное (какой он), avere + возраст и части тела, fare + артикль + профессия. Прилагательное согласуется по роду и числу.",
+   "table": [
+    [
+     "глагол",
+     "что",
+     "пример"
+    ],
+    [
+     "essere",
+     "фигура, характер",
+     "è alto, magro, robusto; è timido, gentile"
+    ],
+    [
+     "essere",
+     "лысый",
+     "è calvo"
+    ],
+    [
+     "avere",
+     "возраст",
+     "ha 22 anni"
+    ],
+    [
+     "avere",
+     "глаза",
+     "ha gli occhi chiari / scuri / verdi / blu"
+    ],
+    [
+     "avere",
+     "волосы",
+     "ha i capelli biondi, castani, neri, ricci, lunghi"
+    ],
+    [
+     "portare",
+     "очки, бороду",
+     "porta gli occhiali, porta la barba"
+    ],
+    [
+     "fare",
+     "профессия",
+     "fa il meccanico"
+    ]
+   ],
+   "agreement": [
+    [
+     "тип",
+     "ед.ч. м / ж",
+     "мн.ч. м / ж",
+     "примеры"
+    ],
+    [
+     "-o / -a",
+     "alto / alta",
+     "alti / alte",
+     "basso, magro, grasso, biondo, castano, timido, pigro"
+    ],
+    [
+     "-e (один для обоих родов)",
+     "verde",
+     "verdi",
+     "marrone, intelligente, gentile, socievole, triste"
+    ],
+    [
+     "-co, -go → -chi, -ghi",
+     "lungo / bianco",
+     "lunghi / bianchi",
+     "bianche, lunghe"
+    ],
+    [
+     "неизменяемые",
+     "blu",
+     "blu",
+     "rosa, viola: gli occhi blu"
+    ]
+   ],
+   "examples": [
+    "Peppino è un ragazzo alto, magro, con gli occhi scuri.",
+    "Ha 22 anni e fa il meccanico."
+   ],
+   "mistakes": [
+    "Возраст — avere: ho 44 anni (не sono 44 anni).",
+    "gli occhi scuri — прилагательное во мн.ч. м.р., как и occhi.",
+    "fare il meccanico — с артиклем; essere meccanico — без.",
+    "Притяжательные с родственниками: в ед.ч. без артикля (mio suocero, mia nuora, tuo cognato), во мн.ч. — с артиклем (i miei suoceri, le mie cognate). Loro — всегда с артиклем: il loro figlio.",
+    "Глаза — avere: ha gli occhi azzurri (не è occhi). Лысый — essere: è calvo.",
+    "Цвет согласуется с occhi/capelli (м.р. мн.ч.): occhi neri, capelli bianchi, occhi verdi; blu — не меняется.",
+    "Ложный друг: educato = воспитанный, а не «образованный».",
+    "Прилагательное обычно ПОСЛЕ существительного: una ragazza timida, un uomo gentile."
+   ],
+   "lesson": "L06, L09, L11",
+   "opposites": [
+    [
+     "grasso",
+     "magro"
+    ],
+    [
+     "alto",
+     "basso"
+    ],
+    [
+     "chiaro",
+     "scuro"
+    ],
+    [
+     "corto",
+     "lungo"
+    ],
+    [
+     "pigro",
+     "attivo"
+    ],
+    [
+     "timido",
+     "socievole"
+    ],
+    [
+     "intelligente",
+     "stupido"
+    ],
+    [
+     "gentile",
+     "scortese"
+    ],
+    [
+     "tranquillo",
+     "agitato"
+    ],
+    [
+     "aperto",
+     "chiuso"
+    ],
+    [
+     "educato",
+     "maleducato"
+    ],
+    [
+     "allegro",
+     "triste"
+    ]
+   ]
+  },
+  {
+   "id": "g5-modali-presente",
+   "group": 5,
+   "title": "Модальные глаголы: potere, volere, dovere",
+   "rule": "Неправильные в presente. Инфинитив после них — без предлога: posso venire, voglio dormire, devo lavorare.",
+   "table": [
+    [
+     "",
+     "potere",
+     "volere",
+     "dovere"
+    ],
+    [
+     "io",
+     "posso",
+     "voglio",
+     "devo"
+    ],
+    [
+     "tu",
+     "puoi",
+     "vuoi",
+     "devi"
+    ],
+    [
+     "lui/lei",
+     "può",
+     "vuole",
+     "deve"
+    ],
+    [
+     "noi",
+     "possiamo",
+     "vogliamo",
+     "dobbiamo"
+    ],
+    [
+     "voi",
+     "potete",
+     "volete",
+     "dovete"
+    ],
+    [
+     "loro",
+     "possono",
+     "vogliono",
+     "devono"
+    ]
+   ],
+   "examples": [
+    "Può comprare la casa.",
+    "Vuole una macchina nuova.",
+    "Devi dare i soldi alla banca."
+   ],
+   "mistakes": [
+    "può — с ударением.",
+    "Без предлога: devo lavorare (не devo di lavorare)."
+   ],
+   "lesson": "L06"
+  },
+  {
+   "id": "g5-passato-prossimo-base",
+   "group": 5,
+   "title": "Passato prossimo",
+   "rule": "avere / essere в presente + причастие (participio). -are → -ato, -ere → -uto, -ire → -ito. С essere причастие согласуется с подлежащим (-o/-a/-i/-e).",
+   "table": [
+    [
+     "",
+     "avere + причастие",
+     "essere + причастие"
+    ],
+    [
+     "io",
+     "ho cominciato",
+     "sono andato/a"
+    ],
+    [
+     "tu",
+     "hai cominciato",
+     "sei andato/a"
+    ],
+    [
+     "lui/lei",
+     "ha cominciato",
+     "è andato/a"
+    ],
+    [
+     "noi",
+     "abbiamo cominciato",
+     "siamo andati/e"
+    ],
+    [
+     "voi",
+     "avete cominciato",
+     "siete andati/e"
+    ],
+    [
+     "loro",
+     "hanno cominciato",
+     "sono andati/e"
+    ]
+   ],
+   "examples": [
+    "Ha frequentato un corso.",
+    "Ha cominciato a lavorare.",
+    "È tornata a casa."
+   ],
+   "notes": [
+    "essere: глаголы движения/состояния (andare, venire, uscire, tornare, arrivare, rimanere, diventare) и все возвратные. Остальные — avere.",
+    "Неправильные причастия в словаре помечены: fatto, letto, preso, messo, chiesto, rimasto, corso…"
+   ],
+   "board_examples": [
+    "Io ho studiato (studiare).",
+    "Tu sei andata (andare).",
+    "Noi abbiamo dormito (dormire).",
+    "Lui ha bevuto (bere)."
+   ],
+   "agreement": [
+    [
+     "",
+     "м. ед.",
+     "ж. ед.",
+     "м. мн.",
+     "ж. мн."
+    ],
+    [
+     "-are",
+     "andato",
+     "andata",
+     "andati",
+     "andate"
+    ],
+    [
+     "-ere",
+     "caduto",
+     "caduta",
+     "caduti",
+     "cadute"
+    ],
+    [
+     "-ire",
+     "uscito",
+     "uscita",
+     "usciti",
+     "uscite"
+    ]
+   ],
+   "essere_list": [
+    "движение: andare, venire, arrivare, partire, tornare, ritornare, uscire, entrare, salire, scendere",
+    "состояние/изменение: essere, stare, rimanere, restare, diventare, crescere, nascere, morire, succedere",
+    "все возвратные: mi sono alzato/a, si è rilassato",
+    "piacere, mancare: mi è piaciuto, mi è mancata"
+   ],
+   "avere_list": [
+    "глаголы с объектом: ho mangiato la pizza, ho comprato il pane, ho venduto la macchina",
+    "и многие без объекта: abitare, ballare, camminare, cenare, dormire, giocare, girare, lavorare, nuotare, parlare, passeggiare, pranzare, telefonare, viaggiare"
+   ],
+   "irregular_participles": [
+    [
+     "fare",
+     "fatto"
+    ],
+    [
+     "leggere",
+     "letto"
+    ],
+    [
+     "scrivere",
+     "scritto"
+    ],
+    [
+     "dire",
+     "detto"
+    ],
+    [
+     "prendere",
+     "preso"
+    ],
+    [
+     "mettere",
+     "messo"
+    ],
+    [
+     "chiedere",
+     "chiesto"
+    ],
+    [
+     "vedere",
+     "visto"
+    ],
+    [
+     "rimanere",
+     "rimasto"
+    ],
+    [
+     "correre",
+     "corso"
+    ],
+    [
+     "piangere",
+     "pianto"
+    ],
+    [
+     "aprire",
+     "aperto"
+    ],
+    [
+     "bere",
+     "bevuto"
+    ],
+    [
+     "venire",
+     "venuto"
+    ],
+    [
+     "essere / stare",
+     "stato"
+    ],
+    [
+     "nascere",
+     "nato"
+    ],
+    [
+     "morire",
+     "morto"
+    ],
+    [
+     "muoversi",
+     "mosso"
+    ],
+    [
+     "piacere",
+     "piaciuto"
+    ],
+    [
+     "chiudere",
+     "chiuso"
+    ],
+    [
+     "vincere",
+     "vinto"
+    ],
+    [
+     "perdere",
+     "perso"
+    ],
+    [
+     "spegnere",
+     "spento"
+    ],
+    [
+     "accendere",
+     "acceso"
+    ],
+    [
+     "scegliere",
+     "scelto"
+    ],
+    [
+     "spendere",
+     "speso"
+    ],
+    [
+     "scendere",
+     "sceso"
+    ],
+    [
+     "spingere",
+     "spinto"
+    ],
+    [
+     "succedere",
+     "successo"
+    ],
+    [
+     "promettere",
+     "promesso"
+    ],
+    [
+     "permettere",
+     "permesso"
+    ],
+    [
+     "proporre",
+     "proposto"
+    ],
+    [
+     "reggere",
+     "retto"
+    ],
+    [
+     "ridere",
+     "riso"
+    ],
+    [
+     "ridurre",
+     "ridotto"
+    ],
+    [
+     "correggere",
+     "corretto"
+    ],
+    [
+     "rispondere",
+     "risposto"
+    ],
+    [
+     "decidere",
+     "deciso"
+    ],
+    [
+     "rompere",
+     "rotto"
+    ],
+    [
+     "dipingere",
+     "dipinto"
+    ],
+    [
+     "sciogliere",
+     "sciolto"
+    ],
+    [
+     "dirigere",
+     "diretto"
+    ],
+    [
+     "discutere",
+     "discusso"
+    ],
+    [
+     "soffrire",
+     "sofferto"
+    ],
+    [
+     "offrire",
+     "offerto"
+    ],
+    [
+     "stringere",
+     "stretto"
+    ],
+    [
+     "togliere",
+     "tolto"
+    ],
+    [
+     "tradurre",
+     "tradotto"
+    ],
+    [
+     "crescere",
+     "cresciuto"
+    ],
+    [
+     "vivere",
+     "vissuto"
+    ]
+   ],
+   "irregular_groups": [
+    [
+     "-so / -sso",
+     "preso, chiuso, acceso, speso, sceso, perso, messo, successo, deciso, riso, promesso, permesso, discusso"
+    ],
+    [
+     "-tto",
+     "fatto, letto, detto, scritto, rotto, retto, corretto, diretto, stretto, tradotto, ridotto"
+    ],
+    [
+     "-sto",
+     "chiesto, rimasto, visto, risposto, proposto"
+    ],
+    [
+     "-rto",
+     "aperto, morto, offerto, sofferto"
+    ],
+    [
+     "-nto",
+     "vinto, spento, spinto, pianto, dipinto"
+    ],
+    [
+     "-lto",
+     "scelto, tolto, sciolto"
+    ],
+    [
+     "другие",
+     "venuto, nato, stato, bevuto, corso, mosso, piaciuto, cresciuto, vissuto"
+    ]
+   ],
+   "mistakes": [
+    "С essere причастие согласуется: Anna è andata, i ragazzi sono usciti, le ragazze sono tornate. С avere — не меняется: Anna ha mangiato.",
+    "Смешанная группа (м. + ж.) — мужской род мн.ч.: Marco e Anna sono andati.",
+    "non — перед вспомогательным: non ho studiato. Già, mai, ancora — между: ho già mangiato, non ho mai visto.",
+    "essere/stare → оба stato: sono stato a Roma (я был в Риме).",
+    "Вежливое Lei → 3 л. ед.ч., причастие по реальному полу: Professore, ha preso…? Signorina, è arrivata…?",
+    "conoscere в passato prossimo = познакомиться: ho conosciuto un ragazzo.",
+    "passare: è passato con il rosso (essere — движение, проехал) ≠ ha passato la serata (avere — провёл время).",
+    "Части тела и одежда у возвратных: si è cambiato la camicia (не ha cambiato la sua camicia)."
+   ],
+   "time_markers": [
+    "ieri, ieri sera",
+    "stamattina, stanotte",
+    "domenica scorsa, la settimana scorsa, l'anno scorso",
+    "due ore fa, una settimana fa, qualche giorno fa (fa = назад, после времени)"
+   ],
+   "lesson": "L06, L07, L10",
+   "both_aux": [
+    [
+     "scendere",
+     "Mario è sceso dal treno (откуда — essere)",
+     "Carlo ha sceso le scale (что — avere)"
+    ],
+    [
+     "correre",
+     "Piero è corso a casa (куда — essere)",
+     "Daria ha corso per un'ora (сколько — avere)"
+    ],
+    [
+     "vivere",
+     "Mio nonno è vissuto a lungo",
+     "Fabio ha vissuto dieci anni a Londra"
+    ],
+    [
+     "salire",
+     "sono salito sull'autobus",
+     "ho salito le scale"
+    ],
+    [
+     "passare",
+     "è passato con il rosso",
+     "ha passato la serata a casa"
+    ]
+   ]
+  },
+  {
+   "id": "g5-reciproci",
+   "group": 5,
+   "title": "Взаимные глаголы (amarsi — любить друг друга)",
+   "rule": "Возвратная форма во мн.ч. (ci, vi, si) может значить «друг друга». В passato prossimo — essere, причастие во мн.ч.",
+   "table": [
+    [
+     "",
+     "presente",
+     "passato prossimo"
+    ],
+    [
+     "noi",
+     "ci amiamo",
+     "ci siamo amati/e"
+    ],
+    [
+     "voi",
+     "vi amate",
+     "vi siete amati/e"
+    ],
+    [
+     "loro",
+     "si amano",
+     "si sono amati/e"
+    ]
+   ],
+   "examples": [
+    "Io amo mio marito. → Io ho amato mio marito. (avere)",
+    "Io e mio marito ci siamo amati. (essere)",
+    "Ci siamo conosciuti a Lugano.",
+    "Si sono sposati nel 2010."
+   ],
+   "mistakes": [
+    "amare + кого-то → avere: ho amato; amarsi (друг друга) → essere: ci siamo amati.",
+    "Io (ж.) e mio marito → amati (смешанная группа — м.р.).",
+    "Две женщины: ci siamo viste, si sono conosciute.",
+    "innamorarsi DI qualcuno: mi sono innamorato di lei (не «in lei»).",
+    "sposarsi CON qualcuno: mi sono sposato con Anna; или без предлога и с avere: ho sposato Anna."
+   ],
+   "lesson": "L07, L12",
+   "pairs": [
+    [
+     "avere + кого (переходный)",
+     "essere + друг друга (взаимный)"
+    ],
+    [
+     "Ho conosciuto Anna.",
+     "Io e Anna ci siamo conosciuti."
+    ],
+    [
+     "Ho sposato Anna.",
+     "Io e Anna ci siamo sposati. / Mi sono sposato con Anna."
+    ],
+    [
+     "Ho amato Anna.",
+     "Ci siamo amati."
+    ],
+    [
+     "—",
+     "Ci siamo innamorati. / Mi sono innamorato di Anna."
+    ]
+   ]
+  },
+  {
+   "id": "g5-futuro-semplice",
+   "group": 5,
+   "title": "Futuro semplice",
+   "rule": "-ARE и -ERE получают одинаковые окончания (a → e): arrivare → arriverò, conoscere → conoscerò. -IRE: partirò. Окончания: -ò, -ai, -à, -emo, -ete, -anno.",
+   "table": [
+    [
+     "",
+     "arrivare",
+     "conoscere",
+     "partire"
+    ],
+    [
+     "io",
+     "arriverò",
+     "conoscerò",
+     "partirò"
+    ],
+    [
+     "tu",
+     "arriverai",
+     "conoscerai",
+     "partirai"
+    ],
+    [
+     "lui/lei/Lei",
+     "arriverà",
+     "conoscerà",
+     "partirà"
+    ],
+    [
+     "noi",
+     "arriveremo",
+     "conosceremo",
+     "partiremo"
+    ],
+    [
+     "voi",
+     "arriverete",
+     "conoscerete",
+     "partirete"
+    ],
+    [
+     "loro",
+     "arriveranno",
+     "conosceranno",
+     "partiranno"
+    ]
+   ],
+   "irregular_table": [
+    [
+     "тип",
+     "глаголы",
+     "основа → io"
+    ],
+    [
+     "короткие (a остаётся)",
+     "essere, dare, fare, stare",
+     "sarò, darò, farò, starò"
+    ],
+    [
+     "группа 1: выпадает гласная",
+     "andare, avere, potere, dovere, sapere, vedere, cadere, vivere",
+     "andr-ò, avr-ò, potr-ò, dovr-ò, sapr-ò, vedr-ò, cadr-ò, vivr-ò"
+    ],
+    [
+     "группа 2: двойное rr",
+     "venire, rimanere, tenere, volere, bere",
+     "verr-ò, rimarr-ò, terr-ò, vorr-ò, berr-ò"
+    ]
+   ],
+   "examples": [
+    "Comincerà un nuovo lavoro.",
+    "Metterà da parte i soldi.",
+    "Chiederà un prestito.",
+    "Sarà felice."
+   ],
+   "mistakes": [
+    "-ciare/-giare теряют i: cominciare → comincerò, mangiare → mangerò.",
+    "-care/-gare + h: cercare → cercherò, pagare → pagherò.",
+    "Ударение в io и lui/lei пишется: comprerò, comprerà (знак à, ò — наклон влево).",
+    "Слова-маркеры: domani, la settimana prossima, l'anno prossimo, in futuro, tra due anni."
+   ],
+   "lesson": "L06, L26, L27",
+   "spelling": [
+    [
+     "-care / -gare → + h во всех лицах",
+     "pagare: pagherò, pagherai, pagherà, pagheremo, pagherete, pagheranno"
+    ],
+    [
+     "-ciare / -giare → теряют i во всех лицах",
+     "cominciare: comincerò, comincerai, comincerà, cominceremo, comincerete, cominceranno"
+    ]
+   ],
+   "uses": [
+    [
+     "действия в будущем",
+     "Domani arriveranno i miei amici francesi."
+    ],
+    [
+     "планы, проекты",
+     "L'anno prossimo mi iscriverò all'università."
+    ],
+    [
+     "объявления",
+     "Il treno delle 10:30 per Firenze partirà dal binario 10."
+    ],
+    [
+     "обещания",
+     "Non preoccuparti: ti aiuterò io a finire questo lavoro!"
+    ],
+    [
+     "прогнозы",
+     "Tra qualche anno il computer diventerà un normale elettrodomestico."
+    ],
+    [
+     "сомнения, предположения",
+     "Dove sarà Marta? — Sarà ancora in riunione."
+    ]
+   ],
+   "source": "учебник «I verbi italiani», с. 49–50",
+   "board_note": "Доска: -ARE = -ERE (abitare → abiterò), -IRE → -ir- (partirò); essere — неправильный (sarò…). Местоимение к инфинитиву: comunicarvi = comunicare a voi."
+  },
+  {
+   "id": "g5-imperfetto",
+   "group": 5,
+   "title": "Imperfetto (прошедшее незаконченное)",
+   "rule": "Основа инфинитива (без -re) + -vo, -vi, -va, -vamo, -vate, -vano. Используется для описания прошлого: как было, что делали обычно, возраст, время, погода, чувства, фон.",
+   "table": [
+    [
+     "",
+     "ascoltare",
+     "volere",
+     "sentire"
+    ],
+    [
+     "io",
+     "ascoltavo",
+     "volevo",
+     "sentivo"
+    ],
+    [
+     "tu",
+     "ascoltavi",
+     "volevi",
+     "sentivi"
+    ],
+    [
+     "lui/lei",
+     "ascoltava",
+     "voleva",
+     "sentiva"
+    ],
+    [
+     "noi",
+     "ascoltavamo",
+     "volevamo",
+     "sentivamo"
+    ],
+    [
+     "voi",
+     "ascoltavate",
+     "volevate",
+     "sentivate"
+    ],
+    [
+     "loro",
+     "ascoltavano",
+     "volevano",
+     "sentivano"
+    ]
+   ],
+   "irregular_table": [
+    [
+     "",
+     "essere",
+     "fare",
+     "bere",
+     "dire"
+    ],
+    [
+     "io",
+     "ero",
+     "facevo",
+     "bevevo",
+     "dicevo"
+    ],
+    [
+     "tu",
+     "eri",
+     "facevi",
+     "bevevi",
+     "dicevi"
+    ],
+    [
+     "lui/lei",
+     "era",
+     "faceva",
+     "beveva",
+     "diceva"
+    ],
+    [
+     "noi",
+     "eravamo",
+     "facevamo",
+     "bevevamo",
+     "dicevamo"
+    ],
+    [
+     "voi",
+     "eravate",
+     "facevate",
+     "bevevate",
+     "dicevate"
+    ],
+    [
+     "loro",
+     "erano",
+     "facevano",
+     "bevevano",
+     "dicevano"
+    ]
+   ],
+   "uses": [
+    [
+     "описание, обстановка",
+     "Era il mio primo giorno in una scuola nuova."
+    ],
+    [
+     "возраст, время, погода",
+     "Avevamo 15 anni. Erano le otto. Faceva freddo."
+    ],
+    [
+     "привычка, повторялось",
+     "Ascoltavamo molta musica insieme. Non facevamo niente."
+    ],
+    [
+     "чувства, желания, состояния",
+     "Mi piaceva stare in fondo. Voleva dormire. Eravamo felici."
+    ],
+    [
+     "фон для другого события",
+     "Mentre dormivo, è suonato il telefono."
+    ]
+   ],
+   "examples": [
+    "Quando avevamo 15 anni…",
+    "Mi piaceva stare in fondo all'aula.",
+    "Andrea sedeva lì perché voleva dormire."
+   ],
+   "mistakes": [
+    "Ударение в noi/voi на -va-: eravamo, ascoltavamo (а не èravamo).",
+    "essere — неправильный: ero, eri, era, eravamo, eravate, erano.",
+    "Возраст в прошлом — imperfetto: quando avevo 15 anni (не ho avuto).",
+    "Возвратные в imperfetto сохраняют местоимение: si vestiva, si fermava, si metteva (не vestiva).",
+    "era + прилагательное (какой был), aveva + существительное (что имел): era alta, aveva i capelli rossi."
+   ],
+   "lesson": "L12, L15, L17"
+  },
+  {
+   "id": "g5-imperfetto-vs-passato",
+   "group": 5,
+   "title": "Imperfetto или passato prossimo",
+   "rule": "Passato prossimo — событие: случилось один раз, закончилось, двигает историю вперёд. Imperfetto — картина: как было, что происходило обычно, состояние и фон.",
+   "table": [
+    [
+     "passato prossimo — «что случилось?»",
+     "imperfetto — «как это было?»"
+    ],
+    [
+     "Ho incontrato Andrea.",
+     "Avevamo 15 anni. Era il mio primo giorno."
+    ],
+    [
+     "Mi ha fatto conoscere nuovi musicisti.",
+     "Ascoltavamo molta musica insieme."
+    ],
+    [
+     "È stato un anno tranquillo. (итог, весь год целиком)",
+     "Non facevamo niente ed eravamo felici."
+    ],
+    [
+     "Siamo andati all'università e ci siamo separati.",
+     "Mi piaceva stare in fondo all'aula."
+    ]
+   ],
+   "markers": [
+    [
+     "passato prossimo",
+     "ieri, una volta, un giorno, all'improvviso, a un certo punto, poi, … fa"
+    ],
+    [
+     "imperfetto",
+     "di solito, sempre, spesso, ogni giorno, mentre, da bambino, quando ero piccolo"
+    ]
+   ],
+   "examples": [
+    "Mentre + imperfetto, … + passato prossimo: Mentre ascoltavamo la musica, è entrato l'insegnante.",
+    "Quando ero in Sri Lanka e vivevo con la mia famiglia, ho conosciuto Mahesha.",
+    "Quando facevo la parrucchiera in Romania, ho conosciuto Mario e ci siamo sposati."
+   ],
+   "mistakes": [
+    "Повторялось много раз — imperfetto, даже если давно закончилось: da bambino giocavo a calcio.",
+    "Итог периода с точными рамками — passato prossimo: è stato un anno tranquillo, ho vissuto 10 anni a Londra.",
+    "nel + год работает с обоими временами: Nel 2005 abitavo a Roma (состояние, жил тогда) ≠ Nel 2005 sono andato a Roma (событие, поехал).",
+    "Погода в прошлом — почти всегда imperfetto: c'era il sole, faceva caldo, pioveva.",
+    "stare male: ieri stavo male (было плохо — состояние) ≠ ieri sono stato male (переболел, итог).",
+    "Срок + закончилось → passato prossimo, даже если долго: ho lavorato 5 anni. Без срока, «обычно» → imperfetto: lavoravo tutti i giorni."
+   ],
+   "lesson": "L12, L15, L21",
+   "board": {
+    "imperfetto": [
+     [
+      "абитудини — привычки в прошлом",
+      "Da bambina giocavo molto. Nel 2005 abitavo a Roma."
+     ],
+     [
+      "действие в процессе (фон)",
+      "Mentre… / Ieri leggevo e… è arrivato un messaggio."
+     ],
+     [
+      "описание: внешность, чувства, состояние, погода, место",
+      "A 15 anni avevo i capelli corti. Ieri stavo male. Lui era più simpatico prima! Ieri c'era il sole e faceva caldo. Il bar era vicino a casa mia. Tu eri stanco."
+     ]
+    ],
+    "passato_prossimo": [
+     [
+      "точное, завершённое действие",
+      "Io sono nata nel 1999. Tu hai studiato matematica. È arrivato un messaggio."
+     ]
+    ]
+   },
+   "story_model": {
+    "title": "Схема рассказа «Un incontro importante»",
+    "steps": [
+     [
+      "1. Когда и где (passato prossimo)",
+      "Un giorno / L'anno scorso / Nel 2003, al parco / a scuola, ho visto / ho incontrato…"
+     ],
+     [
+      "2. Описание момента (imperfetto)",
+      "Faceva…, andava…, era vestito/a…, era bello/a…, faceva caldo, c'era il sole…"
+     ],
+     [
+      "3. Реакция (passato prossimo + perché + imperfetto)",
+      "Sono rimasto sorpreso perché era…"
+     ],
+     [
+      "4. Цепочка событий (passato prossimo)",
+      "Abbiamo iniziato a parlare, poi siamo andati…, e così ci siamo conosciuti."
+     ],
+     [
+      "5. Итог (presente / passato prossimo)",
+      "Adesso siamo amici / sposati da … anni."
+     ]
+    ]
+   },
+   "textbook_table": [
+    [
+     "imperfetto",
+     "passato prossimo"
+    ],
+    [
+     "Nel mio paese lavoravo tutti i giorni — действие повторялось, длилось, не завершено (〰)",
+     "Nel mio paese ho lavorato 5 anni — точная длительность, завершено (↓)"
+    ],
+    [
+     "Mentre facevo l'università lavoravo — два длительных действия одновременно (〰〰)",
+     "Ho fatto l'università, poi ho lavorato — два завершённых действия одно за другим (↓↓)"
+    ],
+    [
+     "Mentre facevo l'università… — более длинное действие (фон)",
+     "…ho lavorato un po' — более короткое действие на его фоне (〰↓)"
+    ]
+   ]
+  },
+  {
+   "id": "g4-tempo-da-per-fa",
+   "group": 4,
+   "title": "Время: da, per, fa, nel, a (с какого момента, сколько, когда)",
+   "rule": "da + presente — действие началось в прошлом и продолжается сейчас. per + passato prossimo — сколько длилось, уже закончилось. … fa — сколько времени назад. nel + год — в каком году. a + возраст — в каком возрасте.",
+   "table": [
+    [
+     "предлог",
+     "вопрос",
+     "время глагола",
+     "пример"
+    ],
+    [
+     "da + срок",
+     "как давно? (и сейчас тоже)",
+     "presente",
+     "Ho il cane da 5 anni. Ballo la salsa da 27 anni."
+    ],
+    [
+     "dal / dalla + момент",
+     "с какого момента? (и сейчас)",
+     "presente",
+     "Sono in Ticino dal 2022. Lavoro qui dall'anno scorso. Ti aspetto dalle 8!"
+    ],
+    [
+     "per + срок",
+     "сколько длилось? (закончилось)",
+     "passato prossimo",
+     "Ho lavorato lì per 2 anni. Ho fatto quel lavoro per 5 anni."
+    ],
+    [
+     "срок + fa",
+     "когда? сколько назад",
+     "passato prossimo",
+     "Ho preso il cane 5 anni fa."
+    ],
+    [
+     "nel + год",
+     "в каком году?",
+     "passato prossimo",
+     "Ho preso il cane nel 2021. Ho iniziato nel 1999."
+    ],
+    [
+     "a + возраст",
+     "в каком возрасте?",
+     "passato prossimo",
+     "A 18 anni ho fatto l'operaio. Ho iniziato a ballare a 10 anni."
+    ]
+   ],
+   "examples": [
+    "Ho il cane da 5 anni = Ho preso il cane 5 anni fa = Ho preso il cane nel 2021.",
+    "Ballo la salsa da 27 anni = Ho iniziato a ballare nel 1999 / a 10 anni."
+   ],
+   "mistakes": [
+    "Русское «я живу здесь 5 лет» = Abito qui DA 5 anni (presente!), а не «ho abitato» и не «per».",
+    "per — только для закончившегося: ho lavorato lì per 2 anni (больше там не работаю).",
+    "fa ставится ПОСЛЕ срока: 5 anni fa (не fa 5 anni).",
+    "Год: nel 2021 (in + il), но в 2000-х тоже nel: nel 1999, nel 2005. Месяц — a/in: a maggio, in maggio.",
+    "Возраст — a + число без артикля: a 18 anni.",
+    "da + срок (da 4 anni) ≠ dal + дата (dal 2022): Sono in Ticino da 4 anni = dal 2022 = sono arrivato 4 anni fa.",
+    "Диапазон: da … a … сливаются с артиклем так же, как артикль: dal / dalla / dall' / dalle и al / alla / all' / alle.",
+    "Месяцы — без артикля: da settembre a giugno. Года и часы — с артиклем: dal 2022, dalle 8.",
+    "il lunedì с артиклем = по понедельникам (каждую неделю); lunedì без артикля = в этот понедельник.",
+    "tra / fra + срок = «через» (будущее): tra vent'anni, tra un mese. Не путать с fa = «назад» (прошлое)."
+   ],
+   "lesson": "L13, L14, L20",
+   "range": [
+    [
+     "что",
+     "формула",
+     "пример"
+    ],
+    [
+     "годы",
+     "dal + год + al + год",
+     "dal 2022 al 2026"
+    ],
+    [
+     "дни",
+     "dal + день + al + день",
+     "dal lunedì al giovedì"
+    ],
+    [
+     "часы",
+     "dalle + час + alle + час",
+     "dalle 8:50 alle 11:30 (но dall'una alle tre)"
+    ],
+    [
+     "недели, месяцы",
+     "dalla / dal … alla / al …",
+     "dalla prossima settimana all'ultima settimana; da settembre a giugno (месяцы без артикля)"
+    ]
+   ]
+  },
+  {
+   "id": "g5-avverbi-passato",
+   "group": 5,
+   "title": "già, non… ancora, appena, mai, sempre + passato prossimo",
+   "rule": "Наречие ставится МЕЖДУ вспомогательным глаголом и причастием: ho già mangiato. Non — перед вспомогательным.",
+   "table": [
+    [
+     "наречие",
+     "значение",
+     "пример"
+    ],
+    [
+     "già",
+     "уже",
+     "Hai già mangiato? — Sì, ho già mangiato."
+    ],
+    [
+     "non … ancora",
+     "ещё не",
+     "No, non ho ancora mangiato."
+    ],
+    [
+     "appena",
+     "только что",
+     "Sono appena arrivato."
+    ],
+    [
+     "mai (в вопросе)",
+     "когда-нибудь",
+     "Sei mai stato a Roma? Hai mai mangiato la fondue?"
+    ],
+    [
+     "non … mai",
+     "никогда",
+     "Non sono mai stato a Roma."
+    ],
+    [
+     "sempre",
+     "всегда",
+     "Ho sempre lavorato molto."
+    ],
+    [
+     "non … più",
+     "больше не",
+     "Non porta più gli occhiali. Non abito più a Kiev."
+    ],
+    [
+     "ancora",
+     "всё ещё",
+     "Porta ancora gli occhiali. Abito ancora qui."
+    ]
+   ],
+   "questions": [
+    [
+     "Cosa hai fatto (ieri / nel weekend)?",
+     "Что ты делал?",
+     "passato prossimo"
+    ],
+    [
+     "Per quanto tempo hai lavorato lì?",
+     "Как долго? (закончилось)",
+     "per + passato prossimo"
+    ],
+    [
+     "Da quanto tempo abiti in Ticino?",
+     "Как давно? (продолжается)",
+     "da + presente"
+    ],
+    [
+     "Quando sei arrivato?",
+     "Когда?",
+     "passato prossimo + fa / nel / a"
+    ],
+    [
+     "Hai mai…? / Sei mai…?",
+     "Ты когда-нибудь…?",
+     "avere или essere — по глаголу"
+    ]
+   ],
+   "mistakes": [
+    "Ho già mangiato (не già ho mangiato).",
+    "Ответ на «già?» отрицательный — non … ancora: Hai già finito? — No, non ho ancora finito.",
+    "Двойное отрицание нормально: non ho mai visto, non ho visto niente.",
+    "Hai mai…? или Sei mai…? — зависит от глагола: hai mai visto, но sei mai stato / sei mai andato."
+   ],
+   "lesson": "L16"
+  },
+  {
+   "id": "g5-connettivi-conseguenza",
+   "group": 5,
+   "title": "Связки следствия: quindi, perciò, allora, dunque",
+   "rule": "Все четыре значат «поэтому / значит». Ставятся между причиной и следствием. В рассказе в прошлом: причина часто в imperfetto, следствие — в passato prossimo.",
+   "table": [
+    [
+     "связка",
+     "оттенок",
+     "пример"
+    ],
+    [
+     "quindi",
+     "нейтральное, самое частое",
+     "Pioveva, quindi sono rimasto a casa."
+    ],
+    [
+     "perciò",
+     "нейтральное",
+     "Ero stanco, perciò sono andato a letto."
+    ],
+    [
+     "allora",
+     "разговорное",
+     "Non stavo bene, allora sono andata dal dottore."
+    ],
+    [
+     "dunque",
+     "книжное, «итак»",
+     "Dunque, ricapitoliamo."
+    ]
+   ],
+   "mistakes": [
+    "perciò — с ударением.",
+    "Причина ≠ следствие: perché (потому что) вводит причину, quindi — результат: Sono rimasto a casa perché pioveva = Pioveva, quindi sono rimasto a casa."
+   ],
+   "lesson": "L18"
+  },
+  {
+   "id": "g5-prima-ora",
+   "group": 5,
+   "title": "Prima e ora: как было и как стало (imperfetto / presente / passato prossimo)",
+   "rule": "Prima (раньше) → imperfetto: описание прошлого. Ora / adesso → presente: описание сейчас. Само изменение (что случилось) → passato prossimo: è diventato, ha cambiato, ha colorato, gli è cresciuta la barba.",
+   "table": [
+    [
+     "prima — imperfetto",
+     "ora — presente",
+     "изменение — passato prossimo"
+    ],
+    [
+     "aveva i capelli neri",
+     "ha i capelli rossi",
+     "ha colorato i capelli di rosso"
+    ],
+    [
+     "non portava gli occhiali",
+     "porta gli occhiali",
+     "ha cominciato a portare gli occhiali"
+    ],
+    [
+     "era magro",
+     "è grasso",
+     "è ingrassato"
+    ],
+    [
+     "si vestiva in modo casual",
+     "si veste in modo elegante",
+     "ha cambiato stile"
+    ],
+    [
+     "non aveva la barba",
+     "ha la barba",
+     "gli è cresciuta la barba"
+    ],
+    [
+     "era felice",
+     "è un po' triste",
+     "è diventato triste"
+    ],
+    [
+     "portava già gli occhiali",
+     "porta ancora gli occhiali",
+     "— (не изменилось)"
+    ],
+    [
+     "portava gli occhiali",
+     "non porta più gli occhiali",
+     "ha cominciato a portare le lenti a contatto"
+    ],
+    [
+     "era magro",
+     "è più grasso",
+     "è ingrassato (essere)"
+    ]
+   ],
+   "comparative": [
+    "più + прилагательное = более: i capelli sono più lunghi, era più felice",
+    "meno + прилагательное = менее: è meno allegro",
+    "più … di = чем: Matteo era più felice di adesso"
+   ],
+   "superlative": [
+    "-issimo = очень: bello → bellissimo, felice → felicissimo, lungo → lunghissimo (+h)"
+   ],
+   "mistakes": [
+    "portare gli occhiali / la barba / gli orecchini — «носить» (не avere gli occhiali).",
+    "avere freddo — мне холодно (ho freddo), не «sono freddo».",
+    "crescere — с essere, и подлежащее — то, что выросло: gli è cresciuta la barba (борода выросла ему).",
+    "cambiare: ha cambiato stile (avere — поменял что-то) ≠ è cambiato molto (essere — изменился сам).",
+    "Очки — portare: non portava gli occhiali (лучше, чем non aveva gli occhiali).",
+    "ingrassare / dimagrire — essere: è ingrassata, sono dimagrito.",
+    "il sopracciglio → le sopracciglia (мн.ч. женского рода!).",
+    "Все глаголы изменения (crescere, diventare, invecchiare, ingrassare, dimagrire) — с essere, причастие согласуется: mia madre è invecchiata."
+   ],
+   "lesson": "L19, L22",
+   "adverbs": [
+    [
+     "già (prima)",
+     "уже тогда",
+     "portava già gli occhiali"
+    ],
+    [
+     "ancora (ora)",
+     "всё ещё",
+     "porta ancora gli occhiali"
+    ],
+    [
+     "non … più (ora)",
+     "больше не",
+     "non porta più gli occhiali"
+    ]
+   ],
+   "change_verbs": [
+    [
+     "crescere",
+     "расти",
+     "sono cresciuto/a"
+    ],
+    [
+     "diventare",
+     "становиться",
+     "sono diventato/a"
+    ],
+    [
+     "invecchiare",
+     "стареть",
+     "sono invecchiato/a"
+    ],
+    [
+     "ingrassare",
+     "толстеть",
+     "sono ingrassato/a"
+    ],
+    [
+     "dimagrire",
+     "худеть",
+     "sono dimagrito/a"
+    ],
+    [
+     "cambiare (сам)",
+     "меняться",
+     "sono cambiato/a"
+    ]
+   ],
+   "examples": [
+    "Ero basso, poi sono cresciuto e sono diventato alto!"
+   ]
+  },
+  {
+   "id": "g5-coppia-tappe",
+   "group": 5,
+   "title": "Этапы отношений (лексика + passato prossimo с essere)",
+   "rule": "Все глаголы отношений — возвратные/взаимные, в passato prossimo с essere и причастием во мн.ч. (кроме divorziare — avere).",
+   "table": [
+    [
+     "порядок",
+     "глагол",
+     "passato prossimo (noi / loro)"
+    ],
+    [
+     "1",
+     "conoscersi — познакомиться",
+     "ci siamo conosciuti / si sono conosciuti"
+    ],
+    [
+     "2",
+     "innamorarsi — влюбиться",
+     "ci siamo innamorati / si sono innamorati"
+    ],
+    [
+     "3",
+     "mettersi insieme — начать встречаться",
+     "ci siamo messi insieme / si sono messi insieme"
+    ],
+    [
+     "4",
+     "fidanzarsi — обручиться",
+     "ci siamo fidanzati / si sono fidanzati"
+    ],
+    [
+     "5",
+     "sposarsi — пожениться",
+     "ci siamo sposati / si sono sposati"
+    ],
+    [
+     "6",
+     "divorziare — развестись",
+     "abbiamo divorziato / hanno divorziato (avere!)"
+    ]
+   ],
+   "mistakes": [
+    "divorziare — НЕ возвратный: hanno divorziato (не si sono divorziati).",
+    "mettersi insieme — причастие messo: si sono messi insieme."
+   ],
+   "lesson": "L24"
+  }
+ ],
+ "exercises": [
+  {
+   "id": "e001",
+   "topic": "g5-presente-regular",
+   "task": "Перескажи текст от первого лица (io).",
+   "answer": "Torno a casa: trovo un messaggio e leggo. Divento molto felice: faccio una danza di gioia, festeggio! Fumo una sigaretta e mi rilasso. Dopo, ceno da solo, lavo i piatti e passo l'aspirapolvere: mi annoio! Dopo le pulizie, mi lavo i denti e vado a dormire solo. Ma non mi addormento, perché mi agito, mi stresso e piango.",
+   "lesson": "L01"
+  },
+  {
+   "id": "e002",
+   "topic": "g5-riflessivi-presente",
+   "task": "Вставь местоимение: 1) Noi ___ annoiamo. 2) Tu ___ rilassi? 3) Loro non ___ addormentano. 4) Io ___ lavo i denti. 5) Voi ___ stressate.",
+   "answer": "1) ci 2) ti 3) si 4) mi 5) vi",
+   "lesson": "L01"
+  },
+  {
+   "id": "e003",
+   "topic": "g5-riflessivi-presente",
+   "task": "Возвратный или нет? 1) Lui (lavare) ___ i piatti. 2) Lui (lavarsi) ___ i denti. 3) Io (rilassarsi) ___ dopo il lavoro. 4) Lei (cenare) ___ da sola.",
+   "answer": "1) lava 2) si lava 3) mi rilasso 4) cena",
+   "lesson": "L01"
+  },
+  {
+   "id": "e004",
+   "topic": "g5-riflessivi-presente",
+   "task": "Переведи: 1) Я не могу заснуть. 2) Она скучает дома. 3) Мы расслабляемся вечером. 4) Он идёт спать.",
+   "answer": "1) Non mi addormento. 2) Si annoia a casa. 3) Ci rilassiamo la sera. 4) Va a dormire.",
+   "lesson": "L01"
+  },
+  {
+   "id": "e005",
+   "topic": "g5-piacere-mancare",
+   "task": "piace/piacciono, manca/mancano: 1) Mi ___ la pizza. 2) Mi ___ gli spaghetti. 3) Ti ___ la tua famiglia? 4) Mi ___ i miei amici. 5) Non mi ___ questo film. 6) Mi ___ leggere.",
+   "answer": "1) piace 2) piacciono 3) manca 4) mancano 5) piace 6) piace",
+   "lesson": "L02"
+  },
+  {
+   "id": "e006",
+   "topic": "g5-piacere-mancare",
+   "task": "Переведи (внимание: два «скучать»): 1) Я скучаю по маме. 2) Мне скучно на работе. 3) Я беспокоюсь за детей. 4) Мне нравятся фильмы. 5) Я раздражаюсь, когда устаю. 6) Он злится на меня.",
+   "answer": "1) Mi manca mia madre. 2) Mi annoio al lavoro. 3) Mi preoccupo per i figli. 4) Mi piacciono i film. 5) Mi innervosisco quando sono stanco. 6) Si arrabbia con me.",
+   "lesson": "L02"
+  },
+  {
+   "id": "e007",
+   "topic": "g5-riflessivi-presente",
+   "task": "Проспрягай innervosirsi во всех лицах.",
+   "answer": "mi innervosisco, ti innervosisci, si innervosisce, ci innervosiamo, vi innervosite, si innervosiscono",
+   "lesson": "L02"
+  },
+  {
+   "id": "e008",
+   "topic": "g5-riflessivi-presente",
+   "task": "Напиши о себе 4 фразы по модели: Mi ___ quando / perché / per ___ (arrabbiarsi, stressarsi, preoccuparsi, annoiarsi).",
+   "answer": "Свободный ответ. Пример: Mi stresso quando ho un esame. Mi preoccupo per i miei figli.",
+   "lesson": "L02"
+  },
+  {
+   "id": "e009",
+   "topic": "g5-presente-tu",
+   "task": "Напиши форму tu: 1) mangiare 2) cercare 3) finire 4) pagare 5) lavarsi 6) fare 7) leggere 8) preferire",
+   "answer": "1) mangi 2) cerchi 3) finisci 4) paghi 5) ti lavi 6) fai 7) leggi 8) preferisci",
+   "lesson": "L03"
+  },
+  {
+   "id": "e010",
+   "topic": "g5-presente-irregular",
+   "task": "Напиши форму io: 1) uscire 2) salire 3) rimanere 4) stare 5) andare 6) fare",
+   "answer": "1) esco 2) salgo 3) rimango 4) sto 5) vado 6) faccio",
+   "lesson": "L03"
+  },
+  {
+   "id": "e011",
+   "topic": "g5-presente-tu",
+   "task": "Задай другу 5 вопросов о его воскресенье (форма tu), используя: svegliarsi, alzarsi, uscire, rimanere, preparare. Потом ответь на них от io.",
+   "answer": "Пример: A che ora ti svegli? — Mi sveglio alle nove. Esci o rimani a casa? — Rimango a casa. Prepari il pranzo? — Sì, preparo il pranzo.",
+   "lesson": "L03"
+  },
+  {
+   "id": "e012",
+   "topic": "g1-articoli-determinativi",
+   "task": "Поставь артикль: 1) ___ ordini 2) ___ cliente 3) ___ bevande 4) ___ studente 5) ___ amici 6) ___ zaino 7) ___ esame 8) ___ persone",
+   "answer": "1) gli 2) il 3) le 4) lo 5) gli 6) lo 7) l' 8) le",
+   "lesson": "L04"
+  },
+  {
+   "id": "e013",
+   "topic": "g4-verbi-a-di",
+   "task": "a или di: 1) Comincio ___ lavorare alle nove. 2) Finisco ___ lavorare alle cinque. 3) Vado ___ dormire. 4) Cerco ___ non bere troppo. 5) Smetto ___ fumare.",
+   "answer": "1) a 2) di 3) a 4) di 5) di",
+   "lesson": "L04"
+  },
+  {
+   "id": "e014",
+   "topic": "g5-presente-regular",
+   "task": "Перескажи историю Анны от первого лица (io).",
+   "answer": "Alle 20:30 saluto i figli, che guardano la TV, ed esco di casa. Arrivo in discoteca, mi cambio i vestiti e comincio a lavorare. Prendo gli ordini, parlo con i clienti, porto il cibo e le bevande e servo, mentre le persone ballano, bevono e si divertono. Finisco di lavorare di notte, alle 2:30: mi cambio ancora i vestiti e torno a casa. Quando arrivo a casa, controllo i bambini, che già dormono.",
+   "lesson": "L04"
+  },
+  {
+   "id": "e015",
+   "topic": "g4-ore",
+   "task": "Напиши словами: 1) 7:30 2) 13:00 3) 9:15 4) 22:00 5) 0:00",
+   "answer": "1) alle sette e mezza 2) all'una 3) alle nove e un quarto 4) alle ventidue / alle dieci di sera 5) a mezzanotte",
+   "lesson": "L04"
+  },
+  {
+   "id": "e016",
+   "topic": "g5-presente-regular",
+   "task": "Напиши свой день от io, используя глаголы: farsi la doccia, vestirsi, uscire, correre, prendere, incontrare, lavorare, finire, tornare, sdraiarsi, mangiare, riposarsi, aspettare, addormentarsi.",
+   "answer": "Пример: La mattina mi faccio la doccia e mi vesto. Esco di casa, corro alla fermata e prendo l'autobus. Al lavoro incontro i colleghi e parliamo un po'. Lavoro fino alle cinque. Quando finisco, esco e torno a casa. Mi sdraio sul divano, mangio, bevo un tè, guardo la TV o leggo: mi riposo. Aspetto mia moglie, che torna alle sette. La sera facciamo una passeggiata. Sono stanco e mi addormento subito.",
+   "lesson": "L05"
+  },
+  {
+   "id": "e017",
+   "topic": "g5-presente-regular",
+   "task": "Поставь в форму io: 1) versare 2) ritirare 3) correre 4) sdraiarsi 5) aspettare 6) bere 7) uscire 8) farsi la doccia",
+   "answer": "1) verso 2) ritiro 3) corro 4) mi sdraio 5) aspetto 6) bevo 7) esco 8) mi faccio la doccia",
+   "lesson": "L05"
+  },
+  {
+   "id": "e018",
+   "topic": "g5-futuro-semplice",
+   "task": "Распредели по временам (presente / passato / futuro): può, è, ha frequentato, comincerà, vuole, ha, ha cominciato, metterà, fa, esce, chiederà, prende, comprerà, va, lavorerà, lavora, guadagnerà, ricomincia, sarà, torna.",
+   "answer": "Presente: può, è, vuole, ha, fa, esce, prende, va, lavora, ricomincia, torna. Passato: ha frequentato, ha cominciato. Futuro: comincerà, metterà, chiederà, comprerà, lavorerà, guadagnerà, sarà.",
+   "lesson": "L06"
+  },
+  {
+   "id": "e019",
+   "topic": "g5-futuro-semplice",
+   "task": "Поставь в futuro (io): 1) risparmiare 2) guadagnare 3) essere 4) avere 5) andare 6) mangiare 7) pagare 8) fare",
+   "answer": "1) risparmierò 2) guadagnerò 3) sarò 4) avrò 5) andrò 6) mangerò 7) pagherò 8) farò",
+   "lesson": "L06"
+  },
+  {
+   "id": "e020",
+   "topic": "g5-modali-presente",
+   "task": "potere/volere/dovere: 1) Io non ___ (potere) uscire stasera. 2) Tu ___ (volere) un caffè? 3) Noi ___ (dovere) lavorare. 4) Loro ___ (volere) comprare una casa. 5) Lei ___ (potere) chiedere un prestito.",
+   "answer": "1) posso 2) vuoi 3) dobbiamo 4) vogliono 5) può",
+   "lesson": "L06"
+  },
+  {
+   "id": "e021",
+   "topic": "vocab-soldi",
+   "task": "Вставь: risparmiare, guadagnare, prestare, prestito, mettere da parte. 1) Lavoro molto ma ___ poco. 2) Mi ___ 20 franchi? 3) Per comprare la casa chiedo un ___. 4) Ogni mese ___ 200 franchi (io). 5) Non vado in vacanza perché devo ___.",
+   "answer": "1) guadagno 2) presti 3) prestito 4) metto da parte 5) risparmiare",
+   "lesson": "L06"
+  },
+  {
+   "id": "e022",
+   "topic": "g2-descrizione-persona",
+   "task": "Переведи: 1) Мне 44 года. 2) Он работает механиком. 3) У неё тёмные глаза. 4) Она высокая и худая. 5) Мои друзья высокие.",
+   "answer": "1) Ho 44 anni. 2) Fa il meccanico. 3) Ha gli occhi scuri. 4) È alta e magra. 5) I miei amici sono alti.",
+   "lesson": "L06"
+  },
+  {
+   "id": "e023",
+   "topic": "g4-preposizioni-articolate",
+   "task": "Слей предлог с артиклем: 1) Vado (a + la) stazione. 2) Lavoro fino (a + le) 18. 3) Torno prima (di + le) 23. 4) Il libro è (su + il) tavolo. 5) Vado (a + l') officina. 6) Lavoro (da + le) 9 (a + le) 17.",
+   "answer": "1) alla 2) alle 3) delle 4) sul 5) all' 6) dalle … alle",
+   "lesson": "L06"
+  },
+  {
+   "id": "e024",
+   "topic": "g5-presente-regular",
+   "task": "Ответь по-итальянски по тексту: 1) Quanti anni ha Peppino? 2) Che lavoro fa? 3) A che ora esce di casa? 4) Cosa fa il sabato sera? 5) Cosa vuole fare in futuro?",
+   "answer": "1) Ha 22 anni. 2) Fa il meccanico. 3) Esce alle 8. 4) Va in discoteca con gli amici. 5) Vuole aprire un'officina tutta sua.",
+   "lesson": "L06"
+  },
+  {
+   "id": "e025",
+   "topic": "g5-futuro-semplice",
+   "task": "Перескажи планы Пеппино от io (futuro).",
+   "answer": "Comincerò a risparmiare, metterò da parte un po' di soldi ogni mese e chiederò anche un prestito in banca. Fra qualche anno comprerò un garage e così lavorerò da solo. All'inizio forse non guadagnerò molto, ma sarò sicuramente più soddisfatto.",
+   "lesson": "L06"
+  },
+  {
+   "id": "e026",
+   "topic": "g5-passato-prossimo-base",
+   "task": "Поставь в passato prossimo: 1) io (studiare) 2) Anna (andare) 3) noi (dormire) 4) lui (bere) 5) le ragazze (uscire) 6) tu, Marco (tornare) 7) voi (mangiare) 8) io, женщина (alzarsi)",
+   "answer": "1) ho studiato 2) è andata 3) abbiamo dormito 4) ha bevuto 5) sono uscite 6) sei tornato 7) avete mangiato 8) mi sono alzata",
+   "lesson": "L07"
+  },
+  {
+   "id": "e027",
+   "topic": "g5-passato-prossimo-base",
+   "task": "essere или avere: 1) Ieri ___ lavorato fino alle 18 (io). 2) Maria ___ arrivata tardi. 3) Noi ___ rimasti a casa. 4) Loro ___ preso il treno. 5) Mi ___ piaciuto il film.",
+   "answer": "1) ho 2) è 3) siamo 4) hanno 5) è",
+   "lesson": "L07"
+  },
+  {
+   "id": "e028",
+   "topic": "g5-passato-prossimo-base",
+   "task": "Неправильные причастия: fare, leggere, prendere, mettere, chiedere, rimanere, aprire, vedere, scrivere, dire.",
+   "answer": "fatto, letto, preso, messo, chiesto, rimasto, aperto, visto, scritto, detto",
+   "lesson": "L07"
+  },
+  {
+   "id": "e029",
+   "topic": "g5-passato-prossimo-base",
+   "task": "Перескажи текст L01 (Lui torna a casa…) в passato prossimo, начиная с «Ieri sera…».",
+   "answer": "Ieri sera lui è tornato a casa: ha trovato un messaggio e ha letto. È diventato molto felice: ha fatto una danza di gioia, ha festeggiato! Ha fumato una sigaretta e si è rilassato. Dopo, ha cenato da solo, ha lavato i piatti e ha passato l'aspirapolvere: si è annoiato! Dopo le pulizie si è lavato i denti ed è andato a dormire solo. Ma non si è addormentato, perché si è agitato, si è stressato e ha pianto.",
+   "lesson": "L07"
+  },
+  {
+   "id": "e030",
+   "topic": "g5-reciproci",
+   "task": "Поставь в passato prossimo: 1) Noi (conoscersi) a Lugano. 2) Marco e Anna (sposarsi) nel 2015. 3) Le amiche (vedersi) ieri. 4) Io (amare) quel film. 5) Io e mia moglie (amarsi) subito.",
+   "answer": "1) ci siamo conosciuti 2) si sono sposati 3) si sono viste 4) ho amato 5) ci siamo amati",
+   "lesson": "L07"
+  },
+  {
+   "id": "e031",
+   "topic": "g5-passato-prossimo-base",
+   "task": "Причастие + essere/avere (io): chiudere la porta, vincere la partita, nascere a Mariupol, venire a Lugano, rimanere a casa.",
+   "answer": "ho chiuso la porta, ho vinto la partita, sono nato a Mariupol, sono venuto a Lugano, sono rimasto a casa",
+   "lesson": "L07"
+  },
+  {
+   "id": "e032",
+   "topic": "g5-passato-prossimo-base",
+   "task": "Вставь passato prossimo: 1) Cosa (succedere)? 2) Io (perdere) le chiavi. 3) Tu (spegnere) la luce? 4) Quanto (spendere) ieri (voi)? 5) Noi (scendere) dall'autobus. 6) Lei (scegliere) il vestito rosso. 7) Lui (accendere) la TV. 8) Mio nonno (morire) nel 2010.",
+   "answer": "1) è successo 2) ho perso 3) hai spento 4) avete speso 5) siamo scesi 6) ha scelto 7) ha acceso 8) è morto",
+   "lesson": "L07"
+  },
+  {
+   "id": "e033",
+   "topic": "g5-passato-prossimo-base",
+   "source": "учебник (не для публикации в приложении как есть)",
+   "task": "Completate con il passato prossimo: 1) Ieri Matteo (finire) di cenare e poi (accendere) la TV per guardare il telegiornale. 2) Stamattina (io-arrivare) tardi alla stazione e (perdere) il treno. 3) Qualche giorno fa i miei amici (andare) all'agenzia di viaggi e (prenotare) un viaggio in Egitto. 4) Alla fermata dell'autobus (noi-incontrare) Antonio: (noi-parlare) del più e del meno, poi lui (salire) sul 22 e noi (prendere) il 39. 5) Ieri Valeria (rimanere) tutto il pomeriggio a casa: (ascoltare) la musica e (scrivere) una lettera a un ragazzo che (conoscere) durante le vacanze. 6) Lorenzo, quando (tornare) dalle vacanze? – Una settimana fa. 7) Domenica scorsa Sergio e io (fare) una gita in campagna: (passare) tutta la giornata in mezzo al verde, (pranzare) al sacco e (tornare) verso le 19. 8) Ragazzi, quando (partire) da Milano? – Circa due ore fa. 9) Professore, (prendere) già il caffè? 10) Oggi non (io-leggere) ancora il giornale perché non (avere) tempo. 11) Signorina, (arrivare) tardi stamattina. Come mai? – Mi dispiace, ma stanotte non (stare) bene e allora stamattina (andare) dal dottore. 12) Ieri sera Aldo (cominciare) a leggere un libro giallo.",
+   "answer": "1) ha finito, ha acceso 2) sono arrivato/a, ho perso 3) sono andati, hanno prenotato 4) abbiamo incontrato, abbiamo parlato, è salito, abbiamo preso 5) è rimasta, ha ascoltato, ha scritto, ha conosciuto 6) sei tornato 7) abbiamo fatto, abbiamo passato, abbiamo pranzato, siamo tornati 8) siete partiti 9) ha preso 10) ho letto, ho avuto 11) è arrivata, sono stata, sono andata 12) ha cominciato",
+   "lesson": "L07"
+  },
+  {
+   "id": "e034",
+   "topic": "g5-passato-prossimo-base",
+   "task": "Перескажи историю Андреа от его лица (io): Ieri sera sono uscito di casa…",
+   "answer": "Ieri sera sono uscito di casa alle 20, ho preso la macchina e ho dato un passaggio ai miei amici. A un certo punto, un poliziotto ha fermato la mia macchina e mi ha dato una multa perché sono passato con il rosso. Poi, finalmente, io e i miei amici siamo arrivati in centro a Milano e abbiamo visitato il Duomo. Dopo, ho lasciato gli amici e sono andato con la mia ragazza: abbiamo mangiato una pizza al ristorante. Dopo cena mi sono cambiato la camicia e sono andato in discoteca: lì ho conosciuto un'altra ragazza, ho ballato e mi sono divertito.",
+   "lesson": "L08"
+  },
+  {
+   "id": "e035",
+   "topic": "g5-passato-prossimo-base",
+   "task": "passare: essere или avere? 1) Andrea ___ passato con il rosso. 2) Noi ___ passato la serata a casa. 3) Il treno ___ passato alle 8. 4) Come ___ passato il weekend (tu)?",
+   "answer": "1) è 2) abbiamo 3) è 4) hai",
+   "lesson": "L08"
+  },
+  {
+   "id": "e036",
+   "topic": "g2-descrizione-persona",
+   "task": "Кто это? 1) Il padre di mia moglie è mio ___. 2) Il marito di mia figlia è mio ___. 3) La moglie di mio figlio è mia ___. 4) La sorella di mio marito è mia ___. 5) I genitori di mio marito sono i miei ___. Добавь артикль, где нужен: 6) ___ mio genero 7) ___ miei cognati.",
+   "answer": "1) suocero 2) genero 3) nuora 4) cognata 5) suoceri 6) — (mio genero) 7) i (i miei cognati)",
+   "lesson": "L09"
+  },
+  {
+   "id": "e037",
+   "topic": "g2-descrizione-persona",
+   "task": "Согласуй прилагательное: 1) Maria è (allegro). 2) I ragazzi sono (triste). 3) Le amiche sono (ubriaco). 4) Mio cognato è (triste).",
+   "answer": "1) allegra 2) tristi 3) ubriache 4) triste",
+   "lesson": "L09"
+  },
+  {
+   "id": "e038",
+   "topic": "g5-passato-prossimo-base",
+   "task": "Причастия: rispondere, decidere, rompere, offrire, togliere, tradurre, ridere, discutere, promettere, correggere.",
+   "answer": "risposto, deciso, rotto, offerto, tolto, tradotto, riso, discusso, promesso, corretto",
+   "lesson": "L10"
+  },
+  {
+   "id": "e039",
+   "topic": "g5-passato-prossimo-base",
+   "task": "essere или avere: 1) Io ___ cresciuto in Ucraina. 2) Noi ___ abitato a Lugano. 3) Lei ___ entrata in banca. 4) Loro ___ viaggiato molto. 5) Marco ___ corso a casa. 6) Marco ___ corso per un'ora. 7) Anna ___ scesa dal treno. 8) Anna ___ sceso le scale.",
+   "answer": "1) sono 2) abbiamo 3) è 4) hanno 5) è 6) ha 7) è 8) ha",
+   "lesson": "L10"
+  },
+  {
+   "id": "e040",
+   "topic": "g5-passato-prossimo-base",
+   "task": "Напиши 6 фраз о своей жизни в passato prossimo: nascere, crescere, studiare, vivere, venire, decidere.",
+   "answer": "Пример: Sono nato a Mariupol e sono cresciuto in Ucraina. Ho studiato economia e diritto. Ho vissuto in Ucraina fino al 2021 (свои даты). Sono venuto in Svizzera con la mia famiglia. Ho deciso di imparare l'italiano.",
+   "lesson": "L10"
+  },
+  {
+   "id": "e041",
+   "topic": "g5-passato-prossimo-base",
+   "source": "учебник (не для публикации в приложении как есть)",
+   "task": "Completate con -o, -a, -i, -e: 1) Ieri Vittorio è andat_ dal medico. 2) Francesco è nat_ a Roma. 3) In estate i ragazzi sono rimast_ in città. 4) Lucia è uscit_ di casa alle 7. 5) Barbara e Irene sono venut_ in Italia due mesi fa. 6) Maria è nat_ il 7 luglio 1967. 7) I miei genitori sono nat_ e vissut_ in Grecia. 8) L'anno scorso Dino e io siamo stat_ in Francia, a Parigi, 10 giorni. 9) Mio nonno è mort_ dieci anni fa. 10) Angelo e Sandro sono tornat_ … 11) Marta è arrivat_ in Italia una settimana fa. 12) Le bambine sono rimast_ a casa tutto il pomeriggio.",
+   "answer": "1) o 2) o 3) i 4) a 5) e 6) a 7) i, i 8) i 9) o 10) i 11) a 12) e",
+   "lesson": "L10"
+  },
+  {
+   "id": "e042",
+   "topic": "g2-descrizione-persona",
+   "task": "Дай противоположность: grasso, alto, chiaro, corto, pigro, timido, intelligente, gentile, tranquillo, aperto, educato, allegro.",
+   "answer": "magro, basso, scuro, lungo, attivo, socievole, stupido, scortese, agitato, chiuso, maleducato, triste",
+   "lesson": "L11"
+  },
+  {
+   "id": "e043",
+   "topic": "g2-descrizione-persona",
+   "task": "Согласуй: 1) Anna ha i capelli (biondo) e (lungo). 2) Marco ha gli occhi (verde). 3) Le ragazze sono (socievole). 4) Mio nonno ha i capelli (bianco). 5) Lei ha gli occhi (blu). 6) Le mie sorelle sono (timido).",
+   "answer": "1) biondi, lunghi 2) verdi 3) socievoli 4) bianchi 5) blu 6) timide",
+   "lesson": "L11"
+  },
+  {
+   "id": "e044",
+   "topic": "g2-descrizione-persona",
+   "task": "Опиши себя или члена семьи (6–8 фраз): Fisico — essere/avere, occhi, capelli. Carattere — 3–4 прилагательных.",
+   "answer": "Пример: Mia moglie è alta e magra. Ha gli occhi verdi e i capelli castani, lunghi e lisci. È una persona allegra e socievole, molto gentile e intelligente. A volte è un po' agitata, ma di solito è tranquilla.",
+   "lesson": "L11"
+  },
+  {
+   "id": "e045",
+   "topic": "g5-imperfetto",
+   "task": "Найди в тексте все глаголы и раздели: passato prossimo / imperfetto.",
+   "answer": "Passato prossimo: ho incontrato, mi ha fatto conoscere, è stato, siamo andati, ci siamo separati. Imperfetto: avevamo, era, mi piaceva, vedevano, sedeva, voleva, ascoltavamo, facevamo, eravamo.",
+   "lesson": "L12"
+  },
+  {
+   "id": "e046",
+   "topic": "g5-imperfetto",
+   "task": "Поставь в imperfetto: 1) io (essere) 2) noi (avere) 3) loro (fare) 4) tu (volere) 5) lei (dormire) 6) voi (bere) 7) io (dire) 8) noi (essere)",
+   "answer": "1) ero 2) avevamo 3) facevano 4) volevi 5) dormiva 6) bevevate 7) dicevo 8) eravamo",
+   "lesson": "L12"
+  },
+  {
+   "id": "e047",
+   "topic": "g5-imperfetto-vs-passato",
+   "task": "Imperfetto или passato prossimo: 1) Quando (io-avere) 10 anni, (abitare) a Mariupol. 2) Ieri (io-incontrare) Marco al bar. 3) Da bambino (giocare) sempre a calcio. 4) Mentre (noi-cenare), (suonare) il telefono. 5) (essere) una bella giornata e (fare) caldo. 6) L'anno scorso (noi-andare) in Italia.",
+   "answer": "1) avevo, abitavo 2) ho incontrato 3) giocavo 4) cenavamo, è suonato / ha suonato 5) era, faceva 6) siamo andati",
+   "lesson": "L12"
+  },
+  {
+   "id": "e048",
+   "topic": "g5-imperfetto-vs-passato",
+   "task": "Напиши 5–6 фраз о своём школьном друге по модели текста: Ho conosciuto … quando avevo … anni. Era… Di solito… Poi…",
+   "answer": "Свободный ответ.",
+   "lesson": "L12"
+  },
+  {
+   "id": "e049",
+   "topic": "g5-reciproci",
+   "task": "avere или essere: 1) Io ___ conosciuto mia moglie a Kiev. 2) Io e mia moglie ci ___ conosciuti nel 2003. 3) Lui ___ sposato una ragazza italiana. 4) Marco e Anna si ___ sposati a giugno. 5) Mi ___ innamorato di lei subito. 6) Le ragazze si ___ conosciute a scuola.",
+   "answer": "1) ho 2) siamo 3) ha 4) sono 5) sono 6) sono",
+   "lesson": "L12"
+  },
+  {
+   "id": "e050",
+   "topic": "g5-reciproci",
+   "task": "Расскажи историю пары (свою или придуманную) в 4–5 фразах: conoscersi, innamorarsi, sposarsi + imperfetto для фона (quando avevamo…, era…).",
+   "answer": "Пример: Io e mia moglie ci siamo conosciuti all'università: avevamo vent'anni. Era una ragazza allegra e socievole. Ci siamo innamorati subito e dopo tre anni ci siamo sposati.",
+   "lesson": "L12"
+  },
+  {
+   "id": "e051",
+   "topic": "g4-tempo-da-per-fa",
+   "task": "da, per, fa, nel или a: 1) Vivo a Lugano ___ cinque anni. 2) Ho studiato l'inglese ___ tre anni, poi ho smesso. 3) Sono venuto in Svizzera cinque anni ___. 4) Sono nato ___ 1981. 5) ___ 20 anni ho finito l'università. 6) Studio l'italiano ___ un anno. 7) Ho fatto boxe ___ dieci anni.",
+   "answer": "1) da 2) per 3) fa 4) nel 5) A 6) da 7) per",
+   "lesson": "L13"
+  },
+  {
+   "id": "e052",
+   "topic": "g4-tempo-da-per-fa",
+   "task": "Скажи одно и то же тремя способами: «У меня машина с 2016 года» (da / fa / nel). И о себе: 4 фразы — живу в Лугано, учу итальянский, работал(а) кем-то раньше, начал(а) заниматься спортом.",
+   "answer": "Ho la macchina da 10 anni. Ho comprato la macchina 10 anni fa. Ho comprato la macchina nel 2016. Пример о себе: Abito a Lugano da cinque anni. Studio l'italiano da un anno. Ho fatto l'avvocato per alcuni anni. Ho iniziato a fare boxe a … anni.",
+   "lesson": "L13"
+  },
+  {
+   "id": "e053",
+   "topic": "g4-tempo-da-per-fa",
+   "task": "Ответь на те же вопросы о себе (форма io): 1) Dove sei nato? 2) Dove hai vissuto? 3) Che scuole hai fatto? 4) Dove hai lavorato? 5) Sei sposato? Hai figli? 6) Da quanto tempo sei in Ticino?",
+   "answer": "Пример: 1) Sono nato in Ucraina, il 15 luglio 1981. 2) Ho vissuto in Ucraina e adesso vivo in Svizzera. 3) Ho fatto la scuola e poi ho studiato economia e diritto all'università. 4) Ho lavorato come avvocato e ho avuto un'azienda. 5) Sì, sono sposato e ho … figli. 6) Sono in Ticino da cinque anni: sono arrivato cinque anni fa.",
+   "lesson": "L14"
+  },
+  {
+   "id": "e054",
+   "topic": "g4-tempo-da-per-fa",
+   "task": "da или dal/dalla/dall': 1) Abito qui ___ 2021. 2) Studio l'italiano ___ un anno. 3) Lavoro ___ settembre. 4) Ti aspetto ___ mezz'ora! 5) Sono sposato ___ 2005. 6) Non ti vedo ___ estate.",
+   "answer": "1) dal 2) da 3) da (с месяцами — da settembre) 4) da 5) dal 6) dall'",
+   "lesson": "L14"
+  },
+  {
+   "id": "e055",
+   "topic": "g5-imperfetto-vs-passato",
+   "task": "Почему такое время? Определи функцию (привычка / фон / описание / событие): 1) Da bambino giocavo a calcio. 2) Ieri c'era il sole. 3) Sono nato nel 1981. 4) Mentre leggevo, è arrivato un messaggio. 5) Mio nonno era alto e robusto. 6) Ho studiato economia.",
+   "answer": "1) привычка 2) описание (погода) 3) событие 4) фон + событие 5) описание 6) событие (завершённое)",
+   "lesson": "L15"
+  },
+  {
+   "id": "e056",
+   "topic": "g5-imperfetto-vs-passato",
+   "task": "Напиши о своём детстве 6 фраз в imperfetto по модели доски: Da bambino abitavo… / Avevo i capelli… / Ero… / Di solito giocavo… / D'estate faceva… / Il mio migliore amico era… И одну фразу-событие в passato prossimo: Un giorno…",
+   "answer": "Пример: Da bambino abitavo a Mariupol. Avevo i capelli corti e biondi. Ero un bambino attivo e allegro. Di solito giocavo a calcio con gli amici. D'estate faceva molto caldo e andavamo al mare. Un giorno ho cominciato a fare boxe.",
+   "lesson": "L15"
+  },
+  {
+   "id": "e057",
+   "topic": "g5-avverbi-passato",
+   "task": "Ответь по модели: 1) Hai già mangiato? (no) 2) Sei mai stato in Italia? (sì) 3) Hai già finito i compiti? (sì) 4) Hai mai visto il Duomo di Milano? (no) 5) Marco è arrivato? (sì, только что)",
+   "answer": "1) No, non ho ancora mangiato. 2) Sì, sono stato in Italia. 3) Sì, ho già finito i compiti. 4) No, non ho mai visto il Duomo di Milano. 5) Sì, è appena arrivato.",
+   "lesson": "L16"
+  },
+  {
+   "id": "e058",
+   "topic": "g5-avverbi-passato",
+   "task": "Поставь наречие на место: 1) Ho mangiato (già). 2) Non sono stato a Roma (mai). 3) Non ho letto il libro (ancora). 4) È uscita (appena).",
+   "answer": "1) Ho già mangiato. 2) Non sono mai stato a Roma. 3) Non ho ancora letto il libro. 4) È appena uscita.",
+   "lesson": "L16"
+  },
+  {
+   "id": "e059",
+   "topic": "g5-imperfetto-vs-passato",
+   "task": "Racconta un incontro importante (8–10 фраз): кого встретил, где, когда; imperfetto — фон (quanti anni avevi, com'era la persona, che tempo faceva, cosa facevi); passato prossimo — события (ci siamo conosciuti, abbiamo parlato, poi…).",
+   "answer": "Свободный ответ — тема теста.",
+   "lesson": "L16"
+  },
+  {
+   "id": "e060",
+   "topic": "g5-imperfetto",
+   "source": "учебник (не для публикации в приложении как есть)",
+   "task": "Es. 17 — Metti il verbo all'imperfetto: tu (ascoltare), io (bere), lui (scrivere), voi (mangiare), noi (prendere), loro (sentire), noi (parlare), voi (correre), loro (dire), tu (aiutare), lei (scendere), io (salire).",
+   "answer": "ascoltavi, bevevo, scriveva, mangiavate, prendevamo, sentivano, parlavamo, correvate, dicevano, aiutavi, scendeva, salivo",
+   "lesson": "L17"
+  },
+  {
+   "id": "e061",
+   "topic": "g5-imperfetto",
+   "source": "учебник (не для публикации в приложении как есть)",
+   "task": "Es. 18 — Descrizione: Mio padre da giovane ___ (essere) alto e robusto. ___ (avere) i capelli neri e ricci. I suoi occhi ___ (essere) marroni e grandi. Lui ___ (vestirsi) sempre elegante, spesso ___ (indossare) la giacca e la cravatta. A lui ___ (piacere) i colori scuri. ___ (dire) che ___ (essere) più eleganti. A me ___ (piacere) vedere come ___ (farsi) il nodo alla cravatta: ___ (essere) così difficile!",
+   "answer": "era, aveva, erano, si vestiva, indossava, piacevano, diceva, erano, piaceva, si faceva, era",
+   "lesson": "L17"
+  },
+  {
+   "id": "e062",
+   "topic": "g5-imperfetto",
+   "source": "учебник (не для публикации в приложении как есть)",
+   "task": "Es. 19 — Azioni ripetute: a) Io e mia sorella (litigare) sempre: lei (essere) più piccola e (volere) tutti i giochi che (prendere) io. (mettersi) a piangere e così io (rimanere) senza giochi. b) I miei nonni non (fare) tutte le cose che facciamo noi adesso: non (guardare) la TV, non (usare) il computer e non (andare) al cinema. c) A 6 anni (andare) a scuola tutti i giorni. (mangiare) in mensa e dopo pranzo (tornare) a casa. (fare) i compiti e poi (chiamare) qualche amica. d) La mattina Olga (accompagnare) i figli a scuola; (fermarsi) in panetteria e poi (entrare) in ospedale; (mettersi) il camice e (iniziare) il suo turno.",
+   "answer": "a) litigavamo, era, voleva, prendevo, si metteva, rimanevo b) facevano, guardavano, usavano, andavano c) andavo, mangiavo, tornavo, facevo, chiamavo d) accompagnava, si fermava, entrava, si metteva, iniziava",
+   "lesson": "L17"
+  },
+  {
+   "id": "e063",
+   "topic": "g5-imperfetto",
+   "source": "учебник (не для публикации в приложении как есть)",
+   "task": "Es. 8 — era или aveva: La maestra ___ alta. ___ robusta. ___ i capelli rossi e ricci. ___ i capelli non molto lunghi. ___ gli occhi verdi. ___ un grande naso. Non ___ giovane. Non ___ più trent'anni.",
+   "answer": "era, era, aveva, aveva, aveva, aveva, era, aveva",
+   "lesson": "L17"
+  },
+  {
+   "id": "e064",
+   "topic": "g5-connettivi-conseguenza",
+   "task": "Соедини двумя способами (perché / quindi): 1) Faceva freddo. Ho acceso il riscaldamento. 2) Ero stanco. Sono andato a letto presto. 3) Non avevo tempo. Non ho letto il giornale. 4) Ho perso il treno. Sono arrivato tardi.",
+   "answer": "1) Ho acceso il riscaldamento perché faceva freddo. / Faceva freddo, quindi ho acceso il riscaldamento. 2) Sono andato a letto presto perché ero stanco. / Ero stanco, perciò sono andato a letto presto. 3) Non ho letto il giornale perché non avevo tempo. / Non avevo tempo, allora non ho letto il giornale. 4) Sono arrivato tardi perché ho perso il treno. / Ho perso il treno, quindi sono arrivato tardi.",
+   "lesson": "L18"
+  },
+  {
+   "id": "e065",
+   "topic": "g5-prima-ora",
+   "task": "Prima → ora. Напиши, что изменилось (passato prossimo): 1) Prima aveva i capelli biondi, ora ha i capelli rossi. → Ha ___ 2) Prima non aveva la barba, ora ha la barba. → Gli ___ 3) Prima era timido, ora è socievole. → È ___ 4) Prima si vestiva sportivo, ora elegante. → Ha ___",
+   "answer": "1) Ha colorato i capelli di rosso. 2) Gli è cresciuta la barba. 3) È diventato socievole. 4) Ha cambiato stile.",
+   "lesson": "L19"
+  },
+  {
+   "id": "e066",
+   "topic": "g5-prima-ora",
+   "task": "Опиши себя «prima e ora» (5 + 5 фраз): Quando avevo 20 anni… (imperfetto: fisico, capelli, carattere, cosa facevo) — Adesso… (presente) — Cosa è cambiato? (passato prossimo: sono diventato…, ho cambiato…).",
+   "answer": "Пример: Quando avevo 20 anni ero magro e avevo i capelli lunghi. Facevo boxe e ero molto attivo. Adesso sono più robusto e ho i capelli corti. Lavoro al computer. Sono diventato più tranquillo e ho cambiato lavoro.",
+   "lesson": "L19"
+  },
+  {
+   "id": "e067",
+   "topic": "g5-prima-ora",
+   "task": "ancora или non … più: 1) Prima portava gli occhiali, ora porta le lenti → ___ porta ___ gli occhiali. 2) Prima abitava a Roma e abita ___ a Roma. 3) Prima fumava, ora ha smesso → ___ fuma ___. 4) Lavora ___ in banca? — Sì, da 10 anni.",
+   "answer": "1) Non … più 2) ancora 3) Non … più 4) ancora",
+   "lesson": "L19"
+  },
+  {
+   "id": "e068",
+   "topic": "g4-tempo-da-per-fa",
+   "task": "Вставь da/dal/dalla/dalle и a/al/alla/alle: 1) Il corso è ___ lunedì ___ giovedì. 2) La lezione è ___ 8:50 ___ 11:30. 3) Ho vissuto a Kiev ___ 2010 ___ 2021. 4) Lavoro ___ 9 ___ 17. 5) Il negozio è chiuso ___ una ___ tre. 6) Le vacanze sono ___ luglio ___ agosto.",
+   "answer": "1) dal … al 2) dalle … alle 3) dal … al 4) dalle … alle 5) dall' … alle 6) da … ad (a) agosto",
+   "lesson": "L20"
+  },
+  {
+   "id": "e069",
+   "topic": "g4-tempo-da-per-fa",
+   "task": "Опиши своё расписание (4 фразы): когда твой курс итальянского (дни и часы), твой рабочий день, с какого года ты в Швейцарии, когда у тебя отпуск.",
+   "answer": "Пример: Il corso d'italiano è dal lunedì al giovedì, dalle 8:50 alle 11:30. Lavoro dalle 13 alle 18. Vivo in Svizzera dal 2021. Vado in vacanza da luglio ad agosto.",
+   "lesson": "L20"
+  },
+  {
+   "id": "e070",
+   "topic": "g5-imperfetto-vs-passato",
+   "task": "Напиши свой «Un incontro importante» по 5 шагам схемы (8–10 фраз). Подчеркни imperfetto и passato prossimo.",
+   "answer": "Свободный ответ — главное задание теста.",
+   "lesson": "L21"
+  },
+  {
+   "id": "e071",
+   "topic": "g5-prima-ora",
+   "task": "По модели «Ero basso, poi sono cresciuto e sono diventato alto»: 1) magro → (ingrassare) grasso 2) giovane → (invecchiare) 3) timido → (diventare) socievole 4) Anna: bambina → (crescere) una ragazza alta",
+   "answer": "1) Ero magro, poi sono ingrassato e sono diventato grasso. 2) Ero giovane, poi sono invecchiato. 3) Ero timido, poi sono diventato socievole. 4) Anna era una bambina, poi è cresciuta ed è diventata una ragazza alta.",
+   "lesson": "L22"
+  },
+  {
+   "id": "e072",
+   "topic": "g5-piacere-mancare",
+   "task": "Imperfetto: piaceva или piacevano? Da bambino… 1) mi ___ i cartoni animati. 2) mi ___ giocare a calcio. 3) a mia sorella ___ la musica pop. 4) a mio padre ___ le macchine. 5) a lei ___ i Beatles. 6) a noi ___ andare al mare.",
+   "answer": "1) piacevano 2) piaceva 3) piaceva 4) piacevano 5) piacevano 6) piaceva",
+   "lesson": "L23"
+  },
+  {
+   "id": "e073",
+   "topic": "g5-piacere-mancare",
+   "task": "Расскажи 5 фраз: что тебе нравилось в детстве и что нравится сейчас (mi piaceva / mi piacevano → adesso mi piace / mi piacciono).",
+   "answer": "Пример: Da bambino mi piaceva giocare a calcio, adesso mi piace la boxe. Mi piacevano i cartoni animati, adesso mi piacciono i film. A mio figlio piace…",
+   "lesson": "L23"
+  },
+  {
+   "id": "e074",
+   "topic": "g5-imperfetto",
+   "source": "учебник, с. 59 (не для публикации в приложении как есть)",
+   "task": "Es. 17 (p.59) — imperfetto, azioni contemporanee: a) Mentre noi (andare) a dormire, loro in Sri Lanka (alzarsi). b) Quando in Argentina (ci+essere) la dittatura, tu (essere) un neonato. c) Voi ci (aspettare) a casa mentre noi vi (aspettare) a scuola. d) Quando voi (fare) la scuola superiore, loro già (lavorare). e) Quando tu (raccontare) del tuo paese, io (pensare) al mio. f) Mentre mia moglie (cucinare), io (guardare) la televisione. g) Mentre mio marito (lavorare), io (bere) il tè con le mie amiche.",
+   "answer": "a) andavamo, si alzavano b) c'era, eri c) aspettavate, aspettavamo d) facevate, lavoravano e) raccontavi, pensavo f) cucinava, guardavo g) lavorava, bevevo",
+   "lesson": "L18"
+  },
+  {
+   "id": "e075",
+   "topic": "g5-imperfetto-vs-passato",
+   "source": "учебник, с. 59 (не для публикации в приложении как есть)",
+   "task": "Es. 18 (p.59) — imperfetto (rossi) e passato prossimo (blu): a) Mentre (io aspettare) l'autobus (io vedere) un incidente. b) Qualcuno (rubare) il suo portafoglio mentre lei (passeggiare). c) Quando noi (dormire) (ci essere) una scossa di terremoto. d) Il vigile (venire) stamattina, ma voi non (essere) in casa. e) Quando tu (arrivare), i tuoi amici (abitare) qui già da 1 anno. f) Non (noi sentire) il campanello, perché (noi dormire) tutti. g) Il governo (essere) corrotto, perciò il paese (andare) in crisi.",
+   "answer": "a) aspettavo, ho visto b) ha rubato, passeggiava c) dormivamo, c'è stata d) è venuto, eravate e) sei arrivato, abitavano f) abbiamo sentito, dormivamo g) era, è andato",
+   "lesson": "L18"
+  },
+  {
+   "id": "e076",
+   "topic": "g5-coppia-tappe",
+   "source": "учебник (не для публикации в приложении как есть)",
+   "task": "Es. 3 — Una storia d'amore che inizia bene e finisce male: metti in ordine cronologico: sposarsi, innamorarsi, fidanzarsi, divorziare, mettersi insieme.",
+   "answer": "innamorarsi → mettersi insieme → fidanzarsi → sposarsi → divorziare",
+   "lesson": "L24"
+  },
+  {
+   "id": "e077",
+   "topic": "g5-passato-prossimo-base",
+   "source": "учебник (не для публикации в приложении как есть)",
+   "task": "Es. 5 — Un matrimonio VIP: Come (nascere) l'amore tra l'influencer Chiara Ferragni e il rapper Fedez? I due (conoscersi) nel 2015 a un pranzo tra amici. Mentre (mangiare) [mangiavano], (arrivare) Matilda, la bulldog di Chiara, alla moda come la sua padrona. Dopo quel pranzo, Fedez (scrivere) una canzone su Matilda. Grazie a questa canzone, Chiara e Fedez (innamorarsi). (Essere) fidanzati dal 2016 al 1° settembre 2018, poi (sposarsi) a Noto, in Sicilia. (avere) anche un bambino: Leone Lucia Ferragni.",
+   "answer": "è nato, si sono conosciuti, [mangiavano — imperfetto, фон], è arrivata (Matilda — ж.р.), ha scritto, si sono innamorati, sono stati, si sono sposati, hanno avuto",
+   "lesson": "L24"
+  },
+  {
+   "id": "e078",
+   "topic": "g5-passato-prossimo-base",
+   "task": "Напиши свою «storia» по модели Лауры (8–10 фраз): Sono nato… Ho studiato… Ho frequentato… Mi sono laureato… Mi sono trasferito… Ho conosciuto… Ci siamo sposati… Adesso…",
+   "answer": "Свободный ответ — тема «biografia» теста.",
+   "lesson": "L24"
+  },
+  {
+   "id": "e079",
+   "topic": "g5-passato-prossimo-base",
+   "task": "Es. 8 — Pensa alla tua storia e rispondi: a) Dove e quando sei nato/a? b) Dove hai studiato? c) Che studi hai fatto? d) Dove hai abitato? e) Che lavori hai fatto? f) Ti sei sposato/a? Quando? g) Hai figli? Come si chiamano? h) Quando sei arrivato/a in Ticino? i) Altri eventi importanti della tua vita (nascite, morti, matrimoni di altri, acquisti importanti…).",
+   "answer": "Личный ответ — образец строится на собственной биографии ученика.",
+   "lesson": "L24"
+  },
+  {
+   "id": "e080",
+   "topic": "g5-futuro-semplice",
+   "task": "«Che cosa farò da grande» — найди в тексте глаголы в futuro и назови лицо и инфинитив.",
+   "answer": "farò → io, fare*; sarò → io, essere*; mi sposerò → io, sposarsi; avrò → io, avere*; sarà → lui/lei, essere*; saremo → noi, essere*; abiteremo → noi, abitare; andremo → noi, andare*; dovrò → io, dovere* (* = неправильный)",
+   "lesson": "L27"
+  },
+  {
+   "id": "e081",
+   "topic": "g5-futuro-semplice",
+   "source": "учебник ALMA Edizioni «Dieci», 7B «Il mio futuro», с. 30 (не для публикации в приложении как есть)",
+   "task": "Es. 1 Leggere — Abbina testi e titoli (один лишний): Previsioni per il nuovo anno / Lettera della direttrice marketing / Istruzioni per una vita felice / Previsioni meteo / Che cosa farò da grande.",
+   "answer": "1 — Che cosa farò da grande; 2 — Previsioni per il nuovo anno; 3 — Lettera della direttrice marketing; 4 — Previsioni meteo; лишний: Istruzioni per una vita felice",
+   "lesson": "L27"
+  },
+  {
+   "id": "e082",
+   "topic": "g5-futuro-semplice",
+   "source": "учебник ALMA Edizioni «Dieci», 7B «Il mio futuro», с. 30 (не для публикации в приложении как есть)",
+   "task": "Es. 2 Vocabolario — Espressioni con i verbi (avere, cambiare, dare, essere, fare, raggiungere, realizzare): ___ importanza; ___ pazienza / due figli; ___ caldo / la psicologa; ___ 40 gradi / gli obiettivi; ___ i progetti; ___ casa / lavoro / partner; ___ laureato / un musicista / uno scrittore / una famiglia felice.",
+   "answer": "dare importanza; avere pazienza / due figli; fare caldo / la psicologa; raggiungere 40 gradi / gli obiettivi; realizzare i progetti; cambiare casa / lavoro / partner; essere partner / laureato / un musicista / uno scrittore / una famiglia felice",
+   "lesson": "L27"
+  },
+  {
+   "id": "e083",
+   "topic": "g5-futuro-semplice",
+   "source": "учебник, картинка «Al pronto soccorso» (не для публикации как есть)",
+   "task": "Cosa è successo? Cosa potranno fare per stare meglio? Usa il passato e il futuro. Персонажи: Lisa, Francesco, Sig.ra Verdi, Beppino, Carla, Sig.ra Bianchi, Martina, Sig. Rossi, Luigi, Sig. Gianni.",
+   "answer": "Lisa, Francesco, Sig.ra Verdi, Beppino — см. текст доски L25. Образцы для остальных (по картинке): Carla è caduta dalla bicicletta e si è fatta male al ginocchio: metterà il ghiaccio e si riposerà. La signora Bianchi ha preso troppo sole e ha una scottatura: metterà la crema e starà all'ombra. Martina è incinta: andrà in ospedale e partorirà. Il signor Rossi ha bevuto troppo e ha mal di testa: berrà molta acqua e dormirà. Luigi ha giocato a calcio e si è fatto male: farà una radiografia. Il signor Gianni ha preso un pugno e ha un occhio nero: metterà il ghiaccio.",
+   "lesson": "L25"
+  },
+  {
+   "id": "e084",
+   "topic": "g5-futuro-semplice",
+   "source": "рабочий лист «Il futuro semplice» (не для публикации как есть)",
+   "task": "5a — presente → futuro: è, dà, dobbiamo, nascono, creano, può, (loro) sono, danno, cominciamo, costruiscono, aiutano.",
+   "answer": "sarà, darà, dovremo, nasceranno, creeranno, potrà, saranno, daranno, cominceremo, costruiranno, aiuteranno",
+   "lesson": "L28"
+  },
+  {
+   "id": "e085",
+   "topic": "g5-futuro-semplice",
+   "source": "рабочий лист «Il futuro semplice» (не для публикации как есть)",
+   "task": "5b — «Le professioni del futuro»: вставь глаголы из 5a.",
+   "answer": "…le nuove professioni che nasceranno nei prossimi anni. Grazie ai progressi della scienza sarà possibile creare in laboratorio parti del corpo umano. Oltre ai dottori che le creeranno, questo business del futuro darà origine a altri due nuovi mestieri… Personal brander: consulenti che ci aiuteranno a capire che tipo di immagine tutti noi dovremo avere sui social media e ci daranno consigli… Nei prossimi decenni cominceremo a fare turismo spaziale e saranno necessari profili come piloti… e architetti e tecnici che costruiranno case su altri pianeti. …il nostro pianeta potrà sopravvivere solo se troveremo soluzioni contro i cambiamenti del clima.",
+   "lesson": "L28"
+  },
+  {
+   "id": "e086",
+   "topic": "g5-futuro-semplice",
+   "source": "рабочий лист «Il futuro semplice» (не для публикации как есть)",
+   "task": "4 — Cruciverba: orizzontali 1 tu-pulire, 5 io-volere, 6 voi-prendere, 9 lei-dare, 10 loro-fare, 11 voi-sentire; verticali 2 loro-avere, 3 noi-andare, 4 noi-cantare, 6 lui-potere, 7 io-vedere, 8 tu-essere.",
+   "answer": "Orizzontali: 1 pulirai, 5 vorrò, 6 prenderete, 9 darà, 10 faranno, 11 sentirete. Verticali: 2 avranno, 3 andremo, 4 canteremo, 6 potrà, 7 vedrò, 8 sarai.",
+   "lesson": "L28"
+  },
+  {
+   "id": "e087",
+   "topic": "g5-futuro-semplice",
+   "source": "рабочий лист «Il futuro semplice» (не для публикации как есть)",
+   "task": "3 — Michio Kaku: Il fisico ha intervistato 300 scienziati per scoprire come (essere) la nostra vita nel futuro. Nel 2100 (noi-indossare) vestiti «intelligenti» che (controllare) la nostra salute e infatti non (noi-ammalarsi) mai. Tutti (potere) comunicare con la telepatia e (spostare) gli oggetti con la forza della mente. (Noi-avere) l'aspetto che (preferire): (scegliere) la forma del naso e il colore degli occhi e li (cambiare) tutte le volte che (volere). Nessuno (dovere) studiare le lingue perché le (noi-capire) tutte grazie a un traduttore universale.",
+   "answer": "sarà, indosseremo, controlleranno, ci ammaleremo, potranno, sposteranno, avremo, preferiremo, sceglieremo, cambieremo, vorremo, dovrà, capiremo",
+   "lesson": "L28"
+  }
+ ],
+ "exam": {
+  "title": "Test metà corso",
+  "topics": [
+   {
+    "name": "Presente",
+    "refs": [
+     "g5-presente-regular",
+     "g5-presente-irregular",
+     "g5-presente-tu",
+     "g5-modali-presente",
+     "g5-piacere-mancare"
+    ]
+   },
+   {
+    "name": "Verbi riflessivi",
+    "refs": [
+     "g5-riflessivi-presente",
+     "g5-reciproci"
+    ]
+   },
+   {
+    "name": "Passato prossimo: essere/avere, participi, già/non ancora/appena/mai",
+    "refs": [
+     "g5-passato-prossimo-base",
+     "g5-avverbi-passato"
+    ]
+   },
+   {
+    "name": "Domande: Cosa hai fatto? Per quanto tempo? Da quanto tempo? Quando?",
+    "refs": [
+     "g4-tempo-da-per-fa",
+     "g5-avverbi-passato"
+    ]
+   },
+   {
+    "name": "Imperfetto",
+    "refs": [
+     "g5-imperfetto"
+    ]
+   },
+   {
+    "name": "Biografia: descrizione fisica, carattere, storia personale",
+    "refs": [
+     "g2-descrizione-persona",
+     "L14"
+    ]
+   },
+   {
+    "name": "Imperfetto + passato prossimo: raccontare una storia (un incontro importante), differenze tra i 2 tempi",
+    "refs": [
+     "g5-imperfetto-vs-passato",
+     "L12"
+    ]
+   }
+  ]
+ }
+}

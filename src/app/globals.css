@@ -8,9 +8,16 @@
   --label-2: #6E6E73;
   --separator: #E5E5EA;
   --accent: #007AFF;
-  --success: #34C759;
-  --error: #FF3B30;
+  --success: #23863B; /* #248A3D scurito: 4.62:1 su bianco (era 4.40:1) */
+  --error: #D70015;
   --warning: #FF9500;
+  /* Colori delle sezioni: unica fonte (il tema scuro li ridefinisce sotto) */
+  --color-grammar: #0066CC;
+  --color-vocab: #00788A;
+  --color-exercises: #8944AB;
+  --color-grammar-soft: color-mix(in srgb, var(--color-grammar) 12%, transparent);
+  --color-vocab-soft: color-mix(in srgb, var(--color-vocab) 12%, transparent);
+  --color-exercises-soft: color-mix(in srgb, var(--color-exercises) 12%, transparent);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,8 +30,11 @@
     --separator: #38383A;
     --accent: #0A84FF;
     --success: #30D158;
-    --error: #FF453A;
+    --error: #FF6961;
     --warning: #FF9F0A;
+    --color-grammar: #409CFF;
+    --color-vocab: #40C8E0;
+    --color-exercises: #BF5AF2;
   }
 }
 
@@ -42,6 +52,17 @@
   --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
 }
 
+/* Colori delle sezioni: registra text-grammar, bg-vocab-soft, ecc.
+   "reference" non emette variabili: i valori stanno solo in :root e nel tema scuro. */
+@theme inline reference {
+  --color-grammar: var(--color-grammar);
+  --color-vocab: var(--color-vocab);
+  --color-exercises: var(--color-exercises);
+  --color-grammar-soft: var(--color-grammar-soft);
+  --color-vocab-soft: var(--color-vocab-soft);
+  --color-exercises-soft: var(--color-exercises-soft);
+}
+
 html {
   -webkit-text-size-adjust: 100%;
 }
@@ -49,4 +70,54 @@ html {
 body {
   background: var(--bg);
   color: var(--label);
+}
+
+/* Transizioni tra schermate (View Transitions, vedi components/PageTransition.tsx).
+   Avanti: la nuova schermata entra da destra; indietro: al contrario. */
+::view-transition {
+  pointer-events: none;
+}
+
+::view-transition-old(.nav-forward),
+::view-transition-old(.nav-back) {
+  animation: 250ms ease-out both vt-out;
+}
+
+::view-transition-new(.nav-forward),
+::view-transition-new(.nav-back) {
+  animation: 250ms ease-out both vt-in;
+}
+
+::view-transition-old(.nav-forward),
+::view-transition-new(.nav-back) {
+  --vt-offset: -24px;
+}
+
+::view-transition-new(.nav-forward),
+::view-transition-old(.nav-back) {
+  --vt-offset: 24px;
+}
+
+@keyframes vt-in {
+  from {
+    opacity: 0;
+    translate: var(--vt-offset) 0;
+  }
+}
+
+@keyframes vt-out {
+  to {
+    opacity: 0;
+    translate: var(--vt-offset) 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-old(.nav-forward),
+  ::view-transition-old(.nav-back),
+  ::view-transition-new(.nav-forward),
+  ::view-transition-new(.nav-back) {
+    --vt-offset: 0px;
+    animation-duration: 150ms;
+  }
 }
