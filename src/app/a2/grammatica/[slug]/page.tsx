@@ -1,9 +1,11 @@
 import { notFound } from "next/navigation";
 import { HoCapito, SegnaVisto } from "@/components/grammatica/AzioniArgomento";
 import { Cella, ContenutoArgomento, Sezione } from "@/components/grammatica/ContenutoArgomento";
+import { LezioneV2 } from "@/components/grammatica/LezioneV2";
 import { LinkAvanti } from "@/components/grammatica/LinkAvanti";
 import { Tr } from "@/components/grammatica/Tr";
 import { getArgomento, getPercorso } from "@/content/a2/grammatica";
+import { getLezioneV2 } from "@/content/a2/lezioni";
 import { DEFAULT_LOCALE, type Locale } from "@/lib/lingue";
 import { linguaScelta } from "@/lib/lingua-scelta";
 
@@ -27,6 +29,8 @@ export default async function ArgomentoPage({ params }: PageProps<"/a2/grammatic
   const dati = await getArgomento(locale, slug);
   if (!dati) notFound();
   const { argomento, contenuto, parole, esercizi, successivo, lingua } = dati;
+  // Lezione nel nuovo formato, se c'è; altrimenti il contenuto di grammar.json.
+  const v2 = await getLezioneV2(locale, argomento.id);
 
   return (
     <article className="space-y-6">
@@ -36,13 +40,26 @@ export default async function ArgomentoPage({ params }: PageProps<"/a2/grammatic
         <p className="text-[15px] text-label-2">
           Unità {argomento.unita} · Argomento {argomento.indice} di {argomento.totaleUnita}
         </p>
-        <h1 className="mt-1 text-[34px] leading-tight font-bold tracking-tight md:text-5xl">{argomento.title}</h1>
-        <Tr locale={locale} as="p" className="mt-1 text-[17px] md:text-[20px]">
+        <h1 className="mt-1 text-[24px] leading-[1.2] font-bold tracking-[-0.02em] md:text-[40px] md:leading-[1.15]">
+          {argomento.title}
+        </h1>
+        <Tr locale={locale} as="p" className="mt-1 text-[16px] leading-normal md:text-[20px]">
           {argomento.subtitle}
         </Tr>
       </header>
 
-      <ContenutoArgomento contenuto={contenuto} lingua={lingua} />
+      {v2 ? (
+        <>
+          {v2.lingua !== locale && (
+            <p className="inline-block rounded-full bg-label/[0.08] px-3 py-1 text-[13px] text-label-2 dark:bg-label/[0.16]">
+              Spiegazione disponibile in russo
+            </p>
+          )}
+          <LezioneV2 lezione={v2.lezione} lingua={v2.lingua} />
+        </>
+      ) : (
+        <ContenutoArgomento contenuto={contenuto} lingua={lingua} />
+      )}
 
       {parole.length > 0 && (
         <details className="group overflow-hidden rounded-2xl bg-card">

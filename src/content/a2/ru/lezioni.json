@@ -1,0 +1,290 @@
+{
+ "version": 2,
+ "lessons": {
+  "g5-presente-regular": {
+   "id": "g5-presente-regular",
+   "inBreve": [
+    "**Presente** — настоящее время: что происходит сейчас или происходит регулярно: {{Lavoro a Lugano.}}",
+    "Форма = **основа глагола + окончание лица**.",
+    "Три группы глаголов — на {{-are}}, {{-ere}}, {{-ire}}, у каждой свои окончания."
+   ],
+   "formation": {
+    "steps": [
+     "Отбрось окончание инфинитива: {{parlare → parl-}}, {{prendere → prend-}}, {{dormire → dorm-}}.",
+     "Добавь окончание нужного лица — смотри таблицу.",
+     "Местоимение обычно не говорят: окончание уже показывает лицо. {{Parlo italiano.}} — Я говорю по-итальянски."
+    ]
+   },
+   "tables": [
+    {
+     "title": "Окончания",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "-are",
+       "-ere",
+       "-ire"
+      ],
+      [
+       "io",
+       "-o",
+       "-o",
+       "-o"
+      ],
+      [
+       "tu",
+       "-i",
+       "-i",
+       "-i"
+      ],
+      [
+       "lui / lei",
+       "-a",
+       "-e",
+       "-e"
+      ],
+      [
+       "noi",
+       "-iamo",
+       "-iamo",
+       "-iamo"
+      ],
+      [
+       "voi",
+       "-ate",
+       "-ete",
+       "-ite"
+      ],
+      [
+       "loro",
+       "-ano",
+       "-ono",
+       "-ono"
+      ]
+     ]
+    },
+    {
+     "title": "Пример: три группы",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "parlare",
+       "prendere",
+       "dormire"
+      ],
+      [
+       "io",
+       "parl|o",
+       "prend|o",
+       "dorm|o"
+      ],
+      [
+       "tu",
+       "parl|i",
+       "prend|i",
+       "dorm|i"
+      ],
+      [
+       "lui / lei",
+       "parl|a",
+       "prend|e",
+       "dorm|e"
+      ],
+      [
+       "noi",
+       "parl|iamo",
+       "prend|iamo",
+       "dorm|iamo"
+      ],
+      [
+       "voi",
+       "parl|ate",
+       "prend|ete",
+       "dorm|ite"
+      ],
+      [
+       "loro",
+       "parl|ano",
+       "prend|ono",
+       "dorm|ono"
+      ]
+     ]
+    },
+    {
+     "title": "Глаголы на -ire с -isc-",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "finire",
+       "preferire"
+      ],
+      [
+       "io",
+       "fin|isco",
+       "prefer|isco"
+      ],
+      [
+       "tu",
+       "fin|isci",
+       "prefer|isci"
+      ],
+      [
+       "lui / lei",
+       "fin|isce",
+       "prefer|isce"
+      ],
+      [
+       "noi",
+       "fin|iamo",
+       "prefer|iamo"
+      ],
+      [
+       "voi",
+       "fin|ite",
+       "prefer|ite"
+      ],
+      [
+       "loro",
+       "fin|iscono",
+       "prefer|iscono"
+      ]
+     ],
+     "note": "-isc- появляется только в io, tu, lui/lei и loro. Так же спрягаются: {{capire}}, {{pulire}}, {{costruire}}, {{preferire}}."
+    }
+   ],
+   "uses": [
+    {
+     "text": "Действие сейчас",
+     "it": "Adesso mangio.",
+     "tr": "Сейчас я ем."
+    },
+    {
+     "text": "Привычка, то, что повторяется",
+     "it": "Ogni giorno prendo l'autobus.",
+     "tr": "Каждый день я езжу на автобусе."
+    },
+    {
+     "text": "Общеизвестный факт",
+     "it": "L'acqua bolle a 100 gradi.",
+     "tr": "Вода кипит при 100 градусах."
+    },
+    {
+     "text": "Ближайшее будущее, план",
+     "it": "Domani parto per Roma.",
+     "tr": "Завтра я уезжаю в Рим."
+    },
+    {
+     "text": "Как давно — с {{da}}",
+     "it": "Abito qui da cinque anni.",
+     "tr": "Я живу здесь пять лет."
+    }
+   ],
+   "exceptions": [
+    {
+     "title": "Глаголы на -care и -gare",
+     "text": "Перед окончанием на {{-i}} добавляется {{h}}, чтобы звук остался твёрдым [к], [г].",
+     "examples": [
+      {
+       "it": "cercare → tu cerchi, noi cerchiamo",
+       "tr": "искать → ты ищешь, мы ищем"
+      },
+      {
+       "it": "pagare → tu paghi, noi paghiamo",
+       "tr": "платить → ты платишь, мы платим"
+      }
+     ]
+    },
+    {
+     "title": "Глаголы на -iare",
+     "text": "Пишется только **одна** {{i}}.",
+     "examples": [
+      {
+       "it": "mangiare → tu mangi, noi mangiamo",
+       "tr": "есть → ты ешь, мы едим"
+      },
+      {
+       "it": "studiare → tu studi",
+       "tr": "учиться → ты учишься"
+      }
+     ]
+    },
+    {
+     "title": "Глаголы на -cere и -gere",
+     "text": "Пишутся по правилу, но **звук меняется**: перед {{-o}} твёрдый, перед {{-i}}, {{-e}} мягкий.",
+     "examples": [
+      {
+       "it": "leggo [г] — leggi [дж]",
+       "tr": "я читаю — ты читаешь"
+      },
+      {
+       "it": "vinco [к] — vinci [ч]",
+       "tr": "я выигрываю — ты выигрываешь"
+      }
+     ]
+    },
+    {
+     "title": "Ударение в loro",
+     "text": "Ударение остаётся на основе, а не на окончании.",
+     "examples": [
+      {
+       "it": "pàrlano, prèndono, dòrmono",
+       "tr": "не «parlàno»"
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "Tu mangii.",
+     "right": "Tu mangi.",
+     "why": "У глаголов на -iare пишется одна i."
+    },
+    {
+     "wrong": "Tu cerci.",
+     "right": "Tu cerchi.",
+     "why": "h сохраняет звук [к]."
+    },
+    {
+     "wrong": "Noi finisciamo.",
+     "right": "Noi finiamo.",
+     "why": "В noi и voi -isc- нет."
+    },
+    {
+     "wrong": "Io sono lavoro.",
+     "right": "Io lavoro.",
+     "why": "«Быть» не нужно: lavoro уже значит «я работаю»."
+    }
+   ],
+   "examples": [
+    {
+     "it": "Lavoro dalle 9 alle 17.",
+     "tr": "Я работаю с 9 до 17."
+    },
+    {
+     "it": "Prendi il treno o l'autobus?",
+     "tr": "Ты едешь на поезде или на автобусе?"
+    },
+    {
+     "it": "Mia moglie legge molto.",
+     "tr": "Моя жена много читает."
+    },
+    {
+     "it": "Dormiamo otto ore.",
+     "tr": "Мы спим восемь часов."
+    },
+    {
+     "it": "Capite l'italiano?",
+     "tr": "Вы понимаете итальянский?"
+    },
+    {
+     "it": "I bambini guardano la TV.",
+     "tr": "Дети смотрят телевизор."
+    }
+   ],
+   "summary": "Основа + окончание: **-o, -i, -a / -e, -iamo, -ate / -ete / -ite, -ano / -ono**."
+  }
+ }
+}

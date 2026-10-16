@@ -1,0 +1,290 @@
+{
+ "version": 2,
+ "lessons": {
+  "g5-presente-regular": {
+   "id": "g5-presente-regular",
+   "inBreve": [
+    "**Presente** — the present tense: what is happening now or happens regularly: {{Lavoro a Lugano.}}",
+    "Form = **verb stem + person ending**.",
+    "Three verb groups — in {{-are}}, {{-ere}}, {{-ire}}, each with its own endings."
+   ],
+   "formation": {
+    "steps": [
+     "Drop the infinitive ending: {{parlare → parl-}}, {{prendere → prend-}}, {{dormire → dorm-}}.",
+     "Add the ending for the person — see the table.",
+     "The subject pronoun is usually left out: the ending already shows the person. {{Parlo italiano.}} — I speak Italian."
+    ]
+   },
+   "tables": [
+    {
+     "title": "Endings",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "-are",
+       "-ere",
+       "-ire"
+      ],
+      [
+       "io",
+       "-o",
+       "-o",
+       "-o"
+      ],
+      [
+       "tu",
+       "-i",
+       "-i",
+       "-i"
+      ],
+      [
+       "lui / lei",
+       "-a",
+       "-e",
+       "-e"
+      ],
+      [
+       "noi",
+       "-iamo",
+       "-iamo",
+       "-iamo"
+      ],
+      [
+       "voi",
+       "-ate",
+       "-ete",
+       "-ite"
+      ],
+      [
+       "loro",
+       "-ano",
+       "-ono",
+       "-ono"
+      ]
+     ]
+    },
+    {
+     "title": "Example: the three groups",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "parlare",
+       "prendere",
+       "dormire"
+      ],
+      [
+       "io",
+       "parl|o",
+       "prend|o",
+       "dorm|o"
+      ],
+      [
+       "tu",
+       "parl|i",
+       "prend|i",
+       "dorm|i"
+      ],
+      [
+       "lui / lei",
+       "parl|a",
+       "prend|e",
+       "dorm|e"
+      ],
+      [
+       "noi",
+       "parl|iamo",
+       "prend|iamo",
+       "dorm|iamo"
+      ],
+      [
+       "voi",
+       "parl|ate",
+       "prend|ete",
+       "dorm|ite"
+      ],
+      [
+       "loro",
+       "parl|ano",
+       "prend|ono",
+       "dorm|ono"
+      ]
+     ]
+    },
+    {
+     "title": "-ire verbs with -isc-",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "finire",
+       "preferire"
+      ],
+      [
+       "io",
+       "fin|isco",
+       "prefer|isco"
+      ],
+      [
+       "tu",
+       "fin|isci",
+       "prefer|isci"
+      ],
+      [
+       "lui / lei",
+       "fin|isce",
+       "prefer|isce"
+      ],
+      [
+       "noi",
+       "fin|iamo",
+       "prefer|iamo"
+      ],
+      [
+       "voi",
+       "fin|ite",
+       "prefer|ite"
+      ],
+      [
+       "loro",
+       "fin|iscono",
+       "prefer|iscono"
+      ]
+     ],
+     "note": "-isc- appears only in io, tu, lui/lei and loro. Same pattern: {{capire}}, {{pulire}}, {{costruire}}, {{preferire}}."
+    }
+   ],
+   "uses": [
+    {
+     "text": "An action happening now",
+     "it": "Adesso mangio.",
+     "tr": "I'm eating now."
+    },
+    {
+     "text": "A habit, something that repeats",
+     "it": "Ogni giorno prendo l'autobus.",
+     "tr": "Every day I take the bus."
+    },
+    {
+     "text": "A general fact",
+     "it": "L'acqua bolle a 100 gradi.",
+     "tr": "Water boils at 100 degrees."
+    },
+    {
+     "text": "The near future, a plan",
+     "it": "Domani parto per Roma.",
+     "tr": "Tomorrow I'm leaving for Rome."
+    },
+    {
+     "text": "How long — with {{da}}",
+     "it": "Abito qui da cinque anni.",
+     "tr": "I've lived here for five years."
+    }
+   ],
+   "exceptions": [
+    {
+     "title": "Verbs in -care and -gare",
+     "text": "Before an ending starting with {{-i}}, add {{h}} to keep the hard sound [k], [g].",
+     "examples": [
+      {
+       "it": "cercare → tu cerchi, noi cerchiamo",
+       "tr": "to look for → you look for, we look for"
+      },
+      {
+       "it": "pagare → tu paghi, noi paghiamo",
+       "tr": "to pay → you pay, we pay"
+      }
+     ]
+    },
+    {
+     "title": "Verbs in -iare",
+     "text": "Write only **one** {{i}}.",
+     "examples": [
+      {
+       "it": "mangiare → tu mangi, noi mangiamo",
+       "tr": "to eat → you eat, we eat"
+      },
+      {
+       "it": "studiare → tu studi",
+       "tr": "to study → you study"
+      }
+     ]
+    },
+    {
+     "title": "Verbs in -cere and -gere",
+     "text": "Spelled regularly, but **the sound changes**: hard before {{-o}}, soft before {{-i}}, {{-e}}.",
+     "examples": [
+      {
+       "it": "leggo [g] — leggi [dʒ]",
+       "tr": "I read — you read"
+      },
+      {
+       "it": "vinco [k] — vinci [tʃ]",
+       "tr": "I win — you win"
+      }
+     ]
+    },
+    {
+     "title": "Stress in loro",
+     "text": "The stress stays on the stem, not on the ending.",
+     "examples": [
+      {
+       "it": "pàrlano, prèndono, dòrmono",
+       "tr": "not «parlàno»"
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "Tu mangii.",
+     "right": "Tu mangi.",
+     "why": "Verbs in -iare keep only one i."
+    },
+    {
+     "wrong": "Tu cerci.",
+     "right": "Tu cerchi.",
+     "why": "The h keeps the [k] sound."
+    },
+    {
+     "wrong": "Noi finisciamo.",
+     "right": "Noi finiamo.",
+     "why": "No -isc- in noi and voi."
+    },
+    {
+     "wrong": "Io sono lavoro.",
+     "right": "Io lavoro.",
+     "why": "No «to be» here: lavoro already means «I work»."
+    }
+   ],
+   "examples": [
+    {
+     "it": "Lavoro dalle 9 alle 17.",
+     "tr": "I work from 9 to 5."
+    },
+    {
+     "it": "Prendi il treno o l'autobus?",
+     "tr": "Are you taking the train or the bus?"
+    },
+    {
+     "it": "Mia moglie legge molto.",
+     "tr": "My wife reads a lot."
+    },
+    {
+     "it": "Dormiamo otto ore.",
+     "tr": "We sleep eight hours."
+    },
+    {
+     "it": "Capite l'italiano?",
+     "tr": "Do you understand Italian?"
+    },
+    {
+     "it": "I bambini guardano la TV.",
+     "tr": "The children are watching TV."
+    }
+   ],
+   "summary": "Stem + ending: **-o, -i, -a / -e, -iamo, -ate / -ete / -ite, -ano / -ono**."
+  }
+ }
+}

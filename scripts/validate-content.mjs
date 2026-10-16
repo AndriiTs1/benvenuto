@@ -71,8 +71,64 @@ for (const id of Object.keys(meta.topics)) {
   })) errori.push(`meta: argomento ${id} non usato nel curriculum`);
 }
 
+// Lezioni v2 (lezioni.json): campi obbligatori, id = topicId, stesse lezioni in tutte le lingue.
+const avvisi = [];
+const testo = (v) => typeof v === "string" && v.trim() !== "";
+const esempi = (v) => Array.isArray(v) && v.every((e) => testo(e?.it) && testo(e?.tr));
+const CAMPI = {
+  inBreve: (v) => Array.isArray(v) && v.length > 0 && v.every(testo),
+  formation: (v) => Array.isArray(v?.steps) && v.steps.length > 0 && v.steps.every(testo),
+  tables: (v) =>
+    Array.isArray(v) &&
+    v.every(
+      (t) =>
+        testo(t?.title) &&
+        typeof t.header === "boolean" &&
+        Array.isArray(t.rows) &&
+        t.rows.length > 0 &&
+        t.rows.every((r) => Array.isArray(r) && r.every((c) => typeof c === "string")) &&
+        (t.note === undefined || testo(t.note)),
+    ),
+  uses: (v) => Array.isArray(v) && v.every((u) => testo(u?.text) && testo(u?.it) && testo(u?.tr)),
+  exceptions: (v) => Array.isArray(v) && v.every((e) => testo(e?.title) && testo(e?.text) && esempi(e?.examples)),
+  mistakes: (v) => Array.isArray(v) && v.every((m) => testo(m?.wrong) && testo(m?.right) && testo(m?.why)),
+  examples: esempi,
+  summary: testo,
+};
+const lezioniPerLingua = {};
+for (const lingua of lingue) {
+  let file;
+  try {
+    file = leggi(path.join(CARTELLA, lingua, "lezioni.json"));
+  } catch (e) {
+    if (e.code !== "ENOENT") errori.push(`${lingua}/lezioni: JSON non valido (${e.message})`);
+    continue;
+  }
+  if (!file?.lessons || typeof file.lessons !== "object") {
+    errori.push(`${lingua}/lezioni: manca "lessons"`);
+    continue;
+  }
+  lezioniPerLingua[lingua] = Object.keys(file.lessons).sort();
+  for (const [topicId, lezione] of Object.entries(file.lessons)) {
+    if (lezione?.id !== topicId) errori.push(`${lingua}/lezioni: id "${lezione?.id}" diverso dalla chiave ${topicId}`);
+    if (!meta.topics[topicId]) errori.push(`${lingua}/lezioni: argomento ${topicId} assente in meta`);
+    for (const [campo, valido] of Object.entries(CAMPI)) {
+      if (!valido(lezione?.[campo])) errori.push(`${lingua}/lezioni: ${topicId}.${campo} mancante o non valido`);
+    }
+  }
+}
+const tutte = [...new Set(Object.values(lezioniPerLingua).flat())];
+for (const lingua of ["ru", "uk", "en"]) {
+  const mancanti = tutte.filter((id) => !lezioniPerLingua[lingua]?.includes(id));
+  if (mancanti.length) avvisi.push(`${lingua}/lezioni: mancano ${mancanti.join(", ")}`);
+}
+if (avvisi.length) console.warn(`Avvisi:\n- ${avvisi.join("\n- ")}`);
+
 if (errori.length) {
   console.error(`Contenuti A2: ${errori.length} errori\n- ${errori.join("\n- ")}`);
   process.exit(1);
 }
-console.log(`Contenuti A2: ok (${Object.keys(meta.topics).length} argomenti, lingue: ${lingue.join(", ")})`);
+const conLezioni = Object.entries(lezioniPerLingua).map(([l, ids]) => `${l} ${ids.length}`).join(", ");
+console.log(
+  `Contenuti A2: ok (${Object.keys(meta.topics).length} argomenti, lingue: ${lingue.join(", ")}; lezioni v2: ${conLezioni || "nessuna"})`,
+);

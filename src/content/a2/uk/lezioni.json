@@ -1,0 +1,290 @@
+{
+ "version": 2,
+ "lessons": {
+  "g5-presente-regular": {
+   "id": "g5-presente-regular",
+   "inBreve": [
+    "**Presente** — теперішній час: що відбувається зараз або регулярно: {{Lavoro a Lugano.}}",
+    "Форма = **основа дієслова + закінчення особи**.",
+    "Три групи дієслів — на {{-are}}, {{-ere}}, {{-ire}}, у кожної свої закінчення."
+   ],
+   "formation": {
+    "steps": [
+     "Відкинь закінчення інфінітива: {{parlare → parl-}}, {{prendere → prend-}}, {{dormire → dorm-}}.",
+     "Додай закінчення потрібної особи — дивись таблицю.",
+     "Займенник зазвичай не кажуть: закінчення вже показує особу. {{Parlo italiano.}} — Я розмовляю італійською."
+    ]
+   },
+   "tables": [
+    {
+     "title": "Закінчення",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "-are",
+       "-ere",
+       "-ire"
+      ],
+      [
+       "io",
+       "-o",
+       "-o",
+       "-o"
+      ],
+      [
+       "tu",
+       "-i",
+       "-i",
+       "-i"
+      ],
+      [
+       "lui / lei",
+       "-a",
+       "-e",
+       "-e"
+      ],
+      [
+       "noi",
+       "-iamo",
+       "-iamo",
+       "-iamo"
+      ],
+      [
+       "voi",
+       "-ate",
+       "-ete",
+       "-ite"
+      ],
+      [
+       "loro",
+       "-ano",
+       "-ono",
+       "-ono"
+      ]
+     ]
+    },
+    {
+     "title": "Приклад: три групи",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "parlare",
+       "prendere",
+       "dormire"
+      ],
+      [
+       "io",
+       "parl|o",
+       "prend|o",
+       "dorm|o"
+      ],
+      [
+       "tu",
+       "parl|i",
+       "prend|i",
+       "dorm|i"
+      ],
+      [
+       "lui / lei",
+       "parl|a",
+       "prend|e",
+       "dorm|e"
+      ],
+      [
+       "noi",
+       "parl|iamo",
+       "prend|iamo",
+       "dorm|iamo"
+      ],
+      [
+       "voi",
+       "parl|ate",
+       "prend|ete",
+       "dorm|ite"
+      ],
+      [
+       "loro",
+       "parl|ano",
+       "prend|ono",
+       "dorm|ono"
+      ]
+     ]
+    },
+    {
+     "title": "Дієслова на -ire з -isc-",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "finire",
+       "preferire"
+      ],
+      [
+       "io",
+       "fin|isco",
+       "prefer|isco"
+      ],
+      [
+       "tu",
+       "fin|isci",
+       "prefer|isci"
+      ],
+      [
+       "lui / lei",
+       "fin|isce",
+       "prefer|isce"
+      ],
+      [
+       "noi",
+       "fin|iamo",
+       "prefer|iamo"
+      ],
+      [
+       "voi",
+       "fin|ite",
+       "prefer|ite"
+      ],
+      [
+       "loro",
+       "fin|iscono",
+       "prefer|iscono"
+      ]
+     ],
+     "note": "-isc- з'являється лише в io, tu, lui/lei і loro. Так само відмінюються: {{capire}}, {{pulire}}, {{costruire}}, {{preferire}}."
+    }
+   ],
+   "uses": [
+    {
+     "text": "Дія зараз",
+     "it": "Adesso mangio.",
+     "tr": "Зараз я їм."
+    },
+    {
+     "text": "Звичка, те, що повторюється",
+     "it": "Ogni giorno prendo l'autobus.",
+     "tr": "Щодня я їжджу автобусом."
+    },
+    {
+     "text": "Загальновідомий факт",
+     "it": "L'acqua bolle a 100 gradi.",
+     "tr": "Вода кипить при 100 градусах."
+    },
+    {
+     "text": "Найближче майбутнє, план",
+     "it": "Domani parto per Roma.",
+     "tr": "Завтра я їду до Рима."
+    },
+    {
+     "text": "Як довго — з {{da}}",
+     "it": "Abito qui da cinque anni.",
+     "tr": "Я живу тут п'ять років."
+    }
+   ],
+   "exceptions": [
+    {
+     "title": "Дієслова на -care і -gare",
+     "text": "Перед закінченням на {{-i}} додається {{h}}, щоб звук залишився твердим [к], [г].",
+     "examples": [
+      {
+       "it": "cercare → tu cerchi, noi cerchiamo",
+       "tr": "шукати → ти шукаєш, ми шукаємо"
+      },
+      {
+       "it": "pagare → tu paghi, noi paghiamo",
+       "tr": "платити → ти платиш, ми платимо"
+      }
+     ]
+    },
+    {
+     "title": "Дієслова на -iare",
+     "text": "Пишеться лише **одна** {{i}}.",
+     "examples": [
+      {
+       "it": "mangiare → tu mangi, noi mangiamo",
+       "tr": "їсти → ти їси, ми їмо"
+      },
+      {
+       "it": "studiare → tu studi",
+       "tr": "вчитися → ти вчишся"
+      }
+     ]
+    },
+    {
+     "title": "Дієслова на -cere і -gere",
+     "text": "Пишуться за правилом, але **звук змінюється**: перед {{-o}} твердий, перед {{-i}}, {{-e}} м'який.",
+     "examples": [
+      {
+       "it": "leggo [г] — leggi [дж]",
+       "tr": "я читаю — ти читаєш"
+      },
+      {
+       "it": "vinco [к] — vinci [ч]",
+       "tr": "я виграю — ти виграєш"
+      }
+     ]
+    },
+    {
+     "title": "Наголос у loro",
+     "text": "Наголос залишається на основі, а не на закінченні.",
+     "examples": [
+      {
+       "it": "pàrlano, prèndono, dòrmono",
+       "tr": "не «parlàno»"
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "Tu mangii.",
+     "right": "Tu mangi.",
+     "why": "У дієслів на -iare пишеться одна i."
+    },
+    {
+     "wrong": "Tu cerci.",
+     "right": "Tu cerchi.",
+     "why": "h зберігає звук [к]."
+    },
+    {
+     "wrong": "Noi finisciamo.",
+     "right": "Noi finiamo.",
+     "why": "У noi і voi -isc- немає."
+    },
+    {
+     "wrong": "Io sono lavoro.",
+     "right": "Io lavoro.",
+     "why": "«Бути» не потрібно: lavoro вже означає «я працюю»."
+    }
+   ],
+   "examples": [
+    {
+     "it": "Lavoro dalle 9 alle 17.",
+     "tr": "Я працюю з 9 до 17."
+    },
+    {
+     "it": "Prendi il treno o l'autobus?",
+     "tr": "Ти їдеш потягом чи автобусом?"
+    },
+    {
+     "it": "Mia moglie legge molto.",
+     "tr": "Моя дружина багато читає."
+    },
+    {
+     "it": "Dormiamo otto ore.",
+     "tr": "Ми спимо вісім годин."
+    },
+    {
+     "it": "Capite l'italiano?",
+     "tr": "Ви розумієте італійську?"
+    },
+    {
+     "it": "I bambini guardano la TV.",
+     "tr": "Діти дивляться телевізор."
+    }
+   ],
+   "summary": "Основа + закінчення: **-o, -i, -a / -e, -iamo, -ate / -ete / -ite, -ano / -ono**."
+  }
+ }
+}
