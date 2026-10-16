@@ -44,8 +44,9 @@ export default async function Home() {
             <h1 className="mt-4 text-5xl font-bold tracking-tight md:text-6xl">Benvenuto</h1>
             <p className="mx-auto mt-3 max-w-xs text-center text-lg font-normal text-balance text-label-2 md:max-w-[32.5rem] md:text-xl">
               <span className="font-medium text-grammar">Grammatica</span>,{" "}
-              <span className="font-medium text-vocab">vocabolario</span> ed{" "}
-              <span className="font-medium text-exercises">esercizi</span> per il tuo corso
+              <span className="font-medium text-vocab">vocabolario</span>,{" "}
+              <span className="font-medium text-exercises">esercizi</span> e{" "}
+              <span className="font-medium text-communicate">comunicazione</span> per il tuo corso
             </p>
           </div>
 

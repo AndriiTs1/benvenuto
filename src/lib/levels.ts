@@ -21,6 +21,11 @@ export function isAvailableLevel(value: string | undefined | null): value is Lev
   return LEVELS.some((level) => level.code === value && level.status === "available");
 }
 
+/** Prima sezione del corso: dove portano "Inizia/Continua il corso". */
+export function courseHref(code: LevelCode) {
+  return `${levelHref(code)}/grammatica`;
+}
+
 export function levelHref(code: LevelCode) {
   return `/${code.toLowerCase()}`;
 }

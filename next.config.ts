@@ -8,6 +8,10 @@ const nextConfig: NextConfig = {
   outputFileTracingIncludes: {
     "/*": ["src/content/**/*.json"],
   },
+  // /a2 apre la prima sezione del corso (prima del rendering, con un vero 307).
+  async redirects() {
+    return [{ source: "/a2", destination: "/a2/grammatica", permanent: false }];
+  },
   turbopack: {
     rules: {
       "*.css": {

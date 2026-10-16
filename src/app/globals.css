@@ -15,9 +15,11 @@
   --color-grammar: #0066CC;
   --color-vocab: #00788A;
   --color-exercises: #8944AB;
+  --color-communicate: #A05A00;
   --color-grammar-soft: color-mix(in srgb, var(--color-grammar) 12%, transparent);
   --color-vocab-soft: color-mix(in srgb, var(--color-vocab) 12%, transparent);
   --color-exercises-soft: color-mix(in srgb, var(--color-exercises) 12%, transparent);
+  --color-communicate-soft: color-mix(in srgb, var(--color-communicate) 12%, transparent);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -35,6 +37,7 @@
     --color-grammar: #409CFF;
     --color-vocab: #40C8E0;
     --color-exercises: #BF5AF2;
+    --color-communicate: #FFB340;
   }
 }
 
@@ -58,9 +61,11 @@
   --color-grammar: var(--color-grammar);
   --color-vocab: var(--color-vocab);
   --color-exercises: var(--color-exercises);
+  --color-communicate: var(--color-communicate);
   --color-grammar-soft: var(--color-grammar-soft);
   --color-vocab-soft: var(--color-vocab-soft);
   --color-exercises-soft: var(--color-exercises-soft);
+  --color-communicate-soft: var(--color-communicate-soft);
 }
 
 html {
@@ -144,5 +149,21 @@ body {
 @keyframes lingua-fade {
   from {
     opacity: 0;
+  }
+}
+
+/* Cambio di scheda nel corso (components/corso/TabContent.tsx): solo dissolvenza. */
+::view-transition-old(.tab-fade) {
+  animation: 150ms ease-out both lingua-fade reverse;
+}
+
+::view-transition-new(.tab-fade) {
+  animation: 150ms ease-out both lingua-fade;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-old(.tab-fade),
+  ::view-transition-new(.tab-fade) {
+    animation: none;
   }
 }
