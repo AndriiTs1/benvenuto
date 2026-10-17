@@ -3339,6 +3339,889 @@
      ]
     }
    ]
+  },
+  "g5-avverbi-passato": {
+   "id": "g5-avverbi-passato",
+   "inBreve": [
+    "Короткие наречия ставятся **между** вспомогательным глаголом и причастием: {{ho già mangiato}}.",
+    "{{non}} стоит перед вспомогательным глаголом: {{non ho ancora mangiato}}.",
+    "Двойное отрицание — норма: {{non ho mai visto}} — «я никогда не видел»."
+   ],
+   "formation": {
+    "steps": [
+     "Поставь вспомогательный глагол: {{ho}}, {{sono}}…",
+     "Добавь наречие: {{già}}, {{appena}}, {{mai}}, {{sempre}}, {{ancora}}, {{più}}.",
+     "В конце — причастие: {{ho già mangiato}}; для «нет» — {{non}} в начале."
+    ]
+   },
+   "tables": [
+    {
+     "title": "Место наречия",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "ausiliare",
+       "avverbio",
+       "participio"
+      ],
+      [
+       "io",
+       "ho",
+       "già",
+       "mangiato"
+      ],
+      [
+       "lei",
+       "è",
+       "appena",
+       "arrivata"
+      ],
+      [
+       "noi",
+       "non abbiamo",
+       "ancora",
+       "finito"
+      ],
+      [
+       "loro",
+       "non sono",
+       "mai",
+       "stati"
+      ]
+     ],
+     "note": "Не {{già ho mangiato}}, а {{ho già mangiato}}."
+    },
+    {
+     "title": "Да и нет",
+     "header": true,
+     "rows": [
+      [
+       "sì",
+       "no"
+      ],
+      [
+       "Ho già mangiato.",
+       "Non ho ancora mangiato."
+      ],
+      [
+       "Sono già stato a Roma.",
+       "Non sono mai stato a Roma."
+      ],
+      [
+       "Abito ancora qui.",
+       "Non abito più qui."
+      ],
+      [
+       "Ho sempre lavorato.",
+       "Non ho mai lavorato."
+      ]
+     ],
+     "note": "«Нет» к {{già}} — {{non… ancora}}; к {{ancora}} — {{non… più}}."
+    }
+   ],
+   "uses": [
+    {
+     "text": "già — уже",
+     "it": "Hai già mangiato?",
+     "tr": "Ты уже поел?"
+    },
+    {
+     "text": "appena — только что",
+     "it": "Sono appena arrivato.",
+     "tr": "Я только что пришёл."
+    },
+    {
+     "text": "mai в вопросе — когда-нибудь",
+     "it": "Sei mai stato a Roma?",
+     "tr": "Ты когда-нибудь был в Риме?"
+    },
+    {
+     "text": "non… più — больше не",
+     "it": "Non abito più a Kiev.",
+     "tr": "Я больше не живу в Киеве."
+    },
+    {
+     "text": "ancora — всё ещё",
+     "it": "Porta ancora gli occhiali.",
+     "tr": "Он всё ещё носит очки."
+    }
+   ],
+   "exceptions": [
+    {
+     "title": "Hai mai…? или Sei mai…?",
+     "text": "Вспомогательный — по глаголу: {{hai mai visto}}, но {{sei mai stato}}.",
+     "examples": [
+      {
+       "it": "Hai mai mangiato la fondue?",
+       "tr": "Ты когда-нибудь ел фондю?"
+      },
+      {
+       "it": "Sei mai andato in Sicilia?",
+       "tr": "Ты когда-нибудь ездил на Сицилию?"
+      }
+     ]
+    },
+    {
+     "title": "ancora — два значения",
+     "text": "«Всё ещё» и «ещё раз, ещё».",
+     "examples": [
+      {
+       "it": "Abito ancora qui.",
+       "tr": "Я всё ещё живу здесь."
+      },
+      {
+       "it": "Vuoi ancora un caffè?",
+       "tr": "Хочешь ещё кофе?"
+      }
+     ]
+    },
+    {
+     "title": "sempre",
+     "text": "Тоже между: {{ho sempre lavorato}}.",
+     "examples": [
+      {
+       "it": "Ho sempre abitato in città.",
+       "tr": "Я всегда жил в городе."
+      }
+     ]
+    },
+    {
+     "title": "В настоящем времени",
+     "text": "Та же логика, без причастия: {{non lavoro più}}, {{abito ancora}}.",
+     "examples": [
+      {
+       "it": "Non fumo più.",
+       "tr": "Я больше не курю."
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "Già ho mangiato.",
+     "right": "Ho già mangiato.",
+     "why": "Наречие — между ho и причастием."
+    },
+    {
+     "wrong": "No, non ho già finito.",
+     "right": "No, non ho ancora finito.",
+     "why": "«Ещё не» — non… ancora."
+    },
+    {
+     "wrong": "Ho mai visto Roma.",
+     "right": "Non ho mai visto Roma.",
+     "why": "«Никогда» — non… mai."
+    },
+    {
+     "wrong": "Hai mai stato a Roma?",
+     "right": "Sei mai stato a Roma?",
+     "why": "essere → sei."
+    },
+    {
+     "wrong": "Non abito ancora a Kiev.",
+     "right": "Non abito più a Kiev.",
+     "why": "«Больше не» — non… più."
+    }
+   ],
+   "examples": [
+    {
+     "it": "Il film è già cominciato.",
+     "tr": "Фильм уже начался."
+    },
+    {
+     "it": "Non abbiamo ancora deciso.",
+     "tr": "Мы ещё не решили."
+    },
+    {
+     "it": "Sono appena tornata dal lavoro.",
+     "tr": "Я только что вернулась с работы."
+    },
+    {
+     "it": "Non ho mai visto la neve.",
+     "tr": "Я никогда не видел снег."
+    },
+    {
+     "it": "Hai mai lavorato in un ristorante?",
+     "tr": "Ты когда-нибудь работал в ресторане?"
+    },
+    {
+     "it": "Marco non porta più gli occhiali.",
+     "tr": "Марко больше не носит очки."
+    }
+   ],
+   "summary": "**ho già / non ho ancora / sono appena / non sono mai / non… più** + причастие. Наречие — между вспомогательным и причастием.",
+   "keyWords": [
+    {
+     "title": "Avverbi",
+     "ids": [
+      "w105",
+      "w384",
+      "w385",
+      "w386",
+      "w443",
+      "w102"
+     ]
+    }
+   ]
+  },
+  "g4-tempo-da-per-fa": {
+   "id": "g4-tempo-da-per-fa",
+   "inBreve": [
+    "{{da}} + presente — началось и **продолжается**: {{abito qui da 5 anni}}.",
+    "{{per}} + passato prossimo — длилось и **закончилось**: {{ho lavorato per 2 anni}}.",
+    "{{fa}} — «назад», после срока: {{5 anni fa}}; год — {{nel 2021}}; возраст — {{a 18 anni}}."
+   ],
+   "formation": {
+    "steps": [
+     "Спроси себе: это продолжается сейчас? Да — {{da}} + presente.",
+     "Закончилось: сколько длилось — {{per}}; когда — {{fa}}, {{nel}}, {{a}} + passato prossimo.",
+     "Если называешь момент начала — {{dal}}, {{dalla}}: {{dal 2022}}."
+    ]
+   },
+   "tables": [
+    {
+     "title": "Продолжается — presente",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "esempio"
+      ],
+      [
+       "da + durata",
+       "Abito qui da 5 anni."
+      ],
+      [
+       "dal + momento",
+       "Sono in Ticino dal 2022."
+      ],
+      [
+       "dalle + ora",
+       "Ti aspetto dalle otto!"
+      ]
+     ],
+     "note": "По-русски «живу здесь 5 лет» → {{da}} + presente."
+    },
+    {
+     "title": "Закончилось — passato prossimo",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "esempio"
+      ],
+      [
+       "per + durata",
+       "Ho lavorato lì per 2 anni."
+      ],
+      [
+       "durata + fa",
+       "Sono arrivato 4 anni fa."
+      ],
+      [
+       "nel + anno",
+       "Mi sono sposato nel 2010."
+      ],
+      [
+       "a + età",
+       "A 18 anni ho fatto l'operaio."
+      ]
+     ],
+     "note": "{{fa}} всегда после срока: {{due anni fa}}."
+    },
+    {
+     "title": "От … до",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "esempio"
+      ],
+      [
+       "anni",
+       "dal 2022 al 2026"
+      ],
+      [
+       "giorni",
+       "dal lunedì al giovedì"
+      ],
+      [
+       "ore",
+       "dalle 9 alle 17"
+      ],
+      [
+       "mesi",
+       "da settembre a giugno"
+      ]
+     ],
+     "note": "Месяцы — без артикля; годы, дни и часы — с артиклем."
+    }
+   ],
+   "uses": [
+    {
+     "text": "Как давно? (и сейчас)",
+     "it": "Da quanto tempo studi l'italiano?",
+     "tr": "Как давно ты учишь итальянский?"
+    },
+    {
+     "text": "Сколько длилось?",
+     "it": "Per quanto tempo hai abitato a Kiev?",
+     "tr": "Сколько ты жил в Киеве?"
+    },
+    {
+     "text": "Когда? Сколько назад?",
+     "it": "Quando sei arrivato? — Tre anni fa.",
+     "tr": "Когда ты приехал? — Три года назад."
+    },
+    {
+     "text": "Год и возраст",
+     "it": "Ho cominciato a lavorare a 20 anni, nel 2001.",
+     "tr": "Я начал работать в 20 лет, в 2001 году."
+    },
+    {
+     "text": "Через (в будущем)",
+     "it": "Tra un mese ho l'esame.",
+     "tr": "Через месяц у меня экзамен."
+    }
+   ],
+   "exceptions": [
+    {
+     "title": "Три способа сказать одно",
+     "text": "{{da 4 anni}} = {{dal 2022}} = {{4 anni fa}}.",
+     "examples": [
+      {
+       "it": "Sono in Ticino da 4 anni. = Sono arrivato 4 anni fa.",
+       "tr": "Я в Тичино 4 года. = Я приехал 4 года назад."
+      }
+     ]
+    },
+    {
+     "title": "fa и tra",
+     "text": "{{fa}} — назад (прошлое); {{tra}} / {{fra}} — через (будущее).",
+     "examples": [
+      {
+       "it": "Due anni fa. / Tra due anni.",
+       "tr": "Два года назад. / Через два года."
+      }
+     ]
+    },
+    {
+     "title": "il lunedì или lunedì",
+     "text": "С артиклем — каждую неделю; без — в ближайший.",
+     "examples": [
+      {
+       "it": "Il lunedì vado in palestra. / Lunedì vado dal medico.",
+       "tr": "По понедельникам хожу в спортзал. / В понедельник иду к врачу."
+      }
+     ]
+    },
+    {
+     "title": "Год и месяц",
+     "text": "Год — {{nel}}; месяц — {{a}} или {{in}}, без артикля.",
+     "examples": [
+      {
+       "it": "Nel 2021, a maggio.",
+       "tr": "В 2021 году, в мае."
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "Abito qui per 5 anni.",
+     "right": "Abito qui da 5 anni.",
+     "why": "Продолжается — da + presente."
+    },
+    {
+     "wrong": "Ho abitato qui da 5 anni.",
+     "right": "Abito qui da 5 anni.",
+     "why": "С da — настоящее время."
+    },
+    {
+     "wrong": "Fa 5 anni.",
+     "right": "5 anni fa.",
+     "why": "fa — после срока."
+    },
+    {
+     "wrong": "In 2021.",
+     "right": "Nel 2021.",
+     "why": "Год — nel."
+    },
+    {
+     "wrong": "Ai 18 anni.",
+     "right": "A 18 anni.",
+     "why": "Возраст — a, без артикля."
+    }
+   ],
+   "examples": [
+    {
+     "it": "Ballo la salsa da 27 anni.",
+     "tr": "Я танцую сальсу 27 лет."
+    },
+    {
+     "it": "Ho preso il cane cinque anni fa.",
+     "tr": "Я взял собаку пять лет назад."
+    },
+    {
+     "it": "Ho lavorato in fabbrica per due anni.",
+     "tr": "Я два года работал на заводе."
+    },
+    {
+     "it": "Ci siamo sposati nel 2010.",
+     "tr": "Мы поженились в 2010 году."
+    },
+    {
+     "it": "Il corso dura da settembre a giugno.",
+     "tr": "Курс длится с сентября по июнь."
+    },
+    {
+     "it": "Ti aspetto dalle otto!",
+     "tr": "Я жду тебя с восьми!"
+    }
+   ],
+   "summary": "**da + presente** — и сейчас; **per + passato** — закончилось; **… fa** — назад; **nel** + год; **a** + возраст.",
+   "keyWords": [
+    {
+     "title": "Il tempo",
+     "ids": [
+      "w205",
+      "w531",
+      "w391",
+      "w217",
+      "w447",
+      "w448",
+      "w170",
+      "w244",
+      "w521",
+      "w543",
+      "w595"
+     ]
+    }
+   ]
+  },
+  "g5-reciproci": {
+   "id": "g5-reciproci",
+   "inBreve": [
+    "Во множественном числе {{ci, vi, si}} могут значить «друг друга»: {{ci amiamo}} — мы любим друг друга.",
+    "Формы — как у возвратных: {{ci vediamo}}, {{vi conoscete}}, {{si scrivono}}.",
+    "В passato prossimo — {{essere}} и причастие во множественном: {{ci siamo conosciuti}}."
+   ],
+   "formation": {
+    "steps": [
+     "Возьми глагол «на кого-то»: {{conoscere}}, {{vedere}}, {{amare}}.",
+     "Поставь {{ci}} / {{vi}} / {{si}} и множественное число: {{ci conosciamo}}.",
+     "В прошедшем: {{essere}} + {{-i}} / {{-e}}: {{si sono conosciuti}}."
+    ]
+   },
+   "tables": [
+    {
+     "title": "Presente и passato prossimo",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "presente",
+       "passato prossimo"
+      ],
+      [
+       "noi",
+       "ci am|iamo",
+       "ci siamo am|ati/e"
+      ],
+      [
+       "voi",
+       "vi am|ate",
+       "vi siete am|ati/e"
+      ],
+      [
+       "loro",
+       "si am|ano",
+       "si sono am|ati/e"
+      ]
+     ],
+     "note": "Только множественное число: «друг друга» — это минимум двое."
+    },
+    {
+     "title": "Avere или essere",
+     "header": true,
+     "rows": [
+      [
+       "avere",
+       "essere"
+      ],
+      [
+       "Ho conosciuto Anna.",
+       "Io e Anna ci siamo conosciuti."
+      ],
+      [
+       "Ho sposato Anna.",
+       "Ci siamo sposati."
+      ],
+      [
+       "Ho visto Marco.",
+       "Io e Marco ci siamo visti."
+      ],
+      [
+       "Ho salutato Lucia.",
+       "Ci siamo salutati."
+      ]
+     ],
+     "note": "Кого-то — {{avere}}; друг друга — {{essere}}."
+    }
+   ],
+   "uses": [
+    {
+     "text": "Отношения",
+     "it": "Ci conosciamo da dieci anni.",
+     "tr": "Мы знакомы десять лет."
+    },
+    {
+     "text": "Встречи",
+     "it": "Ci vediamo domani!",
+     "tr": "Увидимся завтра!"
+    },
+    {
+     "text": "Общение",
+     "it": "Ci scriviamo ogni giorno.",
+     "tr": "Мы пишем друг другу каждый день."
+    },
+    {
+     "text": "Приветствие и прощание",
+     "it": "Si salutano e vanno via.",
+     "tr": "Они прощаются и уходят."
+    }
+   ],
+   "exceptions": [
+    {
+     "title": "Смешанная группа",
+     "text": "Мужчина и женщина вместе — окончание {{-i}}.",
+     "examples": [
+      {
+       "it": "Io e mio marito ci siamo conosciuti a Lugano.",
+       "tr": "Мы с мужем познакомились в Лугано."
+      }
+     ]
+    },
+    {
+     "title": "Две женщины",
+     "text": "Только женщины — окончание {{-e}}.",
+     "examples": [
+      {
+       "it": "Lucia e Sara si sono viste ieri.",
+       "tr": "Лючия и Сара виделись вчера."
+      }
+     ]
+    },
+    {
+     "title": "innamorarsi di",
+     "text": "Влюбиться в кого-то — {{di}}.",
+     "examples": [
+      {
+       "it": "Mi sono innamorato di lei.",
+       "tr": "Я влюбился в неё."
+      }
+     ]
+    },
+    {
+     "title": "sposarsi con / sposare",
+     "text": "Два правильных варианта.",
+     "examples": [
+      {
+       "it": "Mi sono sposato con Anna. = Ho sposato Anna.",
+       "tr": "Я женился на Анне."
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "Abbiamo conosciuti a Lugano.",
+     "right": "Ci siamo conosciuti a Lugano.",
+     "why": "Друг друга — ci + essere."
+    },
+    {
+     "wrong": "Ci siamo conosciuto.",
+     "right": "Ci siamo conosciuti.",
+     "why": "Причастие во множественном."
+    },
+    {
+     "wrong": "Lucia e Sara si sono visti.",
+     "right": "Lucia e Sara si sono viste.",
+     "why": "Две женщины — -e."
+    },
+    {
+     "wrong": "Mi sono innamorato in lei.",
+     "right": "Mi sono innamorato di lei.",
+     "why": "innamorarsi di."
+    },
+    {
+     "wrong": "Ci siamo amato molto.",
+     "right": "Ci siamo amati molto.",
+     "why": "Множественное: amati."
+    }
+   ],
+   "examples": [
+    {
+     "it": "Ci siamo conosciuti a una festa.",
+     "tr": "Мы познакомились на вечеринке."
+    },
+    {
+     "it": "Si sono sposati nel 2010.",
+     "tr": "Они поженились в 2010 году."
+    },
+    {
+     "it": "Vi vedete spesso?",
+     "tr": "Вы часто видитесь?"
+    },
+    {
+     "it": "Non ci parliamo più.",
+     "tr": "Мы больше не разговариваем."
+    },
+    {
+     "it": "Si telefonano ogni sera.",
+     "tr": "Они созваниваются каждый вечер."
+    },
+    {
+     "it": "Ci siamo salutati alla stazione.",
+     "tr": "Мы попрощались на вокзале."
+    }
+   ],
+   "summary": "**ci / vi / si** + множественное = друг друга. Прошедшее: **ci siamo conosciuti**. Кого-то — avere, друг друга — essere.",
+   "keyWords": [
+    {
+     "title": "Incontri",
+     "ids": [
+      "w110",
+      "w389",
+      "w077",
+      "w392"
+     ]
+    }
+   ]
+  },
+  "g5-coppia-tappe": {
+   "id": "g5-coppia-tappe",
+   "inBreve": [
+    "Этапы отношений описывают почти только **возвратными** глаголами: {{conoscersi}}, {{innamorarsi}}, {{sposarsi}}.",
+    "В passato prossimo — {{essere}}: {{si sono sposati}}.",
+    "Исключение — {{divorziare}}: с {{avere}}, {{hanno divorziato}}."
+   ],
+   "formation": {
+    "steps": [
+     "Расставь события по порядку — таблица «Le tappe».",
+     "Возьми глагол и поставь {{essere}}: {{si sono}}, {{ci siamo}}.",
+     "Причастие — во множественном: {{-i}} или {{-e}}."
+    ]
+   },
+   "tables": [
+    {
+     "title": "Le tappe",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "infinito",
+       "loro"
+      ],
+      [
+       "1",
+       "conoscersi",
+       "si sono conosciuti"
+      ],
+      [
+       "2",
+       "innamorarsi",
+       "si sono innamorati"
+      ],
+      [
+       "3",
+       "mettersi insieme",
+       "si sono messi insieme"
+      ],
+      [
+       "4",
+       "fidanzarsi",
+       "si sono fidanzati"
+      ],
+      [
+       "5",
+       "sposarsi",
+       "si sono sposati"
+      ],
+      [
+       "6",
+       "separarsi",
+       "si sono separati"
+      ],
+      [
+       "7",
+       "divorziare",
+       "hanno divorziato"
+      ]
+     ],
+     "note": "{{divorziare}} — не возвратный: {{hanno divorziato}}."
+    },
+    {
+     "title": "Состояние сейчас",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "essere +"
+      ],
+      [
+       "fidanzati",
+       "Sono fidanzati."
+      ],
+      [
+       "sposati",
+       "Sono sposati."
+      ],
+      [
+       "separati",
+       "Sono separati."
+      ],
+      [
+       "divorziati",
+       "Sono divorziati."
+      ]
+     ],
+     "note": "Событие — {{si sono sposati}}; состояние — {{sono sposati}}."
+    }
+   ],
+   "uses": [
+    {
+     "text": "Рассказ о паре",
+     "it": "Si sono conosciuti all'università.",
+     "tr": "Они познакомились в университете."
+    },
+    {
+     "text": "О себе",
+     "it": "Mi sono sposato nel 2008.",
+     "tr": "Я женился в 2008 году."
+    },
+    {
+     "text": "Сейчас",
+     "it": "Sono sposati da vent'anni.",
+     "tr": "Они женаты двадцать лет."
+    },
+    {
+     "text": "Конец отношений",
+     "it": "Hanno divorziato dopo cinque anni.",
+     "tr": "Они развелись через пять лет."
+    }
+   ],
+   "exceptions": [
+    {
+     "title": "mettersi insieme",
+     "text": "Причастие {{messo}}: {{si sono messi insieme}}.",
+     "examples": [
+      {
+       "it": "Si sono messi insieme a giugno.",
+       "tr": "Они начали встречаться в июне."
+      }
+     ]
+    },
+    {
+     "title": "divorziare",
+     "text": "Не возвратный, с {{avere}}.",
+     "examples": [
+      {
+       "it": "Hanno divorziato l'anno scorso.",
+       "tr": "Они развелись в прошлом году."
+      }
+     ]
+    },
+    {
+     "title": "Событие или состояние",
+     "text": "{{mi sono sposato}} — женился (когда?); {{sono sposato}} — женат (сейчас).",
+     "examples": [
+      {
+       "it": "Sono sposato. / Mi sono sposato nel 2008.",
+       "tr": "Я женат. / Я женился в 2008 году."
+      }
+     ]
+    },
+    {
+     "title": "О себе одном",
+     "text": "Возвратный в единственном: {{mi sono innamorata}}.",
+     "examples": [
+      {
+       "it": "Mi sono innamorata di Marco.",
+       "tr": "Я влюбилась в Марко."
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "Si sono divorziati.",
+     "right": "Hanno divorziato.",
+     "why": "divorziare — avere."
+    },
+    {
+     "wrong": "Si sono mettuti insieme.",
+     "right": "Si sono messi insieme.",
+     "why": "mettere → messo."
+    },
+    {
+     "wrong": "Sono sposati nel 2010.",
+     "right": "Si sono sposati nel 2010.",
+     "why": "Событие — sposarsi."
+    },
+    {
+     "wrong": "Hanno sposato nel 2010.",
+     "right": "Si sono sposati nel 2010.",
+     "why": "Друг с другом — essere."
+    },
+    {
+     "wrong": "Si sono fidanzato.",
+     "right": "Si sono fidanzati.",
+     "why": "Множественное — -i."
+    }
+   ],
+   "examples": [
+    {
+     "it": "Anna e Marco si sono conosciuti al lavoro.",
+     "tr": "Анна и Марко познакомились на работе."
+    },
+    {
+     "it": "Dopo un mese si sono innamorati.",
+     "tr": "Через месяц они влюбились."
+    },
+    {
+     "it": "Si sono fidanzati in vacanza.",
+     "tr": "Они обручились в отпуске."
+    },
+    {
+     "it": "Si sono sposati in chiesa.",
+     "tr": "Они венчались в церкви."
+    },
+    {
+     "it": "Hanno due figli.",
+     "tr": "У них двое детей."
+    },
+    {
+     "it": "Dopo dieci anni si sono separati.",
+     "tr": "Через десять лет они расстались."
+    }
+   ],
+   "summary": "**conoscersi → innamorarsi → mettersi insieme → fidanzarsi → sposarsi** — все с essere. **divorziare** — avere.",
+   "keyWords": [
+    {
+     "title": "La coppia",
+     "ids": [
+      "w472",
+      "w473",
+      "w476",
+      "w374",
+      "w477",
+      "w359",
+      "w190"
+     ]
+    }
+   ]
   }
  }
 }

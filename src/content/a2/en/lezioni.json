@@ -3339,6 +3339,889 @@
      ]
     }
    ]
+  },
+  "g5-avverbi-passato": {
+   "id": "g5-avverbi-passato",
+   "inBreve": [
+    "Short adverbs go **between** the auxiliary and the participle: {{ho già mangiato}}.",
+    "{{non}} goes before the auxiliary: {{non ho ancora mangiato}}.",
+    "Double negatives are normal: {{non ho mai visto}} — “I have never seen”."
+   ],
+   "formation": {
+    "steps": [
+     "Put the auxiliary: {{ho}}, {{sono}}…",
+     "Add the adverb: {{già}}, {{appena}}, {{mai}}, {{sempre}}, {{ancora}}, {{più}}.",
+     "Finish with the participle: {{ho già mangiato}}; for a negative, {{non}} at the start."
+    ]
+   },
+   "tables": [
+    {
+     "title": "Where the adverb goes",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "ausiliare",
+       "avverbio",
+       "participio"
+      ],
+      [
+       "io",
+       "ho",
+       "già",
+       "mangiato"
+      ],
+      [
+       "lei",
+       "è",
+       "appena",
+       "arrivata"
+      ],
+      [
+       "noi",
+       "non abbiamo",
+       "ancora",
+       "finito"
+      ],
+      [
+       "loro",
+       "non sono",
+       "mai",
+       "stati"
+      ]
+     ],
+     "note": "Not {{già ho mangiato}}, but {{ho già mangiato}}."
+    },
+    {
+     "title": "Yes and no",
+     "header": true,
+     "rows": [
+      [
+       "sì",
+       "no"
+      ],
+      [
+       "Ho già mangiato.",
+       "Non ho ancora mangiato."
+      ],
+      [
+       "Sono già stato a Roma.",
+       "Non sono mai stato a Roma."
+      ],
+      [
+       "Abito ancora qui.",
+       "Non abito più qui."
+      ],
+      [
+       "Ho sempre lavorato.",
+       "Non ho mai lavorato."
+      ]
+     ],
+     "note": "The “no” of {{già}} is {{non… ancora}}; of {{ancora}} — {{non… più}}."
+    }
+   ],
+   "uses": [
+    {
+     "text": "già — already",
+     "it": "Hai già mangiato?",
+     "tr": "Have you eaten already?"
+    },
+    {
+     "text": "appena — just",
+     "it": "Sono appena arrivato.",
+     "tr": "I've just arrived."
+    },
+    {
+     "text": "mai in questions — ever",
+     "it": "Sei mai stato a Roma?",
+     "tr": "Have you ever been to Rome?"
+    },
+    {
+     "text": "non… più — no longer",
+     "it": "Non abito più a Kiev.",
+     "tr": "I don't live in Kyiv any more."
+    },
+    {
+     "text": "ancora — still",
+     "it": "Porta ancora gli occhiali.",
+     "tr": "He still wears glasses."
+    }
+   ],
+   "exceptions": [
+    {
+     "title": "Hai mai…? or Sei mai…?",
+     "text": "The auxiliary depends on the verb: {{hai mai visto}}, but {{sei mai stato}}.",
+     "examples": [
+      {
+       "it": "Hai mai mangiato la fondue?",
+       "tr": "Have you ever eaten fondue?"
+      },
+      {
+       "it": "Sei mai andato in Sicilia?",
+       "tr": "Have you ever been to Sicily?"
+      }
+     ]
+    },
+    {
+     "title": "ancora — two meanings",
+     "text": "“Still” and “more, again”.",
+     "examples": [
+      {
+       "it": "Abito ancora qui.",
+       "tr": "I still live here."
+      },
+      {
+       "it": "Vuoi ancora un caffè?",
+       "tr": "Would you like another coffee?"
+      }
+     ]
+    },
+    {
+     "title": "sempre",
+     "text": "Also in the middle: {{ho sempre lavorato}}.",
+     "examples": [
+      {
+       "it": "Ho sempre abitato in città.",
+       "tr": "I've always lived in the city."
+      }
+     ]
+    },
+    {
+     "title": "In the present",
+     "text": "Same logic, no participle: {{non lavoro più}}, {{abito ancora}}.",
+     "examples": [
+      {
+       "it": "Non fumo più.",
+       "tr": "I don't smoke any more."
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "Già ho mangiato.",
+     "right": "Ho già mangiato.",
+     "why": "The adverb goes between ho and the participle."
+    },
+    {
+     "wrong": "No, non ho già finito.",
+     "right": "No, non ho ancora finito.",
+     "why": "“Not yet” is non… ancora."
+    },
+    {
+     "wrong": "Ho mai visto Roma.",
+     "right": "Non ho mai visto Roma.",
+     "why": "“Never” is non… mai."
+    },
+    {
+     "wrong": "Hai mai stato a Roma?",
+     "right": "Sei mai stato a Roma?",
+     "why": "essere → sei."
+    },
+    {
+     "wrong": "Non abito ancora a Kiev.",
+     "right": "Non abito più a Kiev.",
+     "why": "“No longer” is non… più."
+    }
+   ],
+   "examples": [
+    {
+     "it": "Il film è già cominciato.",
+     "tr": "The film has already started."
+    },
+    {
+     "it": "Non abbiamo ancora deciso.",
+     "tr": "We haven't decided yet."
+    },
+    {
+     "it": "Sono appena tornata dal lavoro.",
+     "tr": "I've just got back from work."
+    },
+    {
+     "it": "Non ho mai visto la neve.",
+     "tr": "I've never seen snow."
+    },
+    {
+     "it": "Hai mai lavorato in un ristorante?",
+     "tr": "Have you ever worked in a restaurant?"
+    },
+    {
+     "it": "Marco non porta più gli occhiali.",
+     "tr": "Marco doesn't wear glasses any more."
+    }
+   ],
+   "summary": "**ho già / non ho ancora / sono appena / non sono mai / non… più** + participle. The adverb sits between auxiliary and participle.",
+   "keyWords": [
+    {
+     "title": "Avverbi",
+     "ids": [
+      "w105",
+      "w384",
+      "w385",
+      "w386",
+      "w443",
+      "w102"
+     ]
+    }
+   ]
+  },
+  "g4-tempo-da-per-fa": {
+   "id": "g4-tempo-da-per-fa",
+   "inBreve": [
+    "{{da}} + present — started and is **still going on**: {{abito qui da 5 anni}}.",
+    "{{per}} + passato prossimo — lasted and **is over**: {{ho lavorato per 2 anni}}.",
+    "{{fa}} — “ago”, after the time: {{5 anni fa}}; year — {{nel 2021}}; age — {{a 18 anni}}."
+   ],
+   "formation": {
+    "steps": [
+     "Ask yourself: is it still happening? Yes — {{da}} + present.",
+     "Finished: how long — {{per}}; when — {{fa}}, {{nel}}, {{a}} + passato prossimo.",
+     "If you name the starting point — {{dal}}, {{dalla}}: {{dal 2022}}."
+    ]
+   },
+   "tables": [
+    {
+     "title": "Still going on — present",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "esempio"
+      ],
+      [
+       "da + durata",
+       "Abito qui da 5 anni."
+      ],
+      [
+       "dal + momento",
+       "Sono in Ticino dal 2022."
+      ],
+      [
+       "dalle + ora",
+       "Ti aspetto dalle otto!"
+      ]
+     ],
+     "note": "“I've lived here for 5 years” → {{da}} + present."
+    },
+    {
+     "title": "Finished — passato prossimo",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "esempio"
+      ],
+      [
+       "per + durata",
+       "Ho lavorato lì per 2 anni."
+      ],
+      [
+       "durata + fa",
+       "Sono arrivato 4 anni fa."
+      ],
+      [
+       "nel + anno",
+       "Mi sono sposato nel 2010."
+      ],
+      [
+       "a + età",
+       "A 18 anni ho fatto l'operaio."
+      ]
+     ],
+     "note": "{{fa}} always comes after the time: {{due anni fa}}."
+    },
+    {
+     "title": "From … to",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "esempio"
+      ],
+      [
+       "anni",
+       "dal 2022 al 2026"
+      ],
+      [
+       "giorni",
+       "dal lunedì al giovedì"
+      ],
+      [
+       "ore",
+       "dalle 9 alle 17"
+      ],
+      [
+       "mesi",
+       "da settembre a giugno"
+      ]
+     ],
+     "note": "Months — no article; years, days and times — with it."
+    }
+   ],
+   "uses": [
+    {
+     "text": "How long? (still now)",
+     "it": "Da quanto tempo studi l'italiano?",
+     "tr": "How long have you been learning Italian?"
+    },
+    {
+     "text": "How long did it last?",
+     "it": "Per quanto tempo hai abitato a Kiev?",
+     "tr": "How long did you live in Kyiv?"
+    },
+    {
+     "text": "When? How long ago?",
+     "it": "Quando sei arrivato? — Tre anni fa.",
+     "tr": "When did you arrive? — Three years ago."
+    },
+    {
+     "text": "Year and age",
+     "it": "Ho cominciato a lavorare a 20 anni, nel 2001.",
+     "tr": "I started work at 20, in 2001."
+    },
+    {
+     "text": "In (future)",
+     "it": "Tra un mese ho l'esame.",
+     "tr": "I have the exam in a month."
+    }
+   ],
+   "exceptions": [
+    {
+     "title": "Three ways to say it",
+     "text": "{{da 4 anni}} = {{dal 2022}} = {{4 anni fa}}.",
+     "examples": [
+      {
+       "it": "Sono in Ticino da 4 anni. = Sono arrivato 4 anni fa.",
+       "tr": "I've been in Ticino for 4 years. = I arrived 4 years ago."
+      }
+     ]
+    },
+    {
+     "title": "fa and tra",
+     "text": "{{fa}} — ago (past); {{tra}} / {{fra}} — in (future).",
+     "examples": [
+      {
+       "it": "Due anni fa. / Tra due anni.",
+       "tr": "Two years ago. / In two years."
+      }
+     ]
+    },
+    {
+     "title": "il lunedì or lunedì",
+     "text": "With the article — every week; without — this coming one.",
+     "examples": [
+      {
+       "it": "Il lunedì vado in palestra. / Lunedì vado dal medico.",
+       "tr": "On Mondays I go to the gym. / On Monday I'm going to the doctor."
+      }
+     ]
+    },
+    {
+     "title": "Year and month",
+     "text": "Year — {{nel}}; month — {{a}} or {{in}}, no article.",
+     "examples": [
+      {
+       "it": "Nel 2021, a maggio.",
+       "tr": "In 2021, in May."
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "Abito qui per 5 anni.",
+     "right": "Abito qui da 5 anni.",
+     "why": "Still going on — da + present."
+    },
+    {
+     "wrong": "Ho abitato qui da 5 anni.",
+     "right": "Abito qui da 5 anni.",
+     "why": "With da use the present."
+    },
+    {
+     "wrong": "Fa 5 anni.",
+     "right": "5 anni fa.",
+     "why": "fa comes after the time."
+    },
+    {
+     "wrong": "In 2021.",
+     "right": "Nel 2021.",
+     "why": "Years take nel."
+    },
+    {
+     "wrong": "Ai 18 anni.",
+     "right": "A 18 anni.",
+     "why": "Age — a, no article."
+    }
+   ],
+   "examples": [
+    {
+     "it": "Ballo la salsa da 27 anni.",
+     "tr": "I've been dancing salsa for 27 years."
+    },
+    {
+     "it": "Ho preso il cane cinque anni fa.",
+     "tr": "I got the dog five years ago."
+    },
+    {
+     "it": "Ho lavorato in fabbrica per due anni.",
+     "tr": "I worked in a factory for two years."
+    },
+    {
+     "it": "Ci siamo sposati nel 2010.",
+     "tr": "We got married in 2010."
+    },
+    {
+     "it": "Il corso dura da settembre a giugno.",
+     "tr": "The course runs from September to June."
+    },
+    {
+     "it": "Ti aspetto dalle otto!",
+     "tr": "I've been waiting for you since eight!"
+    }
+   ],
+   "summary": "**da + present** — still now; **per + past** — over; **… fa** — ago; **nel** + year; **a** + age.",
+   "keyWords": [
+    {
+     "title": "Il tempo",
+     "ids": [
+      "w205",
+      "w531",
+      "w391",
+      "w217",
+      "w447",
+      "w448",
+      "w170",
+      "w244",
+      "w521",
+      "w543",
+      "w595"
+     ]
+    }
+   ]
+  },
+  "g5-reciproci": {
+   "id": "g5-reciproci",
+   "inBreve": [
+    "In the plural, {{ci, vi, si}} can mean “each other”: {{ci amiamo}} — we love each other.",
+    "The forms are like reflexives: {{ci vediamo}}, {{vi conoscete}}, {{si scrivono}}.",
+    "In the passato prossimo — {{essere}} with a plural participle: {{ci siamo conosciuti}}."
+   ],
+   "formation": {
+    "steps": [
+     "Take a verb done to someone: {{conoscere}}, {{vedere}}, {{amare}}.",
+     "Add {{ci}} / {{vi}} / {{si}} with a plural verb: {{ci conosciamo}}.",
+     "In the past: {{essere}} + {{-i}} / {{-e}}: {{si sono conosciuti}}."
+    ]
+   },
+   "tables": [
+    {
+     "title": "Present and passato prossimo",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "presente",
+       "passato prossimo"
+      ],
+      [
+       "noi",
+       "ci am|iamo",
+       "ci siamo am|ati/e"
+      ],
+      [
+       "voi",
+       "vi am|ate",
+       "vi siete am|ati/e"
+      ],
+      [
+       "loro",
+       "si am|ano",
+       "si sono am|ati/e"
+      ]
+     ],
+     "note": "Plural only: “each other” needs at least two people."
+    },
+    {
+     "title": "Avere or essere",
+     "header": true,
+     "rows": [
+      [
+       "avere",
+       "essere"
+      ],
+      [
+       "Ho conosciuto Anna.",
+       "Io e Anna ci siamo conosciuti."
+      ],
+      [
+       "Ho sposato Anna.",
+       "Ci siamo sposati."
+      ],
+      [
+       "Ho visto Marco.",
+       "Io e Marco ci siamo visti."
+      ],
+      [
+       "Ho salutato Lucia.",
+       "Ci siamo salutati."
+      ]
+     ],
+     "note": "Someone — {{avere}}; each other — {{essere}}."
+    }
+   ],
+   "uses": [
+    {
+     "text": "Relationships",
+     "it": "Ci conosciamo da dieci anni.",
+     "tr": "We've known each other for ten years."
+    },
+    {
+     "text": "Meeting up",
+     "it": "Ci vediamo domani!",
+     "tr": "See you tomorrow!"
+    },
+    {
+     "text": "Keeping in touch",
+     "it": "Ci scriviamo ogni giorno.",
+     "tr": "We write to each other every day."
+    },
+    {
+     "text": "Greeting and saying goodbye",
+     "it": "Si salutano e vanno via.",
+     "tr": "They say goodbye and leave."
+    }
+   ],
+   "exceptions": [
+    {
+     "title": "Mixed group",
+     "text": "A man and a woman together — ending {{-i}}.",
+     "examples": [
+      {
+       "it": "Io e mio marito ci siamo conosciuti a Lugano.",
+       "tr": "My husband and I met in Lugano."
+      }
+     ]
+    },
+    {
+     "title": "Two women",
+     "text": "Only women — ending {{-e}}.",
+     "examples": [
+      {
+       "it": "Lucia e Sara si sono viste ieri.",
+       "tr": "Lucia and Sara saw each other yesterday."
+      }
+     ]
+    },
+    {
+     "title": "innamorarsi di",
+     "text": "Fall in love with someone — {{di}}.",
+     "examples": [
+      {
+       "it": "Mi sono innamorato di lei.",
+       "tr": "I fell in love with her."
+      }
+     ]
+    },
+    {
+     "title": "sposarsi con / sposare",
+     "text": "Two correct options.",
+     "examples": [
+      {
+       "it": "Mi sono sposato con Anna. = Ho sposato Anna.",
+       "tr": "I married Anna."
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "Abbiamo conosciuti a Lugano.",
+     "right": "Ci siamo conosciuti a Lugano.",
+     "why": "Each other — ci + essere."
+    },
+    {
+     "wrong": "Ci siamo conosciuto.",
+     "right": "Ci siamo conosciuti.",
+     "why": "Plural participle."
+    },
+    {
+     "wrong": "Lucia e Sara si sono visti.",
+     "right": "Lucia e Sara si sono viste.",
+     "why": "Two women — -e."
+    },
+    {
+     "wrong": "Mi sono innamorato in lei.",
+     "right": "Mi sono innamorato di lei.",
+     "why": "innamorarsi di."
+    },
+    {
+     "wrong": "Ci siamo amato molto.",
+     "right": "Ci siamo amati molto.",
+     "why": "Plural: amati."
+    }
+   ],
+   "examples": [
+    {
+     "it": "Ci siamo conosciuti a una festa.",
+     "tr": "We met at a party."
+    },
+    {
+     "it": "Si sono sposati nel 2010.",
+     "tr": "They got married in 2010."
+    },
+    {
+     "it": "Vi vedete spesso?",
+     "tr": "Do you see each other often?"
+    },
+    {
+     "it": "Non ci parliamo più.",
+     "tr": "We don't speak to each other any more."
+    },
+    {
+     "it": "Si telefonano ogni sera.",
+     "tr": "They phone each other every evening."
+    },
+    {
+     "it": "Ci siamo salutati alla stazione.",
+     "tr": "We said goodbye at the station."
+    }
+   ],
+   "summary": "**ci / vi / si** + plural = each other. Past: **ci siamo conosciuti**. Someone — avere, each other — essere.",
+   "keyWords": [
+    {
+     "title": "Incontri",
+     "ids": [
+      "w110",
+      "w389",
+      "w077",
+      "w392"
+     ]
+    }
+   ]
+  },
+  "g5-coppia-tappe": {
+   "id": "g5-coppia-tappe",
+   "inBreve": [
+    "Relationship stages use almost only **reflexive** verbs: {{conoscersi}}, {{innamorarsi}}, {{sposarsi}}.",
+    "In the passato prossimo — {{essere}}: {{si sono sposati}}.",
+    "The exception is {{divorziare}}: with {{avere}}, {{hanno divorziato}}."
+   ],
+   "formation": {
+    "steps": [
+     "Put the events in order — see “Le tappe”.",
+     "Take the verb and use {{essere}}: {{si sono}}, {{ci siamo}}.",
+     "Plural participle: {{-i}} or {{-e}}."
+    ]
+   },
+   "tables": [
+    {
+     "title": "Le tappe",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "infinito",
+       "loro"
+      ],
+      [
+       "1",
+       "conoscersi",
+       "si sono conosciuti"
+      ],
+      [
+       "2",
+       "innamorarsi",
+       "si sono innamorati"
+      ],
+      [
+       "3",
+       "mettersi insieme",
+       "si sono messi insieme"
+      ],
+      [
+       "4",
+       "fidanzarsi",
+       "si sono fidanzati"
+      ],
+      [
+       "5",
+       "sposarsi",
+       "si sono sposati"
+      ],
+      [
+       "6",
+       "separarsi",
+       "si sono separati"
+      ],
+      [
+       "7",
+       "divorziare",
+       "hanno divorziato"
+      ]
+     ],
+     "note": "{{divorziare}} isn't reflexive: {{hanno divorziato}}."
+    },
+    {
+     "title": "State now",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "essere +"
+      ],
+      [
+       "fidanzati",
+       "Sono fidanzati."
+      ],
+      [
+       "sposati",
+       "Sono sposati."
+      ],
+      [
+       "separati",
+       "Sono separati."
+      ],
+      [
+       "divorziati",
+       "Sono divorziati."
+      ]
+     ],
+     "note": "Event — {{si sono sposati}}; state — {{sono sposati}}."
+    }
+   ],
+   "uses": [
+    {
+     "text": "Telling a couple's story",
+     "it": "Si sono conosciuti all'università.",
+     "tr": "They met at university."
+    },
+    {
+     "text": "About yourself",
+     "it": "Mi sono sposato nel 2008.",
+     "tr": "I got married in 2008."
+    },
+    {
+     "text": "Now",
+     "it": "Sono sposati da vent'anni.",
+     "tr": "They've been married for twenty years."
+    },
+    {
+     "text": "The end",
+     "it": "Hanno divorziato dopo cinque anni.",
+     "tr": "They divorced after five years."
+    }
+   ],
+   "exceptions": [
+    {
+     "title": "mettersi insieme",
+     "text": "Participle {{messo}}: {{si sono messi insieme}}.",
+     "examples": [
+      {
+       "it": "Si sono messi insieme a giugno.",
+       "tr": "They got together in June."
+      }
+     ]
+    },
+    {
+     "title": "divorziare",
+     "text": "Not reflexive, takes {{avere}}.",
+     "examples": [
+      {
+       "it": "Hanno divorziato l'anno scorso.",
+       "tr": "They got divorced last year."
+      }
+     ]
+    },
+    {
+     "title": "Event or state",
+     "text": "{{mi sono sposato}} — got married (when?); {{sono sposato}} — am married (now).",
+     "examples": [
+      {
+       "it": "Sono sposato. / Mi sono sposato nel 2008.",
+       "tr": "I'm married. / I got married in 2008."
+      }
+     ]
+    },
+    {
+     "title": "Just yourself",
+     "text": "Reflexive in the singular: {{mi sono innamorata}}.",
+     "examples": [
+      {
+       "it": "Mi sono innamorata di Marco.",
+       "tr": "I fell in love with Marco."
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "Si sono divorziati.",
+     "right": "Hanno divorziato.",
+     "why": "divorziare takes avere."
+    },
+    {
+     "wrong": "Si sono mettuti insieme.",
+     "right": "Si sono messi insieme.",
+     "why": "mettere → messo."
+    },
+    {
+     "wrong": "Sono sposati nel 2010.",
+     "right": "Si sono sposati nel 2010.",
+     "why": "An event — sposarsi."
+    },
+    {
+     "wrong": "Hanno sposato nel 2010.",
+     "right": "Si sono sposati nel 2010.",
+     "why": "With each other — essere."
+    },
+    {
+     "wrong": "Si sono fidanzato.",
+     "right": "Si sono fidanzati.",
+     "why": "Plural — -i."
+    }
+   ],
+   "examples": [
+    {
+     "it": "Anna e Marco si sono conosciuti al lavoro.",
+     "tr": "Anna and Marco met at work."
+    },
+    {
+     "it": "Dopo un mese si sono innamorati.",
+     "tr": "A month later they fell in love."
+    },
+    {
+     "it": "Si sono fidanzati in vacanza.",
+     "tr": "They got engaged on holiday."
+    },
+    {
+     "it": "Si sono sposati in chiesa.",
+     "tr": "They got married in church."
+    },
+    {
+     "it": "Hanno due figli.",
+     "tr": "They have two children."
+    },
+    {
+     "it": "Dopo dieci anni si sono separati.",
+     "tr": "After ten years they separated."
+    }
+   ],
+   "summary": "**conoscersi → innamorarsi → mettersi insieme → fidanzarsi → sposarsi** — all with essere. **divorziare** — avere.",
+   "keyWords": [
+    {
+     "title": "La coppia",
+     "ids": [
+      "w472",
+      "w473",
+      "w476",
+      "w374",
+      "w477",
+      "w359",
+      "w190"
+     ]
+    }
+   ]
   }
  }
 }
