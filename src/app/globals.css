@@ -16,8 +16,8 @@
   --color-vocab: #00788A;
   --color-exercises: #8944AB;
   --color-communicate: #A05A00;
-  /* Testo nella lingua delle spiegazioni (traduzioni, regole, note): 5.89:1 su bianco, 5.28:1 su bg-grouped */
-  --color-translation: #56657F;
+  /* Testo nella lingua delle spiegazioni (solo tramite <Tr>): 6.28:1 su bianco, 5.62:1 su bg-grouped */
+  --color-translation: #4B5BA6;
   --color-grammar-soft: color-mix(in srgb, var(--color-grammar) 12%, transparent);
   --color-vocab-soft: color-mix(in srgb, var(--color-vocab) 12%, transparent);
   --color-exercises-soft: color-mix(in srgb, var(--color-exercises) 12%, transparent);
@@ -40,7 +40,7 @@
     --color-vocab: #40C8E0;
     --color-exercises: #BF5AF2;
     --color-communicate: #FFB340;
-    --color-translation: #A3B1C6; /* 7.83:1 su card, 9.66:1 su nero */
+    --color-translation: #A5B4FC; /* 8.53:1 su card, 10.53:1 su nero */
   }
 }
 

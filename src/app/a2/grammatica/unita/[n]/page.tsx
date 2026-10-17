@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 import { Elenco, RigaElenco, TestoRiga } from "@/components/grammatica/Elenco";
 import { LinkAvanti } from "@/components/grammatica/LinkAvanti";
 import { ConteggioStudiati, PuntoStato } from "@/components/grammatica/Progresso";
-import { Tr } from "@/components/grammatica/Tr";
+import { Tr } from "@/components/Tr";
 import { getPercorso } from "@/content/a2/grammatica";
 import { DEFAULT_LOCALE } from "@/lib/lingue";
 import { linguaScelta } from "@/lib/lingua-scelta";
@@ -29,7 +29,7 @@ export default async function UnitaPage({ params }: PageProps<"/a2/grammatica/un
       <header>
         <h1 className="text-[34px] leading-tight font-bold tracking-tight md:text-5xl">Unità {u.number}</h1>
         <p className="mt-1 text-[20px] font-semibold">{u.title}</p>
-        <Tr locale={locale} as="p" className="text-[17px]">
+        <Tr locale={locale} as="p" size="md">
           {u.subtitle}
         </Tr>
         <p className="mt-2 text-[15px] text-label-2">

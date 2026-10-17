@@ -1,6 +1,7 @@
 "use client";
 
 import { usePathname } from "next/navigation";
+import { Tr } from "@/components/Tr";
 import type { Locale } from "@/lib/lingue";
 import { SEZIONI, type SezioneSlug } from "@/lib/sezioni";
 
@@ -23,9 +24,9 @@ export function CourseHeader({
       <h1 data-titolo-grande className="text-[28px] leading-[1.15] font-bold tracking-[-0.02em] md:text-[40px]">
         {sezione.nome}
       </h1>
-      <p lang={locale} className="mt-1 text-[15px] text-label-2 md:text-[17px]">
+      <Tr locale={locale} as="p" size="lg" className="mt-1">
         {sottotitoli[sezione.slug]}
-      </p>
+      </Tr>
     </div>
   );
 }

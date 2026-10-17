@@ -64,7 +64,7 @@ export function CerchioUnita({ numero, topicIds }: { numero: number; topicIds: s
   return (
     <span
       className={`flex size-9 shrink-0 items-center justify-center rounded-full border-2 border-grammar text-[15px] font-semibold tabular-nums ${
-        completa ? "bg-grammar text-white dark:text-black" : "text-grammar"
+        completa ? "bg-grammar text-bg" : "text-grammar"
       }`}
     >
       {numero}

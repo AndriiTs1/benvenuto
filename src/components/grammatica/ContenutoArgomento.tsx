@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import { Tr } from "@/components/grammatica/Tr";
+import { Tr } from "@/components/Tr";
 import type { Locale } from "@/lib/lingue";
 
 // Sezioni di un argomento di grammar.json, nell'ordine dei campi. Testi nella lingua delle
@@ -66,8 +66,6 @@ const OGGETTI: Record<string, string> = {
   story_model: "Modello di racconto",
 };
 
-const CIRILLICO = /[Ѐ-ӿ]/;
-
 function maiuscola(chiave: string) {
   const testo = chiave.replaceAll("_", " ");
   return testo.charAt(0).toUpperCase() + testo.slice(1);
@@ -113,7 +111,7 @@ function sezioni(oggetto: Record<string, unknown>, lingua: Locale): ReactNode[] 
     if (chiave === "rule" && typeof valore === "string") {
       risultato.push(
         <Sezione key={chiave} titolo="Regola">
-          <Tr locale={lingua} as="p" className="rounded-2xl bg-card p-4 text-[17px] leading-relaxed">
+          <Tr locale={lingua} as="p" size="md" className="rounded-2xl bg-card p-4">
             {valore}
           </Tr>
         </Sezione>,
@@ -150,7 +148,7 @@ function sezioni(oggetto: Record<string, unknown>, lingua: Locale): ReactNode[] 
     } else if (eTabella(valore)) {
       risultato.push(
         <Sezione key={chiave} titolo={TITOLI_TABELLE[chiave] ?? maiuscola(chiave)}>
-          <TabellaCard righe={valore} intestazione={!SENZA_INTESTAZIONE.has(chiave)} lingua={lingua} />
+          <TabellaCard righe={valore} intestazione={!SENZA_INTESTAZIONE.has(chiave)} />
         </Sezione>,
       );
     } else if (valore && typeof valore === "object" && !Array.isArray(valore)) {
@@ -160,7 +158,7 @@ function sezioni(oggetto: Record<string, unknown>, lingua: Locale): ReactNode[] 
         <section key={chiave} className="space-y-4 rounded-3xl border border-separator p-3 sm:p-4">
           <h2 className="px-1 text-[20px] font-semibold">{OGGETTI[chiave] ?? maiuscola(chiave)}</h2>
           {typeof title === "string" && (
-            <Tr locale={lingua} as="p" className="-mt-3 px-1 text-[15px]">
+            <Tr locale={lingua} as="p" size="sm" className="-mt-3 px-1">
               {title}
             </Tr>
           )}
@@ -178,7 +176,11 @@ function Righe({ testi, lingua }: { testi: string[]; lingua?: Locale }) {
   return (
     <ul className="overflow-hidden rounded-2xl bg-card">
       {testi.map((testo, i) => (
-        <li key={i} className={`px-4 py-3 text-[17px] leading-snug ${i > 0 ? "border-t border-separator" : ""}`}>
+        <li
+          key={i}
+          lang={lingua ? undefined : "it"}
+          className={`px-4 py-3 text-[17px] leading-snug ${i > 0 ? "border-t border-separator" : ""}`}
+        >
           {lingua ? <Tr locale={lingua}>{testo}</Tr> : testo}
         </li>
       ))}
@@ -205,7 +207,7 @@ function ErroriFrequenti({ errori, lingua }: { errori: string[]; lingua: Locale 
       </svg>
       <ul className="min-w-0 flex-1 space-y-2">
         {errori.map((errore, i) => (
-          <Tr key={i} locale={lingua} as="li" className="block text-[17px] leading-snug">
+          <Tr key={i} locale={lingua} as="li" size="md" className="block">
             {errore}
           </Tr>
         ))}
@@ -214,13 +216,9 @@ function ErroriFrequenti({ errori, lingua }: { errori: string[]; lingua: Locale 
   );
 }
 
-// Testo misto (celle, soluzioni): se contiene la lingua delle spiegazioni (cirillico) usa <Tr>.
-export function Cella({ testo, lingua }: { testo: string; lingua: Locale }) {
-  return CIRILLICO.test(testo) ? <Tr locale={lingua}>{testo}</Tr> : <>{testo}</>;
-}
-
 // Tabella in una scheda: su schermi stretti scorre in orizzontale dentro la scheda.
-function TabellaCard({ righe, intestazione, lingua }: { righe: Tabella; intestazione: boolean; lingua: Locale }) {
+// Le celle sono italiano (colore principale), anche quando contengono qualche parola di spiegazione.
+function TabellaCard({ righe, intestazione }: { righe: Tabella; intestazione: boolean }) {
   const testa = intestazione ? righe[0] : null;
   const corpo = intestazione ? righe.slice(1) : righe;
   // Testi brevi su una riga; quelli lunghi vanno a capo ma restano leggibili: se non c'è
@@ -232,13 +230,13 @@ function TabellaCard({ righe, intestazione, lingua }: { righe: Tabella; intestaz
 
   return (
     <div className="overflow-x-auto overscroll-x-contain rounded-2xl bg-card">
-      <table className="w-full border-collapse text-[15px] leading-snug">
+      <table lang="it" className="w-full border-collapse text-[15px] leading-snug">
         {testa && (
           <thead>
             <tr className="border-b border-separator">
               {testa.map((testo, i) => (
                 <th key={i} scope="col" className={`${cella(testo)} text-[13px] font-semibold`}>
-                  <Cella testo={testo} lingua={lingua} />
+                  {testo}
                 </th>
               ))}
             </tr>
@@ -250,11 +248,11 @@ function TabellaCard({ righe, intestazione, lingua }: { righe: Tabella; intestaz
               {riga.map((testo, i) =>
                 i === 0 && etichette ? (
                   <th key={i} scope="row" className={`${cella(testo)} font-semibold`}>
-                    <Cella testo={testo} lingua={lingua} />
+                    {testo}
                   </th>
                 ) : (
                   <td key={i} className={cella(testo)}>
-                    <Cella testo={testo} lingua={lingua} />
+                    {testo}
                   </td>
                 ),
               )}

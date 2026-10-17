@@ -3,7 +3,7 @@ import { ContinuaArgomento } from "@/components/grammatica/ContinuaArgomento";
 import { Elenco, RigaElenco, TestoRiga } from "@/components/grammatica/Elenco";
 import { BarraProgresso, CerchioUnita, ConteggioStudiati, PuntoStato } from "@/components/grammatica/Progresso";
 import { SceltaVista } from "@/components/grammatica/SceltaVista";
-import { Tr } from "@/components/grammatica/Tr";
+import { Tr } from "@/components/Tr";
 import { GRUPPI_GRAMMATICA, getPercorso, type TappaPercorso } from "@/content/a2/grammatica";
 import { linguaScelta } from "@/lib/lingua-scelta";
 

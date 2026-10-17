@@ -119,7 +119,7 @@ export function LanguageSwitcher({ locale }: { locale: Locale }) {
         aria-controls={aperto ? listaId : undefined}
         className="group inline-flex h-11 items-center focus-visible:outline-none"
       >
-        <span className="flex h-10 items-center gap-1.5 rounded-full bg-label/[0.08] pr-2.5 pl-3 text-[15px] font-semibold text-label transition duration-150 group-hover:bg-label/[0.12] group-focus-visible:outline-2 group-focus-visible:outline-offset-2 group-focus-visible:outline-label group-active:scale-[0.94] group-active:bg-label/[0.16] dark:bg-label/[0.16] dark:group-hover:bg-label/[0.22] dark:group-active:bg-label/[0.28]">
+        <span className="flex h-10 items-center gap-1.5 rounded-full bg-label/[0.08] pr-2.5 pl-3 text-[15px] font-semibold text-label transition duration-150 group-hover:bg-label/[0.12] group-focus-visible:outline-2 group-focus-visible:outline-offset-2 group-focus-visible:outline-label group-aria-expanded:outline-none group-active:scale-[0.94] group-active:bg-label/[0.16] dark:bg-label/[0.16] dark:group-hover:bg-label/[0.22] dark:group-active:bg-label/[0.28]">
           <svg
             aria-hidden="true"
             viewBox="0 0 24 24"
@@ -152,6 +152,7 @@ export function LanguageSwitcher({ locale }: { locale: Locale }) {
 
       {aperto && (
         // Sotto la capsula (alta 40px dentro un pulsante da 44px): 42px + 6px di distacco.
+        // Nel menu aperto niente anello scuro: l'opzione con il fuoco si riconosce dallo sfondo.
         <ul
           ref={lista}
           id={listaId}
@@ -173,7 +174,7 @@ export function LanguageSwitcher({ locale }: { locale: Locale }) {
                 tabIndex={-1}
                 onMouseDown={(event) => event.preventDefault()}
                 onClick={() => scegli(opzione.code)}
-                className={`flex h-10 cursor-pointer items-center justify-center rounded-[10px] text-[15px] text-label outline-none select-none hover:bg-label/[0.08] focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-label active:bg-label/[0.16] dark:hover:bg-label/[0.16] dark:active:bg-label/[0.24] ${
+                className={`flex h-10 cursor-pointer items-center justify-center rounded-[10px] text-[15px] text-label outline-none select-none hover:bg-label/[0.08] focus-visible:bg-label/[0.12] active:bg-label/[0.16] dark:hover:bg-label/[0.16] dark:focus-visible:bg-label/[0.22] dark:active:bg-label/[0.24] ${
                   attiva ? "bg-label/[0.08] font-semibold dark:bg-label/[0.16]" : ""
                 }`}
               >

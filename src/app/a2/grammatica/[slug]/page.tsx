@@ -1,9 +1,9 @@
 import { notFound } from "next/navigation";
 import { HoCapito, SegnaVisto } from "@/components/grammatica/AzioniArgomento";
-import { Cella, ContenutoArgomento, Sezione } from "@/components/grammatica/ContenutoArgomento";
+import { ContenutoArgomento, Sezione } from "@/components/grammatica/ContenutoArgomento";
 import { LezioneV2 } from "@/components/grammatica/LezioneV2";
 import { LinkAvanti } from "@/components/grammatica/LinkAvanti";
-import { Tr } from "@/components/grammatica/Tr";
+import { Tr } from "@/components/Tr";
 import { getArgomento, getPercorso } from "@/content/a2/grammatica";
 import { getLezioneV2 } from "@/content/a2/lezioni";
 import { DEFAULT_LOCALE, type Locale } from "@/lib/lingue";
@@ -43,7 +43,7 @@ export default async function ArgomentoPage({ params }: PageProps<"/a2/grammatic
         <h1 className="mt-1 text-[24px] leading-[1.2] font-bold tracking-[-0.02em] md:text-[40px] md:leading-[1.15]">
           {argomento.title}
         </h1>
-        <Tr locale={locale} as="p" className="mt-1 text-[16px] leading-normal md:text-[20px]">
+        <Tr locale={locale} as="p" size="lg" className="mt-1">
           {argomento.subtitle}
         </Tr>
       </header>
@@ -98,7 +98,7 @@ export default async function ArgomentoPage({ params }: PageProps<"/a2/grammatic
           <ul className="space-y-3">
             {esercizi.map((esercizio) => (
               <li key={esercizio.id} className="rounded-2xl bg-card p-4">
-                <Tr locale={lingua} as="p" className="text-[17px] leading-snug">
+                <Tr locale={lingua} as="p" size="md">
                   {esercizio.task}
                 </Tr>
                 <details className="group mt-2">
@@ -106,8 +106,8 @@ export default async function ArgomentoPage({ params }: PageProps<"/a2/grammatic
                     <span className="group-open:hidden">Mostra la soluzione</span>
                     <span className="hidden group-open:inline">Nascondi la soluzione</span>
                   </summary>
-                  <p className="mt-1 rounded-xl bg-bg-grouped p-3 text-[17px] leading-snug whitespace-pre-line dark:bg-label/[0.08]">
-                    <Cella testo={esercizio.answer} lingua={lingua} />
+                  <p lang="it" className="mt-1 rounded-xl bg-bg-grouped p-3 text-[17px] leading-snug whitespace-pre-line dark:bg-label/[0.08]">
+                    {esercizio.answer}
                   </p>
                 </details>
               </li>

@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 import { Sezione } from "@/components/grammatica/ContenutoArgomento";
-import { Tr } from "@/components/grammatica/Tr";
+import { Tr } from "@/components/Tr";
 import type { EsempioV2, LezioneV2 as Lezione } from "@/content/a2/lezioni";
 import type { Locale } from "@/lib/lingue";
 
@@ -8,36 +8,6 @@ import type { Locale } from "@/lib/lingue";
 // Testo della lingua delle spiegazioni → <Tr>; italiano (it, wrong, right, celle) nel colore principale.
 
 const TESTO = "text-[16px] leading-normal md:text-[17px]";
-const PICCOLO = "text-[15px] leading-normal";
-
-// {{…}} = frammento italiano (colore principale, 500, senza a capo); **…** = grassetto.
-function Marcato({ testo }: { testo: string }): ReactNode {
-  return testo.split(/(\{\{.*?\}\}|\*\*.*?\*\*)/).map((parte, i) => {
-    if (parte.startsWith("{{") && parte.endsWith("}}")) {
-      return (
-        <span key={i} lang="it" className="font-medium whitespace-nowrap text-label">
-          {parte.slice(2, -2)}
-        </span>
-      );
-    }
-    if (parte.startsWith("**") && parte.endsWith("**")) {
-      return (
-        <strong key={i} className="font-semibold">
-          <Marcato testo={parte.slice(2, -2)} />
-        </strong>
-      );
-    }
-    return parte;
-  });
-}
-
-function TrMarcato({ testo, lingua, className = "" }: { testo: string; lingua: Locale; className?: string }) {
-  return (
-    <Tr locale={lingua} className={className}>
-      <Marcato testo={testo} />
-    </Tr>
-  );
-}
 
 // Cella: "parl|o" → radice + desinenza in grassetto colorato; "-iamo" → tutta colorata.
 function CellaTabella({ testo }: { testo: string }) {
@@ -62,7 +32,9 @@ function Esempio({ esempio, lingua }: { esempio: EsempioV2; lingua: Locale }) {
       <p lang="it" className={`${TESTO} font-medium`}>
         {esempio.it}
       </p>
-      <TrMarcato testo={esempio.tr} lingua={lingua} className={`block ${PICCOLO}`} />
+      <Tr locale={lingua} size="sm" className="block">
+        {esempio.tr}
+      </Tr>
     </>
   );
 }
@@ -76,7 +48,7 @@ export function LezioneV2({ lezione, lingua }: { lezione: Lezione; lingua: Local
           {lezione.inBreve.map((punto, i) => (
             <li key={i} className={`flex gap-2.5 ${TESTO}`}>
               <span aria-hidden="true" className="mt-[0.6em] size-1.5 shrink-0 rounded-full bg-grammar" />
-              <TrMarcato testo={punto} lingua={lingua} />
+              <Tr locale={lingua}>{punto}</Tr>
             </li>
           ))}
         </ul>
@@ -93,7 +65,7 @@ export function LezioneV2({ lezione, lingua }: { lezione: Lezione; lingua: Local
                 >
                   {i + 1}
                 </span>
-                <TrMarcato testo={passo} lingua={lingua} />
+                <Tr locale={lingua}>{passo}</Tr>
               </li>
             ))}
           </ol>
@@ -112,11 +84,15 @@ export function LezioneV2({ lezione, lingua }: { lezione: Lezione; lingua: Local
         <ul className="overflow-hidden rounded-2xl bg-card">
           {lezione.uses.map((uso, i) => (
             <li key={i} className={`px-4 py-3 ${i > 0 ? "border-t border-separator" : ""}`}>
-              <TrMarcato testo={uso.text} lingua={lingua} className={`block font-medium ${TESTO}`} />
+              <Tr locale={lingua} size="md" className="block font-medium">
+                {uso.text}
+              </Tr>
               <p lang="it" className={`mt-1 ${TESTO}`}>
                 {uso.it}
               </p>
-              <TrMarcato testo={uso.tr} lingua={lingua} className={`block ${PICCOLO}`} />
+              <Tr locale={lingua} size="sm" className="block">
+                {uso.tr}
+              </Tr>
             </li>
           ))}
         </ul>
@@ -126,8 +102,12 @@ export function LezioneV2({ lezione, lingua }: { lezione: Lezione; lingua: Local
         <div className="space-y-3">
           {lezione.exceptions.map((eccezione, i) => (
             <Scheda key={i}>
-              <TrMarcato testo={eccezione.title} lingua={lingua} className={`block font-semibold ${TESTO}`} />
-              <TrMarcato testo={eccezione.text} lingua={lingua} className={`mt-1 block ${TESTO}`} />
+              <Tr locale={lingua} size="md" className="block font-semibold">
+                {eccezione.title}
+              </Tr>
+              <Tr locale={lingua} size="md" className="mt-1 block">
+                {eccezione.text}
+              </Tr>
               <ul className="mt-3 space-y-2 border-t border-separator pt-3">
                 {eccezione.examples.map((esempio, j) => (
                   <li key={j}>
@@ -160,7 +140,9 @@ export function LezioneV2({ lezione, lingua }: { lezione: Lezione; lingua: Local
                   {errore.right}
                 </span>
               </p>
-              <TrMarcato testo={errore.why} lingua={lingua} className={`mt-0.5 block ${PICCOLO}`} />
+              <Tr locale={lingua} size="sm" className="mt-0.5 block">
+                {errore.why}
+              </Tr>
             </li>
           ))}
         </ul>
@@ -178,7 +160,7 @@ export function LezioneV2({ lezione, lingua }: { lezione: Lezione; lingua: Local
 
       <Sezione titolo="In sintesi">
         <div className={`rounded-2xl border border-grammar bg-card p-4 ${TESTO}`}>
-          <TrMarcato testo={lezione.summary} lingua={lingua} />
+          <Tr locale={lingua}>{lezione.summary}</Tr>
         </div>
       </Sezione>
     </div>
@@ -194,7 +176,9 @@ function TabellaV2({ tabella, lingua }: { tabella: Lezione["tables"][number]; li
 
   return (
     <div className="overflow-hidden rounded-2xl bg-card">
-      <TrMarcato testo={tabella.title} lingua={lingua} className="block px-3 pt-3 pb-1 text-[15px] font-semibold" />
+      <Tr locale={lingua} size="sm" className="block px-3 pt-3 pb-1 font-semibold">
+        {tabella.title}
+      </Tr>
       <div className="overflow-x-auto overscroll-x-contain">
         <table lang="it" className="w-full border-collapse text-[15px] leading-snug md:text-[17px]">
           {testa && (
@@ -228,7 +212,9 @@ function TabellaV2({ tabella, lingua }: { tabella: Lezione["tables"][number]; li
         </table>
       </div>
       {tabella.note && (
-        <TrMarcato testo={tabella.note} lingua={lingua} className={`block border-t border-separator px-3 py-2.5 ${PICCOLO}`} />
+        <Tr locale={lingua} size="sm" className="block border-t border-separator px-3 py-2.5">
+          {tabella.note}
+        </Tr>
       )}
     </div>
   );
