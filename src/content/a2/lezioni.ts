@@ -8,6 +8,8 @@ import { DEFAULT_LOCALE, type Locale } from "@/lib/lingue";
 
 export type EsempioV2 = { it: string; tr: string };
 
+export type GruppoParole = { title: string; ids: string[] };
+
 export type LezioneV2 = {
   id: string;
   inBreve: string[];
@@ -18,8 +20,8 @@ export type LezioneV2 = {
   mistakes: { wrong: string; right: string; why: string }[];
   examples: EsempioV2[];
   summary: string;
-  /** Id delle parole di vocab.json da mostrare in "Parole chiave", in quest'ordine. */
-  keyWords?: string[];
+  /** Parole di vocab.json per "Parole chiave", in quest'ordine: elenco di id oppure gruppi con titolo. */
+  keyWords?: string[] | GruppoParole[];
 };
 
 type FileLezioni = { version: number; lessons: Record<string, LezioneV2> };

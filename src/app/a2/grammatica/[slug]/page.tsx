@@ -27,7 +27,7 @@ export default async function ArgomentoPage({ params }: PageProps<"/a2/grammatic
   // Lezione nel nuovo formato, se c'è; altrimenti il contenuto di grammar.json.
   const v2 = await getLezioneV2(locale, argomento.id);
   // Parole chiave scelte a mano per la lezione v2; senza keyWords il blocco non c'è.
-  const parole = v2?.lezione.keyWords ? await getParoleChiave(locale, v2.lezione.keyWords) : [];
+  const gruppiParole = v2?.lezione.keyWords ? await getParoleChiave(locale, v2.lezione.keyWords) : [];
 
   return (
     <article className="space-y-6">
@@ -58,7 +58,7 @@ export default async function ArgomentoPage({ params }: PageProps<"/a2/grammatic
         <ContenutoArgomento contenuto={contenuto} lingua={lingua} />
       )}
 
-      {parole.length > 0 && <ParoleChiave parole={parole} />}
+      {gruppiParole.length > 0 && <ParoleChiave gruppi={gruppiParole} />}
 
       {esercizi.length > 0 && (
         <Sezione titolo={`Esercizi (${esercizi.length})`}>

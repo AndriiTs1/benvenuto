@@ -95,8 +95,25 @@ export type ParolaChiave = {
   example?: string;
 };
 
-// Parole chiave della lezione (keyWords di lezioni.json), nell'ordine dato.
-export async function getParoleChiave(locale: Locale, ids: string[]): Promise<ParolaChiave[]> {
+export type GruppoParoleChiave = { title?: string; parole: ParolaChiave[] };
+
+// Parole chiave della lezione (keyWords di lezioni.json): un elenco di id (un solo gruppo
+// senza titolo) oppure gruppi { title, ids }. Ordine come nel file.
+export async function getParoleChiave(
+  locale: Locale,
+  keyWords: string[] | { title: string; ids: string[] }[],
+): Promise<GruppoParoleChiave[]> {
+  const gruppi = keyWords.every((k) => typeof k === "string")
+    ? [{ title: undefined, ids: keyWords as string[] }]
+    : (keyWords as { title: string; ids: string[] }[]);
+  const parole = await risolviParole(locale, gruppi.flatMap((g) => g.ids));
+  const perId = new Map(parole.map((p) => [p.id, p]));
+  return gruppi
+    .map((g) => ({ title: g.title, parole: g.ids.flatMap((id) => perId.get(id) ?? []) }))
+    .filter((g) => g.parole.length > 0);
+}
+
+async function risolviParole(locale: Locale, ids: string[]): Promise<ParolaChiave[]> {
   const { vocab } = await getContent(locale);
   const perId = new Map(vocab.words.map((w) => [w.id, w as typeof w & Partial<Record<Locale | "irregular" | "aux" | "participle", string>>]));
   return ids.flatMap((id) => {

@@ -1,5 +1,5 @@
 import { Tr } from "@/components/Tr";
-import type { ParolaChiave } from "@/content/a2/grammatica";
+import type { GruppoParoleChiave, ParolaChiave } from "@/content/a2/grammatica";
 
 // Ausiliare breve per il badge: "essere", "avere" o, se il verbo li usa tutti e due, "essere / avere".
 function ausiliare(aux: string) {
@@ -18,11 +18,13 @@ function Badge({ children }: { children: string }) {
 }
 
 // "Parole chiave (N)": parole scelte per la lezione (keyWords), chiuso all'inizio.
-export function ParoleChiave({ parole }: { parole: ParolaChiave[] }) {
+// Con i gruppi, ognuno ha il suo sottotitolo (italiano, maiuscoletto come i titoli di sezione).
+export function ParoleChiave({ gruppi }: { gruppi: GruppoParoleChiave[] }) {
+  const totale = gruppi.reduce((n, g) => n + g.parole.length, 0);
   return (
     <details className="group overflow-hidden rounded-2xl bg-card">
       <summary className="flex min-h-[52px] cursor-pointer list-none items-center gap-3 px-4 text-[17px] font-semibold select-none focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-label [&::-webkit-details-marker]:hidden">
-        <span className="flex-1">Parole chiave ({parole.length})</span>
+        <span className="flex-1">Parole chiave ({totale})</span>
         <svg
           aria-hidden="true"
           viewBox="0 0 24 24"
@@ -36,34 +38,49 @@ export function ParoleChiave({ parole }: { parole: ParolaChiave[] }) {
           <path d="M9 5l7 7-7 7" />
         </svg>
       </summary>
-      <ul>
-        {parole.map((parola) => {
-          const aux = parola.aux ? ausiliare(parola.aux) : null;
-          return (
-            <li key={parola.id} className="border-t border-separator px-4 py-2.5">
-              <p className="text-[16px] leading-normal md:text-[17px]">
-                <span lang="it" className="font-medium">
-                  {parola.it}
-                </span>
-                {" — "}
-                <Tr locale={parola.lingua}>{parola.traduzione}</Tr>
-              </p>
-              {(aux || parola.participle || parola.irregolare) && (
-                <p lang="it" className="mt-1 flex flex-wrap gap-1.5">
-                  {aux && <Badge>{aux}</Badge>}
-                  {parola.participle && <Badge>{parola.participle}</Badge>}
-                  {parola.irregolare && <Badge>irr.</Badge>}
-                </p>
-              )}
-              {parola.example && (
-                <p lang="it" className="mt-1 text-[13px] leading-normal text-label-2">
-                  {parola.example}
-                </p>
-              )}
-            </li>
-          );
-        })}
-      </ul>
+      {gruppi.map((gruppo, i) => (
+        <section key={i}>
+          {gruppo.title && (
+            <h3 lang="it" className="border-t border-separator px-4 pt-4 pb-1.5 text-[13px] tracking-wide text-label-2 uppercase">
+              {gruppo.title}
+            </h3>
+          )}
+          <ElencoParole parole={gruppo.parole} />
+        </section>
+      ))}
     </details>
+  );
+}
+
+function ElencoParole({ parole }: { parole: ParolaChiave[] }) {
+  return (
+    <ul>
+      {parole.map((parola) => {
+        const aux = parola.aux ? ausiliare(parola.aux) : null;
+        return (
+          <li key={parola.id} className="border-t border-separator px-4 py-2.5">
+            <p className="text-[16px] leading-normal md:text-[17px]">
+              <span lang="it" className="font-medium">
+                {parola.it}
+              </span>
+              {" — "}
+              <Tr locale={parola.lingua}>{parola.traduzione}</Tr>
+            </p>
+            {(aux || parola.participle || parola.irregolare) && (
+              <p lang="it" className="mt-1 flex flex-wrap gap-1.5">
+                {aux && <Badge>{aux}</Badge>}
+                {parola.participle && <Badge>{parola.participle}</Badge>}
+                {parola.irregolare && <Badge>irr.</Badge>}
+              </p>
+            )}
+            {parola.example && (
+              <p lang="it" className="mt-1 text-[13px] leading-normal text-label-2">
+                {parola.example}
+              </p>
+            )}
+          </li>
+        );
+      })}
+    </ul>
   );
 }

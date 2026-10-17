@@ -136,14 +136,22 @@ for (const lingua of lingue) {
     for (const [campo, valido] of Object.entries(CAMPI)) {
       if (!valido(lezione?.[campo])) errori.push(`${lingua}/lezioni: ${topicId}.${campo} mancante o non valido`);
     }
-    // keyWords (facoltativo): id esistenti nel vocabolario della lingua (o in quello russo).
+    // keyWords (facoltativo): elenco di id oppure gruppi { title, ids }; gli id devono esistere
+    // nel vocabolario della lingua (o in quello russo).
     if (lezione?.keyWords !== undefined) {
       const ids = vocabPerLingua[lingua] ?? vocabPerLingua.ru ?? new Set();
-      if (!Array.isArray(lezione.keyWords)) errori.push(`${lingua}/lezioni: ${topicId}.keyWords non è un elenco`);
-      else
-        for (const id of lezione.keyWords) {
+      const kw = lezione.keyWords;
+      const tuttiId = Array.isArray(kw) && kw.every((k) => typeof k === "string");
+      const tuttiGruppi =
+        Array.isArray(kw) && kw.every((g) => g && typeof g === "object" && testo(g.title) && Array.isArray(g.ids));
+      if (!tuttiId && !tuttiGruppi) {
+        errori.push(`${lingua}/lezioni: ${topicId}.keyWords dev'essere un elenco di id o di gruppi { title, ids }`);
+      } else {
+        const elenco = tuttiId ? kw : kw.flatMap((g) => g.ids);
+        for (const id of elenco) {
           if (!ids.has(id)) errori.push(`${lingua}/lezioni: ${topicId}.keyWords → parola inesistente ${id}`);
         }
+      }
     }
   }
 }
