@@ -5,23 +5,25 @@
   --bg-grouped: #F2F2F7;
   --card: #FFFFFF;
   --label: #1C1C1E;
-  --label-2: #6E6E73;
+  --label-2: #5E5E63; /* ≥ 4.95:1 anche su pillole label/8% (era #6E6E73: 3.89:1) */
   --separator: #E5E5EA;
-  --accent: #007AFF;
+  --accent: #0068DA; /* 4.71:1 su bg-grouped (era #007AFF: 3.6:1) */
   --success: #23863B; /* #248A3D scurito: 4.62:1 su bianco (era 4.40:1) */
   --error: #D70015;
   --warning: #FF9500;
-  /* Colori delle sezioni: unica fonte (il tema scuro li ridefinisce sotto) */
-  --color-grammar: #0066CC;
-  --color-vocab: #00788A;
+  /* Colori delle sezioni: unica fonte (il tema scuro li ridefinisce sotto).
+     Testo ≥ 4.5:1 anche sul proprio -soft sopra bg-grouped (scheda attiva su desktop). */
+  --color-grammar: #005CB8; /* era #0066CC */
+  --color-vocab: #006A7A; /* era #00788A */
   --color-exercises: #8944AB;
-  --color-communicate: #A05A00;
+  --color-communicate: #8F5100; /* era #A05A00 */
   /* Testo nella lingua delle spiegazioni (solo tramite <Tr>): 6.28:1 su bianco, 5.62:1 su bg-grouped */
   --color-translation: #4B5BA6;
   --color-grammar-soft: color-mix(in srgb, var(--color-grammar) 12%, transparent);
   --color-vocab-soft: color-mix(in srgb, var(--color-vocab) 12%, transparent);
   --color-exercises-soft: color-mix(in srgb, var(--color-exercises) 12%, transparent);
   --color-communicate-soft: color-mix(in srgb, var(--color-communicate) 12%, transparent);
+  --color-translation-soft: color-mix(in srgb, var(--color-translation) 10%, transparent);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -30,7 +32,7 @@
     --bg-grouped: #000000;
     --card: #1C1C1E;
     --label: #F5F5F7;
-    --label-2: #98989D;
+    --label-2: #AEAEB2; /* era #98989D: 3.66:1 su pillole label/16% */
     --separator: #38383A;
     --accent: #0A84FF;
     --success: #30D158;
@@ -38,7 +40,7 @@
     --warning: #FF9F0A;
     --color-grammar: #409CFF;
     --color-vocab: #40C8E0;
-    --color-exercises: #BF5AF2;
+    --color-exercises: #C878F5; /* era #BF5AF2: 4.19:1 sul proprio -soft */
     --color-communicate: #FFB340;
     --color-translation: #A5B4FC; /* 8.53:1 su card, 10.53:1 su nero */
   }
@@ -70,6 +72,7 @@
   --color-vocab-soft: var(--color-vocab-soft);
   --color-exercises-soft: var(--color-exercises-soft);
   --color-communicate-soft: var(--color-communicate-soft);
+  --color-translation-soft: var(--color-translation-soft);
 }
 
 html {

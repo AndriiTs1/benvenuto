@@ -6,6 +6,9 @@ export const ru = {
     esercizi: "Практика по темам",
     comunicare: "Диалоги и рассказы о себе",
   },
+  // Avviso sopra un argomento non ancora tradotto (solo vecchio formato, in russo).
+  // Per il russo non serve: null = nessun avviso.
+  soloInRusso: null as string | null,
 };
 
 export type Dizionario = typeof ru;

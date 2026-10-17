@@ -216,12 +216,12 @@
      "text": "Spelled regularly, but **the sound changes**: hard before {{-o}}, soft before {{-i}}, {{-e}}.",
      "examples": [
       {
-       "it": "leggo [g] — leggi [dʒ]",
-       "tr": "I read — you read"
+       "it": "leggo — leggi",
+       "tr": "I read [g] — you read [dʒ]"
       },
       {
-       "it": "vinco [k] — vinci [tʃ]",
-       "tr": "I win — you win"
+       "it": "vinco — vinci",
+       "tr": "I win [k] — you win [tʃ]"
       }
      ]
     },
@@ -1964,9 +1964,9 @@
      "why": "può has an accent."
     },
     {
-     "wrong": "Non posso nuotare. (don't know how)",
+     "wrong": "Non posso nuotare.",
      "right": "Non so nuotare.",
-     "why": "“Know how to” is sapere."
+     "why": "If you never learned how — sapere. Non posso means you can't right now."
     }
    ],
    "examples": [

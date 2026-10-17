@@ -7,4 +7,5 @@ export const en: Dizionario = {
     esercizi: "Practice by topic",
     comunicare: "Dialogues and talking about yourself",
   },
+  soloInRusso: "This explanation is currently available in Russian only. English version coming soon.",
 };

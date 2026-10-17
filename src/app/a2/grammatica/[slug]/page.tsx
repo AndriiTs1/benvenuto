@@ -8,6 +8,7 @@ import { Tr } from "@/components/Tr";
 import { getArgomento, getParoleChiave, getPercorso, type TraduzioniParticipi } from "@/content/a2/grammatica";
 import { getLezioneV2 } from "@/content/a2/lezioni";
 import { DEFAULT_LOCALE } from "@/lib/lingue";
+import { dizionario } from "@/lib/i18n";
 import { linguaScelta } from "@/lib/lingua-scelta";
 
 export async function generateStaticParams() {
@@ -26,6 +27,7 @@ export default async function ArgomentoPage({ params }: PageProps<"/a2/grammatic
   const { argomento, contenuto, esercizi, successivo, lingua } = dati;
   // Lezione nel nuovo formato, se c'è; altrimenti il contenuto di grammar.json.
   const v2 = await getLezioneV2(locale, argomento.id);
+  const avvisoSoloRusso = lingua !== locale ? dizionario(locale).soloInRusso : null;
   // Parole chiave scelte a mano per la lezione v2; senza keyWords il blocco non c'è.
   const gruppiParole = v2?.lezione.keyWords ? await getParoleChiave(locale, v2.lezione.keyWords) : [];
 
@@ -70,7 +72,16 @@ export default async function ArgomentoPage({ params }: PageProps<"/a2/grammatic
           />
         </>
       ) : (
-        <ContenutoArgomento contenuto={contenuto} lingua={lingua} locale={locale} />
+        <>
+          {/* Argomento solo nel vecchio formato (russo): avviso per chi ha scelto un'altra lingua.
+              Sparisce da solo quando l'argomento ha una lezione v2. */}
+          {avvisoSoloRusso && (
+            <Tr locale={locale} as="p" size="sm" className="block rounded-2xl bg-translation-soft px-4 py-3">
+              {avvisoSoloRusso}
+            </Tr>
+          )}
+          <ContenutoArgomento contenuto={contenuto} lingua={lingua} locale={locale} />
+        </>
       )}
 
       {gruppiParole.length > 0 && <ParoleChiave gruppi={gruppiParole} />}
