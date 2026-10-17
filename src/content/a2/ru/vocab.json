@@ -1116,7 +1116,7 @@
   },
   {
    "id": "w084",
-   "it": "cominciare (a + инф.)",
+   "it": "cominciare (a + inf.)",
    "ru": "начинать",
    "pos": "verb",
    "aux": "avere",
@@ -1325,7 +1325,7 @@
   },
   {
    "id": "w100",
-   "it": "finire (di + инф.)",
+   "it": "finire (di + inf.)",
    "ru": "заканчивать",
    "pos": "verb",
    "aux": "avere",
@@ -1400,7 +1400,7 @@
   },
   {
    "id": "w106",
-   "it": "alle + время",
+   "it": "alle + ora",
    "ru": "в (столько-то часов)",
    "pos": "expression",
    "note": "alle 8:30 = alle otto e mezza; но all'una, a mezzanotte",
@@ -1870,7 +1870,7 @@
   },
   {
    "id": "w141",
-   "it": "fare il / la + профессия",
+   "it": "fare il / la + professione",
    "ru": "работать кем-то (fare il meccanico — работать механиком)",
    "pos": "expression",
    "note": "= essere meccanico (без артикля)",
@@ -2954,7 +2954,7 @@
   },
   {
    "id": "w224",
-   "it": "verso (+ время)",
+   "it": "verso (+ ora)",
    "ru": "около, примерно в (verso le 19)",
    "pos": "preposition",
    "group": 12,
@@ -3880,7 +3880,7 @@
   },
   {
    "id": "w295",
-   "it": "decidere (di + инф.)",
+   "it": "decidere (di + inf.)",
    "ru": "решать",
    "pos": "verb",
    "aux": "avere",
@@ -4772,7 +4772,7 @@
   },
   {
    "id": "w363",
-   "it": "iniziare (a + инф.)",
+   "it": "iniziare (a + inf.)",
    "ru": "начинать (= cominciare)",
    "pos": "verb",
    "aux": "avere",
@@ -5243,7 +5243,7 @@
   },
   {
    "id": "w399",
-   "it": "mettersi a + инф.",
+   "it": "mettersi a + inf.",
    "ru": "начать (вдруг) что-то делать",
    "pos": "expression",
    "reflexive": true,
@@ -6958,7 +6958,7 @@
   },
   {
    "id": "w531",
-   "it": "tra / fra (+ время в будущем)",
+   "it": "tra / fra (+ tempo futuro)",
    "ru": "через (tra vent'anni — через двадцать лет)",
    "pos": "preposition",
    "note": "будущее: tra un mese finirà; прошлое — fa: un mese fa",
@@ -7139,7 +7139,7 @@
   },
   {
    "id": "w545",
-   "it": "riuscire a + инф.",
+   "it": "riuscire a + inf.",
    "ru": "суметь, получиться",
    "pos": "verb",
    "aux": "essere",
