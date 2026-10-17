@@ -24,6 +24,10 @@
   --color-exercises-soft: color-mix(in srgb, var(--color-exercises) 12%, transparent);
   --color-communicate-soft: color-mix(in srgb, var(--color-communicate) 12%, transparent);
   --color-translation-soft: color-mix(in srgb, var(--color-translation) 10%, transparent);
+  /* Colori della bandiera: solo marchio / schermata iniziale (non sostituiscono success/error).
+     Sul fondo del badge (label 8% su bianco): verde 5.16:1, rosso 5.93:1. */
+  --flag-green: #097236; /* proposto #0B7A3B: 4.49:1 sul badge dell'anteprima */
+  --flag-red: #B3121F;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -43,6 +47,8 @@
     --color-exercises: #C878F5; /* era #BF5AF2: 4.19:1 sul proprio -soft */
     --color-communicate: #FFB340;
     --color-translation: #A5B4FC; /* 8.53:1 su card, 10.53:1 su nero */
+    --flag-green: #34C77B; /* 6.81:1 sul badge (label 16% su nero) */
+    --flag-red: #FF6B6B; /* 5.37:1 */
   }
 }
 
@@ -57,6 +63,8 @@
   --color-success: var(--success);
   --color-error: var(--error);
   --color-warning: var(--warning);
+  --color-flag-green: var(--flag-green);
+  --color-flag-red: var(--flag-red);
   --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
 }
 

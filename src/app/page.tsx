@@ -31,14 +31,13 @@ export default function Home() {
       <main className="flex min-h-dvh justify-center bg-bg text-label">
         <div className="flex w-full max-w-md flex-col px-6 pt-[max(4rem,env(safe-area-inset-top))] pb-[max(2.5rem,env(safe-area-inset-bottom))] md:max-w-xl md:justify-center md:py-16">
           <div className="flex flex-1 flex-col items-center justify-center pt-10 pb-[12dvh] text-center md:flex-none md:p-0">
-            <span className="rounded-full bg-label/[0.08] px-3 py-1 text-[13px] font-semibold text-label/70 dark:bg-label/[0.16]">
-              Corso {CURRENT_LEVEL}
+            {/* Colori della bandiera: solo marchio / schermata iniziale (vedi CLAUDE.md). */}
+            <span className="rounded-full bg-label/[0.08] px-3 py-1 text-[13px] font-semibold dark:bg-label/[0.16]">
+              <span className="text-flag-green">Italiano</span>
+              <span className="text-label-2"> · </span>
+              <span className="text-flag-red">{CURRENT_LEVEL}</span>
             </span>
             <h1 className="mt-4 text-5xl font-bold tracking-tight md:text-6xl">Benvenuto</h1>
-            {/* Parte del logo: ~40% del titolo, light e spaziato. Un <p>, l'unico h1 resta "Benvenuto". */}
-            <p lang="it" className="mt-1.5 text-[20px] leading-tight font-light tracking-[0.12em] text-label-2 md:text-[28px]">
-              Lingua italiana
-            </p>
             <p className="mx-auto mt-3 max-w-xs text-center text-lg font-normal text-balance text-label-2 md:max-w-[32.5rem] md:text-xl">
               <span className="font-medium text-grammar">Grammatica</span>,{" "}
               <span className="font-medium text-vocab">vocabolario</span>,{" "}
