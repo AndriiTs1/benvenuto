@@ -191,24 +191,34 @@ export function LezioneV2({
 }
 
 // Tabella in una scheda con titolo; fino a 4 colonne sta nella larghezza del telefono.
+// Sotto md tutto al centro e colonne a larghezza fissa: la prima (persone) ~22%, le altre
+// si dividono il resto in parti uguali. Da md come prima: allineamento a sinistra.
 function TabellaV2({ tabella, lingua }: { tabella: Lezione["tables"][number]; lingua: Locale }) {
   const testa = tabella.header ? tabella.rows[0] : null;
   const corpo = tabella.header ? tabella.rows.slice(1) : tabella.rows;
-  // Prima colonna (persone) con pr-2: a 375px quattro colonne entrano senza scorrere.
-  const cella = "px-3 py-2.5 text-left align-top";
+  const colonne = Math.max(...tabella.rows.map((r) => r.length));
+  const cella = "px-3 py-2.5 align-top max-md:text-center md:text-left";
+  // Prima colonna: da md pr-2 (quattro colonne a 375px entravano così); sotto md padding
+  // simmetrico ridotto, perché il testo è centrato in uno spazio del 22%.
+  const primaColonna = "max-md:px-1.5 md:pr-2";
 
   return (
     <div className="overflow-hidden rounded-2xl bg-card">
-      <Tr locale={lingua} size="sm" className="block px-3 pt-3 pb-1 font-semibold">
+      <Tr locale={lingua} size="sm" className="block px-3 pt-3 pb-1 font-semibold max-md:text-center">
         {tabella.title}
       </Tr>
       <div className="overflow-x-auto overscroll-x-contain">
-        <table lang="it" className="w-full border-collapse text-[15px] leading-snug md:text-[17px]">
+        <table lang="it" className="w-full border-collapse text-[15px] leading-snug max-md:table-fixed md:text-[17px]">
+          <colgroup>
+            {Array.from({ length: colonne }, (_, i) => (
+              <col key={i} className={i === 0 ? "max-md:w-[22%]" : ""} />
+            ))}
+          </colgroup>
           {testa && (
             <thead>
               <tr className="border-b border-separator">
                 {testa.map((testo, i) => (
-                  <th key={i} scope="col" className={`${cella} font-semibold ${i === 0 ? "pr-2" : ""}`}>
+                  <th key={i} scope="col" className={`${cella} font-semibold ${i === 0 ? primaColonna : ""}`}>
                     <CellaTabella testo={testo} />
                   </th>
                 ))}
@@ -220,7 +230,7 @@ function TabellaV2({ tabella, lingua }: { tabella: Lezione["tables"][number]; li
               <tr key={r} className={r > 0 ? "border-t border-separator" : ""}>
                 {riga.map((testo, i) =>
                   i === 0 ? (
-                    <th key={i} scope="row" className={`${cella} pr-2 font-normal whitespace-nowrap text-label-2`}>
+                    <th key={i} scope="row" className={`${cella} ${primaColonna} font-normal text-label-2 md:whitespace-nowrap`}>
                       {testo}
                     </th>
                   ) : (
@@ -235,7 +245,7 @@ function TabellaV2({ tabella, lingua }: { tabella: Lezione["tables"][number]; li
         </table>
       </div>
       {tabella.note && (
-        <Tr locale={lingua} size="sm" className="block border-t border-separator px-3 py-2.5">
+        <Tr locale={lingua} size="sm" className="block border-t border-separator px-3 py-2.5 max-md:text-center">
           {tabella.note}
         </Tr>
       )}
