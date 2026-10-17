@@ -65,6 +65,23 @@ for (const lingua of lingue) {
         }
       }
     }
+    // irregular_groups: ogni participio di irregular_participles sta in un solo gruppo.
+    if (Array.isArray(t.irregular_participles) && Array.isArray(t.irregular_groups)) {
+      const gruppiDi = new Map();
+      for (const [etichetta, elenco] of t.irregular_groups) {
+        for (const p of String(elenco).split(",").map((x) => x.trim())) {
+          gruppiDi.set(p, [...(gruppiDi.get(p) ?? []), etichetta]);
+        }
+      }
+      for (const [, participio] of t.irregular_participles) {
+        const g = gruppiDi.get(participio) ?? [];
+        if (g.length !== 1) {
+          errori.push(
+            `${lingua}/grammar: ${t.id} participio "${participio}" in ${g.length} gruppi${g.length ? ` (${g.join(", ")})` : ""}`,
+          );
+        }
+      }
+    }
     if (!nelCurriculum.has(t.id)) errori.push(`${lingua}/grammar: argomento ${t.id} fuori dal curriculum`);
     if (!meta.grammarGroups[String(t.group)]) errori.push(`${lingua}/grammar: gruppo ${t.group} assente in meta (${t.id})`);
     if (typeof t.lesson !== "string") errori.push(`${lingua}/grammar: lesson mancante (${t.id})`);

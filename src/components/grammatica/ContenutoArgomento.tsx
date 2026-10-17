@@ -119,6 +119,8 @@ function sezioni(oggetto: Record<string, unknown>, lingua: Locale, locale: Local
 
   for (const [chiave, valore] of Object.entries(oggetto)) {
     if (NASCOSTI.has(chiave) || fatti.has(chiave)) continue;
+    // irregular_groups serve solo a dividere i participi irregolari in gruppi.
+    if (chiave === "irregular_groups" && eTabella(oggetto.irregular_participles)) continue;
 
     if (chiave === "rule" && typeof valore === "string") {
       risultato.push(
@@ -160,11 +162,20 @@ function sezioni(oggetto: Record<string, unknown>, lingua: Locale, locale: Local
     } else if (chiave === "irregular_participles" && eTabella(valore)) {
       risultato.push(
         <Sezione key={chiave} titolo={TITOLI_TABELLE[chiave]}>
-          <GrigliaParticipi
-            righe={valore}
-            traduzioni={(oggetto.irregular_participles_tr ?? {}) as TraduzioniParticipi}
-            locale={locale}
-          />
+          <div className="space-y-5">
+            {gruppiParticipi(valore, oggetto.irregular_groups).map((gruppo) => (
+              <div key={gruppo.etichetta}>
+                <h3 className="mb-1.5 px-4 text-[13px] tracking-wide text-label-2 uppercase">
+                  {gruppo.etichetta} · {gruppo.righe.length}
+                </h3>
+                <GrigliaParticipi
+                  righe={gruppo.righe}
+                  traduzioni={(oggetto.irregular_participles_tr ?? {}) as TraduzioniParticipi}
+                  locale={locale}
+                />
+              </div>
+            ))}
+          </div>
         </Sezione>,
       );
     } else if (eTabella(valore)) {
@@ -284,6 +295,35 @@ function TabellaCard({ righe, intestazione }: { righe: Tabella; intestazione: bo
       </table>
     </div>
   );
+}
+
+// Divide irregular_participles secondo irregular_groups ([etichetta, "preso, chiuso, …"]),
+// confrontando il participio. Ordine dei gruppi e dentro il gruppo come in irregular_groups.
+// Le etichette che non sono desinenze ("другие") diventano "Altri"; i participi rimasti
+// fuori da ogni gruppo finiscono lì.
+function gruppiParticipi(righe: Tabella, gruppi: unknown): { etichetta: string; righe: Tabella }[] {
+  const perParticipio = new Map(righe.map((riga) => [riga[1], riga]));
+  const usati = new Set<string>();
+  const risultato: { etichetta: string; righe: Tabella }[] = [];
+  for (const [etichetta, elenco] of eTabella(gruppi) ? gruppi : []) {
+    const delGruppo = elenco
+      .split(",")
+      .map((p) => p.trim())
+      .flatMap((p) => {
+        const riga = perParticipio.get(p);
+        if (!riga || usati.has(p)) return [];
+        usati.add(p);
+        return [riga];
+      });
+    if (delGruppo.length) risultato.push({ etichetta: etichetta.startsWith("-") ? etichetta : "Altri", righe: delGruppo });
+  }
+  const rimasti = righe.filter((riga) => !usati.has(riga[1]));
+  if (rimasti.length) {
+    const altri = risultato.find((g) => g.etichetta === "Altri");
+    if (altri) altri.righe.push(...rimasti);
+    else risultato.push({ etichetta: "Altri", righe: rimasti });
+  }
+  return risultato;
 }
 
 // Participi irregolari: griglia di schede (1 colonna, 2 da md), riempita per righe come
