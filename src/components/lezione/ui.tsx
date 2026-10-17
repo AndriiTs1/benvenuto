@@ -3,12 +3,12 @@ import type { ReactNode } from "react";
 // Общие классы и иконки плеера урока.
 
 export const CAPSULA =
-  "flex h-[52px] w-full items-center justify-center rounded-full bg-label text-[17px] font-semibold text-bg transition hover:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-label active:scale-[0.98] disabled:opacity-30 disabled:hover:opacity-30 disabled:active:scale-100 md:mx-auto md:w-80";
+  "flex h-[52px] w-full items-center justify-center rounded-full bg-label text-[17px] font-semibold text-bg transition hover:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent active:scale-[0.98] disabled:opacity-30 disabled:hover:opacity-30 disabled:active:scale-100 md:mx-auto md:w-80";
 
 // В тёмной теме bg-grouped совпадает с bg, поэтому плитки берут цвет карточки.
 export const RIEMPIMENTO = "bg-bg-grouped dark:bg-card";
 
-export const FOCUS = "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-label";
+export const FOCUS = "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent";
 
 type IconProps = { className?: string };
 

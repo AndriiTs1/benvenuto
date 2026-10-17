@@ -19,7 +19,7 @@ export function SceltaVista({ attiva }: { attiva: Vista }) {
             replace
             scroll={false}
             aria-current={vista === attiva ? "page" : undefined}
-            className={`flex h-11 items-center justify-center rounded-full text-[15px] font-medium transition focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-label ${
+            className={`flex h-11 items-center justify-center rounded-full text-[15px] font-medium transition focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-accent ${
               vista === attiva
                 ? "bg-card font-semibold shadow-(--shadow-sm) dark:bg-label/[0.24]"
                 : "text-label-2 hover:text-label"

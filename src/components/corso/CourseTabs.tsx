@@ -57,7 +57,7 @@ export function CourseTabs({ base }: { base: string }) {
                 href={href}
                 transitionTypes={["nav-tab"]}
                 aria-current={attiva ? "page" : undefined}
-                className={`flex flex-1 flex-col items-center justify-center gap-0.5 text-[11px] font-medium focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-label md:h-11 md:flex-row md:gap-1.5 md:rounded-full md:px-2.5 md:text-[15px] md:focus-visible:outline-offset-2 ${
+                className={`flex flex-1 flex-col items-center justify-center gap-0.5 text-[11px] font-medium focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-accent md:h-11 md:flex-row md:gap-1.5 md:rounded-full md:px-2.5 md:text-[15px] md:focus-visible:outline-offset-2 ${
                   attiva ? `${sezione.colore} ${sezione.sfondo}` : "text-label-2 hover:text-label md:hover:bg-label/[0.06]"
                 }`}
               >

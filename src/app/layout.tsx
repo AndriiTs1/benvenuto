@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import { ModalitaInput } from "@/components/ModalitaInput";
 import "./globals.css";
 
 const TITOLO = "Benvenuto — Lingua italiana";
@@ -36,7 +37,10 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="it">
-      <body className="font-sans antialiased">{children}</body>
+      <body className="font-sans antialiased">
+        <ModalitaInput />
+        {children}
+      </body>
     </html>
   );
 }

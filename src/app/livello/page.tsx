@@ -70,7 +70,7 @@ export default async function LivelloPage() {
 
           <ScegliLivello
             code={corso.code}
-            className="mt-6 flex w-full flex-col items-center rounded-2xl bg-card p-5 text-center transition hover:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-label active:scale-[0.99] md:p-6"
+            className="mt-6 flex w-full flex-col items-center rounded-2xl bg-card p-5 text-center transition hover:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent active:scale-[0.99] md:p-6"
           >
             <span className="flex size-12 items-center justify-center rounded-xl bg-label text-[17px] font-semibold text-bg">
               {corso.code}
@@ -102,7 +102,7 @@ export default async function LivelloPage() {
                 <ScegliLivello
                   key={level.code}
                   code={level.code}
-                  className="flex min-h-12 w-full items-stretch gap-3 pl-4 text-left hover:bg-bg-grouped/60 focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-label active:bg-bg-grouped"
+                  className="flex min-h-12 w-full items-stretch gap-3 pl-4 text-left hover:bg-bg-grouped/60 focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-accent active:bg-bg-grouped"
                 >
                   <Gradino level={level} index={index} />
                 </ScegliLivello>
@@ -117,7 +117,7 @@ export default async function LivelloPage() {
           <div className="sticky bottom-0 mt-4 bg-bg-grouped/85 pt-4 pb-[max(1.5rem,env(safe-area-inset-bottom))] backdrop-blur">
             <ScegliLivello
               code={corso.code}
-              className="flex h-[52px] w-full items-center justify-center rounded-full bg-label text-[17px] font-semibold text-bg transition hover:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-label active:scale-[0.98] active:opacity-80 md:mx-auto md:w-80"
+              className="flex h-[52px] w-full items-center justify-center rounded-full bg-label text-[17px] font-semibold text-bg transition hover:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent active:scale-[0.98] active:opacity-80 md:mx-auto md:w-80"
             >
               {scelto ? "Continua" : "Inizia"} il corso {corso.code}
             </ScegliLivello>

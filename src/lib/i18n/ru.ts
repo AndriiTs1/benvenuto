@@ -9,6 +9,8 @@ export const ru = {
   // Avviso sopra un argomento non ancora tradotto (solo vecchio formato, in russo).
   // Per il russo non serve: null = nessun avviso.
   soloInRusso: null as string | null,
+  // Riga sotto il titolo del blocco "Parole chiave".
+  paroleChiaveNota: "Слова этой темы с переводом и примером",
 };
 
 export type Dizionario = typeof ru;

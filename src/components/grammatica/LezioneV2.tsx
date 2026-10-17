@@ -1,4 +1,4 @@
-import type { ReactNode } from "react";
+import type { CSSProperties, ReactNode } from "react";
 import { Sezione } from "@/components/grammatica/ContenutoArgomento";
 import { Tr } from "@/components/Tr";
 import { GrigliaVerbi } from "@/components/grammatica/GrigliaVerbi";
@@ -203,10 +203,18 @@ function TabellaV2({ tabella, lingua }: { tabella: Lezione["tables"][number]; li
   const testa = tabella.header ? tabella.rows[0] : null;
   const corpo = tabella.header ? tabella.rows.slice(1) : tabella.rows;
   const colonne = Math.max(...tabella.rows.map((r) => r.length));
-  const cella = "px-3 py-2.5 align-top max-md:text-center md:text-left";
-  // Prima colonna: da md pr-2 (quattro colonne a 375px entravano così); sotto md padding
-  // simmetrico ridotto, perché il testo è centrato in uno spazio del 22%.
-  const primaColonna = "max-md:px-1.5 md:pr-2";
+  // Con 4+ colonne, sotto md, celle più strette ai lati: forme come "ascolt|avamo" non vanno a capo.
+  const cella = `py-2.5 align-top max-md:text-center md:px-3 md:text-left ${colonne >= 4 ? "max-md:px-2" : "max-md:px-3"}`;
+  // Sotto md la prima colonna (persone, etichette) è larga quanto il suo contenuto (width: 1%):
+  // le etichette brevi stanno su una riga. Se una è lunga (una frase), la colonna prende il 40%
+  // e va a capo. Le altre colonne si dividono il resto in parti uguali. Da md come prima.
+  const lunga = (testo: string) => [...testo].length > 16;
+  const primaLunga = tabella.rows.some((riga) => lunga(riga[0] ?? ""));
+  const etichetta = (testo: string) =>
+    `max-md:px-1.5 md:pr-2 ${primaLunga ? "max-md:w-[40%]" : "max-md:w-[1%]"} ${lunga(testo) ? "" : "whitespace-nowrap"}`;
+  const resto = (primaLunga ? 60 : 99) / Math.max(colonne - 1, 1);
+  const altre = { "--larghezza-colonna": `${resto}%` } as CSSProperties;
+  const larghezzaAltre = "max-md:w-(--larghezza-colonna)";
 
   return (
     <div className="overflow-hidden rounded-2xl bg-card">
@@ -214,17 +222,12 @@ function TabellaV2({ tabella, lingua }: { tabella: Lezione["tables"][number]; li
         {tabella.title}
       </Tr>
       <div className="overflow-x-auto overscroll-x-contain">
-        <table lang="it" className="w-full border-collapse text-[15px] leading-snug max-md:table-fixed md:text-[17px]">
-          <colgroup>
-            {Array.from({ length: colonne }, (_, i) => (
-              <col key={i} className={i === 0 ? "max-md:w-[22%]" : ""} />
-            ))}
-          </colgroup>
+        <table lang="it" style={altre} className="w-full border-collapse text-[15px] leading-snug md:text-[17px]">
           {testa && (
             <thead>
               <tr className="border-b border-separator">
                 {testa.map((testo, i) => (
-                  <th key={i} scope="col" className={`${cella} font-semibold ${i === 0 ? primaColonna : ""}`}>
+                  <th key={i} scope="col" className={`${cella} font-semibold ${i === 0 ? etichetta(testo) : larghezzaAltre}`}>
                     <CellaTabella testo={testo} />
                   </th>
                 ))}
@@ -236,11 +239,11 @@ function TabellaV2({ tabella, lingua }: { tabella: Lezione["tables"][number]; li
               <tr key={r} className={r > 0 ? "border-t border-separator" : ""}>
                 {riga.map((testo, i) =>
                   i === 0 ? (
-                    <th key={i} scope="row" className={`${cella} ${primaColonna} font-normal text-label-2 md:whitespace-nowrap`}>
+                    <th key={i} scope="row" className={`${cella} ${etichetta(testo)} font-normal text-label-2`}>
                       {testo}
                     </th>
                   ) : (
-                    <td key={i} className={cella}>
+                    <td key={i} className={`${cella} ${larghezzaAltre}`}>
                       <CellaTabella testo={testo} />
                     </td>
                   ),

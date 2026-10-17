@@ -12,9 +12,6 @@ function salvaLingua(code: Locale) {
 export function LanguageSwitcher({ locale }: { locale: Locale }) {
   const router = useRouter();
   const [aperto, setAperto] = useState(false);
-  // Anello di fuoco solo se l'ultimo input è stato la tastiera: dopo un clic o un tocco
-  // (anche alla chiusura del menu) niente anello, qualunque cosa decida il browser su :focus-visible.
-  const [daTastieraUltimo, setDaTastieraUltimo] = useState(true);
   const contenitore = useRef<HTMLDivElement>(null);
   const pulsante = useRef<HTMLButtonElement>(null);
   const lista = useRef<HTMLUListElement>(null);
@@ -50,17 +47,6 @@ export function LanguageSwitcher({ locale }: { locale: Locale }) {
   }
 
   // Da tastiera il fuoco va sulla lingua attuale; un clic fuori chiude il menu.
-  useEffect(() => {
-    const tastiera = () => setDaTastieraUltimo(true);
-    const puntatore = () => setDaTastieraUltimo(false);
-    window.addEventListener("keydown", tastiera, true);
-    window.addEventListener("pointerdown", puntatore, true);
-    return () => {
-      window.removeEventListener("keydown", tastiera, true);
-      window.removeEventListener("pointerdown", puntatore, true);
-    };
-  }, []);
-
   useEffect(() => {
     if (!aperto) return;
     if (daTastiera.current) focusAttuale();
@@ -133,7 +119,7 @@ export function LanguageSwitcher({ locale }: { locale: Locale }) {
         aria-controls={aperto ? listaId : undefined}
         className="group inline-flex h-11 items-center focus-visible:outline-none"
       >
-        <span className={`flex h-10 items-center gap-1.5 rounded-full bg-label/[0.08] pr-2.5 pl-3 text-[15px] font-semibold text-label transition duration-150 group-hover:bg-label/[0.12] ${daTastieraUltimo ? "group-focus-visible:outline-2 group-focus-visible:outline-offset-2 group-focus-visible:outline-accent group-aria-expanded:outline-none" : ""} group-active:scale-[0.94] group-active:bg-label/[0.16] dark:bg-label/[0.16] dark:group-hover:bg-label/[0.22] dark:group-active:bg-label/[0.28]`}
+        <span className={`flex h-10 items-center gap-1.5 rounded-full bg-label/[0.08] pr-2.5 pl-3 text-[15px] font-semibold text-label transition duration-150 group-hover:bg-label/[0.12] group-focus-visible:outline-2 group-focus-visible:outline-offset-2 group-focus-visible:outline-accent group-aria-expanded:outline-none group-active:scale-[0.94] group-active:bg-label/[0.16] dark:bg-label/[0.16] dark:group-hover:bg-label/[0.22] dark:group-active:bg-label/[0.28]`}
         >
           <svg
             aria-hidden="true"

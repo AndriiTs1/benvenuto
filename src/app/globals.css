@@ -120,6 +120,12 @@ body {
   outline: none;
 }
 
+/* Dopo un clic o un tocco nessun anello, neppure se il browser considera il fuoco "visibile"
+   (data-input da components/ModalitaInput.tsx). Gli outline servono solo al fuoco. */
+html[data-input="pointer"] * {
+  outline: none !important;
+}
+
 /* Transizioni tra schermate (View Transitions, vedi components/PageTransition.tsx).
    Avanti: la nuova schermata entra da destra; indietro: al contrario. */
 ::view-transition {

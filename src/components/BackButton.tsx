@@ -21,7 +21,7 @@ export function BackButton({
       aria-label={ariaLabel}
       className="group -ml-0.5 inline-flex h-11 items-center gap-2 rounded-full pr-2 text-[17px] text-label focus-visible:outline-none"
     >
-      <span className="flex size-10 items-center justify-center rounded-full bg-label/[0.08] transition duration-150 group-hover:bg-label/[0.12] group-focus-visible:outline-2 group-focus-visible:outline-offset-2 group-focus-visible:outline-label group-active:scale-[0.94] group-active:bg-label/[0.16] dark:bg-label/[0.16] dark:group-hover:bg-label/[0.22] dark:group-active:bg-label/[0.28]">
+      <span className="flex size-10 items-center justify-center rounded-full bg-label/[0.08] transition duration-150 group-hover:bg-label/[0.12] group-focus-visible:outline-2 group-focus-visible:outline-offset-2 group-focus-visible:outline-accent group-active:scale-[0.94] group-active:bg-label/[0.16] dark:bg-label/[0.16] dark:group-hover:bg-label/[0.22] dark:group-active:bg-label/[0.28]">
         <svg
           aria-hidden="true"
           viewBox="0 0 24 24"

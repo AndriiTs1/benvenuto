@@ -47,7 +47,7 @@ export function RigaElenco({
     <Link
       href={href}
       transitionTypes={["nav-forward"]}
-      className="flex items-center gap-3 pl-4 hover:bg-bg-grouped/60 focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-label active:bg-bg-grouped dark:hover:bg-label/[0.06] dark:active:bg-label/[0.1]"
+      className="flex items-center gap-3 pl-4 hover:bg-bg-grouped/60 focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-accent active:bg-bg-grouped dark:hover:bg-label/[0.06] dark:active:bg-label/[0.1]"
     >
       {contenuto}
     </Link>

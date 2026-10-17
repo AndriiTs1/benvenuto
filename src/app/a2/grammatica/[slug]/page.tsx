@@ -84,7 +84,7 @@ export default async function ArgomentoPage({ params }: PageProps<"/a2/grammatic
         </>
       )}
 
-      {gruppiParole.length > 0 && <ParoleChiave gruppi={gruppiParole} />}
+      {gruppiParole.length > 0 && <ParoleChiave gruppi={gruppiParole} nota={dizionario(locale).paroleChiaveNota} locale={locale} />}
 
       {esercizi.length > 0 && (
         <Sezione titolo={`Esercizi (${esercizi.length})`}>
@@ -95,7 +95,7 @@ export default async function ArgomentoPage({ params }: PageProps<"/a2/grammatic
                   {esercizio.task}
                 </Tr>
                 <details className="group mt-2">
-                  <summary className="-mx-1 inline-flex min-h-11 cursor-pointer list-none items-center rounded-full px-1 text-[15px] font-medium text-accent select-none focus-visible:outline-2 focus-visible:outline-label [&::-webkit-details-marker]:hidden">
+                  <summary className="-mx-1 inline-flex min-h-11 cursor-pointer list-none items-center rounded-full px-1 text-[15px] font-medium text-accent select-none focus-visible:outline-2 focus-visible:outline-accent [&::-webkit-details-marker]:hidden">
                     <span className="group-open:hidden">Mostra la soluzione</span>
                     <span className="hidden group-open:inline">Nascondi la soluzione</span>
                   </summary>

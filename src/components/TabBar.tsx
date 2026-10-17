@@ -70,7 +70,7 @@ export function TabBar() {
               key={tab.href}
               href={tab.href}
               aria-current={isActive ? "page" : undefined}
-              className={`flex flex-col items-center justify-center gap-0.5 focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-label ${
+              className={`flex flex-col items-center justify-center gap-0.5 focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-accent ${
                 isActive ? "text-label" : "text-label-2"
               }`}
             >

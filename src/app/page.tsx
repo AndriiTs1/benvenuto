@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 };
 
 const PULSANTE =
-  "flex h-[52px] w-full items-center justify-center rounded-full bg-label text-[17px] font-semibold text-bg transition hover:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-label active:scale-[0.98] active:opacity-80 md:w-80";
+  "flex h-[52px] w-full items-center justify-center rounded-full bg-label text-[17px] font-semibold text-bg transition hover:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent active:scale-[0.98] active:opacity-80 md:w-80";
 
 // Un solo percorso: si passa sempre dalla scelta del livello. Cambia solo il testo.
 async function Azioni() {

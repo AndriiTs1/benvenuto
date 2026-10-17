@@ -40,7 +40,7 @@ export function ListRow({ href, leading, title, subtitle, trailing, first }: Lis
   return (
     <Link
       href={href}
-      className="flex min-h-[60px] items-center gap-3 pl-4 hover:bg-bg-grouped/60 focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-label active:bg-bg-grouped"
+      className="flex min-h-[60px] items-center gap-3 pl-4 hover:bg-bg-grouped/60 focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-accent active:bg-bg-grouped"
     >
       {content}
     </Link>

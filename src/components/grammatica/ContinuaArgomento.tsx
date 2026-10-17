@@ -16,7 +16,7 @@ export function ContinuaArgomento({ argomenti }: { argomenti: Argomento[] }) {
     <Link
       href={`/a2/grammatica/${argomento.slug}`}
       transitionTypes={["nav-forward"]}
-      className="group flex items-center gap-4 rounded-3xl bg-card p-5 transition active:scale-[0.99] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-label"
+      className="group flex items-center gap-4 rounded-3xl bg-card p-5 transition active:scale-[0.99] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
     >
       <span className="min-w-0 flex-1">
         <span className="block text-[13px] font-semibold tracking-wide text-grammar uppercase">{etichetta}</span>

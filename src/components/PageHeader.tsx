@@ -11,7 +11,7 @@ export function PageHeader({ title }: { title: string }) {
       <Link
         href="/livello"
         aria-label="Cambia livello"
-        className="mb-1 flex size-11 shrink-0 items-center justify-center rounded-full bg-card font-semibold hover:opacity-80 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-label"
+        className="mb-1 flex size-11 shrink-0 items-center justify-center rounded-full bg-card font-semibold hover:opacity-80 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
       >
         A1
       </Link>

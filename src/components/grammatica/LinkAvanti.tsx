@@ -7,7 +7,7 @@ export function LinkAvanti({ href, indietro = false, children }: { href: string;
     <Link
       href={href}
       transitionTypes={[indietro ? "nav-back" : "nav-forward"]}
-      className="flex min-h-11 items-center justify-center rounded-full px-4 text-[17px] font-medium text-label hover:opacity-70 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-label"
+      className="flex min-h-11 items-center justify-center rounded-full px-4 text-[17px] font-medium text-label hover:opacity-70 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
     >
       {children}
     </Link>
