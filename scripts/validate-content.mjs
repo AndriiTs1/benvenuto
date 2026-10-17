@@ -138,14 +138,22 @@ const CAMPI = {
   formation: (v) => Array.isArray(v?.steps) && v.steps.length > 0 && v.steps.every(testo),
   tables: (v) =>
     Array.isArray(v) &&
-    v.every(
-      (t) =>
-        testo(t?.title) &&
-        typeof t.header === "boolean" &&
-        Array.isArray(t.rows) &&
-        t.rows.length > 0 &&
-        t.rows.every((r) => Array.isArray(r) && r.every((c) => typeof c === "string")) &&
-        (t.note === undefined || testo(t.note)),
+    v.every((t) =>
+      // type "pairs": griglia di coppie con traduzione (a, b facoltativo, tr); altrimenti tabella normale.
+      t?.type === "pairs"
+        ? testo(t.title) &&
+          typeof t.sep === "string" &&
+          Array.isArray(t.items) &&
+          t.items.length > 0 &&
+          t.items.every((it) => testo(it?.a) && testo(it?.tr) && (it.b === undefined || testo(it.b))) &&
+          (t.note === undefined || testo(t.note))
+        : t?.type === undefined &&
+          testo(t?.title) &&
+          typeof t.header === "boolean" &&
+          Array.isArray(t.rows) &&
+          t.rows.length > 0 &&
+          t.rows.every((r) => Array.isArray(r) && r.every((c) => typeof c === "string")) &&
+          (t.note === undefined || testo(t.note)),
     ),
   uses: (v) => Array.isArray(v) && v.every((u) => testo(u?.text) && testo(u?.it) && testo(u?.tr)),
   exceptions: (v) => Array.isArray(v) && v.every((e) => testo(e?.title) && testo(e?.text) && esempi(e?.examples)),
@@ -154,6 +162,7 @@ const CAMPI = {
   summary: testo,
 };
 const lezioniPerLingua = {};
+const lezioniCompletePerLingua = {};
 for (const lingua of lingue) {
   let file;
   try {
@@ -167,6 +176,7 @@ for (const lingua of lingue) {
     continue;
   }
   lezioniPerLingua[lingua] = Object.keys(file.lessons).sort();
+  lezioniCompletePerLingua[lingua] = file.lessons;
   for (const [topicId, lezione] of Object.entries(file.lessons)) {
     if (lezione?.id !== topicId) errori.push(`${lingua}/lezioni: id "${lezione?.id}" diverso dalla chiave ${topicId}`);
     if (!meta.topics[topicId]) errori.push(`${lingua}/lezioni: argomento ${topicId} assente in meta`);
@@ -229,6 +239,19 @@ for (const lingua of lingue) {
       }
     }
   }
+}
+// Tabelle "pairs": stesso numero di elementi in ru, uk, en (stessa posizione in tables).
+for (const [topicId, ru] of Object.entries(lezioniCompletePerLingua.ru ?? {})) {
+  (ru.tables ?? []).forEach((tabella, i) => {
+    if (tabella?.type !== "pairs") return;
+    for (const l of ["uk", "en"]) {
+      const altra = lezioniCompletePerLingua[l]?.[topicId]?.tables?.[i];
+      if (!altra) continue;
+      if (altra.type !== "pairs") errori.push(`${l}/lezioni: ${topicId}.tables[${i}] dovrebbe essere "pairs" come in ru`);
+      else if (altra.items?.length !== tabella.items.length)
+        errori.push(`${l}/lezioni: ${topicId}.tables[${i}] ha ${altra.items?.length} elementi, ru ne ha ${tabella.items.length}`);
+    }
+  });
 }
 const tutte = [...new Set(Object.values(lezioniPerLingua).flat())];
 for (const lingua of ["ru", "uk", "en"]) {

@@ -3,7 +3,7 @@ import { Sezione } from "@/components/grammatica/ContenutoArgomento";
 import { Tr } from "@/components/Tr";
 import { GrigliaVerbi } from "@/components/grammatica/GrigliaVerbi";
 import { IconCheck, IconX } from "@/components/lezione/ui";
-import type { EsempioV2, LezioneV2 as Lezione, SceltaAusiliare } from "@/content/a2/lezioni";
+import type { EsempioV2, LezioneV2 as Lezione, SceltaAusiliare, TabellaClassica, TabellaCoppie as Coppie } from "@/content/a2/lezioni";
 import type { Locale } from "@/lib/lingue";
 
 // Lezione di grammatica nel formato v2 (src/content/a2/{locale}/lezioni.json).
@@ -102,7 +102,11 @@ export function LezioneV2({
       <Sezione titolo="Tabelle">
         <div className="space-y-3">
           {lezione.tables.map((tabella, i) => (
-            <TabellaV2 key={i} tabella={tabella} lingua={lingua} />
+            tabella.type === "pairs" ? (
+              <TabellaCoppie key={i} tabella={tabella} lingua={lingua} />
+            ) : (
+              <TabellaV2 key={i} tabella={tabella} lingua={lingua} />
+            )
           ))}
         </div>
       </Sezione>
@@ -199,7 +203,7 @@ export function LezioneV2({
 // Tabella in una scheda con titolo; fino a 4 colonne sta nella larghezza del telefono.
 // Sotto md tutto al centro e colonne a larghezza fissa: la prima (persone) ~22%, le altre
 // si dividono il resto in parti uguali. Da md come prima: allineamento a sinistra.
-function TabellaV2({ tabella, lingua }: { tabella: Lezione["tables"][number]; lingua: Locale }) {
+function TabellaV2({ tabella, lingua }: { tabella: TabellaClassica; lingua: Locale }) {
   const testa = tabella.header ? tabella.rows[0] : null;
   const corpo = tabella.header ? tabella.rows.slice(1) : tabella.rows;
   const colonne = Math.max(...tabella.rows.map((r) => r.length));
@@ -303,5 +307,28 @@ function EssereOAvere({ scelta, lingua }: { scelta: SceltaAusiliare; lingua: Loc
         ))}
       </div>
     </Sezione>
+  );
+}
+
+// Tabella "pairs": stessa scheda delle tabelle (titolo, nota), dentro la griglia comune
+// delle coppie da memorizzare (1 colonna, 2 da md, al centro).
+function TabellaCoppie({ tabella, lingua }: { tabella: Coppie; lingua: Locale }) {
+  return (
+    <div className="overflow-hidden rounded-2xl bg-card">
+      <Tr locale={lingua} size="sm" className="block px-3 pt-3 pb-2 font-semibold max-md:text-center">
+        {tabella.title}
+      </Tr>
+      <GrigliaVerbi
+        voci={tabella.items.map(({ a, b, tr }) => ({ it: a, participle: b, tr }))}
+        sep={tabella.sep}
+        locale={lingua}
+        incorporata
+      />
+      {tabella.note && (
+        <Tr locale={lingua} size="sm" className="block border-t border-separator px-3 py-2.5 max-md:text-center">
+          {tabella.note}
+        </Tr>
+      )}
+    </div>
   );
 }

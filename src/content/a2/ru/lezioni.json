@@ -4016,49 +4016,45 @@
    },
    "tables": [
     {
+     "type": "pairs",
      "title": "Le tappe",
-     "header": true,
-     "rows": [
-      [
-       "",
-       "infinito",
-       "loro"
-      ],
-      [
-       "1",
-       "conoscersi",
-       "si sono conosciuti"
-      ],
-      [
-       "2",
-       "innamorarsi",
-       "si sono innamorati"
-      ],
-      [
-       "3",
-       "mettersi insieme",
-       "si sono messi insieme"
-      ],
-      [
-       "4",
-       "fidanzarsi",
-       "si sono fidanzati"
-      ],
-      [
-       "5",
-       "sposarsi",
-       "si sono sposati"
-      ],
-      [
-       "6",
-       "separarsi",
-       "si sono separati"
-      ],
-      [
-       "7",
-       "divorziare",
-       "hanno divorziato"
-      ]
+     "sep": "→",
+     "items": [
+      {
+       "a": "conoscersi",
+       "b": "si sono conosciuti",
+       "tr": "познакомиться"
+      },
+      {
+       "a": "innamorarsi",
+       "b": "si sono innamorati",
+       "tr": "влюбиться"
+      },
+      {
+       "a": "mettersi insieme",
+       "b": "si sono messi insieme",
+       "tr": "начать встречаться"
+      },
+      {
+       "a": "fidanzarsi",
+       "b": "si sono fidanzati",
+       "tr": "обручиться"
+      },
+      {
+       "a": "sposarsi",
+       "b": "si sono sposati",
+       "tr": "пожениться"
+      },
+      {
+       "a": "separarsi",
+       "b": "si sono separati",
+       "tr": "расстаться"
+      },
+      {
+       "a": "divorziare",
+       "b": "hanno divorziato",
+       "tr": "развестись"
+      }
      ],
      "note": "{{divorziare}} — не возвратный: {{hanno divorziato}}."
     },
@@ -4516,37 +4512,65 @@
      "note": "«Что случилось?» — слева; «как было?» — справа."
     },
     {
-     "title": "Маркеры",
-     "header": true,
-     "rows": [
-      [
-       "passato prossimo",
-       "imperfetto"
-      ],
-      [
-       "ieri",
-       "di solito"
-      ],
-      [
-       "un giorno",
-       "sempre"
-      ],
-      [
-       "all'improvviso",
-       "spesso"
-      ],
-      [
-       "a un certo punto",
-       "ogni giorno"
-      ],
-      [
-       "… fa",
-       "mentre"
-      ],
-      [
-       "poi",
-       "da bambino"
-      ]
+     "type": "pairs",
+     "title": "Маркеры passato prossimo",
+     "sep": "",
+     "items": [
+      {
+       "a": "ieri",
+       "tr": "вчера"
+      },
+      {
+       "a": "un giorno",
+       "tr": "однажды"
+      },
+      {
+       "a": "all'improvviso",
+       "tr": "вдруг"
+      },
+      {
+       "a": "a un certo punto",
+       "tr": "в какой-то момент"
+      },
+      {
+       "a": "… fa",
+       "tr": "… назад"
+      },
+      {
+       "a": "poi",
+       "tr": "потом"
+      }
+     ]
+    },
+    {
+     "type": "pairs",
+     "title": "Маркеры imperfetto",
+     "sep": "",
+     "items": [
+      {
+       "a": "di solito",
+       "tr": "обычно"
+      },
+      {
+       "a": "sempre",
+       "tr": "всегда"
+      },
+      {
+       "a": "spesso",
+       "tr": "часто"
+      },
+      {
+       "a": "ogni giorno",
+       "tr": "каждый день"
+      },
+      {
+       "a": "mentre",
+       "tr": "пока, в то время как"
+      },
+      {
+       "a": "da bambino",
+       "tr": "в детстве"
+      }
      ],
      "note": "{{ieri}} работает с обоими: {{ieri pioveva}} (картина), {{ieri sono uscito}} (событие)."
     },
@@ -4999,53 +5023,60 @@
      "note": "{{-go}}, {{-co}} + {{h}}: {{lunghe}}, {{bianchi}}. Не меняются: {{blu}}, {{rosa}}, {{viola}}."
     },
     {
+     "type": "pairs",
      "title": "Противоположности",
-     "header": true,
-     "rows": [
-      [
-       "aggettivo",
-       "contrario"
-      ],
-      [
-       "alto",
-       "basso"
-      ],
-      [
-       "magro",
-       "grasso"
-      ],
-      [
-       "chiaro",
-       "scuro"
-      ],
-      [
-       "lungo",
-       "corto"
-      ],
-      [
-       "attivo",
-       "pigro"
-      ],
-      [
-       "socievole",
-       "timido"
-      ],
-      [
-       "gentile",
-       "scortese"
-      ],
-      [
-       "tranquillo",
-       "agitato"
-      ],
-      [
-       "educato",
-       "maleducato"
-      ],
-      [
-       "allegro",
-       "triste"
-      ]
+     "sep": "↔",
+     "items": [
+      {
+       "a": "alto",
+       "b": "basso",
+       "tr": "высокий ↔ низкий"
+      },
+      {
+       "a": "magro",
+       "b": "grasso",
+       "tr": "худой ↔ толстый"
+      },
+      {
+       "a": "chiaro",
+       "b": "scuro",
+       "tr": "светлый ↔ тёмный"
+      },
+      {
+       "a": "lungo",
+       "b": "corto",
+       "tr": "длинный ↔ короткий"
+      },
+      {
+       "a": "attivo",
+       "b": "pigro",
+       "tr": "активный ↔ ленивый"
+      },
+      {
+       "a": "socievole",
+       "b": "timido",
+       "tr": "общительный ↔ застенчивый"
+      },
+      {
+       "a": "gentile",
+       "b": "scortese",
+       "tr": "любезный ↔ грубый"
+      },
+      {
+       "a": "tranquillo",
+       "b": "agitato",
+       "tr": "спокойный ↔ взволнованный"
+      },
+      {
+       "a": "educato",
+       "b": "maleducato",
+       "tr": "воспитанный ↔ невоспитанный"
+      },
+      {
+       "a": "allegro",
+       "b": "triste",
+       "tr": "весёлый ↔ грустный"
+      }
      ],
      "note": "Учи прилагательные парами — так легче запомнить."
     }
@@ -5277,37 +5308,40 @@
      "note": "Слева {{imperfetto}}, справа {{presente}}."
     },
     {
+     "type": "pairs",
      "title": "Глаголы изменения — essere",
-     "header": true,
-     "rows": [
-      [
-       "infinito",
-       "passato prossimo"
-      ],
-      [
-       "crescere",
-       "sono cresciuto/a"
-      ],
-      [
-       "diventare",
-       "sono diventato/a"
-      ],
-      [
-       "invecchiare",
-       "sono invecchiato/a"
-      ],
-      [
-       "ingrassare",
-       "sono ingrassato/a"
-      ],
-      [
-       "dimagrire",
-       "sono dimagrito/a"
-      ],
-      [
-       "cambiare",
-       "sono cambiato/a"
-      ]
+     "sep": "→",
+     "items": [
+      {
+       "a": "crescere",
+       "b": "sono cresciuto/a",
+       "tr": "расти"
+      },
+      {
+       "a": "diventare",
+       "b": "sono diventato/a",
+       "tr": "становиться"
+      },
+      {
+       "a": "invecchiare",
+       "b": "sono invecchiato/a",
+       "tr": "стареть"
+      },
+      {
+       "a": "ingrassare",
+       "b": "sono ingrassato/a",
+       "tr": "толстеть"
+      },
+      {
+       "a": "dimagrire",
+       "b": "sono dimagrito/a",
+       "tr": "худеть"
+      },
+      {
+       "a": "cambiare",
+       "b": "sono cambiato/a",
+       "tr": "меняться"
+      }
      ],
      "note": "Все с {{essere}}, причастие согласуется: {{mia madre è invecchiata}}."
     },
@@ -5550,61 +5584,70 @@
      "note": "Ударение в {{io}} и {{lui}} пишется: {{arriverò}}, {{arriverà}}."
     },
     {
+     "type": "pairs",
      "title": "Особые основы",
-     "header": true,
-     "rows": [
-      [
-       "infinito",
-       "io"
-      ],
-      [
-       "essere",
-       "sarò"
-      ],
-      [
-       "fare",
-       "farò"
-      ],
-      [
-       "stare",
-       "starò"
-      ],
-      [
-       "andare",
-       "andrò"
-      ],
-      [
-       "avere",
-       "avrò"
-      ],
-      [
-       "potere",
-       "potrò"
-      ],
-      [
-       "dovere",
-       "dovrò"
-      ],
-      [
-       "vedere",
-       "vedrò"
-      ],
-      [
-       "venire",
-       "verrò"
-      ],
-      [
-       "volere",
-       "vorrò"
-      ],
-      [
-       "rimanere",
-       "rimarrò"
-      ],
-      [
-       "bere",
-       "berrò"
-      ]
+     "sep": "→",
+     "items": [
+      {
+       "a": "essere",
+       "b": "sarò",
+       "tr": "быть"
+      },
+      {
+       "a": "fare",
+       "b": "farò",
+       "tr": "делать"
+      },
+      {
+       "a": "stare",
+       "b": "starò",
+       "tr": "находиться"
+      },
+      {
+       "a": "andare",
+       "b": "andrò",
+       "tr": "идти, ехать"
+      },
+      {
+       "a": "avere",
+       "b": "avrò",
+       "tr": "иметь"
+      },
+      {
+       "a": "potere",
+       "b": "potrò",
+       "tr": "мочь"
+      },
+      {
+       "a": "dovere",
+       "b": "dovrò",
+       "tr": "быть должным"
+      },
+      {
+       "a": "vedere",
+       "b": "vedrò",
+       "tr": "видеть"
+      },
+      {
+       "a": "venire",
+       "b": "verrò",
+       "tr": "приходить"
+      },
+      {
+       "a": "volere",
+       "b": "vorrò",
+       "tr": "хотеть"
+      },
+      {
+       "a": "rimanere",
+       "b": "rimarrò",
+       "tr": "оставаться"
+      },
+      {
+       "a": "bere",
+       "b": "berrò",
+       "tr": "пить"
+      }
      ],
      "note": "Окончания те же — меняется только основа."
     },

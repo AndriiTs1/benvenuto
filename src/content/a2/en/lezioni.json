@@ -4016,49 +4016,45 @@
    },
    "tables": [
     {
+     "type": "pairs",
      "title": "Le tappe",
-     "header": true,
-     "rows": [
-      [
-       "",
-       "infinito",
-       "loro"
-      ],
-      [
-       "1",
-       "conoscersi",
-       "si sono conosciuti"
-      ],
-      [
-       "2",
-       "innamorarsi",
-       "si sono innamorati"
-      ],
-      [
-       "3",
-       "mettersi insieme",
-       "si sono messi insieme"
-      ],
-      [
-       "4",
-       "fidanzarsi",
-       "si sono fidanzati"
-      ],
-      [
-       "5",
-       "sposarsi",
-       "si sono sposati"
-      ],
-      [
-       "6",
-       "separarsi",
-       "si sono separati"
-      ],
-      [
-       "7",
-       "divorziare",
-       "hanno divorziato"
-      ]
+     "sep": "→",
+     "items": [
+      {
+       "a": "conoscersi",
+       "b": "si sono conosciuti",
+       "tr": "to meet"
+      },
+      {
+       "a": "innamorarsi",
+       "b": "si sono innamorati",
+       "tr": "to fall in love"
+      },
+      {
+       "a": "mettersi insieme",
+       "b": "si sono messi insieme",
+       "tr": "to get together"
+      },
+      {
+       "a": "fidanzarsi",
+       "b": "si sono fidanzati",
+       "tr": "to get engaged"
+      },
+      {
+       "a": "sposarsi",
+       "b": "si sono sposati",
+       "tr": "to get married"
+      },
+      {
+       "a": "separarsi",
+       "b": "si sono separati",
+       "tr": "to separate"
+      },
+      {
+       "a": "divorziare",
+       "b": "hanno divorziato",
+       "tr": "to divorce"
+      }
      ],
      "note": "{{divorziare}} isn't reflexive: {{hanno divorziato}}."
     },
@@ -4516,37 +4512,65 @@
      "note": "“What happened?” — left; “what was it like?” — right."
     },
     {
-     "title": "Markers",
-     "header": true,
-     "rows": [
-      [
-       "passato prossimo",
-       "imperfetto"
-      ],
-      [
-       "ieri",
-       "di solito"
-      ],
-      [
-       "un giorno",
-       "sempre"
-      ],
-      [
-       "all'improvviso",
-       "spesso"
-      ],
-      [
-       "a un certo punto",
-       "ogni giorno"
-      ],
-      [
-       "… fa",
-       "mentre"
-      ],
-      [
-       "poi",
-       "da bambino"
-      ]
+     "type": "pairs",
+     "title": "Passato prossimo markers",
+     "sep": "",
+     "items": [
+      {
+       "a": "ieri",
+       "tr": "yesterday"
+      },
+      {
+       "a": "un giorno",
+       "tr": "one day"
+      },
+      {
+       "a": "all'improvviso",
+       "tr": "suddenly"
+      },
+      {
+       "a": "a un certo punto",
+       "tr": "at one point"
+      },
+      {
+       "a": "… fa",
+       "tr": "… ago"
+      },
+      {
+       "a": "poi",
+       "tr": "then"
+      }
+     ]
+    },
+    {
+     "type": "pairs",
+     "title": "Imperfetto markers",
+     "sep": "",
+     "items": [
+      {
+       "a": "di solito",
+       "tr": "usually"
+      },
+      {
+       "a": "sempre",
+       "tr": "always"
+      },
+      {
+       "a": "spesso",
+       "tr": "often"
+      },
+      {
+       "a": "ogni giorno",
+       "tr": "every day"
+      },
+      {
+       "a": "mentre",
+       "tr": "while"
+      },
+      {
+       "a": "da bambino",
+       "tr": "as a child"
+      }
      ],
      "note": "{{ieri}} works with both: {{ieri pioveva}} (picture), {{ieri sono uscito}} (event)."
     },
@@ -4999,53 +5023,60 @@
      "note": "{{-go}}, {{-co}} + {{h}}: {{lunghe}}, {{bianchi}}. Invariable: {{blu}}, {{rosa}}, {{viola}}."
     },
     {
+     "type": "pairs",
      "title": "Opposites",
-     "header": true,
-     "rows": [
-      [
-       "aggettivo",
-       "contrario"
-      ],
-      [
-       "alto",
-       "basso"
-      ],
-      [
-       "magro",
-       "grasso"
-      ],
-      [
-       "chiaro",
-       "scuro"
-      ],
-      [
-       "lungo",
-       "corto"
-      ],
-      [
-       "attivo",
-       "pigro"
-      ],
-      [
-       "socievole",
-       "timido"
-      ],
-      [
-       "gentile",
-       "scortese"
-      ],
-      [
-       "tranquillo",
-       "agitato"
-      ],
-      [
-       "educato",
-       "maleducato"
-      ],
-      [
-       "allegro",
-       "triste"
-      ]
+     "sep": "↔",
+     "items": [
+      {
+       "a": "alto",
+       "b": "basso",
+       "tr": "tall ↔ short"
+      },
+      {
+       "a": "magro",
+       "b": "grasso",
+       "tr": "thin ↔ fat"
+      },
+      {
+       "a": "chiaro",
+       "b": "scuro",
+       "tr": "light ↔ dark"
+      },
+      {
+       "a": "lungo",
+       "b": "corto",
+       "tr": "long ↔ short"
+      },
+      {
+       "a": "attivo",
+       "b": "pigro",
+       "tr": "active ↔ lazy"
+      },
+      {
+       "a": "socievole",
+       "b": "timido",
+       "tr": "sociable ↔ shy"
+      },
+      {
+       "a": "gentile",
+       "b": "scortese",
+       "tr": "kind ↔ rude"
+      },
+      {
+       "a": "tranquillo",
+       "b": "agitato",
+       "tr": "calm ↔ agitated"
+      },
+      {
+       "a": "educato",
+       "b": "maleducato",
+       "tr": "polite ↔ rude"
+      },
+      {
+       "a": "allegro",
+       "b": "triste",
+       "tr": "cheerful ↔ sad"
+      }
      ],
      "note": "Learn adjectives in pairs — it's easier to remember."
     }
@@ -5277,37 +5308,40 @@
      "note": "Left — {{imperfetto}}, right — {{presente}}."
     },
     {
+     "type": "pairs",
      "title": "Verbs of change — essere",
-     "header": true,
-     "rows": [
-      [
-       "infinito",
-       "passato prossimo"
-      ],
-      [
-       "crescere",
-       "sono cresciuto/a"
-      ],
-      [
-       "diventare",
-       "sono diventato/a"
-      ],
-      [
-       "invecchiare",
-       "sono invecchiato/a"
-      ],
-      [
-       "ingrassare",
-       "sono ingrassato/a"
-      ],
-      [
-       "dimagrire",
-       "sono dimagrito/a"
-      ],
-      [
-       "cambiare",
-       "sono cambiato/a"
-      ]
+     "sep": "→",
+     "items": [
+      {
+       "a": "crescere",
+       "b": "sono cresciuto/a",
+       "tr": "to grow"
+      },
+      {
+       "a": "diventare",
+       "b": "sono diventato/a",
+       "tr": "to become"
+      },
+      {
+       "a": "invecchiare",
+       "b": "sono invecchiato/a",
+       "tr": "to grow old"
+      },
+      {
+       "a": "ingrassare",
+       "b": "sono ingrassato/a",
+       "tr": "to put on weight"
+      },
+      {
+       "a": "dimagrire",
+       "b": "sono dimagrito/a",
+       "tr": "to lose weight"
+      },
+      {
+       "a": "cambiare",
+       "b": "sono cambiato/a",
+       "tr": "to change"
+      }
      ],
      "note": "All take {{essere}}; the participle agrees: {{mia madre è invecchiata}}."
     },
@@ -5550,61 +5584,70 @@
      "note": "The accent in {{io}} and {{lui}} is written: {{arriverò}}, {{arriverà}}."
     },
     {
+     "type": "pairs",
      "title": "Special stems",
-     "header": true,
-     "rows": [
-      [
-       "infinito",
-       "io"
-      ],
-      [
-       "essere",
-       "sarò"
-      ],
-      [
-       "fare",
-       "farò"
-      ],
-      [
-       "stare",
-       "starò"
-      ],
-      [
-       "andare",
-       "andrò"
-      ],
-      [
-       "avere",
-       "avrò"
-      ],
-      [
-       "potere",
-       "potrò"
-      ],
-      [
-       "dovere",
-       "dovrò"
-      ],
-      [
-       "vedere",
-       "vedrò"
-      ],
-      [
-       "venire",
-       "verrò"
-      ],
-      [
-       "volere",
-       "vorrò"
-      ],
-      [
-       "rimanere",
-       "rimarrò"
-      ],
-      [
-       "bere",
-       "berrò"
-      ]
+     "sep": "→",
+     "items": [
+      {
+       "a": "essere",
+       "b": "sarò",
+       "tr": "to be"
+      },
+      {
+       "a": "fare",
+       "b": "farò",
+       "tr": "to do"
+      },
+      {
+       "a": "stare",
+       "b": "starò",
+       "tr": "to stay"
+      },
+      {
+       "a": "andare",
+       "b": "andrò",
+       "tr": "to go"
+      },
+      {
+       "a": "avere",
+       "b": "avrò",
+       "tr": "to have"
+      },
+      {
+       "a": "potere",
+       "b": "potrò",
+       "tr": "can"
+      },
+      {
+       "a": "dovere",
+       "b": "dovrò",
+       "tr": "must"
+      },
+      {
+       "a": "vedere",
+       "b": "vedrò",
+       "tr": "to see"
+      },
+      {
+       "a": "venire",
+       "b": "verrò",
+       "tr": "to come"
+      },
+      {
+       "a": "volere",
+       "b": "vorrò",
+       "tr": "to want"
+      },
+      {
+       "a": "rimanere",
+       "b": "rimarrò",
+       "tr": "to stay"
+      },
+      {
+       "a": "bere",
+       "b": "berrò",
+       "tr": "to drink"
+      }
      ],
      "note": "Same endings — only the stem changes."
     },

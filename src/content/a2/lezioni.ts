@@ -10,6 +10,18 @@ export type EsempioV2 = { it: string; tr: string };
 
 export type GruppoParole = { title: string; ids: string[] };
 
+/** Tabella normale: righe di celle (la prima è l'intestazione se header). */
+export type TabellaClassica = { type?: undefined; title: string; header: boolean; rows: string[][]; note?: string };
+
+/** Griglia di coppie con traduzione: "a sep b" (b facoltativo; sep vuoto = solo a) + tr. */
+export type TabellaCoppie = {
+  type: "pairs";
+  title: string;
+  sep: string;
+  items: { a: string; b?: string; tr: string }[];
+  note?: string;
+};
+
 /** "Essere o avere?": gruppi di verbi per ausiliare (verbs può essere vuoto: solo titolo e testo). */
 export type SceltaAusiliare = {
   title: string;
@@ -25,7 +37,7 @@ export type LezioneV2 = {
   id: string;
   inBreve: string[];
   formation: { steps: string[] };
-  tables: { title: string; header: boolean; rows: string[][]; note?: string }[];
+  tables: (TabellaClassica | TabellaCoppie)[];
   uses: { text: string; it: string; tr: string }[];
   exceptions: { title: string; text: string; examples: EsempioV2[] }[];
   mistakes: { wrong: string; right: string; why: string }[];
