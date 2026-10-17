@@ -35,6 +35,10 @@ export default function Home() {
               Corso {CURRENT_LEVEL}
             </span>
             <h1 className="mt-4 text-5xl font-bold tracking-tight md:text-6xl">Benvenuto</h1>
+            {/* Parte del logo: ~40% del titolo, light e spaziato. Un <p>, l'unico h1 resta "Benvenuto". */}
+            <p lang="it" className="mt-1.5 text-[20px] leading-tight font-light tracking-[0.12em] text-label-2 md:text-[28px]">
+              Lingua italiana
+            </p>
             <p className="mx-auto mt-3 max-w-xs text-center text-lg font-normal text-balance text-label-2 md:max-w-[32.5rem] md:text-xl">
               <span className="font-medium text-grammar">Grammatica</span>,{" "}
               <span className="font-medium text-vocab">vocabolario</span>,{" "}
