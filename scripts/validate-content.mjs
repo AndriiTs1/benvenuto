@@ -173,6 +173,22 @@ for (const lingua of lingue) {
     for (const [campo, valido] of Object.entries(CAMPI)) {
       if (!valido(lezione?.[campo])) errori.push(`${lingua}/lezioni: ${topicId}.${campo} mancante o non valido`);
     }
+    // {{…}} è un frammento italiano senza a capo: oltre 24 caratteri esce dallo schermo a 375px.
+    const campi = (valore, percorso) =>
+      typeof valore === "string"
+        ? [[percorso, valore]]
+        : Array.isArray(valore)
+          ? valore.flatMap((v, i) => campi(v, `${percorso}[${i}]`))
+          : valore && typeof valore === "object"
+            ? Object.entries(valore).flatMap(([k, v]) => campi(v, `${percorso}.${k}`))
+            : [];
+    for (const [percorso, testoCampo] of campi(lezione, topicId)) {
+      for (const [, frammento] of testoCampo.matchAll(/\{\{(.*?)\}\}/g)) {
+        if ([...frammento].length > 24) {
+          errori.push(`${lingua}/lezioni: ${percorso} — {{${frammento}}} ha ${[...frammento].length} caratteri (max 24)`);
+        }
+      }
+    }
     // auxChoice (facoltativo): gruppi con aux essere|avere; ogni verbo esiste nel vocabolario.
     if (lezione?.auxChoice !== undefined) {
       const ids = vocabPerLingua[lingua] ?? vocabPerLingua.ru ?? new Set();
