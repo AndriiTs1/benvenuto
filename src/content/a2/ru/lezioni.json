@@ -935,56 +935,237 @@
     }
    ],
    "summary": "**avere / essere + причастие**. С essere — согласование: **è andato / è andata**. Неправильные: **fatto, letto, preso, visto**.",
-   "keyWords": [
-    {
-     "title": "Con essere · movimento",
-     "ids": [
-      "w058",
-      "w182",
-      "w080",
-      "w275",
-      "w064",
-      "w273",
-      "w056",
-      "w199"
-     ]
-    },
-    {
-     "title": "Con essere · stato e cambiamento",
-     "ids": [
-      "w039",
-      "w067",
-      "w063",
-      "w274",
-      "w005",
-      "w272",
-      "w185",
-      "w193",
-      "w201",
-      "w504"
-     ]
-    },
-    {
-     "title": "Con avere",
-     "ids": [
-      "w069",
-      "w285",
-      "w084",
-      "w129",
-      "w180",
-      "w015",
-      "w222",
-      "w094",
-      "w054",
-      "w281",
-      "w279",
-      "w280",
-      "w278",
-      "w284",
-      "w286"
-     ]
-    }
-   ]
+   "keyWords": [],
+   "auxChoice": {
+    "title": "Essere o avere?",
+    "groups": [
+     {
+      "aux": "essere",
+      "title": "Движение",
+      "text": "Куда-то идти, приходить, выходить.",
+      "verbs": [
+       {
+        "id": "w058",
+        "it": "andare",
+        "participle": "andato",
+        "tr": "идти, ехать"
+       },
+       {
+        "id": "w182",
+        "it": "venire",
+        "participle": "venuto",
+        "tr": "приходить, приезжать (сюда)"
+       },
+       {
+        "id": "w080",
+        "it": "arrivare",
+        "participle": "arrivato",
+        "tr": "приходить, приезжать, прибывать"
+       },
+       {
+        "id": "w275",
+        "it": "ritornare",
+        "participle": "ritornato",
+        "tr": "возвращаться (= tornare)"
+       },
+       {
+        "id": "w064",
+        "it": "uscire",
+        "participle": "uscito",
+        "tr": "выходить; гулять (куда-то выйти)"
+       },
+       {
+        "id": "w273",
+        "it": "entrare",
+        "participle": "entrato",
+        "tr": "входить"
+       },
+       {
+        "id": "w056",
+        "it": "salire",
+        "participle": "salito",
+        "tr": "подниматься; садиться (в транспорт)"
+       },
+       {
+        "id": "w199",
+        "it": "scendere",
+        "participle": "sceso",
+        "tr": "спускаться; выходить (из транспорта)"
+       }
+      ]
+     },
+     {
+      "aux": "essere",
+      "title": "Состояние и изменение",
+      "text": "Быть, оставаться, становиться, родиться.",
+      "verbs": [
+       {
+        "id": "w039",
+        "it": "essere",
+        "participle": "stato",
+        "tr": "быть"
+       },
+       {
+        "id": "w067",
+        "it": "stare",
+        "participle": "stato",
+        "tr": "находиться, быть; чувствовать себя (come stai?)"
+       },
+       {
+        "id": "w063",
+        "it": "rimanere",
+        "participle": "rimasto",
+        "tr": "оставаться"
+       },
+       {
+        "id": "w274",
+        "it": "restare",
+        "participle": "restato",
+        "tr": "оставаться (= rimanere)"
+       },
+       {
+        "id": "w005",
+        "it": "diventare",
+        "participle": "diventato",
+        "tr": "становиться"
+       },
+       {
+        "id": "w272",
+        "it": "crescere",
+        "participle": "cresciuto",
+        "tr": "расти, вырастать"
+       },
+       {
+        "id": "w185",
+        "it": "nascere",
+        "participle": "nato",
+        "tr": "рождаться"
+       },
+       {
+        "id": "w193",
+        "it": "morire",
+        "participle": "morto",
+        "tr": "умирать"
+       },
+       {
+        "id": "w201",
+        "it": "succedere",
+        "participle": "successo",
+        "tr": "случаться, происходить"
+       },
+       {
+        "id": "w504",
+        "it": "cadere",
+        "participle": "caduto",
+        "tr": "падать"
+       }
+      ]
+     },
+     {
+      "aux": "essere",
+      "title": "Возвратные, piacere и mancare",
+      "text": "Все возвратные и piacere / mancare — тоже с essere: {{mi sono alzato}}, {{mi è piaciuto}}.",
+      "verbs": []
+     },
+     {
+      "aux": "avere",
+      "title": "Все остальные",
+      "text": "Глаголы с объектом ({{ho comprato il pane}}) и большинство без объекта ({{ho dormito}}).",
+      "verbs": [
+       {
+        "id": "w069",
+        "it": "comprare",
+        "participle": "comprato",
+        "tr": "покупать"
+       },
+       {
+        "id": "w285",
+        "it": "vendere",
+        "participle": "venduto",
+        "tr": "продавать"
+       },
+       {
+        "id": "w084",
+        "it": "cominciare",
+        "participle": "cominciato",
+        "tr": "начинать"
+       },
+       {
+        "id": "w129",
+        "it": "frequentare",
+        "participle": "frequentato",
+        "tr": "посещать (курс, школу); часто бывать"
+       },
+       {
+        "id": "w180",
+        "it": "studiare",
+        "participle": "studiato",
+        "tr": "учиться, изучать"
+       },
+       {
+        "id": "w015",
+        "it": "cenare",
+        "participle": "cenato",
+        "tr": "ужинать"
+       },
+       {
+        "id": "w222",
+        "it": "pranzare",
+        "participle": "pranzato",
+        "tr": "обедать"
+       },
+       {
+        "id": "w094",
+        "it": "ballare",
+        "participle": "ballato",
+        "tr": "танцевать"
+       },
+       {
+        "id": "w054",
+        "it": "camminare",
+        "participle": "camminato",
+        "tr": "ходить пешком, гулять"
+       },
+       {
+        "id": "w281",
+        "it": "passeggiare",
+        "participle": "passeggiato",
+        "tr": "прогуливаться, гулять"
+       },
+       {
+        "id": "w279",
+        "it": "girare",
+        "participle": "girato",
+        "tr": "гулять, ездить по (городу); поворачивать"
+       },
+       {
+        "id": "w280",
+        "it": "nuotare",
+        "participle": "nuotato",
+        "tr": "плавать"
+       },
+       {
+        "id": "w278",
+        "it": "giocare",
+        "participle": "giocato",
+        "tr": "играть (в игру, спорт)"
+       },
+       {
+        "id": "w284",
+        "it": "telefonare",
+        "participle": "telefonato",
+        "tr": "звонить (кому-то)"
+       },
+       {
+        "id": "w286",
+        "it": "viaggiare",
+        "participle": "viaggiato",
+        "tr": "путешествовать"
+       }
+      ]
+     }
+    ]
+   }
   }
  }
 }

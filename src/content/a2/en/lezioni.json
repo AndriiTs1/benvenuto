@@ -935,56 +935,237 @@
     }
    ],
    "summary": "**avere / essere + participle**. With essere it agrees: **è andato / è andata**. Irregular: **fatto, letto, preso, visto**.",
-   "keyWords": [
-    {
-     "title": "Con essere · movimento",
-     "ids": [
-      "w058",
-      "w182",
-      "w080",
-      "w275",
-      "w064",
-      "w273",
-      "w056",
-      "w199"
-     ]
-    },
-    {
-     "title": "Con essere · stato e cambiamento",
-     "ids": [
-      "w039",
-      "w067",
-      "w063",
-      "w274",
-      "w005",
-      "w272",
-      "w185",
-      "w193",
-      "w201",
-      "w504"
-     ]
-    },
-    {
-     "title": "Con avere",
-     "ids": [
-      "w069",
-      "w285",
-      "w084",
-      "w129",
-      "w180",
-      "w015",
-      "w222",
-      "w094",
-      "w054",
-      "w281",
-      "w279",
-      "w280",
-      "w278",
-      "w284",
-      "w286"
-     ]
-    }
-   ]
+   "keyWords": [],
+   "auxChoice": {
+    "title": "Essere o avere?",
+    "groups": [
+     {
+      "aux": "essere",
+      "title": "Movement",
+      "text": "Going, coming, going out.",
+      "verbs": [
+       {
+        "id": "w058",
+        "it": "andare",
+        "participle": "andato",
+        "tr": "to go"
+       },
+       {
+        "id": "w182",
+        "it": "venire",
+        "participle": "venuto",
+        "tr": "to come"
+       },
+       {
+        "id": "w080",
+        "it": "arrivare",
+        "participle": "arrivato",
+        "tr": "to arrive"
+       },
+       {
+        "id": "w275",
+        "it": "ritornare",
+        "participle": "ritornato",
+        "tr": "to come back"
+       },
+       {
+        "id": "w064",
+        "it": "uscire",
+        "participle": "uscito",
+        "tr": "to go out"
+       },
+       {
+        "id": "w273",
+        "it": "entrare",
+        "participle": "entrato",
+        "tr": "to enter"
+       },
+       {
+        "id": "w056",
+        "it": "salire",
+        "participle": "salito",
+        "tr": "to go up; to get on"
+       },
+       {
+        "id": "w199",
+        "it": "scendere",
+        "participle": "sceso",
+        "tr": "to go down; to get off"
+       }
+      ]
+     },
+     {
+      "aux": "essere",
+      "title": "State and change",
+      "text": "Being, staying, becoming, being born.",
+      "verbs": [
+       {
+        "id": "w039",
+        "it": "essere",
+        "participle": "stato",
+        "tr": "to be"
+       },
+       {
+        "id": "w067",
+        "it": "stare",
+        "participle": "stato",
+        "tr": "to stay; to feel"
+       },
+       {
+        "id": "w063",
+        "it": "rimanere",
+        "participle": "rimasto",
+        "tr": "to stay, to remain"
+       },
+       {
+        "id": "w274",
+        "it": "restare",
+        "participle": "restato",
+        "tr": "to stay, to remain"
+       },
+       {
+        "id": "w005",
+        "it": "diventare",
+        "participle": "diventato",
+        "tr": "to become"
+       },
+       {
+        "id": "w272",
+        "it": "crescere",
+        "participle": "cresciuto",
+        "tr": "to grow"
+       },
+       {
+        "id": "w185",
+        "it": "nascere",
+        "participle": "nato",
+        "tr": "to be born"
+       },
+       {
+        "id": "w193",
+        "it": "morire",
+        "participle": "morto",
+        "tr": "to die"
+       },
+       {
+        "id": "w201",
+        "it": "succedere",
+        "participle": "successo",
+        "tr": "to happen"
+       },
+       {
+        "id": "w504",
+        "it": "cadere",
+        "participle": "caduto",
+        "tr": "to fall"
+       }
+      ]
+     },
+     {
+      "aux": "essere",
+      "title": "Reflexives, piacere and mancare",
+      "text": "All reflexive verbs and piacere / mancare also take essere: {{mi sono alzato}}, {{mi è piaciuto}}.",
+      "verbs": []
+     },
+     {
+      "aux": "avere",
+      "title": "Everything else",
+      "text": "Verbs with an object ({{ho comprato il pane}}) and most verbs without one ({{ho dormito}}).",
+      "verbs": [
+       {
+        "id": "w069",
+        "it": "comprare",
+        "participle": "comprato",
+        "tr": "to buy"
+       },
+       {
+        "id": "w285",
+        "it": "vendere",
+        "participle": "venduto",
+        "tr": "to sell"
+       },
+       {
+        "id": "w084",
+        "it": "cominciare",
+        "participle": "cominciato",
+        "tr": "to begin"
+       },
+       {
+        "id": "w129",
+        "it": "frequentare",
+        "participle": "frequentato",
+        "tr": "to attend (a course)"
+       },
+       {
+        "id": "w180",
+        "it": "studiare",
+        "participle": "studiato",
+        "tr": "to study"
+       },
+       {
+        "id": "w015",
+        "it": "cenare",
+        "participle": "cenato",
+        "tr": "to have dinner"
+       },
+       {
+        "id": "w222",
+        "it": "pranzare",
+        "participle": "pranzato",
+        "tr": "to have lunch"
+       },
+       {
+        "id": "w094",
+        "it": "ballare",
+        "participle": "ballato",
+        "tr": "to dance"
+       },
+       {
+        "id": "w054",
+        "it": "camminare",
+        "participle": "camminato",
+        "tr": "to walk"
+       },
+       {
+        "id": "w281",
+        "it": "passeggiare",
+        "participle": "passeggiato",
+        "tr": "to go for a walk"
+       },
+       {
+        "id": "w279",
+        "it": "girare",
+        "participle": "girato",
+        "tr": "to go around"
+       },
+       {
+        "id": "w280",
+        "it": "nuotare",
+        "participle": "nuotato",
+        "tr": "to swim"
+       },
+       {
+        "id": "w278",
+        "it": "giocare",
+        "participle": "giocato",
+        "tr": "to play"
+       },
+       {
+        "id": "w284",
+        "it": "telefonare",
+        "participle": "telefonato",
+        "tr": "to phone"
+       },
+       {
+        "id": "w286",
+        "it": "viaggiare",
+        "participle": "viaggiato",
+        "tr": "to travel"
+       }
+      ]
+     }
+    ]
+   }
   }
  }
 }

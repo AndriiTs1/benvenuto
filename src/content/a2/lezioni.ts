@@ -10,6 +10,17 @@ export type EsempioV2 = { it: string; tr: string };
 
 export type GruppoParole = { title: string; ids: string[] };
 
+/** "Essere o avere?": gruppi di verbi per ausiliare (verbs può essere vuoto: solo titolo e testo). */
+export type SceltaAusiliare = {
+  title: string;
+  groups: {
+    aux: "essere" | "avere";
+    title: string;
+    text: string;
+    verbs: { id: string; it: string; participle: string; tr: string }[];
+  }[];
+};
+
 export type LezioneV2 = {
   id: string;
   inBreve: string[];
@@ -20,6 +31,7 @@ export type LezioneV2 = {
   mistakes: { wrong: string; right: string; why: string }[];
   examples: EsempioV2[];
   summary: string;
+  auxChoice?: SceltaAusiliare;
   /** Parole di vocab.json per "Parole chiave", in quest'ordine: elenco di id oppure gruppi con titolo. */
   keyWords?: string[] | GruppoParole[];
 };

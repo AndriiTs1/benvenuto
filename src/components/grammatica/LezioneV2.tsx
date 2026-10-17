@@ -1,7 +1,8 @@
 import type { ReactNode } from "react";
 import { Sezione } from "@/components/grammatica/ContenutoArgomento";
 import { Tr } from "@/components/Tr";
-import type { EsempioV2, LezioneV2 as Lezione } from "@/content/a2/lezioni";
+import { GrigliaVerbi } from "@/components/grammatica/GrigliaVerbi";
+import type { EsempioV2, LezioneV2 as Lezione, SceltaAusiliare } from "@/content/a2/lezioni";
 import type { Locale } from "@/lib/lingue";
 
 // Lezione di grammatica nel formato v2 (src/content/a2/{locale}/lezioni.json).
@@ -89,6 +90,8 @@ export function LezioneV2({
           </ol>
         </Scheda>
       </Sezione>
+
+      {lezione.auxChoice && <EssereOAvere scelta={lezione.auxChoice} lingua={lingua} />}
 
       <Sezione titolo="Tabelle">
         <div className="space-y-3">
@@ -237,5 +240,49 @@ function TabellaV2({ tabella, lingua }: { tabella: Lezione["tables"][number]; li
         </Tr>
       )}
     </div>
+  );
+}
+
+// Badge dell'ausiliare: due colori diversi perché i gruppi si distinguano a colpo d'occhio.
+const BADGE_AUSILIARE = {
+  essere: "bg-grammar-soft text-grammar",
+  avere: "bg-exercises-soft text-exercises",
+};
+
+// "Essere o avere?" (auxChoice): ogni gruppo è una scheda con badge, titolo, testo e,
+// se ci sono verbi, la stessa griglia dei participi irregolari.
+function EssereOAvere({ scelta, lingua }: { scelta: SceltaAusiliare; lingua: Locale }) {
+  return (
+    <Sezione titolo={scelta.title}>
+      <div className="space-y-4">
+        {scelta.groups.map((gruppo, i) => (
+          <div key={i} className="overflow-hidden rounded-2xl bg-card">
+            <div className="p-4">
+              <p className="flex flex-wrap items-center gap-x-2 gap-y-1">
+                <span
+                  lang="it"
+                  className={`rounded-full px-2 py-0.5 text-[12px] font-semibold tracking-wide uppercase ${BADGE_AUSILIARE[gruppo.aux]}`}
+                >
+                  {gruppo.aux}
+                </span>
+                <Tr locale={lingua} className="text-[17px] leading-snug font-semibold">
+                  {gruppo.title}
+                </Tr>
+              </p>
+              <Tr locale={lingua} as="p" size="sm" className="mt-1">
+                {gruppo.text}
+              </Tr>
+            </div>
+            {gruppo.verbs.length > 0 && (
+              <GrigliaVerbi
+                voci={gruppo.verbs.map(({ it, participle, tr }) => ({ it, participle, tr }))}
+                locale={lingua}
+                incorporata
+              />
+            )}
+          </div>
+        ))}
+      </div>
+    </Sezione>
   );
 }

@@ -165,6 +165,28 @@ for (const lingua of lingue) {
     for (const [campo, valido] of Object.entries(CAMPI)) {
       if (!valido(lezione?.[campo])) errori.push(`${lingua}/lezioni: ${topicId}.${campo} mancante o non valido`);
     }
+    // auxChoice (facoltativo): gruppi con aux essere|avere; ogni verbo esiste nel vocabolario.
+    if (lezione?.auxChoice !== undefined) {
+      const ids = vocabPerLingua[lingua] ?? vocabPerLingua.ru ?? new Set();
+      const ac = lezione.auxChoice;
+      if (!testo(ac?.title) || !Array.isArray(ac?.groups)) {
+        errori.push(`${lingua}/lezioni: ${topicId}.auxChoice senza title o groups`);
+      } else {
+        ac.groups.forEach((g, i) => {
+          const dove = `${topicId}.auxChoice.groups[${i}]`;
+          if (g?.aux !== "essere" && g?.aux !== "avere") errori.push(`${lingua}/lezioni: ${dove}.aux "${g?.aux}" (solo essere|avere)`);
+          if (!testo(g?.title) || !testo(g?.text)) errori.push(`${lingua}/lezioni: ${dove} senza title o text`);
+          if (!Array.isArray(g?.verbs)) {
+            errori.push(`${lingua}/lezioni: ${dove}.verbs non è un elenco`);
+            return;
+          }
+          for (const v of g.verbs) {
+            if (!testo(v?.it) || !testo(v?.participle) || !testo(v?.tr)) errori.push(`${lingua}/lezioni: ${dove} verbo senza it/participle/tr (${v?.id})`);
+            if (!ids.has(v?.id)) errori.push(`${lingua}/lezioni: ${dove} → parola inesistente ${v?.id}`);
+          }
+        });
+      }
+    }
     // keyWords (facoltativo): elenco di id oppure gruppi { title, ids }; gli id devono esistere
     // nel vocabolario della lingua (o in quello russo).
     if (lezione?.keyWords !== undefined) {

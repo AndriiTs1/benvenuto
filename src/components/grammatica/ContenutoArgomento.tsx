@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { GrigliaVerbi } from "@/components/grammatica/GrigliaVerbi";
 import { Tr } from "@/components/Tr";
 import type { TraduzioniParticipi } from "@/content/a2/grammatica";
 import type { Locale } from "@/lib/lingue";
@@ -288,11 +289,7 @@ function TabellaCard({ righe, intestazione }: { righe: Tabella; intestazione: bo
   );
 }
 
-// Participi irregolari: griglia di schede (1 colonna, 2 da md), riempita per righe come
-// nell'array. In ogni cella "infinito → participio" (il participio è ciò che va ricordato)
-// e sotto la traduzione, se c'è. Separatori come nelle tabelle, anche verticale da md.
-// Contenuto delle celle al centro (eccezione voluta: schede da memorizzare, vedi CLAUDE.md);
-// le due colonne sono uguali (grid-cols-2 = minmax(0, 1fr) × 2).
+// Participi irregolari (irregular_participles + irregular_participles_tr) nella griglia comune.
 export function GrigliaParticipi({
   righe,
   traduzioni,
@@ -303,32 +300,9 @@ export function GrigliaParticipi({
   locale: Locale;
 }) {
   return (
-    <ul className="grid grid-cols-1 overflow-hidden rounded-2xl bg-card md:grid-cols-2">
-      {righe.map(([infinito, participio], i) => {
-        const traduzione = traduzioni[infinito]?.[locale];
-        return (
-          <li
-            key={i}
-            className={`border-separator px-4 py-3 text-center ${i > 0 ? "border-t" : ""} ${i === 1 ? "md:border-t-0" : ""} ${
-              i % 2 === 1 ? "md:border-l" : ""
-            }`}
-          >
-            <p lang="it" className="text-[17px] leading-snug">
-              {infinito}
-              <span aria-hidden="true" className="text-label-2">
-                {" → "}
-              </span>
-              <span className="sr-only">: </span>
-              <span className="font-semibold text-grammar">{participio}</span>
-            </p>
-            {traduzione && (
-              <Tr locale={locale} as="p" className="mt-0.5 text-[15px] leading-snug">
-                {traduzione}
-              </Tr>
-            )}
-          </li>
-        );
-      })}
-    </ul>
+    <GrigliaVerbi
+      voci={righe.map(([it, participle]) => ({ it, participle, tr: traduzioni[it]?.[locale] }))}
+      locale={locale}
+    />
   );
 }
