@@ -121,6 +121,8 @@ for (const lingua of lingue) {
     }
     if (/[ыэъёЫЭЪЁ]/.test(w.uk ?? "")) errori.push(`${lingua}/vocab: ${w.id}.uk con lettere russe: "${w.uk}"`);
     if (/[\u0400-\u04FF]/.test(w.en ?? "")) errori.push(`${lingua}/vocab: ${w.id}.en con cirillico: "${w.en}"`);
+    // it è italiano: le note sulla parola (inf., ora…) vanno in italiano, non nella lingua delle spiegazioni.
+    if (/[\u0400-\u04FF]/.test(w.it ?? "")) errori.push(`${lingua}/vocab: ${w.id}.it con cirillico: "${w.it}"`);
     if (w.base !== undefined && !ids.has(w.base)) errori.push(`${lingua}/vocab: ${w.id}.base → parola inesistente ${w.base}`);
     if (w.base === w.id) errori.push(`${lingua}/vocab: ${w.id}.base punta a se stessa`);
     if (visti.has(w.it)) errori.push(`${lingua}/vocab: "${w.it}" ripetuta (${visti.get(w.it)}, ${w.id})`);
