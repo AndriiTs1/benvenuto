@@ -4906,6 +4906,882 @@
      ]
     }
    ]
+  },
+  "g2-descrizione-persona": {
+   "id": "g2-descrizione-persona",
+   "inBreve": [
+    "To describe a person you need three verbs: {{essere}} (what they're like), {{avere}} (what they have), {{portare}} (what they wear).",
+    "The adjective goes **after** the noun and agrees: {{una ragazza alta}}, {{gli occhi scuri}}.",
+    "Job: {{fa il meccanico}} = {{è meccanico}}."
+   ],
+   "formation": {
+    "steps": [
+     "Build and personality — {{essere}} + adjective: {{è alto}}, {{è gentile}}.",
+     "Age, eyes, hair — {{avere}}: {{ha 22 anni}}, {{ha gli occhi verdi}}.",
+     "Glasses, beard, earrings — {{portare}}: {{porta gli occhiali}}."
+    ]
+   },
+   "tables": [
+    {
+     "title": "Essere, avere, portare",
+     "header": true,
+     "rows": [
+      [
+       "verbo",
+       "esempio"
+      ],
+      [
+       "essere",
+       "è alto e magro"
+      ],
+      [
+       "essere",
+       "è timido e gentile"
+      ],
+      [
+       "avere",
+       "ha 22 anni"
+      ],
+      [
+       "avere",
+       "ha gli occhi verdi"
+      ],
+      [
+       "avere",
+       "ha i capelli ricci"
+      ],
+      [
+       "portare",
+       "porta gli occhiali"
+      ],
+      [
+       "fare",
+       "fa il meccanico"
+      ]
+     ],
+     "note": "Bald — {{è calvo}} (essere)."
+    },
+    {
+     "title": "Adjective agreement",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "singolare",
+       "plurale"
+      ],
+      [
+       "-o (m.)",
+       "alto",
+       "alti"
+      ],
+      [
+       "-a (f.)",
+       "alta",
+       "alte"
+      ],
+      [
+       "-e (m./f.)",
+       "gentile",
+       "gentili"
+      ],
+      [
+       "-go, -co",
+       "lungo",
+       "lunghi"
+      ],
+      [
+       "invariabile",
+       "blu",
+       "blu"
+      ]
+     ],
+     "note": "{{-go}}, {{-co}} + {{h}}: {{lunghe}}, {{bianchi}}. Invariable: {{blu}}, {{rosa}}, {{viola}}."
+    },
+    {
+     "title": "Opposites",
+     "header": true,
+     "rows": [
+      [
+       "aggettivo",
+       "contrario"
+      ],
+      [
+       "alto",
+       "basso"
+      ],
+      [
+       "magro",
+       "grasso"
+      ],
+      [
+       "chiaro",
+       "scuro"
+      ],
+      [
+       "lungo",
+       "corto"
+      ],
+      [
+       "attivo",
+       "pigro"
+      ],
+      [
+       "socievole",
+       "timido"
+      ],
+      [
+       "gentile",
+       "scortese"
+      ],
+      [
+       "tranquillo",
+       "agitato"
+      ],
+      [
+       "educato",
+       "maleducato"
+      ],
+      [
+       "allegro",
+       "triste"
+      ]
+     ],
+     "note": "Learn adjectives in pairs — it's easier to remember."
+    }
+   ],
+   "uses": [
+    {
+     "text": "Appearance",
+     "it": "Peppino è alto e magro, con gli occhi scuri.",
+     "tr": "Peppino is tall and thin, with dark eyes."
+    },
+    {
+     "text": "Age and job",
+     "it": "Ha 22 anni e fa il meccanico.",
+     "tr": "He's 22 and works as a mechanic."
+    },
+    {
+     "text": "Personality",
+     "it": "Mia sorella è socievole e molto gentile.",
+     "tr": "My sister is sociable and very kind."
+    },
+    {
+     "text": "What they wear",
+     "it": "Porta gli occhiali e la barba.",
+     "tr": "He wears glasses and has a beard."
+    }
+   ],
+   "exceptions": [
+    {
+     "title": "Age — avere",
+     "text": "In Italian you “have” your age: {{ho 44 anni}}.",
+     "examples": [
+      {
+       "it": "Ho 44 anni.",
+       "tr": "I'm 44."
+      }
+     ]
+    },
+    {
+     "title": "con + appearance",
+     "text": "Describe with {{con}}: “with red hair”.",
+     "examples": [
+      {
+       "it": "È una ragazza con i capelli rossi.",
+       "tr": "She's a girl with red hair."
+      }
+     ]
+    },
+    {
+     "title": "educato — false friend",
+     "text": "{{educato}} = polite, well-mannered, not “educated”.",
+     "examples": [
+      {
+       "it": "È un ragazzo molto educato.",
+       "tr": "He's a very polite young man."
+      }
+     ]
+    },
+    {
+     "title": "Relatives",
+     "text": "Singular — no article: {{mio suocero}}; plural — with it: {{i miei suoceri}}.",
+     "examples": [
+      {
+       "it": "Mio suocero è alto. I miei suoceri sono simpatici.",
+       "tr": "My father-in-law is tall. My in-laws are nice."
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "Sono 44 anni.",
+     "right": "Ho 44 anni.",
+     "why": "Age — avere."
+    },
+    {
+     "wrong": "È gli occhi azzurri.",
+     "right": "Ha gli occhi azzurri.",
+     "why": "Eyes — avere."
+    },
+    {
+     "wrong": "Ha gli occhi scuro.",
+     "right": "Ha gli occhi scuri.",
+     "why": "occhi is masculine plural."
+    },
+    {
+     "wrong": "Ha gli occhi blui.",
+     "right": "Ha gli occhi blu.",
+     "why": "blu doesn't change."
+    },
+    {
+     "wrong": "Una alta ragazza.",
+     "right": "Una ragazza alta.",
+     "why": "The adjective goes after the noun."
+    },
+    {
+     "wrong": "Ha gli occhiali.",
+     "right": "Porta gli occhiali.",
+     "why": "Glasses — portare."
+    }
+   ],
+   "examples": [
+    {
+     "it": "Mio fratello è alto, robusto e ha i capelli corti.",
+     "tr": "My brother is tall and sturdy, with short hair."
+    },
+    {
+     "it": "Mia madre ha gli occhi verdi e i capelli grigi.",
+     "tr": "My mother has green eyes and grey hair."
+    },
+    {
+     "it": "Il mio insegnante è simpatico e molto paziente.",
+     "tr": "My teacher is nice and very patient."
+    },
+    {
+     "it": "Le mie colleghe sono socievoli.",
+     "tr": "My colleagues are sociable."
+    },
+    {
+     "it": "Mio nonno è calvo e porta la barba bianca.",
+     "tr": "My grandfather is bald and has a white beard."
+    },
+    {
+     "it": "Anna fa l'infermiera e ha 30 anni.",
+     "tr": "Anna is a nurse and she's 30."
+    }
+   ],
+   "summary": "**è** alto, gentile · **ha** 22 anni, gli occhi verdi · **porta** gli occhiali · **fa** il meccanico. Adjective after the noun, and it agrees.",
+   "keyWords": [
+    {
+     "title": "Il fisico",
+     "ids": [
+      "w343",
+      "w135",
+      "w313",
+      "w136",
+      "w311",
+      "w312",
+      "w327",
+      "w342",
+      "w323",
+      "w324",
+      "w435",
+      "w325",
+      "w326",
+      "w320",
+      "w321",
+      "w315",
+      "w319",
+      "w420",
+      "w423",
+      "w424",
+      "w421",
+      "w316",
+      "w317",
+      "w318",
+      "w314",
+      "w138"
+     ]
+    },
+    {
+     "title": "Il carattere",
+     "ids": [
+      "w344",
+      "w328",
+      "w329",
+      "w330",
+      "w331",
+      "w332",
+      "w333",
+      "w334",
+      "w335",
+      "w336",
+      "w337",
+      "w338",
+      "w339",
+      "w340",
+      "w341",
+      "w269",
+      "w270",
+      "w376"
+     ]
+    }
+   ]
+  },
+  "g5-prima-ora": {
+   "id": "g5-prima-ora",
+   "inBreve": [
+    "{{Prima}} (before) — {{imperfetto}}: how it was.",
+    "{{Ora}}, {{adesso}} (now) — {{presente}}: how it is.",
+    "The change itself — {{passato prossimo}}: {{è ingrassato}}, {{ha cambiato stile}}."
+   ],
+   "formation": {
+    "steps": [
+     "Describe the past: {{prima aveva}} {{i capelli neri}}.",
+     "Describe the present: {{ora ha i capelli rossi}}.",
+     "Say what happened: {{ha colorato i capelli}}."
+    ]
+   },
+   "tables": [
+    {
+     "title": "Prima — ora",
+     "header": true,
+     "rows": [
+      [
+       "prima",
+       "ora"
+      ],
+      [
+       "aveva i capelli neri",
+       "ha i capelli rossi"
+      ],
+      [
+       "era magro",
+       "è grasso"
+      ],
+      [
+       "non portava gli occhiali",
+       "porta gli occhiali"
+      ],
+      [
+       "non aveva la barba",
+       "ha la barba"
+      ],
+      [
+       "era felice",
+       "è un po' triste"
+      ]
+     ],
+     "note": "Left — {{imperfetto}}, right — {{presente}}."
+    },
+    {
+     "title": "Verbs of change — essere",
+     "header": true,
+     "rows": [
+      [
+       "infinito",
+       "passato prossimo"
+      ],
+      [
+       "crescere",
+       "sono cresciuto/a"
+      ],
+      [
+       "diventare",
+       "sono diventato/a"
+      ],
+      [
+       "invecchiare",
+       "sono invecchiato/a"
+      ],
+      [
+       "ingrassare",
+       "sono ingrassato/a"
+      ],
+      [
+       "dimagrire",
+       "sono dimagrito/a"
+      ],
+      [
+       "cambiare",
+       "sono cambiato/a"
+      ]
+     ],
+     "note": "All take {{essere}}; the participle agrees: {{mia madre è invecchiata}}."
+    },
+    {
+     "title": "Comparing",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "esempio"
+      ],
+      [
+       "più",
+       "è più alto"
+      ],
+      [
+       "meno",
+       "è meno allegro"
+      ],
+      [
+       "più … di",
+       "più felice di prima"
+      ],
+      [
+       "-issimo",
+       "bellissimo"
+      ]
+     ],
+     "note": "{{-issimo}} = “very”: {{lungo → lunghissimo}} ({{-go}}, {{-co}} + {{h}})."
+    }
+   ],
+   "uses": [
+    {
+     "text": "Before",
+     "it": "Prima abitavo in Ucraina.",
+     "tr": "I used to live in Ukraine."
+    },
+    {
+     "text": "Now",
+     "it": "Adesso abito in Svizzera.",
+     "tr": "Now I live in Switzerland."
+    },
+    {
+     "text": "What changed",
+     "it": "Sono cambiato molto.",
+     "tr": "I've changed a lot."
+    },
+    {
+     "text": "Comparing",
+     "it": "Ora è più tranquillo di prima.",
+     "tr": "Now he's calmer than before."
+    }
+   ],
+   "exceptions": [
+    {
+     "title": "cambiare: avere or essere",
+     "text": "Changed something — {{avere}}; changed yourself — {{essere}}.",
+     "examples": [
+      {
+       "it": "Ha cambiato stile. / È cambiato molto.",
+       "tr": "He changed his style. / He's changed a lot."
+      }
+     ]
+    },
+    {
+     "title": "crescere: what grew",
+     "text": "The subject is what grew: {{gli è cresciuta la barba}}.",
+     "examples": [
+      {
+       "it": "Gli è cresciuta la barba.",
+       "tr": "He's grown a beard."
+      }
+     ]
+    },
+    {
+     "title": "ancora and non più",
+     "text": "{{ancora}} — still; {{non… più}} — no longer.",
+     "examples": [
+      {
+       "it": "Porta ancora gli occhiali.",
+       "tr": "He still wears glasses."
+      },
+      {
+       "it": "Non porta più gli occhiali.",
+       "tr": "He doesn't wear glasses any more."
+      }
+     ]
+    },
+    {
+     "title": "il sopracciglio → le sopracciglia",
+     "text": "The plural is feminine in {{-a}}.",
+     "examples": [
+      {
+       "it": "Ha le sopracciglia scure.",
+       "tr": "She has dark eyebrows."
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "Ha ingrassato.",
+     "right": "È ingrassato.",
+     "why": "Verbs of change take essere."
+    },
+    {
+     "wrong": "Mia madre è invecchiato.",
+     "right": "Mia madre è invecchiata.",
+     "why": "The participle agrees."
+    },
+    {
+     "wrong": "Prima ha avuto i capelli neri.",
+     "right": "Prima aveva i capelli neri.",
+     "why": "Describing the past — imperfetto."
+    },
+    {
+     "wrong": "Lui è cresciuto la barba.",
+     "right": "Gli è cresciuta la barba.",
+     "why": "The subject is barba."
+    },
+    {
+     "wrong": "È più alto che me.",
+     "right": "È più alto di me.",
+     "why": "Comparison uses di."
+    }
+   ],
+   "examples": [
+    {
+     "it": "Prima ero basso, poi sono cresciuto e sono diventato alto.",
+     "tr": "I used to be short, then I grew and became tall."
+    },
+    {
+     "it": "Prima aveva i capelli lunghi, adesso li ha corti.",
+     "tr": "She used to have long hair, now it's short."
+    },
+    {
+     "it": "Mio padre è dimagrito molto.",
+     "tr": "My father has lost a lot of weight."
+    },
+    {
+     "it": "Prima si vestiva in modo casual, ora è elegante.",
+     "tr": "He used to dress casually, now he's smart."
+    },
+    {
+     "it": "Mia nonna è invecchiata, ma è ancora bellissima.",
+     "tr": "My grandmother has aged, but she's still very beautiful."
+    },
+    {
+     "it": "Non porto più le lenti a contatto.",
+     "tr": "I don't wear contact lenses any more."
+    }
+   ],
+   "summary": "**Prima** + imperfetto, **ora** + present, the change — **passato prossimo**. Verbs of change take **essere**: è ingrassato, è diventata.",
+   "keyWords": [
+    {
+     "title": "Cambiamenti",
+     "ids": [
+      "w377",
+      "w432",
+      "w429",
+      "w437",
+      "w438",
+      "w455",
+      "w441",
+      "w442",
+      "w425",
+      "w427",
+      "w433",
+      "w434",
+      "w436",
+      "w422",
+      "w439",
+      "w395"
+     ]
+    }
+   ]
+  },
+  "g5-futuro-semplice": {
+   "id": "g5-futuro-semplice",
+   "inBreve": [
+    "{{Futuro semplice}} is the future tense: {{domani partirò}} — “I'll leave tomorrow”.",
+    "One set of endings for all: {{-ò}}, {{-ai}}, {{-à}}, {{-emo}}, {{-ete}}, {{-anno}}.",
+    "In {{-are}} verbs the {{a}} becomes {{e}}: {{parlare → parlerò}}."
+   ],
+   "formation": {
+    "steps": [
+     "Drop the final {{-e}}: {{partire → partir-}}, {{prendere → prender-}}.",
+     "For {{-are}}, change {{a}} to {{e}}: {{arrivare → arriver-}}.",
+     "Add the ending: {{-ò}}, {{-ai}}, {{-à}}, {{-emo}}, {{-ete}}, {{-anno}}."
+    ]
+   },
+   "tables": [
+    {
+     "title": "Regular verbs",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "arrivare",
+       "prendere",
+       "partire"
+      ],
+      [
+       "io",
+       "arriver|ò",
+       "prender|ò",
+       "partir|ò"
+      ],
+      [
+       "tu",
+       "arriver|ai",
+       "prender|ai",
+       "partir|ai"
+      ],
+      [
+       "lui / lei",
+       "arriver|à",
+       "prender|à",
+       "partir|à"
+      ],
+      [
+       "noi",
+       "arriver|emo",
+       "prender|emo",
+       "partir|emo"
+      ],
+      [
+       "voi",
+       "arriver|ete",
+       "prender|ete",
+       "partir|ete"
+      ],
+      [
+       "loro",
+       "arriver|anno",
+       "prender|anno",
+       "partir|anno"
+      ]
+     ],
+     "note": "The accent in {{io}} and {{lui}} is written: {{arriverò}}, {{arriverà}}."
+    },
+    {
+     "title": "Special stems",
+     "header": true,
+     "rows": [
+      [
+       "infinito",
+       "io"
+      ],
+      [
+       "essere",
+       "sarò"
+      ],
+      [
+       "fare",
+       "farò"
+      ],
+      [
+       "stare",
+       "starò"
+      ],
+      [
+       "andare",
+       "andrò"
+      ],
+      [
+       "avere",
+       "avrò"
+      ],
+      [
+       "potere",
+       "potrò"
+      ],
+      [
+       "dovere",
+       "dovrò"
+      ],
+      [
+       "vedere",
+       "vedrò"
+      ],
+      [
+       "venire",
+       "verrò"
+      ],
+      [
+       "volere",
+       "vorrò"
+      ],
+      [
+       "rimanere",
+       "rimarrò"
+      ],
+      [
+       "bere",
+       "berrò"
+      ]
+     ],
+     "note": "Same endings — only the stem changes."
+    },
+    {
+     "title": "Spelling",
+     "header": true,
+     "rows": [
+      [
+       "infinito",
+       "io"
+      ],
+      [
+       "cercare",
+       "cercherò"
+      ],
+      [
+       "pagare",
+       "pagherò"
+      ],
+      [
+       "cominciare",
+       "comincerò"
+      ],
+      [
+       "mangiare",
+       "mangerò"
+      ]
+     ],
+     "note": "{{-care}}, {{-gare}} add {{h}}; {{-ciare}}, {{-giare}} drop the {{i}}."
+    }
+   ],
+   "uses": [
+    {
+     "text": "Future action",
+     "it": "Domani arriveranno i miei amici.",
+     "tr": "My friends will arrive tomorrow."
+    },
+    {
+     "text": "Plans",
+     "it": "L'anno prossimo mi iscriverò a un corso di tedesco.",
+     "tr": "Next year I'll sign up for a German course."
+    },
+    {
+     "text": "Promise",
+     "it": "Ti aiuterò io!",
+     "tr": "I'll help you!"
+    },
+    {
+     "text": "Forecast",
+     "it": "Domani pioverà.",
+     "tr": "It will rain tomorrow."
+    },
+    {
+     "text": "Guessing",
+     "it": "Dove sarà Marta? — Sarà al lavoro.",
+     "tr": "Where can Marta be? — She's probably at work."
+    }
+   ],
+   "exceptions": [
+    {
+     "title": "Present instead of future",
+     "text": "For the near future, Italians often use the {{presente}}.",
+     "examples": [
+      {
+       "it": "Domani vado al mare.",
+       "tr": "I'm going to the seaside tomorrow."
+      }
+     ]
+    },
+    {
+     "title": "Guessing",
+     "text": "The {{futuro}} can mean “probably now”: {{saranno le otto}}.",
+     "examples": [
+      {
+       "it": "Che ore sono? — Saranno le otto.",
+       "tr": "What time is it? — It must be about eight."
+      }
+     ]
+    },
+    {
+     "title": "Signal words",
+     "text": "{{domani}}, {{la settimana prossima}}, {{l'anno prossimo}}, {{tra due anni}}, {{in futuro}}.",
+     "examples": [
+      {
+       "it": "Tra due anni parlerò bene l'italiano.",
+       "tr": "In two years I'll speak Italian well."
+      }
+     ]
+    },
+    {
+     "title": "da grande",
+     "text": "“When I grow up” — for children's dreams.",
+     "examples": [
+      {
+       "it": "Da grande farò il medico.",
+       "tr": "When I grow up I'll be a doctor."
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "Arrivarò domani.",
+     "right": "Arriverò domani.",
+     "why": "-are: a → e."
+    },
+    {
+     "wrong": "Cercerò lavoro.",
+     "right": "Cercherò lavoro.",
+     "why": "-care adds h."
+    },
+    {
+     "wrong": "Mangierò.",
+     "right": "Mangerò.",
+     "why": "-giare drops the i."
+    },
+    {
+     "wrong": "Essrò felice.",
+     "right": "Sarò felice.",
+     "why": "essere — sarò."
+    },
+    {
+     "wrong": "Venirò.",
+     "right": "Verrò.",
+     "why": "venire — verrò."
+    },
+    {
+     "wrong": "Arrivero.",
+     "right": "Arriverò.",
+     "why": "Write the accent."
+    }
+   ],
+   "examples": [
+    {
+     "it": "Domani comincerò un nuovo lavoro.",
+     "tr": "Tomorrow I'll start a new job."
+    },
+    {
+     "it": "Metteremo da parte un po' di soldi.",
+     "tr": "We'll put some money aside."
+    },
+    {
+     "it": "Il treno partirà dal binario dieci.",
+     "tr": "The train will leave from platform ten."
+    },
+    {
+     "it": "Quest'estate andremo in Sicilia.",
+     "tr": "This summer we'll go to Sicily."
+    },
+    {
+     "it": "Sarai stanco dopo il viaggio.",
+     "tr": "You must be tired after the journey."
+    },
+    {
+     "it": "Vedrai, tutto andrà bene!",
+     "tr": "You'll see, everything will be fine!"
+    }
+   ],
+   "summary": "Stem + **-ò, -ai, -à, -emo, -ete, -anno**. In -are **a → e**. Special: **sarò, farò, andrò, avrò, verrò, vorrò**.",
+   "keyWords": [
+    {
+     "title": "Il futuro",
+     "ids": [
+      "w512",
+      "w132",
+      "w524",
+      "w523",
+      "w547",
+      "w546",
+      "w549",
+      "w117",
+      "w118",
+      "w121",
+      "w542"
+     ]
+    }
+   ]
   }
  }
 }

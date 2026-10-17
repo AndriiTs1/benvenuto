@@ -4906,6 +4906,882 @@
      ]
     }
    ]
+  },
+  "g2-descrizione-persona": {
+   "id": "g2-descrizione-persona",
+   "inBreve": [
+    "Чтобы описать человека, нужны три глагола: {{essere}} (какой), {{avere}} (что у него есть), {{portare}} (что носит).",
+    "Прилагательное стоит **после** существительного и согласуется: {{una ragazza alta}}, {{gli occhi scuri}}.",
+    "Профессия: {{fa il meccanico}} = {{è meccanico}}."
+   ],
+   "formation": {
+    "steps": [
+     "Фигура и характер — {{essere}} + прилагательное: {{è alto}}, {{è gentile}}.",
+     "Возраст, глаза, волосы — {{avere}}: {{ha 22 anni}}, {{ha gli occhi verdi}}.",
+     "Очки, борода, серьги — {{portare}}: {{porta gli occhiali}}."
+    ]
+   },
+   "tables": [
+    {
+     "title": "Essere, avere, portare",
+     "header": true,
+     "rows": [
+      [
+       "verbo",
+       "esempio"
+      ],
+      [
+       "essere",
+       "è alto e magro"
+      ],
+      [
+       "essere",
+       "è timido e gentile"
+      ],
+      [
+       "avere",
+       "ha 22 anni"
+      ],
+      [
+       "avere",
+       "ha gli occhi verdi"
+      ],
+      [
+       "avere",
+       "ha i capelli ricci"
+      ],
+      [
+       "portare",
+       "porta gli occhiali"
+      ],
+      [
+       "fare",
+       "fa il meccanico"
+      ]
+     ],
+     "note": "Лысый — {{è calvo}} (essere)."
+    },
+    {
+     "title": "Согласование прилагательных",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "singolare",
+       "plurale"
+      ],
+      [
+       "-o (m.)",
+       "alto",
+       "alti"
+      ],
+      [
+       "-a (f.)",
+       "alta",
+       "alte"
+      ],
+      [
+       "-e (m./f.)",
+       "gentile",
+       "gentili"
+      ],
+      [
+       "-go, -co",
+       "lungo",
+       "lunghi"
+      ],
+      [
+       "invariabile",
+       "blu",
+       "blu"
+      ]
+     ],
+     "note": "{{-go}}, {{-co}} + {{h}}: {{lunghe}}, {{bianchi}}. Не меняются: {{blu}}, {{rosa}}, {{viola}}."
+    },
+    {
+     "title": "Противоположности",
+     "header": true,
+     "rows": [
+      [
+       "aggettivo",
+       "contrario"
+      ],
+      [
+       "alto",
+       "basso"
+      ],
+      [
+       "magro",
+       "grasso"
+      ],
+      [
+       "chiaro",
+       "scuro"
+      ],
+      [
+       "lungo",
+       "corto"
+      ],
+      [
+       "attivo",
+       "pigro"
+      ],
+      [
+       "socievole",
+       "timido"
+      ],
+      [
+       "gentile",
+       "scortese"
+      ],
+      [
+       "tranquillo",
+       "agitato"
+      ],
+      [
+       "educato",
+       "maleducato"
+      ],
+      [
+       "allegro",
+       "triste"
+      ]
+     ],
+     "note": "Учи прилагательные парами — так легче запомнить."
+    }
+   ],
+   "uses": [
+    {
+     "text": "Внешность",
+     "it": "Peppino è alto e magro, con gli occhi scuri.",
+     "tr": "Пеппино высокий и худой, с тёмными глазами."
+    },
+    {
+     "text": "Возраст и профессия",
+     "it": "Ha 22 anni e fa il meccanico.",
+     "tr": "Ему 22 года, он механик."
+    },
+    {
+     "text": "Характер",
+     "it": "Mia sorella è socievole e molto gentile.",
+     "tr": "Моя сестра общительная и очень добрая."
+    },
+    {
+     "text": "Что носит",
+     "it": "Porta gli occhiali e la barba.",
+     "tr": "Он носит очки и бороду."
+    }
+   ],
+   "exceptions": [
+    {
+     "title": "Возраст — avere",
+     "text": "В итальянском возраст «имеют»: {{ho 44 anni}}.",
+     "examples": [
+      {
+       "it": "Ho 44 anni.",
+       "tr": "Мне 44 года."
+      }
+     ]
+    },
+    {
+     "title": "con + внешность",
+     "text": "Описание через {{con}}: «с рыжими волосами».",
+     "examples": [
+      {
+       "it": "È una ragazza con i capelli rossi.",
+       "tr": "Это девушка с рыжими волосами."
+      }
+     ]
+    },
+    {
+     "title": "educato — ложный друг",
+     "text": "{{educato}} = воспитанный, вежливый, а не «образованный».",
+     "examples": [
+      {
+       "it": "È un ragazzo molto educato.",
+       "tr": "Он очень воспитанный парень."
+      }
+     ]
+    },
+    {
+     "title": "Родственники",
+     "text": "Единственное — без артикля: {{mio suocero}}; множественное — с артиклем: {{i miei suoceri}}.",
+     "examples": [
+      {
+       "it": "Mio suocero è alto. I miei suoceri sono simpatici.",
+       "tr": "Мой тесть высокий. Мои тесть и тёща приятные."
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "Sono 44 anni.",
+     "right": "Ho 44 anni.",
+     "why": "Возраст — avere."
+    },
+    {
+     "wrong": "È gli occhi azzurri.",
+     "right": "Ha gli occhi azzurri.",
+     "why": "Глаза — avere."
+    },
+    {
+     "wrong": "Ha gli occhi scuro.",
+     "right": "Ha gli occhi scuri.",
+     "why": "occhi — мужской род, множественное."
+    },
+    {
+     "wrong": "Ha gli occhi blui.",
+     "right": "Ha gli occhi blu.",
+     "why": "blu не меняется."
+    },
+    {
+     "wrong": "Una alta ragazza.",
+     "right": "Una ragazza alta.",
+     "why": "Прилагательное — после существительного."
+    },
+    {
+     "wrong": "Ha gli occhiali.",
+     "right": "Porta gli occhiali.",
+     "why": "Очки — portare."
+    }
+   ],
+   "examples": [
+    {
+     "it": "Mio fratello è alto, robusto e ha i capelli corti.",
+     "tr": "Мой брат высокий, крепкий, с короткими волосами."
+    },
+    {
+     "it": "Mia madre ha gli occhi verdi e i capelli grigi.",
+     "tr": "У мамы зелёные глаза и седые волосы."
+    },
+    {
+     "it": "Il mio insegnante è simpatico e molto paziente.",
+     "tr": "Мой учитель приятный и очень терпеливый."
+    },
+    {
+     "it": "Le mie colleghe sono socievoli.",
+     "tr": "Мои коллеги общительные."
+    },
+    {
+     "it": "Mio nonno è calvo e porta la barba bianca.",
+     "tr": "Дедушка лысый и носит белую бороду."
+    },
+    {
+     "it": "Anna fa l'infermiera e ha 30 anni.",
+     "tr": "Анна — медсестра, ей 30 лет."
+    }
+   ],
+   "summary": "**è** alto, gentile · **ha** 22 anni, gli occhi verdi · **porta** gli occhiali · **fa** il meccanico. Прилагательное — после и согласуется.",
+   "keyWords": [
+    {
+     "title": "Il fisico",
+     "ids": [
+      "w343",
+      "w135",
+      "w313",
+      "w136",
+      "w311",
+      "w312",
+      "w327",
+      "w342",
+      "w323",
+      "w324",
+      "w435",
+      "w325",
+      "w326",
+      "w320",
+      "w321",
+      "w315",
+      "w319",
+      "w420",
+      "w423",
+      "w424",
+      "w421",
+      "w316",
+      "w317",
+      "w318",
+      "w314",
+      "w138"
+     ]
+    },
+    {
+     "title": "Il carattere",
+     "ids": [
+      "w344",
+      "w328",
+      "w329",
+      "w330",
+      "w331",
+      "w332",
+      "w333",
+      "w334",
+      "w335",
+      "w336",
+      "w337",
+      "w338",
+      "w339",
+      "w340",
+      "w341",
+      "w269",
+      "w270",
+      "w376"
+     ]
+    }
+   ]
+  },
+  "g5-prima-ora": {
+   "id": "g5-prima-ora",
+   "inBreve": [
+    "{{Prima}} (раньше) — {{imperfetto}}: как было.",
+    "{{Ora}}, {{adesso}} (сейчас) — {{presente}}: как стало.",
+    "Само изменение — {{passato prossimo}}: {{è ingrassato}}, {{ha cambiato stile}}."
+   ],
+   "formation": {
+    "steps": [
+     "Опиши прошлое: {{prima aveva}} {{i capelli neri}}.",
+     "Опиши настоящее: {{ora ha i capelli rossi}}.",
+     "Скажи, что произошло: {{ha colorato i capelli}}."
+    ]
+   },
+   "tables": [
+    {
+     "title": "Prima — ora",
+     "header": true,
+     "rows": [
+      [
+       "prima",
+       "ora"
+      ],
+      [
+       "aveva i capelli neri",
+       "ha i capelli rossi"
+      ],
+      [
+       "era magro",
+       "è grasso"
+      ],
+      [
+       "non portava gli occhiali",
+       "porta gli occhiali"
+      ],
+      [
+       "non aveva la barba",
+       "ha la barba"
+      ],
+      [
+       "era felice",
+       "è un po' triste"
+      ]
+     ],
+     "note": "Слева {{imperfetto}}, справа {{presente}}."
+    },
+    {
+     "title": "Глаголы изменения — essere",
+     "header": true,
+     "rows": [
+      [
+       "infinito",
+       "passato prossimo"
+      ],
+      [
+       "crescere",
+       "sono cresciuto/a"
+      ],
+      [
+       "diventare",
+       "sono diventato/a"
+      ],
+      [
+       "invecchiare",
+       "sono invecchiato/a"
+      ],
+      [
+       "ingrassare",
+       "sono ingrassato/a"
+      ],
+      [
+       "dimagrire",
+       "sono dimagrito/a"
+      ],
+      [
+       "cambiare",
+       "sono cambiato/a"
+      ]
+     ],
+     "note": "Все с {{essere}}, причастие согласуется: {{mia madre è invecchiata}}."
+    },
+    {
+     "title": "Сравнение",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "esempio"
+      ],
+      [
+       "più",
+       "è più alto"
+      ],
+      [
+       "meno",
+       "è meno allegro"
+      ],
+      [
+       "più … di",
+       "più felice di prima"
+      ],
+      [
+       "-issimo",
+       "bellissimo"
+      ]
+     ],
+     "note": "{{-issimo}} = «очень»: {{lungo → lunghissimo}} ({{-go}}, {{-co}} + {{h}})."
+    }
+   ],
+   "uses": [
+    {
+     "text": "Раньше",
+     "it": "Prima abitavo in Ucraina.",
+     "tr": "Раньше я жил в Украине."
+    },
+    {
+     "text": "Сейчас",
+     "it": "Adesso abito in Svizzera.",
+     "tr": "Сейчас я живу в Швейцарии."
+    },
+    {
+     "text": "Что изменилось",
+     "it": "Sono cambiato molto.",
+     "tr": "Я сильно изменился."
+    },
+    {
+     "text": "Сравнить",
+     "it": "Ora è più tranquillo di prima.",
+     "tr": "Теперь он спокойнее, чем раньше."
+    }
+   ],
+   "exceptions": [
+    {
+     "title": "cambiare: avere или essere",
+     "text": "Поменял что-то — {{avere}}; изменился сам — {{essere}}.",
+     "examples": [
+      {
+       "it": "Ha cambiato stile. / È cambiato molto.",
+       "tr": "Он сменил стиль. / Он сильно изменился."
+      }
+     ]
+    },
+    {
+     "title": "crescere: что выросло",
+     "text": "Подлежащее — то, что выросло: {{gli è cresciuta la barba}}.",
+     "examples": [
+      {
+       "it": "Gli è cresciuta la barba.",
+       "tr": "У него отросла борода."
+      }
+     ]
+    },
+    {
+     "title": "ancora и non più",
+     "text": "{{ancora}} — всё ещё; {{non… più}} — больше не.",
+     "examples": [
+      {
+       "it": "Porta ancora gli occhiali.",
+       "tr": "Он всё ещё носит очки."
+      },
+      {
+       "it": "Non porta più gli occhiali.",
+       "tr": "Он больше не носит очки."
+      }
+     ]
+    },
+    {
+     "title": "il sopracciglio → le sopracciglia",
+     "text": "Во множественном — женский род на {{-a}}.",
+     "examples": [
+      {
+       "it": "Ha le sopracciglia scure.",
+       "tr": "У неё тёмные брови."
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "Ha ingrassato.",
+     "right": "È ingrassato.",
+     "why": "Глаголы изменения — essere."
+    },
+    {
+     "wrong": "Mia madre è invecchiato.",
+     "right": "Mia madre è invecchiata.",
+     "why": "Причастие согласуется."
+    },
+    {
+     "wrong": "Prima ha avuto i capelli neri.",
+     "right": "Prima aveva i capelli neri.",
+     "why": "Описание прошлого — imperfetto."
+    },
+    {
+     "wrong": "Lui è cresciuto la barba.",
+     "right": "Gli è cresciuta la barba.",
+     "why": "Подлежащее — barba."
+    },
+    {
+     "wrong": "È più alto che me.",
+     "right": "È più alto di me.",
+     "why": "Сравнение — di."
+    }
+   ],
+   "examples": [
+    {
+     "it": "Prima ero basso, poi sono cresciuto e sono diventato alto.",
+     "tr": "Раньше я был низким, потом вырос и стал высоким."
+    },
+    {
+     "it": "Prima aveva i capelli lunghi, adesso li ha corti.",
+     "tr": "Раньше у неё были длинные волосы, теперь короткие."
+    },
+    {
+     "it": "Mio padre è dimagrito molto.",
+     "tr": "Мой отец сильно похудел."
+    },
+    {
+     "it": "Prima si vestiva in modo casual, ora è elegante.",
+     "tr": "Раньше он одевался просто, теперь элегантно."
+    },
+    {
+     "it": "Mia nonna è invecchiata, ma è ancora bellissima.",
+     "tr": "Бабушка постарела, но всё ещё очень красивая."
+    },
+    {
+     "it": "Non porto più le lenti a contatto.",
+     "tr": "Я больше не ношу линзы."
+    }
+   ],
+   "summary": "**Prima** + imperfetto, **ora** + presente, изменение — **passato prossimo**. Глаголы изменения — **essere**: è ingrassato, è diventata.",
+   "keyWords": [
+    {
+     "title": "Cambiamenti",
+     "ids": [
+      "w377",
+      "w432",
+      "w429",
+      "w437",
+      "w438",
+      "w455",
+      "w441",
+      "w442",
+      "w425",
+      "w427",
+      "w433",
+      "w434",
+      "w436",
+      "w422",
+      "w439",
+      "w395"
+     ]
+    }
+   ]
+  },
+  "g5-futuro-semplice": {
+   "id": "g5-futuro-semplice",
+   "inBreve": [
+    "{{Futuro semplice}} — будущее время: {{domani partirò}} — «завтра я уеду».",
+    "Окончания одни для всех: {{-ò}}, {{-ai}}, {{-à}}, {{-emo}}, {{-ete}}, {{-anno}}.",
+    "У глаголов на {{-are}} буква {{a}} становится {{e}}: {{parlare → parlerò}}."
+   ],
+   "formation": {
+    "steps": [
+     "Убери последнюю {{-e}}: {{partire → partir-}}, {{prendere → prender-}}.",
+     "У {{-are}} замени {{a}} на {{e}}: {{arrivare → arriver-}}.",
+     "Добавь окончание: {{-ò}}, {{-ai}}, {{-à}}, {{-emo}}, {{-ete}}, {{-anno}}."
+    ]
+   },
+   "tables": [
+    {
+     "title": "Правильные глаголы",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "arrivare",
+       "prendere",
+       "partire"
+      ],
+      [
+       "io",
+       "arriver|ò",
+       "prender|ò",
+       "partir|ò"
+      ],
+      [
+       "tu",
+       "arriver|ai",
+       "prender|ai",
+       "partir|ai"
+      ],
+      [
+       "lui / lei",
+       "arriver|à",
+       "prender|à",
+       "partir|à"
+      ],
+      [
+       "noi",
+       "arriver|emo",
+       "prender|emo",
+       "partir|emo"
+      ],
+      [
+       "voi",
+       "arriver|ete",
+       "prender|ete",
+       "partir|ete"
+      ],
+      [
+       "loro",
+       "arriver|anno",
+       "prender|anno",
+       "partir|anno"
+      ]
+     ],
+     "note": "Ударение в {{io}} и {{lui}} пишется: {{arriverò}}, {{arriverà}}."
+    },
+    {
+     "title": "Особые основы",
+     "header": true,
+     "rows": [
+      [
+       "infinito",
+       "io"
+      ],
+      [
+       "essere",
+       "sarò"
+      ],
+      [
+       "fare",
+       "farò"
+      ],
+      [
+       "stare",
+       "starò"
+      ],
+      [
+       "andare",
+       "andrò"
+      ],
+      [
+       "avere",
+       "avrò"
+      ],
+      [
+       "potere",
+       "potrò"
+      ],
+      [
+       "dovere",
+       "dovrò"
+      ],
+      [
+       "vedere",
+       "vedrò"
+      ],
+      [
+       "venire",
+       "verrò"
+      ],
+      [
+       "volere",
+       "vorrò"
+      ],
+      [
+       "rimanere",
+       "rimarrò"
+      ],
+      [
+       "bere",
+       "berrò"
+      ]
+     ],
+     "note": "Окончания те же — меняется только основа."
+    },
+    {
+     "title": "Орфография",
+     "header": true,
+     "rows": [
+      [
+       "infinito",
+       "io"
+      ],
+      [
+       "cercare",
+       "cercherò"
+      ],
+      [
+       "pagare",
+       "pagherò"
+      ],
+      [
+       "cominciare",
+       "comincerò"
+      ],
+      [
+       "mangiare",
+       "mangerò"
+      ]
+     ],
+     "note": "{{-care}}, {{-gare}} + {{h}}; {{-ciare}}, {{-giare}} теряют {{i}}."
+    }
+   ],
+   "uses": [
+    {
+     "text": "Действие в будущем",
+     "it": "Domani arriveranno i miei amici.",
+     "tr": "Завтра приедут мои друзья."
+    },
+    {
+     "text": "Планы",
+     "it": "L'anno prossimo mi iscriverò a un corso di tedesco.",
+     "tr": "В следующем году я запишусь на курс немецкого."
+    },
+    {
+     "text": "Обещание",
+     "it": "Ti aiuterò io!",
+     "tr": "Я тебе помогу!"
+    },
+    {
+     "text": "Прогноз",
+     "it": "Domani pioverà.",
+     "tr": "Завтра будет дождь."
+    },
+    {
+     "text": "Предположение",
+     "it": "Dove sarà Marta? — Sarà al lavoro.",
+     "tr": "Где же Марта? — Наверное, на работе."
+    }
+   ],
+   "exceptions": [
+    {
+     "title": "Presente вместо futuro",
+     "text": "О близком будущем в разговоре часто говорят в {{presente}}.",
+     "examples": [
+      {
+       "it": "Domani vado al mare.",
+       "tr": "Завтра я еду на море."
+      }
+     ]
+    },
+    {
+     "title": "Предположение",
+     "text": "{{futuro}} может значить «наверное, сейчас»: {{saranno le otto}}.",
+     "examples": [
+      {
+       "it": "Che ore sono? — Saranno le otto.",
+       "tr": "Который час? — Наверное, восемь."
+      }
+     ]
+    },
+    {
+     "title": "Маркеры",
+     "text": "{{domani}}, {{la settimana prossima}}, {{l'anno prossimo}}, {{tra due anni}}, {{in futuro}}.",
+     "examples": [
+      {
+       "it": "Tra due anni parlerò bene l'italiano.",
+       "tr": "Через два года я буду хорошо говорить по-итальянски."
+      }
+     ]
+    },
+    {
+     "title": "da grande",
+     "text": "«Когда вырасту» — для мечты и планов детей.",
+     "examples": [
+      {
+       "it": "Da grande farò il medico.",
+       "tr": "Когда вырасту, буду врачом."
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "Arrivarò domani.",
+     "right": "Arriverò domani.",
+     "why": "-are: a → e."
+    },
+    {
+     "wrong": "Cercerò lavoro.",
+     "right": "Cercherò lavoro.",
+     "why": "-care + h."
+    },
+    {
+     "wrong": "Mangierò.",
+     "right": "Mangerò.",
+     "why": "-giare теряет i."
+    },
+    {
+     "wrong": "Essrò felice.",
+     "right": "Sarò felice.",
+     "why": "essere — sarò."
+    },
+    {
+     "wrong": "Venirò.",
+     "right": "Verrò.",
+     "why": "venire — verrò."
+    },
+    {
+     "wrong": "Arrivero.",
+     "right": "Arriverò.",
+     "why": "Ударение пишется."
+    }
+   ],
+   "examples": [
+    {
+     "it": "Domani comincerò un nuovo lavoro.",
+     "tr": "Завтра я начну новую работу."
+    },
+    {
+     "it": "Metteremo da parte un po' di soldi.",
+     "tr": "Мы отложим немного денег."
+    },
+    {
+     "it": "Il treno partirà dal binario dieci.",
+     "tr": "Поезд отправится с десятого пути."
+    },
+    {
+     "it": "Quest'estate andremo in Sicilia.",
+     "tr": "Этим летом мы поедем на Сицилию."
+    },
+    {
+     "it": "Sarai stanco dopo il viaggio.",
+     "tr": "Ты, наверное, устал после поездки."
+    },
+    {
+     "it": "Vedrai, tutto andrà bene!",
+     "tr": "Вот увидишь, всё будет хорошо!"
+    }
+   ],
+   "summary": "Основа + **-ò, -ai, -à, -emo, -ete, -anno**. У -are **a → e**. Особые: **sarò, farò, andrò, avrò, verrò, vorrò**.",
+   "keyWords": [
+    {
+     "title": "Il futuro",
+     "ids": [
+      "w512",
+      "w132",
+      "w524",
+      "w523",
+      "w547",
+      "w546",
+      "w549",
+      "w117",
+      "w118",
+      "w121",
+      "w542"
+     ]
+    }
+   ]
   }
  }
 }
