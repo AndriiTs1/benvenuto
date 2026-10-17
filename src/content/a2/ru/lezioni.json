@@ -1166,6 +1166,1093 @@
      }
     ]
    }
+  },
+  "g5-presente-tu": {
+   "id": "g5-presente-tu",
+   "inBreve": [
+    "Форма {{tu}} — «ты»: так говорят с друзьями, коллегами, одноклассниками.",
+    "У **всех** глаголов в presente форма tu оканчивается на {{-i}}: {{parli, prendi, dormi}}.",
+    "С незнакомыми и в официальных местах — {{Lei}} (вежливое «Вы»): глагол в 3-м лице, {{Lei parla}}."
+   ],
+   "formation": {
+    "steps": [
+     "Убери окончание инфинитива: {{parlare → parl-}}.",
+     "Добавь {{-i}}: {{parli}}, {{prendi}}, {{dormi}}.",
+     "Возвратные: {{ti}} + глагол — {{ti alzi}}, {{ti svegli}}."
+    ]
+   },
+   "tables": [
+    {
+     "title": "Одно окончание для всех",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "-are",
+       "-ere",
+       "-ire"
+      ],
+      [
+       "infinito",
+       "cammin|are",
+       "prend|ere",
+       "dorm|ire"
+      ],
+      [
+       "tu",
+       "cammin|i",
+       "prend|i",
+       "dorm|i"
+      ]
+     ],
+     "note": "Глаголы на -isc- сохраняют его: {{pulire → pulisci}}, {{finire → finisci}}."
+    },
+    {
+     "title": "Орфография: следи за буквами",
+     "header": true,
+     "rows": [
+      [
+       "infinito",
+       "tu"
+      ],
+      [
+       "cercare",
+       "cerc|hi"
+      ],
+      [
+       "pagare",
+       "pag|hi"
+      ],
+      [
+       "mancare",
+       "manc|hi"
+      ],
+      [
+       "mangiare",
+       "mang|i"
+      ],
+      [
+       "svegliarsi",
+       "ti svegl|i"
+      ],
+      [
+       "pulire",
+       "pul|isci"
+      ]
+     ],
+     "note": "{{-care / -gare}} + {{h}} — звук остаётся твёрдым; {{-iare}} — только одна {{i}}."
+    },
+    {
+     "title": "Неправильные: форма tu",
+     "header": true,
+     "rows": [
+      [
+       "infinito",
+       "tu"
+      ],
+      [
+       "essere",
+       "sei"
+      ],
+      [
+       "avere",
+       "hai"
+      ],
+      [
+       "andare",
+       "vai"
+      ],
+      [
+       "fare",
+       "fai"
+      ],
+      [
+       "stare",
+       "stai"
+      ],
+      [
+       "uscire",
+       "esci"
+      ],
+      [
+       "venire",
+       "vieni"
+      ],
+      [
+       "bere",
+       "bevi"
+      ],
+      [
+       "dire",
+       "dici"
+      ]
+     ],
+     "note": "Полное спряжение — в теме «I verbi irregolari»."
+    }
+   ],
+   "uses": [
+    {
+     "text": "Вопросы о привычках",
+     "it": "A che ora ti alzi?",
+     "tr": "Во сколько ты встаёшь?"
+    },
+    {
+     "text": "Неформальное общение",
+     "it": "Dove abiti?",
+     "tr": "Где ты живёшь?"
+    },
+    {
+     "text": "Просьба",
+     "it": "Mi passi il sale?",
+     "tr": "Передашь мне соль?"
+    },
+    {
+     "text": "Предложение",
+     "it": "Vieni al cinema stasera?",
+     "tr": "Пойдёшь в кино сегодня вечером?"
+    }
+   ],
+   "exceptions": [
+    {
+     "title": "Tu или Lei",
+     "text": "С незнакомыми, врачом, в банке — {{Lei}} + 3-е лицо. Пишется с большой буквы.",
+     "examples": [
+      {
+       "it": "Come ti chiami? / Come si chiama?",
+       "tr": "Как тебя зовут? / Как Вас зовут?"
+      },
+      {
+       "it": "Dove abiti? / Dove abita?",
+       "tr": "Где ты живёшь? / Где Вы живёте?"
+      }
+     ]
+    },
+    {
+     "title": "Подлежащее обычно не нужно",
+     "text": "Окончание {{-i}} уже показывает «ты»; {{tu}} говорят только для акцента.",
+     "examples": [
+      {
+       "it": "Parli italiano?",
+       "tr": "Ты говоришь по-итальянски?"
+      },
+      {
+       "it": "Io lavoro, e tu?",
+       "tr": "Я работаю, а ты?"
+      }
+     ]
+    },
+    {
+     "title": "uscire",
+     "text": "Корень меняется: {{esc-}} в io, tu, lui, loro; {{usc-}} в noi и voi.",
+     "examples": [
+      {
+       "it": "Esci stasera? — Sì, usciamo insieme.",
+       "tr": "Ты выходишь сегодня вечером? — Да, мы выходим вместе."
+      }
+     ]
+    },
+    {
+     "title": "Глаголы на -isc-",
+     "text": "{{finire, pulire, preferire, capire}} — {{-isc-}} в форме tu.",
+     "examples": [
+      {
+       "it": "Capisci? — Sì, capisco.",
+       "tr": "Понимаешь? — Да, понимаю."
+      },
+      {
+       "it": "Preferisci il tè o il caffè?",
+       "tr": "Ты предпочитаешь чай или кофе?"
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "Tu parla italiano?",
+     "right": "Parli italiano?",
+     "why": "Форма tu всегда на -i."
+    },
+    {
+     "wrong": "Cerci lavoro?",
+     "right": "Cerchi lavoro?",
+     "why": "-care: добавляем h, чтобы звук остался твёрдым."
+    },
+    {
+     "wrong": "Mangii la pizza?",
+     "right": "Mangi la pizza?",
+     "why": "-iare: только одна i."
+    },
+    {
+     "wrong": "Usci stasera?",
+     "right": "Esci stasera?",
+     "why": "uscire: в форме tu корень esc-."
+    },
+    {
+     "wrong": "Pulii la casa?",
+     "right": "Pulisci la casa?",
+     "why": "pulire — глагол на -isc-."
+    }
+   ],
+   "examples": [
+    {
+     "it": "Come passi la giornata?",
+     "tr": "Как ты проводишь день?"
+    },
+    {
+     "it": "A che ora finisci di lavorare?",
+     "tr": "Во сколько ты заканчиваешь работать?"
+    },
+    {
+     "it": "Come ti muovi in città?",
+     "tr": "Как ты передвигаешься по городу?"
+    },
+    {
+     "it": "Paghi tu o pago io?",
+     "tr": "Платишь ты или я?"
+    },
+    {
+     "it": "Cosa fai il fine settimana?",
+     "tr": "Что ты делаешь на выходных?"
+    },
+    {
+     "it": "Vai a piedi o prendi l'autobus?",
+     "tr": "Ты идёшь пешком или едешь на автобусе?"
+    }
+   ],
+   "summary": "Форма tu — всегда **-i**: **parli, prendi, dormi**. Следи за **cerchi, paghi, mangi, pulisci**. Вежливо — **Lei + 3-е лицо**.",
+   "keyWords": [
+    {
+     "title": "Verbi della giornata",
+     "ids": [
+      "w060",
+      "w061",
+      "w066",
+      "w068",
+      "w071",
+      "w072",
+      "w073",
+      "w075",
+      "w076",
+      "w059",
+      "w500"
+     ]
+    }
+   ]
+  },
+  "g5-presente-irregular": {
+   "id": "g5-presente-irregular",
+   "inBreve": [
+    "Самые частые глаголы — **неправильные**: их формы нужно запомнить.",
+    "Формы {{noi}} и {{voi}} обычно почти правильные: {{andiamo, andate}}.",
+    "Частый признак — {{-go}} в io и {{-gono}} в loro: {{vengo, vengono}}."
+   ],
+   "formation": {
+    "steps": [
+     "Выучи форму {{io}} — по ней видно тип глагола: {{faccio, vado, vengo}}.",
+     "Форма {{loro}} похожа на io: {{vado → vanno}}, {{vengo → vengono}}.",
+     "{{noi}} и {{voi}} почти всегда от инфинитива: {{andare → andiamo, andate}}."
+    ]
+   },
+   "tables": [
+    {
+     "title": "fare, andare, stare",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "fare",
+       "andare",
+       "stare"
+      ],
+      [
+       "io",
+       "faccio",
+       "vado",
+       "sto"
+      ],
+      [
+       "tu",
+       "fai",
+       "vai",
+       "stai"
+      ],
+      [
+       "lui / lei",
+       "fa",
+       "va",
+       "sta"
+      ],
+      [
+       "noi",
+       "facciamo",
+       "andiamo",
+       "stiamo"
+      ],
+      [
+       "voi",
+       "fate",
+       "andate",
+       "state"
+      ],
+      [
+       "loro",
+       "fanno",
+       "vanno",
+       "stanno"
+      ]
+     ],
+     "note": "{{dare}} спрягается как {{stare}}: {{do, dai, dà, diamo, date, danno}}."
+    },
+    {
+     "title": "С -g-: io -go, loro -gono",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "rimanere",
+       "salire",
+       "venire"
+      ],
+      [
+       "io",
+       "rimango",
+       "salgo",
+       "vengo"
+      ],
+      [
+       "tu",
+       "rimani",
+       "sali",
+       "vieni"
+      ],
+      [
+       "lui / lei",
+       "rimane",
+       "sale",
+       "viene"
+      ],
+      [
+       "noi",
+       "rimaniamo",
+       "saliamo",
+       "veniamo"
+      ],
+      [
+       "voi",
+       "rimanete",
+       "salite",
+       "venite"
+      ],
+      [
+       "loro",
+       "rimangono",
+       "salgono",
+       "vengono"
+      ]
+     ],
+     "note": "Тот же тип: {{tenere → tengo}}, {{scegliere → scelgo}}."
+    },
+    {
+     "title": "uscire, bere, dire",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "uscire",
+       "bere",
+       "dire"
+      ],
+      [
+       "io",
+       "esco",
+       "bevo",
+       "dico"
+      ],
+      [
+       "tu",
+       "esci",
+       "bevi",
+       "dici"
+      ],
+      [
+       "lui / lei",
+       "esce",
+       "beve",
+       "dice"
+      ],
+      [
+       "noi",
+       "usciamo",
+       "beviamo",
+       "diciamo"
+      ],
+      [
+       "voi",
+       "uscite",
+       "bevete",
+       "dite"
+      ],
+      [
+       "loro",
+       "escono",
+       "bevono",
+       "dicono"
+      ]
+     ],
+     "note": "{{bere}} и {{dire}} спрягаются от старых основ {{bev-}} и {{dic-}}."
+    }
+   ],
+   "uses": [
+    {
+     "text": "Распорядок и привычки",
+     "it": "La mattina faccio colazione e vado al lavoro.",
+     "tr": "Утром я завтракаю и иду на работу."
+    },
+    {
+     "text": "andare a + инфинитив — идти что-то делать",
+     "it": "Vado a dormire.",
+     "tr": "Я иду спать."
+    },
+    {
+     "text": "stare — самочувствие",
+     "it": "Come stai? — Sto bene, grazie.",
+     "tr": "Как дела? — Хорошо, спасибо."
+    },
+    {
+     "text": "fare — погода и выражения",
+     "it": "Oggi fa freddo.",
+     "tr": "Сегодня холодно."
+    },
+    {
+     "text": "venire — прийти туда, где собеседник",
+     "it": "Vieni da me stasera?",
+     "tr": "Придёшь ко мне сегодня вечером?"
+    }
+   ],
+   "exceptions": [
+    {
+     "title": "andare a / andare in",
+     "text": "Город — {{a}}; страна и многие места — {{in}}.",
+     "examples": [
+      {
+       "it": "Vado a Milano. / Vado in Italia.",
+       "tr": "Я еду в Милан. / Я еду в Италию."
+      },
+      {
+       "it": "Vado in banca, in farmacia.",
+       "tr": "Я иду в банк, в аптеку."
+      }
+     ]
+    },
+    {
+     "title": "andare или venire",
+     "text": "{{venire}} — движение к собеседнику или вместе с ним.",
+     "examples": [
+      {
+       "it": "Vengo subito!",
+       "tr": "Сейчас приду!"
+      },
+      {
+       "it": "Vieni con noi?",
+       "tr": "Пойдёшь с нами?"
+      }
+     ]
+    },
+    {
+     "title": "Выражения с fare",
+     "text": "{{fare}} часто переводится не как «делать».",
+     "examples": [
+      {
+       "it": "Faccio colazione e poi faccio la spesa.",
+       "tr": "Я завтракаю, а потом хожу за покупками."
+      },
+      {
+       "it": "Facciamo una passeggiata?",
+       "tr": "Прогуляемся?"
+      }
+     ]
+    },
+    {
+     "title": "dà с ударением",
+     "text": "{{dà}} (даёт) пишется с ударением, чтобы не путать с предлогом {{da}}.",
+     "examples": [
+      {
+       "it": "Mi dà il suo numero.",
+       "tr": "Он даёт мне свой номер."
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "Io fo colazione.",
+     "right": "Io faccio colazione.",
+     "why": "fare: faccio."
+    },
+    {
+     "wrong": "Io ando al lavoro.",
+     "right": "Io vado al lavoro.",
+     "why": "andare: vado."
+    },
+    {
+     "wrong": "Loro andano.",
+     "right": "Loro vanno.",
+     "why": "andare: vanno."
+    },
+    {
+     "wrong": "Io veno domani.",
+     "right": "Io vengo domani.",
+     "why": "venire: vengo (с -g-)."
+    },
+    {
+     "wrong": "Noi bevemo acqua.",
+     "right": "Noi beviamo acqua.",
+     "why": "noi — всегда на -iamo."
+    }
+   ],
+   "examples": [
+    {
+     "it": "Cosa fai stasera?",
+     "tr": "Что ты делаешь сегодня вечером?"
+    },
+    {
+     "it": "Andiamo al mare domenica.",
+     "tr": "В воскресенье мы едем на море."
+    },
+    {
+     "it": "I bambini stanno a casa.",
+     "tr": "Дети сидят дома."
+    },
+    {
+     "it": "Esco alle otto.",
+     "tr": "Я выхожу в восемь."
+    },
+    {
+     "it": "Rimango a casa perché piove.",
+     "tr": "Я остаюсь дома, потому что идёт дождь."
+    },
+    {
+     "it": "Cosa bevi? — Bevo un caffè.",
+     "tr": "Что ты пьёшь? — Я пью кофе."
+    }
+   ],
+   "summary": "Запомни форму **io**: **faccio, vado, sto, vengo, esco**. loro — по ней: **vanno, vengono**. noi и voi — почти правильные.",
+   "keyWords": [
+    {
+     "title": "Verbi irregolari",
+     "ids": [
+      "w008",
+      "w095",
+      "w125",
+      "w183",
+      "w508"
+     ]
+    },
+    {
+     "title": "Espressioni con fare",
+     "ids": [
+      "w218",
+      "w450",
+      "w164",
+      "w141",
+      "w380"
+     ]
+    },
+    {
+     "title": "Andare, stare, uscire",
+     "ids": [
+      "w024",
+      "w158",
+      "w079",
+      "w237"
+     ]
+    }
+   ]
+  },
+  "g5-modali-presente": {
+   "id": "g5-modali-presente",
+   "inBreve": [
+    "{{potere}} — мочь, {{volere}} — хотеть, {{dovere}} — быть должным, нужно.",
+    "После них идёт **инфинитив без предлога**: {{posso venire}}, {{voglio dormire}}, {{devo lavorare}}.",
+    "Все три — неправильные в presente."
+   ],
+   "formation": {
+    "steps": [
+     "Выбери глагол по смыслу: можно — {{potere}}, хочу — {{volere}}, нужно — {{dovere}}.",
+     "Проспрягай его (таблица ниже).",
+     "Добавь второй глагол в инфинитиве: {{devo partire}}."
+    ]
+   },
+   "tables": [
+    {
+     "title": "potere, volere, dovere",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "potere",
+       "volere",
+       "dovere"
+      ],
+      [
+       "io",
+       "posso",
+       "voglio",
+       "devo"
+      ],
+      [
+       "tu",
+       "puoi",
+       "vuoi",
+       "devi"
+      ],
+      [
+       "lui / lei",
+       "può",
+       "vuole",
+       "deve"
+      ],
+      [
+       "noi",
+       "possiamo",
+       "vogliamo",
+       "dobbiamo"
+      ],
+      [
+       "voi",
+       "potete",
+       "volete",
+       "dovete"
+      ],
+      [
+       "loro",
+       "possono",
+       "vogliono",
+       "devono"
+      ]
+     ],
+     "note": "{{può}} пишется с ударением."
+    },
+    {
+     "title": "sapere — уметь, знать",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "sapere"
+      ],
+      [
+       "io",
+       "so"
+      ],
+      [
+       "tu",
+       "sai"
+      ],
+      [
+       "lui / lei",
+       "sa"
+      ],
+      [
+       "noi",
+       "sappiamo"
+      ],
+      [
+       "voi",
+       "sapete"
+      ],
+      [
+       "loro",
+       "sanno"
+      ]
+     ],
+     "note": "{{sapere}} + инфинитив = «уметь»: {{so nuotare}}."
+    }
+   ],
+   "uses": [
+    {
+     "text": "Возможность, разрешение",
+     "it": "Posso entrare?",
+     "tr": "Можно войти?"
+    },
+    {
+     "text": "Желание",
+     "it": "Voglio imparare l'italiano.",
+     "tr": "Я хочу выучить итальянский."
+    },
+    {
+     "text": "Обязанность, необходимость",
+     "it": "Domani devo lavorare.",
+     "tr": "Завтра мне нужно работать."
+    },
+    {
+     "text": "volere + существительное",
+     "it": "Vuole una macchina nuova.",
+     "tr": "Он хочет новую машину."
+    },
+    {
+     "text": "Просьба",
+     "it": "Puoi chiudere la finestra?",
+     "tr": "Можешь закрыть окно?"
+    }
+   ],
+   "exceptions": [
+    {
+     "title": "vorrei — вежливо",
+     "text": "В магазине, баре, ресторане вместо {{voglio}} говорят {{vorrei}} — «я бы хотел». Учим как готовую фразу.",
+     "examples": [
+      {
+       "it": "Vorrei un caffè, per favore.",
+       "tr": "Я бы хотел кофе, пожалуйста."
+      }
+     ]
+    },
+    {
+     "title": "potere или sapere",
+     "text": "{{potere}} — есть возможность; {{sapere}} — умею, научился.",
+     "examples": [
+      {
+       "it": "Oggi non posso nuotare, ho il raffreddore.",
+       "tr": "Сегодня я не могу плавать, у меня насморк."
+      },
+      {
+       "it": "Non so nuotare.",
+       "tr": "Я не умею плавать."
+      }
+     ]
+    },
+    {
+     "title": "Отрицание",
+     "text": "{{non}} ставится перед модальным глаголом.",
+     "examples": [
+      {
+       "it": "Non posso venire.",
+       "tr": "Я не могу прийти."
+      }
+     ]
+    },
+    {
+     "title": "С возвратными глаголами",
+     "text": "Местоимение — перед модальным глаголом или в конце инфинитива.",
+     "examples": [
+      {
+       "it": "Mi devo alzare. = Devo alzarmi.",
+       "tr": "Мне нужно встать."
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "Devo di lavorare.",
+     "right": "Devo lavorare.",
+     "why": "После модальных — без предлога."
+    },
+    {
+     "wrong": "Posso a venire.",
+     "right": "Posso venire.",
+     "why": "Без предлога a."
+    },
+    {
+     "wrong": "Io volo un caffè.",
+     "right": "Vorrei un caffè.",
+     "why": "volere: voglio; вежливо — vorrei."
+    },
+    {
+     "wrong": "Lui puo.",
+     "right": "Lui può.",
+     "why": "può — с ударением."
+    },
+    {
+     "wrong": "Non posso nuotare. (не умею)",
+     "right": "Non so nuotare.",
+     "why": "«Уметь» — sapere."
+    }
+   ],
+   "examples": [
+    {
+     "it": "Puoi aiutarmi?",
+     "tr": "Можешь мне помочь?"
+    },
+    {
+     "it": "Vogliamo andare al mare.",
+     "tr": "Мы хотим поехать на море."
+    },
+    {
+     "it": "I bambini devono andare a letto presto.",
+     "tr": "Детям нужно рано ложиться спать."
+    },
+    {
+     "it": "Non posso venire, devo lavorare.",
+     "tr": "Я не могу прийти, мне нужно работать."
+    },
+    {
+     "it": "Sai parlare tedesco?",
+     "tr": "Ты умеешь говорить по-немецки?"
+    },
+    {
+     "it": "Vorrei prenotare un tavolo.",
+     "tr": "Я бы хотел забронировать столик."
+    }
+   ],
+   "summary": "**potere / volere / dovere + инфинитив**, без предлога. Вежливо: **vorrei**. Уметь: **sapere**.",
+   "keyWords": [
+    {
+     "title": "I verbi modali",
+     "ids": [
+      "w127",
+      "w128",
+      "w126",
+      "w282"
+     ]
+    }
+   ]
+  },
+  "g5-piacere-mancare": {
+   "id": "g5-piacere-mancare",
+   "inBreve": [
+    "{{Mi piace}} = «мне нравится». Подлежащее — то, **что** нравится, а не тот, кому.",
+    "Одна вещь или инфинитив — {{piace}}; несколько вещей — {{piacciono}}.",
+    "{{mancare}} работает так же: {{mi manca mio figlio}} — «я скучаю по сыну» (букв. «мне не хватает сына»)."
+   ],
+   "formation": {
+    "steps": [
+     "Найди, **кому** нравится: {{mi, ti, gli, le, ci, vi, gli}}.",
+     "Найди, **что** нравится: одно или много?",
+     "Одно или глагол — {{piace / manca}}; много — {{piacciono / mancano}}."
+    ]
+   },
+   "tables": [
+    {
+     "title": "piacere: кому + что",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "singolare",
+       "plurale"
+      ],
+      [
+       "a me",
+       "mi piace",
+       "mi piacciono"
+      ],
+      [
+       "a te",
+       "ti piace",
+       "ti piacciono"
+      ],
+      [
+       "a lui",
+       "gli piace",
+       "gli piacciono"
+      ],
+      [
+       "a lei",
+       "le piace",
+       "le piacciono"
+      ],
+      [
+       "a Lei",
+       "Le piace",
+       "Le piacciono"
+      ],
+      [
+       "a noi",
+       "ci piace",
+       "ci piacciono"
+      ],
+      [
+       "a voi",
+       "vi piace",
+       "vi piacciono"
+      ],
+      [
+       "a loro",
+       "gli piace",
+       "gli piacciono"
+      ]
+     ],
+     "note": "{{mancare}} — так же: {{mi manca / mi mancano}}."
+    },
+    {
+     "title": "В прошедшем времени",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "singolare",
+       "plurale"
+      ],
+      [
+       "passato prossimo",
+       "mi è piaciuto/a",
+       "mi sono piaciuti/e"
+      ],
+      [
+       "imperfetto",
+       "mi piaceva",
+       "mi piacevano"
+      ]
+     ],
+     "note": "В passato prossimo — {{essere}}, причастие согласуется с тем, что понравилось."
+    }
+   ],
+   "uses": [
+    {
+     "text": "Еда, занятия, места",
+     "it": "Mi piace la pizza.",
+     "tr": "Мне нравится пицца."
+    },
+    {
+     "text": "+ инфинитив (всегда piace)",
+     "it": "Ci piace viaggiare.",
+     "tr": "Нам нравится путешествовать."
+    },
+    {
+     "text": "Вопрос",
+     "it": "Ti piacciono i film italiani?",
+     "tr": "Тебе нравятся итальянские фильмы?"
+    },
+    {
+     "text": "Скучать по кому-то",
+     "it": "Mi mancano i miei genitori.",
+     "tr": "Я скучаю по родителям."
+    },
+    {
+     "text": "Не хватает чего-то",
+     "it": "Manca il sale.",
+     "tr": "Не хватает соли."
+    }
+   ],
+   "exceptions": [
+    {
+     "title": "a me вместо mi",
+     "text": "Для акцента или сравнения — {{a me, a te…}} вместо {{mi, ti}}.",
+     "examples": [
+      {
+       "it": "A me piace il mare, a lui la montagna.",
+       "tr": "Мне нравится море, а ему — горы."
+      }
+     ]
+    },
+    {
+     "title": "Anche a me / Neanche a me",
+     "text": "Согласие — не {{anch'io}}, а {{anche a me}} / {{neanche a me}}.",
+     "examples": [
+      {
+       "it": "Mi piace il caffè. — Anche a me!",
+       "tr": "Я люблю кофе. — Я тоже!"
+      },
+      {
+       "it": "Non mi piace il freddo. — Neanche a me.",
+       "tr": "Я не люблю холод. — Я тоже."
+      }
+     ]
+    },
+    {
+     "title": "mancare по лицам",
+     "text": "Тот, по кому скучают, — подлежащее.",
+     "examples": [
+      {
+       "it": "Mi manchi.",
+       "tr": "Я скучаю по тебе."
+      },
+      {
+       "it": "Ti manco?",
+       "tr": "Ты скучаешь по мне?"
+      }
+     ]
+    },
+    {
+     "title": "la famiglia, la gente",
+     "text": "Грамматически — единственное число.",
+     "examples": [
+      {
+       "it": "Mi manca la mia famiglia.",
+       "tr": "Я скучаю по семье."
+      },
+      {
+       "it": "Mi piace la gente qui.",
+       "tr": "Мне нравятся здешние люди."
+      }
+     ]
+    },
+    {
+     "title": "mancare ≠ annoiarsi",
+     "text": "«Скучать по кому-то» — {{mancare}}; «мне скучно» — {{annoiarsi}}.",
+     "examples": [
+      {
+       "it": "Mi manca Kiev. / Mi annoio.",
+       "tr": "Я скучаю по Киеву. / Мне скучно."
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "Io piaccio la pizza.",
+     "right": "Mi piace la pizza.",
+     "why": "Подлежащее — pizza, а не io."
+    },
+    {
+     "wrong": "Mi piace gli spaghetti.",
+     "right": "Mi piacciono gli spaghetti.",
+     "why": "Много — piacciono."
+    },
+    {
+     "wrong": "Mi piacciono leggere e scrivere.",
+     "right": "Mi piace leggere e scrivere.",
+     "why": "С инфинитивом — всегда piace."
+    },
+    {
+     "wrong": "Mi piace il caffè. — Anch'io!",
+     "right": "Mi piace il caffè. — Anche a me!",
+     "why": "Согласие с piacere — anche a me."
+    },
+    {
+     "wrong": "Io manco mio figlio.",
+     "right": "Mi manca mio figlio.",
+     "why": "По кому скучают — подлежащее."
+    }
+   ],
+   "examples": [
+    {
+     "it": "Ti piace il tuo lavoro?",
+     "tr": "Тебе нравится твоя работа?"
+    },
+    {
+     "it": "Le piacciono i fiori.",
+     "tr": "Ей нравятся цветы."
+    },
+    {
+     "it": "Non ci piace alzarci presto.",
+     "tr": "Нам не нравится рано вставать."
+    },
+    {
+     "it": "Ti manca la tua città?",
+     "tr": "Ты скучаешь по своему городу?"
+    },
+    {
+     "it": "Mi è piaciuta molto la festa.",
+     "tr": "Мне очень понравился праздник."
+    },
+    {
+     "it": "Da bambino mi piacevano i cartoni animati.",
+     "tr": "В детстве мне нравились мультфильмы."
+    }
+   ],
+   "summary": "**Mi piace** + одно / инфинитив, **mi piacciono** + много. mancare — так же: **mi manca / mi mancano**. Согласие: **anche a me**.",
+   "keyWords": [
+    {
+     "title": "Gusti e sentimenti",
+     "ids": [
+      "w034",
+      "w033",
+      "w188"
+     ]
+    }
+   ]
   }
  }
 }

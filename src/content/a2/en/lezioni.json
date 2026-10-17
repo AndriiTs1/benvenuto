@@ -1166,6 +1166,1093 @@
      }
     ]
    }
+  },
+  "g5-presente-tu": {
+   "id": "g5-presente-tu",
+   "inBreve": [
+    "The {{tu}} form means “you” (informal): use it with friends, colleagues and classmates.",
+    "For **every** verb in the present, the tu form ends in {{-i}}: {{parli, prendi, dormi}}.",
+    "With strangers and in formal places use {{Lei}} (polite “you”) with the 3rd person: {{Lei parla}}."
+   ],
+   "formation": {
+    "steps": [
+     "Remove the infinitive ending: {{parlare → parl-}}.",
+     "Add {{-i}}: {{parli}}, {{prendi}}, {{dormi}}.",
+     "Reflexive verbs: {{ti}} + verb — {{ti alzi}}, {{ti svegli}}."
+    ]
+   },
+   "tables": [
+    {
+     "title": "One ending for all",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "-are",
+       "-ere",
+       "-ire"
+      ],
+      [
+       "infinito",
+       "cammin|are",
+       "prend|ere",
+       "dorm|ire"
+      ],
+      [
+       "tu",
+       "cammin|i",
+       "prend|i",
+       "dorm|i"
+      ]
+     ],
+     "note": "-isc- verbs keep it: {{pulire → pulisci}}, {{finire → finisci}}."
+    },
+    {
+     "title": "Spelling: watch the letters",
+     "header": true,
+     "rows": [
+      [
+       "infinito",
+       "tu"
+      ],
+      [
+       "cercare",
+       "cerc|hi"
+      ],
+      [
+       "pagare",
+       "pag|hi"
+      ],
+      [
+       "mancare",
+       "manc|hi"
+      ],
+      [
+       "mangiare",
+       "mang|i"
+      ],
+      [
+       "svegliarsi",
+       "ti svegl|i"
+      ],
+      [
+       "pulire",
+       "pul|isci"
+      ]
+     ],
+     "note": "{{-care / -gare}} add {{h}} to keep the hard sound; {{-iare}} keep only one {{i}}."
+    },
+    {
+     "title": "Irregular: the tu form",
+     "header": true,
+     "rows": [
+      [
+       "infinito",
+       "tu"
+      ],
+      [
+       "essere",
+       "sei"
+      ],
+      [
+       "avere",
+       "hai"
+      ],
+      [
+       "andare",
+       "vai"
+      ],
+      [
+       "fare",
+       "fai"
+      ],
+      [
+       "stare",
+       "stai"
+      ],
+      [
+       "uscire",
+       "esci"
+      ],
+      [
+       "venire",
+       "vieni"
+      ],
+      [
+       "bere",
+       "bevi"
+      ],
+      [
+       "dire",
+       "dici"
+      ]
+     ],
+     "note": "Full conjugations are in “I verbi irregolari”."
+    }
+   ],
+   "uses": [
+    {
+     "text": "Asking about habits",
+     "it": "A che ora ti alzi?",
+     "tr": "What time do you get up?"
+    },
+    {
+     "text": "Informal conversation",
+     "it": "Dove abiti?",
+     "tr": "Where do you live?"
+    },
+    {
+     "text": "Asking a favour",
+     "it": "Mi passi il sale?",
+     "tr": "Can you pass me the salt?"
+    },
+    {
+     "text": "Making a suggestion",
+     "it": "Vieni al cinema stasera?",
+     "tr": "Are you coming to the cinema tonight?"
+    }
+   ],
+   "exceptions": [
+    {
+     "title": "Tu or Lei",
+     "text": "With strangers, a doctor, at the bank — {{Lei}} + 3rd person. Written with a capital L.",
+     "examples": [
+      {
+       "it": "Come ti chiami? / Come si chiama?",
+       "tr": "What's your name? (informal / polite)"
+      },
+      {
+       "it": "Dove abiti? / Dove abita?",
+       "tr": "Where do you live? (informal / polite)"
+      }
+     ]
+    },
+    {
+     "title": "No subject needed",
+     "text": "The {{-i}} ending already means “you”; say {{tu}} only for emphasis.",
+     "examples": [
+      {
+       "it": "Parli italiano?",
+       "tr": "Do you speak Italian?"
+      },
+      {
+       "it": "Io lavoro, e tu?",
+       "tr": "I work, and you?"
+      }
+     ]
+    },
+    {
+     "title": "uscire",
+     "text": "The stem changes: {{esc-}} for io, tu, lui, loro; {{usc-}} for noi and voi.",
+     "examples": [
+      {
+       "it": "Esci stasera? — Sì, usciamo insieme.",
+       "tr": "Are you going out tonight? — Yes, we're going out together."
+      }
+     ]
+    },
+    {
+     "title": "-isc- verbs",
+     "text": "{{finire, pulire, preferire, capire}} have {{-isc-}} in the tu form.",
+     "examples": [
+      {
+       "it": "Capisci? — Sì, capisco.",
+       "tr": "Do you understand? — Yes, I do."
+      },
+      {
+       "it": "Preferisci il tè o il caffè?",
+       "tr": "Do you prefer tea or coffee?"
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "Tu parla italiano?",
+     "right": "Parli italiano?",
+     "why": "The tu form always ends in -i."
+    },
+    {
+     "wrong": "Cerci lavoro?",
+     "right": "Cerchi lavoro?",
+     "why": "-care: add h to keep the hard sound."
+    },
+    {
+     "wrong": "Mangii la pizza?",
+     "right": "Mangi la pizza?",
+     "why": "-iare: only one i."
+    },
+    {
+     "wrong": "Usci stasera?",
+     "right": "Esci stasera?",
+     "why": "uscire: the tu stem is esc-."
+    },
+    {
+     "wrong": "Pulii la casa?",
+     "right": "Pulisci la casa?",
+     "why": "pulire is an -isc- verb."
+    }
+   ],
+   "examples": [
+    {
+     "it": "Come passi la giornata?",
+     "tr": "How do you spend your day?"
+    },
+    {
+     "it": "A che ora finisci di lavorare?",
+     "tr": "What time do you finish work?"
+    },
+    {
+     "it": "Come ti muovi in città?",
+     "tr": "How do you get around town?"
+    },
+    {
+     "it": "Paghi tu o pago io?",
+     "tr": "Are you paying or am I?"
+    },
+    {
+     "it": "Cosa fai il fine settimana?",
+     "tr": "What do you do at the weekend?"
+    },
+    {
+     "it": "Vai a piedi o prendi l'autobus?",
+     "tr": "Do you walk or take the bus?"
+    }
+   ],
+   "summary": "The tu form always ends in **-i**: **parli, prendi, dormi**. Watch **cerchi, paghi, mangi, pulisci**. Polite: **Lei + 3rd person**.",
+   "keyWords": [
+    {
+     "title": "Verbi della giornata",
+     "ids": [
+      "w060",
+      "w061",
+      "w066",
+      "w068",
+      "w071",
+      "w072",
+      "w073",
+      "w075",
+      "w076",
+      "w059",
+      "w500"
+     ]
+    }
+   ]
+  },
+  "g5-presente-irregular": {
+   "id": "g5-presente-irregular",
+   "inBreve": [
+    "The most common verbs are **irregular**: their forms have to be learned.",
+    "The {{noi}} and {{voi}} forms are usually almost regular: {{andiamo, andate}}.",
+    "A frequent pattern: {{-go}} in io and {{-gono}} in loro: {{vengo, vengono}}."
+   ],
+   "formation": {
+    "steps": [
+     "Learn the {{io}} form — it shows the verb's type: {{faccio, vado, vengo}}.",
+     "The {{loro}} form looks like io: {{vado → vanno}}, {{vengo → vengono}}.",
+     "{{noi}} and {{voi}} almost always come from the infinitive: {{andare → andiamo, andate}}."
+    ]
+   },
+   "tables": [
+    {
+     "title": "fare, andare, stare",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "fare",
+       "andare",
+       "stare"
+      ],
+      [
+       "io",
+       "faccio",
+       "vado",
+       "sto"
+      ],
+      [
+       "tu",
+       "fai",
+       "vai",
+       "stai"
+      ],
+      [
+       "lui / lei",
+       "fa",
+       "va",
+       "sta"
+      ],
+      [
+       "noi",
+       "facciamo",
+       "andiamo",
+       "stiamo"
+      ],
+      [
+       "voi",
+       "fate",
+       "andate",
+       "state"
+      ],
+      [
+       "loro",
+       "fanno",
+       "vanno",
+       "stanno"
+      ]
+     ],
+     "note": "{{dare}} works like {{stare}}: {{do, dai, dà, diamo, date, danno}}."
+    },
+    {
+     "title": "With -g-: io -go, loro -gono",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "rimanere",
+       "salire",
+       "venire"
+      ],
+      [
+       "io",
+       "rimango",
+       "salgo",
+       "vengo"
+      ],
+      [
+       "tu",
+       "rimani",
+       "sali",
+       "vieni"
+      ],
+      [
+       "lui / lei",
+       "rimane",
+       "sale",
+       "viene"
+      ],
+      [
+       "noi",
+       "rimaniamo",
+       "saliamo",
+       "veniamo"
+      ],
+      [
+       "voi",
+       "rimanete",
+       "salite",
+       "venite"
+      ],
+      [
+       "loro",
+       "rimangono",
+       "salgono",
+       "vengono"
+      ]
+     ],
+     "note": "Same type: {{tenere → tengo}}, {{scegliere → scelgo}}."
+    },
+    {
+     "title": "uscire, bere, dire",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "uscire",
+       "bere",
+       "dire"
+      ],
+      [
+       "io",
+       "esco",
+       "bevo",
+       "dico"
+      ],
+      [
+       "tu",
+       "esci",
+       "bevi",
+       "dici"
+      ],
+      [
+       "lui / lei",
+       "esce",
+       "beve",
+       "dice"
+      ],
+      [
+       "noi",
+       "usciamo",
+       "beviamo",
+       "diciamo"
+      ],
+      [
+       "voi",
+       "uscite",
+       "bevete",
+       "dite"
+      ],
+      [
+       "loro",
+       "escono",
+       "bevono",
+       "dicono"
+      ]
+     ],
+     "note": "{{bere}} and {{dire}} use the old stems {{bev-}} and {{dic-}}."
+    }
+   ],
+   "uses": [
+    {
+     "text": "Routine and habits",
+     "it": "La mattina faccio colazione e vado al lavoro.",
+     "tr": "In the morning I have breakfast and go to work."
+    },
+    {
+     "text": "andare a + infinitive — to go and do something",
+     "it": "Vado a dormire.",
+     "tr": "I'm going to bed."
+    },
+    {
+     "text": "stare — how you feel",
+     "it": "Come stai? — Sto bene, grazie.",
+     "tr": "How are you? — Fine, thanks."
+    },
+    {
+     "text": "fare — weather and expressions",
+     "it": "Oggi fa freddo.",
+     "tr": "It's cold today."
+    },
+    {
+     "text": "venire — to come where the listener is",
+     "it": "Vieni da me stasera?",
+     "tr": "Are you coming to my place tonight?"
+    }
+   ],
+   "exceptions": [
+    {
+     "title": "andare a / andare in",
+     "text": "Cities — {{a}}; countries and many places — {{in}}.",
+     "examples": [
+      {
+       "it": "Vado a Milano. / Vado in Italia.",
+       "tr": "I'm going to Milan. / I'm going to Italy."
+      },
+      {
+       "it": "Vado in banca, in farmacia.",
+       "tr": "I'm going to the bank, to the pharmacy."
+      }
+     ]
+    },
+    {
+     "title": "andare or venire",
+     "text": "{{venire}} is movement towards the listener or together with them.",
+     "examples": [
+      {
+       "it": "Vengo subito!",
+       "tr": "I'm coming right away!"
+      },
+      {
+       "it": "Vieni con noi?",
+       "tr": "Are you coming with us?"
+      }
+     ]
+    },
+    {
+     "title": "Expressions with fare",
+     "text": "{{fare}} often isn't translated as “do”.",
+     "examples": [
+      {
+       "it": "Faccio colazione e poi faccio la spesa.",
+       "tr": "I have breakfast and then do the shopping."
+      },
+      {
+       "it": "Facciamo una passeggiata?",
+       "tr": "Shall we go for a walk?"
+      }
+     ]
+    },
+    {
+     "title": "dà with an accent",
+     "text": "{{dà}} (gives) has an accent so it isn't confused with the preposition {{da}}.",
+     "examples": [
+      {
+       "it": "Mi dà il suo numero.",
+       "tr": "He gives me his number."
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "Io fo colazione.",
+     "right": "Io faccio colazione.",
+     "why": "fare: faccio."
+    },
+    {
+     "wrong": "Io ando al lavoro.",
+     "right": "Io vado al lavoro.",
+     "why": "andare: vado."
+    },
+    {
+     "wrong": "Loro andano.",
+     "right": "Loro vanno.",
+     "why": "andare: vanno."
+    },
+    {
+     "wrong": "Io veno domani.",
+     "right": "Io vengo domani.",
+     "why": "venire: vengo (with -g-)."
+    },
+    {
+     "wrong": "Noi bevemo acqua.",
+     "right": "Noi beviamo acqua.",
+     "why": "noi always ends in -iamo."
+    }
+   ],
+   "examples": [
+    {
+     "it": "Cosa fai stasera?",
+     "tr": "What are you doing tonight?"
+    },
+    {
+     "it": "Andiamo al mare domenica.",
+     "tr": "We're going to the seaside on Sunday."
+    },
+    {
+     "it": "I bambini stanno a casa.",
+     "tr": "The children are staying at home."
+    },
+    {
+     "it": "Esco alle otto.",
+     "tr": "I go out at eight."
+    },
+    {
+     "it": "Rimango a casa perché piove.",
+     "tr": "I'm staying at home because it's raining."
+    },
+    {
+     "it": "Cosa bevi? — Bevo un caffè.",
+     "tr": "What are you drinking? — A coffee."
+    }
+   ],
+   "summary": "Learn the **io** form: **faccio, vado, sto, vengo, esco**. loro follows it: **vanno, vengono**. noi and voi are almost regular.",
+   "keyWords": [
+    {
+     "title": "Verbi irregolari",
+     "ids": [
+      "w008",
+      "w095",
+      "w125",
+      "w183",
+      "w508"
+     ]
+    },
+    {
+     "title": "Espressioni con fare",
+     "ids": [
+      "w218",
+      "w450",
+      "w164",
+      "w141",
+      "w380"
+     ]
+    },
+    {
+     "title": "Andare, stare, uscire",
+     "ids": [
+      "w024",
+      "w158",
+      "w079",
+      "w237"
+     ]
+    }
+   ]
+  },
+  "g5-modali-presente": {
+   "id": "g5-modali-presente",
+   "inBreve": [
+    "{{potere}} — can, {{volere}} — want, {{dovere}} — must, have to.",
+    "They are followed by an **infinitive with no preposition**: {{posso venire}}, {{voglio dormire}}, {{devo lavorare}}.",
+    "All three are irregular in the present."
+   ],
+   "formation": {
+    "steps": [
+     "Choose by meaning: can — {{potere}}, want — {{volere}}, have to — {{dovere}}.",
+     "Conjugate it (table below).",
+     "Add the second verb in the infinitive: {{devo partire}}."
+    ]
+   },
+   "tables": [
+    {
+     "title": "potere, volere, dovere",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "potere",
+       "volere",
+       "dovere"
+      ],
+      [
+       "io",
+       "posso",
+       "voglio",
+       "devo"
+      ],
+      [
+       "tu",
+       "puoi",
+       "vuoi",
+       "devi"
+      ],
+      [
+       "lui / lei",
+       "può",
+       "vuole",
+       "deve"
+      ],
+      [
+       "noi",
+       "possiamo",
+       "vogliamo",
+       "dobbiamo"
+      ],
+      [
+       "voi",
+       "potete",
+       "volete",
+       "dovete"
+      ],
+      [
+       "loro",
+       "possono",
+       "vogliono",
+       "devono"
+      ]
+     ],
+     "note": "{{può}} has an accent."
+    },
+    {
+     "title": "sapere — to know how, to know",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "sapere"
+      ],
+      [
+       "io",
+       "so"
+      ],
+      [
+       "tu",
+       "sai"
+      ],
+      [
+       "lui / lei",
+       "sa"
+      ],
+      [
+       "noi",
+       "sappiamo"
+      ],
+      [
+       "voi",
+       "sapete"
+      ],
+      [
+       "loro",
+       "sanno"
+      ]
+     ],
+     "note": "{{sapere}} + infinitive = “know how to”: {{so nuotare}}."
+    }
+   ],
+   "uses": [
+    {
+     "text": "Possibility, permission",
+     "it": "Posso entrare?",
+     "tr": "May I come in?"
+    },
+    {
+     "text": "Wanting",
+     "it": "Voglio imparare l'italiano.",
+     "tr": "I want to learn Italian."
+    },
+    {
+     "text": "Obligation, necessity",
+     "it": "Domani devo lavorare.",
+     "tr": "I have to work tomorrow."
+    },
+    {
+     "text": "volere + noun",
+     "it": "Vuole una macchina nuova.",
+     "tr": "He wants a new car."
+    },
+    {
+     "text": "Asking a favour",
+     "it": "Puoi chiudere la finestra?",
+     "tr": "Can you close the window?"
+    }
+   ],
+   "exceptions": [
+    {
+     "title": "vorrei — polite",
+     "text": "In shops, bars and restaurants say {{vorrei}} (“I would like”) instead of {{voglio}}. Learn it as a set phrase.",
+     "examples": [
+      {
+       "it": "Vorrei un caffè, per favore.",
+       "tr": "I'd like a coffee, please."
+      }
+     ]
+    },
+    {
+     "title": "potere or sapere",
+     "text": "{{potere}} — you are able to right now; {{sapere}} — you know how to.",
+     "examples": [
+      {
+       "it": "Oggi non posso nuotare, ho il raffreddore.",
+       "tr": "I can't swim today, I have a cold."
+      },
+      {
+       "it": "Non so nuotare.",
+       "tr": "I can't swim (I don't know how)."
+      }
+     ]
+    },
+    {
+     "title": "Negative",
+     "text": "{{non}} goes before the modal verb.",
+     "examples": [
+      {
+       "it": "Non posso venire.",
+       "tr": "I can't come."
+      }
+     ]
+    },
+    {
+     "title": "With reflexive verbs",
+     "text": "The pronoun goes before the modal or on the end of the infinitive.",
+     "examples": [
+      {
+       "it": "Mi devo alzare. = Devo alzarmi.",
+       "tr": "I have to get up."
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "Devo di lavorare.",
+     "right": "Devo lavorare.",
+     "why": "No preposition after modal verbs."
+    },
+    {
+     "wrong": "Posso a venire.",
+     "right": "Posso venire.",
+     "why": "No preposition a."
+    },
+    {
+     "wrong": "Io volo un caffè.",
+     "right": "Vorrei un caffè.",
+     "why": "volere: voglio; politely — vorrei."
+    },
+    {
+     "wrong": "Lui puo.",
+     "right": "Lui può.",
+     "why": "può has an accent."
+    },
+    {
+     "wrong": "Non posso nuotare. (don't know how)",
+     "right": "Non so nuotare.",
+     "why": "“Know how to” is sapere."
+    }
+   ],
+   "examples": [
+    {
+     "it": "Puoi aiutarmi?",
+     "tr": "Can you help me?"
+    },
+    {
+     "it": "Vogliamo andare al mare.",
+     "tr": "We want to go to the seaside."
+    },
+    {
+     "it": "I bambini devono andare a letto presto.",
+     "tr": "The children have to go to bed early."
+    },
+    {
+     "it": "Non posso venire, devo lavorare.",
+     "tr": "I can't come, I have to work."
+    },
+    {
+     "it": "Sai parlare tedesco?",
+     "tr": "Can you speak German?"
+    },
+    {
+     "it": "Vorrei prenotare un tavolo.",
+     "tr": "I'd like to book a table."
+    }
+   ],
+   "summary": "**potere / volere / dovere + infinitive**, no preposition. Polite: **vorrei**. Know how to: **sapere**.",
+   "keyWords": [
+    {
+     "title": "I verbi modali",
+     "ids": [
+      "w127",
+      "w128",
+      "w126",
+      "w282"
+     ]
+    }
+   ]
+  },
+  "g5-piacere-mancare": {
+   "id": "g5-piacere-mancare",
+   "inBreve": [
+    "{{Mi piace}} = “I like” (literally “it pleases me”). The subject is **what** is liked, not the person.",
+    "One thing or an infinitive — {{piace}}; several things — {{piacciono}}.",
+    "{{mancare}} works the same way: {{mi manca mio figlio}} — “I miss my son” (literally “my son is missing to me”)."
+   ],
+   "formation": {
+    "steps": [
+     "Find **who** likes it: {{mi, ti, gli, le, ci, vi, gli}}.",
+     "Find **what** is liked: one thing or several?",
+     "One thing or a verb — {{piace / manca}}; several — {{piacciono / mancano}}."
+    ]
+   },
+   "tables": [
+    {
+     "title": "piacere: to whom + what",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "singolare",
+       "plurale"
+      ],
+      [
+       "a me",
+       "mi piace",
+       "mi piacciono"
+      ],
+      [
+       "a te",
+       "ti piace",
+       "ti piacciono"
+      ],
+      [
+       "a lui",
+       "gli piace",
+       "gli piacciono"
+      ],
+      [
+       "a lei",
+       "le piace",
+       "le piacciono"
+      ],
+      [
+       "a Lei",
+       "Le piace",
+       "Le piacciono"
+      ],
+      [
+       "a noi",
+       "ci piace",
+       "ci piacciono"
+      ],
+      [
+       "a voi",
+       "vi piace",
+       "vi piacciono"
+      ],
+      [
+       "a loro",
+       "gli piace",
+       "gli piacciono"
+      ]
+     ],
+     "note": "{{mancare}} works the same: {{mi manca / mi mancano}}."
+    },
+    {
+     "title": "In the past",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "singolare",
+       "plurale"
+      ],
+      [
+       "passato prossimo",
+       "mi è piaciuto/a",
+       "mi sono piaciuti/e"
+      ],
+      [
+       "imperfetto",
+       "mi piaceva",
+       "mi piacevano"
+      ]
+     ],
+     "note": "In the passato prossimo use {{essere}}; the participle agrees with what was liked."
+    }
+   ],
+   "uses": [
+    {
+     "text": "Food, activities, places",
+     "it": "Mi piace la pizza.",
+     "tr": "I like pizza."
+    },
+    {
+     "text": "+ infinitive (always piace)",
+     "it": "Ci piace viaggiare.",
+     "tr": "We like travelling."
+    },
+    {
+     "text": "Questions",
+     "it": "Ti piacciono i film italiani?",
+     "tr": "Do you like Italian films?"
+    },
+    {
+     "text": "Missing someone",
+     "it": "Mi mancano i miei genitori.",
+     "tr": "I miss my parents."
+    },
+    {
+     "text": "Something is missing",
+     "it": "Manca il sale.",
+     "tr": "It needs salt."
+    }
+   ],
+   "exceptions": [
+    {
+     "title": "a me instead of mi",
+     "text": "For emphasis or contrast use {{a me, a te…}} instead of {{mi, ti}}.",
+     "examples": [
+      {
+       "it": "A me piace il mare, a lui la montagna.",
+       "tr": "I like the sea, he likes the mountains."
+      }
+     ]
+    },
+    {
+     "title": "Anche a me / Neanche a me",
+     "text": "To agree, don't say {{anch'io}} — say {{anche a me}} / {{neanche a me}}.",
+     "examples": [
+      {
+       "it": "Mi piace il caffè. — Anche a me!",
+       "tr": "I like coffee. — Me too!"
+      },
+      {
+       "it": "Non mi piace il freddo. — Neanche a me.",
+       "tr": "I don't like the cold. — Me neither."
+      }
+     ]
+    },
+    {
+     "title": "mancare with all persons",
+     "text": "The person who is missed is the subject.",
+     "examples": [
+      {
+       "it": "Mi manchi.",
+       "tr": "I miss you."
+      },
+      {
+       "it": "Ti manco?",
+       "tr": "Do you miss me?"
+      }
+     ]
+    },
+    {
+     "title": "la famiglia, la gente",
+     "text": "Grammatically singular.",
+     "examples": [
+      {
+       "it": "Mi manca la mia famiglia.",
+       "tr": "I miss my family."
+      },
+      {
+       "it": "Mi piace la gente qui.",
+       "tr": "I like the people here."
+      }
+     ]
+    },
+    {
+     "title": "mancare ≠ annoiarsi",
+     "text": "“To miss someone” — {{mancare}}; “to be bored” — {{annoiarsi}}.",
+     "examples": [
+      {
+       "it": "Mi manca Kiev. / Mi annoio.",
+       "tr": "I miss Kyiv. / I'm bored."
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "Io piaccio la pizza.",
+     "right": "Mi piace la pizza.",
+     "why": "The subject is pizza, not io."
+    },
+    {
+     "wrong": "Mi piace gli spaghetti.",
+     "right": "Mi piacciono gli spaghetti.",
+     "why": "Several things — piacciono."
+    },
+    {
+     "wrong": "Mi piacciono leggere e scrivere.",
+     "right": "Mi piace leggere e scrivere.",
+     "why": "With infinitives it's always piace."
+    },
+    {
+     "wrong": "Mi piace il caffè. — Anch'io!",
+     "right": "Mi piace il caffè. — Anche a me!",
+     "why": "Agreeing with piacere: anche a me."
+    },
+    {
+     "wrong": "Io manco mio figlio.",
+     "right": "Mi manca mio figlio.",
+     "why": "The person missed is the subject."
+    }
+   ],
+   "examples": [
+    {
+     "it": "Ti piace il tuo lavoro?",
+     "tr": "Do you like your job?"
+    },
+    {
+     "it": "Le piacciono i fiori.",
+     "tr": "She likes flowers."
+    },
+    {
+     "it": "Non ci piace alzarci presto.",
+     "tr": "We don't like getting up early."
+    },
+    {
+     "it": "Ti manca la tua città?",
+     "tr": "Do you miss your city?"
+    },
+    {
+     "it": "Mi è piaciuta molto la festa.",
+     "tr": "I really enjoyed the party."
+    },
+    {
+     "it": "Da bambino mi piacevano i cartoni animati.",
+     "tr": "As a child I liked cartoons."
+    }
+   ],
+   "summary": "**Mi piace** + one thing / infinitive, **mi piacciono** + several. mancare is the same: **mi manca / mi mancano**. Agreeing: **anche a me**.",
+   "keyWords": [
+    {
+     "title": "Gusti e sentimenti",
+     "ids": [
+      "w034",
+      "w033",
+      "w188"
+     ]
+    }
+   ]
   }
  }
 }
