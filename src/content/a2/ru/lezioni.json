@@ -4559,23 +4559,23 @@
        "tempo"
       ],
       [
-       "1 · quando e dove",
+       "quando, dove",
        "passato prossimo"
       ],
       [
-       "2 · descrizione",
+       "descrizione",
        "imperfetto"
       ],
       [
-       "3 · reazione",
-       "pass. prossimo + perché"
+       "reazione",
+       "pass. prossimo"
       ],
       [
-       "4 · eventi",
+       "eventi",
        "passato prossimo"
       ],
       [
-       "5 · oggi",
+       "oggi",
        "presente"
       ]
      ],
@@ -4702,16 +4702,21 @@
    "summary": "**Passato prossimo** — что случилось (один раз, закончилось). **Imperfetto** — как было (фон, привычка, описание). **Mentre + imperfetto**, событие — passato prossimo.",
    "keyWords": [
     {
-     "title": "Raccontare",
+     "title": "Segnali del passato prossimo",
      "ids": [
       "w246",
       "w145",
+      "w254",
+      "w030",
+      "w173"
+     ]
+    },
+    {
+     "title": "Segnali dell'imperfetto",
+     "ids": [
       "w157",
       "w151",
-      "w030",
-      "w254",
-      "w241",
-      "w173"
+      "w241"
      ]
     }
    ]
