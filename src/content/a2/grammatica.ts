@@ -151,7 +151,7 @@ async function risolviParole(locale: Locale, ids: string[]): Promise<ParolaChiav
 }
 
 // La lingua in cui il contenuto è davvero scritto: se manca la cartella della lingua, il russo.
-export async function linguaContenuto(locale: Locale): Promise<Locale> {
+async function linguaContenuto(locale: Locale): Promise<Locale> {
   if (locale === DEFAULT_LOCALE) return locale;
   try {
     await access(path.join(process.cwd(), "src/content/a2", locale, "grammar.json"));

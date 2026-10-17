@@ -38,7 +38,7 @@ export function ScopriAlfabeto({ numero, titolo, onContinua }: ScopriAlfabetoPro
             ? "bg-label text-bg"
             : lettera.straniera
               ? "border-[1.5px] border-dashed border-label-2/40 bg-transparent text-label"
-              : "bg-card text-label shadow-[0_1px_2px_rgba(0,0,0,0.05)] dark:shadow-none";
+              : "bg-card text-label shadow-(--shadow-sm)";
           return (
             <button
               key={lettera.lettera}
@@ -54,7 +54,7 @@ export function ScopriAlfabeto({ numero, titolo, onContinua }: ScopriAlfabetoPro
               {!attiva && ascoltate.has(lettera.lettera) && (
                 <span
                   aria-hidden="true"
-                  className="absolute top-1.5 right-1.5 size-[5px] rounded-full bg-success"
+                  className="absolute top-1.5 right-1.5 size-[5px] rounded-full bg-accent"
                 />
               )}
             </button>
@@ -75,7 +75,7 @@ export function ScopriAlfabeto({ numero, titolo, onContinua }: ScopriAlfabetoPro
 
       <div
         aria-live="polite"
-        className="flex items-center gap-4 rounded-3xl bg-card p-4 shadow-[0_1px_2px_rgba(0,0,0,0.04),0_8px_24px_rgba(0,0,0,0.06)] dark:shadow-none"
+        className="flex items-center gap-4 rounded-3xl bg-card p-4 shadow-(--shadow-md)"
       >
         <span className="flex size-[92px] shrink-0 items-center justify-center rounded-[22px] bg-label text-[56px] font-bold text-bg">
           {selezionata.lettera}
@@ -111,7 +111,7 @@ export function ScopriAlfabeto({ numero, titolo, onContinua }: ScopriAlfabetoPro
           className="h-1 flex-1 overflow-hidden rounded-full bg-separator"
         >
           <div
-            className="h-full rounded-full bg-success transition-[width] duration-300"
+            className="h-full rounded-full bg-accent transition-[width] duration-300"
             style={{ width: `${(ascoltate.size / ALFABETO.length) * 100}%` }}
           />
         </div>

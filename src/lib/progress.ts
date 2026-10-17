@@ -47,7 +47,7 @@ function parseProgress(value: unknown): Progress {
   return { completate: Array.isArray(completate) ? completate : [] };
 }
 
-export function getProgress(): Progress {
+function getProgress(): Progress {
   return parseProgress(leggi(PROGRESS_KEY));
 }
 
@@ -56,7 +56,7 @@ export function segnaCompletata(id: string) {
   if (!completate.includes(id)) scrivi(PROGRESS_KEY, { completate: [...completate, id] });
 }
 
-export function getErrori(): ErroreSalvato[] {
+function getErrori(): ErroreSalvato[] {
   const errori = leggi(ERRORI_KEY);
   return Array.isArray(errori) ? errori : [];
 }

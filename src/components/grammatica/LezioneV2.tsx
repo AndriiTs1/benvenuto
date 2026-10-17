@@ -2,6 +2,7 @@ import type { ReactNode } from "react";
 import { Sezione } from "@/components/grammatica/ContenutoArgomento";
 import { Tr } from "@/components/Tr";
 import { GrigliaVerbi } from "@/components/grammatica/GrigliaVerbi";
+import { IconCheck, IconX } from "@/components/lezione/ui";
 import type { EsempioV2, LezioneV2 as Lezione, SceltaAusiliare } from "@/content/a2/lezioni";
 import type { Locale } from "@/lib/lingue";
 
@@ -150,7 +151,7 @@ export function LezioneV2({
             <li key={i} className={i > 0 ? "border-t border-error/15 pt-3" : ""}>
               <p lang="it" className={`flex flex-wrap items-center gap-x-2 ${TESTO}`}>
                 <span className="text-error">
-                  <span aria-hidden="true">✕ </span>
+                  <IconX className="mr-1 inline size-[0.9em] -translate-y-px" />
                   <span className="sr-only">Sbagliato: </span>
                   <s>{errore.wrong}</s>
                 </span>
@@ -159,7 +160,7 @@ export function LezioneV2({
                 </span>
                 {/* Su fondo card: il verde di success resta ≥ 4.5:1 anche nel tema chiaro. */}
                 <span className="rounded-md bg-card px-1.5 font-medium text-success">
-                  <span aria-hidden="true">✓ </span>
+                  <IconCheck className="mr-1 inline size-[0.9em] -translate-y-px" />
                   <span className="sr-only">Corretto: </span>
                   {errore.right}
                 </span>

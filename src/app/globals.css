@@ -28,6 +28,12 @@
      Sul fondo del badge (label 8% su bianco): verde 5.16:1, rosso 5.93:1. */
   --flag-green: #097236; /* proposto #0B7A3B: 4.49:1 sul badge dell'anteprima */
   --flag-red: #B3121F;
+  /* Ombre e velo: unica fonte (il tema scuro le ridefinisce sotto). */
+  --shadow-sm: 0 1px 3px rgb(0 0 0 / 0.12); /* controllo segmentato, tessere */
+  --shadow-md: 0 1px 2px rgb(0 0 0 / 0.04), 0 8px 24px rgb(0 0 0 / 0.06); /* schede in rilievo */
+  --shadow-pop: 0 8px 24px rgb(0 0 0 / 0.14); /* menu a comparsa */
+  --shadow-sheet: 0 -8px 30px rgb(0 0 0 / 0.12); /* foglio dal basso */
+  --scrim: rgb(0 0 0 / 0.3); /* velo sotto il foglio */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -49,6 +55,10 @@
     --color-translation: #A5B4FC; /* 8.53:1 su card, 10.53:1 su nero */
     --flag-green: #34C77B; /* 6.81:1 sul badge (label 16% su nero) */
     --flag-red: #FF6B6B; /* 5.37:1 */
+    --shadow-sm: none;
+    --shadow-md: none;
+    --shadow-pop: 0 8px 24px rgb(0 0 0 / 0.5);
+    --scrim: rgb(0 0 0 / 0.5);
   }
 }
 

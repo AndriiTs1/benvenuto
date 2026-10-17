@@ -111,7 +111,7 @@ function Fine({ risultati, totale, onRipeti }: FineProps) {
   return (
     <>
       <div className="flex flex-col items-center pt-6 text-center">
-        <IconCheck className="size-20 text-success" />
+        <IconCheck className="size-20 text-accent" />
         <h1 className="mt-4 text-[34px] leading-tight font-bold tracking-tight">Lezione completata</h1>
         <p className="mt-1 text-[17px] text-label-2">
           {corrette} di {totale} corrette

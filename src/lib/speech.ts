@@ -2,7 +2,7 @@ import { useSyncExternalStore } from "react";
 
 // Озвучка через Web Speech API. Вызывать только в браузере (обработчики, эффекты).
 
-export const RATE_NORMALE = 0.9;
+const RATE_NORMALE = 0.9;
 export const RATE_LENTO = 0.6;
 
 const VOCI_PREFERITE = ["Alice", "Federica", "Luca", "Emma"];
@@ -35,7 +35,7 @@ function trovaVoce(): SpeechSynthesisVoice | null {
   );
 }
 
-export function isSpeechAvailable(): boolean {
+function isSpeechAvailable(): boolean {
   return trovaVoce() !== null;
 }
 

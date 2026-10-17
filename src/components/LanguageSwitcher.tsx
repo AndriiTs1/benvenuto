@@ -159,7 +159,7 @@ export function LanguageSwitcher({ locale }: { locale: Locale }) {
           role="listbox"
           aria-label="Lingua delle spiegazioni"
           onKeyDown={onKeyDownLista}
-          className="lingua-menu absolute inset-x-0 top-12 z-50 rounded-[14px] bg-card p-1 shadow-[0_8px_24px_rgba(0,0,0,0.14)] dark:shadow-[0_8px_24px_rgba(0,0,0,0.5)]"
+          className="lingua-menu absolute inset-x-0 top-12 z-50 rounded-[14px] bg-card p-1 shadow-(--shadow-pop)"
         >
           {LOCALES.map((opzione) => {
             const attiva = opzione.code === locale;

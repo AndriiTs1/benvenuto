@@ -26,6 +26,6 @@ export function courseHref(code: LevelCode) {
   return `${levelHref(code)}/grammatica`;
 }
 
-export function levelHref(code: LevelCode) {
+function levelHref(code: LevelCode) {
   return `/${code.toLowerCase()}`;
 }

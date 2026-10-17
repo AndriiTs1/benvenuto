@@ -211,7 +211,7 @@ export function EsercizioView({ esercizio, numero, lezioneId, onContinua }: Eser
           risultato ? "translate-y-0" : "translate-y-full"
         }`}
       >
-        <div className="mx-auto max-w-md rounded-t-3xl bg-card px-5 pt-6 pb-[max(1.5rem,env(safe-area-inset-bottom))] shadow-[0_-8px_30px_rgba(0,0,0,0.12)] md:max-w-lg">
+        <div className="mx-auto max-w-md rounded-t-3xl bg-card px-5 pt-6 pb-[max(1.5rem,env(safe-area-inset-bottom))] shadow-(--shadow-sheet) md:max-w-lg">
           {risultato && (
             <>
               {risultato.corretto ? (
@@ -277,7 +277,7 @@ function AiutoSheet({ audio, onChiudi, onSuggerimento, onAscoltaPiano }: AiutoSh
         type="button"
         aria-label="Chiudi"
         onClick={onChiudi}
-        className="absolute inset-0 bg-black/30"
+        className="absolute inset-0 bg-(--scrim)"
       />
       <div
         role="dialog"
