@@ -65,8 +65,8 @@ export function LezioneV2({
         {/* Tinta mescolata con card (non trasparente su bg-grouped): il testo della traduzione resta ≥ 4.5:1. */}
         <ul className="space-y-2 rounded-2xl bg-[color-mix(in_srgb,var(--color-grammar)_10%,var(--card))] p-4">
           {lezione.inBreve.map((punto, i) => (
-            <li key={i} className={`flex gap-2.5 ${TESTO}`}>
-              <span aria-hidden="true" className="mt-[0.6em] size-1.5 shrink-0 rounded-full bg-grammar" />
+            <li key={i} className={`flex gap-2.5 max-md:flex-col max-md:items-center max-md:gap-1.5 ${TESTO}`}>
+              <span aria-hidden="true" className="size-1.5 shrink-0 rounded-full bg-grammar md:mt-[0.6em]" />
               <Tr locale={lingua}>{punto}</Tr>
             </li>
           ))}
@@ -77,10 +77,11 @@ export function LezioneV2({
         <Scheda>
           <ol className="space-y-3">
             {lezione.formation.steps.map((passo, i) => (
-              <li key={i} className={`flex gap-3 ${TESTO}`}>
+              // Sotto md il numero sta sopra il testo (tutto al centro), da md a sinistra del testo.
+              <li key={i} className={`flex gap-3 max-md:flex-col max-md:items-center max-md:gap-1.5 ${TESTO}`}>
                 <span
                   aria-hidden="true"
-                  className="mt-px flex size-6 shrink-0 items-center justify-center rounded-full border-[1.5px] border-grammar text-[13px] font-semibold text-grammar tabular-nums"
+                  className="flex size-6 md:mt-px shrink-0 items-center justify-center rounded-full border-[1.5px] border-grammar text-[13px] font-semibold text-grammar tabular-nums"
                 >
                   {i + 1}
                 </span>

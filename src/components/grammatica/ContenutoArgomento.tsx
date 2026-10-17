@@ -215,7 +215,7 @@ function Righe({ testi, lingua }: { testi: string[]; lingua?: Locale }) {
 
 function ErroriFrequenti({ errori, lingua }: { errori: string[]; lingua: Locale }) {
   return (
-    <div className="flex gap-3 rounded-2xl bg-error/[0.08] p-4">
+    <div className="flex gap-3 rounded-2xl bg-error/[0.08] p-4 max-md:flex-col max-md:items-center">
       <svg
         role="img"
         aria-label="Attenzione"
@@ -249,7 +249,7 @@ function TabellaCard({ righe, intestazione }: { righe: Tabella; intestazione: bo
   // Testi brevi su una riga; quelli lunghi vanno a capo ma restano leggibili: se non c'è
   // spazio la tabella scorre invece di schiacciarsi.
   const cella = (testo: string) =>
-    `px-4 py-2.5 text-left align-top ${testo.length > 20 ? "min-w-32" : "whitespace-nowrap"}`;
+    `px-4 py-2.5 align-top max-md:text-center md:text-left ${testo.length > 20 ? "min-w-32" : "whitespace-nowrap"}`;
   // Prima colonna con intestazione vuota (io, tu, lui…): etichette delle righe.
   const etichette = testa?.[0] === "";
 
