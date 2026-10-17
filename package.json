@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "validate:content": "node scripts/validate-content.mjs",
-    "test:layout": "playwright test tests/centrato.spec.ts"
+    "test:layout": "playwright test tests/centrato.spec.ts",
+    "render:og": "node scripts/render-og.mjs"
   },
   "dependencies": {
     "next": "16.4.0",
