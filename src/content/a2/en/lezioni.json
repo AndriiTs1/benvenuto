@@ -306,6 +306,685 @@
     "w100",
     "w074"
    ]
+  },
+  "g5-riflessivi-presente": {
+   "id": "g5-riflessivi-presente",
+   "inBreve": [
+    "A reflexive verb is an action done **to yourself**: {{mi lavo}} = «I wash myself».",
+    "In the dictionary these verbs end in {{-si}}: {{alzarsi}}, {{vestirsi}}, {{divertirsi}}.",
+    "A pronoun always comes before the verb: {{mi, ti, si, ci, vi, si}}."
+   ],
+   "formation": {
+    "steps": [
+     "Remove {{-si}} from the infinitive: {{alzarsi → alzare}}.",
+     "Conjugate the verb as usual: {{alzo, alzi, alza…}}",
+     "Put the matching pronoun in front: {{mi alzo}}, {{ti alzi}}, {{si alza}}."
+    ]
+   },
+   "tables": [
+    {
+     "title": "Presente: pronoun + verb",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "alzarsi",
+       "mettersi",
+       "vestirsi"
+      ],
+      [
+       "io",
+       "mi alz|o",
+       "mi mett|o",
+       "mi vest|o"
+      ],
+      [
+       "tu",
+       "ti alz|i",
+       "ti mett|i",
+       "ti vest|i"
+      ],
+      [
+       "lui / lei",
+       "si alz|a",
+       "si mett|e",
+       "si vest|e"
+      ],
+      [
+       "noi",
+       "ci alz|iamo",
+       "ci mett|iamo",
+       "ci vest|iamo"
+      ],
+      [
+       "voi",
+       "vi alz|ate",
+       "vi mett|ete",
+       "vi vest|ite"
+      ],
+      [
+       "loro",
+       "si alz|ano",
+       "si mett|ono",
+       "si vest|ono"
+      ]
+     ],
+     "note": "The endings are the same as for normal -are, -ere, -ire verbs."
+    },
+    {
+     "title": "Passato prossimo: always essere",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "alzarsi"
+      ],
+      [
+       "io",
+       "mi sono alzato / alzata"
+      ],
+      [
+       "tu",
+       "ti sei alzato / alzata"
+      ],
+      [
+       "lui / lei",
+       "si è alzato / alzata"
+      ],
+      [
+       "noi",
+       "ci siamo alzati / alzate"
+      ],
+      [
+       "voi",
+       "vi siete alzati / alzate"
+      ],
+      [
+       "loro",
+       "si sono alzati / alzate"
+      ]
+     ],
+     "note": "The participle agrees with the subject: {{-o / -a / -i / -e}}."
+    },
+    {
+     "title": "With modal verbs — two options",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "presente",
+       "con dovere / potere / volere"
+      ],
+      [
+       "io",
+       "mi alzo",
+       "mi devo alzare = devo alzarmi"
+      ],
+      [
+       "tu",
+       "ti alzi",
+       "ti devi alzare = devi alzarti"
+      ],
+      [
+       "lui / lei",
+       "si alza",
+       "si deve alzare = deve alzarsi"
+      ],
+      [
+       "noi",
+       "ci alziamo",
+       "ci dobbiamo alzare = dobbiamo alzarci"
+      ],
+      [
+       "voi",
+       "vi alzate",
+       "vi dovete alzare = dovete alzarvi"
+      ],
+      [
+       "loro",
+       "si alzano",
+       "si devono alzare = devono alzarsi"
+      ]
+     ],
+     "note": "The pronoun goes before the modal verb or is attached to the end of the infinitive — both are correct."
+    }
+   ],
+   "uses": [
+    {
+     "text": "An action on yourself",
+     "it": "Mi lavo e mi vesto.",
+     "tr": "I wash and get dressed."
+    },
+    {
+     "text": "Daily routine",
+     "it": "La mattina mi sveglio alle sette.",
+     "tr": "In the morning I wake up at seven."
+    },
+    {
+     "text": "Feelings and states",
+     "it": "Mi arrabbio quando sono stanco.",
+     "tr": "I get angry when I'm tired."
+    },
+    {
+     "text": "«Each other» — in the plural",
+     "it": "Ci conosciamo da dieci anni.",
+     "tr": "We've known each other for ten years."
+    },
+    {
+     "text": "Saying your name",
+     "it": "Come ti chiami? — Mi chiamo Anna.",
+     "tr": "What's your name? — My name is Anna."
+    }
+   ],
+   "exceptions": [
+    {
+     "title": "Negation",
+     "text": "{{non}} goes **before** the pronoun.",
+     "examples": [
+      {
+       "it": "Non mi alzo presto la domenica.",
+       "tr": "I don't get up early on Sundays."
+      }
+     ]
+    },
+    {
+     "title": "With dovere, potere, volere",
+     "text": "Two correct options: the pronoun before the modal verb, or at the end of the infinitive ({{-si}} → {{-mi, -ti, -ci, -vi}}).",
+     "examples": [
+      {
+       "it": "Mi devo alzare presto. = Devo alzarmi presto.",
+       "tr": "I have to get up early."
+      },
+      {
+       "it": "Ti vuoi riposare? = Vuoi riposarti?",
+       "tr": "Do you want to rest?"
+      }
+     ]
+    },
+    {
+     "title": "Body parts and clothes",
+     "text": "Use the article, not «my».",
+     "examples": [
+      {
+       "it": "Mi lavo le mani.",
+       "tr": "I wash my hands."
+      },
+      {
+       "it": "Si mette la giacca.",
+       "tr": "He puts on his jacket."
+      }
+     ]
+    },
+    {
+     "title": "In the past tense",
+     "text": "Reflexive verbs in passato prossimo **always take essere**, and the participle agrees.",
+     "examples": [
+      {
+       "it": "Anna si è alzata tardi.",
+       "tr": "Anna got up late."
+      },
+      {
+       "it": "Ci siamo divertiti molto.",
+       "tr": "We had a lot of fun."
+      }
+     ]
+    },
+    {
+     "title": "One verb — two meanings",
+     "text": "Without {{-si}} the action is done to someone else; with {{-si}}, to yourself.",
+     "examples": [
+      {
+       "it": "Lavo la macchina. / Mi lavo.",
+       "tr": "I wash the car. / I wash myself."
+      },
+      {
+       "it": "Chiamo Marco. / Mi chiamo Marco.",
+       "tr": "I call Marco. / My name is Marco."
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "Io alzo alle 7.",
+     "right": "Mi alzo alle 7.",
+     "why": "Without the pronoun it means «I lift (something)»."
+    },
+    {
+     "wrong": "Si non alza.",
+     "right": "Non si alza.",
+     "why": "non comes before the pronoun."
+    },
+    {
+     "wrong": "Mi ho alzato.",
+     "right": "Mi sono alzato.",
+     "why": "Reflexives in the past take only essere."
+    },
+    {
+     "wrong": "Lavo le mie mani.",
+     "right": "Mi lavo le mani.",
+     "why": "Body parts take the article, not «my»."
+    },
+    {
+     "wrong": "Devo mi alzare.",
+     "right": "Mi devo alzare. / Devo alzarmi.",
+     "why": "The pronoun goes before devo or at the end of the infinitive."
+    }
+   ],
+   "examples": [
+    {
+     "it": "Mi sveglio alle 7, ma mi alzo alle 7:30.",
+     "tr": "I wake up at 7, but I get up at 7:30."
+    },
+    {
+     "it": "Ti trovi bene a Lugano?",
+     "tr": "Do you like it in Lugano?"
+    },
+    {
+     "it": "Mio figlio si veste da solo.",
+     "tr": "My son gets dressed by himself."
+    },
+    {
+     "it": "Ci divertiamo molto al mare.",
+     "tr": "We have a lot of fun at the seaside."
+    },
+    {
+     "it": "Vi preoccupate troppo!",
+     "tr": "You worry too much!"
+    },
+    {
+     "it": "I bambini si addormentano alle nove.",
+     "tr": "The children fall asleep at nine."
+    }
+   ],
+   "summary": "Pronoun + verb: **mi alzo, ti vesti, si diverte**. Negation: **non mi alzo**. Past: **mi sono alzato**.",
+   "keyWords": [
+    {
+     "title": "I più usati",
+     "ids": [
+      "w607",
+      "w609",
+      "w070",
+      "w351",
+      "w610"
+     ]
+    },
+    {
+     "title": "La giornata",
+     "ids": [
+      "w065",
+      "w062",
+      "w608",
+      "w022",
+      "w107",
+      "w108",
+      "w082",
+      "w115",
+      "w113",
+      "w026",
+      "w055"
+     ]
+    },
+    {
+     "title": "Le emozioni",
+     "ids": [
+      "w096",
+      "w014",
+      "w020",
+      "w037",
+      "w044",
+      "w027",
+      "w028",
+      "w046",
+      "w358"
+     ]
+    },
+    {
+     "title": "Le relazioni",
+     "ids": [
+      "w191",
+      "w189",
+      "w475",
+      "w474",
+      "w192",
+      "w357"
+     ]
+    },
+    {
+     "title": "Salute e aspetto",
+     "ids": [
+      "w578",
+      "w562",
+      "w099",
+      "w426"
+     ]
+    },
+    {
+     "title": "Altri verbi",
+     "ids": [
+      "w394",
+      "w482",
+      "w509",
+      "w483",
+      "w399"
+     ]
+    }
+   ]
+  },
+  "g5-passato-prossimo-base": {
+   "id": "g5-passato-prossimo-base",
+   "inBreve": [
+    "{{Passato prossimo}} is the past tense for **completed actions**: {{Ieri ho lavorato}} — “Yesterday I worked.”",
+    "It has two parts: {{avere}} or {{essere}} in the present + the **past participle** ({{participio}}).",
+    "With {{essere}} the participle agrees in gender and number: {{Anna è andata}}, {{i ragazzi sono andati}}."
+   ],
+   "formation": {
+    "steps": [
+     "Choose the auxiliary: {{essere}} for movement, change of state and reflexive verbs; {{avere}} for everything else.",
+     "Put it in the present: {{ho, hai, ha…}} or {{sono, sei, è…}}",
+     "Form the participle: {{-are → -ato}}, {{-ere → -uto}}, {{-ire → -ito}}. Many common verbs are irregular (table below).",
+     "With {{essere}}, match the ending to the subject: {{-o, -a, -i, -e}}."
+    ]
+   },
+   "tables": [
+    {
+     "title": "Avere and essere + participle",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "mangiare · avere",
+       "andare · essere"
+      ],
+      [
+       "io",
+       "ho mangi|ato",
+       "sono and|ato/a"
+      ],
+      [
+       "tu",
+       "hai mangi|ato",
+       "sei and|ato/a"
+      ],
+      [
+       "lui / lei",
+       "ha mangi|ato",
+       "è and|ato/a"
+      ],
+      [
+       "noi",
+       "abbiamo mangi|ato",
+       "siamo and|ati/e"
+      ],
+      [
+       "voi",
+       "avete mangi|ato",
+       "siete and|ati/e"
+      ],
+      [
+       "loro",
+       "hanno mangi|ato",
+       "sono and|ati/e"
+      ]
+     ]
+    },
+    {
+     "title": "How the participle is formed",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "-are",
+       "-ere",
+       "-ire"
+      ],
+      [
+       "infinito",
+       "parl|are",
+       "vend|ere",
+       "dorm|ire"
+      ],
+      [
+       "participio",
+       "parl|ato",
+       "vend|uto",
+       "dorm|ito"
+      ]
+     ],
+     "note": "About 50 common verbs have an irregular participle — see “Participi irregolari”."
+    },
+    {
+     "title": "Agreement with essere",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "singolare",
+       "plurale"
+      ],
+      [
+       "maschile",
+       "andat|o",
+       "andat|i"
+      ],
+      [
+       "femminile",
+       "andat|a",
+       "andat|e"
+      ]
+     ],
+     "note": "With {{avere}} the participle **does not change**: {{Anna ha mangiato}}."
+    }
+   ],
+   "uses": [
+    {
+     "text": "A completed action in the past",
+     "it": "Ieri ho lavorato fino alle sei.",
+     "tr": "Yesterday I worked until six."
+    },
+    {
+     "text": "With time words: ieri, la settimana scorsa, due anni fa",
+     "it": "Due anni fa sono venuto in Svizzera.",
+     "tr": "Two years ago I came to Switzerland."
+    },
+    {
+     "text": "A sequence of events",
+     "it": "Sono tornato a casa, ho cenato e sono uscito.",
+     "tr": "I came home, had dinner and went out."
+    },
+    {
+     "text": "Experience: have you ever…",
+     "it": "Sei mai stato a Roma?",
+     "tr": "Have you ever been to Rome?"
+    },
+    {
+     "text": "The recent past: stamattina, oggi",
+     "it": "Stamattina ho bevuto solo un caffè.",
+     "tr": "This morning I only had a coffee."
+    }
+   ],
+   "exceptions": [
+    {
+     "title": "Reflexive verbs",
+     "text": "Always with {{essere}}.",
+     "examples": [
+      {
+       "it": "Mi sono alzato alle sette.",
+       "tr": "I got up at seven."
+      }
+     ]
+    },
+    {
+     "title": "piacere and mancare",
+     "text": "Always with {{essere}}; the participle agrees with the thing liked.",
+     "examples": [
+      {
+       "it": "Mi è piaciuta la pizza.",
+       "tr": "I liked the pizza."
+      },
+      {
+       "it": "Mi sono piaciuti i film.",
+       "tr": "I liked the films."
+      }
+     ]
+    },
+    {
+     "title": "Mixed groups",
+     "text": "If there is at least one man in the group, the ending is {{-i}}.",
+     "examples": [
+      {
+       "it": "Marco e Anna sono arrivati.",
+       "tr": "Marco and Anna have arrived."
+      }
+     ]
+    },
+    {
+     "title": "cominciare and finire",
+     "text": "With an object — {{avere}}; when something starts by itself — {{essere}}.",
+     "examples": [
+      {
+       "it": "Ho cominciato il corso.",
+       "tr": "I started the course."
+      },
+      {
+       "it": "Il film è cominciato.",
+       "tr": "The film has started."
+      }
+     ]
+    },
+    {
+     "title": "salire and scendere",
+     "text": "Getting on / off transport — {{essere}}; up or down the stairs — {{avere}}.",
+     "examples": [
+      {
+       "it": "Sono sceso dall'autobus.",
+       "tr": "I got off the bus."
+      },
+      {
+       "it": "Ho salito le scale.",
+       "tr": "I went up the stairs."
+      }
+     ]
+    },
+    {
+     "title": "essere and stare",
+     "text": "They share one participle — {{stato}}.",
+     "examples": [
+      {
+       "it": "Sono stata a Milano.",
+       "tr": "I have been to Milan."
+      },
+      {
+       "it": "Sono stato male.",
+       "tr": "I was ill."
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "Ho andato al cinema.",
+     "right": "Sono andato al cinema.",
+     "why": "andare is a verb of movement, so it takes essere."
+    },
+    {
+     "wrong": "Anna è andato.",
+     "right": "Anna è andata.",
+     "why": "With essere the participle agrees: Anna is feminine."
+    },
+    {
+     "wrong": "Anna ha mangiata.",
+     "right": "Anna ha mangiato.",
+     "why": "With avere the participle doesn't change."
+    },
+    {
+     "wrong": "Ho leggiuto un libro.",
+     "right": "Ho letto un libro.",
+     "why": "leggere is irregular: letto."
+    },
+    {
+     "wrong": "Ho piaciuto il film.",
+     "right": "Mi è piaciuto il film.",
+     "why": "piacere takes essere and the pronoun mi."
+    }
+   ],
+   "examples": [
+    {
+     "it": "Ieri sera abbiamo mangiato in un ristorante cinese.",
+     "tr": "Last night we ate at a Chinese restaurant."
+    },
+    {
+     "it": "Mia sorella è nata a Kiev.",
+     "tr": "My sister was born in Kyiv."
+    },
+    {
+     "it": "Hai fatto i compiti?",
+     "tr": "Did you do your homework?"
+    },
+    {
+     "it": "Siamo rimasti a casa tutto il giorno.",
+     "tr": "We stayed at home all day."
+    },
+    {
+     "it": "Ho preso il treno delle otto.",
+     "tr": "I took the eight o'clock train."
+    },
+    {
+     "it": "Che cosa è successo?",
+     "tr": "What happened?"
+    }
+   ],
+   "summary": "**avere / essere + participle**. With essere it agrees: **è andato / è andata**. Irregular: **fatto, letto, preso, visto**.",
+   "keyWords": [
+    {
+     "title": "Con essere · movimento",
+     "ids": [
+      "w058",
+      "w182",
+      "w080",
+      "w275",
+      "w064",
+      "w273",
+      "w056",
+      "w199"
+     ]
+    },
+    {
+     "title": "Con essere · stato e cambiamento",
+     "ids": [
+      "w039",
+      "w067",
+      "w063",
+      "w274",
+      "w005",
+      "w272",
+      "w185",
+      "w193",
+      "w201",
+      "w504"
+     ]
+    },
+    {
+     "title": "Con avere",
+     "ids": [
+      "w069",
+      "w285",
+      "w084",
+      "w129",
+      "w180",
+      "w015",
+      "w222",
+      "w094",
+      "w054",
+      "w281",
+      "w279",
+      "w280",
+      "w278",
+      "w284",
+      "w286"
+     ]
+    }
+   ]
   }
  }
 }

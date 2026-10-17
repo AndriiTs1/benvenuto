@@ -1,11 +1,11 @@
 import { notFound } from "next/navigation";
 import { HoCapito, SegnaVisto } from "@/components/grammatica/AzioniArgomento";
-import { ContenutoArgomento, Sezione } from "@/components/grammatica/ContenutoArgomento";
+import { ContenutoArgomento, GrigliaParticipi, Sezione } from "@/components/grammatica/ContenutoArgomento";
 import { LezioneV2 } from "@/components/grammatica/LezioneV2";
 import { LinkAvanti } from "@/components/grammatica/LinkAvanti";
 import { ParoleChiave } from "@/components/grammatica/ParoleChiave";
 import { Tr } from "@/components/Tr";
-import { getArgomento, getParoleChiave, getPercorso } from "@/content/a2/grammatica";
+import { getArgomento, getParoleChiave, getPercorso, type TraduzioniParticipi } from "@/content/a2/grammatica";
 import { getLezioneV2 } from "@/content/a2/lezioni";
 import { DEFAULT_LOCALE } from "@/lib/lingue";
 import { linguaScelta } from "@/lib/lingua-scelta";
@@ -52,7 +52,22 @@ export default async function ArgomentoPage({ params }: PageProps<"/a2/grammatic
               Spiegazione disponibile in russo
             </p>
           )}
-          <LezioneV2 lezione={v2.lezione} lingua={v2.lingua} />
+          <LezioneV2
+            lezione={v2.lezione}
+            lingua={v2.lingua}
+            dopoTabelle={
+              // Regola generale: se grammar.json ha irregular_participles, la griglia resta anche nel v2.
+              Array.isArray(contenuto.irregular_participles) && (
+                <Sezione titolo="Participi irregolari">
+                  <GrigliaParticipi
+                    righe={contenuto.irregular_participles as string[][]}
+                    traduzioni={(contenuto.irregular_participles_tr ?? {}) as TraduzioniParticipi}
+                    locale={locale}
+                  />
+                </Sezione>
+              )
+            }
+          />
         </>
       ) : (
         <ContenutoArgomento contenuto={contenuto} lingua={lingua} locale={locale} />

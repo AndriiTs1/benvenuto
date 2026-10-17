@@ -10,15 +10,24 @@ import type { Locale } from "@/lib/lingue";
 const TESTO = "text-[16px] leading-normal md:text-[17px]";
 
 // Cella: "parl|o" → radice + desinenza in grassetto colorato; "-iamo" → tutta colorata.
+// Senza a capo solo la parola con la desinenza ("mi vest|iamo": "mi" può andare a capo da sola).
 function CellaTabella({ testo }: { testo: string }) {
   if (testo.startsWith("-")) return <span className="font-semibold whitespace-nowrap text-grammar">{testo}</span>;
   const barra = testo.indexOf("|");
   if (barra < 0) return <>{testo}</>;
+  const prima = testo.slice(0, barra);
+  const dopo = testo.slice(barra + 1);
+  const inizioRadice = prima.lastIndexOf(" ") + 1;
+  const fineDesinenza = dopo.indexOf(" ") < 0 ? dopo.length : dopo.indexOf(" ");
   return (
-    <span className="whitespace-nowrap">
-      {testo.slice(0, barra)}
-      <b className="font-semibold text-grammar">{testo.slice(barra + 1)}</b>
-    </span>
+    <>
+      {prima.slice(0, inizioRadice)}
+      <span className="whitespace-nowrap">
+        {prima.slice(inizioRadice)}
+        <b className="font-semibold text-grammar">{dopo.slice(0, fineDesinenza)}</b>
+      </span>
+      {dopo.slice(fineDesinenza)}
+    </>
   );
 }
 
@@ -39,7 +48,16 @@ function Esempio({ esempio, lingua }: { esempio: EsempioV2; lingua: Locale }) {
   );
 }
 
-export function LezioneV2({ lezione, lingua }: { lezione: Lezione; lingua: Locale }) {
+export function LezioneV2({
+  lezione,
+  lingua,
+  dopoTabelle,
+}: {
+  lezione: Lezione;
+  lingua: Locale;
+  /** Blocco extra tra le tabelle e "Quando si usa" (es. la griglia dei participi irregolari). */
+  dopoTabelle?: ReactNode;
+}) {
   return (
     <div className="space-y-6">
       <Sezione titolo="In breve">
@@ -79,6 +97,8 @@ export function LezioneV2({ lezione, lingua }: { lezione: Lezione; lingua: Local
           ))}
         </div>
       </Sezione>
+
+      {dopoTabelle}
 
       <Sezione titolo="Quando si usa">
         <ul className="overflow-hidden rounded-2xl bg-card">
@@ -185,7 +205,7 @@ function TabellaV2({ tabella, lingua }: { tabella: Lezione["tables"][number]; li
             <thead>
               <tr className="border-b border-separator">
                 {testa.map((testo, i) => (
-                  <th key={i} scope="col" className={`${cella} font-semibold whitespace-nowrap ${i === 0 ? "pr-2" : ""}`}>
+                  <th key={i} scope="col" className={`${cella} font-semibold ${i === 0 ? "pr-2" : ""}`}>
                     <CellaTabella testo={testo} />
                   </th>
                 ))}

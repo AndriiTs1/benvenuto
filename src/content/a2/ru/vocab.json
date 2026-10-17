@@ -3918,7 +3918,8 @@
    "irregular": "siedo, siedi, siede, sediamo, sedete, siedono",
    "group": 1,
    "example": "Andrea sedeva lì.",
-   "lesson": "L12"
+   "lesson": "L12",
+   "reflexive": true
   },
   {
    "id": "w352",
@@ -6742,6 +6743,58 @@
    "group": 12,
    "example": "Nessuno dovrà studiare le lingue.",
    "lesson": "L28"
+  },
+  {
+   "id": "w607",
+   "it": "chiamarsi",
+   "ru": "называться (как зовут)",
+   "pos": "verb",
+   "reflexive": true,
+   "aux": "essere",
+   "participle": "chiamato",
+   "group": 2,
+   "example": "Come ti chiami? — Mi chiamo Andrii.",
+   "added": true,
+   "lesson": "L01"
+  },
+  {
+   "id": "w608",
+   "it": "lavarsi",
+   "ru": "мыться",
+   "pos": "verb",
+   "reflexive": true,
+   "aux": "essere",
+   "participle": "lavato",
+   "group": 1,
+   "example": "Mi lavo e mi vesto.",
+   "added": true,
+   "lesson": "L01"
+  },
+  {
+   "id": "w609",
+   "it": "sentirsi",
+   "ru": "чувствовать себя",
+   "pos": "verb",
+   "reflexive": true,
+   "aux": "essere",
+   "participle": "sentito",
+   "group": 10,
+   "example": "Oggi non mi sento bene.",
+   "added": true,
+   "lesson": "L01"
+  },
+  {
+   "id": "w610",
+   "it": "prepararsi (per)",
+   "ru": "готовиться (к)",
+   "pos": "verb",
+   "reflexive": true,
+   "aux": "essere",
+   "participle": "preparato",
+   "group": 11,
+   "example": "Mi preparo per l'esame.",
+   "added": true,
+   "lesson": "L01"
   }
  ]
 }

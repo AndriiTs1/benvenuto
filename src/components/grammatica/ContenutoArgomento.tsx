@@ -293,7 +293,7 @@ function TabellaCard({ righe, intestazione }: { righe: Tabella; intestazione: bo
 // e sotto la traduzione, se c'è. Separatori come nelle tabelle, anche verticale da md.
 // Contenuto delle celle al centro (eccezione voluta: schede da memorizzare, vedi CLAUDE.md);
 // le due colonne sono uguali (grid-cols-2 = minmax(0, 1fr) × 2).
-function GrigliaParticipi({
+export function GrigliaParticipi({
   righe,
   traduzioni,
   locale,

@@ -306,6 +306,685 @@
     "w100",
     "w074"
    ]
+  },
+  "g5-riflessivi-presente": {
+   "id": "g5-riflessivi-presente",
+   "inBreve": [
+    "Возвратный глагол — действие, направленное **на себя**: {{mi lavo}} = «я мою себя», то есть «я моюсь».",
+    "В словаре такие глаголы оканчиваются на {{-si}}: {{alzarsi}}, {{vestirsi}}, {{divertirsi}}.",
+    "Перед глаголом всегда стоит местоимение: {{mi, ti, si, ci, vi, si}}."
+   ],
+   "formation": {
+    "steps": [
+     "Убери {{-si}} из инфинитива: {{alzarsi → alzare}}.",
+     "Проспрягай глагол как обычно: {{alzo, alzi, alza…}}",
+     "Поставь перед ним местоимение нужного лица: {{mi alzo}}, {{ti alzi}}, {{si alza}}."
+    ]
+   },
+   "tables": [
+    {
+     "title": "Presente: местоимение + глагол",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "alzarsi",
+       "mettersi",
+       "vestirsi"
+      ],
+      [
+       "io",
+       "mi alz|o",
+       "mi mett|o",
+       "mi vest|o"
+      ],
+      [
+       "tu",
+       "ti alz|i",
+       "ti mett|i",
+       "ti vest|i"
+      ],
+      [
+       "lui / lei",
+       "si alz|a",
+       "si mett|e",
+       "si vest|e"
+      ],
+      [
+       "noi",
+       "ci alz|iamo",
+       "ci mett|iamo",
+       "ci vest|iamo"
+      ],
+      [
+       "voi",
+       "vi alz|ate",
+       "vi mett|ete",
+       "vi vest|ite"
+      ],
+      [
+       "loro",
+       "si alz|ano",
+       "si mett|ono",
+       "si vest|ono"
+      ]
+     ],
+     "note": "Окончания те же, что у обычных глаголов на -are, -ere, -ire."
+    },
+    {
+     "title": "Passato prossimo: всегда essere",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "alzarsi"
+      ],
+      [
+       "io",
+       "mi sono alzato / alzata"
+      ],
+      [
+       "tu",
+       "ti sei alzato / alzata"
+      ],
+      [
+       "lui / lei",
+       "si è alzato / alzata"
+      ],
+      [
+       "noi",
+       "ci siamo alzati / alzate"
+      ],
+      [
+       "voi",
+       "vi siete alzati / alzate"
+      ],
+      [
+       "loro",
+       "si sono alzati / alzate"
+      ]
+     ],
+     "note": "Причастие согласуется с подлежащим: {{-o / -a / -i / -e}}."
+    },
+    {
+     "title": "С модальными глаголами — два варианта",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "presente",
+       "con dovere / potere / volere"
+      ],
+      [
+       "io",
+       "mi alzo",
+       "mi devo alzare = devo alzarmi"
+      ],
+      [
+       "tu",
+       "ti alzi",
+       "ti devi alzare = devi alzarti"
+      ],
+      [
+       "lui / lei",
+       "si alza",
+       "si deve alzare = deve alzarsi"
+      ],
+      [
+       "noi",
+       "ci alziamo",
+       "ci dobbiamo alzare = dobbiamo alzarci"
+      ],
+      [
+       "voi",
+       "vi alzate",
+       "vi dovete alzare = dovete alzarvi"
+      ],
+      [
+       "loro",
+       "si alzano",
+       "si devono alzare = devono alzarsi"
+      ]
+     ],
+     "note": "Местоимение ставится перед модальным глаголом или присоединяется к концу инфинитива — оба варианта правильные."
+    }
+   ],
+   "uses": [
+    {
+     "text": "Действие на себя",
+     "it": "Mi lavo e mi vesto.",
+     "tr": "Я моюсь и одеваюсь."
+    },
+    {
+     "text": "Распорядок дня",
+     "it": "La mattina mi sveglio alle sette.",
+     "tr": "Утром я просыпаюсь в семь."
+    },
+    {
+     "text": "Чувства и состояния",
+     "it": "Mi arrabbio quando sono stanco.",
+     "tr": "Я злюсь, когда устаю."
+    },
+    {
+     "text": "«Друг друга» — во множественном числе",
+     "it": "Ci conosciamo da dieci anni.",
+     "tr": "Мы знакомы десять лет."
+    },
+    {
+     "text": "Как зовут",
+     "it": "Come ti chiami? — Mi chiamo Anna.",
+     "tr": "Как тебя зовут? — Меня зовут Анна."
+    }
+   ],
+   "exceptions": [
+    {
+     "title": "Отрицание",
+     "text": "{{non}} ставится **перед** местоимением.",
+     "examples": [
+      {
+       "it": "Non mi alzo presto la domenica.",
+       "tr": "По воскресеньям я не встаю рано."
+      }
+     ]
+    },
+    {
+     "title": "С dovere, potere, volere",
+     "text": "Два правильных варианта: местоимение перед модальным глаголом или в конце инфинитива ({{-si}} → {{-mi, -ti, -ci, -vi}}).",
+     "examples": [
+      {
+       "it": "Mi devo alzare presto. = Devo alzarmi presto.",
+       "tr": "Мне нужно рано встать."
+      },
+      {
+       "it": "Ti vuoi riposare? = Vuoi riposarti?",
+       "tr": "Хочешь отдохнуть?"
+      }
+     ]
+    },
+    {
+     "title": "Части тела и одежда",
+     "text": "Используется артикль, а не «мой / свой».",
+     "examples": [
+      {
+       "it": "Mi lavo le mani.",
+       "tr": "Я мою руки."
+      },
+      {
+       "it": "Si mette la giacca.",
+       "tr": "Он надевает пиджак."
+      }
+     ]
+    },
+    {
+     "title": "В прошедшем времени",
+     "text": "Возвратные глаголы в passato prossimo — **всегда с essere**, причастие согласуется.",
+     "examples": [
+      {
+       "it": "Anna si è alzata tardi.",
+       "tr": "Анна встала поздно."
+      },
+      {
+       "it": "Ci siamo divertiti molto.",
+       "tr": "Мы очень повеселились."
+      }
+     ]
+    },
+    {
+     "title": "Один глагол — два значения",
+     "text": "Без {{-si}} действие направлено на кого-то другого, с {{-si}} — на себя.",
+     "examples": [
+      {
+       "it": "Lavo la macchina. / Mi lavo.",
+       "tr": "Я мою машину. / Я моюсь."
+      },
+      {
+       "it": "Chiamo Marco. / Mi chiamo Marco.",
+       "tr": "Я звоню Марко. / Меня зовут Марко."
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "Io alzo alle 7.",
+     "right": "Mi alzo alle 7.",
+     "why": "Без местоимения получится «я поднимаю (что-то)»."
+    },
+    {
+     "wrong": "Si non alza.",
+     "right": "Non si alza.",
+     "why": "non стоит перед местоимением."
+    },
+    {
+     "wrong": "Mi ho alzato.",
+     "right": "Mi sono alzato.",
+     "why": "Возвратные в прошлом — только с essere."
+    },
+    {
+     "wrong": "Lavo le mie mani.",
+     "right": "Mi lavo le mani.",
+     "why": "С частями тела — артикль, без «мой»."
+    },
+    {
+     "wrong": "Devo mi alzare.",
+     "right": "Mi devo alzare. / Devo alzarmi.",
+     "why": "Местоимение — перед devo или в конце инфинитива."
+    }
+   ],
+   "examples": [
+    {
+     "it": "Mi sveglio alle 7, ma mi alzo alle 7:30.",
+     "tr": "Я просыпаюсь в 7, но встаю в 7:30."
+    },
+    {
+     "it": "Ti trovi bene a Lugano?",
+     "tr": "Тебе хорошо в Лугано?"
+    },
+    {
+     "it": "Mio figlio si veste da solo.",
+     "tr": "Мой сын одевается сам."
+    },
+    {
+     "it": "Ci divertiamo molto al mare.",
+     "tr": "Мы очень веселимся на море."
+    },
+    {
+     "it": "Vi preoccupate troppo!",
+     "tr": "Вы слишком волнуетесь!"
+    },
+    {
+     "it": "I bambini si addormentano alle nove.",
+     "tr": "Дети засыпают в девять."
+    }
+   ],
+   "summary": "Местоимение + глагол: **mi alzo, ti vesti, si diverte**. Отрицание: **non mi alzo**. В прошлом: **mi sono alzato**.",
+   "keyWords": [
+    {
+     "title": "I più usati",
+     "ids": [
+      "w607",
+      "w609",
+      "w070",
+      "w351",
+      "w610"
+     ]
+    },
+    {
+     "title": "La giornata",
+     "ids": [
+      "w065",
+      "w062",
+      "w608",
+      "w022",
+      "w107",
+      "w108",
+      "w082",
+      "w115",
+      "w113",
+      "w026",
+      "w055"
+     ]
+    },
+    {
+     "title": "Le emozioni",
+     "ids": [
+      "w096",
+      "w014",
+      "w020",
+      "w037",
+      "w044",
+      "w027",
+      "w028",
+      "w046",
+      "w358"
+     ]
+    },
+    {
+     "title": "Le relazioni",
+     "ids": [
+      "w191",
+      "w189",
+      "w475",
+      "w474",
+      "w192",
+      "w357"
+     ]
+    },
+    {
+     "title": "Salute e aspetto",
+     "ids": [
+      "w578",
+      "w562",
+      "w099",
+      "w426"
+     ]
+    },
+    {
+     "title": "Altri verbi",
+     "ids": [
+      "w394",
+      "w482",
+      "w509",
+      "w483",
+      "w399"
+     ]
+    }
+   ]
+  },
+  "g5-passato-prossimo-base": {
+   "id": "g5-passato-prossimo-base",
+   "inBreve": [
+    "{{Passato prossimo}} — прошедшее время для **законченных действий**: {{Ieri ho lavorato}} — «Вчера я работал».",
+    "Состоит из двух слов: {{avere}} или {{essere}} в настоящем времени + **причастие** ({{participio}}).",
+    "С {{essere}} причастие меняет окончание по роду и числу: {{Anna è andata}}, {{i ragazzi sono andati}}."
+   ],
+   "formation": {
+    "steps": [
+     "Выбери вспомогательный глагол: {{essere}} — движение, изменение состояния и возвратные; {{avere}} — все остальные.",
+     "Поставь его в presente: {{ho, hai, ha…}} или {{sono, sei, è…}}",
+     "Образуй причастие: {{-are → -ato}}, {{-ere → -uto}}, {{-ire → -ito}}. Многие частые глаголы — неправильные (таблица ниже).",
+     "С {{essere}} согласуй окончание с подлежащим: {{-o, -a, -i, -e}}."
+    ]
+   },
+   "tables": [
+    {
+     "title": "Avere и essere + причастие",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "mangiare · avere",
+       "andare · essere"
+      ],
+      [
+       "io",
+       "ho mangi|ato",
+       "sono and|ato/a"
+      ],
+      [
+       "tu",
+       "hai mangi|ato",
+       "sei and|ato/a"
+      ],
+      [
+       "lui / lei",
+       "ha mangi|ato",
+       "è and|ato/a"
+      ],
+      [
+       "noi",
+       "abbiamo mangi|ato",
+       "siamo and|ati/e"
+      ],
+      [
+       "voi",
+       "avete mangi|ato",
+       "siete and|ati/e"
+      ],
+      [
+       "loro",
+       "hanno mangi|ato",
+       "sono and|ati/e"
+      ]
+     ]
+    },
+    {
+     "title": "Как образуется причастие",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "-are",
+       "-ere",
+       "-ire"
+      ],
+      [
+       "infinito",
+       "parl|are",
+       "vend|ere",
+       "dorm|ire"
+      ],
+      [
+       "participio",
+       "parl|ato",
+       "vend|uto",
+       "dorm|ito"
+      ]
+     ],
+     "note": "Около 50 частых глаголов образуют причастие неправильно — смотри «Participi irregolari»."
+    },
+    {
+     "title": "Согласование с essere",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "singolare",
+       "plurale"
+      ],
+      [
+       "maschile",
+       "andat|o",
+       "andat|i"
+      ],
+      [
+       "femminile",
+       "andat|a",
+       "andat|e"
+      ]
+     ],
+     "note": "С {{avere}} причастие **не меняется**: {{Anna ha mangiato}}."
+    }
+   ],
+   "uses": [
+    {
+     "text": "Законченное действие в прошлом",
+     "it": "Ieri ho lavorato fino alle sei.",
+     "tr": "Вчера я работал до шести."
+    },
+    {
+     "text": "Со словами времени: ieri, la settimana scorsa, due anni fa",
+     "it": "Due anni fa sono venuto in Svizzera.",
+     "tr": "Два года назад я приехал в Швейцарию."
+    },
+    {
+     "text": "Цепочка событий",
+     "it": "Sono tornato a casa, ho cenato e sono uscito.",
+     "tr": "Я вернулся домой, поужинал и вышел."
+    },
+    {
+     "text": "Опыт: было ли когда-нибудь",
+     "it": "Sei mai stato a Roma?",
+     "tr": "Ты когда-нибудь был в Риме?"
+    },
+    {
+     "text": "Недавнее прошлое: stamattina, oggi",
+     "it": "Stamattina ho bevuto solo un caffè.",
+     "tr": "Сегодня утром я выпил только кофе."
+    }
+   ],
+   "exceptions": [
+    {
+     "title": "Возвратные глаголы",
+     "text": "Всегда с {{essere}}.",
+     "examples": [
+      {
+       "it": "Mi sono alzato alle sette.",
+       "tr": "Я встал в семь."
+      }
+     ]
+    },
+    {
+     "title": "piacere и mancare",
+     "text": "Всегда с {{essere}}; причастие согласуется с тем, что нравится.",
+     "examples": [
+      {
+       "it": "Mi è piaciuta la pizza.",
+       "tr": "Мне понравилась пицца."
+      },
+      {
+       "it": "Mi sono piaciuti i film.",
+       "tr": "Мне понравились фильмы."
+      }
+     ]
+    },
+    {
+     "title": "Смешанная группа",
+     "text": "Если в группе есть хотя бы один мужчина — окончание {{-i}}.",
+     "examples": [
+      {
+       "it": "Marco e Anna sono arrivati.",
+       "tr": "Марко и Анна приехали."
+      }
+     ]
+    },
+    {
+     "title": "cominciare и finire",
+     "text": "Если есть объект — {{avere}}; если что-то начинается само — {{essere}}.",
+     "examples": [
+      {
+       "it": "Ho cominciato il corso.",
+       "tr": "Я начал курс."
+      },
+      {
+       "it": "Il film è cominciato.",
+       "tr": "Фильм начался."
+      }
+     ]
+    },
+    {
+     "title": "salire и scendere",
+     "text": "В транспорт / из транспорта — {{essere}}; по лестнице — {{avere}}.",
+     "examples": [
+      {
+       "it": "Sono sceso dall'autobus.",
+       "tr": "Я вышел из автобуса."
+      },
+      {
+       "it": "Ho salito le scale.",
+       "tr": "Я поднялся по лестнице."
+      }
+     ]
+    },
+    {
+     "title": "essere и stare",
+     "text": "Одно причастие на двоих — {{stato}}.",
+     "examples": [
+      {
+       "it": "Sono stata a Milano.",
+       "tr": "Я была в Милане."
+      },
+      {
+       "it": "Sono stato male.",
+       "tr": "Мне было плохо."
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "Ho andato al cinema.",
+     "right": "Sono andato al cinema.",
+     "why": "andare — глагол движения, нужен essere."
+    },
+    {
+     "wrong": "Anna è andato.",
+     "right": "Anna è andata.",
+     "why": "С essere причастие согласуется: Anna — женский род."
+    },
+    {
+     "wrong": "Anna ha mangiata.",
+     "right": "Anna ha mangiato.",
+     "why": "С avere причастие не меняется."
+    },
+    {
+     "wrong": "Ho leggiuto un libro.",
+     "right": "Ho letto un libro.",
+     "why": "leggere — неправильный: letto."
+    },
+    {
+     "wrong": "Ho piaciuto il film.",
+     "right": "Mi è piaciuto il film.",
+     "why": "piacere — с essere и местоимением mi."
+    }
+   ],
+   "examples": [
+    {
+     "it": "Ieri sera abbiamo mangiato in un ristorante cinese.",
+     "tr": "Вчера вечером мы ели в китайском ресторане."
+    },
+    {
+     "it": "Mia sorella è nata a Kiev.",
+     "tr": "Моя сестра родилась в Киеве."
+    },
+    {
+     "it": "Hai fatto i compiti?",
+     "tr": "Ты сделал домашнее задание?"
+    },
+    {
+     "it": "Siamo rimasti a casa tutto il giorno.",
+     "tr": "Мы весь день остались дома."
+    },
+    {
+     "it": "Ho preso il treno delle otto.",
+     "tr": "Я сел на поезд в восемь."
+    },
+    {
+     "it": "Che cosa è successo?",
+     "tr": "Что случилось?"
+    }
+   ],
+   "summary": "**avere / essere + причастие**. С essere — согласование: **è andato / è andata**. Неправильные: **fatto, letto, preso, visto**.",
+   "keyWords": [
+    {
+     "title": "Con essere · movimento",
+     "ids": [
+      "w058",
+      "w182",
+      "w080",
+      "w275",
+      "w064",
+      "w273",
+      "w056",
+      "w199"
+     ]
+    },
+    {
+     "title": "Con essere · stato e cambiamento",
+     "ids": [
+      "w039",
+      "w067",
+      "w063",
+      "w274",
+      "w005",
+      "w272",
+      "w185",
+      "w193",
+      "w201",
+      "w504"
+     ]
+    },
+    {
+     "title": "Con avere",
+     "ids": [
+      "w069",
+      "w285",
+      "w084",
+      "w129",
+      "w180",
+      "w015",
+      "w222",
+      "w094",
+      "w054",
+      "w281",
+      "w279",
+      "w280",
+      "w278",
+      "w284",
+      "w286"
+     ]
+    }
+   ]
   }
  }
 }
