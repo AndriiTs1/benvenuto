@@ -4222,6 +4222,685 @@
      ]
     }
    ]
+  },
+  "g5-imperfetto": {
+   "id": "g5-imperfetto",
+   "inBreve": [
+    "The {{imperfetto}} is the past tense for **describing**: what things were like, what you used to do, what was going on.",
+    "Easy to form: infinitive stem + {{-vo}}, {{-vi}}, {{-va}}, {{-vamo}}, {{-vate}}, {{-vano}}.",
+    "Almost all verbs are regular. The special ones: {{essere}} ({{ero}}), {{fare}} ({{facevo}}), {{bere}}, {{dire}}."
+   ],
+   "formation": {
+    "steps": [
+     "Drop {{-re}}: {{ascoltare → ascolta-}}, {{volere → vole-}}, {{sentire → senti-}}.",
+     "Add the ending: {{-vo}}, {{-vi}}, {{-va}}, {{-vamo}}, {{-vate}}, {{-vano}}.",
+     "Reflexives keep the pronoun: {{mi alzavo}}, {{si vestiva}}."
+    ]
+   },
+   "tables": [
+    {
+     "title": "Regular verbs",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "ascoltare",
+       "volere",
+       "sentire"
+      ],
+      [
+       "io",
+       "ascolta|vo",
+       "vole|vo",
+       "senti|vo"
+      ],
+      [
+       "tu",
+       "ascolta|vi",
+       "vole|vi",
+       "senti|vi"
+      ],
+      [
+       "lui / lei",
+       "ascolta|va",
+       "vole|va",
+       "senti|va"
+      ],
+      [
+       "noi",
+       "ascolta|vamo",
+       "vole|vamo",
+       "senti|vamo"
+      ],
+      [
+       "voi",
+       "ascolta|vate",
+       "vole|vate",
+       "senti|vate"
+      ],
+      [
+       "loro",
+       "ascolta|vano",
+       "vole|vano",
+       "senti|vano"
+      ]
+     ],
+     "note": "Same endings for {{-are}}, {{-ere}}, {{-ire}}."
+    },
+    {
+     "title": "Special verbs",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "essere",
+       "fare",
+       "bere"
+      ],
+      [
+       "io",
+       "ero",
+       "facevo",
+       "bevevo"
+      ],
+      [
+       "tu",
+       "eri",
+       "facevi",
+       "bevevi"
+      ],
+      [
+       "lui / lei",
+       "era",
+       "faceva",
+       "beveva"
+      ],
+      [
+       "noi",
+       "eravamo",
+       "facevamo",
+       "bevevamo"
+      ],
+      [
+       "voi",
+       "eravate",
+       "facevate",
+       "bevevate"
+      ],
+      [
+       "loro",
+       "erano",
+       "facevano",
+       "bevevano"
+      ]
+     ],
+     "note": "{{dire}} also uses an old stem: {{dicevo, dicevi, diceva…}}"
+    }
+   ],
+   "uses": [
+    {
+     "text": "Description, setting",
+     "it": "Era il mio primo giorno in una scuola nuova.",
+     "tr": "It was my first day at a new school."
+    },
+    {
+     "text": "Age, time, weather",
+     "it": "Avevamo 15 anni. Erano le otto. Faceva freddo.",
+     "tr": "We were 15. It was eight o'clock. It was cold."
+    },
+    {
+     "text": "Past habits",
+     "it": "Ascoltavamo molta musica insieme.",
+     "tr": "We used to listen to a lot of music together."
+    },
+    {
+     "text": "Feelings and wishes",
+     "it": "Mi piaceva stare in fondo all'aula.",
+     "tr": "I liked sitting at the back of the classroom."
+    },
+    {
+     "text": "Background to an event",
+     "it": "Mentre dormivo, è suonato il telefono.",
+     "tr": "While I was sleeping, the phone rang."
+    }
+   ],
+   "exceptions": [
+    {
+     "title": "essere",
+     "text": "Completely irregular: {{ero}}, {{eri}}, {{era}}, {{eravamo}}, {{eravate}}, {{erano}}.",
+     "examples": [
+      {
+       "it": "Da bambino ero molto timido.",
+       "tr": "As a child I was very shy."
+      }
+     ]
+    },
+    {
+     "title": "c'era / c'erano",
+     "text": "“There was / there were”: singular {{c'era}}, plural {{c'erano}}.",
+     "examples": [
+      {
+       "it": "C'era il sole e c'erano molte persone.",
+       "tr": "It was sunny and there were lots of people."
+      }
+     ]
+    },
+    {
+     "title": "era or aveva",
+     "text": "{{era}} + adjective — what he was like; {{aveva}} + noun — what he had.",
+     "examples": [
+      {
+       "it": "Era alta e aveva i capelli rossi.",
+       "tr": "She was tall and had red hair."
+      }
+     ]
+    },
+    {
+     "title": "Stress",
+     "text": "In {{noi}} and {{voi}} the stress is on {{-va-}}: {{eravamo}}, {{ascoltavate}}.",
+     "examples": [
+      {
+       "it": "Eravamo felici.",
+       "tr": "We were happy."
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "Quando ho avuto 15 anni…",
+     "right": "Quando avevo 15 anni…",
+     "why": "Age in the past takes the imperfetto."
+    },
+    {
+     "wrong": "Essevo stanco.",
+     "right": "Ero stanco.",
+     "why": "essere — ero."
+    },
+    {
+     "wrong": "Vestiva alle sette.",
+     "right": "Si vestiva alle sette.",
+     "why": "Reflexive — keep si."
+    },
+    {
+     "wrong": "C'era molte persone.",
+     "right": "C'erano molte persone.",
+     "why": "Plural — c'erano."
+    },
+    {
+     "wrong": "Fava freddo.",
+     "right": "Faceva freddo.",
+     "why": "fare — facevo, faceva."
+    }
+   ],
+   "examples": [
+    {
+     "it": "Quando avevamo 15 anni, uscivamo ogni sabato.",
+     "tr": "When we were 15, we went out every Saturday."
+    },
+    {
+     "it": "Andrea sedeva lì perché voleva dormire.",
+     "tr": "Andrea sat there because he wanted to sleep."
+    },
+    {
+     "it": "Mia nonna faceva una torta ogni domenica.",
+     "tr": "My grandmother made a cake every Sunday."
+    },
+    {
+     "it": "Pioveva e non c'era nessuno.",
+     "tr": "It was raining and nobody was there."
+    },
+    {
+     "it": "Da bambino bevevo molto latte.",
+     "tr": "As a child I drank a lot of milk."
+    },
+    {
+     "it": "Ero stanco ma ero contento.",
+     "tr": "I was tired but happy."
+    }
+   ],
+   "summary": "Stem + **-vo, -vi, -va, -vamo, -vate, -vano**. Special: **ero, facevo, bevevo, dicevo**. For descriptions, habits and background.",
+   "keyWords": [
+    {
+     "title": "Descrivere il passato",
+     "ids": [
+      "w383",
+      "w092",
+      "w378",
+      "w379",
+      "w430"
+     ]
+    }
+   ]
+  },
+  "g5-imperfetto-vs-passato": {
+   "id": "g5-imperfetto-vs-passato",
+   "inBreve": [
+    "{{Passato prossimo}} — **what happened**: an event, once, finished, it moves the story on.",
+    "{{Imperfetto}} — **what it was like**: setting, habit, state, background.",
+    "Often together: {{mentre leggevo}} (background), {{è arrivato un messaggio}} (event)."
+   ],
+   "formation": {
+    "steps": [
+     "Ask “what happened?” — {{passato prossimo}}.",
+     "Ask “what was it like? what did I use to do?” — {{imperfetto}}.",
+     "Check the signal words in the “Markers” table."
+    ]
+   },
+   "tables": [
+    {
+     "title": "Event or picture",
+     "header": true,
+     "rows": [
+      [
+       "passato prossimo",
+       "imperfetto"
+      ],
+      [
+       "Ho incontrato Andrea.",
+       "Avevamo 15 anni."
+      ],
+      [
+       "Siamo andati al mare.",
+       "Faceva caldo."
+      ],
+      [
+       "Ho lavorato 5 anni.",
+       "Lavoravo ogni giorno."
+      ],
+      [
+       "È arrivato un messaggio.",
+       "Mentre leggevo…"
+      ]
+     ],
+     "note": "“What happened?” — left; “what was it like?” — right."
+    },
+    {
+     "title": "Markers",
+     "header": true,
+     "rows": [
+      [
+       "passato prossimo",
+       "imperfetto"
+      ],
+      [
+       "ieri",
+       "di solito"
+      ],
+      [
+       "un giorno",
+       "sempre"
+      ],
+      [
+       "all'improvviso",
+       "spesso"
+      ],
+      [
+       "a un certo punto",
+       "ogni giorno"
+      ],
+      [
+       "… fa",
+       "mentre"
+      ],
+      [
+       "poi",
+       "da bambino"
+      ]
+     ],
+     "note": "{{ieri}} works with both: {{ieri pioveva}} (picture), {{ieri sono uscito}} (event)."
+    },
+    {
+     "title": "Story outline",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "tempo"
+      ],
+      [
+       "1 · quando e dove",
+       "passato prossimo"
+      ],
+      [
+       "2 · descrizione",
+       "imperfetto"
+      ],
+      [
+       "3 · reazione",
+       "pass. prossimo + perché"
+      ],
+      [
+       "4 · eventi",
+       "passato prossimo"
+      ],
+      [
+       "5 · oggi",
+       "presente"
+      ]
+     ],
+     "note": "Example: {{Un giorno ho visto…}} → {{era alta…}} → {{sono rimasto sorpreso}} → {{adesso siamo amici}}."
+    }
+   ],
+   "uses": [
+    {
+     "text": "Background + event",
+     "it": "Mentre ascoltavamo la musica, è entrato l'insegnante.",
+     "tr": "While we were listening to music, the teacher came in."
+    },
+    {
+     "text": "When I lived… — I met",
+     "it": "Quando vivevo a Roma, ho conosciuto Mario.",
+     "tr": "When I lived in Rome, I met Mario."
+    },
+    {
+     "text": "Habit vs once",
+     "it": "Di solito andavo a piedi, ma ieri ho preso l'autobus.",
+     "tr": "I usually walked, but yesterday I took the bus."
+    },
+    {
+     "text": "Reason as a state",
+     "it": "Sono andato a letto perché ero stanco.",
+     "tr": "I went to bed because I was tired."
+    }
+   ],
+   "exceptions": [
+    {
+     "title": "nel + year",
+     "text": "Works with both tenses — the meaning decides.",
+     "examples": [
+      {
+       "it": "Nel 2005 abitavo a Roma. / Nel 2005 sono andato a Roma.",
+       "tr": "In 2005 I lived in Rome. / In 2005 I went to Rome."
+      }
+     ]
+    },
+    {
+     "title": "Fixed period — passato prossimo",
+     "text": "If you say how long it lasted — {{passato prossimo}}, even if it was long.",
+     "examples": [
+      {
+       "it": "Ho vissuto dieci anni a Londra.",
+       "tr": "I lived in London for ten years."
+      }
+     ]
+    },
+    {
+     "title": "Weather",
+     "text": "In a story it's almost always {{imperfetto}}.",
+     "examples": [
+      {
+       "it": "C'era il sole e faceva caldo.",
+       "tr": "It was sunny and hot."
+      }
+     ]
+    },
+    {
+     "title": "stavo male / sono stato male",
+     "text": "{{stavo male}} — I was feeling ill (state); {{sono stato male}} — I was ill (whole episode).",
+     "examples": [
+      {
+       "it": "Ieri stavo male, quindi sono rimasto a casa.",
+       "tr": "Yesterday I felt ill, so I stayed at home."
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "Da bambino ho giocato a calcio ogni giorno.",
+     "right": "Da bambino giocavo a calcio ogni giorno.",
+     "why": "Repeated — imperfetto."
+    },
+    {
+     "wrong": "Mentre ho dormito, è suonato il telefono.",
+     "right": "Mentre dormivo, è suonato il telefono.",
+     "why": "After mentre — background, imperfetto."
+    },
+    {
+     "wrong": "Ieri faceva una torta.",
+     "right": "Ieri ho fatto una torta.",
+     "why": "One finished action — passato prossimo."
+    },
+    {
+     "wrong": "Lavoravo lì per 5 anni.",
+     "right": "Ho lavorato lì per 5 anni.",
+     "why": "A fixed period — passato prossimo."
+    },
+    {
+     "wrong": "È stato bel tempo e ci sono state molte persone.",
+     "right": "Faceva bel tempo e c'erano molte persone.",
+     "why": "Description — imperfetto."
+    }
+   ],
+   "examples": [
+    {
+     "it": "Era una bella giornata e c'era il sole.",
+     "tr": "It was a lovely day and the sun was shining."
+    },
+    {
+     "it": "A un certo punto ho visto una ragazza.",
+     "tr": "At one point I saw a girl."
+    },
+    {
+     "it": "Aveva i capelli lunghi e portava un vestito rosso.",
+     "tr": "She had long hair and was wearing a red dress."
+    },
+    {
+     "it": "Sono rimasto sorpreso perché era molto bella.",
+     "tr": "I was surprised because she was very beautiful."
+    },
+    {
+     "it": "Abbiamo cominciato a parlare e poi siamo andati al bar.",
+     "tr": "We started talking and then went to a bar."
+    },
+    {
+     "it": "Adesso siamo sposati da dieci anni.",
+     "tr": "Now we've been married for ten years."
+    }
+   ],
+   "summary": "**Passato prossimo** — what happened (once, finished). **Imperfetto** — what it was like (background, habit, description). **Mentre + imperfetto**, the event — passato prossimo.",
+   "keyWords": [
+    {
+     "title": "Raccontare",
+     "ids": [
+      "w246",
+      "w145",
+      "w157",
+      "w151",
+      "w030",
+      "w254",
+      "w241",
+      "w173"
+     ]
+    }
+   ]
+  },
+  "g5-connettivi-conseguenza": {
+   "id": "g5-connettivi-conseguenza",
+   "inBreve": [
+    "{{quindi}}, {{perciò}}, {{allora}}, {{dunque}} all mean “so, therefore”.",
+    "They go **between the cause and the result**: {{pioveva}}, {{quindi}} {{sono rimasto a casa}}.",
+    "In the past: the cause (a state) — {{imperfetto}}, the result — {{passato prossimo}}."
+   ],
+   "formation": {
+    "steps": [
+     "Say the cause: {{ero stanco}}.",
+     "Add a comma and the connector: {{, quindi}}.",
+     "Say the result: {{sono andato a letto}}."
+    ]
+   },
+   "tables": [
+    {
+     "title": "Four connectors",
+     "header": true,
+     "rows": [
+      [
+       "connettivo",
+       "esempio"
+      ],
+      [
+       "quindi",
+       "Pioveva, quindi sono rimasto a casa."
+      ],
+      [
+       "perciò",
+       "Ero stanco, perciò sono andato a letto."
+      ],
+      [
+       "allora",
+       "Stavo male, allora sono andata dal medico."
+      ],
+      [
+       "dunque",
+       "Dunque, ricapitoliamo."
+      ]
+     ],
+     "note": "{{quindi}} — most common; {{perciò}} — neutral; {{allora}} — spoken; {{dunque}} — formal, “so then”."
+    },
+    {
+     "title": "Cause or result",
+     "header": true,
+     "rows": [
+      [
+       "… quindi …",
+       "… perché …"
+      ],
+      [
+       "Pioveva, quindi sono rimasto a casa.",
+       "Sono rimasto a casa perché pioveva."
+      ],
+      [
+       "Ero stanco, perciò sono andato a letto.",
+       "Sono andato a letto perché ero stanco."
+      ]
+     ],
+     "note": "{{perché}} introduces the **cause**, {{quindi}} the **result**. Same meaning, reverse order."
+    }
+   ],
+   "uses": [
+    {
+     "text": "Neutral — quindi",
+     "it": "Non ho la macchina, quindi prendo il treno.",
+     "tr": "I don't have a car, so I take the train."
+    },
+    {
+     "text": "Telling a past story",
+     "it": "Faceva freddo, perciò ho messo la giacca.",
+     "tr": "It was cold, so I put on my jacket."
+    },
+    {
+     "text": "In conversation — allora",
+     "it": "Non c'è pane? Allora vado io.",
+     "tr": "No bread? Then I'll go."
+    },
+    {
+     "text": "Summing up — dunque",
+     "it": "Dunque, domani alle nove davanti alla scuola.",
+     "tr": "So, tomorrow at nine in front of the school."
+    }
+   ],
+   "exceptions": [
+    {
+     "title": "perciò has an accent",
+     "text": "Write {{perciò}}, not {{percio}}.",
+     "examples": [
+      {
+       "it": "Ho fame, perciò mangio.",
+       "tr": "I'm hungry, so I'm eating."
+      }
+     ]
+    },
+    {
+     "title": "allora — several meanings",
+     "text": "“so”, “then / at that time”, and “well” at the start of a sentence.",
+     "examples": [
+      {
+       "it": "Allora, cosa facciamo?",
+       "tr": "Well, what shall we do?"
+      },
+      {
+       "it": "Allora abitavo a Kiev.",
+       "tr": "At that time I lived in Kyiv."
+      }
+     ]
+    },
+    {
+     "title": "Cause as a state in the past",
+     "text": "Feelings, weather, health — {{imperfetto}}; what you did — {{passato prossimo}}.",
+     "examples": [
+      {
+       "it": "Avevo fame, quindi ho mangiato una pizza.",
+       "tr": "I was hungry, so I ate a pizza."
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "Percio sono andato.",
+     "right": "Perciò sono andato.",
+     "why": "perciò has an accent."
+    },
+    {
+     "wrong": "Sono rimasto a casa quindi pioveva.",
+     "right": "Sono rimasto a casa perché pioveva.",
+     "why": "For the cause use perché."
+    },
+    {
+     "wrong": "Pioveva, perché sono rimasto a casa.",
+     "right": "Pioveva, quindi sono rimasto a casa.",
+     "why": "For the result use quindi."
+    },
+    {
+     "wrong": "Ho avuto fame, quindi ho mangiato.",
+     "right": "Avevo fame, quindi ho mangiato.",
+     "why": "A state — imperfetto."
+    }
+   ],
+   "examples": [
+    {
+     "it": "Ero stanco, quindi sono andato a letto presto.",
+     "tr": "I was tired, so I went to bed early."
+    },
+    {
+     "it": "Il negozio era chiuso, perciò sono tornato a casa.",
+     "tr": "The shop was closed, so I went home."
+    },
+    {
+     "it": "Non stavo bene, allora ho chiamato il medico.",
+     "tr": "I wasn't well, so I called the doctor."
+    },
+    {
+     "it": "Ho perso il treno, quindi sono arrivato tardi.",
+     "tr": "I missed the train, so I arrived late."
+    },
+    {
+     "it": "Dunque, abbiamo finito.",
+     "tr": "So, we're done."
+    },
+    {
+     "it": "Faceva caldo, perciò siamo andati al lago.",
+     "tr": "It was hot, so we went to the lake."
+    }
+   ],
+   "summary": "Cause, **quindi / perciò / allora** + result. **perché** + cause. **dunque** — “so then”.",
+   "keyWords": [
+    {
+     "title": "Connettivi",
+     "ids": [
+      "w410",
+      "w411",
+      "w412",
+      "w413",
+      "w032",
+      "w554",
+      "w555",
+      "w161",
+      "w031"
+     ]
+    }
+   ]
   }
  }
 }

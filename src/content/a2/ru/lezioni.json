@@ -4222,6 +4222,685 @@
      ]
     }
    ]
+  },
+  "g5-imperfetto": {
+   "id": "g5-imperfetto",
+   "inBreve": [
+    "{{Imperfetto}} — прошедшее время для **описания**: как было, что делали обычно, что происходило фоном.",
+    "Образуется просто: основа инфинитива + {{-vo}}, {{-vi}}, {{-va}}, {{-vamo}}, {{-vate}}, {{-vano}}.",
+    "Почти все глаголы правильные. Особые — {{essere}} ({{ero}}), {{fare}} ({{facevo}}), {{bere}}, {{dire}}."
+   ],
+   "formation": {
+    "steps": [
+     "Убери {{-re}} из инфинитива: {{ascoltare → ascolta-}}, {{volere → vole-}}, {{sentire → senti-}}.",
+     "Добавь окончание: {{-vo}}, {{-vi}}, {{-va}}, {{-vamo}}, {{-vate}}, {{-vano}}.",
+     "Возвратные сохраняют местоимение: {{mi alzavo}}, {{si vestiva}}."
+    ]
+   },
+   "tables": [
+    {
+     "title": "Правильные глаголы",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "ascoltare",
+       "volere",
+       "sentire"
+      ],
+      [
+       "io",
+       "ascolta|vo",
+       "vole|vo",
+       "senti|vo"
+      ],
+      [
+       "tu",
+       "ascolta|vi",
+       "vole|vi",
+       "senti|vi"
+      ],
+      [
+       "lui / lei",
+       "ascolta|va",
+       "vole|va",
+       "senti|va"
+      ],
+      [
+       "noi",
+       "ascolta|vamo",
+       "vole|vamo",
+       "senti|vamo"
+      ],
+      [
+       "voi",
+       "ascolta|vate",
+       "vole|vate",
+       "senti|vate"
+      ],
+      [
+       "loro",
+       "ascolta|vano",
+       "vole|vano",
+       "senti|vano"
+      ]
+     ],
+     "note": "Одинаковые окончания для {{-are}}, {{-ere}}, {{-ire}}."
+    },
+    {
+     "title": "Особые глаголы",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "essere",
+       "fare",
+       "bere"
+      ],
+      [
+       "io",
+       "ero",
+       "facevo",
+       "bevevo"
+      ],
+      [
+       "tu",
+       "eri",
+       "facevi",
+       "bevevi"
+      ],
+      [
+       "lui / lei",
+       "era",
+       "faceva",
+       "beveva"
+      ],
+      [
+       "noi",
+       "eravamo",
+       "facevamo",
+       "bevevamo"
+      ],
+      [
+       "voi",
+       "eravate",
+       "facevate",
+       "bevevate"
+      ],
+      [
+       "loro",
+       "erano",
+       "facevano",
+       "bevevano"
+      ]
+     ],
+     "note": "{{dire}} — так же от старой основы: {{dicevo, dicevi, diceva…}}"
+    }
+   ],
+   "uses": [
+    {
+     "text": "Описание, обстановка",
+     "it": "Era il mio primo giorno in una scuola nuova.",
+     "tr": "Это был мой первый день в новой школе."
+    },
+    {
+     "text": "Возраст, время, погода",
+     "it": "Avevamo 15 anni. Erano le otto. Faceva freddo.",
+     "tr": "Нам было 15 лет. Было восемь часов. Было холодно."
+    },
+    {
+     "text": "Привычка в прошлом",
+     "it": "Ascoltavamo molta musica insieme.",
+     "tr": "Мы слушали много музыки вместе."
+    },
+    {
+     "text": "Чувства и желания",
+     "it": "Mi piaceva stare in fondo all'aula.",
+     "tr": "Мне нравилось сидеть в конце класса."
+    },
+    {
+     "text": "Фон для события",
+     "it": "Mentre dormivo, è suonato il telefono.",
+     "tr": "Пока я спал, зазвонил телефон."
+    }
+   ],
+   "exceptions": [
+    {
+     "title": "essere",
+     "text": "Полностью неправильный: {{ero}}, {{eri}}, {{era}}, {{eravamo}}, {{eravate}}, {{erano}}.",
+     "examples": [
+      {
+       "it": "Da bambino ero molto timido.",
+       "tr": "В детстве я был очень застенчивым."
+      }
+     ]
+    },
+    {
+     "title": "c'era / c'erano",
+     "text": "«Был, была / были» (там, тут): единственное — {{c'era}}, множественное — {{c'erano}}.",
+     "examples": [
+      {
+       "it": "C'era il sole e c'erano molte persone.",
+       "tr": "Светило солнце, и было много людей."
+      }
+     ]
+    },
+    {
+     "title": "era или aveva",
+     "text": "{{era}} + прилагательное — какой был; {{aveva}} + существительное — что у него было.",
+     "examples": [
+      {
+       "it": "Era alta e aveva i capelli rossi.",
+       "tr": "Она была высокой, у неё были рыжие волосы."
+      }
+     ]
+    },
+    {
+     "title": "Ударение",
+     "text": "В {{noi}} и {{voi}} ударение на {{-va-}}: {{eravamo}}, {{ascoltavate}}.",
+     "examples": [
+      {
+       "it": "Eravamo felici.",
+       "tr": "Мы были счастливы."
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "Quando ho avuto 15 anni…",
+     "right": "Quando avevo 15 anni…",
+     "why": "Возраст в прошлом — imperfetto."
+    },
+    {
+     "wrong": "Essevo stanco.",
+     "right": "Ero stanco.",
+     "why": "essere — ero."
+    },
+    {
+     "wrong": "Vestiva alle sette.",
+     "right": "Si vestiva alle sette.",
+     "why": "Возвратный — с si."
+    },
+    {
+     "wrong": "C'era molte persone.",
+     "right": "C'erano molte persone.",
+     "why": "Много — c'erano."
+    },
+    {
+     "wrong": "Fava freddo.",
+     "right": "Faceva freddo.",
+     "why": "fare — facevo, faceva."
+    }
+   ],
+   "examples": [
+    {
+     "it": "Quando avevamo 15 anni, uscivamo ogni sabato.",
+     "tr": "Когда нам было 15, мы гуляли каждую субботу."
+    },
+    {
+     "it": "Andrea sedeva lì perché voleva dormire.",
+     "tr": "Андреа сидел там, потому что хотел спать."
+    },
+    {
+     "it": "Mia nonna faceva una torta ogni domenica.",
+     "tr": "Бабушка пекла торт каждое воскресенье."
+    },
+    {
+     "it": "Pioveva e non c'era nessuno.",
+     "tr": "Шёл дождь, и никого не было."
+    },
+    {
+     "it": "Da bambino bevevo molto latte.",
+     "tr": "В детстве я пил много молока."
+    },
+    {
+     "it": "Ero stanco ma ero contento.",
+     "tr": "Я устал, но был доволен."
+    }
+   ],
+   "summary": "Основа + **-vo, -vi, -va, -vamo, -vate, -vano**. Особые: **ero, facevo, bevevo, dicevo**. Для описаний, привычек и фона.",
+   "keyWords": [
+    {
+     "title": "Descrivere il passato",
+     "ids": [
+      "w383",
+      "w092",
+      "w378",
+      "w379",
+      "w430"
+     ]
+    }
+   ]
+  },
+  "g5-imperfetto-vs-passato": {
+   "id": "g5-imperfetto-vs-passato",
+   "inBreve": [
+    "{{Passato prossimo}} — **что случилось**: событие, один раз, закончилось, двигает рассказ вперёд.",
+    "{{Imperfetto}} — **как это было**: обстановка, привычка, состояние, фон.",
+    "Часто вместе: {{mentre leggevo}} (фон), {{è arrivato un messaggio}} (событие)."
+   ],
+   "formation": {
+    "steps": [
+     "Спроси: «что произошло?» — {{passato prossimo}}.",
+     "Спроси: «как было? что делал обычно?» — {{imperfetto}}.",
+     "Посмотри на слова-подсказки в таблице «Маркеры»."
+    ]
+   },
+   "tables": [
+    {
+     "title": "Событие или картина",
+     "header": true,
+     "rows": [
+      [
+       "passato prossimo",
+       "imperfetto"
+      ],
+      [
+       "Ho incontrato Andrea.",
+       "Avevamo 15 anni."
+      ],
+      [
+       "Siamo andati al mare.",
+       "Faceva caldo."
+      ],
+      [
+       "Ho lavorato 5 anni.",
+       "Lavoravo ogni giorno."
+      ],
+      [
+       "È arrivato un messaggio.",
+       "Mentre leggevo…"
+      ]
+     ],
+     "note": "«Что случилось?» — слева; «как было?» — справа."
+    },
+    {
+     "title": "Маркеры",
+     "header": true,
+     "rows": [
+      [
+       "passato prossimo",
+       "imperfetto"
+      ],
+      [
+       "ieri",
+       "di solito"
+      ],
+      [
+       "un giorno",
+       "sempre"
+      ],
+      [
+       "all'improvviso",
+       "spesso"
+      ],
+      [
+       "a un certo punto",
+       "ogni giorno"
+      ],
+      [
+       "… fa",
+       "mentre"
+      ],
+      [
+       "poi",
+       "da bambino"
+      ]
+     ],
+     "note": "{{ieri}} работает с обоими: {{ieri pioveva}} (картина), {{ieri sono uscito}} (событие)."
+    },
+    {
+     "title": "Схема рассказа",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "tempo"
+      ],
+      [
+       "1 · quando e dove",
+       "passato prossimo"
+      ],
+      [
+       "2 · descrizione",
+       "imperfetto"
+      ],
+      [
+       "3 · reazione",
+       "pass. prossimo + perché"
+      ],
+      [
+       "4 · eventi",
+       "passato prossimo"
+      ],
+      [
+       "5 · oggi",
+       "presente"
+      ]
+     ],
+     "note": "Пример: {{Un giorno ho visto…}} → {{era alta…}} → {{sono rimasto sorpreso}} → {{adesso siamo amici}}."
+    }
+   ],
+   "uses": [
+    {
+     "text": "Фон + событие",
+     "it": "Mentre ascoltavamo la musica, è entrato l'insegnante.",
+     "tr": "Пока мы слушали музыку, вошёл учитель."
+    },
+    {
+     "text": "Когда жил… — познакомился",
+     "it": "Quando vivevo a Roma, ho conosciuto Mario.",
+     "tr": "Когда я жил в Риме, я познакомился с Марио."
+    },
+    {
+     "text": "Привычка vs один раз",
+     "it": "Di solito andavo a piedi, ma ieri ho preso l'autobus.",
+     "tr": "Обычно я ходил пешком, но вчера поехал на автобусе."
+    },
+    {
+     "text": "Причина-состояние",
+     "it": "Sono andato a letto perché ero stanco.",
+     "tr": "Я лёг спать, потому что устал."
+    }
+   ],
+   "exceptions": [
+    {
+     "title": "nel + год",
+     "text": "Работает с обоими временами — решает смысл.",
+     "examples": [
+      {
+       "it": "Nel 2005 abitavo a Roma. / Nel 2005 sono andato a Roma.",
+       "tr": "В 2005 я жил в Риме. / В 2005 я поехал в Рим."
+      }
+     ]
+    },
+    {
+     "title": "Срок — passato prossimo",
+     "text": "Если сказано, сколько длилось, — {{passato prossimo}}, даже если долго.",
+     "examples": [
+      {
+       "it": "Ho vissuto dieci anni a Londra.",
+       "tr": "Я прожил десять лет в Лондоне."
+      }
+     ]
+    },
+    {
+     "title": "Погода",
+     "text": "В рассказе почти всегда {{imperfetto}}.",
+     "examples": [
+      {
+       "it": "C'era il sole e faceva caldo.",
+       "tr": "Светило солнце, было жарко."
+      }
+     ]
+    },
+    {
+     "title": "stavo male / sono stato male",
+     "text": "{{stavo male}} — мне было плохо (состояние); {{sono stato male}} — я переболел (итог).",
+     "examples": [
+      {
+       "it": "Ieri stavo male, quindi sono rimasto a casa.",
+       "tr": "Вчера мне было плохо, поэтому я остался дома."
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "Da bambino ho giocato a calcio ogni giorno.",
+     "right": "Da bambino giocavo a calcio ogni giorno.",
+     "why": "Повторялось — imperfetto."
+    },
+    {
+     "wrong": "Mentre ho dormito, è suonato il telefono.",
+     "right": "Mentre dormivo, è suonato il telefono.",
+     "why": "После mentre — фон, imperfetto."
+    },
+    {
+     "wrong": "Ieri faceva una torta.",
+     "right": "Ieri ho fatto una torta.",
+     "why": "Одно законченное действие — passato prossimo."
+    },
+    {
+     "wrong": "Lavoravo lì per 5 anni.",
+     "right": "Ho lavorato lì per 5 anni.",
+     "why": "Срок — passato prossimo."
+    },
+    {
+     "wrong": "È stato bel tempo e ci sono state molte persone.",
+     "right": "Faceva bel tempo e c'erano molte persone.",
+     "why": "Описание — imperfetto."
+    }
+   ],
+   "examples": [
+    {
+     "it": "Era una bella giornata e c'era il sole.",
+     "tr": "Был прекрасный день, светило солнце."
+    },
+    {
+     "it": "A un certo punto ho visto una ragazza.",
+     "tr": "В какой-то момент я увидел девушку."
+    },
+    {
+     "it": "Aveva i capelli lunghi e portava un vestito rosso.",
+     "tr": "У неё были длинные волосы, на ней было красное платье."
+    },
+    {
+     "it": "Sono rimasto sorpreso perché era molto bella.",
+     "tr": "Я удивился, потому что она была очень красивой."
+    },
+    {
+     "it": "Abbiamo cominciato a parlare e poi siamo andati al bar.",
+     "tr": "Мы начали разговаривать, потом пошли в бар."
+    },
+    {
+     "it": "Adesso siamo sposati da dieci anni.",
+     "tr": "Теперь мы женаты десять лет."
+    }
+   ],
+   "summary": "**Passato prossimo** — что случилось (один раз, закончилось). **Imperfetto** — как было (фон, привычка, описание). **Mentre + imperfetto**, событие — passato prossimo.",
+   "keyWords": [
+    {
+     "title": "Raccontare",
+     "ids": [
+      "w246",
+      "w145",
+      "w157",
+      "w151",
+      "w030",
+      "w254",
+      "w241",
+      "w173"
+     ]
+    }
+   ]
+  },
+  "g5-connettivi-conseguenza": {
+   "id": "g5-connettivi-conseguenza",
+   "inBreve": [
+    "{{quindi}}, {{perciò}}, {{allora}}, {{dunque}} — все значат «поэтому, значит».",
+    "Стоят **между причиной и следствием**: {{pioveva}}, {{quindi}} {{sono rimasto a casa}}.",
+    "В прошлом: причина-состояние — {{imperfetto}}, результат — {{passato prossimo}}."
+   ],
+   "formation": {
+    "steps": [
+     "Скажи причину: {{ero stanco}}.",
+     "Поставь запятую и связку: {{, quindi}}.",
+     "Скажи результат: {{sono andato a letto}}."
+    ]
+   },
+   "tables": [
+    {
+     "title": "Четыре связки",
+     "header": true,
+     "rows": [
+      [
+       "connettivo",
+       "esempio"
+      ],
+      [
+       "quindi",
+       "Pioveva, quindi sono rimasto a casa."
+      ],
+      [
+       "perciò",
+       "Ero stanco, perciò sono andato a letto."
+      ],
+      [
+       "allora",
+       "Stavo male, allora sono andata dal medico."
+      ],
+      [
+       "dunque",
+       "Dunque, ricapitoliamo."
+      ]
+     ],
+     "note": "{{quindi}} — самое частое; {{perciò}} — нейтральное; {{allora}} — разговорное; {{dunque}} — книжное, «итак»."
+    },
+    {
+     "title": "Причина или результат",
+     "header": true,
+     "rows": [
+      [
+       "… quindi …",
+       "… perché …"
+      ],
+      [
+       "Pioveva, quindi sono rimasto a casa.",
+       "Sono rimasto a casa perché pioveva."
+      ],
+      [
+       "Ero stanco, perciò sono andato a letto.",
+       "Sono andato a letto perché ero stanco."
+      ]
+     ],
+     "note": "{{perché}} вводит **причину**, {{quindi}} — **результат**. Смысл одинаковый, порядок обратный."
+    }
+   ],
+   "uses": [
+    {
+     "text": "Нейтрально — quindi",
+     "it": "Non ho la macchina, quindi prendo il treno.",
+     "tr": "У меня нет машины, поэтому я езжу на поезде."
+    },
+    {
+     "text": "В рассказе о прошлом",
+     "it": "Faceva freddo, perciò ho messo la giacca.",
+     "tr": "Было холодно, поэтому я надел куртку."
+    },
+    {
+     "text": "В разговоре — allora",
+     "it": "Non c'è pane? Allora vado io.",
+     "tr": "Нет хлеба? Тогда я схожу."
+    },
+    {
+     "text": "Подвести итог — dunque",
+     "it": "Dunque, domani alle nove davanti alla scuola.",
+     "tr": "Итак, завтра в девять перед школой."
+    }
+   ],
+   "exceptions": [
+    {
+     "title": "perciò с ударением",
+     "text": "Пиши {{perciò}}, не {{percio}}.",
+     "examples": [
+      {
+       "it": "Ho fame, perciò mangio.",
+       "tr": "Я голоден, поэтому ем."
+      }
+     ]
+    },
+    {
+     "title": "allora — несколько значений",
+     "text": "«поэтому», «тогда (в то время)», «ну» в начале фразы.",
+     "examples": [
+      {
+       "it": "Allora, cosa facciamo?",
+       "tr": "Ну, что будем делать?"
+      },
+      {
+       "it": "Allora abitavo a Kiev.",
+       "tr": "Тогда я жил в Киеве."
+      }
+     ]
+    },
+    {
+     "title": "Причина-состояние в прошлом",
+     "text": "Чувство, погода, самочувствие — {{imperfetto}}; что сделал — {{passato prossimo}}.",
+     "examples": [
+      {
+       "it": "Avevo fame, quindi ho mangiato una pizza.",
+       "tr": "Я был голоден, поэтому съел пиццу."
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "Percio sono andato.",
+     "right": "Perciò sono andato.",
+     "why": "perciò — с ударением."
+    },
+    {
+     "wrong": "Sono rimasto a casa quindi pioveva.",
+     "right": "Sono rimasto a casa perché pioveva.",
+     "why": "Причина — perché."
+    },
+    {
+     "wrong": "Pioveva, perché sono rimasto a casa.",
+     "right": "Pioveva, quindi sono rimasto a casa.",
+     "why": "Результат — quindi."
+    },
+    {
+     "wrong": "Ho avuto fame, quindi ho mangiato.",
+     "right": "Avevo fame, quindi ho mangiato.",
+     "why": "Состояние — imperfetto."
+    }
+   ],
+   "examples": [
+    {
+     "it": "Ero stanco, quindi sono andato a letto presto.",
+     "tr": "Я устал, поэтому рано лёг спать."
+    },
+    {
+     "it": "Il negozio era chiuso, perciò sono tornato a casa.",
+     "tr": "Магазин был закрыт, поэтому я вернулся домой."
+    },
+    {
+     "it": "Non stavo bene, allora ho chiamato il medico.",
+     "tr": "Мне было нехорошо, поэтому я позвонил врачу."
+    },
+    {
+     "it": "Ho perso il treno, quindi sono arrivato tardi.",
+     "tr": "Я опоздал на поезд, поэтому пришёл поздно."
+    },
+    {
+     "it": "Dunque, abbiamo finito.",
+     "tr": "Итак, мы закончили."
+    },
+    {
+     "it": "Faceva caldo, perciò siamo andati al lago.",
+     "tr": "Было жарко, поэтому мы поехали на озеро."
+    }
+   ],
+   "summary": "Причина, **quindi / perciò / allora** + результат. **perché** + причина. **dunque** — «итак».",
+   "keyWords": [
+    {
+     "title": "Connettivi",
+     "ids": [
+      "w410",
+      "w411",
+      "w412",
+      "w413",
+      "w032",
+      "w554",
+      "w555",
+      "w161",
+      "w031"
+     ]
+    }
+   ]
   }
  }
 }
