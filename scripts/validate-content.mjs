@@ -71,6 +71,27 @@ for (const id of Object.keys(meta.topics)) {
   })) errori.push(`meta: argomento ${id} non usato nel curriculum`);
 }
 
+// Vocabolario: base → parola esistente, nessun "it" ripetuto. Le lingue senza vocab.json usano il russo.
+const vocabPerLingua = {};
+for (const lingua of lingue) {
+  let vocab;
+  try {
+    vocab = leggi(path.join(CARTELLA, lingua, "vocab.json"));
+  } catch (e) {
+    if (e.code !== "ENOENT") errori.push(`${lingua}/vocab: JSON non valido (${e.message})`);
+    continue;
+  }
+  const ids = new Set(vocab.words.map((w) => w.id));
+  vocabPerLingua[lingua] = ids;
+  const visti = new Map();
+  for (const w of vocab.words) {
+    if (w.base !== undefined && !ids.has(w.base)) errori.push(`${lingua}/vocab: ${w.id}.base → parola inesistente ${w.base}`);
+    if (w.base === w.id) errori.push(`${lingua}/vocab: ${w.id}.base punta a se stessa`);
+    if (visti.has(w.it)) errori.push(`${lingua}/vocab: "${w.it}" ripetuta (${visti.get(w.it)}, ${w.id})`);
+    visti.set(w.it, w.id);
+  }
+}
+
 // Lezioni v2 (lezioni.json): campi obbligatori, id = topicId, stesse lezioni in tutte le lingue.
 const avvisi = [];
 const testo = (v) => typeof v === "string" && v.trim() !== "";
@@ -114,6 +135,15 @@ for (const lingua of lingue) {
     if (!meta.topics[topicId]) errori.push(`${lingua}/lezioni: argomento ${topicId} assente in meta`);
     for (const [campo, valido] of Object.entries(CAMPI)) {
       if (!valido(lezione?.[campo])) errori.push(`${lingua}/lezioni: ${topicId}.${campo} mancante o non valido`);
+    }
+    // keyWords (facoltativo): id esistenti nel vocabolario della lingua (o in quello russo).
+    if (lezione?.keyWords !== undefined) {
+      const ids = vocabPerLingua[lingua] ?? vocabPerLingua.ru ?? new Set();
+      if (!Array.isArray(lezione.keyWords)) errori.push(`${lingua}/lezioni: ${topicId}.keyWords non è un elenco`);
+      else
+        for (const id of lezione.keyWords) {
+          if (!ids.has(id)) errori.push(`${lingua}/lezioni: ${topicId}.keyWords → parola inesistente ${id}`);
+        }
     }
   }
 }

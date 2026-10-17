@@ -83,6 +83,41 @@ export async function unitaPerSlug(locale: Locale): Promise<Record<string, numbe
   return Object.fromEntries(argomenti.map((a) => [a.slug, a.unita]));
 }
 
+export type ParolaChiave = {
+  id: string;
+  it: string;
+  traduzione: string;
+  /** Lingua della traduzione: quella scelta se il vocabolario la ha, altrimenti il russo. */
+  lingua: Locale;
+  aux?: string;
+  participle?: string;
+  irregolare: boolean;
+  example?: string;
+};
+
+// Parole chiave della lezione (keyWords di lezioni.json), nell'ordine dato.
+export async function getParoleChiave(locale: Locale, ids: string[]): Promise<ParolaChiave[]> {
+  const { vocab } = await getContent(locale);
+  const perId = new Map(vocab.words.map((w) => [w.id, w as typeof w & Partial<Record<Locale | "irregular" | "aux" | "participle", string>>]));
+  return ids.flatMap((id) => {
+    const w = perId.get(id);
+    if (!w) return [];
+    const propria = w[locale];
+    return [
+      {
+        id,
+        it: w.it,
+        traduzione: propria ?? w.ru,
+        lingua: propria ? locale : DEFAULT_LOCALE,
+        aux: w.aux ?? undefined,
+        participle: w.participle ?? undefined,
+        irregolare: Boolean(w.irregular),
+        example: w.example || undefined,
+      },
+    ];
+  });
+}
+
 // La lingua in cui il contenuto è davvero scritto: se manca la cartella della lingua, il russo.
 export async function linguaContenuto(locale: Locale): Promise<Locale> {
   if (locale === DEFAULT_LOCALE) return locale;
@@ -100,18 +135,15 @@ export async function getArgomento(locale: Locale, slug: string) {
   if (posizione < 0) return null;
   const argomento = argomenti[posizione];
 
-  const { grammar, vocab } = await getContent(locale);
+  const { grammar } = await getContent(locale);
   const contenuto = grammar.topics.find((t) => t.id === argomento.id);
   if (!contenuto) return null;
 
-  const lezioni = contenuto.lesson.split(",").map((l) => l.trim());
-  const parole = vocab.words.filter((w) => lezioni.includes(w.lesson));
   const esercizi = grammar.exercises.filter((e) => e.topic === argomento.id && isVisibile(e));
 
   return {
     argomento,
     contenuto: contenuto as Record<string, unknown>,
-    parole,
     esercizi,
     successivo: argomenti[posizione + 1] ?? null,
     lingua: await linguaContenuto(locale),

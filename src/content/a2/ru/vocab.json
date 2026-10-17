@@ -199,7 +199,8 @@
    "participle": "lavato",
    "group": 5,
    "example": "Lava i piatti.",
-   "lesson": "L01"
+   "lesson": "L01",
+   "base": "w071"
   },
   {
    "id": "w018",
@@ -210,7 +211,8 @@
    "participle": "passato",
    "group": 5,
    "example": "Passa l'aspirapolvere.",
-   "lesson": "L01"
+   "lesson": "L01",
+   "base": "w060"
   },
   {
    "id": "w019",
@@ -279,7 +281,8 @@
    "irregular": "presente (vado, vai, va…)",
    "group": 1,
    "example": "Va a dormire.",
-   "lesson": "L01"
+   "lesson": "L01",
+   "base": "w058"
   },
   {
    "id": "w025",
@@ -469,7 +472,8 @@
    "note": "da + инфинитив = «которые надо сделать»",
    "group": 11,
    "example": "Mi stresso quando ho tante cose da fare.",
-   "lesson": "L02"
+   "lesson": "L02",
+   "base": "w040"
   },
   {
    "id": "w042",
@@ -895,7 +899,8 @@
    "participle": "uscito",
    "group": 1,
    "example": "Anna esce di casa.",
-   "lesson": "L04"
+   "lesson": "L04",
+   "base": "w064"
   },
   {
    "id": "w080",
@@ -939,8 +944,9 @@
    "gender": "m",
    "plural": "i vestiti",
    "group": 3,
-   "example": "Si cambia i vestiti.",
-   "lesson": "L04"
+   "example": "Si cambia i vestiti. / Era vestita elegante.",
+   "lesson": "L04",
+   "note": "vestito/a elegante — элегантно одетый"
   },
   {
    "id": "w084",
@@ -1332,7 +1338,8 @@
    "participle": "messo",
    "group": 7,
    "example": "Metto da parte cento franchi al mese.",
-   "lesson": "L06"
+   "lesson": "L06",
+   "base": "w072"
   },
   {
    "id": "w119",
@@ -1567,7 +1574,8 @@
    "note": "возраст — с avere: ho 44 anni (не sono 44 anni)",
    "group": 2,
    "example": "Ha 22 anni.",
-   "lesson": "L06"
+   "lesson": "L06",
+   "base": "w040"
   },
   {
    "id": "w140",
@@ -1588,7 +1596,8 @@
    "note": "= essere meccanico (без артикля)",
    "group": 11,
    "example": "Fa il meccanico.",
-   "lesson": "L06"
+   "lesson": "L06",
+   "base": "w008"
   },
   {
    "id": "w142",
@@ -1766,7 +1775,8 @@
    "participle": "andato",
    "group": 1,
    "example": "Va a letto prima delle 23.",
-   "lesson": "L06"
+   "lesson": "L06",
+   "base": "w058"
   },
   {
    "id": "w159",
@@ -1826,7 +1836,8 @@
    "pos": "expression",
    "group": 1,
    "example": "Fa le ore piccole il sabato.",
-   "lesson": "L06"
+   "lesson": "L06",
+   "base": "w008"
   },
   {
    "id": "w165",
@@ -2357,7 +2368,8 @@
    "pos": "expression",
    "group": 2,
    "example": "Abbiamo parlato del più e del meno.",
-   "lesson": "L07"
+   "lesson": "L07",
+   "base": "w087"
   },
   {
    "id": "w212",
@@ -2379,8 +2391,9 @@
    "gender": "f",
    "plural": "le musiche",
    "group": 1,
-   "example": "Ascolta la musica.",
-   "lesson": "L07"
+   "example": "Ascolta la musica. / Mi piaceva la musica rock.",
+   "lesson": "L07",
+   "note": "la musica rock / pop / classica"
   },
   {
    "id": "w214",
@@ -2436,7 +2449,8 @@
    "participle": "fatto",
    "group": 8,
    "example": "Abbiamo fatto una gita in campagna.",
-   "lesson": "L07"
+   "lesson": "L07",
+   "base": "w008"
   },
   {
    "id": "w219",
@@ -2489,7 +2503,8 @@
    "note": "il pranzo al sacco — обед с собой",
    "group": 6,
    "example": "Abbiamo pranzato al sacco.",
-   "lesson": "L07"
+   "lesson": "L07",
+   "base": "w222"
   },
   {
    "id": "w224",
@@ -2632,7 +2647,8 @@
    "participle": "stato",
    "group": 10,
    "example": "Non sono stata bene.",
-   "lesson": "L07"
+   "lesson": "L07",
+   "base": "w067"
   },
   {
    "id": "w238",
@@ -2717,7 +2733,8 @@
    "note": "= portare qualcuno nella tua macchina",
    "group": 7,
    "example": "Ha dato un passaggio agli amici.",
-   "lesson": "L08"
+   "lesson": "L08",
+   "base": "w125"
   },
   {
    "id": "w246",
@@ -2782,7 +2799,8 @@
    "participle": "passato",
    "group": 7,
    "example": "È passato con il rosso.",
-   "lesson": "L08"
+   "lesson": "L08",
+   "base": "w060"
   },
   {
    "id": "w252",
@@ -3639,8 +3657,8 @@
    "pos": "adjective",
    "forms": "calvo / calva / calvi / calve",
    "group": 3,
-   "example": "Mio cognato è calvo.",
-   "note": "essere calvo",
+   "example": "Mio cognato è calvo. / È diventato pelato!",
+   "note": "essere calvo; разг. pelato; perdere i capelli — облысеть",
    "lesson": "L11"
   },
   {
@@ -3920,7 +3938,8 @@
    "participle": "fatto",
    "group": 2,
    "example": "Mi ha fatto conoscere nuovi musicisti.",
-   "lesson": "L12"
+   "lesson": "L12",
+   "base": "w008"
   },
   {
    "id": "w354",
@@ -4148,7 +4167,8 @@
    "note": "= fare l'insegnante",
    "group": 11,
    "example": "Ha lavorato come insegnante.",
-   "lesson": "L14"
+   "lesson": "L14",
+   "base": "w085"
   },
   {
    "id": "w374",
@@ -4158,7 +4178,8 @@
    "note": "è sposata e ha un figlio",
    "group": 2,
    "example": "Sì, è sposata e ha un figlio.",
-   "lesson": "L14"
+   "lesson": "L14",
+   "base": "w039"
   },
   {
    "id": "w375",
@@ -4224,7 +4245,8 @@
    "note": "fa caldo, faceva freddo; о человеке — avere caldo/freddo (мне жарко — ho caldo)",
    "group": 9,
    "example": "Faceva caldo.",
-   "lesson": "L15"
+   "lesson": "L15",
+   "base": "w008"
   },
   {
    "id": "w381",
@@ -4779,7 +4801,8 @@
    "note": "ho freddo — мне холодно (не «sono freddo»); погода — fa freddo",
    "group": 10,
    "example": "Ha freddo.",
-   "lesson": "L19"
+   "lesson": "L19",
+   "base": "w040"
   },
   {
    "id": "w431",
@@ -4884,17 +4907,6 @@
    "lesson": "L19"
   },
   {
-   "id": "w440",
-   "it": "pelato / calvo",
-   "ru": "лысый",
-   "pos": "adjective",
-   "forms": "pelato / pelata / pelati / pelate",
-   "note": "pelato — разговорное; perdere i capelli — лысеть",
-   "group": 3,
-   "example": "È diventato pelato!",
-   "lesson": "L19"
-  },
-  {
    "id": "w441",
    "it": "perdere i capelli",
    "ru": "облысеть, терять волосы",
@@ -4903,7 +4915,8 @@
    "participle": "perso",
    "group": 3,
    "example": "Ha perso i capelli.",
-   "lesson": "L19"
+   "lesson": "L19",
+   "base": "w194"
   },
   {
    "id": "w442",
@@ -5002,7 +5015,8 @@
    "note": "= passeggiare",
    "group": 1,
    "example": "Faceva una passeggiata con il suo cane.",
-   "lesson": "L21"
+   "lesson": "L21",
+   "base": "w008"
   },
   {
    "id": "w451",
@@ -5023,7 +5037,8 @@
    "note": "≠ di cattivo umore; l'umore — настроение",
    "group": 4,
    "example": "Era di buon umore.",
-   "lesson": "L21"
+   "lesson": "L21",
+   "base": "w039"
   },
   {
    "id": "w453",
@@ -5033,16 +5048,6 @@
    "note": "di + артикль = «несколько»: degli amici, dei libri, delle amiche; ед.ч.: del pane — (немного) хлеба",
    "group": 12,
    "example": "Andava al ristorante per incontrare degli amici.",
-   "lesson": "L21"
-  },
-  {
-   "id": "w454",
-   "it": "vestito elegante",
-   "ru": "элегантно одетый",
-   "pos": "expression",
-   "note": "era vestita elegante / in modo elegante",
-   "group": 3,
-   "example": "Era vestita elegante.",
    "lesson": "L21"
   },
   {
@@ -5056,16 +5061,6 @@
    "group": 3,
    "example": "Mio padre è invecchiato molto.",
    "lesson": "L22"
-  },
-  {
-   "id": "w456",
-   "it": "la musica rock",
-   "ru": "рок-музыка",
-   "pos": "noun",
-   "gender": "f",
-   "group": 1,
-   "example": "Mi piaceva la musica rock.",
-   "lesson": "L23"
   },
   {
    "id": "w457",
@@ -5293,7 +5288,8 @@
    "pos": "expression",
    "group": 2,
    "example": "Sono stati fidanzati dal 2016 al 2018.",
-   "lesson": "L24"
+   "lesson": "L24",
+   "base": "w039"
   },
   {
    "id": "w477",
@@ -5437,7 +5433,8 @@
    "note": "avere mal di + часть тела: mal di pancia, mal di schiena, mal di gola",
    "group": 10,
    "example": "Ha mal di testa.",
-   "lesson": "L25"
+   "lesson": "L25",
+   "base": "w040"
   },
   {
    "id": "w490",
@@ -5459,7 +5456,8 @@
    "participle": "preso",
    "group": 10,
    "example": "Ha preso un colpo in testa.",
-   "lesson": "L25"
+   "lesson": "L25",
+   "base": "w057"
   },
   {
    "id": "w492",
@@ -5998,7 +5996,8 @@
    "pos": "expression",
    "group": 4,
    "example": "Non gli date troppa importanza.",
-   "lesson": "L27"
+   "lesson": "L27",
+   "base": "w125"
   },
   {
    "id": "w540",
@@ -6030,7 +6029,8 @@
    "participle": "cambiato",
    "group": 1,
    "example": "Cambierete casa, partner o lavoro.",
-   "lesson": "L27"
+   "lesson": "L27",
+   "base": "w429"
   },
   {
    "id": "w543",
@@ -6051,7 +6051,8 @@
    "note": "la pazienza — терпение",
    "group": 4,
    "example": "Se avrete pazienza…",
-   "lesson": "L27"
+   "lesson": "L27",
+   "base": "w040"
   },
   {
    "id": "w545",
@@ -6106,7 +6107,8 @@
    "note": "l'obiettivo — цель",
    "group": 11,
    "example": "Raggiungeremo i nostri obiettivi.",
-   "lesson": "L27"
+   "lesson": "L27",
+   "base": "w525"
   },
   {
    "id": "w550",
@@ -6291,7 +6293,8 @@
    "note": "incinta не меняется; partorire — рожать (-isc-)",
    "group": 10,
    "example": "Martina è incinta.",
-   "lesson": "L25"
+   "lesson": "L25",
+   "base": "w039"
   },
   {
    "id": "w567",
@@ -6464,7 +6467,8 @@
    "participle": "dato",
    "group": 11,
    "example": "Darà origine a nuovi mestieri.",
-   "lesson": "L28"
+   "lesson": "L28",
+   "base": "w125"
   },
   {
    "id": "w582",

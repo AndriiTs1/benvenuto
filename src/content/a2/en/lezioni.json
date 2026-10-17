@@ -4,7 +4,7 @@
   "g5-presente-regular": {
    "id": "g5-presente-regular",
    "inBreve": [
-    "**Presente** — the present tense: what is happening now or happens regularly: {{Lavoro a Lugano.}}",
+    "{{Presente}} — the present tense: what is happening now or happens regularly: {{Lavoro a Lugano.}}",
     "Form = **verb stem + person ending**.",
     "Three verb groups — in {{-are}}, {{-ere}}, {{-ire}}, each with its own endings."
    ],
@@ -284,7 +284,28 @@
      "tr": "The children are watching TV."
     }
    ],
-   "summary": "Stem + ending: **-o, -i, -a / -e, -iamo, -ate / -ete / -ite, -ano / -ono**."
+   "summary": "Stem + ending: **-o, -i, -a / -e, -iamo, -ate / -ete / -ite, -ano / -ono**.",
+   "keyWords": [
+    "w087",
+    "w085",
+    "w277",
+    "w001",
+    "w002",
+    "w049",
+    "w212",
+    "w116",
+    "w114",
+    "w416",
+    "w004",
+    "w057",
+    "w184",
+    "w276",
+    "w025",
+    "w225",
+    "w283",
+    "w100",
+    "w074"
+   ]
   }
  }
 }

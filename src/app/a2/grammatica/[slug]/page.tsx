@@ -3,17 +3,12 @@ import { HoCapito, SegnaVisto } from "@/components/grammatica/AzioniArgomento";
 import { ContenutoArgomento, Sezione } from "@/components/grammatica/ContenutoArgomento";
 import { LezioneV2 } from "@/components/grammatica/LezioneV2";
 import { LinkAvanti } from "@/components/grammatica/LinkAvanti";
+import { ParoleChiave } from "@/components/grammatica/ParoleChiave";
 import { Tr } from "@/components/Tr";
-import { getArgomento, getPercorso } from "@/content/a2/grammatica";
+import { getArgomento, getParoleChiave, getPercorso } from "@/content/a2/grammatica";
 import { getLezioneV2 } from "@/content/a2/lezioni";
-import { DEFAULT_LOCALE, type Locale } from "@/lib/lingue";
+import { DEFAULT_LOCALE } from "@/lib/lingue";
 import { linguaScelta } from "@/lib/lingua-scelta";
-
-// Traduzione della parola nella lingua del contenuto (i file hanno sempre ru).
-function traduzione(parola: { ru: string }, lingua: Locale) {
-  const valore = (parola as Record<string, unknown>)[lingua];
-  return typeof valore === "string" ? valore : parola.ru;
-}
 
 export async function generateStaticParams() {
   const { argomenti } = await getPercorso(DEFAULT_LOCALE);
@@ -28,9 +23,11 @@ export default async function ArgomentoPage({ params }: PageProps<"/a2/grammatic
   const locale = await linguaScelta();
   const dati = await getArgomento(locale, slug);
   if (!dati) notFound();
-  const { argomento, contenuto, parole, esercizi, successivo, lingua } = dati;
+  const { argomento, contenuto, esercizi, successivo, lingua } = dati;
   // Lezione nel nuovo formato, se c'è; altrimenti il contenuto di grammar.json.
   const v2 = await getLezioneV2(locale, argomento.id);
+  // Parole chiave scelte a mano per la lezione v2; senza keyWords il blocco non c'è.
+  const parole = v2?.lezione.keyWords ? await getParoleChiave(locale, v2.lezione.keyWords) : [];
 
   return (
     <article className="space-y-6">
@@ -61,37 +58,7 @@ export default async function ArgomentoPage({ params }: PageProps<"/a2/grammatic
         <ContenutoArgomento contenuto={contenuto} lingua={lingua} />
       )}
 
-      {parole.length > 0 && (
-        <details className="group overflow-hidden rounded-2xl bg-card">
-          <summary className="flex min-h-[52px] cursor-pointer list-none items-center gap-3 px-4 text-[17px] font-semibold select-none focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-label [&::-webkit-details-marker]:hidden">
-            <span className="flex-1">Parole di questa lezione ({parole.length})</span>
-            <svg
-              aria-hidden="true"
-              viewBox="0 0 24 24"
-              className="size-4 shrink-0 text-label-2 transition-transform group-open:rotate-90"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2.25"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <path d="M9 5l7 7-7 7" />
-            </svg>
-          </summary>
-          <ul>
-            {parole.map((parola) => (
-              <li key={parola.id} className="border-t border-separator px-4 py-2.5">
-                <p className="text-[17px] leading-snug">
-                  <span className="font-medium">{parola.it}</span>
-                  {" — "}
-                  <Tr locale={lingua}>{traduzione(parola, lingua)}</Tr>
-                </p>
-                {parola.example && <p className="mt-0.5 text-[13px] text-label-2">{parola.example}</p>}
-              </li>
-            ))}
-          </ul>
-        </details>
-      )}
+      {parole.length > 0 && <ParoleChiave parole={parole} />}
 
       {esercizi.length > 0 && (
         <Sezione titolo={`Esercizi (${esercizi.length})`}>

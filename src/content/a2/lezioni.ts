@@ -18,6 +18,8 @@ export type LezioneV2 = {
   mistakes: { wrong: string; right: string; why: string }[];
   examples: EsempioV2[];
   summary: string;
+  /** Id delle parole di vocab.json da mostrare in "Parole chiave", in quest'ordine. */
+  keyWords?: string[];
 };
 
 type FileLezioni = { version: number; lessons: Record<string, LezioneV2> };
