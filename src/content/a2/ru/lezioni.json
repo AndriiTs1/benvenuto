@@ -1353,7 +1353,7 @@
     },
     {
      "title": "Глаголы на -isc-",
-     "text": "{{finire, pulire, preferire, capire}} — {{-isc-}} в форме tu.",
+     "text": "{{finire}}, {{pulire}}, {{preferire}}, {{capire}} — {{-isc-}} в форме tu.",
      "examples": [
       {
        "it": "Capisci? — Sì, capisco.",
@@ -1450,7 +1450,7 @@
     "steps": [
      "Выучи форму {{io}} — по ней видно тип глагола: {{faccio, vado, vengo}}.",
      "Форма {{loro}} похожа на io: {{vado → vanno}}, {{vengo → vengono}}.",
-     "{{noi}} и {{voi}} почти всегда от инфинитива: {{andare → andiamo, andate}}."
+     "{{noi}} и {{voi}} почти всегда от инфинитива: {{andare → andiamo}}, {{andate}}."
     ]
    },
    "tables": [
@@ -1501,7 +1501,7 @@
        "stanno"
       ]
      ],
-     "note": "{{dare}} спрягается как {{stare}}: {{do, dai, dà, diamo, date, danno}}."
+     "note": "{{dare}} спрягается как {{stare}}: {{do}}, {{dai}}, {{dà}}, {{diamo}}, {{date}}, {{danno}}."
     },
     {
      "title": "С -g-: io -go, loro -gono",
@@ -2017,7 +2017,7 @@
    ],
    "formation": {
     "steps": [
-     "Найди, **кому** нравится: {{mi, ti, gli, le, ci, vi, gli}}.",
+     "Найди, **кому** нравится: {{mi}}, {{ti}}, {{gli}}, {{le}}, {{ci}}, {{vi}}, {{gli}}.",
      "Найди, **что** нравится: одно или много?",
      "Одно или глагол — {{piace / manca}}; много — {{piacciono / mancano}}."
     ]
@@ -2250,6 +2250,1092 @@
       "w034",
       "w033",
       "w188"
+     ]
+    }
+   ]
+  },
+  "g1-articoli-determinativi": {
+   "id": "g1-articoli-determinativi",
+   "inBreve": [
+    "Определённый артикль ставится перед существительным, когда понятно, о чём речь: {{il libro}} — «(эта) книга».",
+    "Форма зависит от **рода**, **числа** и **первой буквы** слова: {{il}}, {{lo}}, {{l'}}, {{la}}, {{i}}, {{gli}}, {{le}}.",
+    "Артикль нужен чаще, чем в русском: {{mi piace la pizza}}, {{mi lavo le mani}}."
+   ],
+   "formation": {
+    "steps": [
+     "Определи род: на {{-o}} — обычно мужской, на {{-a}} — обычно женский, на {{-e}} — проверь в словаре.",
+     "Посмотри на первую букву: согласная, гласная или {{z}}, {{s}} + согласная, {{gn}}, {{ps}}.",
+     "Выбери артикль по таблице; во множественном числе — {{i}}, {{gli}} или {{le}}."
+    ]
+   },
+   "tables": [
+    {
+     "title": "Мужской род",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "singolare",
+       "plurale"
+      ],
+      [
+       "consonante",
+       "il libro",
+       "i libri"
+      ],
+      [
+       "z · s + cons. · gn · ps",
+       "lo studente",
+       "gli studenti"
+      ],
+      [
+       "vocale",
+       "l'amico",
+       "gli amici"
+      ]
+     ],
+     "note": "Во множественном числе у мужского рода два артикля: {{i}} и {{gli}}."
+    },
+    {
+     "title": "Женский род",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "singolare",
+       "plurale"
+      ],
+      [
+       "consonante",
+       "la casa",
+       "le case"
+      ],
+      [
+       "vocale",
+       "l'amica",
+       "le amiche"
+      ]
+     ],
+     "note": "Женский род во множественном — всегда {{le}}, без апострофа: {{le amiche}}."
+    },
+    {
+     "title": "Как меняется существительное",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "singolare",
+       "plurale"
+      ],
+      [
+       "-o (m.)",
+       "il libr|o",
+       "i libr|i"
+      ],
+      [
+       "-a (f.)",
+       "la cas|a",
+       "le cas|e"
+      ],
+      [
+       "-e (m.)",
+       "il ristorant|e",
+       "i ristorant|i"
+      ],
+      [
+       "-e (f.)",
+       "la chiav|e",
+       "le chiav|i"
+      ]
+     ],
+     "note": "Слова на {{-e}} во множественном получают {{-i}} в обоих родах."
+    }
+   ],
+   "uses": [
+    {
+     "text": "Известный предмет",
+     "it": "Prendi il libro sul tavolo.",
+     "tr": "Возьми книгу со стола."
+    },
+    {
+     "text": "Вкусы и общее значение",
+     "it": "Mi piace la musica.",
+     "tr": "Мне нравится музыка."
+    },
+    {
+     "text": "Дни недели — регулярно",
+     "it": "Il sabato vado al mare.",
+     "tr": "По субботам я езжу на море."
+    },
+    {
+     "text": "Части тела и одежда",
+     "it": "Mi lavo le mani.",
+     "tr": "Я мою руки."
+    },
+    {
+     "text": "Языки и страны",
+     "it": "L'italiano è bello. La Svizzera è piccola.",
+     "tr": "Итальянский красивый. Швейцария маленькая."
+    }
+   ],
+   "exceptions": [
+    {
+     "title": "Родственники с «мой, твой»",
+     "text": "В единственном числе — **без** артикля: {{mia madre}}, {{tuo fratello}}; во множественном — с артиклем: {{i miei fratelli}}.",
+     "examples": [
+      {
+       "it": "Mia sorella abita a Roma.",
+       "tr": "Моя сестра живёт в Риме."
+      },
+      {
+       "it": "I miei genitori sono in Ucraina.",
+       "tr": "Мои родители в Украине."
+      }
+     ]
+    },
+    {
+     "title": "Слова на -e",
+     "text": "Род по окончанию не видно — учи слово вместе с артиклем: {{il ristorante}}, {{la chiave}}, {{l'esame}} (м. р.), {{la notte}}.",
+     "examples": [
+      {
+       "it": "il giornale · la lezione",
+       "tr": "газета · урок"
+      }
+     ]
+    },
+    {
+     "title": "Слова, которые не меняются",
+     "text": "Иностранные и сокращённые слова во множественном не меняются — меняется только артикль: {{il film → i film}}, {{la foto → le foto}}, {{il bar → i bar}}.",
+     "examples": [
+      {
+       "it": "Guardo i film italiani.",
+       "tr": "Я смотрю итальянские фильмы."
+      }
+     ]
+    },
+    {
+     "title": "Мужские слова на -a",
+     "text": "{{il problema → i problemi}}, {{il programma}}, {{il pianeta}}.",
+     "examples": [
+      {
+       "it": "Il pianeta è in pericolo.",
+       "tr": "Планета в опасности."
+      }
+     ]
+    },
+    {
+     "title": "la persona, la gente",
+     "text": "{{la persona}} — всегда женский род, даже о мужчине; {{la gente}} — единственное число.",
+     "examples": [
+      {
+       "it": "Marco è una persona simpatica.",
+       "tr": "Марко — приятный человек."
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "i amici",
+     "right": "gli amici",
+     "why": "Перед гласной во множественном мужского рода — gli."
+    },
+    {
+     "wrong": "il studente",
+     "right": "lo studente",
+     "why": "s + согласная → lo."
+    },
+    {
+     "wrong": "la amica",
+     "right": "l'amica",
+     "why": "Перед гласной — l'."
+    },
+    {
+     "wrong": "gl'esami",
+     "right": "gli esami",
+     "why": "Во множественном апострофа нет."
+    },
+    {
+     "wrong": "le probleme",
+     "right": "i problemi",
+     "why": "problema — мужской род: i problemi."
+    }
+   ],
+   "examples": [
+    {
+     "it": "Prende gli ordini e parla con i clienti.",
+     "tr": "Он принимает заказы и разговаривает с клиентами."
+    },
+    {
+     "it": "Porta il cibo e le bevande.",
+     "tr": "Она приносит еду и напитки."
+    },
+    {
+     "it": "Lo zaino è sulla sedia.",
+     "tr": "Рюкзак на стуле."
+    },
+    {
+     "it": "Gli studenti fanno l'esame.",
+     "tr": "Студенты сдают экзамен."
+    },
+    {
+     "it": "L'amica di Anna è medico.",
+     "tr": "Подруга Анны — врач."
+    },
+    {
+     "it": "Le lezioni finiscono alle sei.",
+     "tr": "Уроки заканчиваются в шесть."
+    }
+   ],
+   "summary": "Мужской: **il / lo / l'** → **i / gli / gli**. Женский: **la / l'** → **le**. Перед гласной — **l'**, перед z и s + согласная — **lo**.",
+   "keyWords": [
+    {
+     "title": "Con lo e gli",
+     "ids": [
+      "w428",
+      "w584",
+      "w588",
+      "w534",
+      "w532",
+      "w419",
+      "w457",
+      "w519"
+     ]
+    },
+    {
+     "title": "Con l'",
+     "ids": [
+      "w086",
+      "w048",
+      "w162",
+      "w137",
+      "w404",
+      "w484",
+      "w356",
+      "w349",
+      "w307",
+      "w140"
+     ]
+    },
+    {
+     "title": "Attenzione al genere",
+     "ids": [
+      "w093",
+      "w596",
+      "w594"
+     ]
+    }
+   ]
+  },
+  "g4-preposizioni-articolate": {
+   "id": "g4-preposizioni-articolate",
+   "inBreve": [
+    "Предлоги {{a, di, da, in, su}} перед определённым артиклем **сливаются** с ним: {{a + il = al}}.",
+    "Форма артикля сохраняется: {{lo → allo}}, {{l' → all'}}, {{gli → agli}}, {{le → alle}}.",
+    "{{in}} становится {{ne-}}: {{nel, nella}}; {{di}} — {{de-}}: {{del, della}}."
+   ],
+   "formation": {
+    "steps": [
+     "Выбери предлог по смыслу (таблица «Значения»).",
+     "Определи артикль существительного: {{il}}, {{lo}}, {{l'}}, {{la}}, {{i}}, {{gli}}, {{le}}.",
+     "Соедини по таблице: {{su + la = sulla}}, {{in + gli = negli}}."
+    ]
+   },
+   "tables": [
+    {
+     "title": "Единственное число",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "il",
+       "lo",
+       "l'",
+       "la"
+      ],
+      [
+       "a",
+       "al",
+       "allo",
+       "all'",
+       "alla"
+      ],
+      [
+       "di",
+       "del",
+       "dello",
+       "dell'",
+       "della"
+      ],
+      [
+       "da",
+       "dal",
+       "dallo",
+       "dall'",
+       "dalla"
+      ],
+      [
+       "in",
+       "nel",
+       "nello",
+       "nell'",
+       "nella"
+      ],
+      [
+       "su",
+       "sul",
+       "sullo",
+       "sull'",
+       "sulla"
+      ]
+     ],
+     "note": "Перед гласной — с апострофом: {{all'una}}, {{dell'amico}}, {{nell'ufficio}}."
+    },
+    {
+     "title": "Множественное число",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "i",
+       "gli",
+       "le"
+      ],
+      [
+       "a",
+       "ai",
+       "agli",
+       "alle"
+      ],
+      [
+       "di",
+       "dei",
+       "degli",
+       "delle"
+      ],
+      [
+       "da",
+       "dai",
+       "dagli",
+       "dalle"
+      ],
+      [
+       "in",
+       "nei",
+       "negli",
+       "nelle"
+      ],
+      [
+       "su",
+       "sui",
+       "sugli",
+       "sulle"
+      ]
+     ],
+     "note": "{{con}} и {{per}} не сливаются: {{con gli amici}}, {{per il pranzo}}."
+    },
+    {
+     "title": "Значения",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "esempio"
+      ],
+      [
+       "a",
+       "alle otto · al cinema"
+      ],
+      [
+       "di",
+       "il libro del professore"
+      ],
+      [
+       "da",
+       "dal medico · dalle nove"
+      ],
+      [
+       "in",
+       "nella borsa · nel parco"
+      ],
+      [
+       "su",
+       "sul tavolo"
+      ]
+     ],
+     "note": "{{a}} — когда, куда; {{di}} — чей; {{da}} — к кому, с какого времени; {{in}} — в, внутри; {{su}} — на."
+    }
+   ],
+   "uses": [
+    {
+     "text": "Время",
+     "it": "Lavoro dalle nove alle cinque.",
+     "tr": "Я работаю с девяти до пяти."
+    },
+    {
+     "text": "Место — куда, где",
+     "it": "Vado al supermercato.",
+     "tr": "Я иду в супермаркет."
+    },
+    {
+     "text": "Принадлежность",
+     "it": "La macchina del mio vicino è rossa.",
+     "tr": "Машина моего соседа красная."
+    },
+    {
+     "text": "da + человек — к кому-то",
+     "it": "Domani vado dal dentista.",
+     "tr": "Завтра я иду к стоматологу."
+    },
+    {
+     "text": "На поверхности",
+     "it": "Le chiavi sono sul tavolo.",
+     "tr": "Ключи на столе."
+    }
+   ],
+   "exceptions": [
+    {
+     "title": "Без артикля — без слияния",
+     "text": "Устойчивые выражения: {{a casa}}, {{a letto}}, {{a scuola}}, {{in banca}}, {{in ufficio}}, {{in città}}, {{in centro}}.",
+     "examples": [
+      {
+       "it": "Vado a casa. / Vado in banca.",
+       "tr": "Я иду домой. / Я иду в банк."
+      }
+     ]
+    },
+    {
+     "title": "Часы",
+     "text": "Часы — всегда с артиклем: {{alle otto}}, {{dalle nove}}; но {{a mezzogiorno}}, {{a mezzanotte}}.",
+     "examples": [
+      {
+       "it": "Pranzo a mezzogiorno e ceno alle otto.",
+       "tr": "Я обедаю в полдень, а ужинаю в восемь."
+      }
+     ]
+    },
+    {
+     "title": "Города и страны",
+     "text": "Город — {{a}}, страна — {{in}}, без артикля.",
+     "examples": [
+      {
+       "it": "Abito a Lugano, in Svizzera.",
+       "tr": "Я живу в Лугано, в Швейцарии."
+      }
+     ]
+    },
+    {
+     "title": "da + человек",
+     "text": "«К кому-то / у кого-то» — {{da}}, с артиклем перед профессией.",
+     "examples": [
+      {
+       "it": "Stasera ceniamo da Marco.",
+       "tr": "Сегодня вечером ужинаем у Марко."
+      },
+      {
+       "it": "Vado dal medico.",
+       "tr": "Я иду к врачу."
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "Esco a le otto.",
+     "right": "Esco alle otto.",
+     "why": "a + le сливаются: alle."
+    },
+    {
+     "wrong": "Vado al casa.",
+     "right": "Vado a casa.",
+     "why": "a casa — без артикля."
+    },
+    {
+     "wrong": "Il libro di il professore.",
+     "right": "Il libro del professore.",
+     "why": "di + il = del."
+    },
+    {
+     "wrong": "Lavoro da le 9 a le 17.",
+     "right": "Lavoro dalle 9 alle 17.",
+     "why": "Часы — с артиклем и слитно."
+    },
+    {
+     "wrong": "Vado in la banca.",
+     "right": "Vado in banca.",
+     "why": "in banca — устойчивое, без артикля."
+    }
+   ],
+   "examples": [
+    {
+     "it": "Va all'officina alle otto.",
+     "tr": "Он идёт в мастерскую в восемь."
+    },
+    {
+     "it": "Lavora fino alle tredici.",
+     "tr": "Он работает до часу дня."
+    },
+    {
+     "it": "Va a letto prima delle undici.",
+     "tr": "Он ложится спать до одиннадцати."
+    },
+    {
+     "it": "Il gatto dorme sul divano.",
+     "tr": "Кошка спит на диване."
+    },
+    {
+     "it": "Nel fine settimana andiamo dai nonni.",
+     "tr": "На выходных мы едем к бабушке с дедушкой."
+    },
+    {
+     "it": "Il treno parte dal binario tre.",
+     "tr": "Поезд отправляется с третьего пути."
+    }
+   ],
+   "summary": "**a, di, da, in, su + артикль = одно слово**: al, del, dal, nel, sul. Часы — всегда **alle**. **a casa, in banca** — без артикля.",
+   "keyWords": [
+    {
+     "title": "Luogo e tempo",
+     "ids": [
+      "w255",
+      "w147",
+      "w144",
+      "w159",
+      "w348",
+      "w485",
+      "w174",
+      "w221",
+      "w480"
+     ]
+    }
+   ]
+  },
+  "g4-verbi-a-di": {
+   "id": "g4-verbi-a-di",
+   "inBreve": [
+    "Некоторые глаголы присоединяют второй глагол через предлог: {{comincio a lavorare}}, {{finisco di lavorare}}.",
+    "Предлог нужно **запоминать вместе с глаголом** — общего правила нет.",
+    "После {{volere}}, {{potere}}, {{dovere}}, {{sapere}}, {{piacere}} — **без предлога**: {{voglio dormire}}."
+   ],
+   "formation": {
+    "steps": [
+     "Проспрягай первый глагол: {{comincio, cominci…}}",
+     "Добавь предлог этого глагола: {{a}} или {{di}}.",
+     "Второй глагол — всегда инфинитив: {{a lavorare}}, {{di studiare}}."
+    ]
+   },
+   "tables": [
+    {
+     "title": "Глагол + a",
+     "header": true,
+     "rows": [
+      [
+       "verbo",
+       "esempio"
+      ],
+      [
+       "cominciare",
+       "comincio a lavorare"
+      ],
+      [
+       "imparare",
+       "imparo a guidare"
+      ],
+      [
+       "andare",
+       "vado a dormire"
+      ],
+      [
+       "riuscire",
+       "riesco a capire"
+      ],
+      [
+       "mettersi",
+       "mi metto a ridere"
+      ],
+      [
+       "aiutare",
+       "ti aiuto a cucinare"
+      ]
+     ],
+     "note": "Движение + цель — тоже {{a}}: {{vado a mangiare}}, {{vengo a trovarti}}."
+    },
+    {
+     "title": "Глагол + di",
+     "header": true,
+     "rows": [
+      [
+       "verbo",
+       "esempio"
+      ],
+      [
+       "finire",
+       "finisco di lavorare"
+      ],
+      [
+       "decidere",
+       "decido di partire"
+      ],
+      [
+       "cercare",
+       "cerco di capire"
+      ],
+      [
+       "smettere",
+       "smetto di fumare"
+      ],
+      [
+       "pensare",
+       "penso di cambiare casa"
+      ],
+      [
+       "ricordarsi",
+       "mi ricordo di chiamare"
+      ]
+     ],
+     "note": "{{smettere di}} — бросить привычку: {{smetto di fumare}}."
+    },
+    {
+     "title": "Без предлога",
+     "header": true,
+     "rows": [
+      [
+       "verbo",
+       "esempio"
+      ],
+      [
+       "volere",
+       "voglio dormire"
+      ],
+      [
+       "potere",
+       "posso venire"
+      ],
+      [
+       "dovere",
+       "devo lavorare"
+      ],
+      [
+       "sapere",
+       "so nuotare"
+      ],
+      [
+       "piacere",
+       "mi piace leggere"
+      ],
+      [
+       "preferire",
+       "preferisco restare"
+      ]
+     ],
+     "note": "Модальные глаголы и {{piacere}} — сразу инфинитив."
+    }
+   ],
+   "uses": [
+    {
+     "text": "Начало действия",
+     "it": "Domani comincio a lavorare alle sette.",
+     "tr": "Завтра я начинаю работать в семь."
+    },
+    {
+     "text": "Конец действия",
+     "it": "Finisco di lavorare tardi.",
+     "tr": "Я поздно заканчиваю работать."
+    },
+    {
+     "text": "Решение, попытка",
+     "it": "Ho deciso di imparare l'italiano.",
+     "tr": "Я решил выучить итальянский."
+    },
+    {
+     "text": "Цель движения",
+     "it": "Andiamo a mangiare una pizza?",
+     "tr": "Пойдём съедим пиццу?"
+    }
+   ],
+   "exceptions": [
+    {
+     "title": "pensare a / pensare di",
+     "text": "{{pensare a}} + кто-то — думать о ком-то; {{pensare di}} + инфинитив — собираться.",
+     "examples": [
+      {
+       "it": "Penso a mia madre.",
+       "tr": "Я думаю о маме."
+      },
+      {
+       "it": "Penso di partire domani.",
+       "tr": "Я собираюсь уехать завтра."
+      }
+     ]
+    },
+    {
+     "title": "В прошедшем времени",
+     "text": "Предлог остаётся: {{ho cominciato a lavorare}}, {{ho finito di studiare}}.",
+     "examples": [
+      {
+       "it": "Ha cominciato a piovere.",
+       "tr": "Начался дождь."
+      }
+     ]
+    },
+    {
+     "title": "riuscire a",
+     "text": "«Удаётся, получается». Спрягается как {{uscire}}: {{riesco, riesci, riesce}}.",
+     "examples": [
+      {
+       "it": "Non riesco a dormire.",
+       "tr": "Я не могу уснуть."
+      }
+     ]
+    },
+    {
+     "title": "Отрицание",
+     "text": "{{non}} перед инфинитивом меняет смысл: «стараюсь не…».",
+     "examples": [
+      {
+       "it": "Cerco di non mangiare troppo.",
+       "tr": "Стараюсь не есть слишком много."
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "Comincio lavorare.",
+     "right": "Comincio a lavorare.",
+     "why": "cominciare + a."
+    },
+    {
+     "wrong": "Finisco a lavorare.",
+     "right": "Finisco di lavorare.",
+     "why": "finire + di."
+    },
+    {
+     "wrong": "Voglio di dormire.",
+     "right": "Voglio dormire.",
+     "why": "После volere — без предлога."
+    },
+    {
+     "wrong": "Mi piace di leggere.",
+     "right": "Mi piace leggere.",
+     "why": "После piacere — без предлога."
+    },
+    {
+     "wrong": "Ho deciso a partire.",
+     "right": "Ho deciso di partire.",
+     "why": "decidere + di."
+    }
+   ],
+   "examples": [
+    {
+     "it": "Anna comincia a lavorare alle nove.",
+     "tr": "Анна начинает работать в девять."
+    },
+    {
+     "it": "Finisce di lavorare di notte.",
+     "tr": "Он заканчивает работать ночью."
+    },
+    {
+     "it": "Va a dormire presto.",
+     "tr": "Он рано ложится спать."
+    },
+    {
+     "it": "Cerco di non arrivare tardi.",
+     "tr": "Я стараюсь не опаздывать."
+    },
+    {
+     "it": "Mio padre ha smesso di fumare.",
+     "tr": "Мой отец бросил курить."
+    },
+    {
+     "it": "Voglio imparare a guidare.",
+     "tr": "Я хочу научиться водить машину."
+    }
+   ],
+   "summary": "**cominciare, imparare, andare, riuscire + a**; **finire, decidere, cercare, smettere + di**. После **volere, potere, dovere, sapere, piacere** — без предлога.",
+   "keyWords": [
+    {
+     "title": "Verbi con a",
+     "ids": [
+      "w363",
+      "w535",
+      "w545",
+      "w397"
+     ]
+    },
+    {
+     "title": "Verbi con di",
+     "ids": [
+      "w295",
+      "w415"
+     ]
+    }
+   ]
+  },
+  "g4-ore": {
+   "id": "g4-ore",
+   "inBreve": [
+    "«Который час?» — {{Che ore sono?}}; «Во сколько?» — {{A che ora…?}}",
+    "Ответ: {{Sono le otto}} (сейчас), {{alle otto}} (во сколько). Час — единственное число: {{È l'una}}, {{all'una}}.",
+    "Минуты: {{e un quarto}} (:15), {{e mezza}} (:30), {{meno un quarto}} (без пятнадцати)."
+   ],
+   "formation": {
+    "steps": [
+     "Сейчас: {{Sono le}} + число; но {{È l'una}}, {{È mezzogiorno}}, {{È mezzanotte}}.",
+     "Во сколько: {{alle}} + число; но {{all'una}}, {{a mezzogiorno}}, {{a mezzanotte}}.",
+     "Минуты: {{e}} + минуты после часа или {{meno}} + минуты до часа."
+    ]
+   },
+   "tables": [
+    {
+     "title": "Che ore sono?",
+     "header": true,
+     "rows": [
+      [
+       "ora",
+       "in italiano"
+      ],
+      [
+       "8:00",
+       "Sono le otto."
+      ],
+      [
+       "8:15",
+       "Sono le otto e un quarto."
+      ],
+      [
+       "8:30",
+       "Sono le otto e mezza."
+      ],
+      [
+       "8:45",
+       "Sono le nove meno un quarto."
+      ],
+      [
+       "8:50",
+       "Sono le nove meno dieci."
+      ],
+      [
+       "13:00",
+       "È l'una."
+      ],
+      [
+       "12:00",
+       "È mezzogiorno."
+      ]
+     ],
+     "note": "В расписаниях и официально — 24 часа: {{sono le venti e trenta}}."
+    },
+    {
+     "title": "A che ora?",
+     "header": true,
+     "rows": [
+      [
+       "ora",
+       "in italiano"
+      ],
+      [
+       "7:00",
+       "alle sette"
+      ],
+      [
+       "13:00",
+       "all'una"
+      ],
+      [
+       "12:00",
+       "a mezzogiorno"
+      ],
+      [
+       "24:00",
+       "a mezzanotte"
+      ],
+      [
+       "9 – 17",
+       "dalle nove alle diciassette"
+      ],
+      [
+       "≈ 19",
+       "verso le sette"
+      ]
+     ],
+     "note": "{{verso}} — около: {{verso le sette}}."
+    },
+    {
+     "title": "Части дня",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "ore"
+      ],
+      [
+       "la mattina",
+       "6 – 12"
+      ],
+      [
+       "il pomeriggio",
+       "13 – 18"
+      ],
+      [
+       "la sera",
+       "18 – 22"
+      ],
+      [
+       "la notte",
+       "22 – 6"
+      ]
+     ],
+     "note": "{{la mattina}} — по утрам (регулярно); {{di mattina}}, {{di sera}}, {{di notte}} — утром, вечером, ночью."
+    }
+   ],
+   "uses": [
+    {
+     "text": "Спросить время",
+     "it": "Scusi, che ore sono? — Sono le tre e mezza.",
+     "tr": "Извините, который час? — Половина четвёртого."
+    },
+    {
+     "text": "Расписание",
+     "it": "Il negozio è aperto dalle nove alle diciannove.",
+     "tr": "Магазин открыт с девяти до семи вечера."
+    },
+    {
+     "text": "Привычки",
+     "it": "Mi alzo alle sette e un quarto.",
+     "tr": "Я встаю в четверть восьмого."
+    },
+    {
+     "text": "Примерно",
+     "it": "Arrivo verso le otto.",
+     "tr": "Я приду около восьми."
+    }
+   ],
+   "exceptions": [
+    {
+     "title": "Час, полдень, полночь",
+     "text": "Единственное число: {{È l'una}}, {{È mezzogiorno}}; во сколько — {{all'una}}, {{a mezzogiorno}}.",
+     "examples": [
+      {
+       "it": "Pranzo all'una.",
+       "tr": "Я обедаю в час."
+      }
+     ]
+    },
+    {
+     "title": "Утро или вечер",
+     "text": "В разговоре — 12 часов + часть дня; в расписаниях — 24 часа.",
+     "examples": [
+      {
+       "it": "alle otto di sera = alle venti",
+       "tr": "в восемь вечера = в 20:00"
+      }
+     ]
+    },
+    {
+     "title": "mezza или mezzo",
+     "text": "Говорят и {{e mezza}}, и {{e mezzo}} — оба правильно.",
+     "examples": [
+      {
+       "it": "Sono le due e mezza.",
+       "tr": "Половина третьего."
+      }
+     ]
+    },
+    {
+     "title": "e → ed",
+     "text": "Перед словом на {{e-}} союз {{e}} часто становится {{ed}}.",
+     "examples": [
+      {
+       "it": "Saluta i figli ed esce.",
+       "tr": "Он прощается с детьми и выходит."
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "Sono l'una.",
+     "right": "È l'una.",
+     "why": "Один час — единственное число: è."
+    },
+    {
+     "wrong": "Esco a le otto.",
+     "right": "Esco alle otto.",
+     "why": "a + le = alle."
+    },
+    {
+     "wrong": "Alle una.",
+     "right": "All'una.",
+     "why": "Перед una — all'."
+    },
+    {
+     "wrong": "Sono le otto e trenta minuti.",
+     "right": "Sono le otto e mezza.",
+     "why": "Слово «минуты» не говорят; :30 — e mezza."
+    },
+    {
+     "wrong": "A che ore esci?",
+     "right": "A che ora esci?",
+     "why": "«Во сколько» — a che ora."
+    }
+   ],
+   "examples": [
+    {
+     "it": "Alle venti e trenta Anna esce di casa.",
+     "tr": "В 20:30 Анна выходит из дома."
+    },
+    {
+     "it": "Finisce di lavorare di notte, alle due e mezza.",
+     "tr": "Он заканчивает работать ночью, в половине третьего."
+    },
+    {
+     "it": "La lezione comincia alle nove meno un quarto.",
+     "tr": "Урок начинается без четверти девять."
+    },
+    {
+     "it": "Il sabato dormo fino alle dieci.",
+     "tr": "По субботам я сплю до десяти."
+    },
+    {
+     "it": "Ci vediamo verso mezzogiorno?",
+     "tr": "Увидимся около полудня?"
+    },
+    {
+     "it": "Che ore sono? — Sono le sei e dieci.",
+     "tr": "Который час? — Десять минут седьмого."
+    }
+   ],
+   "summary": "Сейчас: **sono le otto**, но **è l'una**. Во сколько: **alle otto**, **all'una**, **a mezzogiorno**. :15 **e un quarto**, :30 **e mezza**, :45 **meno un quarto**.",
+   "keyWords": [
+    {
+     "title": "L'ora",
+     "ids": [
+      "w106",
+      "w166",
+      "w224",
+      "w226",
+      "w232",
+      "w449"
+     ]
+    },
+    {
+     "title": "Parti del giorno",
+     "ids": [
+      "w152",
+      "w310",
+      "w156",
+      "w101"
+     ]
+    },
+    {
+     "title": "I giorni",
+     "ids": [
+      "w444",
+      "w445",
+      "w446",
+      "w160",
+      "w165"
      ]
     }
    ]

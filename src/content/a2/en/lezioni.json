@@ -1353,7 +1353,7 @@
     },
     {
      "title": "-isc- verbs",
-     "text": "{{finire, pulire, preferire, capire}} have {{-isc-}} in the tu form.",
+     "text": "{{finire}}, {{pulire}}, {{preferire}}, {{capire}} have {{-isc-}} in the tu form.",
      "examples": [
       {
        "it": "Capisci? — Sì, capisco.",
@@ -1450,7 +1450,7 @@
     "steps": [
      "Learn the {{io}} form — it shows the verb's type: {{faccio, vado, vengo}}.",
      "The {{loro}} form looks like io: {{vado → vanno}}, {{vengo → vengono}}.",
-     "{{noi}} and {{voi}} almost always come from the infinitive: {{andare → andiamo, andate}}."
+     "{{noi}} and {{voi}} almost always come from the infinitive: {{andare → andiamo}}, {{andate}}."
     ]
    },
    "tables": [
@@ -1501,7 +1501,7 @@
        "stanno"
       ]
      ],
-     "note": "{{dare}} works like {{stare}}: {{do, dai, dà, diamo, date, danno}}."
+     "note": "{{dare}} works like {{stare}}: {{do}}, {{dai}}, {{dà}}, {{diamo}}, {{date}}, {{danno}}."
     },
     {
      "title": "With -g-: io -go, loro -gono",
@@ -2017,7 +2017,7 @@
    ],
    "formation": {
     "steps": [
-     "Find **who** likes it: {{mi, ti, gli, le, ci, vi, gli}}.",
+     "Find **who** likes it: {{mi}}, {{ti}}, {{gli}}, {{le}}, {{ci}}, {{vi}}, {{gli}}.",
      "Find **what** is liked: one thing or several?",
      "One thing or a verb — {{piace / manca}}; several — {{piacciono / mancano}}."
     ]
@@ -2250,6 +2250,1092 @@
       "w034",
       "w033",
       "w188"
+     ]
+    }
+   ]
+  },
+  "g1-articoli-determinativi": {
+   "id": "g1-articoli-determinativi",
+   "inBreve": [
+    "The definite article (“the”) goes before a noun when it's clear what we mean: {{il libro}} — “the book”.",
+    "The form depends on **gender**, **number** and the **first letter** of the word: {{il}}, {{lo}}, {{l'}}, {{la}}, {{i}}, {{gli}}, {{le}}.",
+    "Italian uses it more than English: {{mi piace la pizza}} (I like pizza), {{mi lavo le mani}} (I wash my hands)."
+   ],
+   "formation": {
+    "steps": [
+     "Find the gender: {{-o}} is usually masculine, {{-a}} usually feminine, {{-e}} — check the dictionary.",
+     "Look at the first letter: consonant, vowel, or {{z}}, {{s}} + consonant, {{gn}}, {{ps}}.",
+     "Pick the article from the table; in the plural — {{i}}, {{gli}} or {{le}}."
+    ]
+   },
+   "tables": [
+    {
+     "title": "Masculine",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "singolare",
+       "plurale"
+      ],
+      [
+       "consonante",
+       "il libro",
+       "i libri"
+      ],
+      [
+       "z · s + cons. · gn · ps",
+       "lo studente",
+       "gli studenti"
+      ],
+      [
+       "vocale",
+       "l'amico",
+       "gli amici"
+      ]
+     ],
+     "note": "Masculine plural has two articles: {{i}} and {{gli}}."
+    },
+    {
+     "title": "Feminine",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "singolare",
+       "plurale"
+      ],
+      [
+       "consonante",
+       "la casa",
+       "le case"
+      ],
+      [
+       "vocale",
+       "l'amica",
+       "le amiche"
+      ]
+     ],
+     "note": "Feminine plural is always {{le}}, never with an apostrophe: {{le amiche}}."
+    },
+    {
+     "title": "How the noun changes",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "singolare",
+       "plurale"
+      ],
+      [
+       "-o (m.)",
+       "il libr|o",
+       "i libr|i"
+      ],
+      [
+       "-a (f.)",
+       "la cas|a",
+       "le cas|e"
+      ],
+      [
+       "-e (m.)",
+       "il ristorant|e",
+       "i ristorant|i"
+      ],
+      [
+       "-e (f.)",
+       "la chiav|e",
+       "le chiav|i"
+      ]
+     ],
+     "note": "Nouns in {{-e}} take {{-i}} in the plural, whatever the gender."
+    }
+   ],
+   "uses": [
+    {
+     "text": "Something specific",
+     "it": "Prendi il libro sul tavolo.",
+     "tr": "Take the book on the table."
+    },
+    {
+     "text": "Likes and general meaning",
+     "it": "Mi piace la musica.",
+     "tr": "I like music."
+    },
+    {
+     "text": "Days of the week — habitually",
+     "it": "Il sabato vado al mare.",
+     "tr": "On Saturdays I go to the seaside."
+    },
+    {
+     "text": "Body parts and clothes",
+     "it": "Mi lavo le mani.",
+     "tr": "I wash my hands."
+    },
+    {
+     "text": "Languages and countries",
+     "it": "L'italiano è bello. La Svizzera è piccola.",
+     "tr": "Italian is beautiful. Switzerland is small."
+    }
+   ],
+   "exceptions": [
+    {
+     "title": "Relatives with “my, your”",
+     "text": "In the singular — **no** article: {{mia madre}}, {{tuo fratello}}; in the plural — with it: {{i miei fratelli}}.",
+     "examples": [
+      {
+       "it": "Mia sorella abita a Roma.",
+       "tr": "My sister lives in Rome."
+      },
+      {
+       "it": "I miei genitori sono in Ucraina.",
+       "tr": "My parents are in Ukraine."
+      }
+     ]
+    },
+    {
+     "title": "Nouns in -e",
+     "text": "You can't see the gender — learn the word with its article: {{il ristorante}}, {{la chiave}}, {{l'esame}} (m.), {{la notte}}.",
+     "examples": [
+      {
+       "it": "il giornale · la lezione",
+       "tr": "newspaper · lesson"
+      }
+     ]
+    },
+    {
+     "title": "Invariable nouns",
+     "text": "Foreign and shortened nouns don't change in the plural — only the article does: {{il film → i film}}, {{la foto → le foto}}, {{il bar → i bar}}.",
+     "examples": [
+      {
+       "it": "Guardo i film italiani.",
+       "tr": "I watch Italian films."
+      }
+     ]
+    },
+    {
+     "title": "Masculine nouns in -a",
+     "text": "{{il problema → i problemi}}, {{il programma}}, {{il pianeta}}.",
+     "examples": [
+      {
+       "it": "Il pianeta è in pericolo.",
+       "tr": "The planet is in danger."
+      }
+     ]
+    },
+    {
+     "title": "la persona, la gente",
+     "text": "{{la persona}} is always feminine, even for a man; {{la gente}} is singular.",
+     "examples": [
+      {
+       "it": "Marco è una persona simpatica.",
+       "tr": "Marco is a nice person."
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "i amici",
+     "right": "gli amici",
+     "why": "Before a vowel, masculine plural takes gli."
+    },
+    {
+     "wrong": "il studente",
+     "right": "lo studente",
+     "why": "s + consonant → lo."
+    },
+    {
+     "wrong": "la amica",
+     "right": "l'amica",
+     "why": "Before a vowel — l'."
+    },
+    {
+     "wrong": "gl'esami",
+     "right": "gli esami",
+     "why": "No apostrophe in the plural."
+    },
+    {
+     "wrong": "le probleme",
+     "right": "i problemi",
+     "why": "problema is masculine: i problemi."
+    }
+   ],
+   "examples": [
+    {
+     "it": "Prende gli ordini e parla con i clienti.",
+     "tr": "He takes the orders and talks to the customers."
+    },
+    {
+     "it": "Porta il cibo e le bevande.",
+     "tr": "She brings the food and the drinks."
+    },
+    {
+     "it": "Lo zaino è sulla sedia.",
+     "tr": "The backpack is on the chair."
+    },
+    {
+     "it": "Gli studenti fanno l'esame.",
+     "tr": "The students are taking the exam."
+    },
+    {
+     "it": "L'amica di Anna è medico.",
+     "tr": "Anna's friend is a doctor."
+    },
+    {
+     "it": "Le lezioni finiscono alle sei.",
+     "tr": "Lessons finish at six."
+    }
+   ],
+   "summary": "Masculine: **il / lo / l'** → **i / gli / gli**. Feminine: **la / l'** → **le**. Before a vowel — **l'**, before z and s + consonant — **lo**.",
+   "keyWords": [
+    {
+     "title": "Con lo e gli",
+     "ids": [
+      "w428",
+      "w584",
+      "w588",
+      "w534",
+      "w532",
+      "w419",
+      "w457",
+      "w519"
+     ]
+    },
+    {
+     "title": "Con l'",
+     "ids": [
+      "w086",
+      "w048",
+      "w162",
+      "w137",
+      "w404",
+      "w484",
+      "w356",
+      "w349",
+      "w307",
+      "w140"
+     ]
+    },
+    {
+     "title": "Attenzione al genere",
+     "ids": [
+      "w093",
+      "w596",
+      "w594"
+     ]
+    }
+   ]
+  },
+  "g4-preposizioni-articolate": {
+   "id": "g4-preposizioni-articolate",
+   "inBreve": [
+    "The prepositions {{a, di, da, in, su}} **merge** with the definite article: {{a + il = al}}.",
+    "The article keeps its shape: {{lo → allo}}, {{l' → all'}}, {{gli → agli}}, {{le → alle}}.",
+    "{{in}} becomes {{ne-}}: {{nel, nella}}; {{di}} becomes {{de-}}: {{del, della}}."
+   ],
+   "formation": {
+    "steps": [
+     "Choose the preposition by meaning (see “Meanings”).",
+     "Find the noun's article: {{il}}, {{lo}}, {{l'}}, {{la}}, {{i}}, {{gli}}, {{le}}.",
+     "Combine them using the table: {{su + la = sulla}}, {{in + gli = negli}}."
+    ]
+   },
+   "tables": [
+    {
+     "title": "Singular",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "il",
+       "lo",
+       "l'",
+       "la"
+      ],
+      [
+       "a",
+       "al",
+       "allo",
+       "all'",
+       "alla"
+      ],
+      [
+       "di",
+       "del",
+       "dello",
+       "dell'",
+       "della"
+      ],
+      [
+       "da",
+       "dal",
+       "dallo",
+       "dall'",
+       "dalla"
+      ],
+      [
+       "in",
+       "nel",
+       "nello",
+       "nell'",
+       "nella"
+      ],
+      [
+       "su",
+       "sul",
+       "sullo",
+       "sull'",
+       "sulla"
+      ]
+     ],
+     "note": "Before a vowel — with an apostrophe: {{all'una}}, {{dell'amico}}, {{nell'ufficio}}."
+    },
+    {
+     "title": "Plural",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "i",
+       "gli",
+       "le"
+      ],
+      [
+       "a",
+       "ai",
+       "agli",
+       "alle"
+      ],
+      [
+       "di",
+       "dei",
+       "degli",
+       "delle"
+      ],
+      [
+       "da",
+       "dai",
+       "dagli",
+       "dalle"
+      ],
+      [
+       "in",
+       "nei",
+       "negli",
+       "nelle"
+      ],
+      [
+       "su",
+       "sui",
+       "sugli",
+       "sulle"
+      ]
+     ],
+     "note": "{{con}} and {{per}} don't merge: {{con gli amici}}, {{per il pranzo}}."
+    },
+    {
+     "title": "Meanings",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "esempio"
+      ],
+      [
+       "a",
+       "alle otto · al cinema"
+      ],
+      [
+       "di",
+       "il libro del professore"
+      ],
+      [
+       "da",
+       "dal medico · dalle nove"
+      ],
+      [
+       "in",
+       "nella borsa · nel parco"
+      ],
+      [
+       "su",
+       "sul tavolo"
+      ]
+     ],
+     "note": "{{a}} — when, where to; {{di}} — whose; {{da}} — to someone's place, since; {{in}} — in, inside; {{su}} — on."
+    }
+   ],
+   "uses": [
+    {
+     "text": "Time",
+     "it": "Lavoro dalle nove alle cinque.",
+     "tr": "I work from nine to five."
+    },
+    {
+     "text": "Place — where to, where",
+     "it": "Vado al supermercato.",
+     "tr": "I'm going to the supermarket."
+    },
+    {
+     "text": "Possession",
+     "it": "La macchina del mio vicino è rossa.",
+     "tr": "My neighbour's car is red."
+    },
+    {
+     "text": "da + person — to someone's place",
+     "it": "Domani vado dal dentista.",
+     "tr": "Tomorrow I'm going to the dentist's."
+    },
+    {
+     "text": "On a surface",
+     "it": "Le chiavi sono sul tavolo.",
+     "tr": "The keys are on the table."
+    }
+   ],
+   "exceptions": [
+    {
+     "title": "No article, no merging",
+     "text": "Set phrases: {{a casa}}, {{a letto}}, {{a scuola}}, {{in banca}}, {{in ufficio}}, {{in città}}, {{in centro}}.",
+     "examples": [
+      {
+       "it": "Vado a casa. / Vado in banca.",
+       "tr": "I'm going home. / I'm going to the bank."
+      }
+     ]
+    },
+    {
+     "title": "Clock times",
+     "text": "Clock times always take the article: {{alle otto}}, {{dalle nove}}; but {{a mezzogiorno}}, {{a mezzanotte}}.",
+     "examples": [
+      {
+       "it": "Pranzo a mezzogiorno e ceno alle otto.",
+       "tr": "I have lunch at noon and dinner at eight."
+      }
+     ]
+    },
+    {
+     "title": "Cities and countries",
+     "text": "City — {{a}}, country — {{in}}, no article.",
+     "examples": [
+      {
+       "it": "Abito a Lugano, in Svizzera.",
+       "tr": "I live in Lugano, in Switzerland."
+      }
+     ]
+    },
+    {
+     "title": "da + person",
+     "text": "“To / at someone's place” — {{da}}, with the article before a job title.",
+     "examples": [
+      {
+       "it": "Stasera ceniamo da Marco.",
+       "tr": "Tonight we're having dinner at Marco's."
+      },
+      {
+       "it": "Vado dal medico.",
+       "tr": "I'm going to the doctor's."
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "Esco a le otto.",
+     "right": "Esco alle otto.",
+     "why": "a + le merge: alle."
+    },
+    {
+     "wrong": "Vado al casa.",
+     "right": "Vado a casa.",
+     "why": "a casa takes no article."
+    },
+    {
+     "wrong": "Il libro di il professore.",
+     "right": "Il libro del professore.",
+     "why": "di + il = del."
+    },
+    {
+     "wrong": "Lavoro da le 9 a le 17.",
+     "right": "Lavoro dalle 9 alle 17.",
+     "why": "Times take the article, merged."
+    },
+    {
+     "wrong": "Vado in la banca.",
+     "right": "Vado in banca.",
+     "why": "in banca is a set phrase, no article."
+    }
+   ],
+   "examples": [
+    {
+     "it": "Va all'officina alle otto.",
+     "tr": "He goes to the workshop at eight."
+    },
+    {
+     "it": "Lavora fino alle tredici.",
+     "tr": "He works until one p.m."
+    },
+    {
+     "it": "Va a letto prima delle undici.",
+     "tr": "He goes to bed before eleven."
+    },
+    {
+     "it": "Il gatto dorme sul divano.",
+     "tr": "The cat sleeps on the sofa."
+    },
+    {
+     "it": "Nel fine settimana andiamo dai nonni.",
+     "tr": "At the weekend we go to our grandparents'."
+    },
+    {
+     "it": "Il treno parte dal binario tre.",
+     "tr": "The train leaves from platform three."
+    }
+   ],
+   "summary": "**a, di, da, in, su + article = one word**: al, del, dal, nel, sul. Times always **alle**. **a casa, in banca** — no article.",
+   "keyWords": [
+    {
+     "title": "Luogo e tempo",
+     "ids": [
+      "w255",
+      "w147",
+      "w144",
+      "w159",
+      "w348",
+      "w485",
+      "w174",
+      "w221",
+      "w480"
+     ]
+    }
+   ]
+  },
+  "g4-verbi-a-di": {
+   "id": "g4-verbi-a-di",
+   "inBreve": [
+    "Some verbs link to a second verb with a preposition: {{comincio a lavorare}}, {{finisco di lavorare}}.",
+    "**Learn the preposition together with the verb** — there's no general rule.",
+    "After {{volere}}, {{potere}}, {{dovere}}, {{sapere}}, {{piacere}} — **no preposition**: {{voglio dormire}}."
+   ],
+   "formation": {
+    "steps": [
+     "Conjugate the first verb: {{comincio, cominci…}}",
+     "Add that verb's preposition: {{a}} or {{di}}.",
+     "The second verb is always an infinitive: {{a lavorare}}, {{di studiare}}."
+    ]
+   },
+   "tables": [
+    {
+     "title": "Verb + a",
+     "header": true,
+     "rows": [
+      [
+       "verbo",
+       "esempio"
+      ],
+      [
+       "cominciare",
+       "comincio a lavorare"
+      ],
+      [
+       "imparare",
+       "imparo a guidare"
+      ],
+      [
+       "andare",
+       "vado a dormire"
+      ],
+      [
+       "riuscire",
+       "riesco a capire"
+      ],
+      [
+       "mettersi",
+       "mi metto a ridere"
+      ],
+      [
+       "aiutare",
+       "ti aiuto a cucinare"
+      ]
+     ],
+     "note": "Movement + purpose also takes {{a}}: {{vado a mangiare}}, {{vengo a trovarti}}."
+    },
+    {
+     "title": "Verb + di",
+     "header": true,
+     "rows": [
+      [
+       "verbo",
+       "esempio"
+      ],
+      [
+       "finire",
+       "finisco di lavorare"
+      ],
+      [
+       "decidere",
+       "decido di partire"
+      ],
+      [
+       "cercare",
+       "cerco di capire"
+      ],
+      [
+       "smettere",
+       "smetto di fumare"
+      ],
+      [
+       "pensare",
+       "penso di cambiare casa"
+      ],
+      [
+       "ricordarsi",
+       "mi ricordo di chiamare"
+      ]
+     ],
+     "note": "{{smettere di}} — to stop / quit: {{smetto di fumare}}."
+    },
+    {
+     "title": "No preposition",
+     "header": true,
+     "rows": [
+      [
+       "verbo",
+       "esempio"
+      ],
+      [
+       "volere",
+       "voglio dormire"
+      ],
+      [
+       "potere",
+       "posso venire"
+      ],
+      [
+       "dovere",
+       "devo lavorare"
+      ],
+      [
+       "sapere",
+       "so nuotare"
+      ],
+      [
+       "piacere",
+       "mi piace leggere"
+      ],
+      [
+       "preferire",
+       "preferisco restare"
+      ]
+     ],
+     "note": "Modal verbs and {{piacere}} take the infinitive directly."
+    }
+   ],
+   "uses": [
+    {
+     "text": "Starting something",
+     "it": "Domani comincio a lavorare alle sette.",
+     "tr": "Tomorrow I start work at seven."
+    },
+    {
+     "text": "Finishing something",
+     "it": "Finisco di lavorare tardi.",
+     "tr": "I finish work late."
+    },
+    {
+     "text": "Deciding, trying",
+     "it": "Ho deciso di imparare l'italiano.",
+     "tr": "I decided to learn Italian."
+    },
+    {
+     "text": "Purpose of movement",
+     "it": "Andiamo a mangiare una pizza?",
+     "tr": "Shall we go and have a pizza?"
+    }
+   ],
+   "exceptions": [
+    {
+     "title": "pensare a / pensare di",
+     "text": "{{pensare a}} + someone — to think about; {{pensare di}} + infinitive — to plan to.",
+     "examples": [
+      {
+       "it": "Penso a mia madre.",
+       "tr": "I'm thinking about my mother."
+      },
+      {
+       "it": "Penso di partire domani.",
+       "tr": "I'm thinking of leaving tomorrow."
+      }
+     ]
+    },
+    {
+     "title": "In the past",
+     "text": "The preposition stays: {{ho cominciato a lavorare}}, {{ho finito di studiare}}.",
+     "examples": [
+      {
+       "it": "Ha cominciato a piovere.",
+       "tr": "It started to rain."
+      }
+     ]
+    },
+    {
+     "title": "riuscire a",
+     "text": "“To manage to”. Conjugated like {{uscire}}: {{riesco, riesci, riesce}}.",
+     "examples": [
+      {
+       "it": "Non riesco a dormire.",
+       "tr": "I can't get to sleep."
+      }
+     ]
+    },
+    {
+     "title": "Negative",
+     "text": "{{non}} before the infinitive changes the meaning: “try not to…”.",
+     "examples": [
+      {
+       "it": "Cerco di non mangiare troppo.",
+       "tr": "I try not to eat too much."
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "Comincio lavorare.",
+     "right": "Comincio a lavorare.",
+     "why": "cominciare + a."
+    },
+    {
+     "wrong": "Finisco a lavorare.",
+     "right": "Finisco di lavorare.",
+     "why": "finire + di."
+    },
+    {
+     "wrong": "Voglio di dormire.",
+     "right": "Voglio dormire.",
+     "why": "No preposition after volere."
+    },
+    {
+     "wrong": "Mi piace di leggere.",
+     "right": "Mi piace leggere.",
+     "why": "No preposition after piacere."
+    },
+    {
+     "wrong": "Ho deciso a partire.",
+     "right": "Ho deciso di partire.",
+     "why": "decidere + di."
+    }
+   ],
+   "examples": [
+    {
+     "it": "Anna comincia a lavorare alle nove.",
+     "tr": "Anna starts work at nine."
+    },
+    {
+     "it": "Finisce di lavorare di notte.",
+     "tr": "He finishes work at night."
+    },
+    {
+     "it": "Va a dormire presto.",
+     "tr": "He goes to bed early."
+    },
+    {
+     "it": "Cerco di non arrivare tardi.",
+     "tr": "I try not to be late."
+    },
+    {
+     "it": "Mio padre ha smesso di fumare.",
+     "tr": "My father has quit smoking."
+    },
+    {
+     "it": "Voglio imparare a guidare.",
+     "tr": "I want to learn to drive."
+    }
+   ],
+   "summary": "**cominciare, imparare, andare, riuscire + a**; **finire, decidere, cercare, smettere + di**. After **volere, potere, dovere, sapere, piacere** — no preposition.",
+   "keyWords": [
+    {
+     "title": "Verbi con a",
+     "ids": [
+      "w363",
+      "w535",
+      "w545",
+      "w397"
+     ]
+    },
+    {
+     "title": "Verbi con di",
+     "ids": [
+      "w295",
+      "w415"
+     ]
+    }
+   ]
+  },
+  "g4-ore": {
+   "id": "g4-ore",
+   "inBreve": [
+    "“What time is it?” — {{Che ore sono?}}; “At what time?” — {{A che ora…?}}",
+    "Answer: {{Sono le otto}} (now), {{alle otto}} (at). One o'clock is singular: {{È l'una}}, {{all'una}}.",
+    "Minutes: {{e un quarto}} (:15), {{e mezza}} (:30), {{meno un quarto}} (quarter to)."
+   ],
+   "formation": {
+    "steps": [
+     "Now: {{Sono le}} + number; but {{È l'una}}, {{È mezzogiorno}}, {{È mezzanotte}}.",
+     "At what time: {{alle}} + number; but {{all'una}}, {{a mezzogiorno}}, {{a mezzanotte}}.",
+     "Minutes: {{e}} + minutes past, or {{meno}} + minutes to."
+    ]
+   },
+   "tables": [
+    {
+     "title": "Che ore sono?",
+     "header": true,
+     "rows": [
+      [
+       "ora",
+       "in italiano"
+      ],
+      [
+       "8:00",
+       "Sono le otto."
+      ],
+      [
+       "8:15",
+       "Sono le otto e un quarto."
+      ],
+      [
+       "8:30",
+       "Sono le otto e mezza."
+      ],
+      [
+       "8:45",
+       "Sono le nove meno un quarto."
+      ],
+      [
+       "8:50",
+       "Sono le nove meno dieci."
+      ],
+      [
+       "13:00",
+       "È l'una."
+      ],
+      [
+       "12:00",
+       "È mezzogiorno."
+      ]
+     ],
+     "note": "Timetables and formal speech use the 24-hour clock: {{sono le venti e trenta}}."
+    },
+    {
+     "title": "A che ora?",
+     "header": true,
+     "rows": [
+      [
+       "ora",
+       "in italiano"
+      ],
+      [
+       "7:00",
+       "alle sette"
+      ],
+      [
+       "13:00",
+       "all'una"
+      ],
+      [
+       "12:00",
+       "a mezzogiorno"
+      ],
+      [
+       "24:00",
+       "a mezzanotte"
+      ],
+      [
+       "9 – 17",
+       "dalle nove alle diciassette"
+      ],
+      [
+       "≈ 19",
+       "verso le sette"
+      ]
+     ],
+     "note": "{{verso}} — around: {{verso le sette}}."
+    },
+    {
+     "title": "Parts of the day",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "ore"
+      ],
+      [
+       "la mattina",
+       "6 – 12"
+      ],
+      [
+       "il pomeriggio",
+       "13 – 18"
+      ],
+      [
+       "la sera",
+       "18 – 22"
+      ],
+      [
+       "la notte",
+       "22 – 6"
+      ]
+     ],
+     "note": "{{la mattina}} — in the mornings (habit); {{di mattina}}, {{di sera}}, {{di notte}} — in the morning, evening, at night."
+    }
+   ],
+   "uses": [
+    {
+     "text": "Asking the time",
+     "it": "Scusi, che ore sono? — Sono le tre e mezza.",
+     "tr": "Excuse me, what time is it? — Half past three."
+    },
+    {
+     "text": "Opening hours",
+     "it": "Il negozio è aperto dalle nove alle diciannove.",
+     "tr": "The shop is open from nine to seven p.m."
+    },
+    {
+     "text": "Habits",
+     "it": "Mi alzo alle sette e un quarto.",
+     "tr": "I get up at quarter past seven."
+    },
+    {
+     "text": "Roughly",
+     "it": "Arrivo verso le otto.",
+     "tr": "I'll arrive around eight."
+    }
+   ],
+   "exceptions": [
+    {
+     "title": "One, noon, midnight",
+     "text": "Singular: {{È l'una}}, {{È mezzogiorno}}; at what time — {{all'una}}, {{a mezzogiorno}}.",
+     "examples": [
+      {
+       "it": "Pranzo all'una.",
+       "tr": "I have lunch at one."
+      }
+     ]
+    },
+    {
+     "title": "Morning or evening",
+     "text": "In conversation — 12-hour clock + part of the day; in timetables — 24-hour.",
+     "examples": [
+      {
+       "it": "alle otto di sera = alle venti",
+       "tr": "at eight p.m. = at 20:00"
+      }
+     ]
+    },
+    {
+     "title": "mezza or mezzo",
+     "text": "Both {{e mezza}} and {{e mezzo}} are correct.",
+     "examples": [
+      {
+       "it": "Sono le due e mezza.",
+       "tr": "It's half past two."
+      }
+     ]
+    },
+    {
+     "title": "e → ed",
+     "text": "Before a word starting with {{e-}}, {{e}} often becomes {{ed}}.",
+     "examples": [
+      {
+       "it": "Saluta i figli ed esce.",
+       "tr": "He says goodbye to the children and goes out."
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "Sono l'una.",
+     "right": "È l'una.",
+     "why": "One o'clock is singular: è."
+    },
+    {
+     "wrong": "Esco a le otto.",
+     "right": "Esco alle otto.",
+     "why": "a + le = alle."
+    },
+    {
+     "wrong": "Alle una.",
+     "right": "All'una.",
+     "why": "Before una — all'."
+    },
+    {
+     "wrong": "Sono le otto e trenta minuti.",
+     "right": "Sono le otto e mezza.",
+     "why": "Don't say “minuti”; :30 is e mezza."
+    },
+    {
+     "wrong": "A che ore esci?",
+     "right": "A che ora esci?",
+     "why": "“At what time” is a che ora."
+    }
+   ],
+   "examples": [
+    {
+     "it": "Alle venti e trenta Anna esce di casa.",
+     "tr": "At 8:30 p.m. Anna leaves the house."
+    },
+    {
+     "it": "Finisce di lavorare di notte, alle due e mezza.",
+     "tr": "He finishes work at night, at half past two."
+    },
+    {
+     "it": "La lezione comincia alle nove meno un quarto.",
+     "tr": "The lesson starts at quarter to nine."
+    },
+    {
+     "it": "Il sabato dormo fino alle dieci.",
+     "tr": "On Saturdays I sleep until ten."
+    },
+    {
+     "it": "Ci vediamo verso mezzogiorno?",
+     "tr": "Shall we meet around noon?"
+    },
+    {
+     "it": "Che ore sono? — Sono le sei e dieci.",
+     "tr": "What time is it? — Ten past six."
+    }
+   ],
+   "summary": "Now: **sono le otto**, but **è l'una**. At: **alle otto**, **all'una**, **a mezzogiorno**. :15 **e un quarto**, :30 **e mezza**, :45 **meno un quarto**.",
+   "keyWords": [
+    {
+     "title": "L'ora",
+     "ids": [
+      "w106",
+      "w166",
+      "w224",
+      "w226",
+      "w232",
+      "w449"
+     ]
+    },
+    {
+     "title": "Parti del giorno",
+     "ids": [
+      "w152",
+      "w310",
+      "w156",
+      "w101"
+     ]
+    },
+    {
+     "title": "I giorni",
+     "ids": [
+      "w444",
+      "w445",
+      "w446",
+      "w160",
+      "w165"
      ]
     }
    ]
