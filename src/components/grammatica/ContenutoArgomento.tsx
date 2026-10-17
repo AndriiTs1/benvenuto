@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import { Tr } from "@/components/Tr";
+import type { TraduzioniParticipi } from "@/content/a2/grammatica";
 import type { Locale } from "@/lib/lingue";
 
 // Sezioni di un argomento di grammar.json, nell'ordine dei campi. Testi nella lingua delle
@@ -7,7 +8,8 @@ import type { Locale } from "@/lib/lingue";
 
 type Tabella = string[][];
 
-const NASCOSTI = new Set(["id", "group", "title", "lesson", "source"]);
+// irregular_participles_tr non è una sezione: dà la terza colonna di irregular_participles.
+const NASCOSTI = new Set(["id", "group", "title", "lesson", "source", "irregular_participles_tr"]);
 
 const TITOLI_TABELLE: Record<string, string> = {
   table: "Tabella",
@@ -97,11 +99,21 @@ export function Sezione({ titolo, children }: { titolo: string; children: ReactN
   );
 }
 
-export function ContenutoArgomento({ contenuto, lingua }: { contenuto: Record<string, unknown>; lingua: Locale }) {
-  return <div className="space-y-6">{sezioni(contenuto, lingua)}</div>;
+// lingua: lingua in cui è scritto il contenuto (ru se manca quella scelta);
+// locale: lingua scelta (cookie bv_lang), per i campi che hanno già tutte le traduzioni.
+export function ContenutoArgomento({
+  contenuto,
+  lingua,
+  locale,
+}: {
+  contenuto: Record<string, unknown>;
+  lingua: Locale;
+  locale: Locale;
+}) {
+  return <div className="space-y-6">{sezioni(contenuto, lingua, locale)}</div>;
 }
 
-function sezioni(oggetto: Record<string, unknown>, lingua: Locale): ReactNode[] {
+function sezioni(oggetto: Record<string, unknown>, lingua: Locale, locale: Locale): ReactNode[] {
   const risultato: ReactNode[] = [];
   const fatti = new Set<string>();
 
@@ -145,6 +157,16 @@ function sezioni(oggetto: Record<string, unknown>, lingua: Locale): ReactNode[] 
           <Righe testi={valore} lingua={lingua} />
         </Sezione>,
       );
+    } else if (chiave === "irregular_participles" && eTabella(valore)) {
+      risultato.push(
+        <Sezione key={chiave} titolo={TITOLI_TABELLE[chiave]}>
+          <TabellaParticipi
+            righe={valore}
+            traduzioni={(oggetto.irregular_participles_tr ?? {}) as TraduzioniParticipi}
+            locale={locale}
+          />
+        </Sezione>,
+      );
     } else if (eTabella(valore)) {
       risultato.push(
         <Sezione key={chiave} titolo={TITOLI_TABELLE[chiave] ?? maiuscola(chiave)}>
@@ -162,7 +184,7 @@ function sezioni(oggetto: Record<string, unknown>, lingua: Locale): ReactNode[] 
               {title}
             </Tr>
           )}
-          {sezioni(resto, lingua)}
+          {sezioni(resto, lingua, locale)}
         </section>,
       );
     }
@@ -258,6 +280,47 @@ function TabellaCard({ righe, intestazione }: { righe: Tabella; intestazione: bo
               )}
             </tr>
           ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
+// Participi irregolari: infinito | participio | traduzione. Il participio è ciò che va
+// ricordato (grassetto, colore della grammatica). Sotto 640px la traduzione va a capo
+// sotto l'infinito, in piccolo: tre colonne a 375px non entrerebbero.
+function TabellaParticipi({
+  righe,
+  traduzioni,
+  locale,
+}: {
+  righe: Tabella;
+  traduzioni: TraduzioniParticipi;
+  locale: Locale;
+}) {
+  return (
+    <div className="overflow-hidden rounded-2xl bg-card">
+      <table lang="it" className="w-full border-collapse text-[15px] leading-snug">
+        <tbody>
+          {righe.map(([infinito, participio], r) => {
+            const traduzione = traduzioni[infinito]?.[locale];
+            return (
+              <tr key={r} className={r > 0 ? "border-t border-separator" : ""}>
+                <td className="px-4 py-2.5 align-top">
+                  {infinito}
+                  {traduzione && (
+                    <Tr locale={locale} size="xs" className="block sm:hidden">
+                      {traduzione}
+                    </Tr>
+                  )}
+                </td>
+                <td className="px-4 py-2.5 align-top font-semibold whitespace-nowrap text-grammar">{participio}</td>
+                <td className="hidden px-4 py-2.5 align-top sm:table-cell">
+                  {traduzione && <Tr locale={locale}>{traduzione}</Tr>}
+                </td>
+              </tr>
+            );
+          })}
         </tbody>
       </table>
     </div>

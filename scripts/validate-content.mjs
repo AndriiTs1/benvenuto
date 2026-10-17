@@ -6,6 +6,7 @@ import path from "node:path";
 const CARTELLA = path.join(process.cwd(), "src/content/a2");
 const errori = [];
 const leggi = (file) => JSON.parse(readFileSync(file, "utf8"));
+const testo = (v) => typeof v === "string" && v.trim() !== "";
 
 const meta = leggi(path.join(CARTELLA, "meta.json"));
 
@@ -52,6 +53,18 @@ for (const lingua of lingue) {
     if (!argomenti.has(id)) errori.push(`${lingua}/curriculum: argomento ${id} assente in grammar.json`);
   }
   for (const t of grammar.topics) {
+    // irregular_participles_tr: traduzione ru/uk/en per ogni infinito di irregular_participles.
+    if (Array.isArray(t.irregular_participles)) {
+      const tr = t.irregular_participles_tr;
+      if (!tr || typeof tr !== "object") {
+        errori.push(`${lingua}/grammar: ${t.id} senza irregular_participles_tr`);
+      } else {
+        for (const [infinito] of t.irregular_participles) {
+          const mancanti = ["ru", "uk", "en"].filter((l) => !testo(tr[infinito]?.[l]));
+          if (mancanti.length) errori.push(`${lingua}/grammar: ${t.id} "${infinito}" senza traduzione ${mancanti.join(", ")}`);
+        }
+      }
+    }
     if (!nelCurriculum.has(t.id)) errori.push(`${lingua}/grammar: argomento ${t.id} fuori dal curriculum`);
     if (!meta.grammarGroups[String(t.group)]) errori.push(`${lingua}/grammar: gruppo ${t.group} assente in meta (${t.id})`);
     if (typeof t.lesson !== "string") errori.push(`${lingua}/grammar: lesson mancante (${t.id})`);
@@ -94,7 +107,6 @@ for (const lingua of lingue) {
 
 // Lezioni v2 (lezioni.json): campi obbligatori, id = topicId, stesse lezioni in tutte le lingue.
 const avvisi = [];
-const testo = (v) => typeof v === "string" && v.trim() !== "";
 const esempi = (v) => Array.isArray(v) && v.every((e) => testo(e?.it) && testo(e?.tr));
 const CAMPI = {
   inBreve: (v) => Array.isArray(v) && v.length > 0 && v.every(testo),

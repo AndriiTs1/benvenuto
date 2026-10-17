@@ -1347,7 +1347,259 @@
      "è passato con il rosso",
      "ha passato la serata a casa"
     ]
-   ]
+   ],
+   "irregular_participles_tr": {
+    "fare": {
+     "ru": "делать",
+     "uk": "робити",
+     "en": "to do, to make"
+    },
+    "leggere": {
+     "ru": "читать",
+     "uk": "читати",
+     "en": "to read"
+    },
+    "scrivere": {
+     "ru": "писать",
+     "uk": "писати",
+     "en": "to write"
+    },
+    "dire": {
+     "ru": "сказать, говорить",
+     "uk": "сказати, казати",
+     "en": "to say, to tell"
+    },
+    "prendere": {
+     "ru": "брать, взять",
+     "uk": "брати, взяти",
+     "en": "to take"
+    },
+    "mettere": {
+     "ru": "класть, ставить, надевать",
+     "uk": "класти, ставити, вдягати",
+     "en": "to put, to put on"
+    },
+    "chiedere": {
+     "ru": "спрашивать, просить",
+     "uk": "питати, просити",
+     "en": "to ask"
+    },
+    "vedere": {
+     "ru": "видеть",
+     "uk": "бачити",
+     "en": "to see"
+    },
+    "rimanere": {
+     "ru": "оставаться",
+     "uk": "залишатися",
+     "en": "to stay, to remain"
+    },
+    "correre": {
+     "ru": "бегать",
+     "uk": "бігати",
+     "en": "to run"
+    },
+    "piangere": {
+     "ru": "плакать",
+     "uk": "плакати",
+     "en": "to cry"
+    },
+    "aprire": {
+     "ru": "открывать",
+     "uk": "відчиняти",
+     "en": "to open"
+    },
+    "bere": {
+     "ru": "пить",
+     "uk": "пити",
+     "en": "to drink"
+    },
+    "venire": {
+     "ru": "приходить, приезжать",
+     "uk": "приходити, приїжджати",
+     "en": "to come"
+    },
+    "essere / stare": {
+     "ru": "быть / находиться",
+     "uk": "бути / перебувати",
+     "en": "to be / to stay"
+    },
+    "nascere": {
+     "ru": "родиться",
+     "uk": "народитися",
+     "en": "to be born"
+    },
+    "morire": {
+     "ru": "умереть",
+     "uk": "померти",
+     "en": "to die"
+    },
+    "muoversi": {
+     "ru": "двигаться",
+     "uk": "рухатися",
+     "en": "to move"
+    },
+    "piacere": {
+     "ru": "нравиться",
+     "uk": "подобатися",
+     "en": "to like (to be pleasing)"
+    },
+    "chiudere": {
+     "ru": "закрывать",
+     "uk": "зачиняти",
+     "en": "to close"
+    },
+    "vincere": {
+     "ru": "выигрывать",
+     "uk": "вигравати",
+     "en": "to win"
+    },
+    "perdere": {
+     "ru": "терять, проигрывать",
+     "uk": "губити, програвати",
+     "en": "to lose"
+    },
+    "spegnere": {
+     "ru": "выключать, гасить",
+     "uk": "вимикати, гасити",
+     "en": "to switch off"
+    },
+    "accendere": {
+     "ru": "включать, зажигать",
+     "uk": "вмикати, запалювати",
+     "en": "to switch on, to light"
+    },
+    "scegliere": {
+     "ru": "выбирать",
+     "uk": "обирати",
+     "en": "to choose"
+    },
+    "spendere": {
+     "ru": "тратить (деньги)",
+     "uk": "витрачати (гроші)",
+     "en": "to spend (money)"
+    },
+    "scendere": {
+     "ru": "спускаться, выходить (из транспорта)",
+     "uk": "спускатися, виходити (з транспорту)",
+     "en": "to go down, to get off"
+    },
+    "spingere": {
+     "ru": "толкать",
+     "uk": "штовхати",
+     "en": "to push"
+    },
+    "succedere": {
+     "ru": "случаться",
+     "uk": "траплятися",
+     "en": "to happen"
+    },
+    "promettere": {
+     "ru": "обещать",
+     "uk": "обіцяти",
+     "en": "to promise"
+    },
+    "permettere": {
+     "ru": "разрешать",
+     "uk": "дозволяти",
+     "en": "to allow"
+    },
+    "proporre": {
+     "ru": "предлагать",
+     "uk": "пропонувати",
+     "en": "to propose, to suggest"
+    },
+    "reggere": {
+     "ru": "держать, выдерживать",
+     "uk": "тримати, витримувати",
+     "en": "to hold, to bear"
+    },
+    "ridere": {
+     "ru": "смеяться",
+     "uk": "сміятися",
+     "en": "to laugh"
+    },
+    "ridurre": {
+     "ru": "уменьшать, сокращать",
+     "uk": "зменшувати, скорочувати",
+     "en": "to reduce"
+    },
+    "correggere": {
+     "ru": "исправлять",
+     "uk": "виправляти",
+     "en": "to correct"
+    },
+    "rispondere": {
+     "ru": "отвечать",
+     "uk": "відповідати",
+     "en": "to answer"
+    },
+    "decidere": {
+     "ru": "решать",
+     "uk": "вирішувати",
+     "en": "to decide"
+    },
+    "rompere": {
+     "ru": "ломать, разбивать",
+     "uk": "ламати, розбивати",
+     "en": "to break"
+    },
+    "dipingere": {
+     "ru": "рисовать красками",
+     "uk": "малювати фарбами",
+     "en": "to paint"
+    },
+    "sciogliere": {
+     "ru": "растворять, развязывать",
+     "uk": "розчиняти, розв'язувати",
+     "en": "to melt, to untie"
+    },
+    "dirigere": {
+     "ru": "руководить, дирижировать",
+     "uk": "керувати, диригувати",
+     "en": "to direct, to manage"
+    },
+    "discutere": {
+     "ru": "обсуждать, спорить",
+     "uk": "обговорювати, сперечатися",
+     "en": "to discuss, to argue"
+    },
+    "soffrire": {
+     "ru": "страдать",
+     "uk": "страждати",
+     "en": "to suffer"
+    },
+    "offrire": {
+     "ru": "предлагать, угощать",
+     "uk": "пропонувати, пригощати",
+     "en": "to offer"
+    },
+    "stringere": {
+     "ru": "сжимать, пожимать",
+     "uk": "стискати, тиснути",
+     "en": "to squeeze, to shake (hands)"
+    },
+    "togliere": {
+     "ru": "снимать, убирать",
+     "uk": "знімати, прибирати",
+     "en": "to take off, to remove"
+    },
+    "tradurre": {
+     "ru": "переводить",
+     "uk": "перекладати",
+     "en": "to translate"
+    },
+    "crescere": {
+     "ru": "расти",
+     "uk": "рости",
+     "en": "to grow"
+    },
+    "vivere": {
+     "ru": "жить",
+     "uk": "жити",
+     "en": "to live"
+    }
+   }
   },
   {
    "id": "g5-reciproci",

@@ -83,6 +83,10 @@ export async function unitaPerSlug(locale: Locale): Promise<Record<string, numbe
   return Object.fromEntries(argomenti.map((a) => [a.slug, a.unita]));
 }
 
+// irregular_participles_tr in grammar.json: infinito (come nella prima cella di
+// irregular_participles) → traduzione in ogni lingua delle spiegazioni.
+export type TraduzioniParticipi = Record<string, Partial<Record<Locale, string>>>;
+
 export type ParolaChiave = {
   id: string;
   it: string;

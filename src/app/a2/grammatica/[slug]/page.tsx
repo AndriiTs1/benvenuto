@@ -55,7 +55,7 @@ export default async function ArgomentoPage({ params }: PageProps<"/a2/grammatic
           <LezioneV2 lezione={v2.lezione} lingua={v2.lingua} />
         </>
       ) : (
-        <ContenutoArgomento contenuto={contenuto} lingua={lingua} />
+        <ContenutoArgomento contenuto={contenuto} lingua={lingua} locale={locale} />
       )}
 
       {gruppiParole.length > 0 && <ParoleChiave gruppi={gruppiParole} />}
