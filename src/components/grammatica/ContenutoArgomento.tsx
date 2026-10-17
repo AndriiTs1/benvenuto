@@ -160,7 +160,7 @@ function sezioni(oggetto: Record<string, unknown>, lingua: Locale, locale: Local
     } else if (chiave === "irregular_participles" && eTabella(valore)) {
       risultato.push(
         <Sezione key={chiave} titolo={TITOLI_TABELLE[chiave]}>
-          <TabellaParticipi
+          <GrigliaParticipi
             righe={valore}
             traduzioni={(oggetto.irregular_participles_tr ?? {}) as TraduzioniParticipi}
             locale={locale}
@@ -286,10 +286,10 @@ function TabellaCard({ righe, intestazione }: { righe: Tabella; intestazione: bo
   );
 }
 
-// Participi irregolari: infinito | participio | traduzione. Il participio è ciò che va
-// ricordato (grassetto, colore della grammatica). Sotto 640px la traduzione va a capo
-// sotto l'infinito, in piccolo: tre colonne a 375px non entrerebbero.
-function TabellaParticipi({
+// Participi irregolari: griglia di schede (1 colonna, 2 da md), riempita per righe come
+// nell'array. In ogni cella "infinito → participio" (il participio è ciò che va ricordato)
+// e sotto la traduzione, se c'è. Separatori come nelle tabelle, anche verticale da md.
+function GrigliaParticipi({
   righe,
   traduzioni,
   locale,
@@ -299,30 +299,32 @@ function TabellaParticipi({
   locale: Locale;
 }) {
   return (
-    <div className="overflow-hidden rounded-2xl bg-card">
-      <table lang="it" className="w-full border-collapse text-[15px] leading-snug">
-        <tbody>
-          {righe.map(([infinito, participio], r) => {
-            const traduzione = traduzioni[infinito]?.[locale];
-            return (
-              <tr key={r} className={r > 0 ? "border-t border-separator" : ""}>
-                <td className="px-4 py-2.5 align-top">
-                  {infinito}
-                  {traduzione && (
-                    <Tr locale={locale} size="xs" className="block sm:hidden">
-                      {traduzione}
-                    </Tr>
-                  )}
-                </td>
-                <td className="px-4 py-2.5 align-top font-semibold whitespace-nowrap text-grammar">{participio}</td>
-                <td className="hidden px-4 py-2.5 align-top sm:table-cell">
-                  {traduzione && <Tr locale={locale}>{traduzione}</Tr>}
-                </td>
-              </tr>
-            );
-          })}
-        </tbody>
-      </table>
-    </div>
+    <ul className="grid grid-cols-1 overflow-hidden rounded-2xl bg-card md:grid-cols-2">
+      {righe.map(([infinito, participio], i) => {
+        const traduzione = traduzioni[infinito]?.[locale];
+        return (
+          <li
+            key={i}
+            className={`border-separator px-4 py-3 ${i > 0 ? "border-t" : ""} ${i === 1 ? "md:border-t-0" : ""} ${
+              i % 2 === 1 ? "md:border-l" : ""
+            }`}
+          >
+            <p lang="it" className="text-[17px] leading-snug">
+              {infinito}
+              <span aria-hidden="true" className="text-label-2">
+                {" → "}
+              </span>
+              <span className="sr-only">: </span>
+              <span className="font-semibold text-grammar">{participio}</span>
+            </p>
+            {traduzione && (
+              <Tr locale={locale} as="p" className="mt-0.5 text-[15px] leading-snug">
+                {traduzione}
+              </Tr>
+            )}
+          </li>
+        );
+      })}
+    </ul>
   );
 }
