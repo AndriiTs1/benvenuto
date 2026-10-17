@@ -117,19 +117,30 @@ export async function getParoleChiave(
     .filter((g) => g.parole.length > 0);
 }
 
+// Traduzioni di una parola di vocab.json: ru sempre, uk ed en dove ci sono.
+export type TraduzioniParola = { ru: string } & Partial<Record<Exclude<Locale, "ru">, string>>;
+
+// Traduzione nella lingua scelta (cookie bv_lang); se manca o è vuota, il russo.
+// Da usare ovunque si mostri una parola (parole chiave, griglie, Vocabolario).
+export function traduzioneParola(parola: TraduzioniParola, locale: Locale): { testo: string; lingua: Locale } {
+  const propria = locale === DEFAULT_LOCALE ? undefined : parola[locale]?.trim();
+  return propria ? { testo: propria, lingua: locale } : { testo: parola.ru, lingua: DEFAULT_LOCALE };
+}
+
 async function risolviParole(locale: Locale, ids: string[]): Promise<ParolaChiave[]> {
   const { vocab } = await getContent(locale);
-  const perId = new Map(vocab.words.map((w) => [w.id, w as typeof w & Partial<Record<Locale | "irregular" | "aux" | "participle", string>>]));
+  type Parola = (typeof vocab.words)[number] & TraduzioniParola & Partial<Record<"irregular" | "aux" | "participle", string | null>>;
+  const perId = new Map(vocab.words.map((w) => [w.id, w as Parola]));
   return ids.flatMap((id) => {
     const w = perId.get(id);
     if (!w) return [];
-    const propria = w[locale];
+    const { testo, lingua } = traduzioneParola(w, locale);
     return [
       {
         id,
         it: w.it,
-        traduzione: propria ?? w.ru,
-        lingua: propria ? locale : DEFAULT_LOCALE,
+        traduzione: testo,
+        lingua,
         aux: w.aux ?? undefined,
         participle: w.participle ?? undefined,
         irregolare: Boolean(w.irregular),

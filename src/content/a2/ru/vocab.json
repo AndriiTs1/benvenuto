@@ -24,7 +24,9 @@
    "participle": "tornato",
    "group": 1,
    "example": "Lui torna a casa.",
-   "lesson": "L01"
+   "lesson": "L01",
+   "uk": "повертатися (додому)",
+   "en": "to come back, to return (home)"
   },
   {
    "id": "w002",
@@ -35,7 +37,9 @@
    "participle": "trovato",
    "group": 1,
    "example": "Trova un messaggio.",
-   "lesson": "L01"
+   "lesson": "L01",
+   "uk": "знаходити",
+   "en": "to find"
   },
   {
    "id": "w003",
@@ -46,7 +50,9 @@
    "plural": "i messaggi",
    "group": 1,
    "example": "Trova un messaggio e legge.",
-   "lesson": "L01"
+   "lesson": "L01",
+   "uk": "повідомлення",
+   "en": "message"
   },
   {
    "id": "w004",
@@ -58,7 +64,9 @@
    "irregular": "причастие",
    "group": 11,
    "example": "Trova un messaggio e legge.",
-   "lesson": "L01"
+   "lesson": "L01",
+   "uk": "читати",
+   "en": "to read"
   },
   {
    "id": "w005",
@@ -69,7 +77,9 @@
    "participle": "diventato",
    "group": 4,
    "example": "Diventa molto felice.",
-   "lesson": "L01"
+   "lesson": "L01",
+   "uk": "ставати",
+   "en": "to become"
   },
   {
    "id": "w006",
@@ -79,7 +89,9 @@
    "group": 12,
    "example": "Diventa molto felice.",
    "lesson": "L01",
-   "note": "molta musica, molti amici — но molto felice"
+   "note": "molta musica, molti amici — но molto felice",
+   "uk": "багато (+ ім., узгоджується); дуже (+ прикм., не змінюється)",
+   "en": "a lot of, many (+ noun, agrees); very (+ adjective, invariable)"
   },
   {
    "id": "w007",
@@ -89,7 +101,9 @@
    "forms": "felice (м/ж) – felici (мн.)",
    "group": 4,
    "example": "Diventa molto felice.",
-   "lesson": "L01"
+   "lesson": "L01",
+   "uk": "щасливий",
+   "en": "happy"
   },
   {
    "id": "w008",
@@ -101,7 +115,9 @@
    "irregular": "presente + причастие (faccio, fai, fa…)",
    "group": 1,
    "example": "Fa una danza di gioia.",
-   "lesson": "L01"
+   "lesson": "L01",
+   "uk": "робити",
+   "en": "to do, to make"
   },
   {
    "id": "w009",
@@ -112,7 +128,9 @@
    "plural": "le danze",
    "group": 1,
    "example": "Fa una danza di gioia.",
-   "lesson": "L01"
+   "lesson": "L01",
+   "uk": "танець",
+   "en": "dance"
   },
   {
    "id": "w010",
@@ -123,7 +141,9 @@
    "plural": "le gioie",
    "group": 4,
    "example": "Una danza di gioia.",
-   "lesson": "L01"
+   "lesson": "L01",
+   "uk": "радість",
+   "en": "joy"
   },
   {
    "id": "w011",
@@ -134,7 +154,9 @@
    "participle": "festeggiato",
    "group": 4,
    "example": "Festeggia!",
-   "lesson": "L01"
+   "lesson": "L01",
+   "uk": "святкувати",
+   "en": "to celebrate"
   },
   {
    "id": "w012",
@@ -145,7 +167,9 @@
    "participle": "fumato",
    "group": 10,
    "example": "Fuma una sigaretta.",
-   "lesson": "L01"
+   "lesson": "L01",
+   "uk": "курити",
+   "en": "to smoke"
   },
   {
    "id": "w013",
@@ -156,7 +180,9 @@
    "plural": "le sigarette",
    "group": 10,
    "example": "Fuma una sigaretta.",
-   "lesson": "L01"
+   "lesson": "L01",
+   "uk": "цигарка",
+   "en": "cigarette"
   },
   {
    "id": "w014",
@@ -168,7 +194,9 @@
    "participle": "rilassato",
    "group": 4,
    "example": "Fuma una sigaretta e si rilassa.",
-   "lesson": "L01"
+   "lesson": "L01",
+   "uk": "розслаблятися",
+   "en": "to relax"
   },
   {
    "id": "w015",
@@ -179,7 +207,9 @@
    "participle": "cenato",
    "group": 6,
    "example": "Cena da solo.",
-   "lesson": "L01"
+   "lesson": "L01",
+   "uk": "вечеряти",
+   "en": "to have dinner"
   },
   {
    "id": "w016",
@@ -188,7 +218,9 @@
    "pos": "expression",
    "group": 12,
    "example": "Cena da solo.",
-   "lesson": "L01"
+   "lesson": "L01",
+   "uk": "сам / сама (самостійно, на самоті)",
+   "en": "alone, on my own"
   },
   {
    "id": "w017",
@@ -200,7 +232,9 @@
    "group": 5,
    "example": "Lava i piatti.",
    "lesson": "L01",
-   "base": "w071"
+   "base": "w071",
+   "uk": "мити посуд",
+   "en": "to wash the dishes"
   },
   {
    "id": "w018",
@@ -212,7 +246,9 @@
    "group": 5,
    "example": "Passa l'aspirapolvere.",
    "lesson": "L01",
-   "base": "w060"
+   "base": "w060",
+   "uk": "пилососити",
+   "en": "to vacuum"
   },
   {
    "id": "w019",
@@ -223,7 +259,9 @@
    "plural": "gli aspirapolvere (не меняется)",
    "group": 5,
    "example": "Passa l'aspirapolvere.",
-   "lesson": "L01"
+   "lesson": "L01",
+   "uk": "пилосос",
+   "en": "vacuum cleaner"
   },
   {
    "id": "w020",
@@ -235,7 +273,9 @@
    "participle": "annoiato",
    "group": 4,
    "example": "Si annoia!",
-   "lesson": "L01"
+   "lesson": "L01",
+   "uk": "нудьгувати",
+   "en": "to be bored"
   },
   {
    "id": "w021",
@@ -246,7 +286,9 @@
    "plural": "обычно во мн. ч. (fare le pulizie)",
    "group": 5,
    "example": "Dopo le pulizie…",
-   "lesson": "L01"
+   "lesson": "L01",
+   "uk": "прибирання",
+   "en": "cleaning"
   },
   {
    "id": "w022",
@@ -258,7 +300,9 @@
    "participle": "lavato",
    "group": 1,
    "example": "Si lava i denti.",
-   "lesson": "L01"
+   "lesson": "L01",
+   "uk": "чистити зуби",
+   "en": "to brush your teeth"
   },
   {
    "id": "w023",
@@ -269,7 +313,9 @@
    "plural": "i denti",
    "group": 10,
    "example": "Si lava i denti.",
-   "lesson": "L01"
+   "lesson": "L01",
+   "uk": "зуб",
+   "en": "tooth"
   },
   {
    "id": "w024",
@@ -282,7 +328,9 @@
    "group": 1,
    "example": "Va a dormire.",
    "lesson": "L01",
-   "base": "w058"
+   "base": "w058",
+   "uk": "іти спати",
+   "en": "to go to bed"
   },
   {
    "id": "w025",
@@ -293,7 +341,9 @@
    "participle": "dormito",
    "group": 1,
    "example": "Va a dormire solo.",
-   "lesson": "L01"
+   "lesson": "L01",
+   "uk": "спати",
+   "en": "to sleep"
   },
   {
    "id": "w026",
@@ -305,7 +355,9 @@
    "participle": "addormentato",
    "group": 1,
    "example": "Non si addormenta.",
-   "lesson": "L01"
+   "lesson": "L01",
+   "uk": "засинати",
+   "en": "to fall asleep"
   },
   {
    "id": "w027",
@@ -317,7 +369,9 @@
    "participle": "agitato",
    "group": 4,
    "example": "Si agita.",
-   "lesson": "L01"
+   "lesson": "L01",
+   "uk": "хвилюватися, нервувати",
+   "en": "to get worked up, to be nervous"
   },
   {
    "id": "w028",
@@ -329,7 +383,9 @@
    "participle": "stressato",
    "group": 4,
    "example": "Si stressa.",
-   "lesson": "L01"
+   "lesson": "L01",
+   "uk": "нервувати, відчувати стрес",
+   "en": "to get stressed"
   },
   {
    "id": "w029",
@@ -341,7 +397,9 @@
    "irregular": "причастие",
    "group": 4,
    "example": "…e piange.",
-   "lesson": "L01"
+   "lesson": "L01",
+   "uk": "плакати",
+   "en": "to cry"
   },
   {
    "id": "w030",
@@ -350,7 +408,9 @@
    "pos": "adverb/preposition",
    "group": 12,
    "example": "Dopo, cena da solo. / Dopo le pulizie…",
-   "lesson": "L01"
+   "lesson": "L01",
+   "uk": "потім; після (+ ім.)",
+   "en": "then, afterwards; after (+ noun)"
   },
   {
    "id": "w031",
@@ -359,7 +419,9 @@
    "pos": "conjunction",
    "group": 12,
    "example": "Ma non si addormenta.",
-   "lesson": "L01"
+   "lesson": "L01",
+   "uk": "але",
+   "en": "but"
   },
   {
    "id": "w032",
@@ -368,7 +430,9 @@
    "pos": "conjunction",
    "group": 12,
    "example": "…perché si agita.",
-   "lesson": "L01"
+   "lesson": "L01",
+   "uk": "тому що; чому",
+   "en": "because; why"
   },
   {
    "id": "w033",
@@ -380,7 +444,9 @@
    "pattern": "как piacere: mi manca + ед.ч., mi mancano + мн.ч.",
    "group": 4,
    "example": "Mi manca mio figlio.",
-   "lesson": "L02"
+   "lesson": "L02",
+   "uk": "сумувати за кимось (букв. «бракувати»): mi manca = я сумую за",
+   "en": "to miss someone (lit. “to be missing”): mi manca = I miss"
   },
   {
    "id": "w034",
@@ -393,7 +459,9 @@
    "pattern": "mi piace + ед.ч./инфинитив, mi piacciono + мн.ч.",
    "group": 4,
    "example": "Mi piace la pizza.",
-   "lesson": "L02"
+   "lesson": "L02",
+   "uk": "подобатися",
+   "en": "to like (to be pleasing)"
   },
   {
    "id": "w035",
@@ -405,7 +473,9 @@
    "note": "mio figlio — без артикля (родственник в ед.ч.)",
    "group": 2,
    "example": "Mi manca mio figlio.",
-   "lesson": "L02"
+   "lesson": "L02",
+   "uk": "син / донька",
+   "en": "son / daughter"
   },
   {
    "id": "w036",
@@ -416,7 +486,9 @@
    "plural": "le pizze",
    "group": 6,
    "example": "Mi piace la pizza.",
-   "lesson": "L02"
+   "lesson": "L02",
+   "uk": "піца",
+   "en": "pizza"
   },
   {
    "id": "w037",
@@ -428,7 +500,9 @@
    "participle": "arrabbiato",
    "group": 4,
    "example": "Mi arrabbio perché tu sei cattivo.",
-   "lesson": "L02"
+   "lesson": "L02",
+   "uk": "злитися, сердитися (на когось)",
+   "en": "to get angry (with someone)"
   },
   {
    "id": "w038",
@@ -438,7 +512,9 @@
    "forms": "cattivo / cattiva / cattivi / cattive",
    "group": 3,
    "example": "Tu sei cattivo.",
-   "lesson": "L02"
+   "lesson": "L02",
+   "uk": "злий, поганий",
+   "en": "bad, mean"
   },
   {
    "id": "w039",
@@ -450,7 +526,9 @@
    "irregular": "sono, sei, è, siamo, siete, sono",
    "group": 1,
    "example": "Tu sei cattivo. / Sono molto stanco.",
-   "lesson": "L02"
+   "lesson": "L02",
+   "uk": "бути",
+   "en": "to be"
   },
   {
    "id": "w040",
@@ -462,7 +540,9 @@
    "irregular": "ho, hai, ha, abbiamo, avete, hanno",
    "group": 1,
    "example": "Ho tante cose da fare.",
-   "lesson": "L02"
+   "lesson": "L02",
+   "uk": "мати",
+   "en": "to have"
   },
   {
    "id": "w041",
@@ -473,7 +553,9 @@
    "group": 11,
    "example": "Mi stresso quando ho tante cose da fare.",
    "lesson": "L02",
-   "base": "w040"
+   "base": "w040",
+   "uk": "мати багато справ",
+   "en": "to have a lot to do"
   },
   {
    "id": "w042",
@@ -483,7 +565,9 @@
    "forms": "tanto / tanta / tanti / tante (согласуется с сущ.)",
    "group": 12,
    "example": "tante cose",
-   "lesson": "L02"
+   "lesson": "L02",
+   "uk": "багато, стільки",
+   "en": "a lot, so much"
   },
   {
    "id": "w043",
@@ -494,7 +578,9 @@
    "plural": "le cose",
    "group": 1,
    "example": "tante cose da fare",
-   "lesson": "L02"
+   "lesson": "L02",
+   "uk": "річ, справа",
+   "en": "thing"
   },
   {
    "id": "w044",
@@ -506,7 +592,9 @@
    "participle": "preoccupato",
    "group": 4,
    "example": "Mi preoccupo per la famiglia.",
-   "lesson": "L02"
+   "lesson": "L02",
+   "uk": "турбуватися, хвилюватися (за)",
+   "en": "to worry (about)"
   },
   {
    "id": "w045",
@@ -517,7 +605,9 @@
    "plural": "le famiglie",
    "group": 2,
    "example": "Mi preoccupo per la famiglia.",
-   "lesson": "L02"
+   "lesson": "L02",
+   "uk": "родина, сім'я",
+   "en": "family"
   },
   {
    "id": "w046",
@@ -530,7 +620,9 @@
    "irregular": "спряжение с -isc-: mi innervosisco",
    "group": 4,
    "example": "Mi innervosisco quando sono molto stanco!",
-   "lesson": "L02"
+   "lesson": "L02",
+   "uk": "дратуватися, починати нервувати",
+   "en": "to get irritated, to get nervous"
   },
   {
    "id": "w047",
@@ -540,7 +632,9 @@
    "forms": "stanco / stanca / stanchi / stanche",
    "group": 4,
    "example": "Sono molto stanco.",
-   "lesson": "L02"
+   "lesson": "L02",
+   "uk": "втомлений",
+   "en": "tired"
   },
   {
    "id": "w048",
@@ -551,7 +645,9 @@
    "plural": "gli esami",
    "group": 11,
    "example": "Mi agito per l'esame.",
-   "lesson": "L02"
+   "lesson": "L02",
+   "uk": "іспит",
+   "en": "exam"
   },
   {
    "id": "w049",
@@ -562,7 +658,9 @@
    "participle": "guardato",
    "group": 1,
    "example": "Guardo un film.",
-   "lesson": "L02"
+   "lesson": "L02",
+   "uk": "дивитися",
+   "en": "to watch, to look at"
   },
   {
    "id": "w050",
@@ -573,7 +671,9 @@
    "plural": "i film (не меняется)",
    "group": 1,
    "example": "Guardo un film che non mi piace.",
-   "lesson": "L02"
+   "lesson": "L02",
+   "uk": "фільм",
+   "en": "film, movie"
   },
   {
    "id": "w051",
@@ -582,7 +682,9 @@
    "pos": "conjunction",
    "group": 12,
    "example": "Mi annoio quando guardo un film…",
-   "lesson": "L02"
+   "lesson": "L02",
+   "uk": "коли",
+   "en": "when"
   },
   {
    "id": "w052",
@@ -591,7 +693,9 @@
    "pos": "pronoun/conjunction",
    "group": 12,
    "example": "un film che non mi piace",
-   "lesson": "L02"
+   "lesson": "L02",
+   "uk": "який; що",
+   "en": "which, who; that"
   },
   {
    "id": "w053",
@@ -600,7 +704,9 @@
    "pos": "preposition",
    "group": 12,
    "example": "Mi agito per l'esame.",
-   "lesson": "L02"
+   "lesson": "L02",
+   "uk": "для; за, через (preoccuparsi per, agitarsi per)",
+   "en": "for; about, because of (preoccuparsi per)"
   },
   {
    "id": "w054",
@@ -611,7 +717,9 @@
    "participle": "camminato",
    "group": 1,
    "example": "Cammini molto durante il giorno?",
-   "lesson": "L03"
+   "lesson": "L03",
+   "uk": "ходити пішки, гуляти",
+   "en": "to walk"
   },
   {
    "id": "w055",
@@ -624,7 +732,9 @@
    "irregular": "причастие",
    "group": 1,
    "example": "Come ti muovi in città? In bici o in autobus?",
-   "lesson": "L03"
+   "lesson": "L03",
+   "uk": "рухатися, пересуватися",
+   "en": "to move, to get around"
   },
   {
    "id": "w056",
@@ -636,7 +746,9 @@
    "irregular": "presente: salgo, sali, sale, saliamo, salite, salgono",
    "group": 7,
    "example": "Sali sull'autobus.",
-   "lesson": "L03"
+   "lesson": "L03",
+   "uk": "підніматися; сідати (в транспорт)",
+   "en": "to go up; to get on (transport)"
   },
   {
    "id": "w057",
@@ -648,7 +760,9 @@
    "irregular": "причастие",
    "group": 7,
    "example": "Prendi il treno o la macchina?",
-   "lesson": "L03"
+   "lesson": "L03",
+   "uk": "брати; сідати на транспорт; випити/з'їсти",
+   "en": "to take; to catch (transport); to have (food/drink)"
   },
   {
    "id": "w058",
@@ -660,7 +774,9 @@
    "irregular": "vado, vai, va, andiamo, andate, vanno",
    "group": 1,
    "example": "Dove vai in vacanza?",
-   "lesson": "L03"
+   "lesson": "L03",
+   "uk": "іти, їхати",
+   "en": "to go"
   },
   {
    "id": "w059",
@@ -671,7 +787,9 @@
    "participle": "visitato",
    "group": 8,
    "example": "Visiti i monumenti più importanti.",
-   "lesson": "L03"
+   "lesson": "L03",
+   "uk": "відвідувати, оглядати (місто, музей)",
+   "en": "to visit (a city, a museum)"
   },
   {
    "id": "w060",
@@ -682,7 +800,9 @@
    "participle": "passato",
    "group": 1,
    "example": "Come passi la giornata?",
-   "lesson": "L03"
+   "lesson": "L03",
+   "uk": "проводити (час); проходити; заходити",
+   "en": "to spend (time); to pass; to drop by"
   },
   {
    "id": "w061",
@@ -693,7 +813,9 @@
    "participle": "organizzato",
    "group": 8,
    "example": "Organizzi una festa?",
-   "lesson": "L03"
+   "lesson": "L03",
+   "uk": "організовувати, планувати",
+   "en": "to organise, to plan"
   },
   {
    "id": "w062",
@@ -705,7 +827,9 @@
    "participle": "alzato",
    "group": 1,
    "example": "A che ora ti alzi?",
-   "lesson": "L03"
+   "lesson": "L03",
+   "uk": "вставати",
+   "en": "to get up"
   },
   {
    "id": "w063",
@@ -717,7 +841,9 @@
    "irregular": "rimango, rimani, rimane, rimaniamo, rimanete, rimangono; причастие rimasto",
    "group": 1,
    "example": "Rimani a casa la domenica?",
-   "lesson": "L03"
+   "lesson": "L03",
+   "uk": "залишатися",
+   "en": "to stay, to remain"
   },
   {
    "id": "w064",
@@ -729,7 +855,9 @@
    "irregular": "esco, esci, esce, usciamo, uscite, escono",
    "group": 1,
    "example": "Esci con gli amici la sera?",
-   "lesson": "L03"
+   "lesson": "L03",
+   "uk": "виходити; гуляти (кудись вийти)",
+   "en": "to go out"
   },
   {
    "id": "w065",
@@ -741,7 +869,9 @@
    "participle": "svegliato",
    "group": 1,
    "example": "Ti svegli presto?",
-   "lesson": "L03"
+   "lesson": "L03",
+   "uk": "прокидатися",
+   "en": "to wake up"
   },
   {
    "id": "w066",
@@ -752,7 +882,9 @@
    "participle": "preparato",
    "group": 6,
    "example": "Prepari la cena?",
-   "lesson": "L03"
+   "lesson": "L03",
+   "uk": "готувати, підготовлювати",
+   "en": "to prepare"
   },
   {
    "id": "w067",
@@ -764,7 +896,9 @@
    "irregular": "sto, stai, sta, stiamo, state, stanno",
    "group": 1,
    "example": "Come stai? / Stai a casa?",
-   "lesson": "L03"
+   "lesson": "L03",
+   "uk": "перебувати, бути; почуватися (come stai?)",
+   "en": "to be, to stay; to feel (come stai?)"
   },
   {
    "id": "w068",
@@ -775,7 +909,9 @@
    "participle": "invitato",
    "group": 2,
    "example": "Inviti gli amici a cena?",
-   "lesson": "L03"
+   "lesson": "L03",
+   "uk": "запрошувати",
+   "en": "to invite"
   },
   {
    "id": "w069",
@@ -786,7 +922,9 @@
    "participle": "comprato",
    "group": 7,
    "example": "Compri il pane?",
-   "lesson": "L03"
+   "lesson": "L03",
+   "uk": "купувати",
+   "en": "to buy"
   },
   {
    "id": "w070",
@@ -798,7 +936,9 @@
    "participle": "trovato",
    "group": 4,
    "example": "Ti trovi bene a Lugano?",
-   "lesson": "L03"
+   "lesson": "L03",
+   "uk": "перебувати; почуватися десь (mi trovo bene)",
+   "en": "to be located; to feel (somewhere) (mi trovo bene)"
   },
   {
    "id": "w071",
@@ -809,7 +949,9 @@
    "participle": "lavato",
    "group": 5,
    "example": "Lavi i vestiti?",
-   "lesson": "L03"
+   "lesson": "L03",
+   "uk": "мити, прати",
+   "en": "to wash"
   },
   {
    "id": "w072",
@@ -821,7 +963,9 @@
    "irregular": "причастие",
    "group": 1,
    "example": "Metti in ordine la casa?",
-   "lesson": "L03"
+   "lesson": "L03",
+   "uk": "класти, ставити; вдягати",
+   "en": "to put; to put on"
   },
   {
    "id": "w073",
@@ -832,7 +976,9 @@
    "participle": "lasciato",
    "group": 1,
    "example": "Lasci la macchina a casa?",
-   "lesson": "L03"
+   "lesson": "L03",
+   "uk": "залишати",
+   "en": "to leave"
   },
   {
    "id": "w074",
@@ -844,7 +990,9 @@
    "irregular": "спряжение с -isc-: pulisco, pulisci…",
    "group": 5,
    "example": "Pulisci la casa il sabato?",
-   "lesson": "L03"
+   "lesson": "L03",
+   "uk": "чистити, прибирати",
+   "en": "to clean"
   },
   {
    "id": "w075",
@@ -855,7 +1003,9 @@
    "participle": "stirato",
    "group": 5,
    "example": "Stiri le camicie?",
-   "lesson": "L03"
+   "lesson": "L03",
+   "uk": "прасувати",
+   "en": "to iron"
   },
   {
    "id": "w076",
@@ -866,7 +1016,9 @@
    "participle": "portato",
    "group": 1,
    "example": "Porti i figli a scuola?",
-   "lesson": "L03"
+   "lesson": "L03",
+   "uk": "приносити; відносити, відвозити; носити (одяг)",
+   "en": "to bring; to take; to wear"
   },
   {
    "id": "w077",
@@ -877,7 +1029,9 @@
    "participle": "salutato",
    "group": 2,
    "example": "Anna saluta i figli.",
-   "lesson": "L04"
+   "lesson": "L04",
+   "uk": "вітатися; прощатися; передавати привіт",
+   "en": "to greet; to say goodbye"
   },
   {
    "id": "w078",
@@ -888,7 +1042,9 @@
    "plural": "le TV (не меняется) / le televisioni",
    "group": 1,
    "example": "I figli guardano la TV.",
-   "lesson": "L04"
+   "lesson": "L04",
+   "uk": "телевізор, ТБ",
+   "en": "TV, television"
   },
   {
    "id": "w079",
@@ -900,7 +1056,9 @@
    "group": 1,
    "example": "Anna esce di casa.",
    "lesson": "L04",
-   "base": "w064"
+   "base": "w064",
+   "uk": "виходити з дому",
+   "en": "to leave the house"
   },
   {
    "id": "w080",
@@ -911,7 +1069,9 @@
    "participle": "arrivato",
    "group": 7,
    "example": "Arriva in discoteca.",
-   "lesson": "L04"
+   "lesson": "L04",
+   "uk": "приходити, приїжджати, прибувати",
+   "en": "to arrive"
   },
   {
    "id": "w081",
@@ -922,7 +1082,9 @@
    "plural": "le discoteche",
    "group": 7,
    "example": "Arriva in discoteca.",
-   "lesson": "L04"
+   "lesson": "L04",
+   "uk": "дискотека, нічний клуб",
+   "en": "disco, nightclub"
   },
   {
    "id": "w082",
@@ -934,7 +1096,9 @@
    "participle": "cambiato",
    "group": 1,
    "example": "Si cambia i vestiti.",
-   "lesson": "L04"
+   "lesson": "L04",
+   "uk": "перевдягатися",
+   "en": "to get changed"
   },
   {
    "id": "w083",
@@ -946,7 +1110,9 @@
    "group": 3,
    "example": "Si cambia i vestiti. / Era vestita elegante.",
    "lesson": "L04",
-   "note": "vestito/a elegante — элегантно одетый"
+   "note": "vestito/a elegante — элегантно одетый",
+   "uk": "сукня; костюм; i vestiti — одяг",
+   "en": "dress; suit; i vestiti — clothes"
   },
   {
    "id": "w084",
@@ -958,7 +1124,9 @@
    "note": "-ciare: tu cominci (одна i)",
    "group": 1,
    "example": "Comincia a lavorare.",
-   "lesson": "L04"
+   "lesson": "L04",
+   "uk": "починати",
+   "en": "to begin, to start"
   },
   {
    "id": "w085",
@@ -969,7 +1137,9 @@
    "participle": "lavorato",
    "group": 11,
    "example": "Comincia a lavorare.",
-   "lesson": "L04"
+   "lesson": "L04",
+   "uk": "працювати",
+   "en": "to work"
   },
   {
    "id": "w086",
@@ -980,7 +1150,9 @@
    "plural": "gli ordini",
    "group": 6,
    "example": "Prende gli ordini.",
-   "lesson": "L04"
+   "lesson": "L04",
+   "uk": "замовлення; порядок (mettere in ordine)",
+   "en": "order (in a restaurant); tidiness (mettere in ordine)"
   },
   {
    "id": "w087",
@@ -991,7 +1163,9 @@
    "participle": "parlato",
    "group": 2,
    "example": "Parla con i clienti.",
-   "lesson": "L04"
+   "lesson": "L04",
+   "uk": "говорити, розмовляти (з)",
+   "en": "to speak, to talk (to)"
   },
   {
    "id": "w088",
@@ -1002,7 +1176,9 @@
    "plural": "i clienti / le clienti",
    "group": 11,
    "example": "Parla con i clienti.",
-   "lesson": "L04"
+   "lesson": "L04",
+   "uk": "клієнт / клієнтка",
+   "en": "customer, client"
   },
   {
    "id": "w089",
@@ -1013,7 +1189,9 @@
    "plural": "i cibi",
    "group": 6,
    "example": "Porta il cibo.",
-   "lesson": "L04"
+   "lesson": "L04",
+   "uk": "їжа",
+   "en": "food"
   },
   {
    "id": "w090",
@@ -1024,7 +1202,9 @@
    "plural": "le bevande",
    "group": 6,
    "example": "Porta le bevande.",
-   "lesson": "L04"
+   "lesson": "L04",
+   "uk": "напій",
+   "en": "drink"
   },
   {
    "id": "w091",
@@ -1035,7 +1215,9 @@
    "participle": "servito",
    "group": 6,
    "example": "Anna serve.",
-   "lesson": "L04"
+   "lesson": "L04",
+   "uk": "подавати, обслуговувати; бути потрібним (mi serve)",
+   "en": "to serve; to be needed (mi serve)"
   },
   {
    "id": "w092",
@@ -1044,7 +1226,9 @@
    "pos": "conjunction",
    "group": 12,
    "example": "Mentre le persone ballano…",
-   "lesson": "L04"
+   "lesson": "L04",
+   "uk": "поки, в той час як",
+   "en": "while"
   },
   {
    "id": "w093",
@@ -1056,7 +1240,9 @@
    "note": "всегда женского рода, даже про мужчину",
    "group": 2,
    "example": "Le persone ballano.",
-   "lesson": "L04"
+   "lesson": "L04",
+   "uk": "людина; le persone — люди",
+   "en": "person; le persone — people"
   },
   {
    "id": "w094",
@@ -1067,7 +1253,9 @@
    "participle": "ballato",
    "group": 1,
    "example": "Le persone ballano.",
-   "lesson": "L04"
+   "lesson": "L04",
+   "uk": "танцювати",
+   "en": "to dance"
   },
   {
    "id": "w095",
@@ -1079,7 +1267,9 @@
    "irregular": "bevo, bevi, beve, beviamo, bevete, bevono",
    "group": 6,
    "example": "Le persone bevono.",
-   "lesson": "L04"
+   "lesson": "L04",
+   "uk": "пити",
+   "en": "to drink"
   },
   {
    "id": "w096",
@@ -1091,7 +1281,9 @@
    "participle": "divertito",
    "group": 4,
    "example": "Le persone si divertono.",
-   "lesson": "L04"
+   "lesson": "L04",
+   "uk": "веселитися, розважатися",
+   "en": "to have fun"
   },
   {
    "id": "w097",
@@ -1101,7 +1293,9 @@
    "note": "глагол в ед.ч.: qualcuno beve",
    "group": 12,
    "example": "Qualcuno beve troppo.",
-   "lesson": "L04"
+   "lesson": "L04",
+   "uk": "хтось",
+   "en": "someone, somebody"
   },
   {
    "id": "w098",
@@ -1110,7 +1304,9 @@
    "pos": "adverb",
    "group": 12,
    "example": "Beve troppo.",
-   "lesson": "L04"
+   "lesson": "L04",
+   "uk": "занадто (багато)",
+   "en": "too (much)"
   },
   {
    "id": "w099",
@@ -1123,7 +1319,9 @@
    "note": "-care: tu ti ubriachi",
    "group": 10,
    "example": "Si ubriaca!",
-   "lesson": "L04"
+   "lesson": "L04",
+   "uk": "напиватися, п'яніти",
+   "en": "to get drunk"
   },
   {
    "id": "w100",
@@ -1135,7 +1333,9 @@
    "irregular": "спряжение с -isc-: finisco, finisci, finisce…",
    "group": 1,
    "example": "Finisce di lavorare alle 2:30.",
-   "lesson": "L04"
+   "lesson": "L04",
+   "uk": "закінчувати",
+   "en": "to finish"
   },
   {
    "id": "w101",
@@ -1145,7 +1345,9 @@
    "note": "также di giorno, di sera, di mattina",
    "group": 12,
    "example": "Finisce di lavorare di notte.",
-   "lesson": "L04"
+   "lesson": "L04",
+   "uk": "уночі",
+   "en": "at night"
   },
   {
    "id": "w102",
@@ -1154,7 +1356,9 @@
    "pos": "adverb",
    "group": 12,
    "example": "Si cambia ancora i vestiti.",
-   "lesson": "L04"
+   "lesson": "L04",
+   "uk": "ще; знову",
+   "en": "still, yet; again"
   },
   {
    "id": "w103",
@@ -1165,7 +1369,9 @@
    "participle": "controllato",
    "group": 1,
    "example": "Controlla i bambini.",
-   "lesson": "L04"
+   "lesson": "L04",
+   "uk": "перевіряти, контролювати",
+   "en": "to check"
   },
   {
    "id": "w104",
@@ -1176,7 +1382,9 @@
    "plural": "i bambini / le bambine",
    "group": 2,
    "example": "I bambini già dormono.",
-   "lesson": "L04"
+   "lesson": "L04",
+   "uk": "дитина (хлопчик / дівчинка)",
+   "en": "child (boy / girl)"
   },
   {
    "id": "w105",
@@ -1186,7 +1394,9 @@
    "note": "с ударением: già",
    "group": 12,
    "example": "I bambini già dormono.",
-   "lesson": "L04"
+   "lesson": "L04",
+   "uk": "вже",
+   "en": "already"
   },
   {
    "id": "w106",
@@ -1196,7 +1406,9 @@
    "note": "alle 8:30 = alle otto e mezza; но all'una, a mezzanotte",
    "group": 12,
    "example": "Alle 8:30 Anna esce di casa.",
-   "lesson": "L04"
+   "lesson": "L04",
+   "uk": "о (стільки-то годин)",
+   "en": "at (a time)"
   },
   {
    "id": "w107",
@@ -1209,7 +1421,9 @@
    "irregular": "mi faccio, ti fai, si fa…",
    "group": 1,
    "example": "Mi faccio la doccia e mi vesto.",
-   "lesson": "L05"
+   "lesson": "L05",
+   "uk": "приймати душ",
+   "en": "to have a shower"
   },
   {
    "id": "w108",
@@ -1221,7 +1435,9 @@
    "participle": "vestito",
    "group": 1,
    "example": "Mi vesto in cinque minuti.",
-   "lesson": "L05"
+   "lesson": "L05",
+   "uk": "одягатися",
+   "en": "to get dressed"
   },
   {
    "id": "w109",
@@ -1233,7 +1449,9 @@
    "irregular": "причастие",
    "group": 10,
    "example": "La mattina corro al parco.",
-   "lesson": "L05"
+   "lesson": "L05",
+   "uk": "бігати, бігти",
+   "en": "to run"
   },
   {
    "id": "w110",
@@ -1244,7 +1462,9 @@
    "participle": "incontrato",
    "group": 2,
    "example": "Incontro i colleghi.",
-   "lesson": "L05"
+   "lesson": "L05",
+   "uk": "зустрічати",
+   "en": "to meet"
   },
   {
    "id": "w111",
@@ -1255,7 +1475,9 @@
    "participle": "versato",
    "group": 7,
    "example": "Verso i soldi in banca.",
-   "lesson": "L05"
+   "lesson": "L05",
+   "uk": "вносити (гроші на рахунок); наливати",
+   "en": "to deposit (money); to pour"
   },
   {
    "id": "w112",
@@ -1266,7 +1488,9 @@
    "participle": "ritirato",
    "group": 7,
    "example": "Ritiro i soldi al bancomat.",
-   "lesson": "L05"
+   "lesson": "L05",
+   "uk": "знімати (гроші); забирати (посилку, документ)",
+   "en": "to withdraw (money); to collect (a parcel, a document)"
   },
   {
    "id": "w113",
@@ -1279,7 +1503,9 @@
    "note": "-iare: tu ti sdrai",
    "group": 1,
    "example": "Mi sdraio sul divano.",
-   "lesson": "L05"
+   "lesson": "L05",
+   "uk": "лягати, прилягти",
+   "en": "to lie down"
   },
   {
    "id": "w114",
@@ -1291,7 +1517,9 @@
    "note": "-giare: tu mangi, noi mangiamo",
    "group": 6,
    "example": "Mangio con la famiglia.",
-   "lesson": "L05"
+   "lesson": "L05",
+   "uk": "їсти",
+   "en": "to eat"
   },
   {
    "id": "w115",
@@ -1303,7 +1531,9 @@
    "participle": "riposato",
    "group": 1,
    "example": "Dopo cena mi riposo.",
-   "lesson": "L05"
+   "lesson": "L05",
+   "uk": "відпочивати",
+   "en": "to rest"
   },
   {
    "id": "w116",
@@ -1315,7 +1545,9 @@
    "note": "без предлога: aspetto l'autobus",
    "group": 1,
    "example": "Aspetto mia moglie.",
-   "lesson": "L05"
+   "lesson": "L05",
+   "uk": "чекати",
+   "en": "to wait (for)"
   },
   {
    "id": "w117",
@@ -1327,7 +1559,9 @@
    "note": "-iare: tu risparmi; futuro risparmierò",
    "group": 7,
    "example": "Risparmio per le vacanze.",
-   "lesson": "L06"
+   "lesson": "L06",
+   "uk": "економити; накопичувати (гроші)",
+   "en": "to save (money)"
   },
   {
    "id": "w118",
@@ -1339,7 +1573,9 @@
    "group": 7,
    "example": "Metto da parte cento franchi al mese.",
    "lesson": "L06",
-   "base": "w072"
+   "base": "w072",
+   "uk": "відкладати (гроші)",
+   "en": "to put money aside"
   },
   {
    "id": "w119",
@@ -1350,7 +1586,9 @@
    "participle": "conservato",
    "group": 7,
    "example": "Conservo i soldi in banca.",
-   "lesson": "L06"
+   "lesson": "L06",
+   "uk": "зберігати",
+   "en": "to keep, to store"
   },
   {
    "id": "w120",
@@ -1361,7 +1599,9 @@
    "participle": "guadagnato",
    "group": 11,
    "example": "Guadagna bene con il suo lavoro.",
-   "lesson": "L06"
+   "lesson": "L06",
+   "uk": "заробляти",
+   "en": "to earn"
   },
   {
    "id": "w121",
@@ -1373,7 +1613,9 @@
    "note": "вернуть долг — restituire i soldi",
    "group": 7,
    "example": "Chiede un prestito in banca.",
-   "lesson": "L06"
+   "lesson": "L06",
+   "uk": "кредит, позика (chiedere un prestito — взяти кредит)",
+   "en": "loan (chiedere un prestito — to take out a loan)"
   },
   {
    "id": "w122",
@@ -1385,7 +1627,9 @@
    "note": "prestare = дать; взять в долг = farsi prestare / chiedere in prestito",
    "group": 7,
    "example": "Mi presti la macchina?",
-   "lesson": "L06"
+   "lesson": "L06",
+   "uk": "позичати (комусь)",
+   "en": "to lend"
   },
   {
    "id": "w123",
@@ -1396,7 +1640,9 @@
    "plural": "обычно во мн.ч.",
    "group": 7,
    "example": "Non ho soldi.",
-   "lesson": "L06"
+   "lesson": "L06",
+   "uk": "гроші",
+   "en": "money"
   },
   {
    "id": "w124",
@@ -1407,7 +1653,9 @@
    "plural": "le banche",
    "group": 7,
    "example": "La banca dà i soldi.",
-   "lesson": "L06"
+   "lesson": "L06",
+   "uk": "банк",
+   "en": "bank"
   },
   {
    "id": "w125",
@@ -1420,7 +1668,9 @@
    "note": "dà (давать) с ударением ≠ da (предлог)",
    "group": 1,
    "example": "La banca ti dà i soldi.",
-   "lesson": "L06"
+   "lesson": "L06",
+   "uk": "давати",
+   "en": "to give"
   },
   {
    "id": "w126",
@@ -1432,7 +1682,9 @@
    "irregular": "devo, devi, deve, dobbiamo, dovete, devono; futuro dovrò",
    "group": 1,
    "example": "Devi dare i soldi alla banca.",
-   "lesson": "L06"
+   "lesson": "L06",
+   "uk": "бути зобов'язаним, треба (+ інф.)",
+   "en": "must, to have to (+ infinitive)"
   },
   {
    "id": "w127",
@@ -1444,7 +1696,9 @@
    "irregular": "posso, puoi, può, possiamo, potete, possono; futuro potrò",
    "group": 1,
    "example": "Può comprare la casa.",
-   "lesson": "L06"
+   "lesson": "L06",
+   "uk": "могти (+ інф.)",
+   "en": "can, to be able to (+ infinitive)"
   },
   {
    "id": "w128",
@@ -1456,7 +1710,9 @@
    "irregular": "voglio, vuoi, vuole, vogliamo, volete, vogliono; futuro vorrò",
    "group": 1,
    "example": "Vuole comprare una macchina.",
-   "lesson": "L06"
+   "lesson": "L06",
+   "uk": "хотіти (+ ім. / інф.)",
+   "en": "to want (+ noun / infinitive)"
   },
   {
    "id": "w129",
@@ -1467,7 +1723,9 @@
    "participle": "frequentato",
    "group": 11,
    "example": "Ha frequentato un corso d'italiano.",
-   "lesson": "L06"
+   "lesson": "L06",
+   "uk": "відвідувати (курс, школу); часто бувати",
+   "en": "to attend (a course, a school); to go often"
   },
   {
    "id": "w130",
@@ -1479,7 +1737,9 @@
    "irregular": "причастие",
    "group": 2,
    "example": "Chiederà un prestito.",
-   "lesson": "L06"
+   "lesson": "L06",
+   "uk": "питати; просити",
+   "en": "to ask"
   },
   {
    "id": "w131",
@@ -1491,7 +1751,9 @@
    "note": "ri- = снова (ritornare, rifare)",
    "group": 1,
    "example": "Ricomincia a studiare.",
-   "lesson": "L06"
+   "lesson": "L06",
+   "uk": "починати заново",
+   "en": "to start again"
   },
   {
    "id": "w132",
@@ -1500,7 +1762,9 @@
    "pos": "expression",
    "group": 12,
    "example": "In futuro devi dare i soldi alla banca.",
-   "lesson": "L06"
+   "lesson": "L06",
+   "uk": "у майбутньому",
+   "en": "in the future"
   },
   {
    "id": "w133",
@@ -1512,7 +1776,9 @@
    "note": "про деньги не говорят — нужно risparmiare",
    "group": 1,
    "example": "Salva il documento.",
-   "lesson": "L06"
+   "lesson": "L06",
+   "uk": "рятувати; зберігати (файл)",
+   "en": "to save (a life; a file)"
   },
   {
    "id": "w134",
@@ -1523,7 +1789,9 @@
    "plural": "i ragazzi / le ragazze",
    "group": 2,
    "example": "Peppino è un ragazzo alto.",
-   "lesson": "L06"
+   "lesson": "L06",
+   "uk": "хлопець / дівчина",
+   "en": "boy / girl; boyfriend / girlfriend"
   },
   {
    "id": "w135",
@@ -1533,7 +1801,9 @@
    "forms": "alto / alta / alti / alte",
    "group": 3,
    "example": "È un ragazzo alto.",
-   "lesson": "L06"
+   "lesson": "L06",
+   "uk": "високий",
+   "en": "tall"
   },
   {
    "id": "w136",
@@ -1543,7 +1813,9 @@
    "forms": "magro / magra / magri / magre",
    "group": 3,
    "example": "Alto, magro.",
-   "lesson": "L06"
+   "lesson": "L06",
+   "uk": "худий",
+   "en": "thin"
   },
   {
    "id": "w137",
@@ -1554,7 +1826,9 @@
    "plural": "gli occhi",
    "group": 3,
    "example": "Ha gli occhi scuri.",
-   "lesson": "L06"
+   "lesson": "L06",
+   "uk": "око",
+   "en": "eye"
   },
   {
    "id": "w138",
@@ -1564,7 +1838,9 @@
    "forms": "scuro / scura / scuri / scure",
    "group": 3,
    "example": "Con gli occhi scuri.",
-   "lesson": "L06"
+   "lesson": "L06",
+   "uk": "темний",
+   "en": "dark"
   },
   {
    "id": "w139",
@@ -1575,7 +1851,9 @@
    "group": 2,
    "example": "Ha 22 anni.",
    "lesson": "L06",
-   "base": "w040"
+   "base": "w040",
+   "uk": "мати … років (вік)",
+   "en": "to be … years old"
   },
   {
    "id": "w140",
@@ -1586,7 +1864,9 @@
    "plural": "gli anni",
    "group": 12,
    "example": "Fra qualche anno…",
-   "lesson": "L06"
+   "lesson": "L06",
+   "uk": "рік",
+   "en": "year"
   },
   {
    "id": "w141",
@@ -1597,7 +1877,9 @@
    "group": 11,
    "example": "Fa il meccanico.",
    "lesson": "L06",
-   "base": "w008"
+   "base": "w008",
+   "uk": "працювати кимось (fare il meccanico — працювати механіком)",
+   "en": "to work as (fare il meccanico — to work as a mechanic)"
   },
   {
    "id": "w142",
@@ -1608,7 +1890,9 @@
    "plural": "i meccanici",
    "group": 11,
    "example": "Fa il meccanico.",
-   "lesson": "L06"
+   "lesson": "L06",
+   "uk": "механік",
+   "en": "mechanic"
   },
   {
    "id": "w143",
@@ -1619,7 +1903,9 @@
    "plural": "le scuole medie",
    "group": 11,
    "example": "Ha frequentato la scuola media.",
-   "lesson": "L06"
+   "lesson": "L06",
+   "uk": "середня школа (11–14 років)",
+   "en": "middle school (ages 11–14)"
   },
   {
    "id": "w144",
@@ -1628,7 +1914,9 @@
    "pos": "preposition",
    "group": 12,
    "example": "Lavora fino alle 13.",
-   "lesson": "L06"
+   "lesson": "L06",
+   "uk": "до (fino a 14 anni, fino alle 18)",
+   "en": "until, up to (fino a 14 anni, fino alle 18)"
   },
   {
    "id": "w145",
@@ -1637,7 +1925,9 @@
    "pos": "adverb",
    "group": 12,
    "example": "Poi ha cominciato a lavorare.",
-   "lesson": "L06"
+   "lesson": "L06",
+   "uk": "потім, далі",
+   "en": "then, afterwards"
   },
   {
    "id": "w146",
@@ -1648,7 +1938,9 @@
    "plural": "le officine",
    "group": 11,
    "example": "Va all'officina.",
-   "lesson": "L06"
+   "lesson": "L06",
+   "uk": "майстерня, автосервіс",
+   "en": "workshop, garage"
   },
   {
    "id": "w147",
@@ -1657,7 +1949,9 @@
    "pos": "preposition",
    "group": 7,
    "example": "Un'officina vicino a casa sua.",
-   "lesson": "L06"
+   "lesson": "L06",
+   "uk": "поруч з, недалеко від",
+   "en": "near, close to"
   },
   {
    "id": "w148",
@@ -1668,7 +1962,9 @@
    "plural": "le passioni",
    "group": 4,
    "example": "Ha una grande passione per i motori.",
-   "lesson": "L06"
+   "lesson": "L06",
+   "uk": "пристрасть, захоплення (чимось)",
+   "en": "passion (for)"
   },
   {
    "id": "w149",
@@ -1679,7 +1975,9 @@
    "plural": "i motori",
    "group": 7,
    "example": "Passione per i motori.",
-   "lesson": "L06"
+   "lesson": "L06",
+   "uk": "мотор, двигун",
+   "en": "engine"
   },
   {
    "id": "w150",
@@ -1689,7 +1987,9 @@
    "forms": "faticoso / faticosa / faticosi / faticose",
    "group": 11,
    "example": "Il lavoro è faticoso.",
-   "lesson": "L06"
+   "lesson": "L06",
+   "uk": "втомливий, важкий",
+   "en": "tiring, hard"
   },
   {
    "id": "w151",
@@ -1699,7 +1999,9 @@
    "note": "не меняется, всегда + ед.ч.: ogni giorno, ogni mese",
    "group": 12,
    "example": "Esce ogni mattina alle 8.",
-   "lesson": "L06"
+   "lesson": "L06",
+   "uk": "кожен",
+   "en": "every"
   },
   {
    "id": "w152",
@@ -1710,7 +2012,9 @@
    "plural": "le mattine",
    "group": 12,
    "example": "Ogni mattina…",
-   "lesson": "L06"
+   "lesson": "L06",
+   "uk": "ранок; la mattina — щоранку",
+   "en": "morning; la mattina — in the mornings"
   },
   {
    "id": "w153",
@@ -1722,7 +2026,9 @@
    "note": "сокращение от la motocicletta",
    "group": 7,
    "example": "Prende la moto.",
-   "lesson": "L06"
+   "lesson": "L06",
+   "uk": "мотоцикл",
+   "en": "motorbike"
   },
   {
    "id": "w154",
@@ -1733,7 +2039,9 @@
    "plural": "le pause",
    "group": 11,
    "example": "Fa una pausa per il pranzo.",
-   "lesson": "L06"
+   "lesson": "L06",
+   "uk": "перерва (fare una pausa)",
+   "en": "break (fare una pausa)"
   },
   {
    "id": "w155",
@@ -1744,7 +2052,9 @@
    "plural": "i pranzi",
    "group": 6,
    "example": "Pausa per il pranzo.",
-   "lesson": "L06"
+   "lesson": "L06",
+   "uk": "обід",
+   "en": "lunch"
   },
   {
    "id": "w156",
@@ -1755,7 +2065,9 @@
    "plural": "le sere",
    "group": 12,
    "example": "La sera torna a casa.",
-   "lesson": "L06"
+   "lesson": "L06",
+   "uk": "вечір; la sera — щовечора",
+   "en": "evening; la sera — in the evenings"
   },
   {
    "id": "w157",
@@ -1764,7 +2076,9 @@
    "pos": "expression",
    "group": 12,
    "example": "Va quasi sempre a letto prima delle 23.",
-   "lesson": "L06"
+   "lesson": "L06",
+   "uk": "майже завжди",
+   "en": "almost always"
   },
   {
    "id": "w158",
@@ -1776,7 +2090,9 @@
    "group": 1,
    "example": "Va a letto prima delle 23.",
    "lesson": "L06",
-   "base": "w058"
+   "base": "w058",
+   "uk": "лягати спати (il letto — ліжко)",
+   "en": "to go to bed (il letto — bed)"
   },
   {
    "id": "w159",
@@ -1785,7 +2101,9 @@
    "pos": "preposition",
    "group": 12,
    "example": "Prima delle 23.",
-   "lesson": "L06"
+   "lesson": "L06",
+   "uk": "до, перед (prima delle 23)",
+   "en": "before (prima delle 23)"
   },
   {
    "id": "w160",
@@ -1797,7 +2115,9 @@
    "note": "с артиклем = каждую субботу; sabato = в эту субботу",
    "group": 12,
    "example": "Il sabato sera va in discoteca.",
-   "lesson": "L06"
+   "lesson": "L06",
+   "uk": "субота; il sabato — щосуботи",
+   "en": "Saturday; il sabato — on Saturdays"
   },
   {
    "id": "w161",
@@ -1806,7 +2126,9 @@
    "pos": "adverb",
    "group": 12,
    "example": "Il sabato sera, invece, va in discoteca.",
-   "lesson": "L06"
+   "lesson": "L06",
+   "uk": "а от, натомість; навпаки",
+   "en": "instead, on the other hand"
   },
   {
    "id": "w162",
@@ -1817,7 +2139,9 @@
    "plural": "gli amici / le amiche",
    "group": 2,
    "example": "Va con gli amici.",
-   "lesson": "L06"
+   "lesson": "L06",
+   "uk": "друг / подруга",
+   "en": "friend"
   },
   {
    "id": "w163",
@@ -1827,7 +2151,9 @@
    "note": "-mente = наречие (tranquillo → tranquillamente)",
    "group": 12,
    "example": "Può fare tranquillamente le ore piccole.",
-   "lesson": "L06"
+   "lesson": "L06",
+   "uk": "спокійно",
+   "en": "calmly, quietly"
   },
   {
    "id": "w164",
@@ -1837,7 +2163,9 @@
    "group": 1,
    "example": "Fa le ore piccole il sabato.",
    "lesson": "L06",
-   "base": "w008"
+   "base": "w008",
+   "uk": "засиджуватися допізна, гуляти до ранку",
+   "en": "to stay up late, to party till dawn"
   },
   {
    "id": "w165",
@@ -1848,7 +2176,9 @@
    "plural": "le domeniche",
    "group": 12,
    "example": "La domenica può dormire.",
-   "lesson": "L06"
+   "lesson": "L06",
+   "uk": "неділя; la domenica — щонеділі",
+   "en": "Sunday; la domenica — on Sundays"
   },
   {
    "id": "w166",
@@ -1858,7 +2188,9 @@
    "gender": "m",
    "group": 12,
    "example": "Dorme fino a mezzogiorno.",
-   "lesson": "L06"
+   "lesson": "L06",
+   "uk": "полудень (a mezzogiorno — опівдні)",
+   "en": "noon (a mezzogiorno — at noon)"
   },
   {
    "id": "w167",
@@ -1870,7 +2202,9 @@
    "irregular": "причастие",
    "group": 11,
    "example": "Vuole aprire un'officina.",
-   "lesson": "L06"
+   "lesson": "L06",
+   "uk": "відчиняти, відкривати",
+   "en": "to open"
   },
   {
    "id": "w168",
@@ -1879,7 +2213,9 @@
    "pos": "expression",
    "group": 12,
    "example": "Un'officina tutta sua.",
-   "lesson": "L06"
+   "lesson": "L06",
+   "uk": "повністю свій, власний",
+   "en": "all his/her own"
   },
   {
    "id": "w169",
@@ -1889,7 +2225,9 @@
    "note": "апостроф: po' (не pò)",
    "group": 12,
    "example": "Un po' di soldi.",
-   "lesson": "L06"
+   "lesson": "L06",
+   "uk": "трохи (+ ім.)",
+   "en": "a bit of, some (+ noun)"
   },
   {
    "id": "w170",
@@ -1900,7 +2238,9 @@
    "plural": "i mesi",
    "group": 12,
    "example": "Ogni mese.",
-   "lesson": "L06"
+   "lesson": "L06",
+   "uk": "місяць",
+   "en": "month"
   },
   {
    "id": "w171",
@@ -1910,7 +2250,9 @@
    "note": "fra/tra + время = через: fra due giorni",
    "group": 12,
    "example": "Fra qualche anno comprerà un garage.",
-   "lesson": "L06"
+   "lesson": "L06",
+   "uk": "через кілька років",
+   "en": "in a few years"
   },
   {
    "id": "w172",
@@ -1921,7 +2263,9 @@
    "plural": "i garage (не меняется)",
    "group": 7,
    "example": "Comprerà un garage.",
-   "lesson": "L06"
+   "lesson": "L06",
+   "uk": "гараж",
+   "en": "garage"
   },
   {
    "id": "w173",
@@ -1930,7 +2274,9 @@
    "pos": "adverb",
    "group": 12,
    "example": "Così lavorerà da solo.",
-   "lesson": "L06"
+   "lesson": "L06",
+   "uk": "так, таким чином",
+   "en": "so, like this"
   },
   {
    "id": "w174",
@@ -1939,7 +2285,9 @@
    "pos": "expression",
    "group": 12,
    "example": "All'inizio non guadagnerà molto.",
-   "lesson": "L06"
+   "lesson": "L06",
+   "uk": "спочатку",
+   "en": "at first, at the beginning"
   },
   {
    "id": "w175",
@@ -1948,7 +2296,9 @@
    "pos": "adverb",
    "group": 12,
    "example": "Forse non guadagnerà molto.",
-   "lesson": "L06"
+   "lesson": "L06",
+   "uk": "можливо",
+   "en": "maybe, perhaps"
   },
   {
    "id": "w176",
@@ -1957,7 +2307,9 @@
    "pos": "adverb",
    "group": 12,
    "example": "Sarà sicuramente più soddisfatto.",
-   "lesson": "L06"
+   "lesson": "L06",
+   "uk": "напевно, точно",
+   "en": "certainly, surely"
   },
   {
    "id": "w177",
@@ -1966,7 +2318,9 @@
    "pos": "adverb",
    "group": 12,
    "example": "Più soddisfatto.",
-   "lesson": "L06"
+   "lesson": "L06",
+   "uk": "більше",
+   "en": "more"
   },
   {
    "id": "w178",
@@ -1976,7 +2330,9 @@
    "forms": "soddisfatto / soddisfatta / soddisfatti / soddisfatte",
    "group": 4,
    "example": "Sarà più soddisfatto.",
-   "lesson": "L06"
+   "lesson": "L06",
+   "uk": "задоволений",
+   "en": "satisfied, pleased"
   },
   {
    "id": "w179",
@@ -1986,7 +2342,9 @@
    "forms": "grande (м/ж) – grandi (мн.)",
    "group": 3,
    "example": "Una grande passione.",
-   "lesson": "L06"
+   "lesson": "L06",
+   "uk": "великий",
+   "en": "big; great"
   },
   {
    "id": "w180",
@@ -1998,7 +2356,9 @@
    "note": "-iare: tu studi",
    "group": 11,
    "example": "Ho studiato l'italiano.",
-   "lesson": "L07"
+   "lesson": "L07",
+   "uk": "навчатися, вивчати",
+   "en": "to study"
   },
   {
    "id": "w181",
@@ -2011,7 +2371,9 @@
    "added": true,
    "group": 1,
    "example": "Ho visto un bel film.",
-   "lesson": "L07"
+   "lesson": "L07",
+   "uk": "бачити",
+   "en": "to see"
   },
   {
    "id": "w182",
@@ -2024,7 +2386,9 @@
    "added": true,
    "group": 1,
    "example": "Sono venuto in Svizzera cinque anni fa.",
-   "lesson": "L07"
+   "lesson": "L07",
+   "uk": "приходити, приїжджати (сюди)",
+   "en": "to come"
   },
   {
    "id": "w183",
@@ -2036,7 +2400,9 @@
    "irregular": "dico, dici, dice, diciamo, dite, dicono",
    "group": 2,
    "example": "Cosa hai detto?",
-   "lesson": "L07"
+   "lesson": "L07",
+   "uk": "говорити, сказати",
+   "en": "to say, to tell"
   },
   {
    "id": "w184",
@@ -2049,7 +2415,9 @@
    "added": true,
    "group": 11,
    "example": "Ho scritto un messaggio.",
-   "lesson": "L07"
+   "lesson": "L07",
+   "uk": "писати",
+   "en": "to write"
   },
   {
    "id": "w185",
@@ -2062,7 +2430,9 @@
    "added": true,
    "group": 2,
    "example": "Sono nato in Ucraina.",
-   "lesson": "L07"
+   "lesson": "L07",
+   "uk": "народжуватися",
+   "en": "to be born"
   },
   {
    "id": "w186",
@@ -2074,7 +2444,9 @@
    "irregular": "причастие",
    "group": 1,
    "example": "Ho chiuso la porta.",
-   "lesson": "L07"
+   "lesson": "L07",
+   "uk": "зачиняти, закривати",
+   "en": "to close"
   },
   {
    "id": "w187",
@@ -2086,7 +2458,9 @@
    "irregular": "причастие",
    "group": 1,
    "example": "Ho vinto la partita.",
-   "lesson": "L07"
+   "lesson": "L07",
+   "uk": "вигравати, перемагати",
+   "en": "to win"
   },
   {
    "id": "w188",
@@ -2097,7 +2471,9 @@
    "participle": "amato",
    "group": 4,
    "example": "Io amo mio marito.",
-   "lesson": "L07"
+   "lesson": "L07",
+   "uk": "любити",
+   "en": "to love"
   },
   {
    "id": "w189",
@@ -2110,7 +2486,9 @@
    "note": "взаимный: ci siamo amati",
    "group": 4,
    "example": "Io e mio marito ci siamo amati.",
-   "lesson": "L07"
+   "lesson": "L07",
+   "uk": "кохати одне одного",
+   "en": "to love each other"
   },
   {
    "id": "w190",
@@ -2122,7 +2500,9 @@
    "note": "mio marito, mia moglie — без артикля",
    "group": 2,
    "example": "Amo mio marito.",
-   "lesson": "L07"
+   "lesson": "L07",
+   "uk": "чоловік / дружина",
+   "en": "husband / wife"
   },
   {
    "id": "w191",
@@ -2135,7 +2515,9 @@
    "added": true,
    "group": 2,
    "example": "Ci siamo conosciuti a Lugano.",
-   "lesson": "L07"
+   "lesson": "L07",
+   "uk": "знайомитися (одне з одним)",
+   "en": "to meet, to get to know each other"
   },
   {
    "id": "w192",
@@ -2148,7 +2530,9 @@
    "added": true,
    "group": 2,
    "example": "Si sono sposati nel 2015.",
-   "lesson": "L07"
+   "lesson": "L07",
+   "uk": "одружуватися, виходити заміж",
+   "en": "to get married"
   },
   {
    "id": "w193",
@@ -2160,7 +2544,9 @@
    "irregular": "presente: muoio, muori, muore, moriamo, morite, muoiono",
    "group": 10,
    "example": "È morto nel 2010.",
-   "lesson": "L07"
+   "lesson": "L07",
+   "uk": "помирати",
+   "en": "to die"
   },
   {
    "id": "w194",
@@ -2172,7 +2558,9 @@
    "irregular": "причастие",
    "group": 1,
    "example": "Ho perso le chiavi. / Ho perso il treno.",
-   "lesson": "L07"
+   "lesson": "L07",
+   "uk": "губити; запізнюватися на (транспорт); програвати",
+   "en": "to lose; to miss (transport)"
   },
   {
    "id": "w195",
@@ -2184,7 +2572,9 @@
    "irregular": "presente: spengo, spegni, spegne…; причастие",
    "group": 5,
    "example": "Ho spento la luce.",
-   "lesson": "L07"
+   "lesson": "L07",
+   "uk": "вимикати; гасити",
+   "en": "to switch off; to put out"
   },
   {
    "id": "w196",
@@ -2196,7 +2586,9 @@
    "irregular": "причастие",
    "group": 5,
    "example": "Ha acceso la TV.",
-   "lesson": "L07"
+   "lesson": "L07",
+   "uk": "вмикати; запалювати",
+   "en": "to switch on; to light"
   },
   {
    "id": "w197",
@@ -2208,7 +2600,9 @@
    "irregular": "presente: scelgo, scegli, sceglie, scegliamo, scegliete, scelgono; причастие",
    "group": 1,
    "example": "Ha scelto il vestito rosso.",
-   "lesson": "L07"
+   "lesson": "L07",
+   "uk": "обирати, вибирати",
+   "en": "to choose"
   },
   {
    "id": "w198",
@@ -2221,7 +2615,9 @@
    "note": "время не «spendere», а passare: ho passato il weekend",
    "group": 7,
    "example": "Quanto hai speso?",
-   "lesson": "L07"
+   "lesson": "L07",
+   "uk": "витрачати (гроші)",
+   "en": "to spend (money)"
   },
   {
    "id": "w199",
@@ -2234,7 +2630,9 @@
    "note": "противоположность salire",
    "group": 7,
    "example": "Sono sceso dall'autobus.",
-   "lesson": "L07"
+   "lesson": "L07",
+   "uk": "спускатися; виходити (з транспорту)",
+   "en": "to go down; to get off (transport)"
   },
   {
    "id": "w200",
@@ -2247,7 +2645,9 @@
    "note": "на дверях: SPINGERE — от себя, TIRARE — на себя",
    "group": 7,
    "example": "Ha spinto la porta.",
-   "lesson": "L07"
+   "lesson": "L07",
+   "uk": "штовхати",
+   "en": "to push"
   },
   {
    "id": "w201",
@@ -2260,7 +2660,9 @@
    "note": "Cosa è successo? — Что случилось?",
    "group": 12,
    "example": "Cos'è successo?",
-   "lesson": "L07"
+   "lesson": "L07",
+   "uk": "траплятися, відбуватися",
+   "en": "to happen"
   },
   {
    "id": "w202",
@@ -2271,7 +2673,9 @@
    "plural": "i telegiornali",
    "group": 1,
    "example": "Guarda il telegiornale.",
-   "lesson": "L07"
+   "lesson": "L07",
+   "uk": "новини (по ТБ)",
+   "en": "TV news"
   },
   {
    "id": "w203",
@@ -2282,7 +2686,9 @@
    "plural": "le stazioni",
    "group": 7,
    "example": "Sono arrivato tardi alla stazione.",
-   "lesson": "L07"
+   "lesson": "L07",
+   "uk": "вокзал, станція",
+   "en": "station"
   },
   {
    "id": "w204",
@@ -2293,7 +2699,9 @@
    "plural": "i treni",
    "group": 7,
    "example": "Ho perso il treno.",
-   "lesson": "L07"
+   "lesson": "L07",
+   "uk": "потяг",
+   "en": "train"
   },
   {
    "id": "w205",
@@ -2303,7 +2711,9 @@
    "note": "fa ставится ПОСЛЕ времени",
    "group": 12,
    "example": "Una settimana fa.",
-   "lesson": "L07"
+   "lesson": "L07",
+   "uk": "… тому (due ore fa — дві години тому)",
+   "en": "… ago (due ore fa — two hours ago)"
   },
   {
    "id": "w206",
@@ -2314,7 +2724,9 @@
    "participle": "prenotato",
    "group": 8,
    "example": "Hanno prenotato un viaggio.",
-   "lesson": "L07"
+   "lesson": "L07",
+   "uk": "бронювати, замовляти",
+   "en": "to book"
   },
   {
    "id": "w207",
@@ -2325,7 +2737,9 @@
    "plural": "le agenzie di viaggi",
    "group": 8,
    "example": "Sono andati all'agenzia di viaggi.",
-   "lesson": "L07"
+   "lesson": "L07",
+   "uk": "турагенція",
+   "en": "travel agency"
   },
   {
    "id": "w208",
@@ -2336,7 +2750,9 @@
    "plural": "i viaggi",
    "group": 8,
    "example": "Un viaggio in Egitto.",
-   "lesson": "L07"
+   "lesson": "L07",
+   "uk": "подорож, поїздка",
+   "en": "trip, journey"
   },
   {
    "id": "w209",
@@ -2347,7 +2763,9 @@
    "plural": "le fermate",
    "group": 7,
    "example": "Alla fermata dell'autobus.",
-   "lesson": "L07"
+   "lesson": "L07",
+   "uk": "зупинка (автобуса)",
+   "en": "(bus) stop"
   },
   {
    "id": "w210",
@@ -2359,7 +2777,9 @@
    "note": "номер маршрута с артиклем: prendo il 39",
    "group": 7,
    "example": "Abbiamo preso il 39.",
-   "lesson": "L07"
+   "lesson": "L07",
+   "uk": "автобус",
+   "en": "bus"
   },
   {
    "id": "w211",
@@ -2369,7 +2789,9 @@
    "group": 2,
    "example": "Abbiamo parlato del più e del meno.",
    "lesson": "L07",
-   "base": "w087"
+   "base": "w087",
+   "uk": "балакати про се і те",
+   "en": "to chat about this and that"
   },
   {
    "id": "w212",
@@ -2381,7 +2803,9 @@
    "note": "без предлога: ascolto la musica",
    "group": 1,
    "example": "Ha ascoltato la musica.",
-   "lesson": "L07"
+   "lesson": "L07",
+   "uk": "слухати",
+   "en": "to listen (to)"
   },
   {
    "id": "w213",
@@ -2393,7 +2817,9 @@
    "group": 1,
    "example": "Ascolta la musica. / Mi piaceva la musica rock.",
    "lesson": "L07",
-   "note": "la musica rock / pop / classica"
+   "note": "la musica rock / pop / classica",
+   "uk": "музика",
+   "en": "music"
   },
   {
    "id": "w214",
@@ -2404,7 +2830,9 @@
    "plural": "le lettere",
    "group": 1,
    "example": "Ha scritto una lettera.",
-   "lesson": "L07"
+   "lesson": "L07",
+   "uk": "лист; літера",
+   "en": "letter"
   },
   {
    "id": "w215",
@@ -2416,7 +2844,9 @@
    "note": "conosco [к], conosci [ш]; знать факт — sapere",
    "group": 2,
    "example": "Un ragazzo che ha conosciuto durante le vacanze.",
-   "lesson": "L07"
+   "lesson": "L07",
+   "uk": "знати (когось, місце); у passato prossimo — познайомитися",
+   "en": "to know (a person, a place); in the passato prossimo — to meet"
   },
   {
    "id": "w216",
@@ -2427,7 +2857,9 @@
    "plural": "обычно во мн.ч.; in vacanza — в отпуске",
    "group": 8,
    "example": "Quando sei tornato dalle vacanze?",
-   "lesson": "L07"
+   "lesson": "L07",
+   "uk": "відпустка, канікули",
+   "en": "holidays, vacation"
   },
   {
    "id": "w217",
@@ -2438,7 +2870,9 @@
    "note": "domenica scorsa, la settimana scorsa, l'anno scorso",
    "group": 12,
    "example": "Domenica scorsa…",
-   "lesson": "L07"
+   "lesson": "L07",
+   "uk": "минулий",
+   "en": "last, past"
   },
   {
    "id": "w218",
@@ -2450,7 +2884,9 @@
    "group": 8,
    "example": "Abbiamo fatto una gita in campagna.",
    "lesson": "L07",
-   "base": "w008"
+   "base": "w008",
+   "uk": "з'їздити на прогулянку, екскурсію (за місто)",
+   "en": "to go on a trip, an outing"
   },
   {
    "id": "w219",
@@ -2461,7 +2897,9 @@
    "plural": "le campagne",
    "group": 9,
    "example": "Una gita in campagna.",
-   "lesson": "L07"
+   "lesson": "L07",
+   "uk": "сільська місцевість, за містом",
+   "en": "countryside"
   },
   {
    "id": "w220",
@@ -2473,7 +2911,9 @@
    "note": "il giorno — день как дата; la giornata — как прошёл день",
    "group": 12,
    "example": "Tutta la giornata.",
-   "lesson": "L07"
+   "lesson": "L07",
+   "uk": "день (як проміжок часу, «увесь день»)",
+   "en": "day (the whole day)"
   },
   {
    "id": "w221",
@@ -2482,7 +2922,9 @@
    "pos": "expression",
    "group": 9,
    "example": "Abbiamo passato la giornata in mezzo al verde.",
-   "lesson": "L07"
+   "lesson": "L07",
+   "uk": "на природі, серед зелені",
+   "en": "surrounded by nature"
   },
   {
    "id": "w222",
@@ -2493,7 +2935,9 @@
    "participle": "pranzato",
    "group": 6,
    "example": "Abbiamo pranzato al sacco.",
-   "lesson": "L07"
+   "lesson": "L07",
+   "uk": "обідати",
+   "en": "to have lunch"
   },
   {
    "id": "w223",
@@ -2504,7 +2948,9 @@
    "group": 6,
    "example": "Abbiamo pranzato al sacco.",
    "lesson": "L07",
-   "base": "w222"
+   "base": "w222",
+   "uk": "перекусити взятою з собою їжею, пікнік",
+   "en": "to have a packed lunch, a picnic"
   },
   {
    "id": "w224",
@@ -2513,7 +2959,9 @@
    "pos": "preposition",
    "group": 12,
    "example": "Siamo tornati verso le 19.",
-   "lesson": "L07"
+   "lesson": "L07",
+   "uk": "близько, приблизно о (verso le 19)",
+   "en": "around (a time) (verso le 19)"
   },
   {
    "id": "w225",
@@ -2524,7 +2972,9 @@
    "participle": "partito",
    "group": 8,
    "example": "Quando siete partiti da Milano?",
-   "lesson": "L07"
+   "lesson": "L07",
+   "uk": "від'їжджати, вирушати",
+   "en": "to leave, to depart"
   },
   {
    "id": "w226",
@@ -2533,7 +2983,9 @@
    "pos": "adverb",
    "group": 12,
    "example": "Circa due ore fa.",
-   "lesson": "L07"
+   "lesson": "L07",
+   "uk": "близько, приблизно",
+   "en": "about, approximately"
   },
   {
    "id": "w227",
@@ -2544,7 +2996,9 @@
    "plural": "i professori / le professoresse",
    "group": 11,
    "example": "Professore, ha già preso il caffè?",
-   "lesson": "L07"
+   "lesson": "L07",
+   "uk": "викладач, учитель / викладачка, учителька",
+   "en": "teacher"
   },
   {
    "id": "w228",
@@ -2555,7 +3009,9 @@
    "plural": "i caffè (не меняется)",
    "group": 6,
    "example": "Ha già preso il caffè?",
-   "lesson": "L07"
+   "lesson": "L07",
+   "uk": "кава",
+   "en": "coffee"
   },
   {
    "id": "w229",
@@ -2566,7 +3022,9 @@
    "plural": "i giornali",
    "group": 1,
    "example": "Non ho ancora letto il giornale.",
-   "lesson": "L07"
+   "lesson": "L07",
+   "uk": "газета",
+   "en": "newspaper"
   },
   {
    "id": "w230",
@@ -2578,7 +3036,9 @@
    "note": "avere tempo — иметь время; che tempo fa? — какая погода?",
    "group": 12,
    "example": "Non ho avuto tempo.",
-   "lesson": "L07"
+   "lesson": "L07",
+   "uk": "час; погода",
+   "en": "time; weather"
   },
   {
    "id": "w231",
@@ -2589,7 +3049,9 @@
    "plural": "le signorine",
    "group": 2,
    "example": "Signorina, è arrivata tardi.",
-   "lesson": "L07"
+   "lesson": "L07",
+   "uk": "дівчина (ввічливе звертання)",
+   "en": "young lady, Miss"
   },
   {
    "id": "w232",
@@ -2599,7 +3061,9 @@
    "note": "противоположность presto",
    "group": 12,
    "example": "Sono arrivato tardi.",
-   "lesson": "L07"
+   "lesson": "L07",
+   "uk": "пізно",
+   "en": "late"
   },
   {
    "id": "w233",
@@ -2608,7 +3072,9 @@
    "pos": "adverb",
    "group": 12,
    "example": "Stamattina ho perso il treno.",
-   "lesson": "L07"
+   "lesson": "L07",
+   "uk": "сьогодні вранці",
+   "en": "this morning"
   },
   {
    "id": "w234",
@@ -2618,7 +3084,9 @@
    "note": "также stasera — сегодня вечером",
    "group": 12,
    "example": "Stanotte non sono stata bene.",
-   "lesson": "L07"
+   "lesson": "L07",
+   "uk": "цієї ночі, сьогодні вночі",
+   "en": "last night, tonight"
   },
   {
    "id": "w235",
@@ -2627,7 +3095,9 @@
    "pos": "expression",
    "group": 12,
    "example": "È arrivata tardi. Come mai?",
-   "lesson": "L07"
+   "lesson": "L07",
+   "uk": "чому ж? як так?",
+   "en": "how come?"
   },
   {
    "id": "w236",
@@ -2636,7 +3106,9 @@
    "pos": "expression",
    "group": 4,
    "example": "Mi dispiace, ma stanotte non sono stata bene.",
-   "lesson": "L07"
+   "lesson": "L07",
+   "uk": "мені шкода; вибачте",
+   "en": "I'm sorry"
   },
   {
    "id": "w237",
@@ -2648,7 +3120,9 @@
    "group": 10,
    "example": "Non sono stata bene.",
    "lesson": "L07",
-   "base": "w067"
+   "base": "w067",
+   "uk": "добре / погано почуватися",
+   "en": "to feel well / unwell"
   },
   {
    "id": "w238",
@@ -2660,7 +3134,9 @@
    "note": "andare dal dottore — идти к врачу (da + человек = к кому-то)",
    "group": 10,
    "example": "Sono andata dal dottore.",
-   "lesson": "L07"
+   "lesson": "L07",
+   "uk": "лікар, доктор",
+   "en": "doctor"
   },
   {
    "id": "w239",
@@ -2669,7 +3145,9 @@
    "pos": "adverb",
    "group": 12,
    "example": "Ieri sera Aldo ha cominciato un libro.",
-   "lesson": "L07"
+   "lesson": "L07",
+   "uk": "учора (ieri sera — учора ввечері)",
+   "en": "yesterday (ieri sera — last night)"
   },
   {
    "id": "w240",
@@ -2681,7 +3159,9 @@
    "note": "il giallo — детектив (по цвету обложек)",
    "group": 1,
    "example": "Un libro giallo.",
-   "lesson": "L07"
+   "lesson": "L07",
+   "uk": "книжка (детектив)",
+   "en": "book (crime novel)"
   },
   {
    "id": "w241",
@@ -2690,7 +3170,9 @@
    "pos": "preposition",
    "group": 12,
    "example": "Durante le vacanze.",
-   "lesson": "L07"
+   "lesson": "L07",
+   "uk": "під час",
+   "en": "during"
   },
   {
    "id": "w242",
@@ -2699,7 +3181,9 @@
    "pos": "adverb",
    "group": 12,
    "example": "Oggi non ho letto il giornale.",
-   "lesson": "L07"
+   "lesson": "L07",
+   "uk": "сьогодні",
+   "en": "today"
   },
   {
    "id": "w243",
@@ -2710,7 +3194,9 @@
    "plural": "i giorni",
    "group": 12,
    "example": "Qualche giorno fa.",
-   "lesson": "L07"
+   "lesson": "L07",
+   "uk": "день",
+   "en": "day"
   },
   {
    "id": "w244",
@@ -2721,7 +3207,9 @@
    "plural": "le settimane",
    "group": 12,
    "example": "Una settimana fa.",
-   "lesson": "L07"
+   "lesson": "L07",
+   "uk": "тиждень",
+   "en": "week"
   },
   {
    "id": "w245",
@@ -2734,7 +3222,9 @@
    "group": 7,
    "example": "Ha dato un passaggio agli amici.",
    "lesson": "L08",
-   "base": "w125"
+   "base": "w125",
+   "uk": "підвезти (когось)",
+   "en": "to give (someone) a lift"
   },
   {
    "id": "w246",
@@ -2743,7 +3233,9 @@
    "pos": "expression",
    "group": 12,
    "example": "A un certo punto, un poliziotto ha fermato la macchina.",
-   "lesson": "L08"
+   "lesson": "L08",
+   "uk": "у якийсь момент, раптом",
+   "en": "at some point, suddenly"
   },
   {
    "id": "w247",
@@ -2754,7 +3246,9 @@
    "plural": "i poliziotti / le poliziotte",
    "group": 7,
    "example": "Un poliziotto ha fermato la macchina.",
-   "lesson": "L08"
+   "lesson": "L08",
+   "uk": "поліцейський / поліцейська",
+   "en": "police officer"
   },
   {
    "id": "w248",
@@ -2766,7 +3260,9 @@
    "note": "fermarsi — останавливаться самому (essere)",
    "group": 7,
    "example": "Ha fermato la macchina di Andrea.",
-   "lesson": "L08"
+   "lesson": "L08",
+   "uk": "зупиняти (когось, щось)",
+   "en": "to stop (someone, something)"
   },
   {
    "id": "w249",
@@ -2777,7 +3273,9 @@
    "plural": "le multe",
    "group": 7,
    "example": "Il poliziotto ha dato una multa ad Andrea.",
-   "lesson": "L08"
+   "lesson": "L08",
+   "uk": "штраф (dare / prendere una multa)",
+   "en": "fine (dare / prendere una multa)"
   },
   {
    "id": "w250",
@@ -2788,7 +3286,9 @@
    "plural": "i semafori",
    "group": 7,
    "example": "È passato con il semaforo rosso.",
-   "lesson": "L08"
+   "lesson": "L08",
+   "uk": "світлофор",
+   "en": "traffic light"
   },
   {
    "id": "w251",
@@ -2800,7 +3300,9 @@
    "group": 7,
    "example": "È passato con il rosso.",
    "lesson": "L08",
-   "base": "w060"
+   "base": "w060",
+   "uk": "проїхати на червоне світло",
+   "en": "to run a red light"
   },
   {
    "id": "w252",
@@ -2810,7 +3312,9 @@
    "forms": "rosso / rossa / rossi / rosse",
    "group": 3,
    "example": "Il semaforo rosso.",
-   "lesson": "L08"
+   "lesson": "L08",
+   "uk": "червоний",
+   "en": "red"
   },
   {
    "id": "w253",
@@ -2822,7 +3326,9 @@
    "note": "in macchina — на машине / в машине (без артикля)",
    "group": 7,
    "example": "Ha preso la macchina.",
-   "lesson": "L08"
+   "lesson": "L08",
+   "uk": "машина, автомобіль",
+   "en": "car"
   },
   {
    "id": "w254",
@@ -2831,7 +3337,9 @@
    "pos": "adverb",
    "group": 12,
    "example": "Finalmente sono arrivati.",
-   "lesson": "L08"
+   "lesson": "L08",
+   "uk": "нарешті",
+   "en": "finally, at last"
   },
   {
    "id": "w255",
@@ -2840,7 +3348,9 @@
    "pos": "expression",
    "group": 7,
    "example": "Sono arrivati in centro a Milano.",
-   "lesson": "L08"
+   "lesson": "L08",
+   "uk": "у центр(і) міста",
+   "en": "in / to the town centre"
   },
   {
    "id": "w256",
@@ -2851,7 +3361,9 @@
    "plural": "i duomi",
    "group": 8,
    "example": "Hanno visitato il Duomo.",
-   "lesson": "L08"
+   "lesson": "L08",
+   "uk": "собор (головний у місті)",
+   "en": "cathedral"
   },
   {
    "id": "w257",
@@ -2862,7 +3374,9 @@
    "plural": "i ristoranti",
    "group": 6,
    "example": "Hanno mangiato una pizza al ristorante.",
-   "lesson": "L08"
+   "lesson": "L08",
+   "uk": "ресторан",
+   "en": "restaurant"
   },
   {
    "id": "w258",
@@ -2873,7 +3387,9 @@
    "plural": "le cene",
    "group": 6,
    "example": "Dopo cena è andato in discoteca.",
-   "lesson": "L08"
+   "lesson": "L08",
+   "uk": "вечеря (dopo cena — після вечері)",
+   "en": "dinner (dopo cena — after dinner)"
   },
   {
    "id": "w259",
@@ -2884,7 +3400,9 @@
    "plural": "le camicie",
    "group": 3,
    "example": "Si è cambiato la camicia.",
-   "lesson": "L08"
+   "lesson": "L08",
+   "uk": "сорочка",
+   "en": "shirt"
   },
   {
    "id": "w260",
@@ -2894,7 +3412,9 @@
    "note": "veloce → velocemente",
    "group": 12,
    "example": "Si è cambiato velocemente.",
-   "lesson": "L08"
+   "lesson": "L08",
+   "uk": "швидко",
+   "en": "quickly"
   },
   {
    "id": "w261",
@@ -2904,7 +3424,9 @@
    "note": "с ударением: lì (≠ li — их)",
    "group": 12,
    "example": "Lì ha conosciuto un'altra ragazza.",
-   "lesson": "L08"
+   "lesson": "L08",
+   "uk": "там",
+   "en": "there"
   },
   {
    "id": "w262",
@@ -2914,7 +3436,9 @@
    "forms": "altro / altra / altri / altre; un altro, un'altra",
    "group": 12,
    "example": "Un'altra ragazza.",
-   "lesson": "L08"
+   "lesson": "L08",
+   "uk": "інший; ще один",
+   "en": "other; another"
   },
   {
    "id": "w263",
@@ -2926,7 +3450,9 @@
    "note": "i suoceri = genitori del marito / della moglie",
    "group": 2,
    "example": "I miei suoceri abitano a Milano.",
-   "lesson": "L09"
+   "lesson": "L09",
+   "uk": "свекор, тесть / свекруха, теща",
+   "en": "father-in-law / mother-in-law"
   },
   {
    "id": "w264",
@@ -2938,7 +3464,9 @@
    "note": "= fratelli / sorelle del marito o della moglie (и мужья/жёны братьев и сестёр)",
    "group": 2,
    "example": "Mio cognato fa il meccanico.",
-   "lesson": "L09"
+   "lesson": "L09",
+   "uk": "дівер, шурин, свояк / зовиця, своячка",
+   "en": "brother-in-law / sister-in-law"
   },
   {
    "id": "w265",
@@ -2950,7 +3478,9 @@
    "note": "= marito della figlia",
    "group": 2,
    "example": "Mio genero è molto gentile.",
-   "lesson": "L09"
+   "lesson": "L09",
+   "uk": "зять (чоловік доньки)",
+   "en": "son-in-law"
   },
   {
    "id": "w266",
@@ -2962,7 +3492,9 @@
    "note": "= moglie del figlio",
    "group": 2,
    "example": "Mia nuora è di Lugano.",
-   "lesson": "L09"
+   "lesson": "L09",
+   "uk": "невістка (дружина сина)",
+   "en": "daughter-in-law"
   },
   {
    "id": "w267",
@@ -2975,7 +3507,9 @@
    "added": true,
    "group": 2,
    "example": "Ti mancano i tuoi genitori?",
-   "lesson": "L09"
+   "lesson": "L09",
+   "uk": "батьки",
+   "en": "parents"
   },
   {
    "id": "w268",
@@ -2988,7 +3522,9 @@
    "added": true,
    "group": 2,
    "example": "Ho due fratelli.",
-   "lesson": "L09"
+   "lesson": "L09",
+   "uk": "брат / сестра",
+   "en": "brother / sister"
   },
   {
    "id": "w269",
@@ -2999,7 +3535,9 @@
    "note": "≈ felice",
    "group": 4,
    "example": "Oggi sono allegra.",
-   "lesson": "L09"
+   "lesson": "L09",
+   "uk": "веселий, радісний",
+   "en": "cheerful, happy"
   },
   {
    "id": "w270",
@@ -3010,7 +3548,9 @@
    "note": "противоположность allegro/felice",
    "group": 4,
    "example": "Perché sei triste?",
-   "lesson": "L09"
+   "lesson": "L09",
+   "uk": "сумний",
+   "en": "sad"
   },
   {
    "id": "w271",
@@ -3021,7 +3561,9 @@
    "note": "essere ubriaco — быть пьяным (состояние); ubriacarsi — напиться",
    "group": 10,
    "example": "Andrea è ubriaco.",
-   "lesson": "L09"
+   "lesson": "L09",
+   "uk": "п'яний",
+   "en": "drunk"
   },
   {
    "id": "w272",
@@ -3033,7 +3575,9 @@
    "irregular": "причастие",
    "group": 1,
    "example": "Sono cresciuto a Mariupol.",
-   "lesson": "L10"
+   "lesson": "L10",
+   "uk": "рости, виростати",
+   "en": "to grow (up)"
   },
   {
    "id": "w273",
@@ -3044,7 +3588,9 @@
    "participle": "entrato",
    "group": 7,
    "example": "Sono entrato in banca.",
-   "lesson": "L10"
+   "lesson": "L10",
+   "uk": "входити",
+   "en": "to enter, to go in"
   },
   {
    "id": "w274",
@@ -3055,7 +3601,9 @@
    "participle": "restato",
    "group": 1,
    "example": "Sono restata a casa.",
-   "lesson": "L10"
+   "lesson": "L10",
+   "uk": "залишатися (= rimanere)",
+   "en": "to stay (= rimanere)"
   },
   {
    "id": "w275",
@@ -3066,7 +3614,9 @@
    "participle": "ritornato",
    "group": 1,
    "example": "Sono ritornato dalle vacanze.",
-   "lesson": "L10"
+   "lesson": "L10",
+   "uk": "повертатися (= tornare)",
+   "en": "to come back (= tornare)"
   },
   {
    "id": "w276",
@@ -3079,7 +3629,9 @@
    "note": "essere или avere: è vissuto a lungo / ha vissuto a Londra",
    "group": 2,
    "example": "Ho vissuto dieci anni a Londra. / È vissuto a lungo.",
-   "lesson": "L10"
+   "lesson": "L10",
+   "uk": "жити",
+   "en": "to live"
   },
   {
    "id": "w277",
@@ -3090,7 +3642,9 @@
    "participle": "abitato",
    "group": 5,
    "example": "Ho abitato a Milano.",
-   "lesson": "L10"
+   "lesson": "L10",
+   "uk": "жити, мешкати (десь)",
+   "en": "to live (somewhere)"
   },
   {
    "id": "w278",
@@ -3102,7 +3656,9 @@
    "group": 1,
    "example": "Ho giocato a calcio.",
    "lesson": "L10",
-   "note": "-care: tu giochi; giocare a calcio / a carte"
+   "note": "-care: tu giochi; giocare a calcio / a carte",
+   "uk": "грати (у гру, спорт)",
+   "en": "to play (a game, a sport)"
   },
   {
    "id": "w279",
@@ -3113,7 +3669,9 @@
    "participle": "girato",
    "group": 8,
    "example": "Abbiamo girato la città.",
-   "lesson": "L10"
+   "lesson": "L10",
+   "uk": "гуляти, їздити (містом); повертати",
+   "en": "to go around (a city); to turn"
   },
   {
    "id": "w280",
@@ -3124,7 +3682,9 @@
    "participle": "nuotato",
    "group": 10,
    "example": "Ho nuotato nel lago.",
-   "lesson": "L10"
+   "lesson": "L10",
+   "uk": "плавати",
+   "en": "to swim"
   },
   {
    "id": "w281",
@@ -3135,7 +3695,9 @@
    "participle": "passeggiato",
    "group": 1,
    "example": "Abbiamo passeggiato sul lungolago.",
-   "lesson": "L10"
+   "lesson": "L10",
+   "uk": "прогулюватися, гуляти",
+   "en": "to go for a walk"
   },
   {
    "id": "w282",
@@ -3148,7 +3710,9 @@
    "note": "sapere — знать факт/уметь; conoscere — знать человека/место",
    "group": 11,
    "example": "Non so la risposta. / So nuotare.",
-   "lesson": "L10"
+   "lesson": "L10",
+   "uk": "знати (факт); уміти (+ інф.)",
+   "en": "to know (a fact); to know how to (+ infinitive)"
   },
   {
    "id": "w283",
@@ -3159,7 +3723,9 @@
    "participle": "sentito",
    "group": 10,
    "example": "Ho sentito un rumore.",
-   "lesson": "L10"
+   "lesson": "L10",
+   "uk": "чути; відчувати",
+   "en": "to hear; to feel"
   },
   {
    "id": "w284",
@@ -3170,7 +3736,9 @@
    "participle": "telefonato",
    "group": 2,
    "example": "Ho telefonato a mia madre.",
-   "lesson": "L10"
+   "lesson": "L10",
+   "uk": "телефонувати (комусь)",
+   "en": "to phone, to call (someone)"
   },
   {
    "id": "w285",
@@ -3181,7 +3749,9 @@
    "participle": "venduto",
    "group": 7,
    "example": "Ho venduto la macchina.",
-   "lesson": "L10"
+   "lesson": "L10",
+   "uk": "продавати",
+   "en": "to sell"
   },
   {
    "id": "w286",
@@ -3192,7 +3762,9 @@
    "participle": "viaggiato",
    "group": 8,
    "example": "Abbiamo viaggiato molto.",
-   "lesson": "L10"
+   "lesson": "L10",
+   "uk": "подорожувати",
+   "en": "to travel"
   },
   {
    "id": "w287",
@@ -3204,7 +3776,9 @@
    "irregular": "причастие",
    "group": 2,
    "example": "Ho promesso di venire.",
-   "lesson": "L10"
+   "lesson": "L10",
+   "uk": "обіцяти",
+   "en": "to promise"
   },
   {
    "id": "w288",
@@ -3216,7 +3790,9 @@
    "irregular": "причастие",
    "group": 2,
    "example": "Mi hai permesso di uscire.",
-   "lesson": "L10"
+   "lesson": "L10",
+   "uk": "дозволяти",
+   "en": "to allow"
   },
   {
    "id": "w289",
@@ -3228,7 +3804,9 @@
    "irregular": "propongo, proponi, propone…; причастие",
    "group": 2,
    "example": "Ho proposto una gita.",
-   "lesson": "L10"
+   "lesson": "L10",
+   "uk": "пропонувати",
+   "en": "to propose, to suggest"
   },
   {
    "id": "w290",
@@ -3240,7 +3818,9 @@
    "irregular": "причастие",
    "group": 1,
    "example": "Ha retto la porta.",
-   "lesson": "L10"
+   "lesson": "L10",
+   "uk": "тримати, підтримувати",
+   "en": "to hold, to support"
   },
   {
    "id": "w291",
@@ -3252,7 +3832,9 @@
    "irregular": "причастие",
    "group": 4,
    "example": "Abbiamo riso tanto.",
-   "lesson": "L10"
+   "lesson": "L10",
+   "uk": "сміятися",
+   "en": "to laugh"
   },
   {
    "id": "w292",
@@ -3264,7 +3846,9 @@
    "irregular": "riduco, riduci…; причастие",
    "group": 7,
    "example": "Ho ridotto le spese.",
-   "lesson": "L10"
+   "lesson": "L10",
+   "uk": "скорочувати, зменшувати",
+   "en": "to reduce"
   },
   {
    "id": "w293",
@@ -3276,7 +3860,9 @@
    "irregular": "причастие",
    "group": 11,
    "example": "Il professore ha corretto l'esercizio.",
-   "lesson": "L10"
+   "lesson": "L10",
+   "uk": "виправляти",
+   "en": "to correct"
   },
   {
    "id": "w294",
@@ -3288,7 +3874,9 @@
    "irregular": "причастие",
    "group": 2,
    "example": "Ho risposto al messaggio.",
-   "lesson": "L10"
+   "lesson": "L10",
+   "uk": "відповідати (комусь, на щось)",
+   "en": "to answer, to reply (to)"
   },
   {
    "id": "w295",
@@ -3300,7 +3888,9 @@
    "irregular": "причастие",
    "group": 1,
    "example": "Ho deciso di partire.",
-   "lesson": "L10"
+   "lesson": "L10",
+   "uk": "вирішувати",
+   "en": "to decide"
   },
   {
    "id": "w296",
@@ -3312,7 +3902,9 @@
    "irregular": "причастие",
    "group": 5,
    "example": "Ho rotto un bicchiere.",
-   "lesson": "L10"
+   "lesson": "L10",
+   "uk": "ламати, розбивати",
+   "en": "to break"
   },
   {
    "id": "w297",
@@ -3324,7 +3916,9 @@
    "irregular": "причастие",
    "group": 1,
    "example": "Ha dipinto la camera.",
-   "lesson": "L10"
+   "lesson": "L10",
+   "uk": "малювати (фарбами), фарбувати",
+   "en": "to paint"
   },
   {
    "id": "w298",
@@ -3336,7 +3930,9 @@
    "irregular": "sciolgo, sciogli…; причастие",
    "group": 9,
    "example": "Il sole ha sciolto la neve.",
-   "lesson": "L10"
+   "lesson": "L10",
+   "uk": "розчиняти, розтоплювати; розв'язувати",
+   "en": "to dissolve, to melt; to untie"
   },
   {
    "id": "w299",
@@ -3348,7 +3944,9 @@
    "irregular": "причастие",
    "group": 11,
    "example": "Ha diretto l'azienda.",
-   "lesson": "L10"
+   "lesson": "L10",
+   "uk": "керувати, управляти",
+   "en": "to direct, to manage"
   },
   {
    "id": "w300",
@@ -3360,7 +3958,9 @@
    "irregular": "причастие",
    "group": 2,
    "example": "Abbiamo discusso del problema.",
-   "lesson": "L10"
+   "lesson": "L10",
+   "uk": "обговорювати; сперечатися",
+   "en": "to discuss; to argue"
   },
   {
    "id": "w301",
@@ -3372,7 +3972,9 @@
    "irregular": "причастие",
    "group": 4,
    "example": "Ha sofferto molto.",
-   "lesson": "L10"
+   "lesson": "L10",
+   "uk": "страждати",
+   "en": "to suffer"
   },
   {
    "id": "w302",
@@ -3384,7 +3986,9 @@
    "irregular": "причастие",
    "group": 6,
    "example": "Ti ho offerto un caffè.",
-   "lesson": "L10"
+   "lesson": "L10",
+   "uk": "пропонувати; пригощати",
+   "en": "to offer; to treat (someone)"
   },
   {
    "id": "w303",
@@ -3396,7 +4000,9 @@
    "irregular": "причастие",
    "group": 2,
    "example": "Mi ha stretto la mano.",
-   "lesson": "L10"
+   "lesson": "L10",
+   "uk": "стискати; потискати (руку)",
+   "en": "to squeeze; to shake (hands)"
   },
   {
    "id": "w304",
@@ -3408,7 +4014,9 @@
    "irregular": "tolgo, togli…; причастие",
    "group": 1,
    "example": "Mi sono tolto la giacca.",
-   "lesson": "L10"
+   "lesson": "L10",
+   "uk": "знімати (одяг); прибирати",
+   "en": "to take off (clothes); to remove"
   },
   {
    "id": "w305",
@@ -3420,7 +4028,9 @@
    "irregular": "traduco, traduci…; причастие",
    "group": 11,
    "example": "Ho tradotto la lettera.",
-   "lesson": "L10"
+   "lesson": "L10",
+   "uk": "перекладати (текст)",
+   "en": "to translate"
   },
   {
    "id": "w306",
@@ -3432,7 +4042,9 @@
    "note": "andare dal medico — идти к врачу",
    "group": 10,
    "example": "Vittorio è andato dal medico.",
-   "lesson": "L10"
+   "lesson": "L10",
+   "uk": "лікар (= il dottore)",
+   "en": "doctor (= il dottore)"
   },
   {
    "id": "w307",
@@ -3444,7 +4056,9 @@
    "note": "времена года: la primavera, l'estate, l'autunno, l'inverno",
    "group": 9,
    "example": "In estate i ragazzi sono rimasti in città.",
-   "lesson": "L10"
+   "lesson": "L10",
+   "uk": "літо (in estate — влітку)",
+   "en": "summer (in estate — in summer)"
   },
   {
    "id": "w308",
@@ -3456,7 +4070,9 @@
    "note": "in città — в городе (без артикля)",
    "group": 7,
    "example": "Sono rimasti in città.",
-   "lesson": "L10"
+   "lesson": "L10",
+   "uk": "місто",
+   "en": "city, town"
   },
   {
    "id": "w309",
@@ -3468,7 +4084,9 @@
    "note": "mio nonno — без артикля",
    "group": 2,
    "example": "Mio nonno è morto dieci anni fa.",
-   "lesson": "L10"
+   "lesson": "L10",
+   "uk": "дідусь / бабуся",
+   "en": "grandfather / grandmother"
   },
   {
    "id": "w310",
@@ -3480,7 +4098,9 @@
    "note": "tutto il pomeriggio — весь день (после обеда)",
    "group": 12,
    "example": "Sono rimaste a casa tutto il pomeriggio.",
-   "lesson": "L10"
+   "lesson": "L10",
+   "uk": "після обіду, день (з 13 до 18)",
+   "en": "afternoon"
   },
   {
    "id": "w311",
@@ -3491,7 +4111,9 @@
    "group": 3,
    "example": "Non è grasso, è robusto.",
    "note": "≠ magro; вежливее: robusto, in carne",
-   "lesson": "L11"
+   "lesson": "L11",
+   "uk": "товстий",
+   "en": "fat"
   },
   {
    "id": "w312",
@@ -3501,7 +4123,9 @@
    "forms": "robusto / robusta / robusti / robuste",
    "group": 3,
    "example": "Mio padre era alto e robusto.",
-   "lesson": "L11"
+   "lesson": "L11",
+   "uk": "міцний, кремезний",
+   "en": "sturdy, stocky"
   },
   {
    "id": "w313",
@@ -3512,7 +4136,9 @@
    "group": 3,
    "example": "Mia sorella è bassa.",
    "note": "≠ alto",
-   "lesson": "L11"
+   "lesson": "L11",
+   "uk": "низький (на зріст)",
+   "en": "short"
   },
   {
    "id": "w314",
@@ -3523,7 +4149,9 @@
    "group": 3,
    "example": "Ha gli occhi chiari.",
    "note": "≠ scuro",
-   "lesson": "L11"
+   "lesson": "L11",
+   "uk": "світлий",
+   "en": "light"
   },
   {
    "id": "w315",
@@ -3533,7 +4161,9 @@
    "forms": "nero / nera / neri / nere",
    "group": 3,
    "example": "Ha i capelli neri.",
-   "lesson": "L11"
+   "lesson": "L11",
+   "uk": "чорний",
+   "en": "black"
   },
   {
    "id": "w316",
@@ -3543,7 +4173,9 @@
    "forms": "marrone (м/ж) – marroni (мн.)",
    "group": 3,
    "example": "Ha gli occhi marroni.",
-   "lesson": "L11"
+   "lesson": "L11",
+   "uk": "карий (очі), коричневий",
+   "en": "brown"
   },
   {
    "id": "w317",
@@ -3553,7 +4185,9 @@
    "forms": "verde (м/ж) – verdi (мн.)",
    "group": 3,
    "example": "Ha gli occhi verdi.",
-   "lesson": "L11"
+   "lesson": "L11",
+   "uk": "зелений",
+   "en": "green"
   },
   {
    "id": "w318",
@@ -3564,7 +4198,9 @@
    "group": 3,
    "example": "Ha gli occhi blu.",
    "note": "неизменяемое",
-   "lesson": "L11"
+   "lesson": "L11",
+   "uk": "синій, блакитний",
+   "en": "blue"
   },
   {
    "id": "w319",
@@ -3574,7 +4210,9 @@
    "forms": "grigio / grigia / grigi / grigie",
    "group": 3,
    "example": "Ha i capelli grigi.",
-   "lesson": "L11"
+   "lesson": "L11",
+   "uk": "сірий; сивий (волосся)",
+   "en": "grey; grey-haired"
   },
   {
    "id": "w320",
@@ -3584,7 +4222,9 @@
    "forms": "biondo / bionda / biondi / bionde",
    "group": 3,
    "example": "Ha i capelli biondi.",
-   "lesson": "L11"
+   "lesson": "L11",
+   "uk": "світлий, блондин(ка)",
+   "en": "blond"
   },
   {
    "id": "w321",
@@ -3594,7 +4234,9 @@
    "forms": "castano / castana / castani / castane",
    "group": 3,
    "example": "Ha i capelli castani.",
-   "lesson": "L11"
+   "lesson": "L11",
+   "uk": "каштановий, русявий (волосся)",
+   "en": "chestnut brown (hair)"
   },
   {
    "id": "w322",
@@ -3604,7 +4246,9 @@
    "forms": "bianco / bianca / bianchi / bianche",
    "group": 3,
    "example": "Mio nonno ha i capelli bianchi.",
-   "lesson": "L11"
+   "lesson": "L11",
+   "uk": "білий; сивий",
+   "en": "white; white-haired"
   },
   {
    "id": "w323",
@@ -3615,7 +4259,9 @@
    "group": 3,
    "example": "Ha i capelli ricci.",
    "note": "≠ lisci (прямые)",
-   "lesson": "L11"
+   "lesson": "L11",
+   "uk": "кучерявий",
+   "en": "curly"
   },
   {
    "id": "w324",
@@ -3626,7 +4272,9 @@
    "group": 3,
    "example": "Ha i capelli lisci.",
    "added": true,
-   "lesson": "L11"
+   "lesson": "L11",
+   "uk": "прямий (про волосся), гладкий",
+   "en": "straight (hair), smooth"
   },
   {
    "id": "w325",
@@ -3637,7 +4285,9 @@
    "group": 3,
    "example": "Ha i capelli corti.",
    "note": "≠ lungo",
-   "lesson": "L11"
+   "lesson": "L11",
+   "uk": "короткий",
+   "en": "short"
   },
   {
    "id": "w326",
@@ -3648,7 +4298,9 @@
    "group": 3,
    "example": "Ha i capelli lunghi.",
    "note": "мн.ч. с h",
-   "lesson": "L11"
+   "lesson": "L11",
+   "uk": "довгий",
+   "en": "long"
   },
   {
    "id": "w327",
@@ -3659,7 +4311,9 @@
    "group": 3,
    "example": "Mio cognato è calvo. / È diventato pelato!",
    "note": "essere calvo; разг. pelato; perdere i capelli — облысеть",
-   "lesson": "L11"
+   "lesson": "L11",
+   "uk": "лисий",
+   "en": "bald"
   },
   {
    "id": "w328",
@@ -3670,7 +4324,9 @@
    "group": 3,
    "example": "Il sabato sono pigro.",
    "note": "≠ attivo",
-   "lesson": "L11"
+   "lesson": "L11",
+   "uk": "лінивий",
+   "en": "lazy"
   },
   {
    "id": "w329",
@@ -3680,7 +4336,9 @@
    "forms": "attivo / attiva / attivi / attive",
    "group": 3,
    "example": "È una persona attiva.",
-   "lesson": "L11"
+   "lesson": "L11",
+   "uk": "активний",
+   "en": "active"
   },
   {
    "id": "w330",
@@ -3691,7 +4349,9 @@
    "group": 3,
    "example": "Da bambino ero timido.",
    "note": "≠ socievole",
-   "lesson": "L11"
+   "lesson": "L11",
+   "uk": "сором'язливий",
+   "en": "shy"
   },
   {
    "id": "w331",
@@ -3701,7 +4361,9 @@
    "forms": "socievole (м/ж) – socievoli (мн.)",
    "group": 3,
    "example": "Marta è molto socievole.",
-   "lesson": "L11"
+   "lesson": "L11",
+   "uk": "товариський",
+   "en": "sociable, outgoing"
   },
   {
    "id": "w332",
@@ -3712,7 +4374,9 @@
    "group": 3,
    "example": "È un ragazzo intelligente.",
    "note": "≠ stupido",
-   "lesson": "L11"
+   "lesson": "L11",
+   "uk": "розумний",
+   "en": "intelligent, clever"
   },
   {
    "id": "w333",
@@ -3722,7 +4386,9 @@
    "forms": "stupido / stupida / stupidi / stupide",
    "group": 3,
    "example": "Non è una domanda stupida.",
-   "lesson": "L11"
+   "lesson": "L11",
+   "uk": "дурний",
+   "en": "stupid"
   },
   {
    "id": "w334",
@@ -3733,7 +4399,9 @@
    "group": 3,
    "example": "Il medico è molto gentile.",
    "note": "≠ scortese",
-   "lesson": "L11"
+   "lesson": "L11",
+   "uk": "люб'язний, ввічливий, добрий",
+   "en": "kind, polite"
   },
   {
    "id": "w335",
@@ -3743,7 +4411,9 @@
    "forms": "scortese (м/ж) – scortesi (мн.)",
    "group": 3,
    "example": "Il cameriere è stato scortese.",
-   "lesson": "L11"
+   "lesson": "L11",
+   "uk": "неввічливий, грубий",
+   "en": "rude"
   },
   {
    "id": "w336",
@@ -3754,7 +4424,9 @@
    "group": 3,
    "example": "È una persona tranquilla.",
    "note": "≠ agitato",
-   "lesson": "L11"
+   "lesson": "L11",
+   "uk": "спокійний",
+   "en": "calm"
   },
   {
    "id": "w337",
@@ -3765,7 +4437,9 @@
    "group": 4,
    "example": "Prima dell'esame sono agitato.",
    "note": "от agitarsi",
-   "lesson": "L11"
+   "lesson": "L11",
+   "uk": "схвильований, неспокійний",
+   "en": "agitated, restless"
   },
   {
    "id": "w338",
@@ -3776,7 +4450,9 @@
    "group": 3,
    "example": "Ha un carattere aperto.",
    "note": "≠ chiuso; также причастие от aprire",
-   "lesson": "L11"
+   "lesson": "L11",
+   "uk": "відкритий (про характер)",
+   "en": "open (personality)"
   },
   {
    "id": "w339",
@@ -3786,7 +4462,9 @@
    "forms": "chiuso / chiusa / chiusi / chiuse",
    "group": 3,
    "example": "È un ragazzo un po' chiuso.",
-   "lesson": "L11"
+   "lesson": "L11",
+   "uk": "замкнутий (про характер); зачинений",
+   "en": "reserved (personality); closed"
   },
   {
    "id": "w340",
@@ -3797,7 +4475,9 @@
    "group": 3,
    "example": "I tuoi figli sono educati.",
    "note": "≠ maleducato; НЕ «образованный» (это istruito)",
-   "lesson": "L11"
+   "lesson": "L11",
+   "uk": "вихований, ввічливий",
+   "en": "well-mannered, polite"
   },
   {
    "id": "w341",
@@ -3807,7 +4487,9 @@
    "forms": "maleducato / maleducata / maleducati / maleducate",
    "group": 3,
    "example": "Che ragazzo maleducato!",
-   "lesson": "L11"
+   "lesson": "L11",
+   "uk": "невихований, грубий",
+   "en": "rude, ill-mannered"
   },
   {
    "id": "w342",
@@ -3818,7 +4500,9 @@
    "plural": "всегда мн.ч. (il capello — один волос)",
    "group": 3,
    "example": "Ha i capelli castani e ricci.",
-   "lesson": "L11"
+   "lesson": "L11",
+   "uk": "волосся",
+   "en": "hair"
   },
   {
    "id": "w343",
@@ -3829,7 +4513,9 @@
    "plural": "i fisici",
    "group": 3,
    "example": "Descrivi il fisico di tuo padre.",
-   "lesson": "L11"
+   "lesson": "L11",
+   "uk": "статура, зовнішність",
+   "en": "build, physique"
   },
   {
    "id": "w344",
@@ -3840,7 +4526,9 @@
    "plural": "i caratteri",
    "group": 3,
    "example": "Ha un bel carattere.",
-   "lesson": "L11"
+   "lesson": "L11",
+   "uk": "характер",
+   "en": "character, personality"
   },
   {
    "id": "w345",
@@ -3852,7 +4540,9 @@
    "note": "a scuola — в школе / в школу (без артикля)",
    "group": 11,
    "example": "Ho incontrato Andrea a scuola.",
-   "lesson": "L12"
+   "lesson": "L12",
+   "uk": "школа",
+   "en": "school"
   },
   {
    "id": "w346",
@@ -3863,7 +4553,9 @@
    "note": "порядковое: primo, secondo, terzo…",
    "group": 12,
    "example": "Era il mio primo giorno.",
-   "lesson": "L12"
+   "lesson": "L12",
+   "uk": "перший",
+   "en": "first"
   },
   {
    "id": "w347",
@@ -3873,7 +4565,9 @@
    "forms": "nuovo / nuova / nuovi / nuove",
    "group": 3,
    "example": "Una scuola nuova.",
-   "lesson": "L12"
+   "lesson": "L12",
+   "uk": "новий",
+   "en": "new"
   },
   {
    "id": "w348",
@@ -3883,7 +4577,9 @@
    "note": "in fondo all'aula — на задних партах",
    "group": 12,
    "example": "Mi piaceva stare in fondo all'aula.",
-   "lesson": "L12"
+   "lesson": "L12",
+   "uk": "у кінці, у глибині (чогось)",
+   "en": "at the back of, at the end of"
   },
   {
    "id": "w349",
@@ -3894,7 +4590,9 @@
    "plural": "le aule",
    "group": 11,
    "example": "In fondo all'aula.",
-   "lesson": "L12"
+   "lesson": "L12",
+   "uk": "клас, аудиторія (приміщення)",
+   "en": "classroom"
   },
   {
    "id": "w350",
@@ -3906,7 +4604,9 @@
    "note": "одна форма для м и ж: l'insegnante",
    "group": 11,
    "example": "Gli insegnanti non mi vedevano.",
-   "lesson": "L12"
+   "lesson": "L12",
+   "uk": "учитель, викладач",
+   "en": "teacher"
   },
   {
    "id": "w351",
@@ -3919,7 +4619,9 @@
    "group": 1,
    "example": "Andrea sedeva lì.",
    "lesson": "L12",
-   "reflexive": true
+   "reflexive": true,
+   "uk": "сидіти / сідати",
+   "en": "to sit / to sit down"
   },
   {
    "id": "w352",
@@ -3928,7 +4630,9 @@
    "pos": "adverb",
    "group": 12,
    "example": "Ascoltavamo molta musica insieme.",
-   "lesson": "L12"
+   "lesson": "L12",
+   "uk": "разом",
+   "en": "together"
   },
   {
    "id": "w353",
@@ -3940,7 +4644,9 @@
    "group": 2,
    "example": "Mi ha fatto conoscere nuovi musicisti.",
    "lesson": "L12",
-   "base": "w008"
+   "base": "w008",
+   "uk": "познайомити (когось із чимось / кимось)",
+   "en": "to introduce (someone to something / someone)"
   },
   {
    "id": "w354",
@@ -3952,7 +4658,9 @@
    "note": "на -ista: м и ж одинаково в ед.ч. (il/la turista, il/la dentista)",
    "group": 11,
    "example": "Nuovi musicisti.",
-   "lesson": "L12"
+   "lesson": "L12",
+   "uk": "музикант",
+   "en": "musician"
   },
   {
    "id": "w355",
@@ -3962,7 +4670,9 @@
    "note": "с non: non facevamo niente — мы ничего не делали (двойное отрицание нормально)",
    "group": 12,
    "example": "Non facevamo niente.",
-   "lesson": "L12"
+   "lesson": "L12",
+   "uk": "нічого",
+   "en": "nothing"
   },
   {
    "id": "w356",
@@ -3973,7 +4683,9 @@
    "plural": "le università (не меняется)",
    "group": 11,
    "example": "Poi siamo andati all'università.",
-   "lesson": "L12"
+   "lesson": "L12",
+   "uk": "університет",
+   "en": "university"
   },
   {
    "id": "w357",
@@ -3985,7 +4697,9 @@
    "participle": "separato",
    "group": 2,
    "example": "Ci siamo separati.",
-   "lesson": "L12"
+   "lesson": "L12",
+   "uk": "розлучатися, розходитися",
+   "en": "to separate, to split up"
   },
   {
    "id": "w358",
@@ -3998,7 +4712,9 @@
    "note": "mi sono innamorato di lei — я в неё влюбился (di, не «in»); ci siamo innamorati — мы влюбились друг в друга",
    "group": 4,
    "example": "Ci siamo innamorati subito.",
-   "lesson": "L12"
+   "lesson": "L12",
+   "uk": "закохуватися (у когось)",
+   "en": "to fall in love (with)"
   },
   {
    "id": "w359",
@@ -4010,7 +4726,9 @@
    "note": "ho sposato Anna (avere, + кого) ≠ ci siamo sposati / mi sono sposato con Anna (essere)",
    "group": 2,
    "example": "Ho sposato mia moglie nel 2005.",
-   "lesson": "L12"
+   "lesson": "L12",
+   "uk": "одружитися з / вийти заміж за (когось)",
+   "en": "to marry (someone)"
   },
   {
    "id": "w360",
@@ -4021,7 +4739,9 @@
    "plural": "gli operai / le operaie",
    "group": 11,
    "example": "A 18 anni ho fatto l'operaio.",
-   "lesson": "L13"
+   "lesson": "L13",
+   "uk": "робітник / робітниця (на заводі)",
+   "en": "factory worker"
   },
   {
    "id": "w361",
@@ -4032,7 +4752,9 @@
    "plural": "le fabbriche",
    "group": 11,
    "example": "Lavoravo in una fabbrica.",
-   "lesson": "L13"
+   "lesson": "L13",
+   "uk": "фабрика, завод",
+   "en": "factory"
   },
   {
    "id": "w362",
@@ -4044,7 +4766,9 @@
    "note": "il gatto — кошка",
    "group": 1,
    "example": "Ho il cane da 5 anni.",
-   "lesson": "L13"
+   "lesson": "L13",
+   "uk": "собака",
+   "en": "dog"
   },
   {
    "id": "w363",
@@ -4056,7 +4780,9 @@
    "note": "-iare: tu inizi",
    "group": 1,
    "example": "Ho iniziato a lavorare a 17 anni.",
-   "lesson": "L13"
+   "lesson": "L13",
+   "uk": "починати (= cominciare)",
+   "en": "to begin (= cominciare)"
   },
   {
    "id": "w364",
@@ -4067,7 +4793,9 @@
    "plural": "le salse",
    "group": 1,
    "example": "Ballo la salsa da 27 anni.",
-   "lesson": "L13"
+   "lesson": "L13",
+   "uk": "сальса (танець); соус",
+   "en": "salsa (dance); sauce"
   },
   {
    "id": "w365",
@@ -4078,7 +4806,9 @@
    "note": "меняется как артикль: quel (il), quello (lo), quell' (l')",
    "group": 12,
    "example": "Ho fatto quel lavoro per 5 anni.",
-   "lesson": "L13"
+   "lesson": "L13",
+   "uk": "той, та",
+   "en": "that"
   },
   {
    "id": "w366",
@@ -4090,7 +4820,9 @@
    "note": "порядок: elementare → media → superiore → università",
    "group": 11,
    "example": "Ha fatto la scuola elementare a Napoli.",
-   "lesson": "L14"
+   "lesson": "L14",
+   "uk": "початкова школа (6–11 років)",
+   "en": "primary school (ages 6–11)"
   },
   {
    "id": "w367",
@@ -4102,7 +4834,9 @@
    "note": "виды: il liceo, l'istituto tecnico, l'istituto professionale",
    "group": 11,
    "example": "Poi ha fatto la scuola superiore.",
-   "lesson": "L14"
+   "lesson": "L14",
+   "uk": "старша школа (14–19 років)",
+   "en": "secondary school (ages 14–19)"
   },
   {
    "id": "w368",
@@ -4114,7 +4848,9 @@
    "note": "liceo scientifico — с упором на математику",
    "group": 11,
    "example": "Ha frequentato il liceo classico.",
-   "lesson": "L14"
+   "lesson": "L14",
+   "uk": "ліцей (гуманітарний, з латиною і грецькою)",
+   "en": "liceo (classical high school, with Latin and Greek)"
   },
   {
    "id": "w369",
@@ -4126,7 +4862,9 @@
    "note": "lingue straniere — иностранные языки",
    "group": 11,
    "example": "Ha studiato lingue straniere.",
-   "lesson": "L14"
+   "lesson": "L14",
+   "uk": "мова",
+   "en": "language"
   },
   {
    "id": "w370",
@@ -4136,7 +4874,9 @@
    "forms": "straniero / straniera / stranieri / straniere",
    "group": 2,
    "example": "Corsi di italiano per stranieri.",
-   "lesson": "L14"
+   "lesson": "L14",
+   "uk": "іноземний; іноземець",
+   "en": "foreign; foreigner"
   },
   {
    "id": "w371",
@@ -4147,7 +4887,9 @@
    "note": "≠ pubblico (государственный)",
    "group": 11,
    "example": "Una scuola privata.",
-   "lesson": "L14"
+   "lesson": "L14",
+   "uk": "приватний",
+   "en": "private"
   },
   {
    "id": "w372",
@@ -4158,7 +4900,9 @@
    "plural": "i corsi",
    "group": 11,
    "example": "Insegna nei corsi di italiano.",
-   "lesson": "L14"
+   "lesson": "L14",
+   "uk": "курс (навчання)",
+   "en": "course"
   },
   {
    "id": "w373",
@@ -4169,7 +4913,9 @@
    "group": 11,
    "example": "Ha lavorato come insegnante.",
    "lesson": "L14",
-   "base": "w085"
+   "base": "w085",
+   "uk": "працювати кимось (lavorare come insegnante)",
+   "en": "to work as (lavorare come insegnante)"
   },
   {
    "id": "w374",
@@ -4180,7 +4926,9 @@
    "group": 2,
    "example": "Sì, è sposata e ha un figlio.",
    "lesson": "L14",
-   "base": "w039"
+   "base": "w039",
+   "uk": "бути одруженим / заміжньою",
+   "en": "to be married"
   },
   {
    "id": "w375",
@@ -4193,7 +4941,9 @@
    "added": true,
    "group": 11,
    "example": "Insegna italiano agli stranieri.",
-   "lesson": "L14"
+   "lesson": "L14",
+   "uk": "викладати, навчати (когось)",
+   "en": "to teach"
   },
   {
    "id": "w376",
@@ -4204,7 +4954,9 @@
    "note": "о характере, не о внешности (красивый — bello); ≠ antipatico",
    "group": 3,
    "example": "Lui era più simpatico prima!",
-   "lesson": "L15"
+   "lesson": "L15",
+   "uk": "приємний, симпатичний (про характер)",
+   "en": "nice, likeable"
   },
   {
    "id": "w377",
@@ -4214,7 +4966,9 @@
    "note": "prima di + сущ./инф. — перед; ≠ dopo",
    "group": 12,
    "example": "Era più simpatico prima.",
-   "lesson": "L15"
+   "lesson": "L15",
+   "uk": "раніше; спочатку",
+   "en": "before, earlier; first"
   },
   {
    "id": "w378",
@@ -4224,7 +4978,9 @@
    "note": "imperfetto: c'era / c'erano; passato prossimo: c'è stato / ci sono stati",
    "group": 12,
    "example": "Ieri c'era il sole.",
-   "lesson": "L15"
+   "lesson": "L15",
+   "uk": "є, існує (там, тут)",
+   "en": "there is / there are"
   },
   {
    "id": "w379",
@@ -4236,7 +4992,9 @@
    "note": "c'è il sole — солнечно",
    "group": 9,
    "example": "C'era il sole.",
-   "lesson": "L15"
+   "lesson": "L15",
+   "uk": "сонце",
+   "en": "sun"
   },
   {
    "id": "w380",
@@ -4247,7 +5005,9 @@
    "group": 9,
    "example": "Faceva caldo.",
    "lesson": "L15",
-   "base": "w008"
+   "base": "w008",
+   "uk": "спекотно / холодно (про погоду)",
+   "en": "it's hot / cold (weather)"
   },
   {
    "id": "w381",
@@ -4258,7 +5018,9 @@
    "plural": "i bar (не меняется)",
    "group": 6,
    "example": "Il bar era vicino a casa mia.",
-   "lesson": "L15"
+   "lesson": "L15",
+   "uk": "бар, кафе",
+   "en": "bar, café"
   },
   {
    "id": "w382",
@@ -4268,7 +5030,9 @@
    "gender": "f",
    "group": 11,
    "example": "Hai studiato matematica.",
-   "lesson": "L15"
+   "lesson": "L15",
+   "uk": "математика",
+   "en": "maths"
   },
   {
    "id": "w383",
@@ -4278,7 +5042,9 @@
    "note": "da piccolo, da giovane, da ragazzo — то же с imperfetto",
    "group": 12,
    "example": "Da bambina giocavo molto.",
-   "lesson": "L15"
+   "lesson": "L15",
+   "uk": "у дитинстві (коли був дитиною)",
+   "en": "as a child"
   },
   {
    "id": "w384",
@@ -4288,7 +5054,9 @@
    "note": "ho appena mangiato — я только что поел",
    "group": 12,
    "example": "È appena arrivato un messaggio.",
-   "lesson": "L16"
+   "lesson": "L16",
+   "uk": "щойно (з passato prossimo); як тільки",
+   "en": "just (with passato prossimo); as soon as"
   },
   {
    "id": "w385",
@@ -4298,7 +5066,9 @@
    "note": "Hai mai visto…? — Ты когда-нибудь видел…? / Non ho mai visto — я никогда не видел",
    "group": 12,
    "example": "Sei mai stato a Roma?",
-   "lesson": "L16"
+   "lesson": "L16",
+   "uk": "ніколи; колись (у питанні)",
+   "en": "never; ever (in questions)"
   },
   {
    "id": "w386",
@@ -4308,7 +5078,9 @@
    "note": "non ho ancora mangiato — я ещё не ел",
    "group": 12,
    "example": "Non ho ancora letto il giornale.",
-   "lesson": "L16"
+   "lesson": "L16",
+   "uk": "ще не",
+   "en": "not yet"
   },
   {
    "id": "w387",
@@ -4319,7 +5091,9 @@
    "participle": "raccontato",
    "group": 2,
    "example": "Racconta una storia.",
-   "lesson": "L16"
+   "lesson": "L16",
+   "uk": "розповідати",
+   "en": "to tell (a story)"
   },
   {
    "id": "w388",
@@ -4330,7 +5104,9 @@
    "plural": "le storie",
    "group": 1,
    "example": "Una storia personale.",
-   "lesson": "L16"
+   "lesson": "L16",
+   "uk": "історія, розповідь",
+   "en": "story; history"
   },
   {
    "id": "w389",
@@ -4341,7 +5117,9 @@
    "plural": "gli incontri",
    "group": 2,
    "example": "Un incontro importante.",
-   "lesson": "L16"
+   "lesson": "L16",
+   "uk": "зустріч",
+   "en": "meeting, encounter"
   },
   {
    "id": "w390",
@@ -4351,7 +5129,9 @@
    "forms": "importante (м/ж) – importanti (мн.)",
    "group": 12,
    "example": "Un incontro importante.",
-   "lesson": "L16"
+   "lesson": "L16",
+   "uk": "важливий",
+   "en": "important"
   },
   {
    "id": "w391",
@@ -4361,7 +5141,9 @@
    "note": "Da quanto tempo…? (как давно — presente) / Per quanto tempo…? (как долго — passato)",
    "group": 12,
    "example": "Da quanto tempo abiti qui?",
-   "lesson": "L16"
+   "lesson": "L16",
+   "uk": "скільки часу",
+   "en": "how long"
   },
   {
    "id": "w392",
@@ -4373,7 +5155,9 @@
    "note": "-gare: tu litighi",
    "group": 2,
    "example": "Io e mia sorella litigavamo sempre.",
-   "lesson": "L17"
+   "lesson": "L17",
+   "uk": "сваритися",
+   "en": "to argue, to quarrel"
   },
   {
    "id": "w393",
@@ -4384,7 +5168,9 @@
    "participle": "accompagnato",
    "group": 2,
    "example": "Olga accompagnava i figli a scuola.",
-   "lesson": "L17"
+   "lesson": "L17",
+   "uk": "проводжати, відводити (дітей до школи), супроводжувати",
+   "en": "to accompany, to take (children to school)"
   },
   {
    "id": "w394",
@@ -4396,7 +5182,9 @@
    "participle": "fermato",
    "group": 7,
    "example": "Si fermava in panetteria.",
-   "lesson": "L17"
+   "lesson": "L17",
+   "uk": "зупинятися, заходити (дорогою)",
+   "en": "to stop, to stop off"
   },
   {
    "id": "w395",
@@ -4408,7 +5196,9 @@
    "note": "= portare / mettersi",
    "group": 3,
    "example": "Indossava la giacca e la cravatta.",
-   "lesson": "L17"
+   "lesson": "L17",
+   "uk": "носити, вдягати (одяг)",
+   "en": "to wear"
   },
   {
    "id": "w396",
@@ -4419,7 +5209,9 @@
    "participle": "usato",
    "group": 1,
    "example": "Non usavano il computer.",
-   "lesson": "L17"
+   "lesson": "L17",
+   "uk": "використовувати, користуватися",
+   "en": "to use"
   },
   {
    "id": "w397",
@@ -4431,7 +5223,9 @@
    "note": "aiutare qualcuno (без предлога): aiuto mia madre",
    "group": 2,
    "example": "Tu aiutavi.",
-   "lesson": "L17"
+   "lesson": "L17",
+   "uk": "допомагати",
+   "en": "to help"
   },
   {
    "id": "w398",
@@ -4443,7 +5237,9 @@
    "note": "chiamarsi — называться: mi chiamo Andrii",
    "group": 2,
    "example": "Chiamavo qualche amica a giocare.",
-   "lesson": "L17"
+   "lesson": "L17",
+   "uk": "кликати; телефонувати",
+   "en": "to call"
   },
   {
    "id": "w399",
@@ -4456,7 +5252,9 @@
    "note": "si metteva a piangere — начинала плакать; mettersi il camice — надеть халат",
    "group": 4,
    "example": "Si metteva a piangere.",
-   "lesson": "L17"
+   "lesson": "L17",
+   "uk": "почати (раптом) щось робити",
+   "en": "to start (suddenly) doing something"
   },
   {
    "id": "w400",
@@ -4467,7 +5265,9 @@
    "plural": "i giochi",
    "group": 1,
    "example": "Voleva tutti i giochi.",
-   "lesson": "L17"
+   "lesson": "L17",
+   "uk": "гра; іграшка",
+   "en": "game; toy"
   },
   {
    "id": "w401",
@@ -4478,7 +5278,9 @@
    "plural": "le mense",
    "group": 6,
    "example": "Mangiavo in mensa.",
-   "lesson": "L17"
+   "lesson": "L17",
+   "uk": "їдальня (у школі, на роботі)",
+   "en": "canteen"
   },
   {
    "id": "w402",
@@ -4489,7 +5291,9 @@
    "plural": "обычно мн.ч.; fare i compiti",
    "group": 11,
    "example": "Facevo i compiti.",
-   "lesson": "L17"
+   "lesson": "L17",
+   "uk": "домашнє завдання",
+   "en": "homework"
   },
   {
    "id": "w403",
@@ -4501,7 +5305,9 @@
    "note": "il pane — хлеб",
    "group": 7,
    "example": "Si fermava in panetteria.",
-   "lesson": "L17"
+   "lesson": "L17",
+   "uk": "пекарня",
+   "en": "bakery"
   },
   {
    "id": "w404",
@@ -4512,7 +5318,9 @@
    "plural": "gli ospedali",
    "group": 10,
    "example": "Entrava in ospedale.",
-   "lesson": "L17"
+   "lesson": "L17",
+   "uk": "лікарня",
+   "en": "hospital"
   },
   {
    "id": "w405",
@@ -4523,7 +5331,9 @@
    "plural": "i camici",
    "group": 3,
    "example": "Si metteva il camice.",
-   "lesson": "L17"
+   "lesson": "L17",
+   "uk": "(медичний) халат",
+   "en": "white coat (doctor's)"
   },
   {
    "id": "w406",
@@ -4534,7 +5344,9 @@
    "plural": "i turni",
    "group": 11,
    "example": "Iniziava il suo turno di lavoro.",
-   "lesson": "L17"
+   "lesson": "L17",
+   "uk": "зміна (робоча)",
+   "en": "(work) shift"
   },
   {
    "id": "w407",
@@ -4545,7 +5357,9 @@
    "plural": "le giacche",
    "group": 3,
    "example": "Indossava la giacca.",
-   "lesson": "L17"
+   "lesson": "L17",
+   "uk": "піджак, куртка",
+   "en": "jacket"
   },
   {
    "id": "w408",
@@ -4557,7 +5371,9 @@
    "note": "il nodo alla cravatta — узел галстука",
    "group": 3,
    "example": "La giacca e la cravatta.",
-   "lesson": "L17"
+   "lesson": "L17",
+   "uk": "краватка",
+   "en": "tie"
   },
   {
    "id": "w409",
@@ -4568,7 +5384,9 @@
    "plural": "i computer (не меняется)",
    "group": 1,
    "example": "Non usavano il computer.",
-   "lesson": "L17"
+   "lesson": "L17",
+   "uk": "комп'ютер",
+   "en": "computer"
   },
   {
    "id": "w410",
@@ -4578,7 +5396,9 @@
    "note": "синонимы: perciò, allora, dunque — все = «поэтому, итак»",
    "group": 12,
    "example": "Pioveva, quindi sono rimasto a casa.",
-   "lesson": "L18"
+   "lesson": "L18",
+   "uk": "тому, отже",
+   "en": "so, therefore"
   },
   {
    "id": "w411",
@@ -4588,7 +5408,9 @@
    "note": "с ударением: perciò",
    "group": 12,
    "example": "Ero stanco, perciò sono andato a letto.",
-   "lesson": "L18"
+   "lesson": "L18",
+   "uk": "тому",
+   "en": "so, therefore"
   },
   {
    "id": "w412",
@@ -4598,7 +5420,9 @@
    "note": "самое разговорное: Allora, cosa facciamo?",
    "group": 12,
    "example": "Non stavo bene e allora sono andata dal dottore.",
-   "lesson": "L18"
+   "lesson": "L18",
+   "uk": "тоді, тому; ну (у розмові)",
+   "en": "then, so; well (in conversation)"
   },
   {
    "id": "w413",
@@ -4608,7 +5432,9 @@
    "note": "более книжное",
    "group": 12,
    "example": "Dunque, ricapitoliamo.",
-   "lesson": "L18"
+   "lesson": "L18",
+   "uk": "отже, відтак",
+   "en": "so, therefore"
   },
   {
    "id": "w414",
@@ -4620,7 +5446,9 @@
    "note": "mi hanno rubato il portafoglio — у меня украли кошелёк",
    "group": 7,
    "example": "Ha rubato la borsa mentre lei passeggiava.",
-   "lesson": "L18"
+   "lesson": "L18",
+   "uk": "красти",
+   "en": "to steal"
   },
   {
    "id": "w415",
@@ -4632,7 +5460,9 @@
    "note": "penso a te — думаю о тебе; penso di partire — думаю уехать",
    "group": 4,
    "example": "Pensavo ai miei problemi.",
-   "lesson": "L18"
+   "lesson": "L18",
+   "uk": "думати (про когось / щось зробити)",
+   "en": "to think (about / of doing)"
   },
   {
    "id": "w416",
@@ -4643,7 +5473,9 @@
    "participle": "cucinato",
    "group": 6,
    "example": "Lei cucinava e io guardavo la TV.",
-   "lesson": "L18"
+   "lesson": "L18",
+   "uk": "готувати (їжу)",
+   "en": "to cook"
   },
   {
    "id": "w417",
@@ -4654,7 +5486,9 @@
    "plural": "i nasi",
    "group": 3,
    "example": "Aveva un naso grosso.",
-   "lesson": "L19"
+   "lesson": "L19",
+   "uk": "ніс",
+   "en": "nose"
   },
   {
    "id": "w418",
@@ -4665,7 +5499,9 @@
    "note": "о размере предмета; ≈ grande",
    "group": 3,
    "example": "Un naso grosso.",
-   "lesson": "L19"
+   "lesson": "L19",
+   "uk": "великий, крупний, товстий",
+   "en": "big, thick"
   },
   {
    "id": "w419",
@@ -4676,7 +5512,9 @@
    "plural": "всегда мн.ч.; portare gli occhiali — носить очки",
    "group": 3,
    "example": "Non portava gli occhiali.",
-   "lesson": "L19"
+   "lesson": "L19",
+   "uk": "окуляри",
+   "en": "glasses"
   },
   {
    "id": "w420",
@@ -4687,7 +5525,9 @@
    "plural": "обычно мн.ч.",
    "group": 3,
    "example": "Aveva i baffi biondi.",
-   "lesson": "L19"
+   "lesson": "L19",
+   "uk": "вуса",
+   "en": "moustache"
   },
   {
    "id": "w421",
@@ -4698,7 +5538,9 @@
    "note": "blu — синий, не меняется; azzurro — светло-голубой, меняется",
    "group": 3,
    "example": "Aveva gli occhi azzurri.",
-   "lesson": "L19"
+   "lesson": "L19",
+   "uk": "блакитний",
+   "en": "light blue"
   },
   {
    "id": "w422",
@@ -4709,7 +5551,9 @@
    "plural": "le rughe",
    "group": 3,
    "example": "Ha le rughe.",
-   "lesson": "L19"
+   "lesson": "L19",
+   "uk": "зморшка",
+   "en": "wrinkle"
   },
   {
    "id": "w423",
@@ -4721,7 +5565,9 @@
    "note": "gli è cresciuta la barba — у него выросла борода",
    "group": 3,
    "example": "Gli è cresciuta la barba.",
-   "lesson": "L19"
+   "lesson": "L19",
+   "uk": "борода",
+   "en": "beard"
   },
   {
    "id": "w424",
@@ -4732,7 +5578,9 @@
    "plural": "мн.ч. (la lentiggine)",
    "group": 3,
    "example": "Aveva le lentiggini.",
-   "lesson": "L19"
+   "lesson": "L19",
+   "uk": "веснянки",
+   "en": "freckles"
   },
   {
    "id": "w425",
@@ -4744,7 +5592,9 @@
    "note": "ha colorato i capelli di rosso; разг.: si è tinta i capelli",
    "group": 3,
    "example": "Ha colorato i capelli di rosso.",
-   "lesson": "L19"
+   "lesson": "L19",
+   "uk": "пофарбувати волосся",
+   "en": "to dye your hair"
   },
   {
    "id": "w426",
@@ -4757,7 +5607,9 @@
    "note": "-care: tu ti trucchi; il trucco — макияж",
    "group": 3,
    "example": "Adesso si trucca.",
-   "lesson": "L19"
+   "lesson": "L19",
+   "uk": "фарбуватися (косметикою)",
+   "en": "to put on make-up"
   },
   {
    "id": "w427",
@@ -4768,7 +5620,9 @@
    "plural": "gli orecchini",
    "group": 3,
    "example": "Porta gli orecchini.",
-   "lesson": "L19"
+   "lesson": "L19",
+   "uk": "сережка",
+   "en": "earring"
   },
   {
    "id": "w428",
@@ -4780,7 +5634,9 @@
    "note": "lo (s + согласная)",
    "group": 3,
    "example": "Ha cambiato stile.",
-   "lesson": "L19"
+   "lesson": "L19",
+   "uk": "стиль",
+   "en": "style"
   },
   {
    "id": "w429",
@@ -4792,7 +5648,9 @@
    "note": "ha cambiato stile ≠ è cambiato molto (он сильно изменился)",
    "group": 1,
    "example": "Ha cambiato il naso.",
-   "lesson": "L19"
+   "lesson": "L19",
+   "uk": "міняти, змінювати; змінюватися",
+   "en": "to change"
   },
   {
    "id": "w430",
@@ -4803,7 +5661,9 @@
    "group": 10,
    "example": "Ha freddo.",
    "lesson": "L19",
-   "base": "w040"
+   "base": "w040",
+   "uk": "мерзнути / бути спекотно (людині)",
+   "en": "to be cold / hot (a person)"
   },
   {
    "id": "w431",
@@ -4814,7 +5674,9 @@
    "note": "superlativo: bellissimo",
    "group": 3,
    "example": "Era bellissimo!",
-   "lesson": "L19"
+   "lesson": "L19",
+   "uk": "гарний, красивий",
+   "en": "beautiful, nice"
   },
   {
    "id": "w432",
@@ -4824,7 +5686,9 @@
    "note": "prima (раньше) ≠ ora/adesso (сейчас)",
    "group": 12,
    "example": "Ora ha i capelli corti.",
-   "lesson": "L19"
+   "lesson": "L19",
+   "uk": "зараз",
+   "en": "now"
   },
   {
    "id": "w433",
@@ -4835,7 +5699,9 @@
    "note": "≠ pallido",
    "group": 3,
    "example": "Era abbronzata.",
-   "lesson": "L19"
+   "lesson": "L19",
+   "uk": "засмаглий",
+   "en": "tanned"
   },
   {
    "id": "w434",
@@ -4845,7 +5711,9 @@
    "forms": "pallido / pallida / pallidi / pallide",
    "group": 3,
    "example": "È diventata pallida.",
-   "lesson": "L19"
+   "lesson": "L19",
+   "uk": "блідий",
+   "en": "pale"
   },
   {
    "id": "w435",
@@ -4856,7 +5724,9 @@
    "note": "lisci (прямые) — mossi (волнистые) — ricci (кудрявые)",
    "group": 3,
    "example": "Ha i capelli corti e mossi.",
-   "lesson": "L19"
+   "lesson": "L19",
+   "uk": "хвилястий (про волосся)",
+   "en": "wavy (hair)"
   },
   {
    "id": "w436",
@@ -4868,7 +5738,9 @@
    "note": "portare le trecce — носить косы",
    "group": 3,
    "example": "Portava le trecce.",
-   "lesson": "L19"
+   "lesson": "L19",
+   "uk": "коса (зачіска)",
+   "en": "plait, braid"
   },
   {
    "id": "w437",
@@ -4880,7 +5752,9 @@
    "note": "≠ dimagrire (худеть, essere, -isc-: dimagrisco)",
    "group": 3,
    "example": "È ingrassata.",
-   "lesson": "L19"
+   "lesson": "L19",
+   "uk": "товстішати, поправлятися",
+   "en": "to put on weight"
   },
   {
    "id": "w438",
@@ -4893,7 +5767,9 @@
    "added": true,
    "group": 3,
    "example": "È dimagrito molto.",
-   "lesson": "L19"
+   "lesson": "L19",
+   "uk": "худнути",
+   "en": "to lose weight"
   },
   {
    "id": "w439",
@@ -4905,7 +5781,9 @@
    "note": "как il braccio → le braccia, il labbro → le labbra",
    "group": 3,
    "example": "Ha le sopracciglia più grandi.",
-   "lesson": "L19"
+   "lesson": "L19",
+   "uk": "брова",
+   "en": "eyebrow"
   },
   {
    "id": "w441",
@@ -4917,7 +5795,9 @@
    "group": 3,
    "example": "Ha perso i capelli.",
    "lesson": "L19",
-   "base": "w194"
+   "base": "w194",
+   "uk": "лисіти, втрачати волосся",
+   "en": "to lose your hair, to go bald"
   },
   {
    "id": "w442",
@@ -4928,7 +5808,9 @@
    "plural": "мн.ч. (la lente)",
    "group": 3,
    "example": "Porta le lenti a contatto.",
-   "lesson": "L19"
+   "lesson": "L19",
+   "uk": "контактні лінзи",
+   "en": "contact lenses"
   },
   {
    "id": "w443",
@@ -4938,7 +5820,9 @@
    "note": "non porta più gli occhiali — больше не носит очки; ≠ ancora (всё ещё)",
    "group": 12,
    "example": "Non porta più gli occhiali.",
-   "lesson": "L19"
+   "lesson": "L19",
+   "uk": "більше не",
+   "en": "not any more"
   },
   {
    "id": "w444",
@@ -4950,7 +5834,9 @@
    "note": "пишутся с маленькой буквы; ударение: lunedì…venerdì",
    "group": 12,
    "example": "Dal lunedì al giovedì.",
-   "lesson": "L20"
+   "lesson": "L20",
+   "uk": "дні тижня",
+   "en": "days of the week"
   },
   {
    "id": "w445",
@@ -4961,7 +5847,9 @@
    "plural": "i lunedì (не меняется)",
    "group": 12,
    "example": "Il corso è dal lunedì al giovedì.",
-   "lesson": "L20"
+   "lesson": "L20",
+   "uk": "понеділок; il lunedì — щопонеділка",
+   "en": "Monday; il lunedì — on Mondays"
   },
   {
    "id": "w446",
@@ -4972,7 +5860,9 @@
    "plural": "i giovedì (не меняется)",
    "group": 12,
    "example": "Dal lunedì al giovedì.",
-   "lesson": "L20"
+   "lesson": "L20",
+   "uk": "четвер",
+   "en": "Thursday"
   },
   {
    "id": "w447",
@@ -4983,7 +5873,9 @@
    "note": "la settimana prossima = la prossima settimana; ≠ scorso",
    "group": 12,
    "example": "Dalla prossima settimana.",
-   "lesson": "L20"
+   "lesson": "L20",
+   "uk": "наступний",
+   "en": "next"
   },
   {
    "id": "w448",
@@ -4994,7 +5886,9 @@
    "note": "l'ultima settimana — последняя неделя",
    "group": 12,
    "example": "Fino all'ultima settimana.",
-   "lesson": "L20"
+   "lesson": "L20",
+   "uk": "останній",
+   "en": "last"
   },
   {
    "id": "w449",
@@ -5004,7 +5898,9 @@
    "note": "с артиклем сливается: dal 2022 al 2026, dalle 8 alle 11, dal lunedì al giovedì",
    "group": 12,
    "example": "Lavoro dalle 9 alle 17.",
-   "lesson": "L20"
+   "lesson": "L20",
+   "uk": "з … до … / від … до …",
+   "en": "from … to …"
   },
   {
    "id": "w450",
@@ -5017,7 +5913,9 @@
    "group": 1,
    "example": "Faceva una passeggiata con il suo cane.",
    "lesson": "L21",
-   "base": "w008"
+   "base": "w008",
+   "uk": "прогулюватися, гуляти",
+   "en": "to go for a walk"
   },
   {
    "id": "w451",
@@ -5028,7 +5926,9 @@
    "note": "rimanere sorpreso — удивиться (essere: sono rimasto sorpreso)",
    "group": 4,
    "example": "Sono rimasto sorpreso.",
-   "lesson": "L21"
+   "lesson": "L21",
+   "uk": "здивований",
+   "en": "surprised"
   },
   {
    "id": "w452",
@@ -5039,7 +5939,9 @@
    "group": 4,
    "example": "Era di buon umore.",
    "lesson": "L21",
-   "base": "w039"
+   "base": "w039",
+   "uk": "бути в гарному настрої",
+   "en": "to be in a good mood"
   },
   {
    "id": "w453",
@@ -5049,7 +5951,9 @@
    "note": "di + артикль = «несколько»: degli amici, dei libri, delle amiche; ед.ч.: del pane — (немного) хлеба",
    "group": 12,
    "example": "Andava al ristorante per incontrare degli amici.",
-   "lesson": "L21"
+   "lesson": "L21",
+   "uk": "кілька, якісь (неозначена множина)",
+   "en": "some (indefinite plural)"
   },
   {
    "id": "w455",
@@ -5061,7 +5965,9 @@
    "note": "-iare: tu invecchi; vecchio — старый ≠ giovane; ringiovanire — молодеть",
    "group": 3,
    "example": "Mio padre è invecchiato molto.",
-   "lesson": "L22"
+   "lesson": "L22",
+   "uk": "старіти",
+   "en": "to grow old"
   },
   {
    "id": "w457",
@@ -5073,7 +5979,9 @@
    "note": "mi piacciono gli spaghetti — мн.ч.!",
    "group": 6,
    "example": "Mi piacciono gli spaghetti.",
-   "lesson": "L23"
+   "lesson": "L23",
+   "uk": "спагеті",
+   "en": "spaghetti"
   },
   {
    "id": "w458",
@@ -5085,7 +5993,9 @@
    "note": "nel mio paese — в моей стране",
    "group": 8,
    "example": "Nel mio paese lavoravo tutti i giorni.",
-   "lesson": "L18"
+   "lesson": "L18",
+   "uk": "країна; село, містечко",
+   "en": "country; village, small town"
   },
   {
    "id": "w459",
@@ -5096,7 +6006,9 @@
    "plural": "le dittature",
    "group": 11,
    "example": "Quando in Argentina c'era la dittatura…",
-   "lesson": "L18"
+   "lesson": "L18",
+   "uk": "диктатура",
+   "en": "dictatorship"
   },
   {
    "id": "w460",
@@ -5107,7 +6019,9 @@
    "plural": "i neonati",
    "group": 2,
    "example": "Tu eri un neonato.",
-   "lesson": "L18"
+   "lesson": "L18",
+   "uk": "новонароджений, немовля",
+   "en": "newborn baby"
   },
   {
    "id": "w461",
@@ -5119,7 +6033,9 @@
    "note": "fare la parrucchiera — работать парикмахером",
    "group": 11,
    "example": "Quando facevo la parrucchiera in Romania…",
-   "lesson": "L18"
+   "lesson": "L18",
+   "uk": "перукар / перукарка",
+   "en": "hairdresser"
   },
   {
    "id": "w462",
@@ -5131,7 +6047,9 @@
    "note": "≠ «инцидент»; incidente stradale — ДТП",
    "group": 7,
    "example": "Ho visto un incidente.",
-   "lesson": "L18"
+   "lesson": "L18",
+   "uk": "аварія, нещасний випадок",
+   "en": "accident"
   },
   {
    "id": "w463",
@@ -5142,7 +6060,9 @@
    "plural": "i portafogli",
    "group": 7,
    "example": "Qualcuno ha rubato il suo portafoglio.",
-   "lesson": "L18"
+   "lesson": "L18",
+   "uk": "гаманець",
+   "en": "wallet"
   },
   {
    "id": "w464",
@@ -5154,7 +6074,9 @@
    "note": "il terremoto — землетрясение",
    "group": 9,
    "example": "C'è stata una scossa di terremoto.",
-   "lesson": "L18"
+   "lesson": "L18",
+   "uk": "підземний поштовх, землетрус",
+   "en": "earthquake tremor"
   },
   {
    "id": "w465",
@@ -5166,7 +6088,9 @@
    "note": "vigile del fuoco — пожарный",
    "group": 7,
    "example": "Il vigile è venuto stamattina.",
-   "lesson": "L18"
+   "lesson": "L18",
+   "uk": "поліцейський (міський), регулювальник",
+   "en": "traffic warden, local police officer"
   },
   {
    "id": "w466",
@@ -5178,7 +6102,9 @@
    "note": "suonare il campanello — звонить в дверь",
    "group": 5,
    "example": "Non abbiamo sentito il campanello.",
-   "lesson": "L18"
+   "lesson": "L18",
+   "uk": "дверний дзвінок",
+   "en": "doorbell"
   },
   {
    "id": "w467",
@@ -5189,7 +6115,9 @@
    "plural": "i governi",
    "group": 11,
    "example": "Il governo era corrotto.",
-   "lesson": "L18"
+   "lesson": "L18",
+   "uk": "уряд",
+   "en": "government"
   },
   {
    "id": "w468",
@@ -5199,7 +6127,9 @@
    "forms": "corrotto / corrotta / corrotti / corrotte",
    "group": 11,
    "example": "Il governo era corrotto.",
-   "lesson": "L18"
+   "lesson": "L18",
+   "uk": "корумпований",
+   "en": "corrupt"
   },
   {
    "id": "w469",
@@ -5211,7 +6141,9 @@
    "note": "andare in crisi — оказаться в кризисе",
    "group": 11,
    "example": "Il paese è andato in crisi.",
-   "lesson": "L18"
+   "lesson": "L18",
+   "uk": "криза",
+   "en": "crisis"
   },
   {
    "id": "w470",
@@ -5221,7 +6153,9 @@
    "note": "= nello stesso tempo",
    "group": 12,
    "example": "Le due azioni sono avvenute contemporaneamente.",
-   "lesson": "L18"
+   "lesson": "L18",
+   "uk": "одночасно",
+   "en": "at the same time"
   },
   {
    "id": "w471",
@@ -5232,7 +6166,9 @@
    "plural": "i tè (не меняется)",
    "group": 6,
    "example": "Bevevo il tè con le mie amiche.",
-   "lesson": "L18"
+   "lesson": "L18",
+   "uk": "чай",
+   "en": "tea"
   },
   {
    "id": "w472",
@@ -5243,7 +6179,9 @@
    "plural": "le coppie",
    "group": 2,
    "example": "La coppia e il matrimonio.",
-   "lesson": "L24"
+   "lesson": "L24",
+   "uk": "пара",
+   "en": "couple"
   },
   {
    "id": "w473",
@@ -5254,7 +6192,9 @@
    "plural": "i matrimoni",
    "group": 2,
    "example": "Un matrimonio VIP.",
-   "lesson": "L24"
+   "lesson": "L24",
+   "uk": "весілля; шлюб",
+   "en": "wedding; marriage"
   },
   {
    "id": "w474",
@@ -5267,7 +6207,9 @@
    "note": "ci siamo messi insieme — мы начали встречаться",
    "group": 2,
    "example": "Si sono messi insieme nel 2016.",
-   "lesson": "L24"
+   "lesson": "L24",
+   "uk": "почати зустрічатися",
+   "en": "to get together, to start going out"
   },
   {
    "id": "w475",
@@ -5280,7 +6222,9 @@
    "note": "il fidanzato / la fidanzata — жених/невеста; парень/девушка",
    "group": 2,
    "example": "Si sono fidanzati.",
-   "lesson": "L24"
+   "lesson": "L24",
+   "uk": "заручитися; почати зустрічатися (серйозно)",
+   "en": "to get engaged"
   },
   {
    "id": "w476",
@@ -5290,7 +6234,9 @@
    "group": 2,
    "example": "Sono stati fidanzati dal 2016 al 2018.",
    "lesson": "L24",
-   "base": "w039"
+   "base": "w039",
+   "uk": "бути парою, бути зарученими",
+   "en": "to be engaged, to be a couple"
   },
   {
    "id": "w477",
@@ -5302,7 +6248,9 @@
    "note": "il divorzio — развод; essere divorziato/a",
    "group": 2,
    "example": "Hanno divorziato.",
-   "lesson": "L24"
+   "lesson": "L24",
+   "uk": "розлучатися",
+   "en": "to get divorced"
   },
   {
    "id": "w478",
@@ -5313,7 +6261,9 @@
    "plural": "le canzoni",
    "group": 1,
    "example": "Fedez ha scritto una canzone.",
-   "lesson": "L24"
+   "lesson": "L24",
+   "uk": "пісня",
+   "en": "song"
   },
   {
    "id": "w479",
@@ -5324,7 +6274,9 @@
    "plural": "i padroni / le padrone",
    "group": 2,
    "example": "Alla moda come la sua padrona.",
-   "lesson": "L24"
+   "lesson": "L24",
+   "uk": "господар / господиня",
+   "en": "owner"
   },
   {
    "id": "w480",
@@ -5333,7 +6285,9 @@
    "pos": "expression",
    "group": 3,
    "example": "Matilda è alla moda.",
-   "lesson": "L24"
+   "lesson": "L24",
+   "uk": "модний",
+   "en": "fashionable"
   },
   {
    "id": "w481",
@@ -5345,7 +6299,9 @@
    "note": "la maturità — выпускные экзамены в школе",
    "group": 11,
    "example": "Dopo il diploma di maturità classica…",
-   "lesson": "L24"
+   "lesson": "L24",
+   "uk": "атестат про середню освіту",
+   "en": "high school diploma"
   },
   {
    "id": "w482",
@@ -5358,7 +6314,9 @@
    "irregular": "спряжение с -isc-: mi trasferisco",
    "group": 8,
    "example": "Mi sono trasferita a Roma.",
-   "lesson": "L24"
+   "lesson": "L24",
+   "uk": "переїжджати (на нове місце проживання)",
+   "en": "to move (house, city)"
   },
   {
    "id": "w483",
@@ -5371,7 +6329,9 @@
    "note": "la laurea — диплом о высшем образовании; essere laureato in economia",
    "group": 11,
    "example": "Mi sono laureata nel 2004.",
-   "lesson": "L24"
+   "lesson": "L24",
+   "uk": "закінчити університет, отримати диплом",
+   "en": "to graduate"
   },
   {
    "id": "w484",
@@ -5382,7 +6342,9 @@
    "plural": "gli appartamenti",
    "group": 5,
    "example": "Abbiamo comprato un appartamento.",
-   "lesson": "L24"
+   "lesson": "L24",
+   "uk": "квартира",
+   "en": "flat, apartment"
   },
   {
    "id": "w485",
@@ -5392,7 +6354,9 @@
    "note": "un po' fuori città — немного за городом",
    "group": 7,
    "example": "Un appartamento un po' fuori città.",
-   "lesson": "L24"
+   "lesson": "L24",
+   "uk": "за містом",
+   "en": "out of town"
   },
   {
    "id": "w486",
@@ -5402,7 +6366,9 @@
    "note": "≠ part-time / a tempo parziale",
    "group": 11,
    "example": "Sono stata mamma a tempo pieno.",
-   "lesson": "L24"
+   "lesson": "L24",
+   "uk": "повний робочий день",
+   "en": "full-time"
   },
   {
    "id": "w487",
@@ -5414,7 +6380,9 @@
    "note": "mia mamma, mio papà — можно без артикля",
    "group": 2,
    "example": "Per due anni sono stata mamma.",
-   "lesson": "L24"
+   "lesson": "L24",
+   "uk": "мама / тато",
+   "en": "mum / dad"
   },
   {
    "id": "w488",
@@ -5424,7 +6392,9 @@
    "gender": "m",
    "group": 10,
    "example": "Al pronto soccorso.",
-   "lesson": "L25"
+   "lesson": "L25",
+   "uk": "невідкладна допомога, приймальне відділення",
+   "en": "A&E, emergency room"
   },
   {
    "id": "w489",
@@ -5435,7 +6405,9 @@
    "group": 10,
    "example": "Ha mal di testa.",
    "lesson": "L25",
-   "base": "w040"
+   "base": "w040",
+   "uk": "болить голова / зуби",
+   "en": "to have a headache / toothache"
   },
   {
    "id": "w490",
@@ -5446,7 +6418,9 @@
    "plural": "le teste",
    "group": 10,
    "example": "Ha preso un colpo in testa.",
-   "lesson": "L25"
+   "lesson": "L25",
+   "uk": "голова",
+   "en": "head"
   },
   {
    "id": "w491",
@@ -5458,7 +6432,9 @@
    "group": 10,
    "example": "Ha preso un colpo in testa.",
    "lesson": "L25",
-   "base": "w057"
+   "base": "w057",
+   "uk": "отримати удар, вдаритися",
+   "en": "to get hit, to bang yourself"
   },
   {
    "id": "w492",
@@ -5469,7 +6445,9 @@
    "plural": "le medicine",
    "group": 10,
    "example": "Prenderà una medicina.",
-   "lesson": "L25"
+   "lesson": "L25",
+   "uk": "ліки",
+   "en": "medicine"
   },
   {
    "id": "w493",
@@ -5481,7 +6459,9 @@
    "note": "rompersi il braccio — сломать руку; la mano — кисть",
    "group": 10,
    "example": "Ha rotto il braccio.",
-   "lesson": "L25"
+   "lesson": "L25",
+   "uk": "рука (від плеча до кисті)",
+   "en": "arm"
   },
   {
    "id": "w494",
@@ -5492,7 +6472,9 @@
    "note": "giocare a rugby / a calcio / a tennis",
    "group": 10,
    "example": "Ha giocato a rugby.",
-   "lesson": "L25"
+   "lesson": "L25",
+   "uk": "регбі",
+   "en": "rugby"
   },
   {
    "id": "w495",
@@ -5504,7 +6486,9 @@
    "note": "оба варианта верны: riposerà = si riposerà",
    "group": 1,
    "example": "Lui riposerà.",
-   "lesson": "L25"
+   "lesson": "L25",
+   "uk": "відпочивати",
+   "en": "to rest"
   },
   {
    "id": "w496",
@@ -5516,7 +6500,9 @@
    "note": "mettere il gesso — наложить гипс",
    "group": 10,
    "example": "Metterà il gesso.",
-   "lesson": "L25"
+   "lesson": "L25",
+   "uk": "гіпс",
+   "en": "plaster cast"
   },
   {
    "id": "w497",
@@ -5528,7 +6514,9 @@
    "note": "fare una radiografia",
    "group": 10,
    "example": "Farà una radiografia.",
-   "lesson": "L25"
+   "lesson": "L25",
+   "uk": "рентген (знімок)",
+   "en": "X-ray"
   },
   {
    "id": "w498",
@@ -5539,7 +6527,9 @@
    "plural": "le caramelle",
    "group": 6,
    "example": "Ha mangiato troppe caramelle.",
-   "lesson": "L25"
+   "lesson": "L25",
+   "uk": "цукерка (льодяник)",
+   "en": "sweet, candy"
   },
   {
    "id": "w499",
@@ -5551,7 +6541,9 @@
    "note": "andare dal dentista",
    "group": 10,
    "example": "Andrà dal dentista.",
-   "lesson": "L25"
+   "lesson": "L25",
+   "uk": "стоматолог",
+   "en": "dentist"
   },
   {
    "id": "w500",
@@ -5563,7 +6555,9 @@
    "note": "-gare: tu paghi; futuro pagherò",
    "group": 7,
    "example": "Pagherà molto!",
-   "lesson": "L25"
+   "lesson": "L25",
+   "uk": "платити",
+   "en": "to pay"
   },
   {
    "id": "w501",
@@ -5574,7 +6568,9 @@
    "plural": "gli antidolorifici",
    "group": 10,
    "example": "Prenderà un antidolorifico.",
-   "lesson": "L25"
+   "lesson": "L25",
+   "uk": "знеболювальне",
+   "en": "painkiller"
   },
   {
    "id": "w502",
@@ -5584,7 +6580,9 @@
    "note": "≠ peggio; migliore — лучший (прилагательное)",
    "group": 12,
    "example": "Si laverà meglio i denti.",
-   "lesson": "L25"
+   "lesson": "L25",
+   "uk": "краще (прислівник)",
+   "en": "better (adverb)"
   },
   {
    "id": "w503",
@@ -5595,7 +6593,9 @@
    "plural": "le stampelle",
    "group": 10,
    "example": "Usa la stampella.",
-   "lesson": "L25"
+   "lesson": "L25",
+   "uk": "милиця",
+   "en": "crutch"
   },
   {
    "id": "w504",
@@ -5607,7 +6607,9 @@
    "note": "futuro: cadrò",
    "group": 10,
    "example": "È caduto dalle scale.",
-   "lesson": "L25"
+   "lesson": "L25",
+   "uk": "падати",
+   "en": "to fall"
   },
   {
    "id": "w505",
@@ -5619,7 +6621,9 @@
    "note": "cadere dalle scale; fare le scale",
    "group": 5,
    "example": "È caduto dalle scale.",
-   "lesson": "L25"
+   "lesson": "L25",
+   "uk": "сходи",
+   "en": "stairs"
   },
   {
    "id": "w506",
@@ -5630,7 +6634,9 @@
    "plural": "gli infermieri / le infermiere",
    "group": 10,
    "example": "Starà a casa con un'infermiera.",
-   "lesson": "L25"
+   "lesson": "L25",
+   "uk": "медбрат / медсестра",
+   "en": "nurse"
   },
   {
    "id": "w507",
@@ -5642,7 +6648,9 @@
    "note": "la sedia — стул",
    "group": 10,
    "example": "Userà una sedia a rotelle.",
-   "lesson": "L25"
+   "lesson": "L25",
+   "uk": "інвалідний візок",
+   "en": "wheelchair"
   },
   {
    "id": "w508",
@@ -5654,7 +6662,9 @@
    "irregular": "tengo, tieni, tiene…; futuro terrò",
    "group": 1,
    "example": "Terrò la porta aperta.",
-   "lesson": "L26"
+   "lesson": "L26",
+   "uk": "тримати",
+   "en": "to hold, to keep"
   },
   {
    "id": "w509",
@@ -5666,7 +6676,9 @@
    "participle": "iscritto",
    "group": 11,
    "example": "Mi iscriverò all'università.",
-   "lesson": "L26"
+   "lesson": "L26",
+   "uk": "записуватися, вступати (до університету, на курс)",
+   "en": "to enrol, to sign up (for)"
   },
   {
    "id": "w510",
@@ -5677,7 +6689,9 @@
    "plural": "i binari",
    "group": 7,
    "example": "Partirà dal binario 10.",
-   "lesson": "L26"
+   "lesson": "L26",
+   "uk": "колія, платформа (на вокзалі)",
+   "en": "platform, track"
   },
   {
    "id": "w511",
@@ -5688,7 +6702,9 @@
    "plural": "le riunioni",
    "group": 11,
    "example": "Sarà ancora in riunione.",
-   "lesson": "L26"
+   "lesson": "L26",
+   "uk": "нарада, збори",
+   "en": "meeting"
   },
   {
    "id": "w512",
@@ -5697,7 +6713,9 @@
    "pos": "adverb",
    "group": 12,
    "example": "Domani arriveranno i miei amici.",
-   "lesson": "L26"
+   "lesson": "L26",
+   "uk": "завтра",
+   "en": "tomorrow"
   },
   {
    "id": "w513",
@@ -5708,7 +6726,9 @@
    "note": "i morti — умершие",
    "group": 8,
    "example": "Il 2 novembre, il Giorno dei Morti.",
-   "lesson": "L27"
+   "lesson": "L27",
+   "uk": "День мертвих (2 листопада)",
+   "en": "Day of the Dead (2 November)"
   },
   {
    "id": "w514",
@@ -5719,7 +6739,9 @@
    "plural": "le parate",
    "group": 8,
    "example": "Faranno una parata in città.",
-   "lesson": "L27"
+   "lesson": "L27",
+   "uk": "парад, хода",
+   "en": "parade"
   },
   {
    "id": "w515",
@@ -5730,7 +6752,9 @@
    "participle": "decorato",
    "group": 5,
    "example": "Decoreranno il cammino con fiori colorati.",
-   "lesson": "L27"
+   "lesson": "L27",
+   "uk": "прикрашати",
+   "en": "to decorate"
   },
   {
    "id": "w516",
@@ -5741,7 +6765,9 @@
    "plural": "i fiori",
    "group": 9,
    "example": "Fiori colorati.",
-   "lesson": "L27"
+   "lesson": "L27",
+   "uk": "квітка",
+   "en": "flower"
   },
   {
    "id": "w517",
@@ -5751,7 +6777,9 @@
    "forms": "colorato / colorata / colorati / colorate",
    "group": 3,
    "example": "Fiori colorati.",
-   "lesson": "L27"
+   "lesson": "L27",
+   "uk": "кольоровий, різнокольоровий",
+   "en": "colourful"
   },
   {
    "id": "w518",
@@ -5762,7 +6790,9 @@
    "plural": "i cammini",
    "group": 7,
    "example": "Il cammino per i morti.",
-   "lesson": "L27"
+   "lesson": "L27",
+   "uk": "шлях, дорога",
+   "en": "path, way"
   },
   {
    "id": "w519",
@@ -5774,7 +6804,9 @@
    "note": "= le persone di famiglia del passato",
    "group": 2,
    "example": "Gli antenati.",
-   "lesson": "L27"
+   "lesson": "L27",
+   "uk": "предки",
+   "en": "ancestors"
   },
   {
    "id": "w520",
@@ -5785,7 +6817,9 @@
    "plural": "le feste",
    "group": 8,
    "example": "La festa durerà 3 giorni.",
-   "lesson": "L27"
+   "lesson": "L27",
+   "uk": "свято; вечірка",
+   "en": "holiday, celebration; party"
   },
   {
    "id": "w521",
@@ -5796,7 +6830,9 @@
    "participle": "durato",
    "group": 12,
    "example": "La festa durerà 3 giorni.",
-   "lesson": "L27"
+   "lesson": "L27",
+   "uk": "тривати",
+   "en": "to last"
   },
   {
    "id": "w522",
@@ -5807,7 +6843,9 @@
    "note": "babbo = papà (тоск.); il Natale — Рождество",
    "group": 8,
    "example": "Babbo Natale.",
-   "lesson": "L27"
+   "lesson": "L27",
+   "uk": "Дід Мороз, Санта-Клаус",
+   "en": "Father Christmas, Santa Claus"
   },
   {
    "id": "w523",
@@ -5819,7 +6857,9 @@
    "note": "le previsioni del tempo — прогноз погоды",
    "group": 12,
    "example": "Previsioni per il nuovo anno.",
-   "lesson": "L27"
+   "lesson": "L27",
+   "uk": "прогноз, передбачення",
+   "en": "forecast, prediction"
   },
   {
    "id": "w524",
@@ -5829,7 +6869,9 @@
    "note": "Che cosa farò da grande? — Кем я стану, когда вырасту?",
    "group": 12,
    "example": "Che cosa farò da grande?",
-   "lesson": "L27"
+   "lesson": "L27",
+   "uk": "коли виросту (дорослим)",
+   "en": "when I grow up"
   },
   {
    "id": "w525",
@@ -5842,7 +6884,9 @@
    "note": "= arrivare a…",
    "group": 7,
    "example": "Raggiungo la cima della montagna.",
-   "lesson": "L27"
+   "lesson": "L27",
+   "uk": "досягати, діставатися до",
+   "en": "to reach"
   },
   {
    "id": "w526",
@@ -5853,7 +6897,9 @@
    "plural": "le cime",
    "group": 9,
    "example": "La cima della montagna.",
-   "lesson": "L27"
+   "lesson": "L27",
+   "uk": "вершина",
+   "en": "top, summit"
   },
   {
    "id": "w527",
@@ -5865,7 +6911,9 @@
    "note": "in montagna — в горах",
    "group": 9,
    "example": "La cima della montagna.",
-   "lesson": "L27"
+   "lesson": "L27",
+   "uk": "гора; гори",
+   "en": "mountain; the mountains"
   },
   {
    "id": "w528",
@@ -5877,7 +6925,9 @@
    "note": "-tore → -trice: attore/attrice",
    "group": 11,
    "example": "La lettera della direttrice marketing.",
-   "lesson": "L27"
+   "lesson": "L27",
+   "uk": "директорка / директор",
+   "en": "director, head (f / m)"
   },
   {
    "id": "w529",
@@ -5888,7 +6938,9 @@
    "note": "= felice в формальных ситуациях: siamo lieti di comunicarvi…",
    "group": 4,
    "example": "Saremo lieti di comunicarvi…",
-   "lesson": "L27"
+   "lesson": "L27",
+   "uk": "радий (офіційно)",
+   "en": "pleased, glad (formal)"
   },
   {
    "id": "w530",
@@ -5900,7 +6952,9 @@
    "note": "comunicarvi = comunicare a voi (местоимение присоединяется к инфинитиву)",
    "group": 11,
    "example": "Siamo lieti di comunicarvi…",
-   "lesson": "L27"
+   "lesson": "L27",
+   "uk": "повідомляти",
+   "en": "to communicate, to announce"
   },
   {
    "id": "w531",
@@ -5910,7 +6964,9 @@
    "note": "будущее: tra un mese finirà; прошлое — fa: un mese fa",
    "group": 12,
    "example": "Tra vent'anni sarò laureata.",
-   "lesson": "L27"
+   "lesson": "L27",
+   "uk": "через (tra vent'anni — через двадцять років)",
+   "en": "in (future time) (tra vent'anni — in twenty years)"
   },
   {
    "id": "w532",
@@ -5922,7 +6978,9 @@
    "note": "lo — перед ps",
    "group": 11,
    "example": "Farò la psicologa.",
-   "lesson": "L27"
+   "lesson": "L27",
+   "uk": "психолог",
+   "en": "psychologist"
   },
   {
    "id": "w533",
@@ -5932,7 +6990,9 @@
    "gender": "f",
    "group": 11,
    "example": "Laureata in psicologia.",
-   "lesson": "L27"
+   "lesson": "L27",
+   "uk": "психологія",
+   "en": "psychology"
   },
   {
    "id": "w534",
@@ -5943,7 +7003,9 @@
    "plural": "gli scrittori / le scrittrici",
    "group": 11,
    "example": "Un musicista o uno scrittore.",
-   "lesson": "L27"
+   "lesson": "L27",
+   "uk": "письменник / письменниця",
+   "en": "writer"
   },
   {
    "id": "w535",
@@ -5955,7 +7017,9 @@
    "note": "imparare ≠ insegnare (преподавать)",
    "group": 11,
    "example": "Dovrò imparare molto bene l'inglese.",
-   "lesson": "L27"
+   "lesson": "L27",
+   "uk": "вчити (сам), навчатися",
+   "en": "to learn"
   },
   {
    "id": "w536",
@@ -5966,7 +7030,9 @@
    "plural": "i colleghi / le colleghe",
    "group": 11,
    "example": "Un problema con un collega di lavoro.",
-   "lesson": "L27"
+   "lesson": "L27",
+   "uk": "колега",
+   "en": "colleague"
   },
   {
    "id": "w537",
@@ -5977,7 +7043,9 @@
    "participle": "occupato",
    "group": 1,
    "example": "Occuperà a lungo i vostri pensieri.",
-   "lesson": "L27"
+   "lesson": "L27",
+   "uk": "займати",
+   "en": "to occupy, to take up"
   },
   {
    "id": "w538",
@@ -5988,7 +7056,9 @@
    "plural": "i pensieri",
    "group": 4,
    "example": "I vostri pensieri.",
-   "lesson": "L27"
+   "lesson": "L27",
+   "uk": "думка",
+   "en": "thought"
   },
   {
    "id": "w539",
@@ -5998,7 +7068,9 @@
    "group": 4,
    "example": "Non gli date troppa importanza.",
    "lesson": "L27",
-   "base": "w125"
+   "base": "w125",
+   "uk": "надавати значення",
+   "en": "to give importance (to)"
   },
   {
    "id": "w540",
@@ -6008,7 +7080,9 @@
    "gender": "f",
    "group": 10,
    "example": "Pensate di più alla vostra salute.",
-   "lesson": "L27"
+   "lesson": "L27",
+   "uk": "здоров'я",
+   "en": "health"
   },
   {
    "id": "w541",
@@ -6019,7 +7093,9 @@
    "plural": "le trasformazioni",
    "group": 12,
    "example": "La parola dell'anno sarà «trasformazione».",
-   "lesson": "L27"
+   "lesson": "L27",
+   "uk": "перетворення, зміна",
+   "en": "transformation, change"
   },
   {
    "id": "w542",
@@ -6031,7 +7107,9 @@
    "group": 1,
    "example": "Cambierete casa, partner o lavoro.",
    "lesson": "L27",
-   "base": "w429"
+   "base": "w429",
+   "uk": "переїхати / змінити роботу / партнера",
+   "en": "to move house / change jobs / change partners"
   },
   {
    "id": "w543",
@@ -6042,7 +7120,9 @@
    "plural": "i periodi",
    "group": 12,
    "example": "Finirà il periodo difficile.",
-   "lesson": "L27"
+   "lesson": "L27",
+   "uk": "період",
+   "en": "period"
   },
   {
    "id": "w544",
@@ -6053,7 +7133,9 @@
    "group": 4,
    "example": "Se avrete pazienza…",
    "lesson": "L27",
-   "base": "w040"
+   "base": "w040",
+   "uk": "мати терпіння, потерпіти",
+   "en": "to be patient"
   },
   {
    "id": "w545",
@@ -6065,7 +7147,9 @@
    "irregular": "riesco, riesci, riesce, riusciamo, riuscite, riescono",
    "group": 1,
    "example": "Riuscirete a realizzare i vostri progetti.",
-   "lesson": "L27"
+   "lesson": "L27",
+   "uk": "зуміти, вдатися",
+   "en": "to manage to, to succeed in"
   },
   {
    "id": "w546",
@@ -6076,7 +7160,9 @@
    "participle": "realizzato",
    "group": 11,
    "example": "Realizzare i vostri progetti.",
-   "lesson": "L27"
+   "lesson": "L27",
+   "uk": "здійснити, реалізувати",
+   "en": "to carry out, to achieve"
   },
   {
    "id": "w547",
@@ -6087,7 +7173,9 @@
    "plural": "i progetti",
    "group": 11,
    "example": "I vostri progetti.",
-   "lesson": "L27"
+   "lesson": "L27",
+   "uk": "проєкт, план",
+   "en": "project, plan"
   },
   {
    "id": "w548",
@@ -6098,7 +7186,9 @@
    "plural": "i successi",
    "group": 11,
    "example": "Successo!",
-   "lesson": "L27"
+   "lesson": "L27",
+   "uk": "успіх",
+   "en": "success"
   },
   {
    "id": "w549",
@@ -6109,7 +7199,9 @@
    "group": 11,
    "example": "Raggiungeremo i nostri obiettivi.",
    "lesson": "L27",
-   "base": "w525"
+   "base": "w525",
+   "uk": "досягати цілей",
+   "en": "to reach your goals"
   },
   {
    "id": "w550",
@@ -6120,7 +7212,9 @@
    "plural": "i risultati",
    "group": 11,
    "example": "Un risultato finale molto positivo.",
-   "lesson": "L27"
+   "lesson": "L27",
+   "uk": "результат",
+   "en": "result"
   },
   {
    "id": "w551",
@@ -6131,7 +7225,9 @@
    "note": "≠ negativo",
    "group": 12,
    "example": "Molto positivo.",
-   "lesson": "L27"
+   "lesson": "L27",
+   "uk": "позитивний",
+   "en": "positive"
   },
   {
    "id": "w552",
@@ -6142,7 +7238,9 @@
    "plural": "мн.ч. (la vendita)",
    "group": 11,
    "example": "+15% di vendite.",
-   "lesson": "L27"
+   "lesson": "L27",
+   "uk": "продажі",
+   "en": "sales"
   },
   {
    "id": "w553",
@@ -6153,7 +7251,9 @@
    "participle": "informato",
    "group": 11,
    "example": "Vi informo inoltre che…",
-   "lesson": "L27"
+   "lesson": "L27",
+   "uk": "повідомляти, інформувати",
+   "en": "to inform"
   },
   {
    "id": "w554",
@@ -6162,7 +7262,9 @@
    "pos": "adverb",
    "group": 12,
    "example": "Vi informo inoltre che…",
-   "lesson": "L27"
+   "lesson": "L27",
+   "uk": "крім того",
+   "en": "moreover, in addition"
   },
   {
    "id": "w555",
@@ -6171,7 +7273,9 @@
    "pos": "adverb",
    "group": 12,
    "example": "Infatti chiuderemo l'anno…",
-   "lesson": "L27"
+   "lesson": "L27",
+   "uk": "справді, адже",
+   "en": "in fact, indeed"
   },
   {
    "id": "w556",
@@ -6183,7 +7287,9 @@
    "note": "= il weekend",
    "group": 12,
    "example": "Fine settimana di bel tempo.",
-   "lesson": "L27"
+   "lesson": "L27",
+   "uk": "вихідні",
+   "en": "weekend"
   },
   {
    "id": "w557",
@@ -6192,7 +7298,9 @@
    "pos": "adverb",
    "group": 12,
    "example": "Soprattutto al sud.",
-   "lesson": "L27"
+   "lesson": "L27",
+   "uk": "особливо, насамперед",
+   "en": "especially, above all"
   },
   {
    "id": "w558",
@@ -6203,7 +7311,9 @@
    "note": "al sud, al nord; l'est, l'ovest",
    "group": 9,
    "example": "Soprattutto al sud.",
-   "lesson": "L27"
+   "lesson": "L27",
+   "uk": "південь / північ",
+   "en": "south / north"
   },
   {
    "id": "w559",
@@ -6214,7 +7324,9 @@
    "plural": "le temperature",
    "group": 9,
    "example": "Le temperature raggiungeranno i 40 gradi.",
-   "lesson": "L27"
+   "lesson": "L27",
+   "uk": "температура",
+   "en": "temperature"
   },
   {
    "id": "w560",
@@ -6225,7 +7337,9 @@
    "plural": "i gradi",
    "group": 9,
    "example": "40 gradi.",
-   "lesson": "L27"
+   "lesson": "L27",
+   "uk": "градус",
+   "en": "degree"
   },
   {
    "id": "w561",
@@ -6237,7 +7351,9 @@
    "note": "farsi male al ginocchio — ушибить колено",
    "group": 10,
    "example": "Carla si è fatta male al ginocchio.",
-   "lesson": "L25"
+   "lesson": "L25",
+   "uk": "коліно",
+   "en": "knee"
   },
   {
    "id": "w562",
@@ -6250,7 +7366,9 @@
    "note": "mi sono fatto male al braccio",
    "group": 10,
    "example": "Si è fatta male al ginocchio.",
-   "lesson": "L25"
+   "lesson": "L25",
+   "uk": "забитися, поранитися",
+   "en": "to hurt yourself"
   },
   {
    "id": "w563",
@@ -6261,7 +7379,9 @@
    "plural": "le biciclette / le bici",
    "group": 7,
    "example": "È caduta dalla bicicletta.",
-   "lesson": "L25"
+   "lesson": "L25",
+   "uk": "велосипед",
+   "en": "bicycle, bike"
   },
   {
    "id": "w564",
@@ -6273,7 +7393,9 @@
    "note": "prendere il sole — загорать; mettere la crema solare",
    "group": 10,
    "example": "Ha preso troppo sole: ha una scottatura.",
-   "lesson": "L25"
+   "lesson": "L25",
+   "uk": "сонячний опік",
+   "en": "sunburn"
   },
   {
    "id": "w565",
@@ -6284,7 +7406,9 @@
    "plural": "le creme",
    "group": 10,
    "example": "Metterà la crema solare.",
-   "lesson": "L25"
+   "lesson": "L25",
+   "uk": "крем (сонцезахисний)",
+   "en": "(sun) cream"
   },
   {
    "id": "w566",
@@ -6295,7 +7419,9 @@
    "group": 10,
    "example": "Martina è incinta.",
    "lesson": "L25",
-   "base": "w039"
+   "base": "w039",
+   "uk": "бути вагітною",
+   "en": "to be pregnant"
   },
   {
    "id": "w567",
@@ -6306,7 +7432,9 @@
    "plural": "gli occhi neri",
    "group": 10,
    "example": "Il signor Gianni ha un occhio nero.",
-   "lesson": "L25"
+   "lesson": "L25",
+   "uk": "синець під оком",
+   "en": "black eye"
   },
   {
    "id": "w568",
@@ -6318,7 +7446,9 @@
    "note": "dare / prendere un pugno",
    "group": 10,
    "example": "Ha preso un pugno.",
-   "lesson": "L25"
+   "lesson": "L25",
+   "uk": "кулак; удар кулаком",
+   "en": "fist; punch"
   },
   {
    "id": "w569",
@@ -6330,7 +7460,9 @@
    "note": "la partita di calcio; vincere / perdere la partita",
    "group": 1,
    "example": "La sua squadra ha perso la partita 3-0.",
-   "lesson": "L25"
+   "lesson": "L25",
+   "uk": "матч, гра",
+   "en": "match, game"
   },
   {
    "id": "w570",
@@ -6341,7 +7473,9 @@
    "note": "giocare a calcio",
    "group": 1,
    "example": "Ha giocato a calcio.",
-   "lesson": "L25"
+   "lesson": "L25",
+   "uk": "футбол",
+   "en": "football"
   },
   {
    "id": "w571",
@@ -6352,7 +7486,9 @@
    "note": "mettere il ghiaccio — приложить лёд",
    "group": 10,
    "example": "Metterà il ghiaccio sull'occhio.",
-   "lesson": "L25"
+   "lesson": "L25",
+   "uk": "лід",
+   "en": "ice"
   },
   {
    "id": "w572",
@@ -6364,7 +7500,9 @@
    "group": 11,
    "example": "Le creeranno in laboratorio.",
    "note": "futuro: creerò (двойное e)",
-   "lesson": "L28"
+   "lesson": "L28",
+   "uk": "створювати",
+   "en": "to create"
   },
   {
    "id": "w573",
@@ -6376,7 +7514,9 @@
    "irregular": "-isc-: costruisco",
    "group": 11,
    "example": "Costruiranno case su altri pianeti.",
-   "lesson": "L28"
+   "lesson": "L28",
+   "uk": "будувати",
+   "en": "to build"
   },
   {
    "id": "w574",
@@ -6387,7 +7527,9 @@
    "participle": "individuato",
    "group": 11,
    "example": "Ha individuato le nuove professioni.",
-   "lesson": "L28"
+   "lesson": "L28",
+   "uk": "виявляти, визначати",
+   "en": "to identify"
   },
   {
    "id": "w575",
@@ -6398,7 +7540,9 @@
    "participle": "curato",
    "group": 10,
    "example": "Curare la nostra identità digitale.",
-   "lesson": "L28"
+   "lesson": "L28",
+   "uk": "лікувати; дбати, доглядати",
+   "en": "to treat (a patient); to take care of"
   },
   {
    "id": "w576",
@@ -6410,7 +7554,9 @@
    "irregular": "причастие; futuro sopravvivrò",
    "group": 9,
    "example": "Il pianeta potrà sopravvivere.",
-   "lesson": "L28"
+   "lesson": "L28",
+   "uk": "виживати",
+   "en": "to survive"
   },
   {
    "id": "w577",
@@ -6422,7 +7568,9 @@
    "irregular": "причастие",
    "group": 11,
    "example": "Per scoprire come sarà la vita.",
-   "lesson": "L28"
+   "lesson": "L28",
+   "uk": "відкривати, дізнаватися",
+   "en": "to discover, to find out"
   },
   {
    "id": "w578",
@@ -6435,7 +7583,9 @@
    "group": 10,
    "example": "Non ci ammaleremo mai.",
    "note": "malato — больной",
-   "lesson": "L28"
+   "lesson": "L28",
+   "uk": "захворіти",
+   "en": "to fall ill"
   },
   {
    "id": "w579",
@@ -6446,7 +7596,9 @@
    "participle": "spostato",
    "group": 1,
    "example": "Sposteranno gli oggetti con la mente.",
-   "lesson": "L28"
+   "lesson": "L28",
+   "uk": "пересувати, переміщати",
+   "en": "to move (something)"
   },
   {
    "id": "w580",
@@ -6457,7 +7609,9 @@
    "participle": "cantato",
    "group": 1,
    "example": "Canteremo insieme.",
-   "lesson": "L28"
+   "lesson": "L28",
+   "uk": "співати",
+   "en": "to sing"
   },
   {
    "id": "w581",
@@ -6469,7 +7623,9 @@
    "group": 11,
    "example": "Darà origine a nuovi mestieri.",
    "lesson": "L28",
-   "base": "w125"
+   "base": "w125",
+   "uk": "дати початок, породити",
+   "en": "to give rise to"
   },
   {
    "id": "w582",
@@ -6480,7 +7636,9 @@
    "plural": "le professioni",
    "group": 11,
    "example": "Le professioni del futuro.",
-   "lesson": "L28"
+   "lesson": "L28",
+   "uk": "професія",
+   "en": "profession"
   },
   {
    "id": "w583",
@@ -6491,7 +7649,9 @@
    "plural": "i mestieri",
    "group": 11,
    "example": "Due nuovi mestieri.",
-   "lesson": "L28"
+   "lesson": "L28",
+   "uk": "ремесло, професія",
+   "en": "trade, job"
   },
   {
    "id": "w584",
@@ -6502,7 +7662,9 @@
    "plural": "gli studi",
    "group": 11,
    "example": "Uno studio dell'istituto di ricerca.",
-   "lesson": "L28"
+   "lesson": "L28",
+   "uk": "дослідження; навчання; кабінет",
+   "en": "study; studies; office"
   },
   {
    "id": "w585",
@@ -6513,7 +7675,9 @@
    "plural": "le ricerche",
    "group": 11,
    "example": "L'istituto di ricerca.",
-   "lesson": "L28"
+   "lesson": "L28",
+   "uk": "дослідження; пошук",
+   "en": "research; search"
   },
   {
    "id": "w586",
@@ -6524,7 +7688,9 @@
    "plural": "i progressi",
    "group": 11,
    "example": "I progressi della scienza.",
-   "lesson": "L28"
+   "lesson": "L28",
+   "uk": "прогрес",
+   "en": "progress"
   },
   {
    "id": "w587",
@@ -6535,7 +7701,9 @@
    "plural": "le scienze",
    "group": 11,
    "example": "Grazie ai progressi della scienza.",
-   "lesson": "L28"
+   "lesson": "L28",
+   "uk": "наука",
+   "en": "science"
   },
   {
    "id": "w588",
@@ -6546,7 +7714,9 @@
    "plural": "gli scienziati / le scienziate",
    "group": 11,
    "example": "300 scienziati.",
-   "lesson": "L28"
+   "lesson": "L28",
+   "uk": "учений / учена",
+   "en": "scientist"
   },
   {
    "id": "w589",
@@ -6557,7 +7727,9 @@
    "plural": "i laboratori",
    "group": 11,
    "example": "In laboratorio.",
-   "lesson": "L28"
+   "lesson": "L28",
+   "uk": "лабораторія",
+   "en": "laboratory"
   },
   {
    "id": "w590",
@@ -6568,7 +7740,9 @@
    "plural": "i corpi",
    "group": 10,
    "example": "Parti del corpo umano.",
-   "lesson": "L28"
+   "lesson": "L28",
+   "uk": "тіло",
+   "en": "body"
   },
   {
    "id": "w591",
@@ -6579,7 +7753,9 @@
    "plural": "i venditori / le venditrici",
    "group": 11,
    "example": "I venditori specializzati.",
-   "lesson": "L28"
+   "lesson": "L28",
+   "uk": "продавець / продавчиня",
+   "en": "seller, salesperson"
   },
   {
    "id": "w592",
@@ -6590,7 +7766,9 @@
    "plural": "i consulenti",
    "group": 11,
    "example": "Si tratta di consulenti.",
-   "lesson": "L28"
+   "lesson": "L28",
+   "uk": "консультант",
+   "en": "consultant"
   },
   {
    "id": "w593",
@@ -6602,7 +7780,9 @@
    "group": 2,
    "example": "Ci daranno consigli.",
    "note": "dare un consiglio",
-   "lesson": "L28"
+   "lesson": "L28",
+   "uk": "порада",
+   "en": "piece of advice"
   },
   {
    "id": "w594",
@@ -6613,7 +7793,9 @@
    "plural": "le immagini",
    "group": 11,
    "example": "Che tipo di immagine.",
-   "lesson": "L28"
+   "lesson": "L28",
+   "uk": "образ, зображення",
+   "en": "image"
   },
   {
    "id": "w595",
@@ -6624,7 +7806,9 @@
    "plural": "i decenni",
    "group": 12,
    "example": "Nei prossimi decenni.",
-   "lesson": "L28"
+   "lesson": "L28",
+   "uk": "десятиліття",
+   "en": "decade"
   },
   {
    "id": "w596",
@@ -6636,7 +7820,9 @@
    "group": 9,
    "example": "Case su altri pianeti.",
    "note": "м.р., хотя на -a!",
-   "lesson": "L28"
+   "lesson": "L28",
+   "uk": "планета",
+   "en": "planet"
   },
   {
    "id": "w597",
@@ -6647,7 +7833,9 @@
    "plural": "le soluzioni",
    "group": 11,
    "example": "Troveremo soluzioni.",
-   "lesson": "L28"
+   "lesson": "L28",
+   "uk": "рішення",
+   "en": "solution"
   },
   {
    "id": "w598",
@@ -6658,7 +7846,9 @@
    "plural": "i cambiamenti climatici",
    "group": 9,
    "example": "Gli effetti dei cambiamenti climatici.",
-   "lesson": "L28"
+   "lesson": "L28",
+   "uk": "зміна клімату",
+   "en": "climate change"
   },
   {
    "id": "w599",
@@ -6669,7 +7859,9 @@
    "plural": "gli oggetti",
    "group": 1,
    "example": "Spostare gli oggetti.",
-   "lesson": "L28"
+   "lesson": "L28",
+   "uk": "предмет",
+   "en": "object"
   },
   {
    "id": "w600",
@@ -6680,7 +7872,9 @@
    "plural": "le menti",
    "group": 4,
    "example": "Con la forza della mente.",
-   "lesson": "L28"
+   "lesson": "L28",
+   "uk": "розум",
+   "en": "mind"
   },
   {
    "id": "w601",
@@ -6691,7 +7885,9 @@
    "plural": "gli aspetti",
    "group": 3,
    "example": "Avremo l'aspetto che preferiremo.",
-   "lesson": "L28"
+   "lesson": "L28",
+   "uk": "зовнішність, вигляд",
+   "en": "appearance, look"
   },
   {
    "id": "w602",
@@ -6702,7 +7898,9 @@
    "plural": "le forme",
    "group": 3,
    "example": "La forma del naso.",
-   "lesson": "L28"
+   "lesson": "L28",
+   "uk": "форма",
+   "en": "shape, form"
   },
   {
    "id": "w603",
@@ -6713,7 +7911,9 @@
    "plural": "i traduttori",
    "group": 11,
    "example": "Un traduttore universale.",
-   "lesson": "L28"
+   "lesson": "L28",
+   "uk": "перекладач (людина або програма)",
+   "en": "translator (person or app)"
   },
   {
    "id": "w604",
@@ -6722,7 +7922,9 @@
    "pos": "expression",
    "group": 12,
    "example": "Si tratta di consulenti.",
-   "lesson": "L28"
+   "lesson": "L28",
+   "uk": "ідеться про",
+   "en": "it's about"
   },
   {
    "id": "w605",
@@ -6732,7 +7934,9 @@
    "forms": "necessario / necessaria / necessari / necessarie",
    "group": 12,
    "example": "Saranno necessari profili…",
-   "lesson": "L28"
+   "lesson": "L28",
+   "uk": "необхідний",
+   "en": "necessary"
   },
   {
    "id": "w606",
@@ -6742,7 +7946,9 @@
    "note": "глагол в ед.ч.: nessuno dovrà",
    "group": 12,
    "example": "Nessuno dovrà studiare le lingue.",
-   "lesson": "L28"
+   "lesson": "L28",
+   "uk": "ніхто",
+   "en": "nobody, no one"
   },
   {
    "id": "w607",
@@ -6755,7 +7961,9 @@
    "group": 2,
    "example": "Come ti chiami? — Mi chiamo Andrii.",
    "added": true,
-   "lesson": "L01"
+   "lesson": "L01",
+   "uk": "зватися (як звати)",
+   "en": "to be called"
   },
   {
    "id": "w608",
@@ -6768,7 +7976,9 @@
    "group": 1,
    "example": "Mi lavo e mi vesto.",
    "added": true,
-   "lesson": "L01"
+   "lesson": "L01",
+   "uk": "митися",
+   "en": "to wash (yourself)"
   },
   {
    "id": "w609",
@@ -6781,7 +7991,9 @@
    "group": 10,
    "example": "Oggi non mi sento bene.",
    "added": true,
-   "lesson": "L01"
+   "lesson": "L01",
+   "uk": "почуватися",
+   "en": "to feel"
   },
   {
    "id": "w610",
@@ -6794,7 +8006,9 @@
    "group": 11,
    "example": "Mi preparo per l'esame.",
    "added": true,
-   "lesson": "L01"
+   "lesson": "L01",
+   "uk": "готуватися (до)",
+   "en": "to get ready (for), to prepare"
   }
  ]
 }
