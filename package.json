@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "validate:content": "node scripts/validate-content.mjs"
+    "validate:content": "node scripts/validate-content.mjs",
+    "test:layout": "playwright test tests/centrato.spec.ts"
   },
   "dependencies": {
     "next": "16.4.0",
@@ -15,6 +16,7 @@
     "react-dom": "19.3.0"
   },
   "devDependencies": {
+    "@playwright/test": "^1.64.1",
     "@tailwindcss/turbopack": "^4",
     "@types/node": "^20",
     "@types/react": "^19",

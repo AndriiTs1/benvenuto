@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { ContenutoCorso } from "@/components/corso/ContenutoCorso";
 import { CourseBack } from "@/components/corso/CourseBack";
 import { CourseHeader } from "@/components/corso/CourseHeader";
 import { CourseNavBar } from "@/components/corso/CourseNavBar";
@@ -29,8 +30,7 @@ export default async function A2Layout({ children }: { children: ReactNode }) {
             <LanguageSwitcher locale={locale} />
           </div>
         </CourseNavBar>
-        {/* contenuto-corso: sotto md tutto al centro (globals.css); barra in alto e tab bar escluse. */}
-        <div className="contenuto-corso">
+        <ContenutoCorso>
           <div className="mx-auto w-full max-w-188 px-4">
             <CourseHeader locale={locale} sottotitoli={testi.sezioni} />
           </div>
@@ -39,7 +39,7 @@ export default async function A2Layout({ children }: { children: ReactNode }) {
           <main className="mx-auto w-full max-w-188 px-4 pt-6 pb-[calc(49px+env(safe-area-inset-bottom)+1.5rem)] md:pb-12">
             {children}
           </main>
-        </div>
+        </ContenutoCorso>
       </div>
     </PageTransition>
   );

@@ -81,7 +81,7 @@ body {
   color: var(--label);
 }
 
-/* Contenuto del corso (/a2/**, app/a2/layout.tsx): sotto md tutto al centro — testi e righe flex
+/* Contenuto del corso (components/corso/ContenutoCorso.tsx, in ogni livello): sotto md tutto al centro — testi e righe flex
    delle schede. Barra in alto e tab bar sono fuori da .contenuto-corso e restano come sono. */
 @media (width < 48rem) {
   .contenuto-corso {
