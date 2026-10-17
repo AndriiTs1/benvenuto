@@ -289,6 +289,8 @@ function TabellaCard({ righe, intestazione }: { righe: Tabella; intestazione: bo
 // Participi irregolari: griglia di schede (1 colonna, 2 da md), riempita per righe come
 // nell'array. In ogni cella "infinito → participio" (il participio è ciò che va ricordato)
 // e sotto la traduzione, se c'è. Separatori come nelle tabelle, anche verticale da md.
+// Contenuto delle celle al centro (eccezione voluta: schede da memorizzare, vedi CLAUDE.md);
+// le due colonne sono uguali (grid-cols-2 = minmax(0, 1fr) × 2).
 function GrigliaParticipi({
   righe,
   traduzioni,
@@ -305,7 +307,7 @@ function GrigliaParticipi({
         return (
           <li
             key={i}
-            className={`border-separator px-4 py-3 ${i > 0 ? "border-t" : ""} ${i === 1 ? "md:border-t-0" : ""} ${
+            className={`border-separator px-4 py-3 text-center ${i > 0 ? "border-t" : ""} ${i === 1 ? "md:border-t-0" : ""} ${
               i % 2 === 1 ? "md:border-l" : ""
             }`}
           >
