@@ -64,10 +64,14 @@ export function LezioneV2({
     <div className="space-y-6">
       <Sezione titolo="In breve">
         {/* Tinta mescolata con card (non trasparente su bg-grouped): il testo della traduzione resta ≥ 4.5:1. */}
-        <ul className="space-y-2 rounded-2xl bg-[color-mix(in_srgb,var(--color-grammar)_10%,var(--card))] p-4">
+        {/* Sotto md niente pallini: punti separati da una linea sottile (come le righe delle tabelle). */}
+        <ul className="rounded-2xl bg-[color-mix(in_srgb,var(--color-grammar)_10%,var(--card))] p-4 md:space-y-2">
           {lezione.inBreve.map((punto, i) => (
-            <li key={i} className={`flex gap-2.5 max-md:flex-col max-md:items-center max-md:gap-1.5 ${TESTO}`}>
-              <span aria-hidden="true" className="size-1.5 shrink-0 rounded-full bg-grammar md:mt-[0.6em]" />
+            <li
+              key={i}
+              className={`border-separator max-md:py-3 max-md:first:pt-0 max-md:last:pb-0 max-md:not-first:border-t md:flex md:gap-2.5 ${TESTO}`}
+            >
+              <span aria-hidden="true" className="mt-[0.6em] size-1.5 shrink-0 rounded-full bg-grammar max-md:hidden" />
               <Tr locale={lingua}>{punto}</Tr>
             </li>
           ))}
