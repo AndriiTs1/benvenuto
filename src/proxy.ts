@@ -1,6 +1,8 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { MODULI_A1 } from "@/content/a1/moduli";
 import meta from "@/content/a2/meta.json";
+import vocab from "@/content/a2/ru/vocab.json";
+import { slugGruppo } from "@/content/a2/slug";
 
 // Indirizzi inesistenti → vero HTTP 404. Con cacheComponents la risposta inizia a scorrere
 // prima che la pagina chiami notFound() (che resta come seconda difesa) e lo stato
@@ -8,6 +10,7 @@ import meta from "@/content/a2/meta.json";
 
 const SLUG_ARGOMENTI = new Set(Object.values(meta.topics).map((t) => t.slug));
 const NUMERI_UNITA = new Set(Object.values(meta.units).map((u) => String(u.number)));
+const SLUG_GRUPPI = new Set(Object.values(vocab.gruppi).map((g) => slugGruppo(g.it)));
 const ID_MODULI = new Set(MODULI_A1.map((m) => String(m.id)));
 const ID_LEZIONI = new Set(MODULI_A1.flatMap((m) => m.lezioni.map((l) => l.id)));
 
@@ -23,6 +26,9 @@ function esiste(pathname: string): boolean {
     if (parti[2] === "unita") return parti.length === 4 && NUMERI_UNITA.has(parti[3]);
     return parti.length === 3 && SLUG_ARGOMENTI.has(parti[2]);
   }
+  if (parti[0] === "a2" && parti[1] === "vocabolario" && parti.length > 2) {
+    return parti.length === 3 && SLUG_GRUPPI.has(parti[2]);
+  }
   if (parti[0] === "modulo") return parti.length === 2 && ID_MODULI.has(parti[1]);
   if (parti[0] === "lezione") return parti.length === 2 && ID_LEZIONI.has(parti[1]);
   return true;
@@ -37,6 +43,7 @@ export function proxy(request: NextRequest) {
 export const config = {
   matcher: [
     "/a2/grammatica/:path+",
+    "/a2/vocabolario/:path+",
     "/modulo/:path*",
     "/lezione/:path*",
     "/percorso",

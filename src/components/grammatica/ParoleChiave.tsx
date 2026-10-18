@@ -1,22 +1,7 @@
 import { Tr } from "@/components/Tr";
-import type { GruppoParoleChiave, ParolaChiave } from "@/content/a2/grammatica";
+import { ElencoParole } from "@/components/vocabolario/ElencoParole";
+import type { GruppoParoleChiave } from "@/content/a2/grammatica";
 import type { Locale } from "@/lib/lingue";
-
-// Ausiliare breve per il badge: "essere", "avere" o, se il verbo li usa tutti e due, "essere / avere".
-function ausiliare(aux: string) {
-  const essere = aux.includes("essere");
-  const avere = aux.includes("avere");
-  if (essere && avere) return "essere / avere";
-  return essere ? "essere" : avere ? "avere" : null;
-}
-
-function Badge({ children }: { children: string }) {
-  return (
-    <span className="rounded-full bg-label/[0.08] px-2 py-0.5 text-[12px] font-medium text-label-2 dark:bg-label/[0.16]">
-      {children}
-    </span>
-  );
-}
 
 // "Parole chiave (N)": parole scelte per la lezione (keyWords), chiuso all'inizio.
 // Con i gruppi, ognuno ha il suo sottotitolo (italiano, maiuscoletto come i titoli di sezione).
@@ -62,38 +47,5 @@ export function ParoleChiave({
         </section>
       ))}
     </details>
-  );
-}
-
-function ElencoParole({ parole }: { parole: ParolaChiave[] }) {
-  return (
-    <ul>
-      {parole.map((parola) => {
-        const aux = parola.aux ? ausiliare(parola.aux) : null;
-        return (
-          <li key={parola.id} className="border-t border-separator px-4 py-2.5">
-            <p className="text-[16px] leading-normal md:text-[17px]">
-              <span lang="it" className="font-medium">
-                {parola.it}
-              </span>
-              {" — "}
-              <Tr locale={parola.lingua}>{parola.traduzione}</Tr>
-            </p>
-            {(aux || parola.participle || parola.irregolare) && (
-              <p lang="it" className="mt-1 flex flex-wrap gap-1.5">
-                {aux && <Badge>{aux}</Badge>}
-                {parola.participle && <Badge>{parola.participle}</Badge>}
-                {parola.irregolare && <Badge>irr.</Badge>}
-              </p>
-            )}
-            {parola.example && (
-              <p lang="it" className="mt-1 text-[13px] leading-normal text-label-2">
-                {parola.example}
-              </p>
-            )}
-          </li>
-        );
-      })}
-    </ul>
   );
 }

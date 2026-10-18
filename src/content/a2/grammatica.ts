@@ -1,6 +1,7 @@
 import { access } from "node:fs/promises";
 import path from "node:path";
 import { getContent, isVisibile } from "@/content/a2";
+import { getParole, type ParolaVista } from "@/content/a2/vocabolario";
 import meta from "@/content/a2/meta.json";
 import { DEFAULT_LOCALE, type Locale } from "@/lib/lingue";
 
@@ -87,17 +88,7 @@ export async function unitaPerSlug(locale: Locale): Promise<Record<string, numbe
 // irregular_participles) → traduzione in ogni lingua delle spiegazioni.
 export type TraduzioniParticipi = Record<string, Partial<Record<Locale, string>>>;
 
-export type ParolaChiave = {
-  id: string;
-  it: string;
-  traduzione: string;
-  /** Lingua della traduzione: quella scelta se il vocabolario la ha, altrimenti il russo. */
-  lingua: Locale;
-  aux?: string;
-  participle?: string;
-  irregolare: boolean;
-  example?: string;
-};
+export type ParolaChiave = ParolaVista;
 
 export type GruppoParoleChiave = { title?: string; parole: ParolaChiave[] };
 
@@ -117,37 +108,9 @@ export async function getParoleChiave(
     .filter((g) => g.parole.length > 0);
 }
 
-// Traduzioni di una parola di vocab.json: ru sempre, uk ed en dove ci sono.
-export type TraduzioniParola = { ru: string } & Partial<Record<Exclude<Locale, "ru">, string>>;
-
-// Traduzione nella lingua scelta (cookie bv_lang); se manca o è vuota, il russo.
-// Da usare ovunque si mostri una parola (parole chiave, griglie, Vocabolario).
-export function traduzioneParola(parola: TraduzioniParola, locale: Locale): { testo: string; lingua: Locale } {
-  const propria = locale === DEFAULT_LOCALE ? undefined : parola[locale]?.trim();
-  return propria ? { testo: propria, lingua: locale } : { testo: parola.ru, lingua: DEFAULT_LOCALE };
-}
-
 async function risolviParole(locale: Locale, ids: string[]): Promise<ParolaChiave[]> {
-  const { vocab } = await getContent(locale);
-  type Parola = (typeof vocab.words)[number] & TraduzioniParola & Partial<Record<"irregular" | "aux" | "participle", string | null>>;
-  const perId = new Map(vocab.words.map((w) => [w.id, w as Parola]));
-  return ids.flatMap((id) => {
-    const w = perId.get(id);
-    if (!w) return [];
-    const { testo, lingua } = traduzioneParola(w, locale);
-    return [
-      {
-        id,
-        it: w.it,
-        traduzione: testo,
-        lingua,
-        aux: w.aux ?? undefined,
-        participle: w.participle ?? undefined,
-        irregolare: Boolean(w.irregular),
-        example: w.example || undefined,
-      },
-    ];
-  });
+  const perId = await getParole(locale, ids);
+  return ids.flatMap((id) => perId.get(id) ?? []);
 }
 
 // La lingua in cui il contenuto è davvero scritto: se manca la cartella della lingua, il russo.
