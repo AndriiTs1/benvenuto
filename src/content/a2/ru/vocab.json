@@ -8009,6 +8009,363 @@
    "lesson": "L01",
    "uk": "готуватися (до)",
    "en": "to get ready (for), to prepare"
+  },
+  {
+   "id": "w611",
+   "it": "il padre / la madre",
+   "ru": "отец / мать",
+   "uk": "батько / мати",
+   "en": "father / mother",
+   "pos": "noun",
+   "group": 2,
+   "example": "Mio padre è medico e mia madre è insegnante.",
+   "lesson": "extra",
+   "added": true
+  },
+  {
+   "id": "w612",
+   "it": "lo zio / la zia",
+   "ru": "дядя / тётя",
+   "uk": "дядько / тітка",
+   "en": "uncle / aunt",
+   "pos": "noun",
+   "group": 2,
+   "example": "Mia zia abita a Milano.",
+   "lesson": "extra",
+   "added": true,
+   "plural": "gli zii / le zie"
+  },
+  {
+   "id": "w613",
+   "it": "il cugino / la cugina",
+   "ru": "двоюродный брат / сестра",
+   "uk": "двоюрідний брат / сестра",
+   "en": "cousin",
+   "pos": "noun",
+   "group": 2,
+   "example": "Mio cugino ha due figli.",
+   "lesson": "extra",
+   "added": true
+  },
+  {
+   "id": "w614",
+   "it": "il / la nipote",
+   "ru": "племянник; внук (м / ж)",
+   "uk": "племінник; онук (ч / ж)",
+   "en": "nephew, niece; grandson, granddaughter",
+   "pos": "noun",
+   "group": 2,
+   "example": "Mia nonna ha cinque nipoti.",
+   "lesson": "extra",
+   "added": true,
+   "plural": "i / le nipoti"
+  },
+  {
+   "id": "w615",
+   "it": "il figlio unico / la figlia unica",
+   "ru": "единственный ребёнок (сын / дочь)",
+   "uk": "єдина дитина (син / донька)",
+   "en": "only child",
+   "pos": "expression",
+   "group": 2,
+   "example": "Sono figlio unico.",
+   "lesson": "extra",
+   "added": true
+  },
+  {
+   "id": "w616",
+   "it": "i parenti",
+   "ru": "родственники",
+   "uk": "родичі",
+   "en": "relatives",
+   "pos": "noun",
+   "group": 2,
+   "example": "A Natale vediamo tutti i parenti.",
+   "lesson": "extra",
+   "added": true,
+   "gender": "m"
+  },
+  {
+   "id": "w617",
+   "it": "la mano",
+   "ru": "кисть руки, рука",
+   "uk": "кисть руки, рука",
+   "en": "hand",
+   "pos": "noun",
+   "group": 10,
+   "example": "Mi lavo le mani.",
+   "lesson": "extra",
+   "added": true,
+   "gender": "f",
+   "plural": "le mani"
+  },
+  {
+   "id": "w618",
+   "it": "il piede",
+   "ru": "нога (стопа)",
+   "uk": "нога (стопа)",
+   "en": "foot",
+   "pos": "noun",
+   "group": 10,
+   "example": "Vado a piedi.",
+   "lesson": "extra",
+   "added": true,
+   "gender": "m",
+   "plural": "i piedi"
+  },
+  {
+   "id": "w619",
+   "it": "la gamba",
+   "ru": "нога",
+   "uk": "нога",
+   "en": "leg",
+   "pos": "noun",
+   "group": 10,
+   "example": "Mi fa male la gamba.",
+   "lesson": "extra",
+   "added": true,
+   "gender": "f",
+   "plural": "le gambe"
+  },
+  {
+   "id": "w620",
+   "it": "la schiena",
+   "ru": "спина",
+   "uk": "спина",
+   "en": "back",
+   "pos": "noun",
+   "group": 10,
+   "example": "Ho mal di schiena.",
+   "lesson": "extra",
+   "added": true,
+   "gender": "f",
+   "plural": "le schiene"
+  },
+  {
+   "id": "w621",
+   "it": "la pancia",
+   "ru": "живот",
+   "uk": "живіт",
+   "en": "tummy, belly",
+   "pos": "noun",
+   "group": 10,
+   "example": "Il bambino ha mal di pancia.",
+   "lesson": "extra",
+   "added": true,
+   "gender": "f",
+   "plural": "le pance"
+  },
+  {
+   "id": "w622",
+   "it": "la gola",
+   "ru": "горло",
+   "uk": "горло",
+   "en": "throat",
+   "pos": "noun",
+   "group": 10,
+   "example": "Ho mal di gola.",
+   "lesson": "extra",
+   "added": true,
+   "gender": "f",
+   "plural": "le gole"
+  },
+  {
+   "id": "w623",
+   "it": "l'orecchio",
+   "ru": "ухо",
+   "uk": "вухо",
+   "en": "ear",
+   "pos": "noun",
+   "group": 10,
+   "example": "Mi fa male l'orecchio.",
+   "lesson": "extra",
+   "added": true,
+   "gender": "m",
+   "plural": "le orecchie"
+  },
+  {
+   "id": "w624",
+   "it": "la bocca",
+   "ru": "рот",
+   "uk": "рот",
+   "en": "mouth",
+   "pos": "noun",
+   "group": 10,
+   "example": "Apra la bocca, per favore.",
+   "lesson": "extra",
+   "added": true,
+   "gender": "f",
+   "plural": "le bocche"
+  },
+  {
+   "id": "w625",
+   "it": "la spalla",
+   "ru": "плечо",
+   "uk": "плече",
+   "en": "shoulder",
+   "pos": "noun",
+   "group": 10,
+   "example": "Porta la borsa sulla spalla.",
+   "lesson": "extra",
+   "added": true,
+   "gender": "f",
+   "plural": "le spalle"
+  },
+  {
+   "id": "w626",
+   "it": "il dito",
+   "ru": "палец",
+   "uk": "палець",
+   "en": "finger",
+   "pos": "noun",
+   "group": 10,
+   "example": "Mi sono tagliato un dito.",
+   "lesson": "extra",
+   "added": true,
+   "gender": "m",
+   "plural": "le dita"
+  },
+  {
+   "id": "w627",
+   "it": "il collo",
+   "ru": "шея",
+   "uk": "шия",
+   "en": "neck",
+   "pos": "noun",
+   "group": 10,
+   "example": "Ho il collo rigido.",
+   "lesson": "extra",
+   "added": true,
+   "gender": "m",
+   "plural": "i colli"
+  },
+  {
+   "id": "w628",
+   "it": "il cuore",
+   "ru": "сердце",
+   "uk": "серце",
+   "en": "heart",
+   "pos": "noun",
+   "group": 10,
+   "example": "Il cuore batte forte.",
+   "lesson": "extra",
+   "added": true,
+   "gender": "m",
+   "plural": "i cuori"
+  },
+  {
+   "id": "w629",
+   "it": "la faccia",
+   "ru": "лицо",
+   "uk": "обличчя",
+   "en": "face",
+   "pos": "noun",
+   "group": 10,
+   "example": "Mi lavo la faccia.",
+   "lesson": "extra",
+   "added": true,
+   "gender": "f",
+   "plural": "le facce"
+  },
+  {
+   "id": "w630",
+   "it": "il petto",
+   "ru": "грудь",
+   "uk": "груди",
+   "en": "chest",
+   "pos": "noun",
+   "group": 10,
+   "example": "Ho un dolore al petto.",
+   "lesson": "extra",
+   "added": true,
+   "gender": "m",
+   "plural": "i petti"
+  },
+  {
+   "id": "w631",
+   "it": "avere mal di …",
+   "ru": "болит … (у меня болит)",
+   "uk": "болить … (у мене болить)",
+   "en": "to have a … ache",
+   "pos": "expression",
+   "group": 10,
+   "example": "Ho mal di testa e mal di gola.",
+   "lesson": "extra",
+   "added": true
   }
- ]
+ ],
+ "gruppi": {
+  "1": {
+   "it": "La vita quotidiana",
+   "ru": "Повседневная жизнь",
+   "uk": "Повсякденне життя",
+   "en": "Daily life"
+  },
+  "2": {
+   "it": "Famiglia e persone",
+   "ru": "Семья и люди",
+   "uk": "Родина й люди",
+   "en": "Family and people"
+  },
+  "3": {
+   "it": "Aspetto e carattere",
+   "ru": "Внешность и характер",
+   "uk": "Зовнішність і характер",
+   "en": "Looks and personality"
+  },
+  "4": {
+   "it": "Emozioni",
+   "ru": "Чувства и состояния",
+   "uk": "Почуття та стани",
+   "en": "Feelings"
+  },
+  "5": {
+   "it": "La casa",
+   "ru": "Дом и квартира",
+   "uk": "Дім і квартира",
+   "en": "Home"
+  },
+  "6": {
+   "it": "Cibo e ristorante",
+   "ru": "Еда и ресторан",
+   "uk": "Їжа й ресторан",
+   "en": "Food and restaurants"
+  },
+  "7": {
+   "it": "Città e servizi",
+   "ru": "Город, транспорт, услуги",
+   "uk": "Місто, транспорт, послуги",
+   "en": "Town, transport, services"
+  },
+  "8": {
+   "it": "Viaggi e vacanze",
+   "ru": "Путешествия и отпуск",
+   "uk": "Подорожі й відпустка",
+   "en": "Travel and holidays"
+  },
+  "9": {
+   "it": "Natura e meteo",
+   "ru": "Природа и погода",
+   "uk": "Природа й погода",
+   "en": "Nature and weather"
+  },
+  "10": {
+   "it": "Salute e corpo",
+   "ru": "Здоровье и тело",
+   "uk": "Здоров'я і тіло",
+   "en": "Health and body"
+  },
+  "11": {
+   "it": "Lavoro e studio",
+   "ru": "Работа и учёба",
+   "uk": "Робота й навчання",
+   "en": "Work and study"
+  },
+  "12": {
+   "it": "Tempo e connettivi",
+   "ru": "Время и связки",
+   "uk": "Час і зв'язки",
+   "en": "Time and linking words"
+  }
+ }
 }
