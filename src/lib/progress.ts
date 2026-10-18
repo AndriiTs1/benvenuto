@@ -140,3 +140,51 @@ export function useProgress(): ProgressA2 {
     }
   }, [raw]);
 }
+
+// --- Esercizi A2: risultato di ogni voce e miglior risultato per argomento ---
+
+const ESERCIZI_A2_KEY = "bv_esercizi_a2";
+
+export type ProgressoEsercizi = {
+  voci: Record<string, { ok: boolean }>;
+  /** Miglior risultato di un giro completo: argomento → giuste. */
+  migliori: Record<string, number>;
+};
+
+const VUOTO_ESERCIZI: ProgressoEsercizi = { voci: {}, migliori: {} };
+
+function parseEsercizi(value: unknown): ProgressoEsercizi {
+  const dati = value as Partial<ProgressoEsercizi> | null;
+  const voci: ProgressoEsercizi["voci"] = {};
+  const migliori: ProgressoEsercizi["migliori"] = {};
+  if (dati?.voci && typeof dati.voci === "object") {
+    for (const [id, v] of Object.entries(dati.voci)) if (typeof v?.ok === "boolean") voci[id] = { ok: v.ok };
+  }
+  if (dati?.migliori && typeof dati.migliori === "object") {
+    for (const [id, n] of Object.entries(dati.migliori)) if (typeof n === "number") migliori[id] = n;
+  }
+  return { voci, migliori };
+}
+
+export function salvaRisposta(id: string, ok: boolean) {
+  const attuale = parseEsercizi(leggi(ESERCIZI_A2_KEY));
+  scrivi(ESERCIZI_A2_KEY, { ...attuale, voci: { ...attuale.voci, [id]: { ok } } });
+}
+
+export function salvaMigliore(topicId: string, giuste: number) {
+  const attuale = parseEsercizi(leggi(ESERCIZI_A2_KEY));
+  if ((attuale.migliori[topicId] ?? -1) >= giuste) return;
+  scrivi(ESERCIZI_A2_KEY, { ...attuale, migliori: { ...attuale.migliori, [topicId]: giuste } });
+}
+
+// Progresso degli esercizi; sul server e prima dell'idratazione è vuoto.
+export function useProgressoEsercizi(): ProgressoEsercizi {
+  const raw = useSyncExternalStore(subscribe, () => leggiRaw(ESERCIZI_A2_KEY), () => null);
+  return useMemo(() => {
+    try {
+      return raw ? parseEsercizi(JSON.parse(raw)) : VUOTO_ESERCIZI;
+    } catch {
+      return VUOTO_ESERCIZI;
+    }
+  }, [raw]);
+}

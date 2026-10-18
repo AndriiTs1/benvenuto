@@ -266,6 +266,42 @@ for (const lingua of ["ru", "uk", "en"]) {
   const mancanti = tutte.filter((id) => !lezioniPerLingua[lingua]?.includes(id));
   if (mancanti.length) avvisi.push(`${lingua}/lezioni: mancano ${mancanti.join(", ")}`);
 }
+// Esercizi interattivi (esercizi.json): istruzioni e spiegazioni in ru/uk/en, un solo "___",
+// fill con risposte e suggerimento, choice con ≥ 2 opzioni diverse e risposta valida, id unici.
+try {
+  const es = leggi(path.join(CARTELLA, "esercizi.json"));
+  const tradotto = (v) => ["ru", "uk", "en"].filter((l) => !testo(v?.[l]));
+  for (const tipo of ["fill", "choice"]) {
+    const mancano = tradotto(es.istruzioni?.[tipo]);
+    if (mancano.length) errori.push(`esercizi: istruzioni.${tipo} senza ${mancano.join(", ")}`);
+  }
+  const visti = new Set();
+  for (const insieme of es.sets ?? []) {
+    if (!meta.topics[insieme.topic]) errori.push(`esercizi: argomento inesistente ${insieme.topic}`);
+    if (!Array.isArray(insieme.items) || insieme.items.length === 0) errori.push(`esercizi: ${insieme.topic} senza items`);
+    for (const v of insieme.items ?? []) {
+      const dove = `esercizi: ${insieme.topic}/${v?.id}`;
+      if (!testo(v?.id)) errori.push(`esercizi: ${insieme.topic} voce senza id`);
+      else if (visti.has(v.id)) errori.push(`${dove} id ripetuto`);
+      visti.add(v?.id);
+      if ((String(v?.it ?? "").match(/___/g) ?? []).length !== 1) errori.push(`${dove} "it" deve avere un solo "___"`);
+      const why = tradotto(v?.why);
+      if (why.length) errori.push(`${dove} why senza ${why.join(", ")}`);
+      if (v?.type === "fill") {
+        if (!testo(v.hint)) errori.push(`${dove} fill senza hint`);
+        if (!Array.isArray(v.answers) || v.answers.length === 0 || !v.answers.every(testo)) errori.push(`${dove} fill senza answers`);
+      } else if (v?.type === "choice") {
+        const opzioni = Array.isArray(v.options) ? v.options : [];
+        if (opzioni.length < 2 || !opzioni.every(testo) || new Set(opzioni).size !== opzioni.length)
+          errori.push(`${dove} choice: servono ≥ 2 opzioni diverse`);
+        if (!Number.isInteger(v.answer) || v.answer < 0 || v.answer >= opzioni.length) errori.push(`${dove} choice: answer fuori dalle opzioni`);
+      } else errori.push(`${dove} type "${v?.type}" (fill | choice)`);
+    }
+  }
+} catch (e) {
+  if (e.code !== "ENOENT") errori.push(`esercizi.json non valido (${e.message})`);
+}
+
 if (avvisi.length) console.warn(`Avvisi:\n- ${avvisi.join("\n- ")}`);
 
 if (errori.length) {

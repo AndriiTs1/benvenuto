@@ -1,0 +1,363 @@
+{
+ "version": 1,
+ "istruzioni": {
+  "fill": {
+   "ru": "Вставь правильную форму",
+   "uk": "Встав правильну форму",
+   "en": "Fill in the correct form"
+  },
+  "choice": {
+   "ru": "Выбери правильный вариант",
+   "uk": "Обери правильний варіант",
+   "en": "Choose the correct option"
+  }
+ },
+ "sets": [
+  {
+   "topic": "g5-presente-regular",
+   "items": [
+    {
+     "id": "pr-01",
+     "type": "fill",
+     "it": "Io ___ italiano ogni giorno.",
+     "hint": "parlare",
+     "answers": [
+      "parlo"
+     ],
+     "why": {
+      "ru": "-are, io → -o.",
+      "uk": "-are, io → -o.",
+      "en": "-are, io → -o."
+     }
+    },
+    {
+     "id": "pr-02",
+     "type": "fill",
+     "it": "Tu ___ a Lugano?",
+     "hint": "abitare",
+     "answers": [
+      "abiti"
+     ],
+     "why": {
+      "ru": "Форма tu всегда на -i.",
+      "uk": "Форма tu завжди на -i.",
+      "en": "The tu form always ends in -i."
+     }
+    },
+    {
+     "id": "pr-03",
+     "type": "fill",
+     "it": "Lei ___ un libro.",
+     "hint": "leggere",
+     "answers": [
+      "legge"
+     ],
+     "why": {
+      "ru": "-ere, lui / lei → -e.",
+      "uk": "-ere, lui / lei → -e.",
+      "en": "-ere, lui / lei → -e."
+     }
+    },
+    {
+     "id": "pr-04",
+     "type": "fill",
+     "it": "Noi ___ alle sette.",
+     "hint": "partire",
+     "answers": [
+      "partiamo"
+     ],
+     "why": {
+      "ru": "noi → -iamo у всех глаголов.",
+      "uk": "noi → -iamo в усіх дієслів.",
+      "en": "noi → -iamo for every verb."
+     }
+    },
+    {
+     "id": "pr-05",
+     "type": "fill",
+     "it": "Voi ___ la TV?",
+     "hint": "guardare",
+     "answers": [
+      "guardate"
+     ],
+     "why": {
+      "ru": "-are, voi → -ate.",
+      "uk": "-are, voi → -ate.",
+      "en": "-are, voi → -ate."
+     }
+    },
+    {
+     "id": "pr-06",
+     "type": "fill",
+     "it": "Loro ___ in un ristorante.",
+     "hint": "lavorare",
+     "answers": [
+      "lavorano"
+     ],
+     "why": {
+      "ru": "-are, loro → -ano.",
+      "uk": "-are, loro → -ano.",
+      "en": "-are, loro → -ano."
+     }
+    },
+    {
+     "id": "pr-07",
+     "type": "fill",
+     "it": "Io ___ il lavoro alle cinque.",
+     "hint": "finire",
+     "answers": [
+      "finisco"
+     ],
+     "why": {
+      "ru": "finire — глагол на -isc-: finisco.",
+      "uk": "finire — дієслово на -isc-: finisco.",
+      "en": "finire is an -isc- verb: finisco."
+     }
+    },
+    {
+     "id": "pr-08",
+     "type": "fill",
+     "it": "Tu ___ lavoro?",
+     "hint": "cercare",
+     "answers": [
+      "cerchi"
+     ],
+     "why": {
+      "ru": "-care: + h, чтобы звук остался твёрдым.",
+      "uk": "-care: + h, щоб звук лишився твердим.",
+      "en": "-care adds h to keep the hard sound."
+     }
+    },
+    {
+     "id": "pr-09",
+     "type": "choice",
+     "it": "Tu ___ la casa il sabato.",
+     "options": [
+      "pulisci",
+      "pulisi",
+      "pulici"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "pulire — на -isc-: pulisci.",
+      "uk": "pulire — на -isc-: pulisci.",
+      "en": "pulire is an -isc- verb: pulisci."
+     }
+    },
+    {
+     "id": "pr-10",
+     "type": "choice",
+     "it": "Noi ___ la pizza.",
+     "options": [
+      "mangiamo",
+      "mangiiamo",
+      "mangiano"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "-iare: только одна i — mangiamo.",
+      "uk": "-iare: лише одна i — mangiamo.",
+      "en": "-iare: only one i — mangiamo."
+     }
+    },
+    {
+     "id": "pr-11",
+     "type": "choice",
+     "it": "Loro ___ molto.",
+     "options": [
+      "dormono",
+      "dormano",
+      "dormeno"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "-ire, loro → -ono.",
+      "uk": "-ire, loro → -ono.",
+      "en": "-ire, loro → -ono."
+     }
+    }
+   ]
+  },
+  {
+   "topic": "g5-passato-prossimo-base",
+   "items": [
+    {
+     "id": "pp-01",
+     "type": "fill",
+     "it": "Ieri io ___ la pizza.",
+     "hint": "mangiare",
+     "answers": [
+      "ho mangiato"
+     ],
+     "why": {
+      "ru": "mangiare — с avere: ho mangiato.",
+      "uk": "mangiare — з avere: ho mangiato.",
+      "en": "mangiare takes avere: ho mangiato."
+     }
+    },
+    {
+     "id": "pp-02",
+     "type": "fill",
+     "it": "Anna ___ al cinema.",
+     "hint": "andare",
+     "answers": [
+      "è andata"
+     ],
+     "why": {
+      "ru": "andare — с essere; Anna — женский род: andata.",
+      "uk": "andare — з essere; Anna — жіночий рід: andata.",
+      "en": "andare takes essere; Anna is feminine: andata."
+     }
+    },
+    {
+     "id": "pp-03",
+     "type": "fill",
+     "it": "Noi ___ a casa tardi.",
+     "hint": "tornare",
+     "answers": [
+      "siamo tornati",
+      "siamo tornate"
+     ],
+     "why": {
+      "ru": "tornare — с essere; noi → -i (или -e, если только женщины).",
+      "uk": "tornare — з essere; noi → -i (або -e, якщо лише жінки).",
+      "en": "tornare takes essere; noi → -i (or -e if only women)."
+     }
+    },
+    {
+     "id": "pp-04",
+     "type": "fill",
+     "it": "Tu ___ un libro?",
+     "hint": "leggere",
+     "answers": [
+      "hai letto"
+     ],
+     "why": {
+      "ru": "leggere — неправильный: letto.",
+      "uk": "leggere — неправильне: letto.",
+      "en": "leggere is irregular: letto."
+     }
+    },
+    {
+     "id": "pp-05",
+     "type": "fill",
+     "it": "Marco ___ i compiti.",
+     "hint": "fare",
+     "answers": [
+      "ha fatto"
+     ],
+     "why": {
+      "ru": "fare — неправильный: fatto.",
+      "uk": "fare — неправильне: fatto.",
+      "en": "fare is irregular: fatto."
+     }
+    },
+    {
+     "id": "pp-06",
+     "type": "choice",
+     "it": "I ragazzi ___ alle otto.",
+     "options": [
+      "sono usciti",
+      "hanno uscito",
+      "sono uscito"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "uscire — с essere, ragazzi → -i.",
+      "uk": "uscire — з essere, ragazzi → -i.",
+      "en": "uscire takes essere; ragazzi → -i."
+     }
+    },
+    {
+     "id": "pp-07",
+     "type": "choice",
+     "it": "Mi ___ il film.",
+     "options": [
+      "è piaciuto",
+      "ha piaciuto",
+      "sono piaciuto"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "piacere — с essere; согласуется с il film.",
+      "uk": "piacere — з essere; узгоджується з il film.",
+      "en": "piacere takes essere and agrees with il film."
+     }
+    },
+    {
+     "id": "pp-08",
+     "type": "choice",
+     "it": "Ieri ___ fino alle sei.",
+     "options": [
+      "ho lavorato",
+      "sono lavorato"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "lavorare — с avere.",
+      "uk": "lavorare — з avere.",
+      "en": "lavorare takes avere."
+     }
+    },
+    {
+     "id": "pp-09",
+     "type": "fill",
+     "it": "Lucia ___ alle sette.",
+     "hint": "alzarsi",
+     "answers": [
+      "si è alzata"
+     ],
+     "why": {
+      "ru": "Возвратный — essere; Lucia → -a.",
+      "uk": "Зворотне — essere; Lucia → -a.",
+      "en": "Reflexive — essere; Lucia → -a."
+     }
+    },
+    {
+     "id": "pp-10",
+     "type": "fill",
+     "it": "Loro ___ il treno delle otto.",
+     "hint": "prendere",
+     "answers": [
+      "hanno preso"
+     ],
+     "why": {
+      "ru": "prendere — неправильный: preso.",
+      "uk": "prendere — неправильне: preso.",
+      "en": "prendere is irregular: preso."
+     }
+    },
+    {
+     "id": "pp-11",
+     "type": "choice",
+     "it": "Mio fratello è ___ in Svizzera nel 2021.",
+     "options": [
+      "venuto",
+      "venito",
+      "venuta"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "venire → venuto; fratello — мужской род.",
+      "uk": "venire → venuto; fratello — чоловічий рід.",
+      "en": "venire → venuto; fratello is masculine."
+     }
+    },
+    {
+     "id": "pp-12",
+     "type": "fill",
+     "it": "Che cosa ___ ieri sera?",
+     "hint": "fare (tu)",
+     "answers": [
+      "hai fatto"
+     ],
+     "why": {
+      "ru": "tu + avere: hai fatto.",
+      "uk": "tu + avere: hai fatto.",
+      "en": "tu + avere: hai fatto."
+     }
+    }
+   ]
+  }
+ ]
+}

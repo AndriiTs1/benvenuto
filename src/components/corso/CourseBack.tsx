@@ -25,6 +25,9 @@ export function CourseBack({ unitaPerSlug }: { unitaPerSlug: Record<string, numb
     }
   }
 
+  if (parti[1] === "esercizi" && parti.length > 2) {
+    return <BackButton href="/a2/esercizi" label="Esercizi" ariaLabel="Torna agli esercizi" compattoSuTablet />;
+  }
   if (parti[1] === "vocabolario" && parti.length > 2) {
     return <BackButton href="/a2/vocabolario" label="Vocabolario" ariaLabel="Torna al Vocabolario" compattoSuTablet />;
   }

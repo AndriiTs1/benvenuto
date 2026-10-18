@@ -1,11 +1,15 @@
+import Link from "next/link";
 import { notFound } from "next/navigation";
+import { FattiEsercizi } from "@/components/esercizi/FattiEsercizi";
 import { HoCapito, SegnaVisto } from "@/components/grammatica/AzioniArgomento";
 import { ContenutoArgomento, GrigliaParticipi, Sezione } from "@/components/grammatica/ContenutoArgomento";
 import { LezioneV2 } from "@/components/grammatica/LezioneV2";
 import { LinkAvanti } from "@/components/grammatica/LinkAvanti";
 import { ParoleChiave } from "@/components/grammatica/ParoleChiave";
+import { ChevronRight } from "@/components/ListRow";
 import { Tr } from "@/components/Tr";
 import { getArgomento, getParoleChiave, getPercorso, type TraduzioniParticipi } from "@/content/a2/grammatica";
+import { idEsercizi } from "@/content/a2/esercizi";
 import { getLezioneV2 } from "@/content/a2/lezioni";
 import { DEFAULT_LOCALE } from "@/lib/lingue";
 import { dizionario } from "@/lib/i18n";
@@ -27,6 +31,7 @@ export default async function ArgomentoPage({ params }: PageProps<"/a2/grammatic
   const { argomento, contenuto, esercizi, successivo, lingua } = dati;
   // Lezione nel nuovo formato, se c'è; altrimenti il contenuto di grammar.json.
   const v2 = await getLezioneV2(locale, argomento.id);
+  const idInterattivi = idEsercizi(argomento.id);
   const avvisoSoloRusso = lingua !== locale ? dizionario(locale).soloInRusso : null;
   // Parole chiave scelte a mano per la lezione v2; senza keyWords il blocco non c'è.
   const gruppiParole = v2?.lezione.keyWords ? await getParoleChiave(locale, v2.lezione.keyWords) : [];
@@ -88,7 +93,24 @@ export default async function ArgomentoPage({ params }: PageProps<"/a2/grammatic
         </>
       )}
 
-      {esercizi.length > 0 && (
+      {/* Con un insieme interattivo (esercizi.json): una scheda che porta al player; altrimenti i vecchi esercizi. */}
+      {idInterattivi.length > 0 ? (
+        <Link
+          href={`/a2/esercizi/${argomento.slug}`}
+          transitionTypes={["nav-forward"]}
+          className="flex min-h-[60px] items-center gap-3 rounded-2xl bg-card px-4 py-3 transition active:scale-[0.99] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+        >
+          <span className="flex-1">
+            <span lang="it" className="block text-[17px] font-semibold">
+              Esercizi <span className="font-normal text-label-2 tabular-nums">· {idInterattivi.length}</span>
+            </span>
+            <span className="block text-[13px] text-label-2">
+              <FattiEsercizi ids={idInterattivi} />
+            </span>
+          </span>
+          <ChevronRight />
+        </Link>
+      ) : esercizi.length > 0 && (
         <Sezione titolo={`Esercizi (${esercizi.length})`}>
           <ul className="space-y-3">
             {esercizi.map((esercizio) => (
