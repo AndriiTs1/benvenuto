@@ -1208,84 +1208,93 @@
      "note": "Глаголы на -isc- сохраняют его: {{pulire → pulisci}}, {{finire → finisci}}."
     },
     {
+     "type": "pairs",
      "title": "Орфография: следи за буквами",
-     "header": true,
-     "rows": [
-      [
-       "infinito",
-       "tu"
-      ],
-      [
-       "cercare",
-       "cerc|hi"
-      ],
-      [
-       "pagare",
-       "pag|hi"
-      ],
-      [
-       "mancare",
-       "manc|hi"
-      ],
-      [
-       "mangiare",
-       "mang|i"
-      ],
-      [
-       "svegliarsi",
-       "ti svegl|i"
-      ],
-      [
-       "pulire",
-       "pul|isci"
-      ]
+     "sep": "→",
+     "items": [
+      {
+       "a": "cercare",
+       "tr": "искать",
+       "b": "cerchi"
+      },
+      {
+       "a": "pagare",
+       "tr": "платить",
+       "b": "paghi"
+      },
+      {
+       "a": "mancare",
+       "tr": "не хватать, скучать",
+       "b": "manchi"
+      },
+      {
+       "a": "mangiare",
+       "tr": "есть",
+       "b": "mangi"
+      },
+      {
+       "a": "svegliarsi",
+       "tr": "просыпаться",
+       "b": "ti svegli"
+      },
+      {
+       "a": "pulire",
+       "tr": "убирать",
+       "b": "pulisci"
+      }
      ],
      "note": "{{-care / -gare}} + {{h}} — звук остаётся твёрдым; {{-iare}} — только одна {{i}}."
     },
     {
+     "type": "pairs",
      "title": "Неправильные: форма tu",
-     "header": true,
-     "rows": [
-      [
-       "infinito",
-       "tu"
-      ],
-      [
-       "essere",
-       "sei"
-      ],
-      [
-       "avere",
-       "hai"
-      ],
-      [
-       "andare",
-       "vai"
-      ],
-      [
-       "fare",
-       "fai"
-      ],
-      [
-       "stare",
-       "stai"
-      ],
-      [
-       "uscire",
-       "esci"
-      ],
-      [
-       "venire",
-       "vieni"
-      ],
-      [
-       "bere",
-       "bevi"
-      ],
-      [
-       "dire",
-       "dici"
-      ]
+     "sep": "→",
+     "items": [
+      {
+       "a": "essere",
+       "tr": "быть",
+       "b": "sei"
+      },
+      {
+       "a": "avere",
+       "tr": "иметь",
+       "b": "hai"
+      },
+      {
+       "a": "andare",
+       "tr": "идти, ехать",
+       "b": "vai"
+      },
+      {
+       "a": "fare",
+       "tr": "делать",
+       "b": "fai"
+      },
+      {
+       "a": "stare",
+       "tr": "находиться",
+       "b": "stai"
+      },
+      {
+       "a": "uscire",
+       "tr": "выходить",
+       "b": "esci"
+      },
+      {
+       "a": "venire",
+       "tr": "приходить",
+       "b": "vieni"
+      },
+      {
+       "a": "bere",
+       "tr": "пить",
+       "b": "bevi"
+      },
+      {
+       "a": "dire",
+       "tr": "говорить",
+       "b": "dici"
+      }
      ],
      "note": "Полное спряжение — в теме «I verbi irregolari»."
     }
@@ -2635,33 +2644,35 @@
      "note": "{{con}} и {{per}} не сливаются: {{con gli amici}}, {{per il pranzo}}."
     },
     {
+     "type": "pairs",
      "title": "Значения",
-     "header": true,
-     "rows": [
-      [
-       "",
-       "esempio"
-      ],
-      [
-       "a",
-       "alle otto · al cinema"
-      ],
-      [
-       "di",
-       "il libro del professore"
-      ],
-      [
-       "da",
-       "dal medico · dalle nove"
-      ],
-      [
-       "in",
-       "nella borsa · nel parco"
-      ],
-      [
-       "su",
-       "sul tavolo"
-      ]
+     "sep": "→",
+     "items": [
+      {
+       "a": "a",
+       "tr": "в восемь · в кино",
+       "b": "alle otto · al cinema"
+      },
+      {
+       "a": "di",
+       "tr": "книга преподавателя",
+       "b": "il libro del professore"
+      },
+      {
+       "a": "da",
+       "tr": "к врачу · с девяти",
+       "b": "dal medico · dalle nove"
+      },
+      {
+       "a": "in",
+       "tr": "в сумке · в парке",
+       "b": "nella borsa · nel parco"
+      },
+      {
+       "a": "su",
+       "tr": "на столе",
+       "b": "sul tavolo"
+      }
      ],
      "note": "{{a}} — когда, куда; {{di}} — чей; {{da}} — к кому, с какого времени; {{in}} — в, внутри; {{su}} — на."
     }
@@ -2826,107 +2837,116 @@
    },
    "tables": [
     {
+     "type": "pairs",
      "title": "Глагол + a",
-     "header": true,
-     "rows": [
-      [
-       "verbo",
-       "esempio"
-      ],
-      [
-       "cominciare",
-       "comincio a lavorare"
-      ],
-      [
-       "imparare",
-       "imparo a guidare"
-      ],
-      [
-       "andare",
-       "vado a dormire"
-      ],
-      [
-       "riuscire",
-       "riesco a capire"
-      ],
-      [
-       "mettersi",
-       "mi metto a ridere"
-      ],
-      [
-       "aiutare",
-       "ti aiuto a cucinare"
-      ]
+     "sep": "→",
+     "items": [
+      {
+       "a": "cominciare",
+       "tr": "начинаю работать",
+       "b": "comincio a lavorare"
+      },
+      {
+       "a": "imparare",
+       "tr": "учусь водить",
+       "b": "imparo a guidare"
+      },
+      {
+       "a": "andare",
+       "tr": "иду спать",
+       "b": "vado a dormire"
+      },
+      {
+       "a": "riuscire",
+       "tr": "мне удаётся понять",
+       "b": "riesco a capire"
+      },
+      {
+       "a": "mettersi",
+       "tr": "начинаю смеяться",
+       "b": "mi metto a ridere"
+      },
+      {
+       "a": "aiutare",
+       "tr": "помогаю тебе готовить",
+       "b": "ti aiuto a cucinare"
+      }
      ],
      "note": "Движение + цель — тоже {{a}}: {{vado a mangiare}}, {{vengo a trovarti}}."
     },
     {
+     "type": "pairs",
      "title": "Глагол + di",
-     "header": true,
-     "rows": [
-      [
-       "verbo",
-       "esempio"
-      ],
-      [
-       "finire",
-       "finisco di lavorare"
-      ],
-      [
-       "decidere",
-       "decido di partire"
-      ],
-      [
-       "cercare",
-       "cerco di capire"
-      ],
-      [
-       "smettere",
-       "smetto di fumare"
-      ],
-      [
-       "pensare",
-       "penso di cambiare casa"
-      ],
-      [
-       "ricordarsi",
-       "mi ricordo di chiamare"
-      ]
+     "sep": "→",
+     "items": [
+      {
+       "a": "finire",
+       "tr": "заканчиваю работать",
+       "b": "finisco di lavorare"
+      },
+      {
+       "a": "decidere",
+       "tr": "решаю уехать",
+       "b": "decido di partire"
+      },
+      {
+       "a": "cercare",
+       "tr": "стараюсь понять",
+       "b": "cerco di capire"
+      },
+      {
+       "a": "smettere",
+       "tr": "бросаю курить",
+       "b": "smetto di fumare"
+      },
+      {
+       "a": "pensare",
+       "tr": "собираюсь переехать",
+       "b": "penso di cambiare casa"
+      },
+      {
+       "a": "ricordarsi",
+       "tr": "не забываю позвонить",
+       "b": "mi ricordo di chiamare"
+      }
      ],
      "note": "{{smettere di}} — бросить привычку: {{smetto di fumare}}."
     },
     {
+     "type": "pairs",
      "title": "Без предлога",
-     "header": true,
-     "rows": [
-      [
-       "verbo",
-       "esempio"
-      ],
-      [
-       "volere",
-       "voglio dormire"
-      ],
-      [
-       "potere",
-       "posso venire"
-      ],
-      [
-       "dovere",
-       "devo lavorare"
-      ],
-      [
-       "sapere",
-       "so nuotare"
-      ],
-      [
-       "piacere",
-       "mi piace leggere"
-      ],
-      [
-       "preferire",
-       "preferisco restare"
-      ]
+     "sep": "→",
+     "items": [
+      {
+       "a": "volere",
+       "tr": "хочу спать",
+       "b": "voglio dormire"
+      },
+      {
+       "a": "potere",
+       "tr": "могу прийти",
+       "b": "posso venire"
+      },
+      {
+       "a": "dovere",
+       "tr": "должен работать",
+       "b": "devo lavorare"
+      },
+      {
+       "a": "sapere",
+       "tr": "умею плавать",
+       "b": "so nuotare"
+      },
+      {
+       "a": "piacere",
+       "tr": "люблю читать",
+       "b": "mi piace leggere"
+      },
+      {
+       "a": "preferire",
+       "tr": "предпочитаю остаться",
+       "b": "preferisco restare"
+      }
      ],
      "note": "Модальные глаголы и {{piacere}} — сразу инфинитив."
     }
@@ -3088,103 +3108,111 @@
    },
    "tables": [
     {
+     "type": "pairs",
      "title": "Che ore sono?",
-     "header": true,
-     "rows": [
-      [
-       "ora",
-       "in italiano"
-      ],
-      [
-       "8:00",
-       "Sono le otto."
-      ],
-      [
-       "8:15",
-       "Sono le otto e un quarto."
-      ],
-      [
-       "8:30",
-       "Sono le otto e mezza."
-      ],
-      [
-       "8:45",
-       "Sono le nove meno un quarto."
-      ],
-      [
-       "8:50",
-       "Sono le nove meno dieci."
-      ],
-      [
-       "13:00",
-       "È l'una."
-      ],
-      [
-       "12:00",
-       "È mezzogiorno."
-      ]
+     "sep": "→",
+     "items": [
+      {
+       "a": "8:00",
+       "tr": "Восемь часов.",
+       "b": "Sono le otto."
+      },
+      {
+       "a": "8:15",
+       "tr": "Четверть девятого.",
+       "b": "Sono le otto e un quarto."
+      },
+      {
+       "a": "8:30",
+       "tr": "Половина девятого.",
+       "b": "Sono le otto e mezza."
+      },
+      {
+       "a": "8:45",
+       "tr": "Без четверти девять.",
+       "b": "Sono le nove meno un quarto."
+      },
+      {
+       "a": "8:50",
+       "tr": "Без десяти девять.",
+       "b": "Sono le nove meno dieci."
+      },
+      {
+       "a": "13:00",
+       "tr": "Час дня.",
+       "b": "È l'una."
+      },
+      {
+       "a": "12:00",
+       "tr": "Полдень.",
+       "b": "È mezzogiorno."
+      }
      ],
      "note": "В расписаниях и официально — 24 часа: {{sono le venti e trenta}}."
     },
     {
+     "type": "pairs",
      "title": "A che ora?",
-     "header": true,
-     "rows": [
-      [
-       "ora",
-       "in italiano"
-      ],
-      [
-       "7:00",
-       "alle sette"
-      ],
-      [
-       "13:00",
-       "all'una"
-      ],
-      [
-       "12:00",
-       "a mezzogiorno"
-      ],
-      [
-       "24:00",
-       "a mezzanotte"
-      ],
-      [
-       "9 – 17",
-       "dalle nove alle diciassette"
-      ],
-      [
-       "≈ 19",
-       "verso le sette"
-      ]
+     "sep": "→",
+     "items": [
+      {
+       "a": "7:00",
+       "tr": "в семь",
+       "b": "alle sette"
+      },
+      {
+       "a": "13:00",
+       "tr": "в час",
+       "b": "all'una"
+      },
+      {
+       "a": "12:00",
+       "tr": "в полдень",
+       "b": "a mezzogiorno"
+      },
+      {
+       "a": "24:00",
+       "tr": "в полночь",
+       "b": "a mezzanotte"
+      },
+      {
+       "a": "9 – 17",
+       "tr": "с девяти до пяти вечера",
+       "b": "dalle nove alle diciassette"
+      },
+      {
+       "a": "≈ 19",
+       "tr": "около семи",
+       "b": "verso le sette"
+      }
      ],
      "note": "{{verso}} — около: {{verso le sette}}."
     },
     {
+     "type": "pairs",
      "title": "Части дня",
-     "header": true,
-     "rows": [
-      [
-       "",
-       "ore"
-      ],
-      [
-       "la mattina",
-       "6 – 12"
-      ],
-      [
-       "il pomeriggio",
-       "13 – 18"
-      ],
-      [
-       "la sera",
-       "18 – 22"
-      ],
-      [
-       "la notte",
-       "22 – 6"
-      ]
+     "sep": "→",
+     "items": [
+      {
+       "a": "la mattina",
+       "tr": "утро",
+       "b": "6 – 12"
+      },
+      {
+       "a": "il pomeriggio",
+       "tr": "день, после обеда",
+       "b": "13 – 18"
+      },
+      {
+       "a": "la sera",
+       "tr": "вечер",
+       "b": "18 – 22"
+      },
+      {
+       "a": "la notte",
+       "tr": "ночь",
+       "b": "22 – 6"
+      }
      ],
      "note": "{{la mattina}} — по утрам (регулярно); {{di mattina}}, {{di sera}}, {{di notte}} — утром, вечером, ночью."
     }
@@ -3393,29 +3421,30 @@
      "note": "Не {{già ho mangiato}}, а {{ho già mangiato}}."
     },
     {
+     "type": "pairs",
      "title": "Да и нет",
-     "header": true,
-     "rows": [
-      [
-       "sì",
-       "no"
-      ],
-      [
-       "Ho già mangiato.",
-       "Non ho ancora mangiato."
-      ],
-      [
-       "Sono già stato a Roma.",
-       "Non sono mai stato a Roma."
-      ],
-      [
-       "Abito ancora qui.",
-       "Non abito più qui."
-      ],
-      [
-       "Ho sempre lavorato.",
-       "Non ho mai lavorato."
-      ]
+     "sep": "↔",
+     "items": [
+      {
+       "a": "Ho già mangiato.",
+       "tr": "Я уже поел. ↔ Я ещё не ел.",
+       "b": "Non ho ancora mangiato."
+      },
+      {
+       "a": "Sono già stato a Roma.",
+       "tr": "Я уже был в Риме. ↔ Я никогда не был в Риме.",
+       "b": "Non sono mai stato a Roma."
+      },
+      {
+       "a": "Abito ancora qui.",
+       "tr": "Я всё ещё живу здесь. ↔ Я здесь больше не живу.",
+       "b": "Non abito più qui."
+      },
+      {
+       "a": "Ho sempre lavorato.",
+       "tr": "Я всегда работал. ↔ Я никогда не работал.",
+       "b": "Non ho mai lavorato."
+      }
      ],
      "note": "«Нет» к {{già}} — {{non… ancora}}; к {{ancora}} — {{non… più}}."
     }
@@ -3581,79 +3610,81 @@
    },
    "tables": [
     {
+     "type": "pairs",
      "title": "Продолжается — presente",
-     "header": true,
-     "rows": [
-      [
-       "",
-       "esempio"
-      ],
-      [
-       "da + durata",
-       "Abito qui da 5 anni."
-      ],
-      [
-       "dal + momento",
-       "Sono in Ticino dal 2022."
-      ],
-      [
-       "dalle + ora",
-       "Ti aspetto dalle otto!"
-      ]
+     "sep": "→",
+     "items": [
+      {
+       "a": "da + durata",
+       "tr": "Я живу здесь 5 лет.",
+       "b": "Abito qui da 5 anni."
+      },
+      {
+       "a": "dal + momento",
+       "tr": "Я в Тичино с 2022 года.",
+       "b": "Sono in Ticino dal 2022."
+      },
+      {
+       "a": "dalle + ora",
+       "tr": "Я жду тебя с восьми!",
+       "b": "Ti aspetto dalle otto!"
+      }
      ],
      "note": "По-русски «живу здесь 5 лет» → {{da}} + presente."
     },
     {
+     "type": "pairs",
      "title": "Закончилось — passato prossimo",
-     "header": true,
-     "rows": [
-      [
-       "",
-       "esempio"
-      ],
-      [
-       "per + durata",
-       "Ho lavorato lì per 2 anni."
-      ],
-      [
-       "durata + fa",
-       "Sono arrivato 4 anni fa."
-      ],
-      [
-       "nel + anno",
-       "Mi sono sposato nel 2010."
-      ],
-      [
-       "a + età",
-       "A 18 anni ho fatto l'operaio."
-      ]
+     "sep": "→",
+     "items": [
+      {
+       "a": "per + durata",
+       "tr": "Я проработал там 2 года.",
+       "b": "Ho lavorato lì per 2 anni."
+      },
+      {
+       "a": "durata + fa",
+       "tr": "Я приехал 4 года назад.",
+       "b": "Sono arrivato 4 anni fa."
+      },
+      {
+       "a": "nel + anno",
+       "tr": "Я женился в 2010 году.",
+       "b": "Mi sono sposato nel 2010."
+      },
+      {
+       "a": "a + età",
+       "tr": "В 18 лет я работал рабочим.",
+       "b": "A 18 anni ho fatto l'operaio."
+      }
      ],
      "note": "{{fa}} всегда после срока: {{due anni fa}}."
     },
     {
+     "type": "pairs",
      "title": "От … до",
-     "header": true,
-     "rows": [
-      [
-       "",
-       "esempio"
-      ],
-      [
-       "anni",
-       "dal 2022 al 2026"
-      ],
-      [
-       "giorni",
-       "dal lunedì al giovedì"
-      ],
-      [
-       "ore",
-       "dalle 9 alle 17"
-      ],
-      [
-       "mesi",
-       "da settembre a giugno"
-      ]
+     "sep": "→",
+     "items": [
+      {
+       "a": "anni",
+       "tr": "с 2022 по 2026 год",
+       "b": "dal 2022 al 2026"
+      },
+      {
+       "a": "giorni",
+       "tr": "с понедельника по четверг",
+       "b": "dal lunedì al giovedì"
+      },
+      {
+       "a": "ore",
+       "tr": "с 9 до 17",
+       "b": "dalle 9 alle 17"
+      },
+      {
+       "a": "mesi",
+       "tr": "с сентября по июнь",
+       "b": "da settembre a giugno"
+      }
      ],
      "note": "Месяцы — без артикля; годы, дни и часы — с артиклем."
     }
@@ -3843,29 +3874,30 @@
      "note": "Только множественное число: «друг друга» — это минимум двое."
     },
     {
+     "type": "pairs",
      "title": "Avere или essere",
-     "header": true,
-     "rows": [
-      [
-       "avere",
-       "essere"
-      ],
-      [
-       "Ho conosciuto Anna.",
-       "Io e Anna ci siamo conosciuti."
-      ],
-      [
-       "Ho sposato Anna.",
-       "Ci siamo sposati."
-      ],
-      [
-       "Ho visto Marco.",
-       "Io e Marco ci siamo visti."
-      ],
-      [
-       "Ho salutato Lucia.",
-       "Ci siamo salutati."
-      ]
+     "sep": "↔",
+     "items": [
+      {
+       "a": "Ho conosciuto Anna.",
+       "tr": "Я познакомился с Анной. ↔ Мы с Анной познакомились.",
+       "b": "Io e Anna ci siamo conosciuti."
+      },
+      {
+       "a": "Ho sposato Anna.",
+       "tr": "Я женился на Анне. ↔ Мы поженились.",
+       "b": "Ci siamo sposati."
+      },
+      {
+       "a": "Ho visto Marco.",
+       "tr": "Я видел Марко. ↔ Мы с Марко виделись.",
+       "b": "Io e Marco ci siamo visti."
+      },
+      {
+       "a": "Ho salutato Lucia.",
+       "tr": "Я поздоровался с Лючией. ↔ Мы поздоровались.",
+       "b": "Ci siamo salutati."
+      }
      ],
      "note": "Кого-то — {{avere}}; друг друга — {{essere}}."
     }
@@ -4059,29 +4091,30 @@
      "note": "{{divorziare}} — не возвратный: {{hanno divorziato}}."
     },
     {
+     "type": "pairs",
      "title": "Состояние сейчас",
-     "header": true,
-     "rows": [
-      [
-       "",
-       "essere +"
-      ],
-      [
-       "fidanzati",
-       "Sono fidanzati."
-      ],
-      [
-       "sposati",
-       "Sono sposati."
-      ],
-      [
-       "separati",
-       "Sono separati."
-      ],
-      [
-       "divorziati",
-       "Sono divorziati."
-      ]
+     "sep": "→",
+     "items": [
+      {
+       "a": "fidanzati",
+       "tr": "Они помолвлены.",
+       "b": "Sono fidanzati."
+      },
+      {
+       "a": "sposati",
+       "tr": "Они женаты.",
+       "b": "Sono sposati."
+      },
+      {
+       "a": "separati",
+       "tr": "Они живут раздельно.",
+       "b": "Sono separati."
+      },
+      {
+       "a": "divorziati",
+       "tr": "Они разведены.",
+       "b": "Sono divorziati."
+      }
      ],
      "note": "Событие — {{si sono sposati}}; состояние — {{sono sposati}}."
     }
@@ -4485,31 +4518,50 @@
    },
    "tables": [
     {
-     "title": "Событие или картина",
-     "header": true,
-     "rows": [
-      [
-       "passato prossimo",
-       "imperfetto"
-      ],
-      [
-       "Ho incontrato Andrea.",
-       "Avevamo 15 anni."
-      ],
-      [
-       "Siamo andati al mare.",
-       "Faceva caldo."
-      ],
-      [
-       "Ho lavorato 5 anni.",
-       "Lavoravo ogni giorno."
-      ],
-      [
-       "È arrivato un messaggio.",
-       "Mentre leggevo…"
-      ]
-     ],
-     "note": "«Что случилось?» — слева; «как было?» — справа."
+     "type": "pairs",
+     "title": "Passato prossimo — что случилось",
+     "sep": "",
+     "items": [
+      {
+       "a": "Ho incontrato Andrea.",
+       "tr": "Я встретил Андреа."
+      },
+      {
+       "a": "Siamo andati al mare.",
+       "tr": "Мы поехали на море."
+      },
+      {
+       "a": "Ho lavorato 5 anni.",
+       "tr": "Я проработал 5 лет."
+      },
+      {
+       "a": "È arrivato un messaggio.",
+       "tr": "Пришло сообщение."
+      }
+     ]
+    },
+    {
+     "type": "pairs",
+     "title": "Imperfetto — как было",
+     "sep": "",
+     "items": [
+      {
+       "a": "Avevamo 15 anni.",
+       "tr": "Нам было 15 лет."
+      },
+      {
+       "a": "Faceva caldo.",
+       "tr": "Было жарко."
+      },
+      {
+       "a": "Lavoravo ogni giorno.",
+       "tr": "Я работал каждый день."
+      },
+      {
+       "a": "Mentre leggevo…",
+       "tr": "Пока я читал…"
+      }
+     ]
     },
     {
      "type": "pairs",
@@ -4575,33 +4627,35 @@
      "note": "{{ieri}} работает с обоими: {{ieri pioveva}} (картина), {{ieri sono uscito}} (событие)."
     },
     {
+     "type": "pairs",
      "title": "Схема рассказа",
-     "header": true,
-     "rows": [
-      [
-       "",
-       "tempo"
-      ],
-      [
-       "quando, dove",
-       "passato prossimo"
-      ],
-      [
-       "descrizione",
-       "imperfetto"
-      ],
-      [
-       "reazione",
-       "pass. prossimo"
-      ],
-      [
-       "eventi",
-       "passato prossimo"
-      ],
-      [
-       "oggi",
-       "presente"
-      ]
+     "sep": "→",
+     "items": [
+      {
+       "a": "quando, dove",
+       "tr": "когда и где",
+       "b": "passato prossimo"
+      },
+      {
+       "a": "descrizione",
+       "tr": "описание",
+       "b": "imperfetto"
+      },
+      {
+       "a": "reazione",
+       "tr": "реакция",
+       "b": "pass. prossimo"
+      },
+      {
+       "a": "eventi",
+       "tr": "события",
+       "b": "passato prossimo"
+      },
+      {
+       "a": "oggi",
+       "tr": "сегодня",
+       "b": "presente"
+      }
      ],
      "note": "Пример: {{Un giorno ho visto…}} → {{era alta…}} → {{sono rimasto sorpreso}} → {{adesso siamo amici}}."
     }
@@ -4761,48 +4815,48 @@
    },
    "tables": [
     {
+     "type": "pairs",
      "title": "Четыре связки",
-     "header": true,
-     "rows": [
-      [
-       "connettivo",
-       "esempio"
-      ],
-      [
-       "quindi",
-       "Pioveva, quindi sono rimasto a casa."
-      ],
-      [
-       "perciò",
-       "Ero stanco, perciò sono andato a letto."
-      ],
-      [
-       "allora",
-       "Stavo male, allora sono andata dal medico."
-      ],
-      [
-       "dunque",
-       "Dunque, ricapitoliamo."
-      ]
+     "sep": "→",
+     "items": [
+      {
+       "a": "quindi",
+       "tr": "Шёл дождь, поэтому я остался дома.",
+       "b": "Pioveva, quindi sono rimasto a casa."
+      },
+      {
+       "a": "perciò",
+       "tr": "Я устал, поэтому лёг спать.",
+       "b": "Ero stanco, perciò sono andato a letto."
+      },
+      {
+       "a": "allora",
+       "tr": "Мне было плохо, поэтому я пошла к врачу.",
+       "b": "Stavo male, allora sono andata dal medico."
+      },
+      {
+       "a": "dunque",
+       "tr": "Итак, подведём итог.",
+       "b": "Dunque, ricapitoliamo."
+      }
      ],
      "note": "{{quindi}} — самое частое; {{perciò}} — нейтральное; {{allora}} — разговорное; {{dunque}} — книжное, «итак»."
     },
     {
+     "type": "pairs",
      "title": "Причина или результат",
-     "header": true,
-     "rows": [
-      [
-       "… quindi …",
-       "… perché …"
-      ],
-      [
-       "Pioveva, quindi sono rimasto a casa.",
-       "Sono rimasto a casa perché pioveva."
-      ],
-      [
-       "Ero stanco, perciò sono andato a letto.",
-       "Sono andato a letto perché ero stanco."
-      ]
+     "sep": "↔",
+     "items": [
+      {
+       "a": "Pioveva, quindi sono rimasto a casa.",
+       "tr": "Шёл дождь, поэтому я остался дома. ↔ Я остался дома, потому что шёл дождь.",
+       "b": "Sono rimasto a casa perché pioveva."
+      },
+      {
+       "a": "Ero stanco, perciò sono andato a letto.",
+       "tr": "Я устал, поэтому лёг спать. ↔ Я лёг спать, потому что устал.",
+       "b": "Sono andato a letto perché ero stanco."
+      }
      ],
      "note": "{{perché}} вводит **причину**, {{quindi}} — **результат**. Смысл одинаковый, порядок обратный."
     }
@@ -4947,43 +5001,51 @@
    },
    "tables": [
     {
+     "type": "pairs",
      "title": "Essere, avere, portare",
-     "header": true,
-     "rows": [
-      [
-       "verbo",
-       "esempio"
-      ],
-      [
-       "essere",
-       "è alto e magro"
-      ],
-      [
-       "essere",
-       "è timido e gentile"
-      ],
-      [
-       "avere",
-       "ha 22 anni"
-      ],
-      [
-       "avere",
-       "ha gli occhi verdi"
-      ],
-      [
-       "avere",
-       "ha i capelli ricci"
-      ],
-      [
-       "portare",
-       "porta gli occhiali"
-      ],
-      [
-       "fare",
-       "fa il meccanico"
-      ]
-     ],
-     "note": "Лысый — {{è calvo}} (essere)."
+     "sep": "→",
+     "items": [
+      {
+       "a": "essere",
+       "tr": "он высокий и худой",
+       "b": "è alto e magro"
+      },
+      {
+       "a": "essere",
+       "tr": "он застенчивый и добрый",
+       "b": "è timido e gentile"
+      },
+      {
+       "a": "essere",
+       "tr": "он лысый",
+       "b": "è calvo"
+      },
+      {
+       "a": "avere",
+       "tr": "ему 22 года",
+       "b": "ha 22 anni"
+      },
+      {
+       "a": "avere",
+       "tr": "у него зелёные глаза",
+       "b": "ha gli occhi verdi"
+      },
+      {
+       "a": "avere",
+       "tr": "у него кудрявые волосы",
+       "b": "ha i capelli ricci"
+      },
+      {
+       "a": "portare",
+       "tr": "он носит очки",
+       "b": "porta gli occhiali"
+      },
+      {
+       "a": "fare",
+       "tr": "он работает механиком",
+       "b": "fa il meccanico"
+      }
+     ]
     },
     {
      "title": "Согласование прилагательных",
@@ -5277,33 +5339,35 @@
    },
    "tables": [
     {
+     "type": "pairs",
      "title": "Prima — ora",
-     "header": true,
-     "rows": [
-      [
-       "prima",
-       "ora"
-      ],
-      [
-       "aveva i capelli neri",
-       "ha i capelli rossi"
-      ],
-      [
-       "era magro",
-       "è grasso"
-      ],
-      [
-       "non portava gli occhiali",
-       "porta gli occhiali"
-      ],
-      [
-       "non aveva la barba",
-       "ha la barba"
-      ],
-      [
-       "era felice",
-       "è un po' triste"
-      ]
+     "sep": "→",
+     "items": [
+      {
+       "a": "aveva i capelli neri",
+       "tr": "были чёрные волосы → теперь рыжие",
+       "b": "ha i capelli rossi"
+      },
+      {
+       "a": "era magro",
+       "tr": "был худым → теперь полный",
+       "b": "è grasso"
+      },
+      {
+       "a": "non portava gli occhiali",
+       "tr": "не носил очки → теперь носит",
+       "b": "porta gli occhiali"
+      },
+      {
+       "a": "non aveva la barba",
+       "tr": "не было бороды → теперь есть",
+       "b": "ha la barba"
+      },
+      {
+       "a": "era felice",
+       "tr": "был счастлив → теперь немного грустный",
+       "b": "è un po' triste"
+      }
      ],
      "note": "Слева {{imperfetto}}, справа {{presente}}."
     },
@@ -5346,29 +5410,30 @@
      "note": "Все с {{essere}}, причастие согласуется: {{mia madre è invecchiata}}."
     },
     {
+     "type": "pairs",
      "title": "Сравнение",
-     "header": true,
-     "rows": [
-      [
-       "",
-       "esempio"
-      ],
-      [
-       "più",
-       "è più alto"
-      ],
-      [
-       "meno",
-       "è meno allegro"
-      ],
-      [
-       "più … di",
-       "più felice di prima"
-      ],
-      [
-       "-issimo",
-       "bellissimo"
-      ]
+     "sep": "→",
+     "items": [
+      {
+       "a": "più",
+       "tr": "он выше",
+       "b": "è più alto"
+      },
+      {
+       "a": "meno",
+       "tr": "он менее весёлый",
+       "b": "è meno allegro"
+      },
+      {
+       "a": "più … di",
+       "tr": "счастливее, чем раньше",
+       "b": "più felice di prima"
+      },
+      {
+       "a": "-issimo",
+       "tr": "очень красивый",
+       "b": "bellissimo"
+      }
      ],
      "note": "{{-issimo}} = «очень»: {{lungo → lunghissimo}} ({{-go}}, {{-co}} + {{h}})."
     }
@@ -5652,29 +5717,30 @@
      "note": "Окончания те же — меняется только основа."
     },
     {
+     "type": "pairs",
      "title": "Орфография",
-     "header": true,
-     "rows": [
-      [
-       "infinito",
-       "io"
-      ],
-      [
-       "cercare",
-       "cercherò"
-      ],
-      [
-       "pagare",
-       "pagherò"
-      ],
-      [
-       "cominciare",
-       "comincerò"
-      ],
-      [
-       "mangiare",
-       "mangerò"
-      ]
+     "sep": "→",
+     "items": [
+      {
+       "a": "cercare",
+       "tr": "искать",
+       "b": "cercherò"
+      },
+      {
+       "a": "pagare",
+       "tr": "платить",
+       "b": "pagherò"
+      },
+      {
+       "a": "cominciare",
+       "tr": "начинать",
+       "b": "comincerò"
+      },
+      {
+       "a": "mangiare",
+       "tr": "есть",
+       "b": "mangerò"
+      }
      ],
      "note": "{{-care}}, {{-gare}} + {{h}}; {{-ciare}}, {{-giare}} теряют {{i}}."
     }

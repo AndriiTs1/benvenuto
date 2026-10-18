@@ -1208,84 +1208,93 @@
      "note": "-isc- verbs keep it: {{pulire → pulisci}}, {{finire → finisci}}."
     },
     {
+     "type": "pairs",
      "title": "Spelling: watch the letters",
-     "header": true,
-     "rows": [
-      [
-       "infinito",
-       "tu"
-      ],
-      [
-       "cercare",
-       "cerc|hi"
-      ],
-      [
-       "pagare",
-       "pag|hi"
-      ],
-      [
-       "mancare",
-       "manc|hi"
-      ],
-      [
-       "mangiare",
-       "mang|i"
-      ],
-      [
-       "svegliarsi",
-       "ti svegl|i"
-      ],
-      [
-       "pulire",
-       "pul|isci"
-      ]
+     "sep": "→",
+     "items": [
+      {
+       "a": "cercare",
+       "tr": "to look for",
+       "b": "cerchi"
+      },
+      {
+       "a": "pagare",
+       "tr": "to pay",
+       "b": "paghi"
+      },
+      {
+       "a": "mancare",
+       "tr": "to miss",
+       "b": "manchi"
+      },
+      {
+       "a": "mangiare",
+       "tr": "to eat",
+       "b": "mangi"
+      },
+      {
+       "a": "svegliarsi",
+       "tr": "to wake up",
+       "b": "ti svegli"
+      },
+      {
+       "a": "pulire",
+       "tr": "to clean",
+       "b": "pulisci"
+      }
      ],
      "note": "{{-care / -gare}} add {{h}} to keep the hard sound; {{-iare}} keep only one {{i}}."
     },
     {
+     "type": "pairs",
      "title": "Irregular: the tu form",
-     "header": true,
-     "rows": [
-      [
-       "infinito",
-       "tu"
-      ],
-      [
-       "essere",
-       "sei"
-      ],
-      [
-       "avere",
-       "hai"
-      ],
-      [
-       "andare",
-       "vai"
-      ],
-      [
-       "fare",
-       "fai"
-      ],
-      [
-       "stare",
-       "stai"
-      ],
-      [
-       "uscire",
-       "esci"
-      ],
-      [
-       "venire",
-       "vieni"
-      ],
-      [
-       "bere",
-       "bevi"
-      ],
-      [
-       "dire",
-       "dici"
-      ]
+     "sep": "→",
+     "items": [
+      {
+       "a": "essere",
+       "tr": "to be",
+       "b": "sei"
+      },
+      {
+       "a": "avere",
+       "tr": "to have",
+       "b": "hai"
+      },
+      {
+       "a": "andare",
+       "tr": "to go",
+       "b": "vai"
+      },
+      {
+       "a": "fare",
+       "tr": "to do",
+       "b": "fai"
+      },
+      {
+       "a": "stare",
+       "tr": "to stay",
+       "b": "stai"
+      },
+      {
+       "a": "uscire",
+       "tr": "to go out",
+       "b": "esci"
+      },
+      {
+       "a": "venire",
+       "tr": "to come",
+       "b": "vieni"
+      },
+      {
+       "a": "bere",
+       "tr": "to drink",
+       "b": "bevi"
+      },
+      {
+       "a": "dire",
+       "tr": "to say",
+       "b": "dici"
+      }
      ],
      "note": "Full conjugations are in “I verbi irregolari”."
     }
@@ -2635,33 +2644,35 @@
      "note": "{{con}} and {{per}} don't merge: {{con gli amici}}, {{per il pranzo}}."
     },
     {
+     "type": "pairs",
      "title": "Meanings",
-     "header": true,
-     "rows": [
-      [
-       "",
-       "esempio"
-      ],
-      [
-       "a",
-       "alle otto · al cinema"
-      ],
-      [
-       "di",
-       "il libro del professore"
-      ],
-      [
-       "da",
-       "dal medico · dalle nove"
-      ],
-      [
-       "in",
-       "nella borsa · nel parco"
-      ],
-      [
-       "su",
-       "sul tavolo"
-      ]
+     "sep": "→",
+     "items": [
+      {
+       "a": "a",
+       "tr": "at eight · to the cinema",
+       "b": "alle otto · al cinema"
+      },
+      {
+       "a": "di",
+       "tr": "the teacher's book",
+       "b": "il libro del professore"
+      },
+      {
+       "a": "da",
+       "tr": "to the doctor's · from nine",
+       "b": "dal medico · dalle nove"
+      },
+      {
+       "a": "in",
+       "tr": "in the bag · in the park",
+       "b": "nella borsa · nel parco"
+      },
+      {
+       "a": "su",
+       "tr": "on the table",
+       "b": "sul tavolo"
+      }
      ],
      "note": "{{a}} — when, where to; {{di}} — whose; {{da}} — to someone's place, since; {{in}} — in, inside; {{su}} — on."
     }
@@ -2826,107 +2837,116 @@
    },
    "tables": [
     {
+     "type": "pairs",
      "title": "Verb + a",
-     "header": true,
-     "rows": [
-      [
-       "verbo",
-       "esempio"
-      ],
-      [
-       "cominciare",
-       "comincio a lavorare"
-      ],
-      [
-       "imparare",
-       "imparo a guidare"
-      ],
-      [
-       "andare",
-       "vado a dormire"
-      ],
-      [
-       "riuscire",
-       "riesco a capire"
-      ],
-      [
-       "mettersi",
-       "mi metto a ridere"
-      ],
-      [
-       "aiutare",
-       "ti aiuto a cucinare"
-      ]
+     "sep": "→",
+     "items": [
+      {
+       "a": "cominciare",
+       "tr": "I start working",
+       "b": "comincio a lavorare"
+      },
+      {
+       "a": "imparare",
+       "tr": "I'm learning to drive",
+       "b": "imparo a guidare"
+      },
+      {
+       "a": "andare",
+       "tr": "I'm going to bed",
+       "b": "vado a dormire"
+      },
+      {
+       "a": "riuscire",
+       "tr": "I manage to understand",
+       "b": "riesco a capire"
+      },
+      {
+       "a": "mettersi",
+       "tr": "I start laughing",
+       "b": "mi metto a ridere"
+      },
+      {
+       "a": "aiutare",
+       "tr": "I help you cook",
+       "b": "ti aiuto a cucinare"
+      }
      ],
      "note": "Movement + purpose also takes {{a}}: {{vado a mangiare}}, {{vengo a trovarti}}."
     },
     {
+     "type": "pairs",
      "title": "Verb + di",
-     "header": true,
-     "rows": [
-      [
-       "verbo",
-       "esempio"
-      ],
-      [
-       "finire",
-       "finisco di lavorare"
-      ],
-      [
-       "decidere",
-       "decido di partire"
-      ],
-      [
-       "cercare",
-       "cerco di capire"
-      ],
-      [
-       "smettere",
-       "smetto di fumare"
-      ],
-      [
-       "pensare",
-       "penso di cambiare casa"
-      ],
-      [
-       "ricordarsi",
-       "mi ricordo di chiamare"
-      ]
+     "sep": "→",
+     "items": [
+      {
+       "a": "finire",
+       "tr": "I finish working",
+       "b": "finisco di lavorare"
+      },
+      {
+       "a": "decidere",
+       "tr": "I decide to leave",
+       "b": "decido di partire"
+      },
+      {
+       "a": "cercare",
+       "tr": "I try to understand",
+       "b": "cerco di capire"
+      },
+      {
+       "a": "smettere",
+       "tr": "I quit smoking",
+       "b": "smetto di fumare"
+      },
+      {
+       "a": "pensare",
+       "tr": "I'm thinking of moving",
+       "b": "penso di cambiare casa"
+      },
+      {
+       "a": "ricordarsi",
+       "tr": "I remember to call",
+       "b": "mi ricordo di chiamare"
+      }
      ],
      "note": "{{smettere di}} — to stop / quit: {{smetto di fumare}}."
     },
     {
+     "type": "pairs",
      "title": "No preposition",
-     "header": true,
-     "rows": [
-      [
-       "verbo",
-       "esempio"
-      ],
-      [
-       "volere",
-       "voglio dormire"
-      ],
-      [
-       "potere",
-       "posso venire"
-      ],
-      [
-       "dovere",
-       "devo lavorare"
-      ],
-      [
-       "sapere",
-       "so nuotare"
-      ],
-      [
-       "piacere",
-       "mi piace leggere"
-      ],
-      [
-       "preferire",
-       "preferisco restare"
-      ]
+     "sep": "→",
+     "items": [
+      {
+       "a": "volere",
+       "tr": "I want to sleep",
+       "b": "voglio dormire"
+      },
+      {
+       "a": "potere",
+       "tr": "I can come",
+       "b": "posso venire"
+      },
+      {
+       "a": "dovere",
+       "tr": "I have to work",
+       "b": "devo lavorare"
+      },
+      {
+       "a": "sapere",
+       "tr": "I can swim",
+       "b": "so nuotare"
+      },
+      {
+       "a": "piacere",
+       "tr": "I like reading",
+       "b": "mi piace leggere"
+      },
+      {
+       "a": "preferire",
+       "tr": "I'd rather stay",
+       "b": "preferisco restare"
+      }
      ],
      "note": "Modal verbs and {{piacere}} take the infinitive directly."
     }
@@ -3088,103 +3108,111 @@
    },
    "tables": [
     {
+     "type": "pairs",
      "title": "Che ore sono?",
-     "header": true,
-     "rows": [
-      [
-       "ora",
-       "in italiano"
-      ],
-      [
-       "8:00",
-       "Sono le otto."
-      ],
-      [
-       "8:15",
-       "Sono le otto e un quarto."
-      ],
-      [
-       "8:30",
-       "Sono le otto e mezza."
-      ],
-      [
-       "8:45",
-       "Sono le nove meno un quarto."
-      ],
-      [
-       "8:50",
-       "Sono le nove meno dieci."
-      ],
-      [
-       "13:00",
-       "È l'una."
-      ],
-      [
-       "12:00",
-       "È mezzogiorno."
-      ]
+     "sep": "→",
+     "items": [
+      {
+       "a": "8:00",
+       "tr": "It's eight o'clock.",
+       "b": "Sono le otto."
+      },
+      {
+       "a": "8:15",
+       "tr": "It's quarter past eight.",
+       "b": "Sono le otto e un quarto."
+      },
+      {
+       "a": "8:30",
+       "tr": "It's half past eight.",
+       "b": "Sono le otto e mezza."
+      },
+      {
+       "a": "8:45",
+       "tr": "It's quarter to nine.",
+       "b": "Sono le nove meno un quarto."
+      },
+      {
+       "a": "8:50",
+       "tr": "It's ten to nine.",
+       "b": "Sono le nove meno dieci."
+      },
+      {
+       "a": "13:00",
+       "tr": "It's one o'clock.",
+       "b": "È l'una."
+      },
+      {
+       "a": "12:00",
+       "tr": "It's noon.",
+       "b": "È mezzogiorno."
+      }
      ],
      "note": "Timetables and formal speech use the 24-hour clock: {{sono le venti e trenta}}."
     },
     {
+     "type": "pairs",
      "title": "A che ora?",
-     "header": true,
-     "rows": [
-      [
-       "ora",
-       "in italiano"
-      ],
-      [
-       "7:00",
-       "alle sette"
-      ],
-      [
-       "13:00",
-       "all'una"
-      ],
-      [
-       "12:00",
-       "a mezzogiorno"
-      ],
-      [
-       "24:00",
-       "a mezzanotte"
-      ],
-      [
-       "9 – 17",
-       "dalle nove alle diciassette"
-      ],
-      [
-       "≈ 19",
-       "verso le sette"
-      ]
+     "sep": "→",
+     "items": [
+      {
+       "a": "7:00",
+       "tr": "at seven",
+       "b": "alle sette"
+      },
+      {
+       "a": "13:00",
+       "tr": "at one",
+       "b": "all'una"
+      },
+      {
+       "a": "12:00",
+       "tr": "at noon",
+       "b": "a mezzogiorno"
+      },
+      {
+       "a": "24:00",
+       "tr": "at midnight",
+       "b": "a mezzanotte"
+      },
+      {
+       "a": "9 – 17",
+       "tr": "from nine to five",
+       "b": "dalle nove alle diciassette"
+      },
+      {
+       "a": "≈ 19",
+       "tr": "around seven",
+       "b": "verso le sette"
+      }
      ],
      "note": "{{verso}} — around: {{verso le sette}}."
     },
     {
+     "type": "pairs",
      "title": "Parts of the day",
-     "header": true,
-     "rows": [
-      [
-       "",
-       "ore"
-      ],
-      [
-       "la mattina",
-       "6 – 12"
-      ],
-      [
-       "il pomeriggio",
-       "13 – 18"
-      ],
-      [
-       "la sera",
-       "18 – 22"
-      ],
-      [
-       "la notte",
-       "22 – 6"
-      ]
+     "sep": "→",
+     "items": [
+      {
+       "a": "la mattina",
+       "tr": "morning",
+       "b": "6 – 12"
+      },
+      {
+       "a": "il pomeriggio",
+       "tr": "afternoon",
+       "b": "13 – 18"
+      },
+      {
+       "a": "la sera",
+       "tr": "evening",
+       "b": "18 – 22"
+      },
+      {
+       "a": "la notte",
+       "tr": "night",
+       "b": "22 – 6"
+      }
      ],
      "note": "{{la mattina}} — in the mornings (habit); {{di mattina}}, {{di sera}}, {{di notte}} — in the morning, evening, at night."
     }
@@ -3393,29 +3421,30 @@
      "note": "Not {{già ho mangiato}}, but {{ho già mangiato}}."
     },
     {
+     "type": "pairs",
      "title": "Yes and no",
-     "header": true,
-     "rows": [
-      [
-       "sì",
-       "no"
-      ],
-      [
-       "Ho già mangiato.",
-       "Non ho ancora mangiato."
-      ],
-      [
-       "Sono già stato a Roma.",
-       "Non sono mai stato a Roma."
-      ],
-      [
-       "Abito ancora qui.",
-       "Non abito più qui."
-      ],
-      [
-       "Ho sempre lavorato.",
-       "Non ho mai lavorato."
-      ]
+     "sep": "↔",
+     "items": [
+      {
+       "a": "Ho già mangiato.",
+       "tr": "I've already eaten. ↔ I haven't eaten yet.",
+       "b": "Non ho ancora mangiato."
+      },
+      {
+       "a": "Sono già stato a Roma.",
+       "tr": "I've been to Rome. ↔ I've never been to Rome.",
+       "b": "Non sono mai stato a Roma."
+      },
+      {
+       "a": "Abito ancora qui.",
+       "tr": "I still live here. ↔ I don't live here any more.",
+       "b": "Non abito più qui."
+      },
+      {
+       "a": "Ho sempre lavorato.",
+       "tr": "I've always worked. ↔ I've never worked.",
+       "b": "Non ho mai lavorato."
+      }
      ],
      "note": "The “no” of {{già}} is {{non… ancora}}; of {{ancora}} — {{non… più}}."
     }
@@ -3581,79 +3610,81 @@
    },
    "tables": [
     {
+     "type": "pairs",
      "title": "Still going on — present",
-     "header": true,
-     "rows": [
-      [
-       "",
-       "esempio"
-      ],
-      [
-       "da + durata",
-       "Abito qui da 5 anni."
-      ],
-      [
-       "dal + momento",
-       "Sono in Ticino dal 2022."
-      ],
-      [
-       "dalle + ora",
-       "Ti aspetto dalle otto!"
-      ]
+     "sep": "→",
+     "items": [
+      {
+       "a": "da + durata",
+       "tr": "I've lived here for 5 years.",
+       "b": "Abito qui da 5 anni."
+      },
+      {
+       "a": "dal + momento",
+       "tr": "I've been in Ticino since 2022.",
+       "b": "Sono in Ticino dal 2022."
+      },
+      {
+       "a": "dalle + ora",
+       "tr": "I've been waiting since eight!",
+       "b": "Ti aspetto dalle otto!"
+      }
      ],
      "note": "“I've lived here for 5 years” → {{da}} + present."
     },
     {
+     "type": "pairs",
      "title": "Finished — passato prossimo",
-     "header": true,
-     "rows": [
-      [
-       "",
-       "esempio"
-      ],
-      [
-       "per + durata",
-       "Ho lavorato lì per 2 anni."
-      ],
-      [
-       "durata + fa",
-       "Sono arrivato 4 anni fa."
-      ],
-      [
-       "nel + anno",
-       "Mi sono sposato nel 2010."
-      ],
-      [
-       "a + età",
-       "A 18 anni ho fatto l'operaio."
-      ]
+     "sep": "→",
+     "items": [
+      {
+       "a": "per + durata",
+       "tr": "I worked there for 2 years.",
+       "b": "Ho lavorato lì per 2 anni."
+      },
+      {
+       "a": "durata + fa",
+       "tr": "I arrived 4 years ago.",
+       "b": "Sono arrivato 4 anni fa."
+      },
+      {
+       "a": "nel + anno",
+       "tr": "I got married in 2010.",
+       "b": "Mi sono sposato nel 2010."
+      },
+      {
+       "a": "a + età",
+       "tr": "At 18 I worked in a factory.",
+       "b": "A 18 anni ho fatto l'operaio."
+      }
      ],
      "note": "{{fa}} always comes after the time: {{due anni fa}}."
     },
     {
+     "type": "pairs",
      "title": "From … to",
-     "header": true,
-     "rows": [
-      [
-       "",
-       "esempio"
-      ],
-      [
-       "anni",
-       "dal 2022 al 2026"
-      ],
-      [
-       "giorni",
-       "dal lunedì al giovedì"
-      ],
-      [
-       "ore",
-       "dalle 9 alle 17"
-      ],
-      [
-       "mesi",
-       "da settembre a giugno"
-      ]
+     "sep": "→",
+     "items": [
+      {
+       "a": "anni",
+       "tr": "from 2022 to 2026",
+       "b": "dal 2022 al 2026"
+      },
+      {
+       "a": "giorni",
+       "tr": "from Monday to Thursday",
+       "b": "dal lunedì al giovedì"
+      },
+      {
+       "a": "ore",
+       "tr": "from 9 to 5",
+       "b": "dalle 9 alle 17"
+      },
+      {
+       "a": "mesi",
+       "tr": "from September to June",
+       "b": "da settembre a giugno"
+      }
      ],
      "note": "Months — no article; years, days and times — with it."
     }
@@ -3843,29 +3874,30 @@
      "note": "Plural only: “each other” needs at least two people."
     },
     {
+     "type": "pairs",
      "title": "Avere or essere",
-     "header": true,
-     "rows": [
-      [
-       "avere",
-       "essere"
-      ],
-      [
-       "Ho conosciuto Anna.",
-       "Io e Anna ci siamo conosciuti."
-      ],
-      [
-       "Ho sposato Anna.",
-       "Ci siamo sposati."
-      ],
-      [
-       "Ho visto Marco.",
-       "Io e Marco ci siamo visti."
-      ],
-      [
-       "Ho salutato Lucia.",
-       "Ci siamo salutati."
-      ]
+     "sep": "↔",
+     "items": [
+      {
+       "a": "Ho conosciuto Anna.",
+       "tr": "I met Anna. ↔ Anna and I met.",
+       "b": "Io e Anna ci siamo conosciuti."
+      },
+      {
+       "a": "Ho sposato Anna.",
+       "tr": "I married Anna. ↔ We got married.",
+       "b": "Ci siamo sposati."
+      },
+      {
+       "a": "Ho visto Marco.",
+       "tr": "I saw Marco. ↔ Marco and I saw each other.",
+       "b": "Io e Marco ci siamo visti."
+      },
+      {
+       "a": "Ho salutato Lucia.",
+       "tr": "I greeted Lucia. ↔ We greeted each other.",
+       "b": "Ci siamo salutati."
+      }
      ],
      "note": "Someone — {{avere}}; each other — {{essere}}."
     }
@@ -4059,29 +4091,30 @@
      "note": "{{divorziare}} isn't reflexive: {{hanno divorziato}}."
     },
     {
+     "type": "pairs",
      "title": "State now",
-     "header": true,
-     "rows": [
-      [
-       "",
-       "essere +"
-      ],
-      [
-       "fidanzati",
-       "Sono fidanzati."
-      ],
-      [
-       "sposati",
-       "Sono sposati."
-      ],
-      [
-       "separati",
-       "Sono separati."
-      ],
-      [
-       "divorziati",
-       "Sono divorziati."
-      ]
+     "sep": "→",
+     "items": [
+      {
+       "a": "fidanzati",
+       "tr": "They're engaged.",
+       "b": "Sono fidanzati."
+      },
+      {
+       "a": "sposati",
+       "tr": "They're married.",
+       "b": "Sono sposati."
+      },
+      {
+       "a": "separati",
+       "tr": "They're separated.",
+       "b": "Sono separati."
+      },
+      {
+       "a": "divorziati",
+       "tr": "They're divorced.",
+       "b": "Sono divorziati."
+      }
      ],
      "note": "Event — {{si sono sposati}}; state — {{sono sposati}}."
     }
@@ -4485,31 +4518,50 @@
    },
    "tables": [
     {
-     "title": "Event or picture",
-     "header": true,
-     "rows": [
-      [
-       "passato prossimo",
-       "imperfetto"
-      ],
-      [
-       "Ho incontrato Andrea.",
-       "Avevamo 15 anni."
-      ],
-      [
-       "Siamo andati al mare.",
-       "Faceva caldo."
-      ],
-      [
-       "Ho lavorato 5 anni.",
-       "Lavoravo ogni giorno."
-      ],
-      [
-       "È arrivato un messaggio.",
-       "Mentre leggevo…"
-      ]
-     ],
-     "note": "“What happened?” — left; “what was it like?” — right."
+     "type": "pairs",
+     "title": "Passato prossimo — what happened",
+     "sep": "",
+     "items": [
+      {
+       "a": "Ho incontrato Andrea.",
+       "tr": "I met Andrea."
+      },
+      {
+       "a": "Siamo andati al mare.",
+       "tr": "We went to the seaside."
+      },
+      {
+       "a": "Ho lavorato 5 anni.",
+       "tr": "I worked for 5 years."
+      },
+      {
+       "a": "È arrivato un messaggio.",
+       "tr": "A message arrived."
+      }
+     ]
+    },
+    {
+     "type": "pairs",
+     "title": "Imperfetto — what it was like",
+     "sep": "",
+     "items": [
+      {
+       "a": "Avevamo 15 anni.",
+       "tr": "We were 15."
+      },
+      {
+       "a": "Faceva caldo.",
+       "tr": "It was hot."
+      },
+      {
+       "a": "Lavoravo ogni giorno.",
+       "tr": "I worked every day."
+      },
+      {
+       "a": "Mentre leggevo…",
+       "tr": "While I was reading…"
+      }
+     ]
     },
     {
      "type": "pairs",
@@ -4575,33 +4627,35 @@
      "note": "{{ieri}} works with both: {{ieri pioveva}} (picture), {{ieri sono uscito}} (event)."
     },
     {
+     "type": "pairs",
      "title": "Story outline",
-     "header": true,
-     "rows": [
-      [
-       "",
-       "tempo"
-      ],
-      [
-       "quando, dove",
-       "passato prossimo"
-      ],
-      [
-       "descrizione",
-       "imperfetto"
-      ],
-      [
-       "reazione",
-       "pass. prossimo"
-      ],
-      [
-       "eventi",
-       "passato prossimo"
-      ],
-      [
-       "oggi",
-       "presente"
-      ]
+     "sep": "→",
+     "items": [
+      {
+       "a": "quando, dove",
+       "tr": "when and where",
+       "b": "passato prossimo"
+      },
+      {
+       "a": "descrizione",
+       "tr": "description",
+       "b": "imperfetto"
+      },
+      {
+       "a": "reazione",
+       "tr": "reaction",
+       "b": "pass. prossimo"
+      },
+      {
+       "a": "eventi",
+       "tr": "events",
+       "b": "passato prossimo"
+      },
+      {
+       "a": "oggi",
+       "tr": "today",
+       "b": "presente"
+      }
      ],
      "note": "Example: {{Un giorno ho visto…}} → {{era alta…}} → {{sono rimasto sorpreso}} → {{adesso siamo amici}}."
     }
@@ -4761,48 +4815,48 @@
    },
    "tables": [
     {
+     "type": "pairs",
      "title": "Four connectors",
-     "header": true,
-     "rows": [
-      [
-       "connettivo",
-       "esempio"
-      ],
-      [
-       "quindi",
-       "Pioveva, quindi sono rimasto a casa."
-      ],
-      [
-       "perciò",
-       "Ero stanco, perciò sono andato a letto."
-      ],
-      [
-       "allora",
-       "Stavo male, allora sono andata dal medico."
-      ],
-      [
-       "dunque",
-       "Dunque, ricapitoliamo."
-      ]
+     "sep": "→",
+     "items": [
+      {
+       "a": "quindi",
+       "tr": "It was raining, so I stayed at home.",
+       "b": "Pioveva, quindi sono rimasto a casa."
+      },
+      {
+       "a": "perciò",
+       "tr": "I was tired, so I went to bed.",
+       "b": "Ero stanco, perciò sono andato a letto."
+      },
+      {
+       "a": "allora",
+       "tr": "I felt ill, so I went to the doctor.",
+       "b": "Stavo male, allora sono andata dal medico."
+      },
+      {
+       "a": "dunque",
+       "tr": "So, let's sum up.",
+       "b": "Dunque, ricapitoliamo."
+      }
      ],
      "note": "{{quindi}} — most common; {{perciò}} — neutral; {{allora}} — spoken; {{dunque}} — formal, “so then”."
     },
     {
+     "type": "pairs",
      "title": "Cause or result",
-     "header": true,
-     "rows": [
-      [
-       "… quindi …",
-       "… perché …"
-      ],
-      [
-       "Pioveva, quindi sono rimasto a casa.",
-       "Sono rimasto a casa perché pioveva."
-      ],
-      [
-       "Ero stanco, perciò sono andato a letto.",
-       "Sono andato a letto perché ero stanco."
-      ]
+     "sep": "↔",
+     "items": [
+      {
+       "a": "Pioveva, quindi sono rimasto a casa.",
+       "tr": "It was raining, so I stayed home. ↔ I stayed home because it was raining.",
+       "b": "Sono rimasto a casa perché pioveva."
+      },
+      {
+       "a": "Ero stanco, perciò sono andato a letto.",
+       "tr": "I was tired, so I went to bed. ↔ I went to bed because I was tired.",
+       "b": "Sono andato a letto perché ero stanco."
+      }
      ],
      "note": "{{perché}} introduces the **cause**, {{quindi}} the **result**. Same meaning, reverse order."
     }
@@ -4947,43 +5001,51 @@
    },
    "tables": [
     {
+     "type": "pairs",
      "title": "Essere, avere, portare",
-     "header": true,
-     "rows": [
-      [
-       "verbo",
-       "esempio"
-      ],
-      [
-       "essere",
-       "è alto e magro"
-      ],
-      [
-       "essere",
-       "è timido e gentile"
-      ],
-      [
-       "avere",
-       "ha 22 anni"
-      ],
-      [
-       "avere",
-       "ha gli occhi verdi"
-      ],
-      [
-       "avere",
-       "ha i capelli ricci"
-      ],
-      [
-       "portare",
-       "porta gli occhiali"
-      ],
-      [
-       "fare",
-       "fa il meccanico"
-      ]
-     ],
-     "note": "Bald — {{è calvo}} (essere)."
+     "sep": "→",
+     "items": [
+      {
+       "a": "essere",
+       "tr": "he's tall and thin",
+       "b": "è alto e magro"
+      },
+      {
+       "a": "essere",
+       "tr": "he's shy and kind",
+       "b": "è timido e gentile"
+      },
+      {
+       "a": "essere",
+       "tr": "he's bald",
+       "b": "è calvo"
+      },
+      {
+       "a": "avere",
+       "tr": "he's 22",
+       "b": "ha 22 anni"
+      },
+      {
+       "a": "avere",
+       "tr": "he has green eyes",
+       "b": "ha gli occhi verdi"
+      },
+      {
+       "a": "avere",
+       "tr": "he has curly hair",
+       "b": "ha i capelli ricci"
+      },
+      {
+       "a": "portare",
+       "tr": "he wears glasses",
+       "b": "porta gli occhiali"
+      },
+      {
+       "a": "fare",
+       "tr": "he works as a mechanic",
+       "b": "fa il meccanico"
+      }
+     ]
     },
     {
      "title": "Adjective agreement",
@@ -5277,33 +5339,35 @@
    },
    "tables": [
     {
+     "type": "pairs",
      "title": "Prima — ora",
-     "header": true,
-     "rows": [
-      [
-       "prima",
-       "ora"
-      ],
-      [
-       "aveva i capelli neri",
-       "ha i capelli rossi"
-      ],
-      [
-       "era magro",
-       "è grasso"
-      ],
-      [
-       "non portava gli occhiali",
-       "porta gli occhiali"
-      ],
-      [
-       "non aveva la barba",
-       "ha la barba"
-      ],
-      [
-       "era felice",
-       "è un po' triste"
-      ]
+     "sep": "→",
+     "items": [
+      {
+       "a": "aveva i capelli neri",
+       "tr": "had black hair → now red",
+       "b": "ha i capelli rossi"
+      },
+      {
+       "a": "era magro",
+       "tr": "was thin → now fat",
+       "b": "è grasso"
+      },
+      {
+       "a": "non portava gli occhiali",
+       "tr": "didn't wear glasses → now does",
+       "b": "porta gli occhiali"
+      },
+      {
+       "a": "non aveva la barba",
+       "tr": "had no beard → now has one",
+       "b": "ha la barba"
+      },
+      {
+       "a": "era felice",
+       "tr": "was happy → now a bit sad",
+       "b": "è un po' triste"
+      }
      ],
      "note": "Left — {{imperfetto}}, right — {{presente}}."
     },
@@ -5346,29 +5410,30 @@
      "note": "All take {{essere}}; the participle agrees: {{mia madre è invecchiata}}."
     },
     {
+     "type": "pairs",
      "title": "Comparing",
-     "header": true,
-     "rows": [
-      [
-       "",
-       "esempio"
-      ],
-      [
-       "più",
-       "è più alto"
-      ],
-      [
-       "meno",
-       "è meno allegro"
-      ],
-      [
-       "più … di",
-       "più felice di prima"
-      ],
-      [
-       "-issimo",
-       "bellissimo"
-      ]
+     "sep": "→",
+     "items": [
+      {
+       "a": "più",
+       "tr": "he's taller",
+       "b": "è più alto"
+      },
+      {
+       "a": "meno",
+       "tr": "he's less cheerful",
+       "b": "è meno allegro"
+      },
+      {
+       "a": "più … di",
+       "tr": "happier than before",
+       "b": "più felice di prima"
+      },
+      {
+       "a": "-issimo",
+       "tr": "very beautiful",
+       "b": "bellissimo"
+      }
      ],
      "note": "{{-issimo}} = “very”: {{lungo → lunghissimo}} ({{-go}}, {{-co}} + {{h}})."
     }
@@ -5652,29 +5717,30 @@
      "note": "Same endings — only the stem changes."
     },
     {
+     "type": "pairs",
      "title": "Spelling",
-     "header": true,
-     "rows": [
-      [
-       "infinito",
-       "io"
-      ],
-      [
-       "cercare",
-       "cercherò"
-      ],
-      [
-       "pagare",
-       "pagherò"
-      ],
-      [
-       "cominciare",
-       "comincerò"
-      ],
-      [
-       "mangiare",
-       "mangerò"
-      ]
+     "sep": "→",
+     "items": [
+      {
+       "a": "cercare",
+       "tr": "to look for",
+       "b": "cercherò"
+      },
+      {
+       "a": "pagare",
+       "tr": "to pay",
+       "b": "pagherò"
+      },
+      {
+       "a": "cominciare",
+       "tr": "to begin",
+       "b": "comincerò"
+      },
+      {
+       "a": "mangiare",
+       "tr": "to eat",
+       "b": "mangerò"
+      }
      ],
      "note": "{{-care}}, {{-gare}} add {{h}}; {{-ciare}}, {{-giare}} drop the {{i}}."
     }
