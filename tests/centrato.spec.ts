@@ -26,8 +26,14 @@ for (const lingua of ["ru", "en"]) {
       test(percorso, async ({ page, context, baseURL }) => {
         await context.addCookies([{ name: "bv_lang", value: lingua, url: baseURL! }]);
         await page.goto(percorso);
-        // Anche il contenuto dei blocchi chiusi (parole chiave, soluzioni).
-        await page.evaluate(() => document.querySelectorAll<HTMLDetailsElement>(".contenuto-corso details").forEach((d) => (d.open = true)));
+        // Anche il contenuto dei blocchi chiusi: soluzioni (<details>) e righe di "Approfondisci".
+        await page.evaluate(() => {
+          document.querySelectorAll<HTMLDetailsElement>(".contenuto-corso details").forEach((d) => (d.open = true));
+          document
+            .querySelectorAll<HTMLButtonElement>(".contenuto-corso button[aria-expanded='false'][aria-controls]")
+            .forEach((b) => b.click());
+        });
+        await page.waitForTimeout(300); // apertura: 200 ms
 
         const { larghezza, scroll, sinistra, addossati } = await page.evaluate(() => {
           const radice = document.querySelector(".contenuto-corso");

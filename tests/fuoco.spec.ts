@@ -15,22 +15,30 @@ const contorno = (page: Page, selettore: string) =>
     return { stile: c.outlineStyle, larghezza: c.outlineWidth, accento: c.outlineColor === accento };
   }, selettore);
 
-const SUMMARY = "summary:has-text('Parole chiave')";
-
 test.use({ viewport: { width: 390, height: 844 } });
 
-test("summary «Parole chiave»: clic senza contorno, Tab con contorno accent", async ({ page, context, baseURL }) => {
+test("riga «Parole chiave» di Approfondisci: clic senza contorno, Tab con contorno accent", async ({
+  page,
+  context,
+  baseURL,
+}) => {
   await context.addCookies([{ name: "bv_lang", value: "ru", url: baseURL! }]);
   await page.goto("/a2/grammatica/il-presente-verbi-regolari");
-  const summary = page.locator(SUMMARY);
+  // Prima si aprono tutte le righe di Approfondisci, poi si controlla quella di Parole chiave.
+  await page.evaluate(() =>
+    document
+      .querySelectorAll<HTMLButtonElement>(".contenuto-corso button[aria-expanded='false'][aria-controls]")
+      .forEach((b) => b.click()),
+  );
+  const pulsante = page.getByRole("button", { name: /Parole chiave/ });
+  await pulsante.click();
+  await expect(pulsante).toBeFocused();
+  const id = await pulsante.getAttribute("id");
+  expect(await contorno(page, `[id="${id}"]`)).toMatchObject({ stile: "none" });
 
-  await summary.click();
-  await expect(summary).toBeFocused();
-  expect(await contorno(page, "details summary")).toMatchObject({ stile: "none" });
-
-  // Shift+Tab e Tab: il fuoco torna sul summary, stavolta da tastiera.
+  // Shift+Tab e Tab: il fuoco torna sulla riga, stavolta da tastiera.
   await page.keyboard.press("Shift+Tab");
   await page.keyboard.press("Tab");
-  await expect(summary).toBeFocused();
-  await expect.poll(() => contorno(page, "details summary")).toMatchObject({ stile: "solid", larghezza: "2px", accento: true });
+  await expect(pulsante).toBeFocused();
+  await expect.poll(() => contorno(page, `[id="${id}"]`)).toMatchObject({ stile: "solid", larghezza: "2px", accento: true });
 });

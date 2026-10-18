@@ -2,6 +2,7 @@ import type { CSSProperties, ReactNode } from "react";
 import { Sezione } from "@/components/grammatica/ContenutoArgomento";
 import { Tr } from "@/components/Tr";
 import { GrigliaVerbi } from "@/components/grammatica/GrigliaVerbi";
+import { RigaEspandibile } from "@/components/grammatica/RigaEspandibile";
 import { IconCheck, IconX } from "@/components/lezione/ui";
 import type { EsempioV2, LezioneV2 as Lezione, SceltaAusiliare, TabellaClassica, TabellaCoppie as Coppie } from "@/content/a2/lezioni";
 import type { Locale } from "@/lib/lingue";
@@ -33,10 +34,6 @@ function CellaTabella({ testo }: { testo: string }) {
   );
 }
 
-function Scheda({ children, className = "" }: { children: ReactNode; className?: string }) {
-  return <div className={`rounded-2xl bg-card p-4 ${className}`}>{children}</div>;
-}
-
 function Esempio({ esempio, lingua }: { esempio: EsempioV2; lingua: Locale }) {
   return (
     <>
@@ -54,12 +51,41 @@ export function LezioneV2({
   lezione,
   lingua,
   dopoTabelle,
+  paroleChiave,
 }: {
   lezione: Lezione;
   lingua: Locale;
-  /** Blocco extra tra le tabelle e "Quando si usa" (es. la griglia dei participi irregolari). */
+  /** Blocco extra dopo le tabelle (es. la griglia dei participi irregolari). */
   dopoTabelle?: ReactNode;
+  /** "Parole chiave" (contenuto e numero di parole), dentro Approfondisci. */
+  paroleChiave?: { contenuto: ReactNode; numero: number };
 }) {
+  // Visibili subito: In breve → Tabelle (con participi ed "Essere o avere?") → Errori frequenti →
+  // In sintesi. Il resto è in "Approfondisci", ogni blocco in una riga chiusa (solo se ha contenuto).
+  const approfondisci = [
+    lezione.formation.steps.length > 0 && {
+      titolo: "Come si forma",
+      numero: lezione.formation.steps.length,
+      contenuto: <ComeSiForma passi={lezione.formation.steps} lingua={lingua} />,
+    },
+    lezione.uses.length > 0 && {
+      titolo: "Quando si usa",
+      numero: lezione.uses.length,
+      contenuto: <QuandoSiUsa usi={lezione.uses} lingua={lingua} />,
+    },
+    lezione.exceptions.length > 0 && {
+      titolo: "Eccezioni",
+      numero: lezione.exceptions.length,
+      contenuto: <Eccezioni eccezioni={lezione.exceptions} lingua={lingua} />,
+    },
+    lezione.examples.length > 0 && {
+      titolo: "Esempi",
+      numero: lezione.examples.length,
+      contenuto: <Esempi esempi={lezione.examples} lingua={lingua} />,
+    },
+    paroleChiave && paroleChiave.numero > 0 && { titolo: "Parole chiave", ...paroleChiave },
+  ].filter((r) => !!r);
+
   return (
     <div className="space-y-6">
       <Sezione titolo="In breve">
@@ -78,80 +104,21 @@ export function LezioneV2({
         </ul>
       </Sezione>
 
-      <Sezione titolo="Come si forma">
-        <Scheda>
-          <ol className="space-y-3">
-            {lezione.formation.steps.map((passo, i) => (
-              // Sotto md il numero sta sopra il testo (tutto al centro), da md a sinistra del testo.
-              <li key={i} className={`flex gap-3 max-md:flex-col max-md:items-center max-md:gap-1.5 ${TESTO}`}>
-                <span
-                  aria-hidden="true"
-                  className="flex size-6 md:mt-px shrink-0 items-center justify-center rounded-full border-[1.5px] border-grammar text-[13px] font-semibold text-grammar tabular-nums"
-                >
-                  {i + 1}
-                </span>
-                <Tr locale={lingua}>{passo}</Tr>
-              </li>
-            ))}
-          </ol>
-        </Scheda>
-      </Sezione>
-
-      {lezione.auxChoice && <EssereOAvere scelta={lezione.auxChoice} lingua={lingua} />}
-
       <Sezione titolo="Tabelle">
         <div className="space-y-3">
-          {lezione.tables.map((tabella, i) => (
+          {lezione.tables.map((tabella, i) =>
             tabella.type === "pairs" ? (
               <TabellaCoppie key={i} tabella={tabella} lingua={lingua} />
             ) : (
               <TabellaV2 key={i} tabella={tabella} lingua={lingua} />
-            )
-          ))}
+            ),
+          )}
         </div>
       </Sezione>
 
       {dopoTabelle}
 
-      <Sezione titolo="Quando si usa">
-        <ul className="overflow-hidden rounded-2xl bg-card">
-          {lezione.uses.map((uso, i) => (
-            <li key={i} className={`px-4 py-3 ${i > 0 ? "border-t border-separator" : ""}`}>
-              <Tr locale={lingua} size="md" className="block font-medium">
-                {uso.text}
-              </Tr>
-              <p lang="it" className={`mt-1 ${TESTO}`}>
-                {uso.it}
-              </p>
-              <Tr locale={lingua} size="sm" className="block">
-                {uso.tr}
-              </Tr>
-            </li>
-          ))}
-        </ul>
-      </Sezione>
-
-      <Sezione titolo="Eccezioni">
-        <div className="space-y-3">
-          {lezione.exceptions.map((eccezione, i) => (
-            <Scheda key={i}>
-              <Tr locale={lingua} size="md" className="block font-semibold">
-                {eccezione.title}
-              </Tr>
-              <Tr locale={lingua} size="md" className="mt-1 block">
-                {eccezione.text}
-              </Tr>
-              <ul className="mt-3 space-y-2 border-t border-separator pt-3">
-                {eccezione.examples.map((esempio, j) => (
-                  <li key={j}>
-                    <Esempio esempio={esempio} lingua={lingua} />
-                  </li>
-                ))}
-              </ul>
-            </Scheda>
-          ))}
-        </div>
-      </Sezione>
+      {lezione.auxChoice && <EssereOAvere scelta={lezione.auxChoice} lingua={lingua} />}
 
       <Sezione titolo="Errori frequenti">
         <ul className="space-y-3 rounded-2xl bg-[color-mix(in_srgb,var(--error)_8%,var(--card))] p-4">
@@ -181,22 +148,101 @@ export function LezioneV2({
         </ul>
       </Sezione>
 
-      <Sezione titolo="Esempi">
-        <ul className="overflow-hidden rounded-2xl bg-card">
-          {lezione.examples.map((esempio, i) => (
-            <li key={i} className={`px-4 py-3 ${i > 0 ? "border-t border-separator" : ""}`}>
-              <Esempio esempio={esempio} lingua={lingua} />
-            </li>
-          ))}
-        </ul>
-      </Sezione>
-
       <Sezione titolo="In sintesi">
         <div className={`rounded-2xl border border-grammar bg-card p-4 ${TESTO}`}>
           <Tr locale={lingua}>{lezione.summary}</Tr>
         </div>
       </Sezione>
+
+      {approfondisci.length > 0 && (
+        <Sezione titolo="Approfondisci">
+          <div className="overflow-hidden rounded-2xl bg-card">
+            {approfondisci.map((riga, i) => (
+              <RigaEspandibile key={riga.titolo} titolo={riga.titolo} conteggio={riga.numero} prima={i === 0}>
+                {riga.contenuto}
+              </RigaEspandibile>
+            ))}
+          </div>
+        </Sezione>
+      )}
     </div>
+  );
+}
+
+// --- Contenuti di "Approfondisci" (dentro la scheda bianca: niente schede proprie) ---
+
+function ComeSiForma({ passi, lingua }: { passi: string[]; lingua: Locale }) {
+  return (
+    <ol className="space-y-3 px-4 pb-4">
+      {passi.map((passo, i) => (
+        // Sotto md il numero sta sopra il testo (tutto al centro), da md a sinistra del testo.
+        <li key={i} className={`flex gap-3 max-md:flex-col max-md:items-center max-md:gap-1.5 ${TESTO}`}>
+          <span
+            aria-hidden="true"
+            className="flex size-6 shrink-0 items-center justify-center rounded-full border-[1.5px] border-grammar text-[13px] font-semibold text-grammar tabular-nums md:mt-px"
+          >
+            {i + 1}
+          </span>
+          <Tr locale={lingua}>{passo}</Tr>
+        </li>
+      ))}
+    </ol>
+  );
+}
+
+function QuandoSiUsa({ usi, lingua }: { usi: Lezione["uses"]; lingua: Locale }) {
+  return (
+    <ul>
+      {usi.map((uso, i) => (
+        <li key={i} className={`px-4 py-3 ${i > 0 ? "border-t border-separator" : "pt-0"}`}>
+          <Tr locale={lingua} size="md" className="block font-medium">
+            {uso.text}
+          </Tr>
+          <p lang="it" className={`mt-1 ${TESTO}`}>
+            {uso.it}
+          </p>
+          <Tr locale={lingua} size="sm" className="block">
+            {uso.tr}
+          </Tr>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+function Eccezioni({ eccezioni, lingua }: { eccezioni: Lezione["exceptions"]; lingua: Locale }) {
+  return (
+    <ul>
+      {eccezioni.map((eccezione, i) => (
+        <li key={i} className={`px-4 py-3 ${i > 0 ? "border-t border-separator" : "pt-0"}`}>
+          <Tr locale={lingua} size="md" className="block font-semibold">
+            {eccezione.title}
+          </Tr>
+          <Tr locale={lingua} size="md" className="mt-1 block">
+            {eccezione.text}
+          </Tr>
+          <ul className="mt-2 space-y-2">
+            {eccezione.examples.map((esempio, j) => (
+              <li key={j}>
+                <Esempio esempio={esempio} lingua={lingua} />
+              </li>
+            ))}
+          </ul>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+function Esempi({ esempi, lingua }: { esempi: EsempioV2[]; lingua: Locale }) {
+  return (
+    <ul>
+      {esempi.map((esempio, i) => (
+        <li key={i} className={`px-4 py-3 ${i > 0 ? "border-t border-separator" : "pt-0"}`}>
+          <Esempio esempio={esempio} lingua={lingua} />
+        </li>
+      ))}
+    </ul>
   );
 }
 

@@ -57,6 +57,10 @@ export default async function ArgomentoPage({ params }: PageProps<"/a2/grammatic
           <LezioneV2
             lezione={v2.lezione}
             lingua={v2.lingua}
+            paroleChiave={{
+              numero: gruppiParole.reduce((n, g) => n + g.parole.length, 0),
+              contenuto: <ParoleChiave gruppi={gruppiParole} nota={dizionario(locale).paroleChiaveNota} locale={locale} />,
+            }}
             dopoTabelle={
               // Regola generale: se grammar.json ha irregular_participles, la griglia resta anche nel v2.
               Array.isArray(contenuto.irregular_participles) && (
@@ -83,8 +87,6 @@ export default async function ArgomentoPage({ params }: PageProps<"/a2/grammatic
           <ContenutoArgomento contenuto={contenuto} lingua={lingua} locale={locale} />
         </>
       )}
-
-      {gruppiParole.length > 0 && <ParoleChiave gruppi={gruppiParole} nota={dizionario(locale).paroleChiaveNota} locale={locale} />}
 
       {esercizi.length > 0 && (
         <Sezione titolo={`Esercizi (${esercizi.length})`}>

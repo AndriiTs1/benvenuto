@@ -39,7 +39,10 @@ export function CercaParole({ iniziale }: { iniziale: string }) {
           <circle cx="11" cy="11" r="6.5" />
           <path d="M16 16l4 4" />
         </svg>
+        {/* id e name: senza, Chrome segnala un problema nel pannello Issues (campo di modulo anonimo). */}
         <input
+          id="cerca-parole"
+          name="q"
           type="search"
           value={testo}
           onChange={(e) => cambia(e.target.value)}
