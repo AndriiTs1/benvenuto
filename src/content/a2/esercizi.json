@@ -358,6 +358,1726 @@
      }
     }
    ]
+  },
+  {
+   "topic": "g5-presente-irregular",
+   "items": [
+    {
+     "id": "pi-01",
+     "type": "fill",
+     "it": "Io ___ colazione alle sette.",
+     "hint": "fare",
+     "answers": [
+      "faccio"
+     ],
+     "why": {
+      "ru": "fare: faccio.",
+      "uk": "fare: faccio.",
+      "en": "fare: faccio."
+     }
+    },
+    {
+     "id": "pi-02",
+     "type": "fill",
+     "it": "Noi ___ al mare domenica.",
+     "hint": "andare",
+     "answers": [
+      "andiamo"
+     ],
+     "why": {
+      "ru": "andare: noi — andiamo (почти правильно).",
+      "uk": "andare: noi — andiamo (майже правильно).",
+      "en": "andare: noi — andiamo (almost regular)."
+     }
+    },
+    {
+     "id": "pi-03",
+     "type": "fill",
+     "it": "Loro ___ al lavoro in treno.",
+     "hint": "andare",
+     "answers": [
+      "vanno"
+     ],
+     "why": {
+      "ru": "andare: loro — vanno.",
+      "uk": "andare: loro — vanno.",
+      "en": "andare: loro — vanno."
+     }
+    },
+    {
+     "id": "pi-04",
+     "type": "fill",
+     "it": "Come ___? — Bene, grazie.",
+     "hint": "stare (tu)",
+     "answers": [
+      "stai"
+     ],
+     "why": {
+      "ru": "stare: tu — stai.",
+      "uk": "stare: tu — stai.",
+      "en": "stare: tu — stai."
+     }
+    },
+    {
+     "id": "pi-05",
+     "type": "fill",
+     "it": "Io ___ domani alle nove.",
+     "hint": "venire",
+     "answers": [
+      "vengo"
+     ],
+     "why": {
+      "ru": "venire: io — vengo (с -g-).",
+      "uk": "venire: io — vengo (з -g-).",
+      "en": "venire: io — vengo (with -g-)."
+     }
+    },
+    {
+     "id": "pi-06",
+     "type": "fill",
+     "it": "Stasera io ___ a casa.",
+     "hint": "rimanere",
+     "answers": [
+      "rimango"
+     ],
+     "why": {
+      "ru": "rimanere: io — rimango.",
+      "uk": "rimanere: io — rimango.",
+      "en": "rimanere: io — rimango."
+     }
+    },
+    {
+     "id": "pi-07",
+     "type": "fill",
+     "it": "Che cosa ___ voi?",
+     "hint": "bere",
+     "answers": [
+      "bevete"
+     ],
+     "why": {
+      "ru": "bere — от основы bev-: bevete.",
+      "uk": "bere — від основи bev-: bevete.",
+      "en": "bere uses the stem bev-: bevete."
+     }
+    },
+    {
+     "id": "pi-08",
+     "type": "choice",
+     "it": "Lui ___ sempre la verità.",
+     "options": [
+      "dice",
+      "dici",
+      "dicono"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "dire: lui — dice.",
+      "uk": "dire: lui — dice.",
+      "en": "dire: lui — dice."
+     }
+    },
+    {
+     "id": "pi-09",
+     "type": "choice",
+     "it": "Io ___ di casa alle otto.",
+     "options": [
+      "esco",
+      "usco",
+      "escio"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "uscire: io — esco.",
+      "uk": "uscire: io — esco.",
+      "en": "uscire: io — esco."
+     }
+    },
+    {
+     "id": "pi-10",
+     "type": "choice",
+     "it": "Loro ___ il bus.",
+     "options": [
+      "prendono",
+      "prendano",
+      "prendeno"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "prendere — правильный: loro prendono.",
+      "uk": "prendere — правильне: loro prendono.",
+      "en": "prendere is regular: loro prendono."
+     }
+    }
+   ]
+  },
+  {
+   "topic": "g5-presente-tu",
+   "items": [
+    {
+     "id": "pt-01",
+     "type": "fill",
+     "it": "A che ora ___?",
+     "hint": "alzarsi (tu)",
+     "answers": [
+      "ti alzi"
+     ],
+     "why": {
+      "ru": "Возвратный: ti + -i.",
+      "uk": "Зворотне: ti + -i.",
+      "en": "Reflexive: ti + -i."
+     }
+    },
+    {
+     "id": "pt-02",
+     "type": "fill",
+     "it": "Dove ___?",
+     "hint": "abitare (tu)",
+     "answers": [
+      "abiti"
+     ],
+     "why": {
+      "ru": "tu → -i.",
+      "uk": "tu → -i.",
+      "en": "tu → -i."
+     }
+    },
+    {
+     "id": "pt-03",
+     "type": "fill",
+     "it": "___ il caffè o il tè?",
+     "hint": "preferire (tu)",
+     "answers": [
+      "preferisci"
+     ],
+     "why": {
+      "ru": "preferire — -isc-: preferisci.",
+      "uk": "preferire — -isc-: preferisci.",
+      "en": "preferire is -isc-: preferisci."
+     }
+    },
+    {
+     "id": "pt-04",
+     "type": "fill",
+     "it": "Quanto ___ per l'affitto?",
+     "hint": "pagare (tu)",
+     "answers": [
+      "paghi"
+     ],
+     "why": {
+      "ru": "-gare: + h — paghi.",
+      "uk": "-gare: + h — paghi.",
+      "en": "-gare adds h — paghi."
+     }
+    },
+    {
+     "id": "pt-05",
+     "type": "fill",
+     "it": "___ stasera con gli amici?",
+     "hint": "uscire (tu)",
+     "answers": [
+      "esci"
+     ],
+     "why": {
+      "ru": "uscire: tu — esci.",
+      "uk": "uscire: tu — esci.",
+      "en": "uscire: tu — esci."
+     }
+    },
+    {
+     "id": "pt-06",
+     "type": "choice",
+     "it": "Cosa ___ il fine settimana?",
+     "options": [
+      "fai",
+      "fa",
+      "fate"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "fare: tu — fai.",
+      "uk": "fare: tu — fai.",
+      "en": "fare: tu — fai."
+     }
+    },
+    {
+     "id": "pt-07",
+     "type": "choice",
+     "it": "Come ___? (Lei, formale)",
+     "options": [
+      "si chiama",
+      "ti chiami",
+      "si chiami"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Lei — 3-е лицо: si chiama.",
+      "uk": "Lei — 3-тя особа: si chiama.",
+      "en": "Lei uses the 3rd person: si chiama."
+     }
+    },
+    {
+     "id": "pt-08",
+     "type": "choice",
+     "it": "___ la pizza?",
+     "options": [
+      "Mangi",
+      "Mangii",
+      "Mangie"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "-iare: одна i — mangi.",
+      "uk": "-iare: одна i — mangi.",
+      "en": "-iare: one i — mangi."
+     }
+    },
+    {
+     "id": "pt-09",
+     "type": "choice",
+     "it": "Con chi ___ in vacanza?",
+     "options": [
+      "vai",
+      "va",
+      "vado"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "andare: tu — vai.",
+      "uk": "andare: tu — vai.",
+      "en": "andare: tu — vai."
+     }
+    },
+    {
+     "id": "pt-10",
+     "type": "fill",
+     "it": "___ l'italiano?",
+     "hint": "capire (tu)",
+     "answers": [
+      "capisci"
+     ],
+     "why": {
+      "ru": "capire — -isc-: capisci.",
+      "uk": "capire — -isc-: capisci.",
+      "en": "capire is -isc-: capisci."
+     }
+    }
+   ]
+  },
+  {
+   "topic": "g5-modali-presente",
+   "items": [
+    {
+     "id": "mo-01",
+     "type": "fill",
+     "it": "Io non ___ venire stasera.",
+     "hint": "potere",
+     "answers": [
+      "posso"
+     ],
+     "why": {
+      "ru": "potere: io — posso.",
+      "uk": "potere: io — posso.",
+      "en": "potere: io — posso."
+     }
+    },
+    {
+     "id": "mo-02",
+     "type": "fill",
+     "it": "Tu ___ un caffè?",
+     "hint": "volere",
+     "answers": [
+      "vuoi"
+     ],
+     "why": {
+      "ru": "volere: tu — vuoi.",
+      "uk": "volere: tu — vuoi.",
+      "en": "volere: tu — vuoi."
+     }
+    },
+    {
+     "id": "mo-03",
+     "type": "fill",
+     "it": "Domani noi ___ lavorare.",
+     "hint": "dovere",
+     "answers": [
+      "dobbiamo"
+     ],
+     "why": {
+      "ru": "dovere: noi — dobbiamo.",
+      "uk": "dovere: noi — dobbiamo.",
+      "en": "dovere: noi — dobbiamo."
+     }
+    },
+    {
+     "id": "mo-04",
+     "type": "fill",
+     "it": "Lui ___ andare dal medico.",
+     "hint": "dovere",
+     "answers": [
+      "deve"
+     ],
+     "why": {
+      "ru": "dovere: lui — deve.",
+      "uk": "dovere: lui — deve.",
+      "en": "dovere: lui — deve."
+     }
+    },
+    {
+     "id": "mo-05",
+     "type": "fill",
+     "it": "Loro ___ restare a cena.",
+     "hint": "volere",
+     "answers": [
+      "vogliono"
+     ],
+     "why": {
+      "ru": "volere: loro — vogliono.",
+      "uk": "volere: loro — vogliono.",
+      "en": "volere: loro — vogliono."
+     }
+    },
+    {
+     "id": "mo-06",
+     "type": "choice",
+     "it": "Devo ___ alle sei.",
+     "options": [
+      "lavorare",
+      "di lavorare",
+      "a lavorare"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "После модальных — без предлога.",
+      "uk": "Після модальних — без прийменника.",
+      "en": "No preposition after modal verbs."
+     }
+    },
+    {
+     "id": "mo-07",
+     "type": "choice",
+     "it": "Non ___ nuotare, non ho mai imparato.",
+     "options": [
+      "so",
+      "posso",
+      "voglio"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Уметь (научился) — sapere.",
+      "uk": "Уміти (навчився) — sapere.",
+      "en": "Know how to — sapere."
+     }
+    },
+    {
+     "id": "mo-08",
+     "type": "choice",
+     "it": "Al bar: «___ un cappuccino, per favore.»",
+     "options": [
+      "Vorrei",
+      "Voglio",
+      "Volo"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Вежливо — vorrei.",
+      "uk": "Ввічливо — vorrei.",
+      "en": "Politely — vorrei."
+     }
+    },
+    {
+     "id": "mo-09",
+     "type": "choice",
+     "it": "Lei ___ parlare tre lingue.",
+     "options": [
+      "sa",
+      "può",
+      "deve"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Умеет — sapere: sa.",
+      "uk": "Уміє — sapere: sa.",
+      "en": "Knows how — sapere: sa."
+     }
+    },
+    {
+     "id": "mo-10",
+     "type": "fill",
+     "it": "Voi ___ aiutarmi?",
+     "hint": "potere",
+     "answers": [
+      "potete"
+     ],
+     "why": {
+      "ru": "potere: voi — potete.",
+      "uk": "potere: voi — potete.",
+      "en": "potere: voi — potete."
+     }
+    }
+   ]
+  },
+  {
+   "topic": "g5-piacere-mancare",
+   "items": [
+    {
+     "id": "pm-01",
+     "type": "choice",
+     "it": "Mi ___ la pizza.",
+     "options": [
+      "piace",
+      "piacciono",
+      "piaccio"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Одна вещь — piace.",
+      "uk": "Одна річ — piace.",
+      "en": "One thing — piace."
+     }
+    },
+    {
+     "id": "pm-02",
+     "type": "choice",
+     "it": "Mi ___ gli spaghetti.",
+     "options": [
+      "piacciono",
+      "piace",
+      "piaci"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Много — piacciono.",
+      "uk": "Багато — piacciono.",
+      "en": "Several — piacciono."
+     }
+    },
+    {
+     "id": "pm-03",
+     "type": "choice",
+     "it": "Ci ___ viaggiare.",
+     "options": [
+      "piace",
+      "piacciono",
+      "piacciamo"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "С инфинитивом — piace.",
+      "uk": "З інфінітивом — piace.",
+      "en": "With an infinitive — piace."
+     }
+    },
+    {
+     "id": "pm-04",
+     "type": "choice",
+     "it": "A Marco ___ il calcio.",
+     "options": [
+      "piace",
+      "piacciono",
+      "piacce"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "calcio — одно: piace.",
+      "uk": "calcio — одне: piace.",
+      "en": "calcio is one thing: piace."
+     }
+    },
+    {
+     "id": "pm-05",
+     "type": "fill",
+     "it": "___ piacciono i fiori? (a lei)",
+     "hint": "a lei",
+     "answers": [
+      "le"
+     ],
+     "why": {
+      "ru": "a lei → le.",
+      "uk": "a lei → le.",
+      "en": "a lei → le."
+     }
+    },
+    {
+     "id": "pm-06",
+     "type": "fill",
+     "it": "Mi ___ mio figlio.",
+     "hint": "mancare",
+     "answers": [
+      "manca"
+     ],
+     "why": {
+      "ru": "Подлежащее — mio figlio: manca.",
+      "uk": "Підмет — mio figlio: manca.",
+      "en": "The subject is mio figlio: manca."
+     }
+    },
+    {
+     "id": "pm-07",
+     "type": "fill",
+     "it": "Ti ___ i tuoi genitori?",
+     "hint": "mancare",
+     "answers": [
+      "mancano"
+     ],
+     "why": {
+      "ru": "genitori — много: mancano.",
+      "uk": "genitori — багато: mancano.",
+      "en": "genitori is plural: mancano."
+     }
+    },
+    {
+     "id": "pm-08",
+     "type": "choice",
+     "it": "Mi piace il caffè. — ___!",
+     "options": [
+      "Anche a me",
+      "Anch'io",
+      "Anche mi"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Согласие с piacere — anche a me.",
+      "uk": "Згода з piacere — anche a me.",
+      "en": "Agreeing with piacere — anche a me."
+     }
+    },
+    {
+     "id": "pm-09",
+     "type": "choice",
+     "it": "Ieri mi ___ molto la festa.",
+     "options": [
+      "è piaciuta",
+      "ha piaciuto",
+      "è piaciuto"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "passato — essere, согласие с festa (ж.р.).",
+      "uk": "passato — essere, узгодження з festa (ж.р.).",
+      "en": "Past — essere, agrees with festa (f.)."
+     }
+    },
+    {
+     "id": "pm-10",
+     "type": "choice",
+     "it": "Da bambino mi ___ i cartoni animati.",
+     "options": [
+      "piacevano",
+      "piaceva",
+      "piacevo"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "imperfetto, много — piacevano.",
+      "uk": "imperfetto, багато — piacevano.",
+      "en": "Imperfetto, plural — piacevano."
+     }
+    }
+   ]
+  },
+  {
+   "topic": "g5-riflessivi-presente",
+   "items": [
+    {
+     "id": "ri-01",
+     "type": "fill",
+     "it": "La mattina io ___ alle sette.",
+     "hint": "svegliarsi",
+     "answers": [
+      "mi sveglio"
+     ],
+     "why": {
+      "ru": "mi + sveglio.",
+      "uk": "mi + sveglio.",
+      "en": "mi + sveglio."
+     }
+    },
+    {
+     "id": "ri-02",
+     "type": "fill",
+     "it": "Tu ___ presto?",
+     "hint": "alzarsi",
+     "answers": [
+      "ti alzi"
+     ],
+     "why": {
+      "ru": "ti + alzi.",
+      "uk": "ti + alzi.",
+      "en": "ti + alzi."
+     }
+    },
+    {
+     "id": "ri-03",
+     "type": "fill",
+     "it": "Marco ___ in fretta.",
+     "hint": "vestirsi",
+     "answers": [
+      "si veste"
+     ],
+     "why": {
+      "ru": "si + veste.",
+      "uk": "si + veste.",
+      "en": "si + veste."
+     }
+    },
+    {
+     "id": "ri-04",
+     "type": "fill",
+     "it": "Noi ___ molto al mare.",
+     "hint": "divertirsi",
+     "answers": [
+      "ci divertiamo"
+     ],
+     "why": {
+      "ru": "ci + divertiamo.",
+      "uk": "ci + divertiamo.",
+      "en": "ci + divertiamo."
+     }
+    },
+    {
+     "id": "ri-05",
+     "type": "fill",
+     "it": "Voi ___ alle otto?",
+     "hint": "prepararsi",
+     "answers": [
+      "vi preparate"
+     ],
+     "why": {
+      "ru": "vi + preparate.",
+      "uk": "vi + preparate.",
+      "en": "vi + preparate."
+     }
+    },
+    {
+     "id": "ri-06",
+     "type": "choice",
+     "it": "Lui ___ presto la domenica.",
+     "options": [
+      "non si alza",
+      "si non alza",
+      "non alza si"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "non — перед местоимением.",
+      "uk": "non — перед займенником.",
+      "en": "non goes before the pronoun."
+     }
+    },
+    {
+     "id": "ri-07",
+     "type": "choice",
+     "it": "Ieri Anna ___ tardi.",
+     "options": [
+      "si è svegliata",
+      "si ha svegliata",
+      "ha svegliato"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Возвратные в прошлом — essere.",
+      "uk": "Зворотні в минулому — essere.",
+      "en": "Reflexives in the past — essere."
+     }
+    },
+    {
+     "id": "ri-08",
+     "type": "choice",
+     "it": "Prima di mangiare ___ le mani.",
+     "options": [
+      "mi lavo",
+      "lavo le mie",
+      "mi lava"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Части тела — с артиклем, без «мой».",
+      "uk": "Частини тіла — з артиклем, без «мій».",
+      "en": "Body parts take the article, not “my”."
+     }
+    },
+    {
+     "id": "ri-09",
+     "type": "choice",
+     "it": "Devo ___ presto domani.",
+     "options": [
+      "alzarmi",
+      "alzarsi",
+      "mi alzare"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Devo + alzarmi (или mi devo alzare).",
+      "uk": "Devo + alzarmi (або mi devo alzare).",
+      "en": "Devo + alzarmi (or mi devo alzare)."
+     }
+    },
+    {
+     "id": "ri-10",
+     "type": "fill",
+     "it": "Come ___? — Mi chiamo Anna.",
+     "hint": "chiamarsi (tu)",
+     "answers": [
+      "ti chiami"
+     ],
+     "why": {
+      "ru": "ti + chiami.",
+      "uk": "ti + chiami.",
+      "en": "ti + chiami."
+     }
+    }
+   ]
+  },
+  {
+   "topic": "g5-reciproci",
+   "items": [
+    {
+     "id": "rc-01",
+     "type": "fill",
+     "it": "Io e Anna ___ a Lugano.",
+     "hint": "conoscersi (pass. pr.)",
+     "answers": [
+      "ci siamo conosciuti"
+     ],
+     "why": {
+      "ru": "Смешанная пара — -i: ci siamo conosciuti.",
+      "uk": "Змішана пара — -i: ci siamo conosciuti.",
+      "en": "Mixed pair — -i: ci siamo conosciuti."
+     }
+    },
+    {
+     "id": "rc-02",
+     "type": "fill",
+     "it": "Marco e Lucia ___ nel 2010.",
+     "hint": "sposarsi (pass. pr.)",
+     "answers": [
+      "si sono sposati"
+     ],
+     "why": {
+      "ru": "si + essere + -i.",
+      "uk": "si + essere + -i.",
+      "en": "si + essere + -i."
+     }
+    },
+    {
+     "id": "rc-03",
+     "type": "choice",
+     "it": "Noi ___ ogni giorno.",
+     "options": [
+      "ci scriviamo",
+      "si scriviamo",
+      "ci scrivono"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "noi — ci + -iamo.",
+      "uk": "noi — ci + -iamo.",
+      "en": "noi — ci + -iamo."
+     }
+    },
+    {
+     "id": "rc-04",
+     "type": "choice",
+     "it": "Lucia e Sara ___ ieri.",
+     "options": [
+      "si sono viste",
+      "si sono visti",
+      "hanno visto"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Две женщины — -e.",
+      "uk": "Дві жінки — -e.",
+      "en": "Two women — -e."
+     }
+    },
+    {
+     "id": "rc-05",
+     "type": "choice",
+     "it": "Ho conosciuto Anna. = Io e Anna ___.",
+     "options": [
+      "ci siamo conosciuti",
+      "abbiamo conosciuti",
+      "ci abbiamo conosciuto"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Друг друга — essere.",
+      "uk": "Одне одного — essere.",
+      "en": "Each other — essere."
+     }
+    },
+    {
+     "id": "rc-06",
+     "type": "choice",
+     "it": "Mi sono innamorato ___ lei.",
+     "options": [
+      "di",
+      "in",
+      "con"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "innamorarsi di.",
+      "uk": "innamorarsi di.",
+      "en": "innamorarsi di."
+     }
+    },
+    {
+     "id": "rc-07",
+     "type": "fill",
+     "it": "Voi ___ spesso?",
+     "hint": "vedersi",
+     "answers": [
+      "vi vedete"
+     ],
+     "why": {
+      "ru": "vi + vedete.",
+      "uk": "vi + vedete.",
+      "en": "vi + vedete."
+     }
+    },
+    {
+     "id": "rc-08",
+     "type": "choice",
+     "it": "Loro ___ ogni sera.",
+     "options": [
+      "si telefonano",
+      "ci telefonano",
+      "si telefoniamo"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "loro — si + -ano.",
+      "uk": "loro — si + -ano.",
+      "en": "loro — si + -ano."
+     }
+    },
+    {
+     "id": "rc-09",
+     "type": "choice",
+     "it": "Dopo cinque anni ___.",
+     "options": [
+      "hanno divorziato",
+      "si sono divorziati",
+      "sono divorziati"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "divorziare — avere.",
+      "uk": "divorziare — avere.",
+      "en": "divorziare takes avere."
+     }
+    },
+    {
+     "id": "rc-10",
+     "type": "fill",
+     "it": "Ci ___ alla stazione.",
+     "hint": "salutarsi (pass. pr.)",
+     "answers": [
+      "siamo salutati",
+      "siamo salutate"
+     ],
+     "why": {
+      "ru": "essere + -i/-e.",
+      "uk": "essere + -i/-e.",
+      "en": "essere + -i/-e."
+     }
+    }
+   ]
+  },
+  {
+   "topic": "g5-avverbi-passato",
+   "items": [
+    {
+     "id": "av-01",
+     "type": "choice",
+     "it": "Hai mangiato? — Sì, ho ___ mangiato.",
+     "options": [
+      "già",
+      "ancora",
+      "mai"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "«уже» — già.",
+      "uk": "«вже» — già.",
+      "en": "“already” — già."
+     }
+    },
+    {
+     "id": "av-02",
+     "type": "choice",
+     "it": "Hai finito? — No, non ho ___ finito.",
+     "options": [
+      "ancora",
+      "già",
+      "più"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "«ещё не» — non… ancora.",
+      "uk": "«ще не» — non… ancora.",
+      "en": "“not yet” — non… ancora."
+     }
+    },
+    {
+     "id": "av-03",
+     "type": "choice",
+     "it": "Sei ___ stato a Roma?",
+     "options": [
+      "mai",
+      "già mai",
+      "ancora"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "«когда-нибудь» — mai.",
+      "uk": "«колись» — mai.",
+      "en": "“ever” — mai."
+     }
+    },
+    {
+     "id": "av-04",
+     "type": "choice",
+     "it": "No, non sono ___ stato a Roma.",
+     "options": [
+      "mai",
+      "già",
+      "appena"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "«никогда» — non… mai.",
+      "uk": "«ніколи» — non… mai.",
+      "en": "“never” — non… mai."
+     }
+    },
+    {
+     "id": "av-05",
+     "type": "choice",
+     "it": "Sono ___ arrivato, scusa!",
+     "options": [
+      "appena",
+      "mai",
+      "più"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "«только что» — appena.",
+      "uk": "«щойно» — appena.",
+      "en": "“just” — appena."
+     }
+    },
+    {
+     "id": "av-06",
+     "type": "choice",
+     "it": "Non abito ___ a Kiev.",
+     "options": [
+      "più",
+      "ancora",
+      "già"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "«больше не» — non… più.",
+      "uk": "«більше не» — non… più.",
+      "en": "“no longer” — non… più."
+     }
+    },
+    {
+     "id": "av-07",
+     "type": "choice",
+     "it": "Porta ___ gli occhiali.",
+     "options": [
+      "ancora",
+      "più",
+      "mai"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "«всё ещё» — ancora.",
+      "uk": "«досі» — ancora.",
+      "en": "“still” — ancora."
+     }
+    },
+    {
+     "id": "av-08",
+     "type": "choice",
+     "it": "Ho ___ visto questo film.",
+     "options": [
+      "già",
+      "già non",
+      "non già"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "già стоит между ho и причастием.",
+      "uk": "già стоїть між ho і дієприкметником.",
+      "en": "già goes between ho and the participle."
+     }
+    },
+    {
+     "id": "av-09",
+     "type": "choice",
+     "it": "___ mai visto la neve?",
+     "options": [
+      "Hai",
+      "Sei",
+      "Ha"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "vedere — avere: hai.",
+      "uk": "vedere — avere: hai.",
+      "en": "vedere takes avere: hai."
+     }
+    },
+    {
+     "id": "av-10",
+     "type": "choice",
+     "it": "___ mai andato in Sicilia?",
+     "options": [
+      "Sei",
+      "Hai",
+      "È"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "andare — essere: sei.",
+      "uk": "andare — essere: sei.",
+      "en": "andare takes essere: sei."
+     }
+    }
+   ]
+  },
+  {
+   "topic": "g4-tempo-da-per-fa",
+   "items": [
+    {
+     "id": "tf-01",
+     "type": "choice",
+     "it": "Abito qui ___ cinque anni.",
+     "options": [
+      "da",
+      "per",
+      "fa"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "И сейчас — da + presente.",
+      "uk": "І зараз — da + presente.",
+      "en": "Still now — da + present."
+     }
+    },
+    {
+     "id": "tf-02",
+     "type": "choice",
+     "it": "Ho lavorato lì ___ due anni.",
+     "options": [
+      "per",
+      "da",
+      "fa"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Закончилось, сколько — per.",
+      "uk": "Закінчилося, скільки — per.",
+      "en": "Finished, how long — per."
+     }
+    },
+    {
+     "id": "tf-03",
+     "type": "choice",
+     "it": "Sono arrivato tre anni ___.",
+     "options": [
+      "fa",
+      "da",
+      "per"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "«назад» — fa, после срока.",
+      "uk": "«тому» — fa, після терміну.",
+      "en": "“ago” — fa, after the time."
+     }
+    },
+    {
+     "id": "tf-04",
+     "type": "choice",
+     "it": "Mi sono sposato ___ 2010.",
+     "options": [
+      "nel",
+      "in",
+      "al"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Год — nel.",
+      "uk": "Рік — nel.",
+      "en": "Year — nel."
+     }
+    },
+    {
+     "id": "tf-05",
+     "type": "choice",
+     "it": "___ 18 anni ho cominciato a lavorare.",
+     "options": [
+      "A",
+      "Ai",
+      "Nel"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Возраст — a, без артикля.",
+      "uk": "Вік — a, без артикля.",
+      "en": "Age — a, no article."
+     }
+    },
+    {
+     "id": "tf-06",
+     "type": "choice",
+     "it": "Sono in Ticino ___ 2022.",
+     "options": [
+      "dal",
+      "da",
+      "nel"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "С момента — dal.",
+      "uk": "З моменту — dal.",
+      "en": "Since a date — dal."
+     }
+    },
+    {
+     "id": "tf-07",
+     "type": "choice",
+     "it": "Il corso dura ___ settembre a giugno.",
+     "options": [
+      "da",
+      "dal",
+      "per"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Месяцы — без артикля: da… a.",
+      "uk": "Місяці — без артикля: da… a.",
+      "en": "Months, no article: da… a."
+     }
+    },
+    {
+     "id": "tf-08",
+     "type": "choice",
+     "it": "Lavoro ___ nove alle cinque.",
+     "options": [
+      "dalle",
+      "da",
+      "dal"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Часы — с артиклем: dalle… alle.",
+      "uk": "Години — з артиклем: dalle… alle.",
+      "en": "Times take the article: dalle… alle."
+     }
+    },
+    {
+     "id": "tf-09",
+     "type": "fill",
+     "it": "Studio l'italiano ___ un anno.",
+     "hint": "da / per / fa",
+     "answers": [
+      "da"
+     ],
+     "why": {
+      "ru": "Продолжается — da.",
+      "uk": "Триває — da.",
+      "en": "Ongoing — da."
+     }
+    },
+    {
+     "id": "tf-10",
+     "type": "choice",
+     "it": "___ un mese ho l'esame.",
+     "options": [
+      "Tra",
+      "Fa",
+      "Da"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "«через» (будущее) — tra.",
+      "uk": "«через» (майбутнє) — tra.",
+      "en": "“in” (future) — tra."
+     }
+    }
+   ]
+  },
+  {
+   "topic": "g5-imperfetto",
+   "items": [
+    {
+     "id": "im-01",
+     "type": "fill",
+     "it": "Da bambino io ___ a calcio.",
+     "hint": "giocare",
+     "answers": [
+      "giocavo"
+     ],
+     "why": {
+      "ru": "Привычка — imperfetto: -vo.",
+      "uk": "Звичка — imperfetto: -vo.",
+      "en": "Habit — imperfetto: -vo."
+     }
+    },
+    {
+     "id": "im-02",
+     "type": "fill",
+     "it": "Quando ___ 15 anni, abitavo a Kiev.",
+     "hint": "avere (io)",
+     "answers": [
+      "avevo"
+     ],
+     "why": {
+      "ru": "Возраст в прошлом — imperfetto.",
+      "uk": "Вік у минулому — imperfetto.",
+      "en": "Age in the past — imperfetto."
+     }
+    },
+    {
+     "id": "im-03",
+     "type": "fill",
+     "it": "Ieri ___ freddo.",
+     "hint": "fare",
+     "answers": [
+      "faceva"
+     ],
+     "why": {
+      "ru": "Погода — imperfetto; fare → faceva.",
+      "uk": "Погода — imperfetto; fare → faceva.",
+      "en": "Weather — imperfetto; fare → faceva."
+     }
+    },
+    {
+     "id": "im-04",
+     "type": "fill",
+     "it": "Mia nonna ___ molto gentile.",
+     "hint": "essere",
+     "answers": [
+      "era"
+     ],
+     "why": {
+      "ru": "essere: era.",
+      "uk": "essere: era.",
+      "en": "essere: era."
+     }
+    },
+    {
+     "id": "im-05",
+     "type": "fill",
+     "it": "Noi ___ molta musica.",
+     "hint": "ascoltare",
+     "answers": [
+      "ascoltavamo"
+     ],
+     "why": {
+      "ru": "noi → -vamo.",
+      "uk": "noi → -vamo.",
+      "en": "noi → -vamo."
+     }
+    },
+    {
+     "id": "im-06",
+     "type": "fill",
+     "it": "Voi ___ sempre il tè?",
+     "hint": "bere",
+     "answers": [
+      "bevevate"
+     ],
+     "why": {
+      "ru": "bere → bev-: bevevate.",
+      "uk": "bere → bev-: bevevate.",
+      "en": "bere → bev-: bevevate."
+     }
+    },
+    {
+     "id": "im-07",
+     "type": "choice",
+     "it": "Loro ___ felici.",
+     "options": [
+      "erano",
+      "eravano",
+      "sono stati"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "essere: loro — erano.",
+      "uk": "essere: loro — erano.",
+      "en": "essere: loro — erano."
+     }
+    },
+    {
+     "id": "im-08",
+     "type": "choice",
+     "it": "___ molte persone alla festa.",
+     "options": [
+      "C'erano",
+      "C'era",
+      "Ci sono state"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Много — c'erano.",
+      "uk": "Багато — c'erano.",
+      "en": "Plural — c'erano."
+     }
+    },
+    {
+     "id": "im-09",
+     "type": "choice",
+     "it": "Da giovane lei ___ i capelli rossi.",
+     "options": [
+      "aveva",
+      "era",
+      "ha avuto"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Внешность в прошлом — imperfetto avere: aveva.",
+      "uk": "Зовнішність у минулому — imperfetto avere: aveva.",
+      "en": "Looks in the past — imperfetto of avere: aveva."
+     }
+    },
+    {
+     "id": "im-10",
+     "type": "fill",
+     "it": "Ogni mattina lui ___ alle sei.",
+     "hint": "alzarsi",
+     "answers": [
+      "si alzava"
+     ],
+     "why": {
+      "ru": "Возвратный: si + -va.",
+      "uk": "Зворотне: si + -va.",
+      "en": "Reflexive: si + -va."
+     }
+    }
+   ]
+  },
+  {
+   "topic": "g5-imperfetto-vs-passato",
+   "items": [
+    {
+     "id": "ip-01",
+     "type": "choice",
+     "it": "Mentre ___, è suonato il telefono.",
+     "options": [
+      "dormivo",
+      "ho dormito"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "После mentre — фон: imperfetto.",
+      "uk": "Після mentre — фон: imperfetto.",
+      "en": "After mentre — background: imperfetto."
+     }
+    },
+    {
+     "id": "ip-02",
+     "type": "choice",
+     "it": "Ieri ___ una torta.",
+     "options": [
+      "ho fatto",
+      "facevo"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Одно законченное действие — passato.",
+      "uk": "Одна завершена дія — passato.",
+      "en": "One finished action — passato."
+     }
+    },
+    {
+     "id": "ip-03",
+     "type": "choice",
+     "it": "Da bambino ___ a calcio ogni giorno.",
+     "options": [
+      "giocavo",
+      "ho giocato"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Повторялось — imperfetto.",
+      "uk": "Повторювалося — imperfetto.",
+      "en": "Repeated — imperfetto."
+     }
+    },
+    {
+     "id": "ip-04",
+     "type": "choice",
+     "it": "Ho lavorato lì ___ cinque anni.",
+     "options": [
+      "per",
+      "da"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Срок, закончилось — per + passato.",
+      "uk": "Термін, закінчилося — per + passato.",
+      "en": "Fixed period — per + passato."
+     }
+    },
+    {
+     "id": "ip-05",
+     "type": "choice",
+     "it": "___ bel tempo e c'era il sole.",
+     "options": [
+      "Faceva",
+      "Ha fatto"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Описание — imperfetto.",
+      "uk": "Опис — imperfetto.",
+      "en": "Description — imperfetto."
+     }
+    },
+    {
+     "id": "ip-06",
+     "type": "choice",
+     "it": "A un certo punto ___ una ragazza.",
+     "options": [
+      "ho visto",
+      "vedevo"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Событие — passato prossimo.",
+      "uk": "Подія — passato prossimo.",
+      "en": "Event — passato prossimo."
+     }
+    },
+    {
+     "id": "ip-07",
+     "type": "choice",
+     "it": "La ragazza ___ un vestito rosso.",
+     "options": [
+      "portava",
+      "ha portato"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Описание — imperfetto.",
+      "uk": "Опис — imperfetto.",
+      "en": "Description — imperfetto."
+     }
+    },
+    {
+     "id": "ip-08",
+     "type": "choice",
+     "it": "Sono andato a letto perché ___ stanco.",
+     "options": [
+      "ero",
+      "sono stato"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Причина-состояние — imperfetto.",
+      "uk": "Причина-стан — imperfetto.",
+      "en": "A state as the reason — imperfetto."
+     }
+    },
+    {
+     "id": "ip-09",
+     "type": "choice",
+     "it": "Quando vivevo a Roma, ___ Mario.",
+     "options": [
+      "ho conosciuto",
+      "conoscevo"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Познакомился — событие.",
+      "uk": "Познайомився — подія.",
+      "en": "Met — an event."
+     }
+    },
+    {
+     "id": "ip-10",
+     "type": "choice",
+     "it": "Di solito ___ a piedi, ma ieri ho preso il bus.",
+     "options": [
+      "andavo",
+      "sono andato"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "di solito — imperfetto.",
+      "uk": "di solito — imperfetto.",
+      "en": "di solito — imperfetto."
+     }
+    }
+   ]
+  },
+  {
+   "topic": "g2-descrizione-persona",
+   "items": [
+    {
+     "id": "de-01",
+     "type": "choice",
+     "it": "Mio padre ___ 60 anni.",
+     "options": [
+      "ha",
+      "è",
+      "fa"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Возраст — avere.",
+      "uk": "Вік — avere.",
+      "en": "Age — avere."
+     }
+    },
+    {
+     "id": "de-02",
+     "type": "choice",
+     "it": "Anna ___ gli occhi verdi.",
+     "options": [
+      "ha",
+      "è",
+      "porta"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Глаза — avere.",
+      "uk": "Очі — avere.",
+      "en": "Eyes — avere."
+     }
+    },
+    {
+     "id": "de-03",
+     "type": "choice",
+     "it": "Marco ___ gli occhiali.",
+     "options": [
+      "porta",
+      "ha",
+      "è"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Очки — portare.",
+      "uk": "Окуляри — portare.",
+      "en": "Glasses — portare."
+     }
+    },
+    {
+     "id": "de-04",
+     "type": "choice",
+     "it": "Mio nonno ___ calvo.",
+     "options": [
+      "è",
+      "ha",
+      "porta"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Лысый — essere.",
+      "uk": "Лисий — essere.",
+      "en": "Bald — essere."
+     }
+    },
+    {
+     "id": "de-05",
+     "type": "choice",
+     "it": "Lui ___ il meccanico.",
+     "options": [
+      "fa",
+      "ha",
+      "porta"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Профессия — fare + артикль.",
+      "uk": "Професія — fare + артикль.",
+      "en": "Job — fare + article."
+     }
+    },
+    {
+     "id": "de-06",
+     "type": "fill",
+     "it": "Maria è ___.",
+     "hint": "allegro",
+     "answers": [
+      "allegra"
+     ],
+     "why": {
+      "ru": "Maria — женский род: -a.",
+      "uk": "Maria — жіночий рід: -a.",
+      "en": "Maria is feminine: -a."
+     }
+    },
+    {
+     "id": "de-07",
+     "type": "fill",
+     "it": "I ragazzi sono ___.",
+     "hint": "triste",
+     "answers": [
+      "tristi"
+     ],
+     "why": {
+      "ru": "-e → -i во множественном.",
+      "uk": "-e → -i у множині.",
+      "en": "-e → -i in the plural."
+     }
+    },
+    {
+     "id": "de-08",
+     "type": "fill",
+     "it": "Ha i capelli ___.",
+     "hint": "lungo",
+     "answers": [
+      "lunghi"
+     ],
+     "why": {
+      "ru": "-go → -ghi.",
+      "uk": "-go → -ghi.",
+      "en": "-go → -ghi."
+     }
+    },
+    {
+     "id": "de-09",
+     "type": "choice",
+     "it": "Ha gli occhi ___.",
+     "options": [
+      "blu",
+      "blui",
+      "bli"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "blu не меняется.",
+      "uk": "blu не змінюється.",
+      "en": "blu doesn't change."
+     }
+    },
+    {
+     "id": "de-10",
+     "type": "choice",
+     "it": "È una ragazza ___.",
+     "options": [
+      "timida",
+      "timido",
+      "timide"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "ragazza — ж.р. ед.ч.: timida.",
+      "uk": "ragazza — ж.р. одн.: timida.",
+      "en": "ragazza — fem. sing.: timida."
+     }
+    }
+   ]
   }
  ]
 }
