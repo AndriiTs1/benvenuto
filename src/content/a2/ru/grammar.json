@@ -2687,7 +2687,7 @@
   },
   {
    "id": "e036",
-   "topic": "g2-descrizione-persona",
+   "topic": "vocab-famiglia",
    "task": "Кто это? 1) Il padre di mia moglie è mio ___. 2) Il marito di mia figlia è mio ___. 3) La moglie di mio figlio è mia ___. 4) La sorella di mio marito è mia ___. 5) I genitori di mio marito sono i miei ___. Добавь артикль, где нужен: 6) ___ mio genero 7) ___ miei cognati.",
    "answer": "1) suocero 2) genero 3) nuora 4) cognata 5) suoceri 6) — (mio genero) 7) i (i miei cognati)",
    "lesson": "L09"

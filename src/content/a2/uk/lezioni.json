@@ -5195,16 +5195,6 @@
        "tr": "Він дуже вихований хлопець."
       }
      ]
-    },
-    {
-     "title": "Родичі",
-     "text": "Однина — без артикля: {{mio suocero}}; множина — з артиклем: {{i miei suoceri}}.",
-     "examples": [
-      {
-       "it": "Mio suocero è alto. I miei suoceri sono simpatici.",
-       "tr": "Мій тесть високий. Мої тесть і теща приємні."
-      }
-     ]
     }
    ],
    "mistakes": [
