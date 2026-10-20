@@ -2436,6 +2436,87 @@
     "mettersi insieme — причастие messo: si sono messi insieme."
    ],
    "lesson": "L24"
+  },
+  {
+   "id": "g5-meteo",
+   "group": 5,
+   "title": "Che tempo fa? — погода в трёх временах",
+   "rule": "Погодные глаголы без подлежащего, 3-е л. ед. ч.: piove / pioverà / pioveva; nevica / nevicherà / nevicava; fa caldo / farà / faceva; c'è il sole / ci sarà / c'era.",
+   "table": [
+    [
+     "oggi",
+     "domani",
+     "ieri"
+    ],
+    [
+     "piove",
+     "pioverà",
+     "pioveva"
+    ],
+    [
+     "nevica",
+     "nevicherà",
+     "nevicava"
+    ],
+    [
+     "fa freddo",
+     "farà freddo",
+     "faceva freddo"
+    ],
+    [
+     "c'è il sole",
+     "ci sarà il sole",
+     "c'era il sole"
+    ]
+   ],
+   "examples": [
+    "Oggi piove, ma domani ci sarà il sole.",
+    "Ieri nevicava."
+   ],
+   "mistakes": [
+    "nevicare → nevicherà (+ h).",
+    "Погода — fare (fa freddo); человеку — avere (ho freddo)."
+   ],
+   "lesson": "L15",
+   "source": "доска преподавателя, 20.10.2026"
+  },
+  {
+   "id": "g5-esserci",
+   "group": 5,
+   "title": "Esserci: c'è / ci sono в трёх временах",
+   "rule": "essere + ci = «есть, имеется». Один — c'è / c'era / ci sarà; много — ci sono / c'erano / ci saranno. È — описание, c'è — существование. essere malato ≠ stare male.",
+   "table": [
+    [
+     "",
+     "uno",
+     "molti"
+    ],
+    [
+     "presente",
+     "c'è",
+     "ci sono"
+    ],
+    [
+     "imperfetto",
+     "c'era",
+     "c'erano"
+    ],
+    [
+     "futuro",
+     "ci sarà",
+     "ci saranno"
+    ]
+   ],
+   "examples": [
+    "Ci sono molti turisti.",
+    "Ieri Larysa era malata / stava male."
+   ],
+   "mistakes": [
+    "C'è molti → ci sono molti.",
+    "sono male → sto male; sta malata → è malata."
+   ],
+   "lesson": "L15",
+   "source": "доска преподавателя, 20.10.2026"
   }
  ],
  "exercises": [

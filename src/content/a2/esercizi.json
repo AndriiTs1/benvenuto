@@ -3566,6 +3566,702 @@
      }
     }
    ]
+  },
+  {
+   "topic": "g5-meteo",
+   "items": [
+    {
+     "id": "me-01",
+     "type": "fill",
+     "it": "Oggi ___: prendi l'ombrello!",
+     "hint": "piovere",
+     "answers": [
+      "piove"
+     ],
+     "why": {
+      "ru": "Сегодня — presente: piove.",
+      "uk": "Сьогодні — presente: piove.",
+      "en": "Today — presente: piove."
+     }
+    },
+    {
+     "id": "me-02",
+     "type": "fill",
+     "it": "Domani ___ in montagna.",
+     "hint": "nevicare",
+     "answers": [
+      "nevicherà"
+     ],
+     "why": {
+      "ru": "Завтра — futuro; -care + h: nevicherà.",
+      "uk": "Завтра — futuro; -care + h: nevicherà.",
+      "en": "Tomorrow — futuro; -care adds h: nevicherà."
+     }
+    },
+    {
+     "id": "me-03",
+     "type": "fill",
+     "it": "Ieri ___ tutto il giorno.",
+     "hint": "piovere",
+     "answers": [
+      "pioveva",
+      "è piovuto",
+      "ha piovuto"
+     ],
+     "why": {
+      "ru": "Вчера, фон — imperfetto: pioveva.",
+      "uk": "Вчора, тло — imperfetto: pioveva.",
+      "en": "Yesterday, background — imperfetto: pioveva."
+     }
+    },
+    {
+     "id": "me-04",
+     "type": "fill",
+     "it": "Domani ___ caldo.",
+     "hint": "fare",
+     "answers": [
+      "farà"
+     ],
+     "why": {
+      "ru": "Погода — fare; завтра — farà.",
+      "uk": "Погода — fare; завтра — farà.",
+      "en": "Weather — fare; tomorrow — farà."
+     }
+    },
+    {
+     "id": "me-05",
+     "type": "fill",
+     "it": "Ieri ___ molto freddo.",
+     "hint": "fare",
+     "answers": [
+      "faceva"
+     ],
+     "why": {
+      "ru": "Вчера — imperfetto: faceva.",
+      "uk": "Вчора — imperfetto: faceva.",
+      "en": "Yesterday — imperfetto: faceva."
+     }
+    },
+    {
+     "id": "me-06",
+     "type": "fill",
+     "it": "Oggi ___ il sole.",
+     "hint": "esserci",
+     "answers": [
+      "c'è"
+     ],
+     "why": {
+      "ru": "Солнце — c'è.",
+      "uk": "Сонце — c'è.",
+      "en": "Sun — c'è."
+     }
+    },
+    {
+     "id": "me-07",
+     "type": "fill",
+     "it": "Domani ___ il sole.",
+     "hint": "esserci",
+     "answers": [
+      "ci sarà"
+     ],
+     "why": {
+      "ru": "Завтра — ci sarà.",
+      "uk": "Завтра — ci sarà.",
+      "en": "Tomorrow — ci sarà."
+     }
+    },
+    {
+     "id": "me-08",
+     "type": "fill",
+     "it": "Ieri ___ il sole.",
+     "hint": "esserci",
+     "answers": [
+      "c'era"
+     ],
+     "why": {
+      "ru": "Вчера — c'era.",
+      "uk": "Вчора — c'era.",
+      "en": "Yesterday — c'era."
+     }
+    },
+    {
+     "id": "me-09",
+     "type": "fill",
+     "it": "Da bambino d'inverno ___ sempre.",
+     "hint": "nevicare",
+     "answers": [
+      "nevicava"
+     ],
+     "why": {
+      "ru": "Привычка в прошлом — imperfetto.",
+      "uk": "Звичка в минулому — imperfetto.",
+      "en": "Past habit — imperfetto."
+     }
+    },
+    {
+     "id": "me-10",
+     "type": "fill",
+     "it": "Che tempo ___ domani?",
+     "hint": "fare",
+     "answers": [
+      "farà"
+     ],
+     "why": {
+      "ru": "Вопрос о завтра — farà.",
+      "uk": "Питання про завтра — farà.",
+      "en": "Asking about tomorrow — farà."
+     }
+    },
+    {
+     "id": "me-11",
+     "type": "fill",
+     "it": "Oggi ___ bel tempo.",
+     "hint": "fare",
+     "answers": [
+      "fa"
+     ],
+     "why": {
+      "ru": "Сегодня — fa.",
+      "uk": "Сьогодні — fa.",
+      "en": "Today — fa."
+     }
+    },
+    {
+     "id": "me-12",
+     "type": "fill",
+     "it": "Ieri sera ___ molto vento.",
+     "hint": "esserci",
+     "answers": [
+      "c'era"
+     ],
+     "why": {
+      "ru": "Ветер — c'è; вчера — c'era.",
+      "uk": "Вітер — c'è; вчора — c'era.",
+      "en": "Wind — c'è; yesterday — c'era."
+     }
+    },
+    {
+     "id": "me-13",
+     "type": "fill",
+     "it": "Oggi ___ in città.",
+     "hint": "nevicare",
+     "answers": [
+      "nevica"
+     ],
+     "why": {
+      "ru": "Сегодня — nevica.",
+      "uk": "Сьогодні — nevica.",
+      "en": "Today — nevica."
+     }
+    },
+    {
+     "id": "me-14",
+     "type": "fill",
+     "it": "Domani ___ molto.",
+     "hint": "piovere",
+     "answers": [
+      "pioverà"
+     ],
+     "why": {
+      "ru": "Завтра — pioverà.",
+      "uk": "Завтра — pioverà.",
+      "en": "Tomorrow — pioverà."
+     }
+    },
+    {
+     "id": "me-15",
+     "type": "choice",
+     "it": "Che tempo fa? — ___",
+     "options": [
+      "Piove.",
+      "Lui piove.",
+      "È pioggia."
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Без подлежащего: piove.",
+      "uk": "Без підмета: piove.",
+      "en": "No subject: piove."
+     }
+    },
+    {
+     "id": "me-16",
+     "type": "choice",
+     "it": "Io ___ freddo: chiudo la finestra.",
+     "options": [
+      "ho",
+      "sono",
+      "faccio"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Человеку холодно — avere.",
+      "uk": "Людині холодно — avere.",
+      "en": "A person is cold — avere."
+     }
+    },
+    {
+     "id": "me-17",
+     "type": "choice",
+     "it": "Oggi ___ freddo: metti la giacca!",
+     "options": [
+      "fa",
+      "è",
+      "ha"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Погода — fare.",
+      "uk": "Погода — fare.",
+      "en": "Weather — fare."
+     }
+    },
+    {
+     "id": "me-18",
+     "type": "choice",
+     "it": "___, quindi sono rimasto a casa.",
+     "options": [
+      "Pioveva",
+      "Piove",
+      "Pioverà"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Причина-фон в прошлом — imperfetto.",
+      "uk": "Причина-тло в минулому — imperfetto.",
+      "en": "Background cause in the past — imperfetto."
+     }
+    },
+    {
+     "id": "me-19",
+     "type": "choice",
+     "it": "Domani ___ un temporale.",
+     "options": [
+      "ci sarà",
+      "sarà",
+      "ci saranno"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Один temporale — ci sarà.",
+      "uk": "Одна гроза — ci sarà.",
+      "en": "One storm — ci sarà."
+     }
+    },
+    {
+     "id": "me-20",
+     "type": "choice",
+     "it": "Oggi il cielo ___ nuvoloso.",
+     "options": [
+      "è",
+      "c'è",
+      "fa"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Небо описывают через essere.",
+      "uk": "Небо описують через essere.",
+      "en": "The sky takes essere."
+     }
+    },
+    {
+     "id": "me-21",
+     "type": "choice",
+     "it": "Domani ___ ancora.",
+     "options": [
+      "nevicherà",
+      "nevicerà",
+      "nevicarà"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "-care + h: nevicherà.",
+      "uk": "-care + h: nevicherà.",
+      "en": "-care adds h: nevicherà."
+     }
+    },
+    {
+     "id": "me-22",
+     "type": "choice",
+     "it": "Ieri mattina ___ nebbia.",
+     "options": [
+      "c'era",
+      "era",
+      "faceva"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Туман — c'è; вчера — c'era.",
+      "uk": "Туман — c'è; вчора — c'era.",
+      "en": "Fog — c'è; yesterday — c'era."
+     }
+    }
+   ]
+  },
+  {
+   "topic": "g5-esserci",
+   "items": [
+    {
+     "id": "ec-01",
+     "type": "fill",
+     "it": "Nel frigo ___ il latte.",
+     "hint": "esserci (oggi)",
+     "answers": [
+      "c'è"
+     ],
+     "why": {
+      "ru": "Одно — c'è.",
+      "uk": "Одне — c'è.",
+      "en": "One thing — c'è."
+     }
+    },
+    {
+     "id": "ec-02",
+     "type": "fill",
+     "it": "Nel frigo ___ due bottiglie d'acqua.",
+     "hint": "esserci (oggi)",
+     "answers": [
+      "ci sono"
+     ],
+     "why": {
+      "ru": "Много — ci sono.",
+      "uk": "Багато — ci sono.",
+      "en": "Several — ci sono."
+     }
+    },
+    {
+     "id": "ec-03",
+     "type": "fill",
+     "it": "Alla festa ___ tante persone.",
+     "hint": "esserci (ieri)",
+     "answers": [
+      "c'erano"
+     ],
+     "why": {
+      "ru": "Вчера, много — c'erano.",
+      "uk": "Вчора, багато — c'erano.",
+      "en": "Yesterday, several — c'erano."
+     }
+    },
+    {
+     "id": "ec-04",
+     "type": "fill",
+     "it": "Quando ero piccolo, qui ___ un cinema.",
+     "hint": "esserci (prima)",
+     "answers": [
+      "c'era"
+     ],
+     "why": {
+      "ru": "Раньше, один — c'era.",
+      "uk": "Раніше, один — c'era.",
+      "en": "Before, one — c'era."
+     }
+    },
+    {
+     "id": "ec-05",
+     "type": "fill",
+     "it": "Domani ___ una festa.",
+     "hint": "esserci (domani)",
+     "answers": [
+      "ci sarà"
+     ],
+     "why": {
+      "ru": "Завтра, одно — ci sarà.",
+      "uk": "Завтра, одне — ci sarà.",
+      "en": "Tomorrow, one — ci sarà."
+     }
+    },
+    {
+     "id": "ec-06",
+     "type": "fill",
+     "it": "Alla riunione ___ anche i direttori.",
+     "hint": "esserci (domani)",
+     "answers": [
+      "ci saranno"
+     ],
+     "why": {
+      "ru": "Будущее, много — ci saranno.",
+      "uk": "Майбутнє, багато — ci saranno.",
+      "en": "Future, several — ci saranno."
+     }
+    },
+    {
+     "id": "ec-07",
+     "type": "fill",
+     "it": "Scusi, ___ una farmacia qui vicino?",
+     "hint": "esserci (oggi)",
+     "answers": [
+      "c'è"
+     ],
+     "why": {
+      "ru": "Одна аптека — c'è.",
+      "uk": "Одна аптека — c'è.",
+      "en": "One pharmacy — c'è."
+     }
+    },
+    {
+     "id": "ec-08",
+     "type": "fill",
+     "it": "In classe ___ quindici studenti.",
+     "hint": "esserci (oggi)",
+     "answers": [
+      "ci sono"
+     ],
+     "why": {
+      "ru": "Много — ci sono.",
+      "uk": "Багато — ci sono.",
+      "en": "Several — ci sono."
+     }
+    },
+    {
+     "id": "ec-09",
+     "type": "fill",
+     "it": "Non ___ problemi!",
+     "hint": "esserci (oggi)",
+     "answers": [
+      "ci sono"
+     ],
+     "why": {
+      "ru": "problemi — много: ci sono.",
+      "uk": "problemi — багато: ci sono.",
+      "en": "problemi is plural: ci sono."
+     }
+    },
+    {
+     "id": "ec-10",
+     "type": "fill",
+     "it": "Ieri sera in TV ___ un bel film.",
+     "hint": "esserci (ieri)",
+     "answers": [
+      "c'era"
+     ],
+     "why": {
+      "ru": "Вчера, один — c'era.",
+      "uk": "Вчора, один — c'era.",
+      "en": "Yesterday, one — c'era."
+     }
+    },
+    {
+     "id": "ec-11",
+     "type": "fill",
+     "it": "L'anno prossimo qui ___ un nuovo ospedale.",
+     "hint": "esserci (futuro)",
+     "answers": [
+      "ci sarà"
+     ],
+     "why": {
+      "ru": "Будущее, один — ci sarà.",
+      "uk": "Майбутнє, один — ci sarà.",
+      "en": "Future, one — ci sarà."
+     }
+    },
+    {
+     "id": "ec-12",
+     "type": "fill",
+     "it": "Prima in centro ___ molti negozi.",
+     "hint": "esserci (prima)",
+     "answers": [
+      "c'erano"
+     ],
+     "why": {
+      "ru": "Раньше, много — c'erano.",
+      "uk": "Раніше, багато — c'erano.",
+      "en": "Before, several — c'erano."
+     }
+    },
+    {
+     "id": "ec-13",
+     "type": "choice",
+     "it": "___ molti turisti a Lugano in estate.",
+     "options": [
+      "Ci sono",
+      "C'è",
+      "Sono"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Много — ci sono.",
+      "uk": "Багато — ci sono.",
+      "en": "Several — ci sono."
+     }
+    },
+    {
+     "id": "ec-14",
+     "type": "choice",
+     "it": "Il museo ___ chiuso il lunedì.",
+     "options": [
+      "è",
+      "c'è",
+      "ci sono"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Описание — è, без ci.",
+      "uk": "Опис — è, без ci.",
+      "en": "Description — è, no ci."
+     }
+    },
+    {
+     "id": "ec-15",
+     "type": "choice",
+     "it": "___ un museo in centro?",
+     "options": [
+      "C'è",
+      "È",
+      "Ci sono"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Существует ли — c'è.",
+      "uk": "Чи існує — c'è.",
+      "en": "Does it exist — c'è."
+     }
+    },
+    {
+     "id": "ec-16",
+     "type": "choice",
+     "it": "C'è Marco? — No, non ___.",
+     "options": [
+      "c'è",
+      "è",
+      "ci sono"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Отвечаем тем же: non c'è.",
+      "uk": "Відповідаємо тим самим: non c'è.",
+      "en": "Answer the same way: non c'è."
+     }
+    },
+    {
+     "id": "ec-17",
+     "type": "choice",
+     "it": "Sabato ___ i miei genitori.",
+     "options": [
+      "ci saranno",
+      "ci sarà",
+      "saranno"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Много — ci saranno.",
+      "uk": "Багато — ci saranno.",
+      "en": "Several — ci saranno."
+     }
+    },
+    {
+     "id": "ec-18",
+     "type": "choice",
+     "it": "Larysa non viene: ___ male.",
+     "options": [
+      "sta",
+      "è",
+      "c'è"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "male — со stare.",
+      "uk": "male — зі stare.",
+      "en": "male goes with stare."
+     }
+    },
+    {
+     "id": "ec-19",
+     "type": "choice",
+     "it": "Larysa non viene: è ___.",
+     "options": [
+      "malata",
+      "male",
+      "malato"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "essere + malata (ж.р.).",
+      "uk": "essere + malata (ж.р.).",
+      "en": "essere + malata (fem.)."
+     }
+    },
+    {
+     "id": "ec-20",
+     "type": "choice",
+     "it": "Ieri Larysa ___ malata.",
+     "options": [
+      "era",
+      "stava",
+      "c'era"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "malato — с essere; вчера — era.",
+      "uk": "malato — з essere; вчора — era.",
+      "en": "malato takes essere; yesterday — era."
+     }
+    },
+    {
+     "id": "ec-21",
+     "type": "choice",
+     "it": "Ieri Larysa ___ male.",
+     "options": [
+      "stava",
+      "era",
+      "aveva"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "male — со stare; вчера — stava.",
+      "uk": "male — зі stare; вчора — stava.",
+      "en": "male takes stare; yesterday — stava."
+     }
+    },
+    {
+     "id": "ec-22",
+     "type": "choice",
+     "it": "I bambini sono ___.",
+     "options": [
+      "malati",
+      "male",
+      "malato"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Много — malati.",
+      "uk": "Багато — malati.",
+      "en": "Plural — malati."
+     }
+    },
+    {
+     "id": "ec-23",
+     "type": "choice",
+     "it": "Come stai? — Sto ___, grazie!",
+     "options": [
+      "bene",
+      "buono",
+      "buona"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "stare + bene / male.",
+      "uk": "stare + bene / male.",
+      "en": "stare + bene / male."
+     }
+    },
+    {
+     "id": "ec-24",
+     "type": "choice",
+     "it": "Ieri ___ un incidente in autostrada.",
+     "options": [
+      "c'è stato",
+      "c'era stato",
+      "è stato"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Событие — c'è stato.",
+      "uk": "Подія — c'è stato.",
+      "en": "An event — c'è stato."
+     }
+    }
+   ]
   }
  ]
 }

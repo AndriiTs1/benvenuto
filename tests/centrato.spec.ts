@@ -14,6 +14,8 @@ const PAGINE = [
   "/a2/vocabolario/salute-e-corpo?tipo=nomi",
   "/a2/esercizi",
   "/a2/esercizi/il-presente-verbi-regolari",
+  "/a2/esercizi/che-tempo-fa",
+  "/a2/esercizi/c-e-ci-sono",
   "/a2/comunicare",
   ...Object.values(meta.units).map((u) => `/a2/grammatica/unita/${u.number}`),
   ...Object.values(meta.topics).map((t) => `/a2/grammatica/${t.slug}`),

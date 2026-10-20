@@ -5881,6 +5881,524 @@
      ]
     }
    ]
+  },
+  "g5-meteo": {
+   "id": "g5-meteo",
+   "inBreve": [
+    "Weather verbs have **no subject**: {{piove}} means “it's raining”.",
+    "Always **3rd person singular**: {{piove}}, {{pioverà}}, {{pioveva}}.",
+    "**Yesterday** takes the {{imperfetto}}: weather is background — {{ieri pioveva}}."
+   ],
+   "formation": {
+    "steps": [
+     "Pick the expression: {{piovere}}, {{fare caldo}}, {{c'è il sole}}.",
+     "Look at the time word: {{oggi}}, {{domani}}, {{ieri}}.",
+     "Use the “lui” form: {{piove}} · {{pioverà}} · {{pioveva}}."
+    ]
+   },
+   "tables": [
+    {
+     "title": "Oggi · domani · ieri",
+     "header": true,
+     "rows": [
+      [
+       "oggi",
+       "domani",
+       "ieri"
+      ],
+      [
+       "piove",
+       "piov|erà",
+       "piov|eva"
+      ],
+      [
+       "nevica",
+       "nevich|erà",
+       "nevic|ava"
+      ],
+      [
+       "fa caldo",
+       "farà caldo",
+       "faceva caldo"
+      ],
+      [
+       "fa freddo",
+       "farà freddo",
+       "faceva freddo"
+      ],
+      [
+       "fa bel tempo",
+       "farà bel tempo",
+       "faceva bel tempo"
+      ],
+      [
+       "c'è il sole",
+       "ci sarà il sole",
+       "c'era il sole"
+      ],
+      [
+       "c'è vento",
+       "ci sarà vento",
+       "c'era vento"
+      ]
+     ],
+     "note": "{{nevicare → nevicherà}}: add {{h}}, like {{cercherò}}."
+    },
+    {
+     "type": "pairs",
+     "title": "Che tempo fa?",
+     "sep": "",
+     "items": [
+      {
+       "a": "piove",
+       "tr": "it's raining"
+      },
+      {
+       "a": "nevica",
+       "tr": "it's snowing"
+      },
+      {
+       "a": "c'è il sole",
+       "tr": "it's sunny"
+      },
+      {
+       "a": "c'è vento",
+       "tr": "it's windy"
+      },
+      {
+       "a": "c'è nebbia",
+       "tr": "it's foggy"
+      },
+      {
+       "a": "c'è un temporale",
+       "tr": "there's a storm"
+      },
+      {
+       "a": "è nuvoloso",
+       "tr": "it's cloudy"
+      },
+      {
+       "a": "è sereno",
+       "tr": "the sky is clear"
+      },
+      {
+       "a": "fa caldo",
+       "tr": "it's hot"
+      },
+      {
+       "a": "fa freddo",
+       "tr": "it's cold"
+      },
+      {
+       "a": "fa bel tempo",
+       "tr": "the weather is nice"
+      },
+      {
+       "a": "fa brutto tempo",
+       "tr": "the weather is bad"
+      }
+     ],
+     "note": "Three ways: a verb ({{piove}}), {{fare}} + word ({{fa caldo}}), {{c'è}} + noun ({{c'è vento}})."
+    },
+    {
+     "type": "pairs",
+     "title": "Weather or person?",
+     "sep": "↔",
+     "items": [
+      {
+       "a": "fa freddo",
+       "b": "ho freddo",
+       "tr": "it's cold ↔ I'm cold"
+      },
+      {
+       "a": "fa caldo",
+       "b": "ho caldo",
+       "tr": "it's hot ↔ I'm hot"
+      }
+     ],
+     "note": "Weather — {{fare}}; a person — {{avere}}."
+    }
+   ],
+   "uses": [
+    {
+     "text": "Question",
+     "it": "Che tempo fa oggi?",
+     "tr": "What's the weather like today?"
+    },
+    {
+     "text": "Forecast",
+     "it": "Domani pioverà al nord.",
+     "tr": "Tomorrow it will rain in the north."
+    },
+    {
+     "text": "Background in the past",
+     "it": "Ieri faceva freddo e nevicava.",
+     "tr": "Yesterday it was cold and snowing."
+    },
+    {
+     "text": "Reason",
+     "it": "Pioveva, quindi sono rimasto a casa.",
+     "tr": "It was raining, so I stayed home."
+    },
+    {
+     "text": "Past habit",
+     "it": "Da bambino d'inverno nevicava sempre.",
+     "tr": "When I was a child it always snowed in winter."
+    }
+   ],
+   "exceptions": [
+    {
+     "title": "Passato prossimo",
+     "text": "A finished event: {{è piovuto}} or {{ha piovuto}} — both are correct.",
+     "examples": [
+      {
+       "it": "Stanotte è piovuto molto.",
+       "tr": "It rained a lot last night."
+      }
+     ]
+    },
+    {
+     "title": "The sky",
+     "text": "The sky is described with {{essere}}: {{è nuvoloso}}, {{è sereno}}.",
+     "examples": [
+      {
+       "it": "Oggi il cielo è sereno.",
+       "tr": "The sky is clear today."
+      }
+     ]
+    },
+    {
+     "title": "Present for tomorrow",
+     "text": "In speech {{domani piove}} is fine too; {{pioverà}} sounds like a forecast.",
+     "examples": [
+      {
+       "it": "Domani piove, restiamo a casa.",
+       "tr": "It's raining tomorrow, let's stay home."
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "Lui piove.",
+     "right": "Piove.",
+     "why": "No subject."
+    },
+    {
+     "wrong": "Domani nevicerà.",
+     "right": "Domani nevicherà.",
+     "why": "-care adds h."
+    },
+    {
+     "wrong": "Ieri è freddo.",
+     "right": "Ieri faceva freddo.",
+     "why": "Weather uses fare; yesterday — imperfetto."
+    },
+    {
+     "wrong": "Oggi è sole.",
+     "right": "Oggi c'è il sole.",
+     "why": "Sun takes c'è."
+    },
+    {
+     "wrong": "Domani sarà il sole.",
+     "right": "Domani ci sarà il sole.",
+     "why": "Don't forget ci."
+    },
+    {
+     "wrong": "Sono freddo.",
+     "right": "Ho freddo.",
+     "why": "A person feels cold — avere."
+    }
+   ],
+   "examples": [
+    {
+     "it": "Oggi piove, ma domani ci sarà il sole.",
+     "tr": "It's raining today, but tomorrow it'll be sunny."
+    },
+    {
+     "it": "Ieri nevicava e faceva molto freddo.",
+     "tr": "Yesterday it was snowing and very cold."
+    },
+    {
+     "it": "In estate in Ticino fa caldo.",
+     "tr": "In summer it's hot in Ticino."
+    },
+    {
+     "it": "Che tempo farà sabato?",
+     "tr": "What will the weather be like on Saturday?"
+    },
+    {
+     "it": "C'è vento: chiudi la finestra!",
+     "tr": "It's windy: close the window!"
+    },
+    {
+     "it": "Faceva bel tempo, quindi siamo andati al lago.",
+     "tr": "The weather was nice, so we went to the lake."
+    }
+   ],
+   "summary": "**Oggi** piove · **domani** pioverà · **ieri** pioveva. Weather: a verb, **fare** + word, or **c'è** + noun.",
+   "keyWords": [
+    {
+     "title": "Il tempo",
+     "ids": [
+      "w230",
+      "w631",
+      "w632",
+      "w633",
+      "w634",
+      "w635",
+      "w636",
+      "w637",
+      "w638",
+      "w639",
+      "w640"
+     ]
+    }
+   ]
+  },
+  "g5-esserci": {
+   "id": "g5-esserci",
+   "inBreve": [
+    "{{Esserci}} = {{essere}} + {{ci}}: “**there is / there are**”.",
+    "The form depends on **what there is**: one — {{c'è}}, several — {{ci sono}}.",
+    "Three tenses: {{c'è}} → {{c'era}} → {{ci sarà}}."
+   ],
+   "formation": {
+    "steps": [
+     "Find **what** there is: {{un bar}} (one) or {{due bar}} (several).",
+     "Choose the tense: {{oggi}}, {{ieri}}, {{domani}}.",
+     "Take the form from the table: {{c'era}} / {{c'erano}}…"
+    ]
+   },
+   "tables": [
+    {
+     "title": "Tre tempi",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "uno",
+       "molti"
+      ],
+      [
+       "presente",
+       "c'è",
+       "ci sono"
+      ],
+      [
+       "imperfetto",
+       "c'era",
+       "c'erano"
+      ],
+      [
+       "futuro",
+       "ci sarà",
+       "ci saranno"
+      ]
+     ],
+     "note": "Before {{e}} — {{c'}}: {{c'è}}, {{c'era}}. Before {{s}} — {{ci}}: {{ci sono}}, {{ci sarà}}."
+    },
+    {
+     "type": "pairs",
+     "title": "Esempi",
+     "sep": "",
+     "items": [
+      {
+       "a": "C'è un bar qui vicino.",
+       "tr": "There's a bar nearby."
+      },
+      {
+       "a": "Ci sono molti turisti.",
+       "tr": "There are many tourists."
+      },
+      {
+       "a": "Ieri c'era il sole.",
+       "tr": "Yesterday it was sunny."
+      },
+      {
+       "a": "Alla festa c'erano tante persone.",
+       "tr": "There were lots of people at the party."
+      },
+      {
+       "a": "Domani ci sarà una festa.",
+       "tr": "There will be a party tomorrow."
+      },
+      {
+       "a": "Ci saranno anche i bambini.",
+       "tr": "The children will be there too."
+      }
+     ],
+     "note": "Look at the word **after** it: {{un bar}} → {{c'è}}, {{molti turisti}} → {{ci sono}}."
+    },
+    {
+     "type": "pairs",
+     "title": "È, c'è or sta?",
+     "sep": "",
+     "items": [
+      {
+       "a": "Il bar è chiuso.",
+       "tr": "è describes: the bar is closed"
+      },
+      {
+       "a": "C'è un bar?",
+       "tr": "c'è — does it exist: is there a bar?"
+      },
+      {
+       "a": "Larysa è malata.",
+       "tr": "essere malato — to be ill"
+      },
+      {
+       "a": "Larysa sta male.",
+       "tr": "stare male — to feel unwell"
+      }
+     ],
+     "note": "{{malato}} changes: {{malata}}, {{malati}}. {{male}} never does."
+    },
+    {
+     "type": "pairs",
+     "title": "Yesterday: imperfetto",
+     "sep": "↔",
+     "items": [
+      {
+       "a": "Ieri era malata.",
+       "b": "Ieri stava male.",
+       "tr": "She was ill yesterday ↔ She felt unwell yesterday"
+      }
+     ],
+     "note": "A past state — {{imperfetto}}: {{era}}, {{stava}}."
+    }
+   ],
+   "uses": [
+    {
+     "text": "What is in a place",
+     "it": "Nel mio quartiere c'è una farmacia.",
+     "tr": "There's a pharmacy in my neighbourhood."
+    },
+    {
+     "text": "Question",
+     "it": "Scusi, c'è un bagno?",
+     "tr": "Excuse me, is there a toilet?"
+    },
+    {
+     "text": "Who is there",
+     "it": "C'è Marco? — No, non c'è.",
+     "tr": "Is Marco there? — No, he isn't."
+    },
+    {
+     "text": "How it used to be",
+     "it": "Prima qui c'era un cinema.",
+     "tr": "There used to be a cinema here."
+    },
+    {
+     "text": "Plans",
+     "it": "Sabato ci sarà una festa.",
+     "tr": "There will be a party on Saturday."
+    }
+   ],
+   "exceptions": [
+    {
+     "title": "Negation",
+     "text": "{{non}} goes before {{ci}}: {{non c'è}}, {{non ci sono}}.",
+     "examples": [
+      {
+       "it": "Non c'è latte in frigo.",
+       "tr": "There's no milk in the fridge."
+      }
+     ]
+    },
+    {
+     "title": "Passato prossimo",
+     "text": "An event: {{c'è stato}}, {{ci sono stati}}.",
+     "examples": [
+      {
+       "it": "Ieri c'è stato un incidente.",
+       "tr": "There was an accident yesterday."
+      }
+     ]
+    },
+    {
+     "title": "Ci sei?",
+     "text": "About a person: “will you be there / are you there?” — {{ci sei?}}",
+     "examples": [
+      {
+       "it": "Ci sei stasera? — Sì, ci sono.",
+       "tr": "Will you be there tonight? — Yes, I will."
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "C'è molti turisti.",
+     "right": "Ci sono molti turisti.",
+     "why": "Several — ci sono."
+    },
+    {
+     "wrong": "Ieri c'era tante persone.",
+     "right": "Ieri c'erano tante persone.",
+     "why": "Several — c'erano."
+    },
+    {
+     "wrong": "Domani sarà una festa.",
+     "right": "Domani ci sarà una festa.",
+     "why": "Don't forget ci."
+    },
+    {
+     "wrong": "Ci è un problema.",
+     "right": "C'è un problema.",
+     "why": "ci + è = c'è."
+    },
+    {
+     "wrong": "C'è chiuso il bar.",
+     "right": "Il bar è chiuso.",
+     "why": "Description — è, no ci."
+    },
+    {
+     "wrong": "Larysa è male.",
+     "right": "Larysa sta male.",
+     "why": "male goes with stare."
+    },
+    {
+     "wrong": "Larysa sta malata.",
+     "right": "Larysa è malata.",
+     "why": "malato goes with essere."
+    }
+   ],
+   "examples": [
+    {
+     "it": "In classe ci sono quindici studenti.",
+     "tr": "There are fifteen students in the class."
+    },
+    {
+     "it": "Scusi, c'è una farmacia qui vicino?",
+     "tr": "Excuse me, is there a pharmacy nearby?"
+    },
+    {
+     "it": "Quando ero piccolo, qui c'era un parco.",
+     "tr": "When I was little, there was a park here."
+    },
+    {
+     "it": "Alla riunione ci saranno anche i direttori.",
+     "tr": "The directors will be at the meeting too."
+    },
+    {
+     "it": "Non ci sono problemi!",
+     "tr": "No problem!"
+    },
+    {
+     "it": "Oggi non vengo: sto male.",
+     "tr": "I'm not coming today: I feel unwell."
+    }
+   ],
+   "summary": "**c'è / ci sono** → **c'era / c'erano** → **ci sarà / ci saranno**. One — c'è, several — ci sono. **È** describes, **c'è** means “there is”.",
+   "keyWords": [
+    {
+     "title": "Esserci",
+     "ids": [
+      "w641"
+     ]
+    }
+   ]
   }
  }
 }

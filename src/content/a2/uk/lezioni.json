@@ -5881,6 +5881,524 @@
      ]
     }
    ]
+  },
+  "g5-meteo": {
+   "id": "g5-meteo",
+   "inBreve": [
+    "Погодні дієслова — **без підмета**: {{piove}} — «йде дощ», без «він».",
+    "Завжди **3-тя особа однини**: {{piove}}, {{pioverà}}, {{pioveva}}.",
+    "**Вчора** — {{imperfetto}}, бо погода — це тло: {{ieri pioveva}}."
+   ],
+   "formation": {
+    "steps": [
+     "Обери вираз: {{piovere}}, {{fare caldo}}, {{c'è il sole}}.",
+     "Подивись на слово часу: {{oggi}}, {{domani}}, {{ieri}}.",
+     "Постав форму «він»: {{piove}} · {{pioverà}} · {{pioveva}}."
+    ]
+   },
+   "tables": [
+    {
+     "title": "Oggi · domani · ieri",
+     "header": true,
+     "rows": [
+      [
+       "oggi",
+       "domani",
+       "ieri"
+      ],
+      [
+       "piove",
+       "piov|erà",
+       "piov|eva"
+      ],
+      [
+       "nevica",
+       "nevich|erà",
+       "nevic|ava"
+      ],
+      [
+       "fa caldo",
+       "farà caldo",
+       "faceva caldo"
+      ],
+      [
+       "fa freddo",
+       "farà freddo",
+       "faceva freddo"
+      ],
+      [
+       "fa bel tempo",
+       "farà bel tempo",
+       "faceva bel tempo"
+      ],
+      [
+       "c'è il sole",
+       "ci sarà il sole",
+       "c'era il sole"
+      ],
+      [
+       "c'è vento",
+       "ci sarà vento",
+       "c'era vento"
+      ]
+     ],
+     "note": "{{nevicare → nevicherà}}: + {{h}}, як {{cercherò}}."
+    },
+    {
+     "type": "pairs",
+     "title": "Che tempo fa?",
+     "sep": "",
+     "items": [
+      {
+       "a": "piove",
+       "tr": "йде дощ"
+      },
+      {
+       "a": "nevica",
+       "tr": "йде сніг"
+      },
+      {
+       "a": "c'è il sole",
+       "tr": "сонячно"
+      },
+      {
+       "a": "c'è vento",
+       "tr": "вітряно"
+      },
+      {
+       "a": "c'è nebbia",
+       "tr": "туман"
+      },
+      {
+       "a": "c'è un temporale",
+       "tr": "гроза"
+      },
+      {
+       "a": "è nuvoloso",
+       "tr": "хмарно"
+      },
+      {
+       "a": "è sereno",
+       "tr": "ясно"
+      },
+      {
+       "a": "fa caldo",
+       "tr": "спекотно"
+      },
+      {
+       "a": "fa freddo",
+       "tr": "холодно"
+      },
+      {
+       "a": "fa bel tempo",
+       "tr": "гарна погода"
+      },
+      {
+       "a": "fa brutto tempo",
+       "tr": "погана погода"
+      }
+     ],
+     "note": "Три способи: дієслово ({{piove}}), {{fare}} + слово ({{fa caldo}}), {{c'è}} + іменник ({{c'è vento}})."
+    },
+    {
+     "type": "pairs",
+     "title": "Погода чи людина?",
+     "sep": "↔",
+     "items": [
+      {
+       "a": "fa freddo",
+       "b": "ho freddo",
+       "tr": "надворі холодно ↔ мені холодно"
+      },
+      {
+       "a": "fa caldo",
+       "b": "ho caldo",
+       "tr": "надворі спекотно ↔ мені спекотно"
+      }
+     ],
+     "note": "Погода — {{fare}}, людині — {{avere}}."
+    }
+   ],
+   "uses": [
+    {
+     "text": "Питання",
+     "it": "Che tempo fa oggi?",
+     "tr": "Яка сьогодні погода?"
+    },
+    {
+     "text": "Прогноз",
+     "it": "Domani pioverà al nord.",
+     "tr": "Завтра на півночі буде дощ."
+    },
+    {
+     "text": "Тло в минулому",
+     "it": "Ieri faceva freddo e nevicava.",
+     "tr": "Вчора було холодно і йшов сніг."
+    },
+    {
+     "text": "Причина",
+     "it": "Pioveva, quindi sono rimasto a casa.",
+     "tr": "Йшов дощ, тому я залишився вдома."
+    },
+    {
+     "text": "Звичка в минулому",
+     "it": "Da bambino d'inverno nevicava sempre.",
+     "tr": "У дитинстві взимку завжди йшов сніг."
+    }
+   ],
+   "exceptions": [
+    {
+     "title": "Passato prossimo",
+     "text": "Завершена подія: {{è piovuto}} або {{ha piovuto}} — обидва правильні.",
+     "examples": [
+      {
+       "it": "Stanotte è piovuto molto.",
+       "tr": "Уночі йшов сильний дощ."
+      }
+     ]
+    },
+    {
+     "title": "Небо",
+     "text": "Небо описують через {{essere}}: {{è nuvoloso}}, {{è sereno}}.",
+     "examples": [
+      {
+       "it": "Oggi il cielo è sereno.",
+       "tr": "Сьогодні ясне небо."
+      }
+     ]
+    },
+    {
+     "title": "Presente про завтра",
+     "text": "У розмові можна й {{domani piove}} — але {{pioverà}} звучить як прогноз.",
+     "examples": [
+      {
+       "it": "Domani piove, restiamo a casa.",
+       "tr": "Завтра дощ, залишимося вдома."
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "Lui piove.",
+     "right": "Piove.",
+     "why": "Підмета немає."
+    },
+    {
+     "wrong": "Domani nevicerà.",
+     "right": "Domani nevicherà.",
+     "why": "-care + h."
+    },
+    {
+     "wrong": "Ieri è freddo.",
+     "right": "Ieri faceva freddo.",
+     "why": "Погода — fare; вчора — imperfetto."
+    },
+    {
+     "wrong": "Oggi è sole.",
+     "right": "Oggi c'è il sole.",
+     "why": "Сонце — c'è."
+    },
+    {
+     "wrong": "Domani sarà il sole.",
+     "right": "Domani ci sarà il sole.",
+     "why": "Не забудь ci."
+    },
+    {
+     "wrong": "Sono freddo.",
+     "right": "Ho freddo.",
+     "why": "Людині холодно — avere."
+    }
+   ],
+   "examples": [
+    {
+     "it": "Oggi piove, ma domani ci sarà il sole.",
+     "tr": "Сьогодні дощ, але завтра буде сонце."
+    },
+    {
+     "it": "Ieri nevicava e faceva molto freddo.",
+     "tr": "Вчора йшов сніг і було дуже холодно."
+    },
+    {
+     "it": "In estate in Ticino fa caldo.",
+     "tr": "Влітку в Тічино спекотно."
+    },
+    {
+     "it": "Che tempo farà sabato?",
+     "tr": "Яка погода буде в суботу?"
+    },
+    {
+     "it": "C'è vento: chiudi la finestra!",
+     "tr": "Вітряно: зачини вікно!"
+    },
+    {
+     "it": "Faceva bel tempo, quindi siamo andati al lago.",
+     "tr": "Була гарна погода, тому ми поїхали на озеро."
+    }
+   ],
+   "summary": "**Oggi** piove · **domani** pioverà · **ieri** pioveva. Погода: дієслово, **fare** + слово або **c'è** + іменник.",
+   "keyWords": [
+    {
+     "title": "Il tempo",
+     "ids": [
+      "w230",
+      "w631",
+      "w632",
+      "w633",
+      "w634",
+      "w635",
+      "w636",
+      "w637",
+      "w638",
+      "w639",
+      "w640"
+     ]
+    }
+   ]
+  },
+  "g5-esserci": {
+   "id": "g5-esserci",
+   "inBreve": [
+    "{{Esserci}} = {{essere}} + {{ci}}: «**є, існує**».",
+    "Форма залежить від того, **що є**: одне — {{c'è}}, багато — {{ci sono}}.",
+    "Три часи: {{c'è}} → {{c'era}} → {{ci sarà}}."
+   ],
+   "formation": {
+    "steps": [
+     "Знайди, **що** є: {{un bar}} (один) чи {{due bar}} (багато).",
+     "Обери час: {{oggi}}, {{ieri}}, {{domani}}.",
+     "Постав форму з таблиці: {{c'era}} / {{c'erano}}…"
+    ]
+   },
+   "tables": [
+    {
+     "title": "Tre tempi",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "uno",
+       "molti"
+      ],
+      [
+       "presente",
+       "c'è",
+       "ci sono"
+      ],
+      [
+       "imperfetto",
+       "c'era",
+       "c'erano"
+      ],
+      [
+       "futuro",
+       "ci sarà",
+       "ci saranno"
+      ]
+     ],
+     "note": "Перед {{e}} — {{c'}}: {{c'è}}, {{c'era}}. Перед {{s}} — {{ci}}: {{ci sono}}, {{ci sarà}}."
+    },
+    {
+     "type": "pairs",
+     "title": "Esempi",
+     "sep": "",
+     "items": [
+      {
+       "a": "C'è un bar qui vicino.",
+       "tr": "Тут поруч є бар."
+      },
+      {
+       "a": "Ci sono molti turisti.",
+       "tr": "Багато туристів."
+      },
+      {
+       "a": "Ieri c'era il sole.",
+       "tr": "Вчора було сонце."
+      },
+      {
+       "a": "Alla festa c'erano tante persone.",
+       "tr": "На святі було багато людей."
+      },
+      {
+       "a": "Domani ci sarà una festa.",
+       "tr": "Завтра буде свято."
+      },
+      {
+       "a": "Ci saranno anche i bambini.",
+       "tr": "Будуть і діти."
+      }
+     ],
+     "note": "Дивись на слово **після** форми: {{un bar}} → {{c'è}}, {{molti turisti}} → {{ci sono}}."
+    },
+    {
+     "type": "pairs",
+     "title": "È, c'è чи sta?",
+     "sep": "",
+     "items": [
+      {
+       "a": "Il bar è chiuso.",
+       "tr": "è — опис: бар зачинений"
+      },
+      {
+       "a": "C'è un bar?",
+       "tr": "c'è — чи існує: тут є бар?"
+      },
+      {
+       "a": "Larysa è malata.",
+       "tr": "essere malato — хворіти (хвороба)"
+      },
+      {
+       "a": "Larysa sta male.",
+       "tr": "stare male — погано почуватися"
+      }
+     ],
+     "note": "{{malato}} змінюється: {{malata}}, {{malati}}. {{male}} — ніколи."
+    },
+    {
+     "type": "pairs",
+     "title": "Вчора: imperfetto",
+     "sep": "↔",
+     "items": [
+      {
+       "a": "Ieri era malata.",
+       "b": "Ieri stava male.",
+       "tr": "Вчора вона хворіла ↔ Вчора їй було погано"
+      }
+     ],
+     "note": "Стан у минулому — {{imperfetto}}: {{era}}, {{stava}}."
+    }
+   ],
+   "uses": [
+    {
+     "text": "Що є в місці",
+     "it": "Nel mio quartiere c'è una farmacia.",
+     "tr": "У моєму районі є аптека."
+    },
+    {
+     "text": "Питання",
+     "it": "Scusi, c'è un bagno?",
+     "tr": "Перепрошую, тут є туалет?"
+    },
+    {
+     "text": "Хто на місці",
+     "it": "C'è Marco? — No, non c'è.",
+     "tr": "Марко тут? — Ні, його немає."
+    },
+    {
+     "text": "Як було раніше",
+     "it": "Prima qui c'era un cinema.",
+     "tr": "Раніше тут був кінотеатр."
+    },
+    {
+     "text": "Плани",
+     "it": "Sabato ci sarà una festa.",
+     "tr": "У суботу буде свято."
+    }
+   ],
+   "exceptions": [
+    {
+     "title": "Заперечення",
+     "text": "{{non}} — перед {{ci}}: {{non c'è}}, {{non ci sono}}.",
+     "examples": [
+      {
+       "it": "Non c'è latte in frigo.",
+       "tr": "У холодильнику немає молока."
+      }
+     ]
+    },
+    {
+     "title": "Passato prossimo",
+     "text": "Подія: {{c'è stato}}, {{ci sono stati}}.",
+     "examples": [
+      {
+       "it": "Ieri c'è stato un incidente.",
+       "tr": "Вчора була аварія."
+      }
+     ]
+    },
+    {
+     "title": "Ci sei?",
+     "text": "Про людину: «ти будеш / ти тут?» — {{ci sei?}}",
+     "examples": [
+      {
+       "it": "Ci sei stasera? — Sì, ci sono.",
+       "tr": "Ти будеш увечері? — Так, буду."
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "C'è molti turisti.",
+     "right": "Ci sono molti turisti.",
+     "why": "Багато — ci sono."
+    },
+    {
+     "wrong": "Ieri c'era tante persone.",
+     "right": "Ieri c'erano tante persone.",
+     "why": "Багато — c'erano."
+    },
+    {
+     "wrong": "Domani sarà una festa.",
+     "right": "Domani ci sarà una festa.",
+     "why": "Не забудь ci."
+    },
+    {
+     "wrong": "Ci è un problema.",
+     "right": "C'è un problema.",
+     "why": "ci + è = c'è."
+    },
+    {
+     "wrong": "C'è chiuso il bar.",
+     "right": "Il bar è chiuso.",
+     "why": "Опис — è, без ci."
+    },
+    {
+     "wrong": "Larysa è male.",
+     "right": "Larysa sta male.",
+     "why": "male — зі stare."
+    },
+    {
+     "wrong": "Larysa sta malata.",
+     "right": "Larysa è malata.",
+     "why": "malato — з essere."
+    }
+   ],
+   "examples": [
+    {
+     "it": "In classe ci sono quindici studenti.",
+     "tr": "У класі п'ятнадцять студентів."
+    },
+    {
+     "it": "Scusi, c'è una farmacia qui vicino?",
+     "tr": "Перепрошую, тут поруч є аптека?"
+    },
+    {
+     "it": "Quando ero piccolo, qui c'era un parco.",
+     "tr": "Коли я був малим, тут був парк."
+    },
+    {
+     "it": "Alla riunione ci saranno anche i direttori.",
+     "tr": "На зборах будуть і директори."
+    },
+    {
+     "it": "Non ci sono problemi!",
+     "tr": "Жодних проблем!"
+    },
+    {
+     "it": "Oggi non vengo: sto male.",
+     "tr": "Сьогодні я не прийду: мені погано."
+    }
+   ],
+   "summary": "**c'è / ci sono** → **c'era / c'erano** → **ci sarà / ci saranno**. Одне — c'è, багато — ci sono. **È** описує, **c'è** — «є».",
+   "keyWords": [
+    {
+     "title": "Esserci",
+     "ids": [
+      "w641"
+     ]
+    }
+   ]
   }
  }
 }
