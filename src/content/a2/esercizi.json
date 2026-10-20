@@ -2078,6 +2078,363 @@
      }
     }
    ]
+  },
+  {
+   "topic": "g5-futuro-semplice",
+   "items": [
+    {
+     "id": "fu-01",
+     "type": "fill",
+     "it": "L'estate prossima io ___ in Spagna.",
+     "hint": "andare",
+     "answers": [
+      "andrò"
+     ],
+     "why": {
+      "ru": "andare → andr-: andrò.",
+      "uk": "andare → andr-: andrò.",
+      "en": "andare → andr-: andrò."
+     }
+    },
+    {
+     "id": "fu-02",
+     "type": "fill",
+     "it": "Marta è bravissima: ___ successo.",
+     "hint": "avere",
+     "answers": [
+      "avrà"
+     ],
+     "why": {
+      "ru": "avere → avr-: avrà.",
+      "uk": "avere → avr-: avrà.",
+      "en": "avere → avr-: avrà."
+     }
+    },
+    {
+     "id": "fu-03",
+     "type": "fill",
+     "it": "A gennaio noi ___ casa.",
+     "hint": "cambiare",
+     "answers": [
+      "cambieremo"
+     ],
+     "why": {
+      "ru": "-are → -er-; i остаётся: cambieremo.",
+      "uk": "-are → -er-; i залишається: cambieremo.",
+      "en": "-are → -er-; the i stays: cambieremo."
+     }
+    },
+    {
+     "id": "fu-04",
+     "type": "fill",
+     "it": "Il cielo è grigio: fra poco ___ a nevicare.",
+     "hint": "cominciare",
+     "answers": [
+      "comincerà"
+     ],
+     "why": {
+      "ru": "-ciare теряет i: comincerà.",
+      "uk": "-ciare втрачає i: comincerà.",
+      "en": "-ciare drops the i: comincerà."
+     }
+    },
+    {
+     "id": "fu-05",
+     "type": "fill",
+     "it": "Ho perso il bus: ___ prendere un taxi.",
+     "hint": "dovere (io)",
+     "answers": [
+      "dovrò"
+     ],
+     "why": {
+      "ru": "dovere → dovr-: dovrò.",
+      "uk": "dovere → dovr-: dovrò.",
+      "en": "dovere → dovr-: dovrò."
+     }
+    },
+    {
+     "id": "fu-06",
+     "type": "fill",
+     "it": "Il mese prossimo Luca ___ l'esame di guida.",
+     "hint": "dare",
+     "answers": [
+      "darà"
+     ],
+     "why": {
+      "ru": "dare → dar-: darà.",
+      "uk": "dare → dar-: darà.",
+      "en": "dare → dar-: darà."
+     }
+    },
+    {
+     "id": "fu-07",
+     "type": "fill",
+     "it": "Ho la febbre: stasera ___ il medico.",
+     "hint": "chiamare (io)",
+     "answers": [
+      "chiamerò"
+     ],
+     "why": {
+      "ru": "-are → -er-: chiamerò.",
+      "uk": "-are → -er-: chiamerò.",
+      "en": "-are → -er-: chiamerò."
+     }
+    },
+    {
+     "id": "fu-08",
+     "type": "fill",
+     "it": "Domani il corso ___ alle due.",
+     "hint": "finire",
+     "answers": [
+      "finirà"
+     ],
+     "why": {
+      "ru": "-ire: finir- + à.",
+      "uk": "-ire: finir- + à.",
+      "en": "-ire: finir- + à."
+     }
+    },
+    {
+     "id": "fu-09",
+     "type": "fill",
+     "it": "Saremo contenti se tu ___ presto.",
+     "hint": "tornare",
+     "answers": [
+      "tornerai"
+     ],
+     "why": {
+      "ru": "После se о будущем — тоже futuro.",
+      "uk": "Після se про майбутнє — теж futuro.",
+      "en": "After se about the future — futuro too."
+     }
+    },
+    {
+     "id": "fu-10",
+     "type": "fill",
+     "it": "Voi ___ anche Paola alla festa?",
+     "hint": "invitare",
+     "answers": [
+      "inviterete"
+     ],
+     "why": {
+      "ru": "voi → -ete: inviterete.",
+      "uk": "voi → -ete: inviterete.",
+      "en": "voi → -ete: inviterete."
+     }
+    },
+    {
+     "id": "fu-11",
+     "type": "fill",
+     "it": "Oggi c'è il sole. Anche domani ___ il sole.",
+     "hint": "esserci",
+     "answers": [
+      "ci sarà"
+     ],
+     "why": {
+      "ru": "c'è → ci sarà.",
+      "uk": "c'è → ci sarà.",
+      "en": "c'è → ci sarà."
+     }
+    },
+    {
+     "id": "fu-12",
+     "type": "fill",
+     "it": "Oggi piove. Anche domani ___.",
+     "hint": "piovere",
+     "answers": [
+      "pioverà"
+     ],
+     "why": {
+      "ru": "piovere → pioverà.",
+      "uk": "piovere → pioverà.",
+      "en": "piovere → pioverà."
+     }
+    },
+    {
+     "id": "fu-13",
+     "type": "fill",
+     "it": "Oggi posso riposare. Anche domani ___ riposare.",
+     "hint": "potere",
+     "answers": [
+      "potrò"
+     ],
+     "why": {
+      "ru": "potere → potr-: potrò.",
+      "uk": "potere → potr-: potrò.",
+      "en": "potere → potr-: potrò."
+     }
+    },
+    {
+     "id": "fu-14",
+     "type": "fill",
+     "it": "Oggi facciamo una passeggiata. Anche domani ___ una passeggiata.",
+     "hint": "fare",
+     "answers": [
+      "faremo"
+     ],
+     "why": {
+      "ru": "fare → far-: faremo.",
+      "uk": "fare → far-: faremo.",
+      "en": "fare → far-: faremo."
+     }
+    },
+    {
+     "id": "fu-15",
+     "type": "fill",
+     "it": "Oggi venite da noi. Anche domani ___ da noi.",
+     "hint": "venire",
+     "answers": [
+      "verrete"
+     ],
+     "why": {
+      "ru": "venire → verr-: verrete.",
+      "uk": "venire → verr-: verrete.",
+      "en": "venire → verr-: verrete."
+     }
+    },
+    {
+     "id": "fu-16",
+     "type": "fill",
+     "it": "Oggi i ragazzi vanno in piscina. Anche domani ___ in piscina.",
+     "hint": "andare",
+     "answers": [
+      "andranno"
+     ],
+     "why": {
+      "ru": "andare → andr-: andranno.",
+      "uk": "andare → andr-: andranno.",
+      "en": "andare → andr-: andranno."
+     }
+    },
+    {
+     "id": "fu-17",
+     "type": "choice",
+     "it": "A che ora comincerà il film? — ___ alle nove.",
+     "options": [
+      "Comincerà",
+      "Comincierà",
+      "Cominciarà"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "-ciare: без i и с e — comincerà.",
+      "uk": "-ciare: без i і з e — comincerà.",
+      "en": "-ciare: no i, a → e — comincerà."
+     }
+    },
+    {
+     "id": "fu-18",
+     "type": "choice",
+     "it": "Con chi andrai a Parigi? — ___ con mia sorella.",
+     "options": [
+      "Andrò",
+      "Anderò",
+      "Andarò"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "andare — особая основа: andrò.",
+      "uk": "andare — особлива основа: andrò.",
+      "en": "andare has a special stem: andrò."
+     }
+    },
+    {
+     "id": "fu-19",
+     "type": "choice",
+     "it": "Quando tornerete a casa? — ___ fra una settimana.",
+     "options": [
+      "Torneremo",
+      "Tornerete",
+      "Torneranno"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Вопрос на voi → ответ на noi.",
+      "uk": "Питання на voi → відповідь на noi.",
+      "en": "Asked with voi → answer with noi."
+     }
+    },
+    {
+     "id": "fu-20",
+     "type": "choice",
+     "it": "Quando verrai da noi? — ___ domenica.",
+     "options": [
+      "Verrò",
+      "Venirò",
+      "Verrai"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "venire → verr-; ответ от io: verrò.",
+      "uk": "venire → verr-; відповідь від io: verrò.",
+      "en": "venire → verr-; answer as io: verrò."
+     }
+    },
+    {
+     "id": "fu-21",
+     "type": "choice",
+     "it": "Quando partiranno i tuoi genitori? — ___ fra qualche giorno.",
+     "options": [
+      "Partiranno",
+      "Partiremo",
+      "Parteranno"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "-ire сохраняет i: partiranno.",
+      "uk": "-ire зберігає i: partiranno.",
+      "en": "-ire keeps the i: partiranno."
+     }
+    },
+    {
+     "id": "fu-22",
+     "type": "choice",
+     "it": "A che ora arriverà il treno? — ___ alle sette.",
+     "options": [
+      "Arriverà",
+      "Arrivarà",
+      "Arriverò"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "-are → -er-; il treno — lui: arriverà.",
+      "uk": "-are → -er-; il treno — lui: arriverà.",
+      "en": "-are → -er-; il treno is lui: arriverà."
+     }
+    },
+    {
+     "id": "fu-23",
+     "type": "choice",
+     "it": "Domani ___ bel tempo.",
+     "options": [
+      "farà",
+      "facerà",
+      "fererà"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Погода — fare: farà.",
+      "uk": "Погода — fare: farà.",
+      "en": "Weather uses fare: farà."
+     }
+    },
+    {
+     "id": "fu-24",
+     "type": "choice",
+     "it": "Come andrete a Londra? — ___ in aereo.",
+     "options": [
+      "Andremo",
+      "Andremmo",
+      "Anderemo"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "noi — andremo (одна m).",
+      "uk": "noi — andremo (одна m).",
+      "en": "noi — andremo (one m)."
+     }
+    }
+   ]
   }
  ]
 }
