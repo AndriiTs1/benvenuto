@@ -2435,6 +2435,1137 @@
      }
     }
    ]
+  },
+  {
+   "topic": "g1-articoli-determinativi",
+   "items": [
+    {
+     "id": "ar-01",
+     "type": "choice",
+     "it": "Leggo ___ libro.",
+     "options": [
+      "il",
+      "lo",
+      "l'"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Согласная — il.",
+      "uk": "Приголосна — il.",
+      "en": "Consonant — il."
+     }
+    },
+    {
+     "id": "ar-02",
+     "type": "choice",
+     "it": "Dov'è ___ studente nuovo?",
+     "options": [
+      "lo",
+      "il",
+      "l'"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "s + согласная — lo.",
+      "uk": "s + приголосна — lo.",
+      "en": "s + consonant — lo."
+     }
+    },
+    {
+     "id": "ar-03",
+     "type": "choice",
+     "it": "Ho chiamato ___ amico di Marco.",
+     "options": [
+      "l'",
+      "lo",
+      "il"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Гласная — l'.",
+      "uk": "Голосна — l'.",
+      "en": "Vowel — l'."
+     }
+    },
+    {
+     "id": "ar-04",
+     "type": "choice",
+     "it": "___ zaino è pesante.",
+     "options": [
+      "Lo",
+      "Il",
+      "La"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "z — lo.",
+      "uk": "z — lo.",
+      "en": "z — lo."
+     }
+    },
+    {
+     "id": "ar-05",
+     "type": "choice",
+     "it": "Ho comprato ___ chiavi nuove.",
+     "options": [
+      "le",
+      "i",
+      "gli"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "chiave — ж.р.: le chiavi.",
+      "uk": "chiave — ж.р.: le chiavi.",
+      "en": "chiave is feminine: le chiavi."
+     }
+    },
+    {
+     "id": "ar-06",
+     "type": "choice",
+     "it": "___ studenti sono in classe.",
+     "options": [
+      "Gli",
+      "I",
+      "Le"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "lo → gli.",
+      "uk": "lo → gli.",
+      "en": "lo → gli."
+     }
+    },
+    {
+     "id": "ar-07",
+     "type": "choice",
+     "it": "Vedo ___ amiche di Anna.",
+     "options": [
+      "le",
+      "gli",
+      "l'"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Ж.р. мн.ч. — всегда le.",
+      "uk": "Ж.р. мн. — завжди le.",
+      "en": "Feminine plural — always le."
+     }
+    },
+    {
+     "id": "ar-08",
+     "type": "choice",
+     "it": "___ ristoranti sono chiusi.",
+     "options": [
+      "I",
+      "Gli",
+      "Le"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "il ristorante → i ristoranti.",
+      "uk": "il ristorante → i ristoranti.",
+      "en": "il ristorante → i ristoranti."
+     }
+    },
+    {
+     "id": "ar-09",
+     "type": "choice",
+     "it": "Mi piace ___ pizza.",
+     "options": [
+      "la",
+      "—",
+      "una"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "После piacere — с артиклем.",
+      "uk": "Після piacere — з артиклем.",
+      "en": "After piacere — use the article."
+     }
+    },
+    {
+     "id": "ar-10",
+     "type": "choice",
+     "it": "___ psicologo arriva alle tre.",
+     "options": [
+      "Lo",
+      "Il",
+      "L'"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "ps — lo.",
+      "uk": "ps — lo.",
+      "en": "ps — lo."
+     }
+    }
+   ]
+  },
+  {
+   "topic": "g4-preposizioni-articolate",
+   "items": [
+    {
+     "id": "pa-01",
+     "type": "fill",
+     "it": "Vado ___ cinema stasera.",
+     "hint": "a + il",
+     "answers": [
+      "al"
+     ],
+     "why": {
+      "ru": "a + il = al.",
+      "uk": "a + il = al.",
+      "en": "a + il = al."
+     }
+    },
+    {
+     "id": "pa-02",
+     "type": "fill",
+     "it": "Il libro è ___ tavolo.",
+     "hint": "su + il",
+     "answers": [
+      "sul"
+     ],
+     "why": {
+      "ru": "su + il = sul.",
+      "uk": "su + il = sul.",
+      "en": "su + il = sul."
+     }
+    },
+    {
+     "id": "pa-03",
+     "type": "fill",
+     "it": "Vengo ___ ufficio.",
+     "hint": "da + l'",
+     "answers": [
+      "dall'"
+     ],
+     "why": {
+      "ru": "da + l' = dall'.",
+      "uk": "da + l' = dall'.",
+      "en": "da + l' = dall'."
+     }
+    },
+    {
+     "id": "pa-04",
+     "type": "fill",
+     "it": "Le chiavi sono ___ borsa.",
+     "hint": "in + la",
+     "answers": [
+      "nella"
+     ],
+     "why": {
+      "ru": "in → ne-: nella.",
+      "uk": "in → ne-: nella.",
+      "en": "in → ne-: nella."
+     }
+    },
+    {
+     "id": "pa-05",
+     "type": "fill",
+     "it": "È la macchina ___ professore.",
+     "hint": "di + il",
+     "answers": [
+      "del"
+     ],
+     "why": {
+      "ru": "di → de-: del.",
+      "uk": "di → de-: del.",
+      "en": "di → de-: del."
+     }
+    },
+    {
+     "id": "pa-06",
+     "type": "choice",
+     "it": "Il corso comincia ___ nove.",
+     "options": [
+      "alle",
+      "ai",
+      "a"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Время — alle.",
+      "uk": "Час — alle.",
+      "en": "Time — alle."
+     }
+    },
+    {
+     "id": "pa-07",
+     "type": "choice",
+     "it": "Domani vado ___ medico.",
+     "options": [
+      "dal",
+      "al",
+      "nel"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "К человеку — da: dal medico.",
+      "uk": "До людини — da: dal medico.",
+      "en": "To a person — da: dal medico."
+     }
+    },
+    {
+     "id": "pa-08",
+     "type": "choice",
+     "it": "Parlo ___ amici di Luca.",
+     "options": [
+      "agli",
+      "ai",
+      "alle"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "gli amici → agli.",
+      "uk": "gli amici → agli.",
+      "en": "gli amici → agli."
+     }
+    },
+    {
+     "id": "pa-09",
+     "type": "choice",
+     "it": "Esco ___ amici.",
+     "options": [
+      "con gli",
+      "cogli",
+      "agli"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "con не сливается.",
+      "uk": "con не зливається.",
+      "en": "con doesn't merge."
+     }
+    },
+    {
+     "id": "pa-10",
+     "type": "choice",
+     "it": "Il treno parte ___ una.",
+     "options": [
+      "all'",
+      "alla",
+      "alle"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "l'una → all'una.",
+      "uk": "l'una → all'una.",
+      "en": "l'una → all'una."
+     }
+    }
+   ]
+  },
+  {
+   "topic": "g4-verbi-a-di",
+   "items": [
+    {
+     "id": "ad-01",
+     "type": "choice",
+     "it": "Comincio ___ lavorare alle otto.",
+     "options": [
+      "a",
+      "di",
+      "—"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "cominciare a.",
+      "uk": "cominciare a.",
+      "en": "cominciare a."
+     }
+    },
+    {
+     "id": "ad-02",
+     "type": "choice",
+     "it": "Finisco ___ lavorare alle cinque.",
+     "options": [
+      "di",
+      "a",
+      "—"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "finire di.",
+      "uk": "finire di.",
+      "en": "finire di."
+     }
+    },
+    {
+     "id": "ad-03",
+     "type": "choice",
+     "it": "Ho deciso ___ partire.",
+     "options": [
+      "di",
+      "a",
+      "—"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "decidere di.",
+      "uk": "decidere di.",
+      "en": "decidere di."
+     }
+    },
+    {
+     "id": "ad-04",
+     "type": "choice",
+     "it": "Voglio ___ dormire.",
+     "options": [
+      "—",
+      "di",
+      "a"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "После volere — без предлога.",
+      "uk": "Після volere — без прийменника.",
+      "en": "No preposition after volere."
+     }
+    },
+    {
+     "id": "ad-05",
+     "type": "choice",
+     "it": "Sto imparando ___ guidare.",
+     "options": [
+      "a",
+      "di",
+      "—"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "imparare a.",
+      "uk": "imparare a.",
+      "en": "imparare a."
+     }
+    },
+    {
+     "id": "ad-06",
+     "type": "choice",
+     "it": "Cerco ___ capire.",
+     "options": [
+      "di",
+      "a",
+      "—"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "cercare di — стараться.",
+      "uk": "cercare di — намагатися.",
+      "en": "cercare di — try to."
+     }
+    },
+    {
+     "id": "ad-07",
+     "type": "choice",
+     "it": "Mio padre ha smesso ___ fumare.",
+     "options": [
+      "di",
+      "a",
+      "—"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "smettere di.",
+      "uk": "smettere di.",
+      "en": "smettere di."
+     }
+    },
+    {
+     "id": "ad-08",
+     "type": "choice",
+     "it": "Non riesco ___ dormire.",
+     "options": [
+      "a",
+      "di",
+      "—"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "riuscire a.",
+      "uk": "riuscire a.",
+      "en": "riuscire a."
+     }
+    },
+    {
+     "id": "ad-09",
+     "type": "choice",
+     "it": "Vado ___ mangiare al ristorante.",
+     "options": [
+      "a",
+      "di",
+      "—"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Движение + цель — a.",
+      "uk": "Рух + мета — a.",
+      "en": "Movement + purpose — a."
+     }
+    },
+    {
+     "id": "ad-10",
+     "type": "choice",
+     "it": "Penso ___ cambiare lavoro.",
+     "options": [
+      "di",
+      "a",
+      "—"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "pensare di — собираться.",
+      "uk": "pensare di — збиратися.",
+      "en": "pensare di — plan to."
+     }
+    }
+   ]
+  },
+  {
+   "topic": "g4-ore",
+   "items": [
+    {
+     "id": "or-01",
+     "type": "choice",
+     "it": "13:00 — ___",
+     "options": [
+      "È l'una.",
+      "Sono le una.",
+      "È una."
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Час — ед.ч.: è l'una.",
+      "uk": "Година — одн.: è l'una.",
+      "en": "One o'clock is singular: è l'una."
+     }
+    },
+    {
+     "id": "or-02",
+     "type": "choice",
+     "it": "8:30 — ___",
+     "options": [
+      "Sono le otto e mezza.",
+      "Sono le otto e un quarto.",
+      "Sono otto e mezza."
+     ],
+     "answer": 0,
+     "why": {
+      "ru": ":30 — e mezza.",
+      "uk": ":30 — e mezza.",
+      "en": ":30 — e mezza."
+     }
+    },
+    {
+     "id": "or-03",
+     "type": "choice",
+     "it": "8:45 — ___",
+     "options": [
+      "Sono le nove meno un quarto.",
+      "Sono le otto meno un quarto.",
+      "Sono le nove e un quarto."
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Без четверти девять — le nove meno un quarto.",
+      "uk": "За чверть дев'ята — le nove meno un quarto.",
+      "en": "Quarter to nine — le nove meno un quarto."
+     }
+    },
+    {
+     "id": "or-04",
+     "type": "choice",
+     "it": "Il film comincia ___ otto.",
+     "options": [
+      "alle",
+      "le",
+      "a"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Во сколько — alle.",
+      "uk": "О котрій — alle.",
+      "en": "At what time — alle."
+     }
+    },
+    {
+     "id": "or-05",
+     "type": "choice",
+     "it": "Pranziamo ___ mezzogiorno.",
+     "options": [
+      "a",
+      "al",
+      "alle"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "a mezzogiorno — без артикля.",
+      "uk": "a mezzogiorno — без артикля.",
+      "en": "a mezzogiorno — no article."
+     }
+    },
+    {
+     "id": "or-06",
+     "type": "choice",
+     "it": "Lavoro ___ nove alle cinque.",
+     "options": [
+      "dalle",
+      "da",
+      "dal"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "dalle… alle.",
+      "uk": "dalle… alle.",
+      "en": "dalle… alle."
+     }
+    },
+    {
+     "id": "or-07",
+     "type": "fill",
+     "it": "Sono le sette e un ___. (7:15)",
+     "hint": "7:15",
+     "answers": [
+      "quarto"
+     ],
+     "why": {
+      "ru": ":15 — e un quarto.",
+      "uk": ":15 — e un quarto.",
+      "en": ":15 — e un quarto."
+     }
+    },
+    {
+     "id": "or-08",
+     "type": "fill",
+     "it": "Il treno parte ___ una.",
+     "hint": "a + l'",
+     "answers": [
+      "all'"
+     ],
+     "why": {
+      "ru": "all'una.",
+      "uk": "all'una.",
+      "en": "all'una."
+     }
+    },
+    {
+     "id": "or-09",
+     "type": "choice",
+     "it": "___ ora arrivi?",
+     "options": [
+      "A che",
+      "Che",
+      "Quale"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "«Во сколько?» — A che ora?",
+      "uk": "«О котрій?» — A che ora?",
+      "en": "“At what time?” — A che ora?"
+     }
+    },
+    {
+     "id": "or-10",
+     "type": "choice",
+     "it": "9:50 — ___",
+     "options": [
+      "Sono le dieci meno dieci.",
+      "Sono le nove meno dieci.",
+      "Sono le dieci e dieci."
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Без десяти десять.",
+      "uk": "За десять десята.",
+      "en": "Ten to ten."
+     }
+    }
+   ]
+  },
+  {
+   "topic": "g5-coppia-tappe",
+   "items": [
+    {
+     "id": "ct-01",
+     "type": "choice",
+     "it": "Marco e Anna ___ a una festa.",
+     "options": [
+      "si sono conosciuti",
+      "hanno conosciuto",
+      "si hanno conosciuti"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Возвратный — essere.",
+      "uk": "Зворотне — essere.",
+      "en": "Reflexive — essere."
+     }
+    },
+    {
+     "id": "ct-02",
+     "type": "choice",
+     "it": "Dopo un mese ___.",
+     "options": [
+      "si sono innamorati",
+      "sono innamorato",
+      "hanno innamorati"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "innamorarsi → si sono innamorati.",
+      "uk": "innamorarsi → si sono innamorati.",
+      "en": "innamorarsi → si sono innamorati."
+     }
+    },
+    {
+     "id": "ct-03",
+     "type": "choice",
+     "it": "Nel 2015 ___.",
+     "options": [
+      "si sono sposati",
+      "hanno sposati",
+      "sono sposato"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Событие — si sono sposati.",
+      "uk": "Подія — si sono sposati.",
+      "en": "Event — si sono sposati."
+     }
+    },
+    {
+     "id": "ct-04",
+     "type": "choice",
+     "it": "Dopo dieci anni ___.",
+     "options": [
+      "hanno divorziato",
+      "si sono divorziati",
+      "sono divorziato"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "divorziare — avere.",
+      "uk": "divorziare — avere.",
+      "en": "divorziare takes avere."
+     }
+    },
+    {
+     "id": "ct-05",
+     "type": "choice",
+     "it": "Ora Lucia e Paolo ___ sposati.",
+     "options": [
+      "sono",
+      "si sono",
+      "hanno"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Состояние сейчас — sono sposati.",
+      "uk": "Стан зараз — sono sposati.",
+      "en": "Current state — sono sposati."
+     }
+    },
+    {
+     "id": "ct-06",
+     "type": "choice",
+     "it": "Giulia e Sara ___ all'università.",
+     "options": [
+      "si sono conosciute",
+      "si sono conosciuti",
+      "hanno conosciute"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Две женщины — -e.",
+      "uk": "Дві жінки — -e.",
+      "en": "Two women — -e."
+     }
+    },
+    {
+     "id": "ct-07",
+     "type": "fill",
+     "it": "Io e Marta ci ___ fidanzati a maggio.",
+     "hint": "essere",
+     "answers": [
+      "siamo"
+     ],
+     "why": {
+      "ru": "noi — ci siamo.",
+      "uk": "noi — ci siamo.",
+      "en": "noi — ci siamo."
+     }
+    },
+    {
+     "id": "ct-08",
+     "type": "fill",
+     "it": "Si sono ___ insieme due anni fa.",
+     "hint": "mettere",
+     "answers": [
+      "messi"
+     ],
+     "why": {
+      "ru": "mettere → messo; мн.ч. — messi.",
+      "uk": "mettere → messo; мн. — messi.",
+      "en": "mettere → messo; plural messi."
+     }
+    },
+    {
+     "id": "ct-09",
+     "type": "choice",
+     "it": "Prima l'amore, poi ___.",
+     "options": [
+      "il matrimonio",
+      "la separazione",
+      "il divorzio"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Порядок: любовь → брак.",
+      "uk": "Порядок: кохання → шлюб.",
+      "en": "Order: love → marriage."
+     }
+    },
+    {
+     "id": "ct-10",
+     "type": "choice",
+     "it": "Sono separati: non ___ più insieme.",
+     "options": [
+      "vivono",
+      "vivevano",
+      "hanno vissuto"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Сейчас — presente.",
+      "uk": "Зараз — presente.",
+      "en": "Now — presente."
+     }
+    }
+   ]
+  },
+  {
+   "topic": "g5-connettivi-conseguenza",
+   "items": [
+    {
+     "id": "cc-01",
+     "type": "choice",
+     "it": "Pioveva, ___ sono rimasto a casa.",
+     "options": [
+      "quindi",
+      "perché",
+      "ma"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Результат — quindi.",
+      "uk": "Результат — quindi.",
+      "en": "Result — quindi."
+     }
+    },
+    {
+     "id": "cc-02",
+     "type": "choice",
+     "it": "Sono rimasto a casa ___ pioveva.",
+     "options": [
+      "perché",
+      "quindi",
+      "perciò"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Причина — perché.",
+      "uk": "Причина — perché.",
+      "en": "Cause — perché."
+     }
+    },
+    {
+     "id": "cc-03",
+     "type": "choice",
+     "it": "Ero stanco, ___ sono andato a letto.",
+     "options": [
+      "perciò",
+      "perché",
+      "anche"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "perciò — «поэтому».",
+      "uk": "perciò — «тому».",
+      "en": "perciò — “so”."
+     }
+    },
+    {
+     "id": "cc-04",
+     "type": "choice",
+     "it": "Avevo fame, quindi ___ un panino.",
+     "options": [
+      "ho mangiato",
+      "mangiavo",
+      "mangio"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Результат — passato prossimo.",
+      "uk": "Результат — passato prossimo.",
+      "en": "Result — passato prossimo."
+     }
+    },
+    {
+     "id": "cc-05",
+     "type": "choice",
+     "it": "___ freddo, perciò ho messo il cappotto.",
+     "options": [
+      "Faceva",
+      "Ha fatto",
+      "Fa"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Причина-состояние — imperfetto.",
+      "uk": "Причина-стан — imperfetto.",
+      "en": "Cause as a state — imperfetto."
+     }
+    },
+    {
+     "id": "cc-06",
+     "type": "choice",
+     "it": "Stavo male, ___ sono andata dal medico.",
+     "options": [
+      "allora",
+      "perché",
+      "se"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "allora — разговорное «поэтому».",
+      "uk": "allora — розмовне «тому».",
+      "en": "allora — colloquial “so”."
+     }
+    },
+    {
+     "id": "cc-07",
+     "type": "choice",
+     "it": "___, ricapitoliamo.",
+     "options": [
+      "Dunque",
+      "Perché",
+      "Quindi che"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "dunque — «итак».",
+      "uk": "dunque — «отже».",
+      "en": "dunque — “so, well”."
+     }
+    },
+    {
+     "id": "cc-08",
+     "type": "choice",
+     "it": "Il negozio era chiuso, quindi ___ a casa.",
+     "options": [
+      "sono tornato",
+      "tornavo",
+      "torno"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Результат — passato prossimo.",
+      "uk": "Результат — passato prossimo.",
+      "en": "Result — passato prossimo."
+     }
+    },
+    {
+     "id": "cc-09",
+     "type": "choice",
+     "it": "Non ___ la macchina, perciò ho preso il bus.",
+     "options": [
+      "avevo",
+      "ho avuto",
+      "ho"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Состояние — imperfetto.",
+      "uk": "Стан — imperfetto.",
+      "en": "State — imperfetto."
+     }
+    },
+    {
+     "id": "cc-10",
+     "type": "choice",
+     "it": "Ho perso il treno, ___ sono arrivato tardi.",
+     "options": [
+      "quindi",
+      "perché",
+      "mentre"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Следствие — quindi.",
+      "uk": "Наслідок — quindi.",
+      "en": "Consequence — quindi."
+     }
+    }
+   ]
+  },
+  {
+   "topic": "g5-prima-ora",
+   "items": [
+    {
+     "id": "po-01",
+     "type": "choice",
+     "it": "Prima Marco ___ i capelli lunghi.",
+     "options": [
+      "aveva",
+      "ha",
+      "ha avuto"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Prima — imperfetto.",
+      "uk": "Prima — imperfetto.",
+      "en": "Prima — imperfetto."
+     }
+    },
+    {
+     "id": "po-02",
+     "type": "choice",
+     "it": "Ora ___ i capelli corti.",
+     "options": [
+      "ha",
+      "aveva",
+      "ha avuto"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Ora — presente.",
+      "uk": "Ora — presente.",
+      "en": "Ora — presente."
+     }
+    },
+    {
+     "id": "po-03",
+     "type": "choice",
+     "it": "Prima Anna ___ magra.",
+     "options": [
+      "era",
+      "è",
+      "è stata"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Prima — imperfetto: era.",
+      "uk": "Prima — imperfetto: era.",
+      "en": "Prima — imperfetto: era."
+     }
+    },
+    {
+     "id": "po-04",
+     "type": "choice",
+     "it": "Adesso mio nonno ___ gli occhiali.",
+     "options": [
+      "porta",
+      "portava",
+      "ha portato"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Adesso — presente.",
+      "uk": "Adesso — presente.",
+      "en": "Adesso — presente."
+     }
+    },
+    {
+     "id": "po-05",
+     "type": "choice",
+     "it": "Mio padre ___ ingrassato.",
+     "options": [
+      "è",
+      "ha",
+      "era"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "ingrassare — essere.",
+      "uk": "ingrassare — essere.",
+      "en": "ingrassare takes essere."
+     }
+    },
+    {
+     "id": "po-06",
+     "type": "fill",
+     "it": "Mia madre è ___.",
+     "hint": "invecchiare",
+     "answers": [
+      "invecchiata"
+     ],
+     "why": {
+      "ru": "essere — согласие: invecchiata.",
+      "uk": "essere — узгодження: invecchiata.",
+      "en": "essere agrees: invecchiata."
+     }
+    },
+    {
+     "id": "po-07",
+     "type": "fill",
+     "it": "Luca è ___ molto.",
+     "hint": "crescere",
+     "answers": [
+      "cresciuto"
+     ],
+     "why": {
+      "ru": "crescere → cresciuto.",
+      "uk": "crescere → cresciuto.",
+      "en": "crescere → cresciuto."
+     }
+    },
+    {
+     "id": "po-08",
+     "type": "fill",
+     "it": "Laura è ___ dopo la dieta.",
+     "hint": "dimagrire",
+     "answers": [
+      "dimagrita"
+     ],
+     "why": {
+      "ru": "dimagrire → dimagrita (ж.р.).",
+      "uk": "dimagrire → dimagrita (ж.р.).",
+      "en": "dimagrire → dimagrita (fem.)."
+     }
+    },
+    {
+     "id": "po-09",
+     "type": "choice",
+     "it": "Prima non ___ la barba, ora ce l'ha.",
+     "options": [
+      "aveva",
+      "ha",
+      "ha avuto"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Prima — imperfetto.",
+      "uk": "Prima — imperfetto.",
+      "en": "Prima — imperfetto."
+     }
+    },
+    {
+     "id": "po-10",
+     "type": "choice",
+     "it": "Paolo ___ stile: ora si veste elegante.",
+     "options": [
+      "ha cambiato",
+      "è cambiato",
+      "cambiava"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "cambiare + объект — avere.",
+      "uk": "cambiare + об'єкт — avere.",
+      "en": "cambiare + object — avere."
+     }
+    }
+   ]
   }
  ]
 }
