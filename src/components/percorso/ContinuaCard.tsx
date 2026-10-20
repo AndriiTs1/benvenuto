@@ -22,7 +22,7 @@ export function ContinuaCard({ modulo }: { modulo: Modulo }) {
       </p>
       <Link
         href={`/lezione/${prossima.id}`}
-        className="mt-4 flex h-[50px] w-full items-center justify-center rounded-full bg-label text-[17px] font-semibold text-bg transition hover:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent active:scale-[0.98]"
+        className="mt-4 flex h-[50px] w-full items-center justify-center rounded-full bg-(--primario) text-[17px] font-semibold text-bg transition hover:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent active:scale-[0.98]"
       >
         Inizia
       </Link>

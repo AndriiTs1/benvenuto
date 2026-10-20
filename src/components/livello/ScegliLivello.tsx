@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 import type { ReactNode } from "react";
 import { LEVEL_COOKIE, LEVEL_COOKIE_MAX_AGE, courseHref, type LevelCode } from "@/lib/levels";
 
-// Salva il livello nel cookie e apre il suo corso. Usato dalla card A2 e dal pulsante in basso.
+// Salva il livello nel cookie e apre il suo corso. Usato dal pulsante della scheda del corso in /livello.
 export function ScegliLivello({
   code,
   className,

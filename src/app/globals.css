@@ -24,8 +24,34 @@
   --color-exercises-soft: color-mix(in srgb, var(--color-exercises) 12%, transparent);
   --color-communicate-soft: color-mix(in srgb, var(--color-communicate) 12%, transparent);
   --color-translation-soft: color-mix(in srgb, var(--color-translation) 10%, transparent);
+  /* Blu principale: pulsanti principali (capsula) e scheda del corso in /livello.
+     Testo sul blu = --bg: bianco 6.95:1, nel tema scuro nero 8.63:1. */
+  --primario: var(--tempo-presente);
+  --primario-soft: var(--tempo-presente-soft);
+  /* Tempi verbali (unità con "tempo" in meta.json, vedi lib/tempi.ts): colore + -soft opaco
+     (18% sulla scheda: fondo della barra, senza testo sopra). Icona bianca sulla piastrella ≥ 5.8:1. */
+  --tempo-presente: #0058B0; /* 5.94:1 sul -soft */
+  --tempo-passato: #A34700; /* 5.24:1 */
+  --tempo-imperfetto: #7B3FB3; /* 5.65:1 */
+  --tempo-futuro: #00716B; /* 5.08:1 */
+  --tempo-presente-soft: color-mix(in srgb, var(--tempo-presente) 18%, var(--card));
+  --tempo-passato-soft: color-mix(in srgb, var(--tempo-passato) 18%, var(--card));
+  --tempo-imperfetto-soft: color-mix(in srgb, var(--tempo-imperfetto) 18%, var(--card));
+  --tempo-futuro-soft: color-mix(in srgb, var(--tempo-futuro) 18%, var(--card));
+  /* Sezioni (numeri in /livello, parole colorate della schermata iniziale): colore + -soft opaco (12% sulla scheda).
+     Cifra sul proprio -soft: 5.75 / 5.30 / 5.00:1; label-2 ≥ 5.3:1. */
+  --sezione-grammatica: var(--tempo-presente);
+  --sezione-parole: #B0245E;
+  --sezione-esercizi: #8A5A00;
+  --sezione-grammatica-soft: color-mix(in srgb, var(--sezione-grammatica) 12%, var(--card));
+  --sezione-parole-soft: color-mix(in srgb, var(--sezione-parole) 12%, var(--card));
+  /* Fondo giallo caldo (il giallo del tema scuro, 14%): #FEF6E6, cifra 5.52:1, label-2 6.00:1. */
+  --sezione-esercizi-soft: color-mix(in srgb, #F5C04A 14%, var(--card));
+  /* Comunicare (in sviluppo): grafite neutro. 8.18:1 su bg-grouped, 7.52:1 sul proprio -soft. */
+  --sezione-comunicare: #48484A;
+  --sezione-comunicare-soft: color-mix(in srgb, var(--sezione-comunicare) 12%, var(--card));
   /* Colori della bandiera: solo marchio / schermata iniziale (non sostituiscono success/error).
-     Sul fondo del badge (label 8% su bianco): verde 5.16:1, rosso 5.93:1. */
+     Sul fondo del badge (label 8% su bg-grouped, schermata iniziale): verde 4.64:1, rosso 5.32:1. */
   --flag-green: #097236; /* proposto #0B7A3B: 4.49:1 sul badge dell'anteprima */
   --flag-red: #B3121F;
   /* Ombre e velo: unica fonte (il tema scuro le ridefinisce sotto). */
@@ -34,6 +60,8 @@
   --shadow-pop: 0 8px 24px rgb(0 0 0 / 0.14); /* menu a comparsa */
   --shadow-sheet: 0 -8px 30px rgb(0 0 0 / 0.12); /* foglio dal basso */
   --scrim: rgb(0 0 0 / 0.3); /* velo sotto il foglio */
+  /* Scheda del corso in /livello: ombra morbida nel blu principale (anche nel tema scuro). */
+  --shadow-corso: 0 8px 28px color-mix(in srgb, var(--primario) 16%, transparent);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -53,6 +81,23 @@
     --color-exercises: #C878F5; /* era #BF5AF2: 4.19:1 sul proprio -soft */
     --color-communicate: #FFB340;
     --color-translation: #A5B4FC; /* 8.53:1 su card, 10.53:1 su nero */
+    /* Tempi: -soft 16% sulla scheda (fondo della barra); icona nera sulla piastrella ≥ 8.6:1. */
+    --tempo-presente: #5AAAFF;
+    --tempo-passato: #FF9F45;
+    --tempo-imperfetto: #C79BFF;
+    --tempo-futuro: #3FCFC2;
+    --tempo-presente-soft: color-mix(in srgb, var(--tempo-presente) 16%, var(--card));
+    --tempo-passato-soft: color-mix(in srgb, var(--tempo-passato) 16%, var(--card));
+    --tempo-imperfetto-soft: color-mix(in srgb, var(--tempo-imperfetto) 16%, var(--card));
+    --tempo-futuro-soft: color-mix(in srgb, var(--tempo-futuro) 16%, var(--card));
+    /* Numeri del corso: -soft 18%; cifra 5.09 / 5.12 / 6.72:1, label-2 ≥ 5.1:1. */
+    --sezione-parole: #FF7AA8;
+    --sezione-esercizi: #F5C04A;
+    --sezione-grammatica-soft: color-mix(in srgb, var(--sezione-grammatica) 18%, var(--card));
+    --sezione-parole-soft: color-mix(in srgb, var(--sezione-parole) 18%, var(--card));
+    --sezione-esercizi-soft: color-mix(in srgb, var(--sezione-esercizi) 18%, var(--card));
+    --sezione-comunicare: #C7C7CC; /* 12.47:1 su nero, 6.65:1 sul -soft */
+    --sezione-comunicare-soft: color-mix(in srgb, var(--sezione-comunicare) 18%, var(--card));
     --flag-green: #34C77B; /* 6.81:1 sul badge (label 16% su nero) */
     --flag-red: #FF6B6B; /* 5.37:1 */
     --shadow-sm: none;

@@ -58,16 +58,35 @@ export function ConteggioStudiati({ topicIds, separatore = "/" }: { topicIds: st
   );
 }
 
-// Cerchio con il numero dell'unità: contorno; pieno quando tutti gli argomenti sono studiati.
-export function CerchioUnita({ numero, topicIds }: { numero: number; topicIds: string[] }) {
-  const completa = useStudiati(topicIds) === topicIds.length;
+// Barra sottile dell'unità di un tempo verbale: colore --c, fondo --c-soft (style del genitore).
+export function BarraUnita({ topicIds }: { topicIds: string[] }) {
+  const studiati = useStudiati(topicIds);
+  const totale = topicIds.length;
   return (
     <span
-      className={`flex size-9 shrink-0 items-center justify-center rounded-full border-2 border-grammar text-[15px] font-semibold tabular-nums ${
-        completa ? "bg-grammar text-bg" : "text-grammar"
-      }`}
+      role="progressbar"
+      aria-label="Argomenti studiati"
+      aria-valuemin={0}
+      aria-valuemax={totale}
+      aria-valuenow={studiati}
+      className="block h-1 w-full min-w-0 overflow-hidden rounded-full bg-(--c-soft) md:w-auto md:flex-1"
     >
-      {numero}
+      <span
+        className="block h-full rounded-full bg-(--c) transition-[width] duration-300"
+        style={{ width: `${totale ? (studiati / totale) * 100 : 0}%` }}
+      />
     </span>
+  );
+}
+
+// "Sei qui" sulla riga dell'unità in cui si è fermati: il primo argomento non studiato
+// (ordine del percorso); se sono tutti studiati, il primo. Prima dell'idratazione: unità 1.
+// Colore della riga: --c (tempo) oppure label-2 se la riga non ne ha uno.
+export function SeiQui({ topicIds, ordine }: { topicIds: string[]; ordine: string[] }) {
+  const { topics } = useProgress();
+  const qui = ordine.find((id) => topics[id] !== "studied") ?? ordine[0];
+  if (!topicIds.includes(qui)) return null;
+  return (
+    <span className="block text-[12px] font-semibold tracking-wide text-[var(--c,var(--label-2))] uppercase">Sei qui</span>
   );
 }

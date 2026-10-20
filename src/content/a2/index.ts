@@ -3,6 +3,7 @@ import path from "node:path";
 import type curriculum from "./ru/curriculum.json";
 import type grammar from "./ru/grammar.json";
 import type vocab from "./ru/vocab.json";
+import esercizi from "./esercizi.json";
 import { SHOW_TEXTBOOK_CONTENT } from "@/lib/flags";
 import { DEFAULT_LOCALE, type Locale } from "@/lib/lingue";
 
@@ -53,11 +54,12 @@ export function isVisibile(item: { source?: string }) {
   return SHOW_TEXTBOOK_CONTENT || !item.source?.includes(NON_PUBBLICABILE);
 }
 
+// Numeri della pagina /livello. Esercizi: le voci interattive di esercizi.json (quelle che si fanno).
 export async function statisticheA2(locale: Locale) {
   const { grammar, vocab } = await getContent(locale);
   return {
     argomenti: grammar.topics.length,
     parole: vocab.words.length,
-    esercizi: grammar.exercises.filter(isVisibile).length,
+    esercizi: esercizi.sets.reduce((n, s) => n + s.items.length, 0),
   };
 }

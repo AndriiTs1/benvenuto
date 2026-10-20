@@ -4,12 +4,13 @@ import { getContent, isVisibile } from "@/content/a2";
 import { getParole, type ParolaVista } from "@/content/a2/vocabolario";
 import meta from "@/content/a2/meta.json";
 import { DEFAULT_LOCALE, type Locale } from "@/lib/lingue";
+import { isTempo, type Tempo } from "@/lib/tempi";
 
 // Percorso di grammatica A2: ordine da curriculum.json, nomi e sottotitoli da meta.json
 // (uguale per tutte le lingue). Il campo title di grammar.json non si usa nell'interfaccia.
 
 type Sottotitolo = Record<Locale, string>;
-type MetaUnita = { number: number; title: string; subtitle: Partial<Sottotitolo> };
+type MetaUnita = { number: number; title: string; subtitle: Partial<Sottotitolo>; tempo?: string };
 type MetaArgomento = { slug: string; title: string; subtitle: Partial<Sottotitolo> };
 
 const UNITA_META = meta.units as Record<string, MetaUnita>;
@@ -25,6 +26,8 @@ export type ArgomentoPercorso = {
   title: string;
   subtitle: string;
   unita: number;
+  /** Tempo verbale dell'unità (meta.json → units[].tempo); null = unità secondaria. */
+  tempo: Tempo | null;
   /** Posizione nell'unità (da 1) e numero di argomenti dell'unità. */
   indice: number;
   totaleUnita: number;
@@ -35,20 +38,23 @@ export type UnitaPercorso = {
   number: number;
   title: string;
   subtitle: string;
+  tempo: Tempo | null;
   argomenti: ArgomentoPercorso[];
 };
 
-export type TappaPercorso = { title: string; afterUnit: number; daUnita: number; aUnita: number };
+export type TappaPercorso = { title: string; daUnita: number; aUnita: number };
 
 export async function getPercorso(locale: Locale) {
   const { curriculum } = await getContent(locale);
   const unita: UnitaPercorso[] = curriculum.units.map((u) => {
     const m = UNITA_META[u.id];
+    const tempo = isTempo(m.tempo) ? m.tempo : null;
     return {
       id: u.id,
       number: m.number,
       title: m.title,
       subtitle: sottotitolo(m.subtitle, locale),
+      tempo,
       argomenti: u.topics.map((id, i) => {
         const t = ARGOMENTI_META[id];
         return {
@@ -57,6 +63,7 @@ export async function getPercorso(locale: Locale) {
           title: t.title,
           subtitle: sottotitolo(t.subtitle, locale),
           unita: m.number,
+          tempo,
           indice: i + 1,
           totaleUnita: u.topics.length,
         };
@@ -66,7 +73,6 @@ export async function getPercorso(locale: Locale) {
   const numero = (id: string) => UNITA_META[id].number;
   const tappe: TappaPercorso[] = curriculum.milestones.map((t) => ({
     title: t.title,
-    afterUnit: numero(t.after_unit),
     daUnita: Math.min(...t.covers.map(numero)),
     aUnita: Math.max(...t.covers.map(numero)),
   }));

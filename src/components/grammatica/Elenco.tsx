@@ -28,7 +28,7 @@ export function RigaElenco({
 }) {
   const contenuto = (
     <>
-      <span className="flex w-9 shrink-0 justify-center">{leading}</span>
+      <span className="flex min-w-9 shrink-0 justify-center">{leading}</span>
       <span
         className={`flex min-h-[60px] min-w-0 flex-1 items-center gap-3 self-stretch py-2.5 pr-4 ${
           first ? "" : "border-t border-separator"

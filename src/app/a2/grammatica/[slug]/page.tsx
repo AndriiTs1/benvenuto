@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { FattiEsercizi } from "@/components/esercizi/FattiEsercizi";
+import { IntestazioneTempo } from "@/components/grammatica/Tempo";
 import { HoCapito, SegnaVisto } from "@/components/grammatica/AzioniArgomento";
 import { ContenutoArgomento, GrigliaParticipi, Sezione } from "@/components/grammatica/ContenutoArgomento";
 import { LezioneV2 } from "@/components/grammatica/LezioneV2";
@@ -41,6 +42,7 @@ export default async function ArgomentoPage({ params }: PageProps<"/a2/grammatic
       <SegnaVisto topicId={argomento.id} />
 
       <header>
+        {argomento.tempo && <IntestazioneTempo tempo={argomento.tempo} />}
         <p className="text-[15px] text-label-2">
           Unità {argomento.unita} · Argomento {argomento.indice} di {argomento.totaleUnita}
         </p>

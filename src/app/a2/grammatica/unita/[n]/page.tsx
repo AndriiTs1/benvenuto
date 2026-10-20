@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import { ConteggioEsercizi } from "@/components/esercizi/FattiEsercizi";
+import { IntestazioneTempo } from "@/components/grammatica/Tempo";
 import { Elenco, RigaElenco, TestoRiga } from "@/components/grammatica/Elenco";
 import { LinkAvanti } from "@/components/grammatica/LinkAvanti";
 import { ConteggioStudiati, PuntoStato } from "@/components/grammatica/Progresso";
@@ -29,6 +30,8 @@ export default async function UnitaPage({ params }: PageProps<"/a2/grammatica/un
   return (
     <div className="space-y-6">
       <header>
+        {/* Unità di un tempo verbale: piastrella e "TEMPO VERBALE" nel colore del tempo. */}
+        {u.tempo && <IntestazioneTempo tempo={u.tempo} />}
         <h1 className="text-[34px] leading-tight font-bold tracking-tight md:text-5xl">Unità {u.number}</h1>
         <p className="mt-1 text-[20px] font-semibold">{u.title}</p>
         <Tr locale={locale} as="p" size="md">

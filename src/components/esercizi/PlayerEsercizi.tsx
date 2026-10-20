@@ -15,7 +15,7 @@ import { verificaRisposta } from "@/lib/verifica";
 type Esito = { ok: boolean; data: string; accento?: string; scelta?: number };
 
 const CAPSULA =
-  "flex h-[52px] w-full items-center justify-center rounded-full bg-label text-[17px] font-semibold text-bg transition hover:opacity-90 active:scale-[0.98] disabled:opacity-30 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent md:mx-auto md:w-80";
+  "flex h-[52px] w-full items-center justify-center rounded-full bg-(--primario) text-[17px] font-semibold text-bg transition hover:opacity-90 active:scale-[0.98] disabled:opacity-30 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent md:mx-auto md:w-80";
 const CAPSULA_2 =
   "flex h-[52px] w-full items-center justify-center rounded-full bg-label/[0.08] text-[17px] font-semibold text-label transition hover:bg-label/[0.12] active:scale-[0.98] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent dark:bg-label/[0.16] md:mx-auto md:w-80";
 

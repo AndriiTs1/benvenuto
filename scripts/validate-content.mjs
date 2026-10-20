@@ -19,6 +19,11 @@ for (const [id, t] of Object.entries(meta.topics)) {
   slugs.set(t.slug, id);
   if (!t.title || !t.subtitle?.ru) errori.push(`meta: manca title o subtitle.ru (${id})`);
 }
+// tempo (facoltativo): l'unità è un tempo verbale principale del percorso (lib/tempi.ts).
+const TEMPI = ["presente", "passato", "imperfetto", "futuro"];
+for (const [id, u] of Object.entries(meta.units)) {
+  if (u.tempo !== undefined && !TEMPI.includes(u.tempo)) errori.push(`meta: ${id}.tempo "${u.tempo}" (${TEMPI.join(" | ")})`);
+}
 const numeri = Object.values(meta.units).map((u) => u.number);
 if (new Set(numeri).size !== numeri.length) errori.push("meta: numeri di unità ripetuti");
 

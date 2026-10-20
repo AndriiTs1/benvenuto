@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 };
 
 const PULSANTE =
-  "flex h-[52px] w-full items-center justify-center rounded-full bg-label text-[17px] font-semibold text-bg transition hover:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent active:scale-[0.98] active:opacity-80 md:w-80";
+  "flex h-[52px] w-full items-center justify-center rounded-full bg-(--primario) text-[17px] font-semibold text-bg transition hover:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent active:scale-[0.98] active:opacity-80 md:w-80";
 
 // Un solo percorso: si passa sempre dalla scelta del livello. Cambia solo il testo.
 async function Azioni() {
@@ -28,7 +28,7 @@ async function Azioni() {
 export default function Home() {
   return (
     <PageTransition>
-      <main className="flex min-h-dvh justify-center bg-bg text-label">
+      <main className="flex min-h-dvh justify-center bg-bg-grouped text-label">
         <div className="flex w-full max-w-md flex-col px-6 pt-[max(4rem,env(safe-area-inset-top))] pb-[max(2.5rem,env(safe-area-inset-bottom))] md:max-w-xl md:justify-center md:py-16">
           <div className="flex flex-1 flex-col items-center justify-center pt-10 pb-[12dvh] text-center md:flex-none md:p-0">
             {/* Colori della bandiera: solo marchio / schermata iniziale (vedi CLAUDE.md). */}
@@ -39,11 +39,15 @@ export default function Home() {
             </span>
             <h1 className="mt-4 text-5xl font-bold tracking-tight md:text-6xl">Benvenuto</h1>
             <p className="mx-auto mt-3 max-w-xs text-center text-lg font-normal text-balance text-label-2 md:max-w-[32.5rem] md:text-xl">
-              <span className="font-medium text-grammar">Grammatica</span>,{" "}
-              <span className="font-medium text-vocab">vocabolario</span>,{" "}
-              <span className="font-medium text-exercises">esercizi</span> e{" "}
-              <span className="font-medium text-communicate">comunicazione</span> per il tuo corso
+              Grammatica, vocabolario, esercizi e comunicazione per il tuo corso
             </p>
+            {/* I colori delle sezioni come punti, sotto il testo: il testo resta neutro e leggibile. */}
+            <span aria-hidden="true" className="mt-4 flex gap-2">
+              <span className="size-2 rounded-full bg-(--sezione-grammatica)" />
+              <span className="size-2 rounded-full bg-(--sezione-parole)" />
+              <span className="size-2 rounded-full bg-(--sezione-esercizi)" />
+              <span className="size-2 rounded-full bg-(--sezione-comunicare)" />
+            </span>
           </div>
 
           <div className="flex w-full flex-col items-stretch md:mt-10 md:items-center">

@@ -19,7 +19,7 @@ export function HoCapito({ topicId }: { topicId: string }) {
       aria-pressed={studiato}
       onClick={() => toggleStudiato(topicId)}
       className={`h-[52px] w-full rounded-full text-[17px] font-semibold transition active:scale-[0.98] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent ${
-        studiato ? "bg-label/[0.08] text-label dark:bg-label/[0.16]" : "bg-label text-bg hover:opacity-85"
+        studiato ? "bg-label/[0.08] text-label dark:bg-label/[0.16]" : "bg-(--primario) text-bg hover:opacity-85"
       }`}
     >
       {studiato ? (

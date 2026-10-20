@@ -1,4 +1,5 @@
 import { expect, test } from "@playwright/test";
+import curriculum from "../src/content/a2/ru/curriculum.json";
 import meta from "../src/content/a2/meta.json";
 
 // Menu del corso: solo Grammatica e Vocabolario. I vecchi indirizzi (vista Indice, schede
@@ -35,4 +36,21 @@ test("percorso e unità: progresso degli esercizi", async ({ page }) => {
   await expect(page.getByText(/^Esercizi 0\/\d+$/)).toHaveCount(Object.keys(meta.units).length);
   await page.goto("/a2/grammatica/unita/3");
   await expect(page.getByText(/^Esercizi 0\/\d+$/)).toHaveCount(5);
+});
+
+test("percorso: niente scheda «Continua», «Sei qui» sull'unità in cui ci si è fermati", async ({ page }) => {
+  await page.goto("/a2/grammatica");
+  for (const nome of ["Continua", "Inizia", "Ripassa"]) await expect(page.locator("main").getByText(nome, { exact: true })).toHaveCount(0);
+  const numero = (id: string) => (meta.units as Record<string, { number: number }>)[id].number;
+  // Senza progresso: la prima unità del curriculum.
+  await expect(page.getByText("Sei qui")).toHaveCount(1);
+  await expect(page.locator(`a[href="/a2/grammatica/unita/${numero(curriculum.units[0].id)}"]`)).toContainText("Sei qui");
+  // Prima unità del curriculum studiata per intero → la seconda.
+  const [prima, seconda] = curriculum.units;
+  await page.evaluate((ids) => {
+    localStorage.setItem("bv_progress_a2", JSON.stringify({ topics: Object.fromEntries(ids.map((id) => [id, "studied"])), lastTopic: null }));
+  }, prima.topics);
+  await page.reload();
+  await expect(page.getByText("Sei qui")).toHaveCount(1);
+  await expect(page.locator(`a[href="/a2/grammatica/unita/${numero(seconda.id)}"]`)).toContainText("Sei qui");
 });
