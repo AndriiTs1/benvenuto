@@ -11,8 +11,14 @@ const nextConfig: NextConfig = {
     "/*": ["src/content/**/*.json"],
   },
   // /a2 apre la prima sezione del corso (prima del rendering, con un vero 307).
+  // Esercizi e Comunicare non sono più schede: i vecchi indirizzi portano al percorso.
+  // (?vista=indice di /a2/grammatica si toglie in proxy.ts: qui la query passerebbe alla destinazione.)
   async redirects() {
-    return [{ source: "/a2", destination: "/a2/grammatica", permanent: false }];
+    return ["/a2", "/a2/esercizi", "/a2/comunicare"].map((source) => ({
+      source,
+      destination: "/a2/grammatica",
+      permanent: false,
+    }));
   },
   turbopack: {
     rules: {

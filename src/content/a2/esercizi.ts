@@ -1,6 +1,5 @@
 import dati from "@/content/a2/esercizi.json";
 import meta from "@/content/a2/meta.json";
-import { getContent } from "@/content/a2";
 import { getPercorso } from "@/content/a2/grammatica";
 import { DEFAULT_LOCALE, type Locale } from "@/lib/lingue";
 
@@ -58,37 +57,4 @@ export async function getEsercizi(locale: Locale, slug: string) {
       : { id: v.id, type: "choice", it: v.it, options: v.options, answer: v.answer, why: testo, lingua };
   });
   return { argomento, voci, istruzioni: istruzioni(locale) };
-}
-
-export type RigaEsercizi = { id: string; slug: string; title: string; subtitle: string; ids: string[] };
-
-/** Scheda Esercizi: argomenti del test di metà corso (con insieme) e gli altri, per unità. */
-export async function getIndiceEsercizi(locale: Locale) {
-  const { grammar } = await getContent(locale);
-  const { unita } = await getPercorso(locale);
-  const riga = (id: string): RigaEsercizi | null => {
-    for (const u of unita) {
-      const a = u.argomenti.find((x) => x.id === id);
-      if (a) return { id, slug: a.slug, title: a.title, subtitle: a.subtitle, ids: idEsercizi(id) };
-    }
-    return null;
-  };
-
-  // exam.topics[].refs: solo id di argomenti con un insieme ("L14" e simili si saltano), senza doppioni.
-  const esame = grammar.exam as { title: string; topics: { name: string; refs: string[] }[] };
-  const nelTest = [...new Set(esame.topics.flatMap((t) => t.refs))].filter(haEsercizi);
-  const test = nelTest.map(riga).filter((r): r is RigaEsercizi => r !== null);
-
-  const altri = unita
-    .map((u) => ({
-      numero: u.number,
-      titolo: u.title,
-      righe: u.argomenti
-        .filter((a) => haEsercizi(a.id) && !nelTest.includes(a.id))
-        .map((a) => riga(a.id))
-        .filter((r): r is RigaEsercizi => r !== null),
-    }))
-    .filter((u) => u.righe.length > 0);
-
-  return { titoloTest: esame.title, test, altri };
 }

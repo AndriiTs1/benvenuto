@@ -4,7 +4,8 @@ import { usePathname } from "next/navigation";
 import { BackButton } from "@/components/BackButton";
 
 // Indietro nell'intestazione del corso (come la barra di navigazione iOS):
-// scheda → Livelli; unità → Percorso (Grammatica); argomento → la sua unità; gruppo → Vocabolario.
+// scheda → Livelli; unità → Percorso (Grammatica); argomento → la sua unità;
+// esercizi di un argomento → l'argomento (stesso slug); gruppo → Vocabolario.
 export function CourseBack({ unitaPerSlug }: { unitaPerSlug: Record<string, number> }) {
   const parti = usePathname().split("/").filter(Boolean);
 
@@ -26,7 +27,9 @@ export function CourseBack({ unitaPerSlug }: { unitaPerSlug: Record<string, numb
   }
 
   if (parti[1] === "esercizi" && parti.length > 2) {
-    return <BackButton href="/a2/esercizi" label="Esercizi" ariaLabel="Torna agli esercizi" compattoSuTablet />;
+    return (
+      <BackButton href={`/a2/grammatica/${parti[2]}`} label="Argomento" ariaLabel="Torna all'argomento" compattoSuTablet />
+    );
   }
   if (parti[1] === "vocabolario" && parti.length > 2) {
     return <BackButton href="/a2/vocabolario" label="Vocabolario" ariaLabel="Torna al Vocabolario" compattoSuTablet />;

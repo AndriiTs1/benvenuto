@@ -1,17 +1,17 @@
 import { TabContent } from "@/components/corso/TabContent";
+import { ConteggioEsercizi } from "@/components/esercizi/FattiEsercizi";
 import { ContinuaArgomento } from "@/components/grammatica/ContinuaArgomento";
 import { Elenco, RigaElenco, TestoRiga } from "@/components/grammatica/Elenco";
-import { BarraProgresso, CerchioUnita, ConteggioStudiati, PuntoStato } from "@/components/grammatica/Progresso";
-import { SceltaVista } from "@/components/grammatica/SceltaVista";
+import { BarraProgresso, CerchioUnita, ConteggioStudiati } from "@/components/grammatica/Progresso";
 import { Tr } from "@/components/Tr";
-import { GRUPPI_GRAMMATICA, getPercorso, type TappaPercorso } from "@/content/a2/grammatica";
+import { idEsercizi } from "@/content/a2/esercizi";
+import { getPercorso, type TappaPercorso } from "@/content/a2/grammatica";
 import { linguaScelta } from "@/lib/lingua-scelta";
 
-// La vista (Percorso / Indice) dipende dall'URL, la lingua dal cookie.
+// La lingua dei sottotitoli arriva dal cookie. Il vecchio ?vista=indice lo toglie proxy.ts.
 export const instant = false;
 
-export default async function GrammaticaPage({ searchParams }: PageProps<"/a2/grammatica">) {
-  const vista = (await searchParams).vista === "indice" ? "indice" : "percorso";
+export default async function GrammaticaPage() {
   const locale = await linguaScelta();
   const { unita, argomenti, tappe } = await getPercorso(locale);
 
@@ -31,52 +31,34 @@ export default async function GrammaticaPage({ searchParams }: PageProps<"/a2/gr
           }))}
         />
 
-        <SceltaVista attiva={vista} />
-
-        {vista === "percorso" ? (
-          <Elenco>
-            {unita.map((u, i) => {
-              const ids = u.argomenti.map((a) => a.id);
-              const tappa = tappe.find((t) => t.afterUnit === u.number);
-              return (
-                <div key={u.id}>
-                  <RigaElenco
-                    href={`/a2/grammatica/unita/${u.number}`}
-                    leading={<CerchioUnita numero={u.number} topicIds={ids} />}
-                    trailing={
-                      <span className="shrink-0 text-[15px] text-label-2">
-                        <ConteggioStudiati topicIds={ids} />
-                      </span>
-                    }
-                    first={i === 0}
-                  >
-                    <TestoRiga titolo={u.title} sotto={<Tr locale={locale}>{u.subtitle}</Tr>} />
-                  </RigaElenco>
-                  {tappa && <RigaTappa tappa={tappa} />}
-                </div>
-              );
-            })}
-          </Elenco>
-        ) : (
-          Object.entries(GRUPPI_GRAMMATICA).map(([gruppo, nome]) => {
-            const delGruppo = argomenti.filter((a) => String(a.gruppo) === gruppo);
-            if (delGruppo.length === 0) return null;
+        <Elenco>
+          {unita.map((u, i) => {
+            const ids = u.argomenti.map((a) => a.id);
+            const tappa = tappe.find((t) => t.afterUnit === u.number);
             return (
-              <Elenco key={gruppo} titolo={nome}>
-                {delGruppo.map((a, i) => (
-                  <RigaElenco
-                    key={a.id}
-                    href={`/a2/grammatica/${a.slug}`}
-                    leading={<PuntoStato topicId={a.id} />}
-                    first={i === 0}
-                  >
-                    <TestoRiga titolo={a.title} sotto={<Tr locale={locale}>{a.subtitle}</Tr>} />
-                  </RigaElenco>
-                ))}
-              </Elenco>
+              <div key={u.id}>
+                <RigaElenco
+                  href={`/a2/grammatica/unita/${u.number}`}
+                  leading={<CerchioUnita numero={u.number} topicIds={ids} />}
+                  trailing={
+                    <span className="shrink-0 text-[13px] leading-snug text-label-2 md:text-right">
+                      <span className="block">
+                        Studiati <ConteggioStudiati topicIds={ids} />
+                      </span>
+                      <span className="block">
+                        <ConteggioEsercizi ids={ids.flatMap(idEsercizi)} />
+                      </span>
+                    </span>
+                  }
+                  first={i === 0}
+                >
+                  <TestoRiga titolo={u.title} sotto={<Tr locale={locale}>{u.subtitle}</Tr>} />
+                </RigaElenco>
+                {tappa && <RigaTappa tappa={tappa} />}
+              </div>
             );
-          })
-        )}
+          })}
+        </Elenco>
       </div>
     </TabContent>
   );

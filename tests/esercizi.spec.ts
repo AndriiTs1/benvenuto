@@ -47,7 +47,7 @@ test("presente: errore, risposte giuste, schermata finale, solo gli errori", asy
 
   await expect(page.getByText(`${voci.length - 1} / ${voci.length}`, { exact: true }).first()).toBeVisible();
   await expect(page.getByRole("button", { name: "Ripeti" })).toBeVisible();
-  await expect(page.getByRole("link", { name: "Torna all'argomento" })).toBeVisible();
+  await expect(page.getByRole("main").getByRole("link", { name: "Torna all'argomento" })).toBeVisible();
 
   await page.getByRole("button", { name: "Solo gli errori" }).click();
   await expect(page.getByText("1 / 1", { exact: true })).toBeVisible();
@@ -74,7 +74,7 @@ test("argomento senza esercizi → 404", async ({ page }) => {
 for (const larghezza of [375, 390]) {
   test(`nessuno scorrimento orizzontale a ${larghezza}px`, async ({ page }) => {
     await page.setViewportSize({ width: larghezza, height: 844 });
-    for (const url of ["/a2/esercizi", `/a2/esercizi/${slug("g5-passato-prossimo-base")}`]) {
+    for (const url of ["/a2/grammatica", `/a2/esercizi/${slug("g5-passato-prossimo-base")}`]) {
       await page.goto(url);
       await page.waitForTimeout(200);
       expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(larghezza);

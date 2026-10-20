@@ -42,14 +42,21 @@ function esiste(pathname: string): boolean {
 }
 
 export function proxy(request: NextRequest) {
-  if (esiste(request.nextUrl.pathname)) return NextResponse.next();
+  // La vista Indice non c'è più: il vecchio indirizzo apre il percorso.
+  const { pathname, searchParams } = request.nextUrl;
+  if (pathname === "/a2/grammatica" && searchParams.has("vista")) {
+    const percorso = request.nextUrl.clone();
+    percorso.searchParams.delete("vista");
+    return NextResponse.redirect(percorso);
+  }
+  if (esiste(pathname)) return NextResponse.next();
   // Una route che non esiste: Next.js mostra la pagina 404 con stato 404.
   return NextResponse.rewrite(new URL("/_non-trovato", request.url));
 }
 
 export const config = {
   matcher: [
-    "/a2/grammatica/:path+",
+    "/a2/grammatica/:path*",
     "/a2/vocabolario/:path+",
     "/a2/esercizi/:path+",
     "/modulo/:path*",

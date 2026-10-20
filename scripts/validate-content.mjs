@@ -83,7 +83,6 @@ for (const lingua of lingue) {
       }
     }
     if (!nelCurriculum.has(t.id)) errori.push(`${lingua}/grammar: argomento ${t.id} fuori dal curriculum`);
-    if (!meta.grammarGroups[String(t.group)]) errori.push(`${lingua}/grammar: gruppo ${t.group} assente in meta (${t.id})`);
     if (typeof t.lesson !== "string") errori.push(`${lingua}/grammar: lesson mancante (${t.id})`);
   }
   // Esercizi di lessico (topic "vocab-…") non appartengono alla grammatica.

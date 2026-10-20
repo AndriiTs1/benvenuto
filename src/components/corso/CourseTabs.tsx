@@ -21,21 +21,6 @@ const ICONE: Record<SezioneSlug, ReactNode> = {
       <path d="M6.75 17.25l3-7 3 7M7.9 14.75h3.7" />
     </>
   ),
-  // Matita con spunta
-  esercizi: (
-    <>
-      <path d="M14.5 5.5l4 4L9 19H5v-4z" />
-      <path d="M12.5 7.5l4 4" />
-      <path d="M14 19.5l2 2 4-4.5" />
-    </>
-  ),
-  // Due nuvolette di dialogo
-  comunicare: (
-    <>
-      <path d="M14.5 9.5V6a2.5 2.5 0 0 0-2.5-2.5H5.5A2.5 2.5 0 0 0 3 6v4.5A2.5 2.5 0 0 0 5.5 13H6v3l3-3" />
-      <path d="M11.5 10.5h7a2.5 2.5 0 0 1 2.5 2.5v4a2.5 2.5 0 0 1-2.5 2.5H18v2.5l-3-2.5h-3.5A2.5 2.5 0 0 1 9 17v-4a2.5 2.5 0 0 1 2.5-2.5z" />
-    </>
-  ),
 };
 
 // Menu del corso: tab bar in basso su mobile (stile iOS), schede in alto da md.

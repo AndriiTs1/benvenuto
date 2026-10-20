@@ -67,10 +67,17 @@
   },
   {
    "id": "u7",
-   "title": "Nei tre tempi",
-   "subtitle": "Одна конструкция — три времени",
+   "title": "Che tempo fa?",
+   "subtitle": "Погода: сегодня, завтра, вчера",
    "topics": [
-    "g5-meteo",
+    "g5-meteo"
+   ]
+  },
+  {
+   "id": "u8",
+   "title": "C'è e ci sono",
+   "subtitle": "Есть, имеется — в трёх временах",
+   "topics": [
     "g5-esserci"
    ]
   }

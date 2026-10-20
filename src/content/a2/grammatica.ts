@@ -14,7 +14,6 @@ type MetaArgomento = { slug: string; title: string; subtitle: Partial<Sottotitol
 
 const UNITA_META = meta.units as Record<string, MetaUnita>;
 const ARGOMENTI_META = meta.topics as Record<string, MetaArgomento>;
-export const GRUPPI_GRAMMATICA = meta.grammarGroups as Record<string, string>;
 
 function sottotitolo(testi: Partial<Sottotitolo>, locale: Locale) {
   return testi[locale] ?? testi[DEFAULT_LOCALE] ?? "";
@@ -26,8 +25,6 @@ export type ArgomentoPercorso = {
   title: string;
   subtitle: string;
   unita: number;
-  /** Gruppo di grammar.json (chiave di grammarGroups in meta.json). */
-  gruppo: number;
   /** Posizione nell'unità (da 1) e numero di argomenti dell'unità. */
   indice: number;
   totaleUnita: number;
@@ -44,8 +41,7 @@ export type UnitaPercorso = {
 export type TappaPercorso = { title: string; afterUnit: number; daUnita: number; aUnita: number };
 
 export async function getPercorso(locale: Locale) {
-  const { curriculum, grammar } = await getContent(locale);
-  const gruppi = new Map(grammar.topics.map((t) => [t.id, t.group]));
+  const { curriculum } = await getContent(locale);
   const unita: UnitaPercorso[] = curriculum.units.map((u) => {
     const m = UNITA_META[u.id];
     return {
@@ -61,7 +57,6 @@ export async function getPercorso(locale: Locale) {
           title: t.title,
           subtitle: sottotitolo(t.subtitle, locale),
           unita: m.number,
-          gruppo: gruppi.get(id) ?? 0,
           indice: i + 1,
           totaleUnita: u.topics.length,
         };
