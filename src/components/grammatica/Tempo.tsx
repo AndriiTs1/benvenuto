@@ -13,7 +13,7 @@ export function PiastrellaTempo({ tempo, grande = false }: { tempo: Tempo; grand
       style={STILE_TEMPO[tempo]}
       className={
         grande
-          ? "flex size-12 shrink-0 items-center justify-center rounded-2xl bg-(--c) text-bg"
+          ? "flex size-12 shrink-0 items-center justify-center rounded-[14px] bg-(--c) text-bg"
           : "flex size-10 shrink-0 items-center justify-center rounded-2xl bg-(--c) text-bg"
       }
     >

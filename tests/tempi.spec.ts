@@ -36,7 +36,8 @@ test("percorso: test di metà corso dopo i due blocchi", async ({ page }) => {
     .locator("main")
     .locator('h2, :text("Test metà corso")')
     .evaluateAll((els) => els.map((e) => e.textContent?.trim()));
-  expect(ordine).toEqual(["I tempi verbali", "Altri argomenti", "Test metà corso"]);
+  // "Verifica" (titolo della colonna della tappa) è nascosto sotto md ma resta nel DOM.
+  expect(ordine).toEqual(["I tempi verbali", "Altri argomenti", "Verifica", "Test metà corso"]);
 });
 
 test("pagina dell'unità: etichetta solo per i tempi", async ({ page }) => {

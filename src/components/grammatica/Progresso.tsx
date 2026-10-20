@@ -20,14 +20,19 @@ function useStudiati(topicIds: string[]) {
   return topicIds.filter((id) => topics[id] === "studied").length;
 }
 
-// "{N} di {totale} argomenti studiati" + barra sottile.
+// Progresso generale (intestazione di Grammatica): "{N} di {totale} argomenti" e "{P}%",
+// barra di 6px nel colore del testo (il blu è del presente).
 export function BarraProgresso({ topicIds }: { topicIds: string[] }) {
   const studiati = useStudiati(topicIds);
   const totale = topicIds.length;
+  const percento = totale ? Math.round((studiati / totale) * 100) : 0;
   return (
     <div>
-      <p className="text-[15px] text-label-2 tabular-nums">
-        {studiati} di {totale} argomenti studiati
+      <p className="flex justify-between gap-3 text-[15px] text-label-2 tabular-nums">
+        <span>
+          {studiati} di {totale} argomenti
+        </span>
+        <span>{percento}%</span>
       </p>
       <div
         role="progressbar"
@@ -35,12 +40,9 @@ export function BarraProgresso({ topicIds }: { topicIds: string[] }) {
         aria-valuemin={0}
         aria-valuemax={totale}
         aria-valuenow={studiati}
-        className="mt-2 h-1 overflow-hidden rounded-full bg-label/[0.08] dark:bg-label/[0.16]"
+        className="mt-2 h-1.5 overflow-hidden rounded-full bg-label/[0.08] dark:bg-label/[0.16]"
       >
-        <div
-          className="h-full rounded-full bg-grammar transition-[width] duration-300"
-          style={{ width: `${totale ? (studiati / totale) * 100 : 0}%` }}
-        />
+        <div className="h-full rounded-full bg-label transition-[width] duration-300" style={{ width: `${percento}%` }} />
       </div>
     </div>
   );
@@ -58,7 +60,7 @@ export function ConteggioStudiati({ topicIds, separatore = "/" }: { topicIds: st
   );
 }
 
-// Barra sottile dell'unità di un tempo verbale: colore --c, fondo --c-soft (style del genitore).
+// Barra di 6px dell'unità di un tempo verbale: colore --c, fondo --c-soft (style del genitore).
 export function BarraUnita({ topicIds }: { topicIds: string[] }) {
   const studiati = useStudiati(topicIds);
   const totale = topicIds.length;
@@ -69,7 +71,7 @@ export function BarraUnita({ topicIds }: { topicIds: string[] }) {
       aria-valuemin={0}
       aria-valuemax={totale}
       aria-valuenow={studiati}
-      className="block h-1 w-full min-w-0 overflow-hidden rounded-full bg-(--c-soft) md:w-auto md:flex-1"
+      className="block h-1.5 w-full overflow-hidden rounded-full bg-(--c-soft)"
     >
       <span
         className="block h-full rounded-full bg-(--c) transition-[width] duration-300"

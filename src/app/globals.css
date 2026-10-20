@@ -24,6 +24,11 @@
   --color-exercises-soft: color-mix(in srgb, var(--color-exercises) 12%, transparent);
   --color-communicate-soft: color-mix(in srgb, var(--color-communicate) 12%, transparent);
   --color-translation-soft: color-mix(in srgb, var(--color-translation) 10%, transparent);
+  /* Ombra morbida nel colore del tempo (scheda "Sei qui" del percorso). */
+  --shadow-tempo-presente: 0 8px 24px color-mix(in srgb, var(--tempo-presente) 22%, transparent);
+  --shadow-tempo-passato: 0 8px 24px color-mix(in srgb, var(--tempo-passato) 22%, transparent);
+  --shadow-tempo-imperfetto: 0 8px 24px color-mix(in srgb, var(--tempo-imperfetto) 22%, transparent);
+  --shadow-tempo-futuro: 0 8px 24px color-mix(in srgb, var(--tempo-futuro) 22%, transparent);
   /* Blu principale: pulsanti principali (capsula) e scheda del corso in /livello.
      Testo sul blu = --bg: bianco 6.95:1, nel tema scuro nero 8.63:1. */
   --primario: var(--tempo-presente);

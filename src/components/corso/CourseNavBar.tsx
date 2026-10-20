@@ -2,6 +2,7 @@
 
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState, type ReactNode } from "react";
+import { LARGHEZZA_COLONNA, LARGHEZZA_COLONNA_LARGA, useColonnaLarga } from "@/components/corso/Colonna";
 import { SEZIONI } from "@/lib/sezioni";
 
 // Barra in alto del corso. Su mobile resta ferma: quando il titolo grande (CourseHeader)
@@ -12,6 +13,7 @@ export function CourseNavBar({ children }: { children: ReactNode }) {
   const sentinella = useRef<HTMLDivElement>(null);
   const [compatta, setCompatta] = useState(false);
   const sezione = SEZIONI.find((s) => pathname.endsWith(`/${s.slug}`));
+  const larga = useColonnaLarga();
 
   useEffect(() => {
     // Si osserva il titolo grande; nelle pagine interne (senza titolo di scheda) l'inizio del contenuto.
@@ -40,7 +42,7 @@ export function CourseNavBar({ children }: { children: ReactNode }) {
             compatta ? "border-separator bg-bg/80 opacity-100 backdrop-blur-[20px]" : "border-transparent opacity-0"
           }`}
         />
-        <div className="mx-auto grid w-full max-w-188 grid-cols-[1fr_auto_1fr] items-center px-4 pt-[max(1rem,env(safe-area-inset-top))] max-md:pb-1">
+        <div className={`mx-auto grid w-full ${larga ? LARGHEZZA_COLONNA_LARGA : LARGHEZZA_COLONNA} grid-cols-[1fr_auto_1fr] items-center px-4 pt-[max(1rem,env(safe-area-inset-top))] max-md:pb-1`}>
           {children}
           {sezione && (
             <p

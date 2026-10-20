@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { Colonna } from "@/components/corso/Colonna";
 import { ContenutoCorso } from "@/components/corso/ContenutoCorso";
 import { CourseBack } from "@/components/corso/CourseBack";
 import { CourseHeader } from "@/components/corso/CourseHeader";
@@ -6,7 +7,7 @@ import { CourseNavBar } from "@/components/corso/CourseNavBar";
 import { CourseTabs } from "@/components/corso/CourseTabs";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { PageTransition } from "@/components/PageTransition";
-import { unitaPerSlug } from "@/content/a2/grammatica";
+import { getPercorso, unitaPerSlug } from "@/content/a2/grammatica";
 import { dizionario } from "@/lib/i18n";
 import { linguaScelta } from "@/lib/lingua-scelta";
 
@@ -20,7 +21,7 @@ export default async function A2Layout({ children }: { children: ReactNode }) {
   return (
     <PageTransition>
       <div className="min-h-dvh bg-bg-grouped text-label">
-        {/* Colonna di 720px (+ margini). Da md: Indietro · schede al centro · lingua; su mobile le schede sono la tab bar in basso. */}
+        {/* Colonna di 752px (Grammatica da lg: 1120px, vedi Colonna.tsx). Da md: Indietro · schede al centro · lingua; su mobile le schede sono la tab bar in basso. */}
         <CourseNavBar>
           <div className="col-start-1 row-start-1 justify-self-start">
             <CourseBack unitaPerSlug={await unitaPerSlug(locale)} />
@@ -31,14 +32,18 @@ export default async function A2Layout({ children }: { children: ReactNode }) {
           </div>
         </CourseNavBar>
         <ContenutoCorso>
-          <div className="mx-auto w-full max-w-188 px-4">
-            <CourseHeader locale={locale} sottotitoli={testi.sezioni} />
-          </div>
+          <Colonna className="mx-auto w-full px-4">
+            <CourseHeader
+              locale={locale}
+              sottotitoli={testi.sezioni}
+              argomenti={(await getPercorso(locale)).argomenti.map((a) => a.id)}
+            />
+          </Colonna>
 
           {/* Su mobile lascia spazio alla tab bar fissa (49px + safe area). */}
-          <main className="mx-auto w-full max-w-188 px-4 pt-6 pb-[calc(49px+env(safe-area-inset-bottom)+1.5rem)] md:pb-12">
+          <Colonna as="main" className="mx-auto w-full px-4 pt-6 pb-[calc(49px+env(safe-area-inset-bottom)+1.5rem)] md:pb-12">
             {children}
-          </main>
+          </Colonna>
         </ContenutoCorso>
       </div>
     </PageTransition>
