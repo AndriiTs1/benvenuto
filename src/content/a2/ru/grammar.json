@@ -1602,6 +1602,44 @@
    }
   },
   {
+   "id": "g5-modali-passato",
+   "group": 5,
+   "title": "Verbi modali al passato prossimo",
+   "rule": "avere/essere + dovuto/potuto/voluto + infinito; ausiliare del verbo all'infinito (ho dovuto lavorare / sono dovuto partire); da solo — avere.",
+   "table": [
+    [
+     "",
+     "+ avere",
+     "+ essere"
+    ],
+    [
+     "dovere",
+     "ho dovuto lavorare",
+     "sono dovuto/a partire"
+    ],
+    [
+     "potere",
+     "ho potuto dormire",
+     "sono potuto/a uscire"
+    ],
+    [
+     "volere",
+     "ho voluto vedere",
+     "sono voluto/a restare"
+    ]
+   ],
+   "examples": [
+    "Ieri ho dovuto lavorare.",
+    "Sono dovuta partire presto."
+   ],
+   "mistakes": [
+    "Sono dovuto lavorare → Ho dovuto lavorare.",
+    "Non sono potuto → Non ho potuto."
+   ],
+   "lesson": "L06, L07, L10",
+   "source": "Benvenuto, своими словами"
+  },
+  {
    "id": "g5-reciproci",
    "group": 5,
    "title": "Взаимные глаголы (amarsi — любить друг друга)",
@@ -2390,54 +2428,6 @@
    ]
   },
   {
-   "id": "g5-coppia-tappe",
-   "group": 5,
-   "title": "Этапы отношений (лексика + passato prossimo с essere)",
-   "rule": "Все глаголы отношений — возвратные/взаимные, в passato prossimo с essere и причастием во мн.ч. (кроме divorziare — avere).",
-   "table": [
-    [
-     "порядок",
-     "глагол",
-     "passato prossimo (noi / loro)"
-    ],
-    [
-     "1",
-     "conoscersi — познакомиться",
-     "ci siamo conosciuti / si sono conosciuti"
-    ],
-    [
-     "2",
-     "innamorarsi — влюбиться",
-     "ci siamo innamorati / si sono innamorati"
-    ],
-    [
-     "3",
-     "mettersi insieme — начать встречаться",
-     "ci siamo messi insieme / si sono messi insieme"
-    ],
-    [
-     "4",
-     "fidanzarsi — обручиться",
-     "ci siamo fidanzati / si sono fidanzati"
-    ],
-    [
-     "5",
-     "sposarsi — пожениться",
-     "ci siamo sposati / si sono sposati"
-    ],
-    [
-     "6",
-     "divorziare — развестись",
-     "abbiamo divorziato / hanno divorziato (avere!)"
-    ]
-   ],
-   "mistakes": [
-    "divorziare — НЕ возвратный: hanno divorziato (не si sono divorziati).",
-    "mettersi insieme — причастие messo: si sono messi insieme."
-   ],
-   "lesson": "L24"
-  },
-  {
    "id": "g5-meteo",
    "group": 5,
    "title": "Che tempo fa? — погода в трёх временах",
@@ -3055,7 +3045,7 @@
   },
   {
    "id": "e076",
-   "topic": "g5-coppia-tappe",
+   "topic": "g5-reciproci",
    "source": "учебник (не для публикации в приложении как есть)",
    "task": "Es. 3 — Una storia d'amore che inizia bene e finisce male: metti in ordine cronologico: sposarsi, innamorarsi, fidanzarsi, divorziare, mettersi insieme.",
    "answer": "innamorarsi → mettersi insieme → fidanzarsi → sposarsi → divorziare",
@@ -3171,6 +3161,7 @@
     "name": "Passato prossimo: essere/avere, participi, già/non ancora/appena/mai",
     "refs": [
      "g5-passato-prossimo-base",
+     "g5-modali-passato",
      "g5-avverbi-passato"
     ]
    },

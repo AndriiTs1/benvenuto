@@ -674,16 +674,48 @@
   "g5-passato-prossimo-base": {
    "id": "g5-passato-prossimo-base",
    "inBreve": [
-    "{{Passato prossimo}} — минулий час для **завершених дій**: {{Ieri ho lavorato}} — «Учора я працював».",
-    "Складається з двох слів: {{avere}} або {{essere}} у теперішньому часі + **дієприкметник** ({{participio}}).",
+    "{{Passato prossimo}} — минулий час для **завершених дій**: {{Ieri ho lavorato}} — «Вчора я працював».",
+    "Складений час: **допоміжне дієслово** {{avere}} або {{essere}} у теперішньому часі ({{ho, sono…}}) + **дієприкметник** ({{participio}}).",
     "З {{essere}} дієприкметник змінює закінчення за родом і числом: {{Anna è andata}}, {{i ragazzi sono andati}}."
    ],
    "formation": {
+    "formula": {
+     "parts": [
+      "avere / essere",
+      "participio"
+     ],
+     "examples": [
+      {
+       "parts": [
+        "ho",
+        "mangiato"
+       ],
+       "it": "Ho mangiato la pizza.",
+       "tr": "Я з'їв піцу."
+      },
+      {
+       "parts": [
+        "sono",
+        "andata"
+       ],
+       "it": "Sono andata al mare.",
+       "tr": "Я (ж.) поїхала на море."
+      },
+      {
+       "parts": [
+        "abbiamo",
+        "preso"
+       ],
+       "it": "Abbiamo preso il treno.",
+       "tr": "Ми сіли на потяг."
+      }
+     ]
+    },
     "steps": [
-     "Обери допоміжне дієслово: {{essere}} — рух, зміна стану і зворотні; {{avere}} — усі інші.",
+     "Обери допоміжне дієслово — {{avere}} або {{essere}} (тест нижче): {{mangiare → ho mangiato}}, {{andare → sono andato}}.",
      "Постав його в presente: {{ho, hai, ha…}} або {{sono, sei, è…}}",
-     "Утвори дієприкметник: {{-are → -ato}}, {{-ere → -uto}}, {{-ire → -ito}}. Багато частих дієслів — неправильні (таблиця нижче).",
-     "З {{essere}} узгодь закінчення з підметом: {{-o, -a, -i, -e}}."
+     "Утвори дієприкметник: {{parlare → parlato}}, {{vendere → venduto}}, {{dormire → dormito}}.",
+     "З {{essere}} узгодь закінчення з підметом: {{Anna è andata}}."
     ]
    },
    "tables": [
@@ -774,6 +806,206 @@
       ]
      ],
      "note": "З {{avere}} дієприкметник **не змінюється**: {{Anna ha mangiato}}."
+    },
+    {
+     "type": "pairs",
+     "title": "Неправильні: -so",
+     "sep": "→",
+     "items": [
+      {
+       "a": "prendere",
+       "b": "preso",
+       "tr": "брати"
+      },
+      {
+       "a": "scendere",
+       "b": "sceso",
+       "tr": "спускатися"
+      },
+      {
+       "a": "spendere",
+       "b": "speso",
+       "tr": "витрачати"
+      },
+      {
+       "a": "chiudere",
+       "b": "chiuso",
+       "tr": "зачиняти"
+      },
+      {
+       "a": "decidere",
+       "b": "deciso",
+       "tr": "вирішувати"
+      },
+      {
+       "a": "mettere",
+       "b": "messo",
+       "tr": "класти"
+      },
+      {
+       "a": "smettere",
+       "b": "smesso",
+       "tr": "кидати (курити)"
+      }
+     ],
+     "note": "{{-dere}} і {{-ttere}} часто дають {{-so}}."
+    },
+    {
+     "type": "pairs",
+     "title": "Неправильні: -tto",
+     "sep": "→",
+     "items": [
+      {
+       "a": "fare",
+       "b": "fatto",
+       "tr": "робити"
+      },
+      {
+       "a": "dire",
+       "b": "detto",
+       "tr": "казати"
+      },
+      {
+       "a": "leggere",
+       "b": "letto",
+       "tr": "читати"
+      },
+      {
+       "a": "scrivere",
+       "b": "scritto",
+       "tr": "писати"
+      },
+      {
+       "a": "rompere",
+       "b": "rotto",
+       "tr": "ламати"
+      }
+     ],
+     "note": "{{-gere}}, {{-vere}} → {{-tto}}: {{letto}}, {{scritto}}."
+    },
+    {
+     "type": "pairs",
+     "title": "Неправильні: -sto і -rto",
+     "sep": "→",
+     "items": [
+      {
+       "a": "vedere",
+       "b": "visto",
+       "tr": "бачити"
+      },
+      {
+       "a": "rimanere",
+       "b": "rimasto",
+       "tr": "залишатися"
+      },
+      {
+       "a": "rispondere",
+       "b": "risposto",
+       "tr": "відповідати"
+      },
+      {
+       "a": "chiedere",
+       "b": "chiesto",
+       "tr": "питати"
+      },
+      {
+       "a": "aprire",
+       "b": "aperto",
+       "tr": "відчиняти"
+      },
+      {
+       "a": "scoprire",
+       "b": "scoperto",
+       "tr": "відкривати (дізнаватися)"
+      },
+      {
+       "a": "offrire",
+       "b": "offerto",
+       "tr": "пригощати, пропонувати"
+      },
+      {
+       "a": "morire",
+       "b": "morto",
+       "tr": "помирати"
+      }
+     ],
+     "note": "{{-rire}} → {{-rto}}: {{aperto}}, {{offerto}}."
+    },
+    {
+     "type": "pairs",
+     "title": "Запам'ятати окремо",
+     "sep": "→",
+     "items": [
+      {
+       "a": "essere",
+       "b": "stato",
+       "tr": "бути"
+      },
+      {
+       "a": "stare",
+       "b": "stato",
+       "tr": "перебувати"
+      },
+      {
+       "a": "venire",
+       "b": "venuto",
+       "tr": "приходити"
+      },
+      {
+       "a": "nascere",
+       "b": "nato",
+       "tr": "народжуватися"
+      },
+      {
+       "a": "vivere",
+       "b": "vissuto",
+       "tr": "жити"
+      },
+      {
+       "a": "bere",
+       "b": "bevuto",
+       "tr": "пити"
+      }
+     ],
+     "note": "{{essere}} і {{stare}} — один дієприкметник: {{stato}}."
+    },
+    {
+     "type": "pairs",
+     "title": "Два допоміжні",
+     "sep": "↔",
+     "items": [
+      {
+       "a": "Ho cominciato il corso.",
+       "b": "Il corso è cominciato.",
+       "tr": "Я почав курс ↔ Курс почався"
+      },
+      {
+       "a": "Ho finito il lavoro.",
+       "b": "Il film è finito.",
+       "tr": "Я закінчив роботу ↔ Фільм закінчився"
+      },
+      {
+       "a": "Ho corso un'ora.",
+       "b": "Sono corso a casa.",
+       "tr": "Я бігав годину ↔ Я побіг додому"
+      },
+      {
+       "a": "Ho salito le scale.",
+       "b": "Sono salito sul treno.",
+       "tr": "Я піднявся сходами ↔ Я сів у потяг"
+      },
+      {
+       "a": "Ho passato le vacanze al mare.",
+       "b": "Sono passato da Marco.",
+       "tr": "Я провів відпустку на морі ↔ Я зайшов до Марко"
+      },
+      {
+       "a": "Ha piovuto.",
+       "b": "È piovuto.",
+       "tr": "Йшов дощ — обидва варіанти правильні"
+      }
+     ],
+     "note": "Є об'єкт (що?) — {{avere}}; дія сама по собі або «куди» — {{essere}}."
     }
    ],
    "uses": [
@@ -805,64 +1037,26 @@
    ],
    "exceptions": [
     {
-     "title": "Зворотні дієслова",
-     "text": "Завжди з {{essere}}.",
-     "examples": [
-      {
-       "it": "Mi sono alzato alle sette.",
-       "tr": "Я встав о сьомій."
-      }
-     ]
-    },
-    {
-     "title": "piacere і mancare",
-     "text": "Завжди з {{essere}}; дієприкметник узгоджується з тим, що подобається.",
-     "examples": [
-      {
-       "it": "Mi è piaciuta la pizza.",
-       "tr": "Мені сподобалася піца."
-      },
-      {
-       "it": "Mi sono piaciuti i film.",
-       "tr": "Мені сподобалися фільми."
-      }
-     ]
-    },
-    {
      "title": "Змішана група",
      "text": "Якщо в групі є хоча б один чоловік — закінчення {{-i}}.",
      "examples": [
       {
        "it": "Marco e Anna sono arrivati.",
-       "tr": "Марко і Анна приїхали."
+       "tr": "Марко й Анна приїхали."
       }
      ]
     },
     {
-     "title": "cominciare і finire",
-     "text": "Якщо є об'єкт — {{avere}}; якщо щось починається саме — {{essere}}.",
+     "title": "costare, durare, piacere",
+     "text": "Теж з {{essere}}: дієприкметник узгоджується з тим, що коштувало / тривало / сподобалось.",
      "examples": [
       {
-       "it": "Ho cominciato il corso.",
-       "tr": "Я почав курс."
+       "it": "Quanto è costata la borsa?",
+       "tr": "Скільки коштувала сумка?"
       },
       {
-       "it": "Il film è cominciato.",
-       "tr": "Фільм почався."
-      }
-     ]
-    },
-    {
-     "title": "salire і scendere",
-     "text": "У транспорт / з транспорту — {{essere}}; сходами — {{avere}}.",
-     "examples": [
-      {
-       "it": "Sono sceso dall'autobus.",
-       "tr": "Я вийшов з автобуса."
-      },
-      {
-       "it": "Ho salito le scale.",
-       "tr": "Я піднявся сходами."
+       "it": "Il film è durato due ore.",
+       "tr": "Фільм тривав дві години."
       }
      ]
     },
@@ -872,11 +1066,21 @@
      "examples": [
       {
        "it": "Sono stata a Milano.",
-       "tr": "Я була в Мілані."
+       "tr": "Я (ж.) була в Мілані."
       },
       {
-       "it": "Sono stato male.",
-       "tr": "Мені було погано."
+       "it": "Ieri sono stato male.",
+       "tr": "Вчора я хворів (і вже минуло)."
+      }
+     ]
+    },
+    {
+     "title": "Passato remoto",
+     "text": "У книжках і казках трапиться {{andò}}, {{fece}} — теж минуле. Поки лише впізнавай: у розмові на півночі й у Тічино кажуть {{passato prossimo}}.",
+     "examples": [
+      {
+       "it": "C'era una volta un re che andò nel bosco.",
+       "tr": "Жив-був король, який пішов до лісу."
       }
      ]
     }
@@ -885,7 +1089,12 @@
     {
      "wrong": "Ho andato al cinema.",
      "right": "Sono andato al cinema.",
-     "why": "andare — дієслово руху, потрібен essere."
+     "why": "«Куди» — переміщення, потрібен essere."
+    },
+    {
+     "wrong": "Sono camminato molto.",
+     "right": "Ho camminato molto.",
+     "why": "Рух без «куди» — avere."
     },
     {
      "wrong": "Anna è andato.",
@@ -923,26 +1132,36 @@
     },
     {
      "it": "Siamo rimasti a casa tutto il giorno.",
-     "tr": "Ми весь день залишалися вдома."
+     "tr": "Ми цілий день просиділи вдома."
     },
     {
      "it": "Ho preso il treno delle otto.",
-     "tr": "Я сів на потяг о восьмій."
+     "tr": "Я сів на восьмигодинний потяг."
     },
     {
      "it": "Che cosa è successo?",
      "tr": "Що сталося?"
     }
    ],
-   "summary": "**avere / essere + дієприкметник**. З essere — узгодження: **è andato / è andata**. Неправильні: **fatto, letto, preso, visto**.",
-   "keyWords": [],
+   "summary": "**avere / essere + дієприкметник**. Є об'єкт — **avere**; «куди», зміна, зворотні — **essere** (+ узгодження). Неправильні: **fatto, preso, visto, rimasto**.",
+   "keyWords": [
+    {
+     "title": "Segnali del passato prossimo",
+     "ids": [
+      "w239",
+      "w217",
+      "w205",
+      "w233"
+     ]
+    }
+   ],
    "auxChoice": {
     "title": "Essere o avere?",
     "groups": [
      {
       "aux": "essere",
-      "title": "Рух",
-      "text": "Кудись іти, приходити, виходити.",
+      "title": "Переміщення куди / звідки",
+      "text": "Є напрямок: пішов куди, прийшов звідки.",
       "verbs": [
        {
         "id": "w058",
@@ -979,18 +1198,6 @@
         "it": "entrare",
         "participle": "entrato",
         "tr": "входити"
-       },
-       {
-        "id": "w056",
-        "it": "salire",
-        "participle": "salito",
-        "tr": "підніматися; сідати (в транспорт)"
-       },
-       {
-        "id": "w199",
-        "it": "scendere",
-        "participle": "sceso",
-        "tr": "спускатися; виходити (з транспорту)"
        }
       ]
      },
@@ -1018,22 +1225,10 @@
         "tr": "залишатися"
        },
        {
-        "id": "w274",
-        "it": "restare",
-        "participle": "restato",
-        "tr": "залишатися"
-       },
-       {
         "id": "w005",
         "it": "diventare",
         "participle": "diventato",
         "tr": "ставати"
-       },
-       {
-        "id": "w272",
-        "it": "crescere",
-        "participle": "cresciuto",
-        "tr": "рости"
        },
        {
         "id": "w185",
@@ -1054,6 +1249,18 @@
         "tr": "траплятися"
        },
        {
+        "id": "w274",
+        "it": "restare",
+        "participle": "restato",
+        "tr": "залишатися"
+       },
+       {
+        "id": "w272",
+        "it": "crescere",
+        "participle": "cresciuto",
+        "tr": "рости"
+       },
+       {
         "id": "w504",
         "it": "cadere",
         "participle": "caduto",
@@ -1064,67 +1271,74 @@
      {
       "aux": "essere",
       "title": "Зворотні, piacere і mancare",
-      "text": "Усі зворотні та piacere / mancare — теж з essere: {{mi sono alzato}}, {{mi è piaciuto}}.",
-      "verbs": []
+      "text": "Зворотні та {{piacere}} / {{mancare}} — з {{essere}}; дієприкметник узгоджується.",
+      "verbs": [
+       {
+        "id": "w065",
+        "it": "svegliarsi",
+        "participle": "mi sono svegliato",
+        "tr": "прокидатися"
+       },
+       {
+        "id": "w062",
+        "it": "alzarsi",
+        "participle": "mi sono alzato",
+        "tr": "вставати"
+       },
+       {
+        "id": "w108",
+        "it": "vestirsi",
+        "participle": "mi sono vestita",
+        "tr": "одягатися"
+       },
+       {
+        "id": "w096",
+        "it": "divertirsi",
+        "participle": "ci siamo divertiti",
+        "tr": "веселитися"
+       },
+       {
+        "id": "w034",
+        "it": "piacere",
+        "participle": "mi è piaciuto",
+        "tr": "подобатися"
+       },
+       {
+        "id": "w033",
+        "it": "mancare",
+        "participle": "mi è mancata",
+        "tr": "сумувати за…"
+       }
+      ]
      },
      {
       "aux": "avere",
-      "title": "Усі інші",
-      "text": "Дієслова з об'єктом ({{ho comprato il pane}}) і більшість без об'єкта ({{ho dormito}}).",
+      "title": "Пастка: рух без «куди»",
+      "text": "Рухаєшся, але не кажеш куди → {{avere}}: {{ho camminato}}. Так само всі дієслова з об'єктом: {{ho comprato il pane}}.",
       "verbs": [
        {
-        "id": "w069",
-        "it": "comprare",
-        "participle": "comprato",
-        "tr": "купувати"
+        "id": "w054",
+        "it": "camminare",
+        "participle": "camminato",
+        "tr": "ходити пішки"
        },
        {
-        "id": "w285",
-        "it": "vendere",
-        "participle": "venduto",
-        "tr": "продавати"
+        "id": "w280",
+        "it": "nuotare",
+        "participle": "nuotato",
+        "tr": "плавати"
        },
        {
-        "id": "w084",
-        "it": "cominciare",
-        "participle": "cominciato",
-        "tr": "починати"
-       },
-       {
-        "id": "w129",
-        "it": "frequentare",
-        "participle": "frequentato",
-        "tr": "відвідувати (курс)"
-       },
-       {
-        "id": "w180",
-        "it": "studiare",
-        "participle": "studiato",
-        "tr": "вчитися, вивчати"
-       },
-       {
-        "id": "w015",
-        "it": "cenare",
-        "participle": "cenato",
-        "tr": "вечеряти"
-       },
-       {
-        "id": "w222",
-        "it": "pranzare",
-        "participle": "pranzato",
-        "tr": "обідати"
+        "id": "w286",
+        "it": "viaggiare",
+        "participle": "viaggiato",
+        "tr": "подорожувати"
        },
        {
         "id": "w094",
         "it": "ballare",
         "participle": "ballato",
         "tr": "танцювати"
-       },
-       {
-        "id": "w054",
-        "it": "camminare",
-        "participle": "camminato",
-        "tr": "ходити пішки"
        },
        {
         "id": "w281",
@@ -1137,35 +1351,248 @@
         "it": "girare",
         "participle": "girato",
         "tr": "гуляти, їздити містом"
-       },
-       {
-        "id": "w280",
-        "it": "nuotare",
-        "participle": "nuotato",
-        "tr": "плавати"
-       },
-       {
-        "id": "w278",
-        "it": "giocare",
-        "participle": "giocato",
-        "tr": "грати"
-       },
-       {
-        "id": "w284",
-        "it": "telefonare",
-        "participle": "telefonato",
-        "tr": "телефонувати"
-       },
-       {
-        "id": "w286",
-        "it": "viaggiare",
-        "participle": "viaggiato",
-        "tr": "подорожувати"
        }
       ]
      }
-    ]
+    ],
+    "intro": {
+     "title": "Тест за 3 секунди",
+     "steps": [
+      "Є об'єкт (що? кого?) → {{avere}}: {{ho comprato il pane}}.",
+      "Переміщення «куди / звідки» → {{essere}}: {{sono andato a Roma}}.",
+      "Зміна стану (народився, став, залишився) → {{essere}}: {{è nata}}.",
+      "Зворотне → {{essere}}. Усе інше → {{avere}}: {{ho dormito}}."
+     ]
+    }
    }
+  },
+  "g5-modali-passato": {
+   "id": "g5-modali-passato",
+   "inBreve": [
+    "{{dovere}}, {{potere}}, {{volere}} у минулому: {{ho dovuto}}, {{ho potuto}}, {{ho voluto}} + інфінітив.",
+    "Допоміжне дієслово — **як у другого дієслова**: {{ho dovuto lavorare}}, але {{sono dovuto partire}}.",
+    "З {{essere}} дієприкметник узгоджується: {{Anna è dovuta partire}}."
+   ],
+   "formation": {
+    "formula": {
+     "parts": [
+      "avere / essere",
+      "dovuto · potuto · voluto",
+      "infinito"
+     ],
+     "examples": [
+      {
+       "parts": [
+        "ho",
+        "dovuto",
+        "lavorare"
+       ],
+       "it": "Ieri ho dovuto lavorare.",
+       "tr": "Учора мені довелося працювати."
+      },
+      {
+       "parts": [
+        "sono",
+        "dovuta",
+        "partire"
+       ],
+       "it": "Sono dovuta partire presto.",
+       "tr": "Мені (ж.) довелося поїхати рано."
+      },
+      {
+       "parts": [
+        "non ho",
+        "potuto",
+        "dormire"
+       ],
+       "it": "Non ho potuto dormire.",
+       "tr": "Я не зміг заснути."
+      }
+     ]
+    },
+    "steps": [
+     "Подивись на **друге** дієслово: {{lavorare → ho lavorato}}, {{partire → sono partito}}.",
+     "Візьми те саме допоміжне: {{ho dovuto lavorare}}, {{sono dovuto partire}}.",
+     "З {{essere}} узгодь закінчення: {{Anna è dovuta partire}}.",
+     "Модальне без другого дієслова — {{avere}}: {{Non ho potuto.}}"
+    ]
+   },
+   "tables": [
+    {
+     "title": "З avere і з essere",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "+ avere",
+       "+ essere"
+      ],
+      [
+       "dovere",
+       "ho dovuto lavorare",
+       "sono dovuto/a partire"
+      ],
+      [
+       "potere",
+       "ho potuto dormire",
+       "sono potuto/a uscire"
+      ],
+      [
+       "volere",
+       "ho voluto vedere",
+       "sono voluto/a restare"
+      ]
+     ],
+     "note": "Друге дієслово завжди в інфінітиві, без прийменника: {{ho dovuto studiare}}."
+    },
+    {
+     "type": "pairs",
+     "title": "Порівняй",
+     "sep": "↔",
+     "items": [
+      {
+       "a": "Ho dovuto studiare.",
+       "b": "Sono dovuto andare.",
+       "tr": "Довелося вчитися ↔ Довелося піти"
+      },
+      {
+       "a": "Non ho potuto dormire.",
+       "b": "Non sono potuto uscire.",
+       "tr": "Не зміг заснути ↔ Не зміг вийти"
+      },
+      {
+       "a": "Ho voluto provare.",
+       "b": "Sono voluta restare.",
+       "tr": "Захотів спробувати ↔ Захотіла залишитися"
+      }
+     ],
+     "note": "Ліворуч друге дієслово з {{avere}}, праворуч — з {{essere}}."
+    }
+   ],
+   "uses": [
+    {
+     "text": "Обов'язок у минулому",
+     "it": "Ieri ho dovuto lavorare fino alle otto.",
+     "tr": "Учора мені довелося працювати до восьмої."
+    },
+    {
+     "text": "Не вийшло",
+     "it": "Non sono potuto venire al corso.",
+     "tr": "Я не зміг прийти на курс."
+    },
+    {
+     "text": "Бажання",
+     "it": "Abbiamo voluto vedere il lago.",
+     "tr": "Ми захотіли побачити озеро."
+    },
+    {
+     "text": "Коротка відповідь",
+     "it": "Sei venuto? — No, non ho potuto.",
+     "tr": "Ти прийшов? — Ні, не зміг."
+    }
+   ],
+   "exceptions": [
+    {
+     "title": "avere теж можна",
+     "text": "У розмові часто кажуть {{ho dovuto partire}}. Це допустимо, але {{sono dovuto partire}} — зразковий варіант.",
+     "examples": [
+      {
+       "it": "Sono dovuto tornare a casa.",
+       "tr": "Мені довелося повернутися додому."
+      }
+     ]
+    },
+    {
+     "title": "Зворотні",
+     "text": "Дві правильні форми: {{mi sono dovuto alzare}} = {{ho dovuto alzarmi}}.",
+     "examples": [
+      {
+       "it": "Mi sono dovuta alzare alle sei.",
+       "tr": "Мені (ж.) довелося встати о шостій."
+      }
+     ]
+    },
+    {
+     "title": "dovevo чи ho dovuto?",
+     "text": "{{ho dovuto}} — довелося і зробив; {{dovevo}} — мав (зробив чи ні — неясно).",
+     "examples": [
+      {
+       "it": "Dovevo chiamarti, ma ho dimenticato.",
+       "tr": "Я мав тобі подзвонити, але забув."
+      }
+     ]
+    },
+    {
+     "title": "sapere",
+     "text": "{{ho saputo}} означає «дізнався»: {{ho saputo la notizia}}.",
+     "examples": [
+      {
+       "it": "Ieri ho saputo che Anna è incinta.",
+       "tr": "Учора я дізнався, що Анна вагітна."
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "Sono dovuto lavorare.",
+     "right": "Ho dovuto lavorare.",
+     "why": "lavorare — з avere."
+    },
+    {
+     "wrong": "Anna è dovuto partire.",
+     "right": "Anna è dovuta partire.",
+     "why": "З essere — узгодження: Anna — ж.р."
+    },
+    {
+     "wrong": "Ho dovuto di studiare.",
+     "right": "Ho dovuto studiare.",
+     "why": "Після модальних — без прийменника."
+    },
+    {
+     "wrong": "Non sono potuto.",
+     "right": "Non ho potuto.",
+     "why": "Без другого дієслова — avere."
+    },
+    {
+     "wrong": "Ho voluto andato.",
+     "right": "Sono voluto andare.",
+     "why": "Друге дієслово — в інфінітиві."
+    }
+   ],
+   "examples": [
+    {
+     "it": "Ieri ho dovuto prendere il bus.",
+     "tr": "Учора мені довелося їхати автобусом."
+    },
+    {
+     "it": "Non abbiamo potuto pagare con la carta.",
+     "tr": "Ми не змогли заплатити карткою."
+    },
+    {
+     "it": "Marco è dovuto andare dal medico.",
+     "tr": "Марко довелося піти до лікаря."
+    },
+    {
+     "it": "I bambini non sono voluti uscire.",
+     "tr": "Діти не захотіли виходити."
+    },
+    {
+     "it": "Hai potuto finire il lavoro?",
+     "tr": "Ти зміг закінчити роботу?"
+    }
+   ],
+   "summary": "**avere / essere + dovuto · potuto · voluto + інфінітив**. Допоміжне — як у другого дієслова: **ho dovuto lavorare**, **sono dovuto partire**.",
+   "keyWords": [
+    {
+     "title": "I verbi modali",
+     "ids": [
+      "w126",
+      "w127",
+      "w128"
+     ]
+    }
+   ]
   },
   "g5-presente-tu": {
    "id": "g5-presente-tu",
@@ -3835,7 +4262,7 @@
    "id": "g5-reciproci",
    "inBreve": [
     "У множині {{ci, vi, si}} можуть означати «одне одного»: {{ci amiamo}} — ми кохаємо одне одного.",
-    "Форми — як у зворотних: {{ci vediamo}}, {{vi conoscete}}, {{si scrivono}}.",
+    "Етапи стосунків — теж з {{essere}}: {{si sono sposati}}. Лише {{divorziare}} — з {{avere}}.",
     "У passato prossimo — {{essere}} і дієприкметник у множині: {{ci siamo conosciuti}}."
    ],
    "formation": {
@@ -3900,153 +4327,7 @@
       }
      ],
      "note": "Когось — {{avere}}; одне одного — {{essere}}."
-    }
-   ],
-   "uses": [
-    {
-     "text": "Стосунки",
-     "it": "Ci conosciamo da dieci anni.",
-     "tr": "Ми знайомі десять років."
     },
-    {
-     "text": "Зустрічі",
-     "it": "Ci vediamo domani!",
-     "tr": "Побачимося завтра!"
-    },
-    {
-     "text": "Спілкування",
-     "it": "Ci scriviamo ogni giorno.",
-     "tr": "Ми пишемо одне одному щодня."
-    },
-    {
-     "text": "Привітання й прощання",
-     "it": "Si salutano e vanno via.",
-     "tr": "Вони прощаються й ідуть."
-    }
-   ],
-   "exceptions": [
-    {
-     "title": "Змішана група",
-     "text": "Чоловік і жінка разом — закінчення {{-i}}.",
-     "examples": [
-      {
-       "it": "Io e mio marito ci siamo conosciuti a Lugano.",
-       "tr": "Ми з чоловіком познайомилися в Лугано."
-      }
-     ]
-    },
-    {
-     "title": "Дві жінки",
-     "text": "Лише жінки — закінчення {{-e}}.",
-     "examples": [
-      {
-       "it": "Lucia e Sara si sono viste ieri.",
-       "tr": "Лючія і Сара бачилися вчора."
-      }
-     ]
-    },
-    {
-     "title": "innamorarsi di",
-     "text": "Закохатися в когось — {{di}}.",
-     "examples": [
-      {
-       "it": "Mi sono innamorato di lei.",
-       "tr": "Я закохався в неї."
-      }
-     ]
-    },
-    {
-     "title": "sposarsi con / sposare",
-     "text": "Два правильні варіанти.",
-     "examples": [
-      {
-       "it": "Mi sono sposato con Anna. = Ho sposato Anna.",
-       "tr": "Я одружився з Анною."
-      }
-     ]
-    }
-   ],
-   "mistakes": [
-    {
-     "wrong": "Abbiamo conosciuti a Lugano.",
-     "right": "Ci siamo conosciuti a Lugano.",
-     "why": "Одне одного — ci + essere."
-    },
-    {
-     "wrong": "Ci siamo conosciuto.",
-     "right": "Ci siamo conosciuti.",
-     "why": "Дієприкметник у множині."
-    },
-    {
-     "wrong": "Lucia e Sara si sono visti.",
-     "right": "Lucia e Sara si sono viste.",
-     "why": "Дві жінки — -e."
-    },
-    {
-     "wrong": "Mi sono innamorato in lei.",
-     "right": "Mi sono innamorato di lei.",
-     "why": "innamorarsi di."
-    },
-    {
-     "wrong": "Ci siamo amato molto.",
-     "right": "Ci siamo amati molto.",
-     "why": "Множина: amati."
-    }
-   ],
-   "examples": [
-    {
-     "it": "Ci siamo conosciuti a una festa.",
-     "tr": "Ми познайомилися на вечірці."
-    },
-    {
-     "it": "Si sono sposati nel 2010.",
-     "tr": "Вони одружилися у 2010 році."
-    },
-    {
-     "it": "Vi vedete spesso?",
-     "tr": "Ви часто бачитеся?"
-    },
-    {
-     "it": "Non ci parliamo più.",
-     "tr": "Ми більше не розмовляємо."
-    },
-    {
-     "it": "Si telefonano ogni sera.",
-     "tr": "Вони телефонують одне одному щовечора."
-    },
-    {
-     "it": "Ci siamo salutati alla stazione.",
-     "tr": "Ми попрощалися на вокзалі."
-    }
-   ],
-   "summary": "**ci / vi / si** + множина = одне одного. Минулий: **ci siamo conosciuti**. Когось — avere, одне одного — essere.",
-   "keyWords": [
-    {
-     "title": "Incontri",
-     "ids": [
-      "w110",
-      "w389",
-      "w077",
-      "w392"
-     ]
-    }
-   ]
-  },
-  "g5-coppia-tappe": {
-   "id": "g5-coppia-tappe",
-   "inBreve": [
-    "Етапи стосунків описують майже лише **зворотними** дієсловами: {{conoscersi}}, {{innamorarsi}}, {{sposarsi}}.",
-    "У passato prossimo — {{essere}}: {{si sono sposati}}.",
-    "Виняток — {{divorziare}}: з {{avere}}, {{hanno divorziato}}."
-   ],
-   "formation": {
-    "steps": [
-     "Розстав події за порядком — таблиця «Le tappe».",
-     "Візьми дієслово і постав {{essere}}: {{si sono}}, {{ci siamo}}.",
-     "Дієприкметник — у множині: {{-i}} або {{-e}}."
-    ]
-   },
-   "tables": [
     {
      "type": "pairs",
      "title": "Le tappe",
@@ -4121,14 +4402,24 @@
    ],
    "uses": [
     {
-     "text": "Розповідь про пару",
-     "it": "Si sono conosciuti all'università.",
-     "tr": "Вони познайомилися в університеті."
+     "text": "Стосунки",
+     "it": "Ci conosciamo da dieci anni.",
+     "tr": "Ми знайомі десять років."
     },
     {
-     "text": "Про себе",
-     "it": "Mi sono sposato nel 2008.",
-     "tr": "Я одружився у 2008 році."
+     "text": "Зустрічі",
+     "it": "Ci vediamo domani!",
+     "tr": "Побачимося завтра!"
+    },
+    {
+     "text": "Спілкування",
+     "it": "Ci scriviamo ogni giorno.",
+     "tr": "Ми пишемо одне одному щодня."
+    },
+    {
+     "text": "Привітання й прощання",
+     "it": "Si salutano e vanno via.",
+     "tr": "Вони прощаються й ідуть."
     },
     {
      "text": "Зараз",
@@ -4143,12 +4434,42 @@
    ],
    "exceptions": [
     {
-     "title": "mettersi insieme",
-     "text": "Дієприкметник {{messo}}: {{si sono messi insieme}}.",
+     "title": "Змішана група",
+     "text": "Чоловік і жінка разом — закінчення {{-i}}.",
      "examples": [
       {
-       "it": "Si sono messi insieme a giugno.",
-       "tr": "Вони почали зустрічатися в червні."
+       "it": "Io e mio marito ci siamo conosciuti a Lugano.",
+       "tr": "Ми з чоловіком познайомилися в Лугано."
+      }
+     ]
+    },
+    {
+     "title": "Дві жінки",
+     "text": "Лише жінки — закінчення {{-e}}.",
+     "examples": [
+      {
+       "it": "Lucia e Sara si sono viste ieri.",
+       "tr": "Лючія і Сара бачилися вчора."
+      }
+     ]
+    },
+    {
+     "title": "innamorarsi di",
+     "text": "Закохатися в когось — {{di}}.",
+     "examples": [
+      {
+       "it": "Mi sono innamorato di lei.",
+       "tr": "Я закохався в неї."
+      }
+     ]
+    },
+    {
+     "title": "sposarsi con / sposare",
+     "text": "Два правильні варіанти.",
+     "examples": [
+      {
+       "it": "Mi sono sposato con Anna. = Ho sposato Anna.",
+       "tr": "Я одружився з Анною."
       }
      ]
     },
@@ -4173,17 +4494,42 @@
      ]
     },
     {
-     "title": "Про себе одного",
-     "text": "Зворотний в однині: {{mi sono innamorata}}.",
+     "title": "mettersi insieme",
+     "text": "Дієприкметник {{messo}}: {{si sono messi insieme}}.",
      "examples": [
       {
-       "it": "Mi sono innamorata di Marco.",
-       "tr": "Я закохалася в Марко."
+       "it": "Si sono messi insieme a giugno.",
+       "tr": "Вони почали зустрічатися в червні."
       }
      ]
     }
    ],
    "mistakes": [
+    {
+     "wrong": "Abbiamo conosciuti a Lugano.",
+     "right": "Ci siamo conosciuti a Lugano.",
+     "why": "Одне одного — ci + essere."
+    },
+    {
+     "wrong": "Ci siamo conosciuto.",
+     "right": "Ci siamo conosciuti.",
+     "why": "Дієприкметник у множині."
+    },
+    {
+     "wrong": "Lucia e Sara si sono visti.",
+     "right": "Lucia e Sara si sono viste.",
+     "why": "Дві жінки — -e."
+    },
+    {
+     "wrong": "Mi sono innamorato in lei.",
+     "right": "Mi sono innamorato di lei.",
+     "why": "innamorarsi di."
+    },
+    {
+     "wrong": "Ci siamo amato molto.",
+     "right": "Ci siamo amati molto.",
+     "why": "Множина: amati."
+    },
     {
      "wrong": "Si sono divorziati.",
      "right": "Hanno divorziato.",
@@ -4198,22 +4544,28 @@
      "wrong": "Sono sposati nel 2010.",
      "right": "Si sono sposati nel 2010.",
      "why": "Подія — sposarsi."
-    },
-    {
-     "wrong": "Hanno sposato nel 2010.",
-     "right": "Si sono sposati nel 2010.",
-     "why": "Одне з одним — essere."
-    },
-    {
-     "wrong": "Si sono fidanzato.",
-     "right": "Si sono fidanzati.",
-     "why": "Множина — -i."
     }
    ],
    "examples": [
     {
-     "it": "Anna e Marco si sono conosciuti al lavoro.",
-     "tr": "Анна і Марко познайомилися на роботі."
+     "it": "Ci siamo conosciuti a una festa.",
+     "tr": "Ми познайомилися на вечірці."
+    },
+    {
+     "it": "Vi vedete spesso?",
+     "tr": "Ви часто бачитеся?"
+    },
+    {
+     "it": "Non ci parliamo più.",
+     "tr": "Ми більше не розмовляємо."
+    },
+    {
+     "it": "Si telefonano ogni sera.",
+     "tr": "Вони телефонують одне одному щовечора."
+    },
+    {
+     "it": "Ci siamo salutati alla stazione.",
+     "tr": "Ми попрощалися на вокзалі."
     },
     {
      "it": "Dopo un mese si sono innamorati.",
@@ -4224,20 +4576,21 @@
      "tr": "Вони заручилися у відпустці."
     },
     {
-     "it": "Si sono sposati in chiesa.",
-     "tr": "Вони вінчалися в церкві."
-    },
-    {
-     "it": "Hanno due figli.",
-     "tr": "У них двоє дітей."
-    },
-    {
      "it": "Dopo dieci anni si sono separati.",
      "tr": "Через десять років вони розійшлися."
     }
    ],
-   "summary": "**conoscersi → innamorarsi → mettersi insieme → fidanzarsi → sposarsi** — усі з essere. **divorziare** — avere.",
+   "summary": "**ci / vi / si** + множина = одне одного: **ci siamo conosciuti**. Етапи: **conoscersi → innamorarsi → fidanzarsi → sposarsi** — essere; **divorziare** — avere.",
    "keyWords": [
+    {
+     "title": "Incontri",
+     "ids": [
+      "w110",
+      "w389",
+      "w077",
+      "w392"
+     ]
+    },
     {
      "title": "La coppia",
      "ids": [

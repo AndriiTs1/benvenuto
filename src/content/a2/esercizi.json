@@ -356,6 +356,411 @@
       "uk": "tu + avere: hai fatto.",
       "en": "tu + avere: hai fatto."
      }
+    },
+    {
+     "id": "pp-13",
+     "type": "choice",
+     "it": "Domenica ___ molto nel parco.",
+     "options": [
+      "ho camminato",
+      "sono camminato",
+      "sono camminata"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Движение без «куда» — avere.",
+      "uk": "Рух без «куди» — avere.",
+      "en": "Movement without “where to” — avere."
+     }
+    },
+    {
+     "id": "pp-14",
+     "type": "choice",
+     "it": "In vacanza ___ ogni giorno.",
+     "options": [
+      "abbiamo nuotato",
+      "siamo nuotati",
+      "abbiamo nuotati"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "nuotare — avere, причастие не меняется.",
+      "uk": "nuotare — avere, дієприкметник не змінюється.",
+      "en": "nuotare takes avere; no agreement."
+     }
+    },
+    {
+     "id": "pp-15",
+     "type": "choice",
+     "it": "Ieri ___ a Lugano in treno.",
+     "options": [
+      "sono andato",
+      "ho andato",
+      "sono andare"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "«Куда» — essere.",
+      "uk": "«Куди» — essere.",
+      "en": "“Where to” — essere."
+     }
+    },
+    {
+     "id": "pp-16",
+     "type": "fill",
+     "it": "Mia nonna ___ nel 1950.",
+     "hint": "nascere",
+     "answers": [
+      "è nata"
+     ],
+     "why": {
+      "ru": "Изменение состояния — essere; nonna — ж.р.",
+      "uk": "Зміна стану — essere; nonna — ж.р.",
+      "en": "Change of state — essere; nonna is feminine."
+     }
+    },
+    {
+     "id": "pp-17",
+     "type": "fill",
+     "it": "Ieri sera ___ a casa.",
+     "hint": "rimanere (io, m.)",
+     "answers": [
+      "sono rimasto"
+     ],
+     "why": {
+      "ru": "rimanere — essere, причастие rimasto.",
+      "uk": "rimanere — essere, дієприкметник rimasto.",
+      "en": "rimanere takes essere: rimasto."
+     }
+    },
+    {
+     "id": "pp-18",
+     "type": "fill",
+     "it": "Chi ___ la finestra?",
+     "hint": "aprire",
+     "answers": [
+      "ha aperto"
+     ],
+     "why": {
+      "ru": "Есть объект — avere; aprire → aperto.",
+      "uk": "Є об'єкт — avere; aprire → aperto.",
+      "en": "Object — avere; aprire → aperto."
+     }
+    },
+    {
+     "id": "pp-19",
+     "type": "fill",
+     "it": "Non ___ ancora alla mail.",
+     "hint": "rispondere (io)",
+     "answers": [
+      "ho risposto"
+     ],
+     "why": {
+      "ru": "rispondere → risposto.",
+      "uk": "rispondere → risposto.",
+      "en": "rispondere → risposto."
+     }
+    },
+    {
+     "id": "pp-20",
+     "type": "fill",
+     "it": "Dove ___ le chiavi?",
+     "hint": "mettere (tu)",
+     "answers": [
+      "hai messo"
+     ],
+     "why": {
+      "ru": "mettere → messo.",
+      "uk": "mettere → messo.",
+      "en": "mettere → messo."
+     }
+    },
+    {
+     "id": "pp-21",
+     "type": "fill",
+     "it": "Marco ___ di fumare.",
+     "hint": "smettere",
+     "answers": [
+      "ha smesso"
+     ],
+     "why": {
+      "ru": "smettere → smesso, с avere.",
+      "uk": "smettere → smesso, з avere.",
+      "en": "smettere → smesso, with avere."
+     }
+    },
+    {
+     "id": "pp-22",
+     "type": "choice",
+     "it": "Il film ___ alle nove.",
+     "options": [
+      "è cominciato",
+      "ha cominciato",
+      "è cominciata"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Фильм начался сам — essere; film — м.р.",
+      "uk": "Фільм почався сам — essere; film — ч.р.",
+      "en": "The film started on its own — essere; film is masculine."
+     }
+    },
+    {
+     "id": "pp-23",
+     "type": "choice",
+     "it": "Io ___ il corso a settembre.",
+     "options": [
+      "ho cominciato",
+      "sono cominciato",
+      "ho cominciata"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Есть объект (il corso) — avere.",
+      "uk": "Є об'єкт (il corso) — avere.",
+      "en": "Object (il corso) — avere."
+     }
+    },
+    {
+     "id": "pp-24",
+     "type": "choice",
+     "it": "Quanto ___ la borsa?",
+     "options": [
+      "è costata",
+      "ha costato",
+      "è costato"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "costare — essere, согласие с borsa (ж.р.).",
+      "uk": "costare — essere, узгодження з borsa (ж.р.).",
+      "en": "costare — essere, agrees with borsa (f.)."
+     }
+    },
+    {
+     "id": "pp-25",
+     "type": "choice",
+     "it": "Anna, sei ___ a Roma?",
+     "options": [
+      "stata",
+      "stato",
+      "state"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "essere → stato; Anna — ж.р.: stata.",
+      "uk": "essere → stato; Anna — ж.р.: stata.",
+      "en": "essere → stato; Anna is feminine: stata."
+     }
+    },
+    {
+     "id": "pp-26",
+     "type": "choice",
+     "it": "Ieri ___ tutto il giorno.",
+     "options": [
+      "è piovuto",
+      "è piovuta",
+      "piovuto"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "piovere — è piovuto (или ha piovuto).",
+      "uk": "piovere — è piovuto (або ha piovuto).",
+      "en": "piovere — è piovuto (or ha piovuto)."
+     }
+    }
+   ]
+  },
+  {
+   "topic": "g5-modali-passato",
+   "items": [
+    {
+     "id": "mp-01",
+     "type": "choice",
+     "it": "Ieri ___ lavorare fino a tardi.",
+     "options": [
+      "ho dovuto",
+      "sono dovuto",
+      "ho dovere"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "lavorare — с avere: ho dovuto.",
+      "uk": "lavorare — з avere: ho dovuto.",
+      "en": "lavorare takes avere: ho dovuto."
+     }
+    },
+    {
+     "id": "mp-02",
+     "type": "choice",
+     "it": "Marco ___ partire presto.",
+     "options": [
+      "è dovuto",
+      "ha dovuto",
+      "è dovuta"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "partire — essere; Marco — м.р.",
+      "uk": "partire — essere; Marco — ч.р.",
+      "en": "partire takes essere; Marco is masculine."
+     }
+    },
+    {
+     "id": "mp-03",
+     "type": "choice",
+     "it": "Anna non ___ venire.",
+     "options": [
+      "è potuta",
+      "è potuto",
+      "ha potuta"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "venire — essere; согласие с Anna.",
+      "uk": "venire — essere; узгодження з Anna.",
+      "en": "venire takes essere; agrees with Anna."
+     }
+    },
+    {
+     "id": "mp-04",
+     "type": "choice",
+     "it": "Non ___ dormire tutta la notte.",
+     "options": [
+      "ho potuto",
+      "sono potuto",
+      "ho potere"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "dormire — avere.",
+      "uk": "dormire — avere.",
+      "en": "dormire takes avere."
+     }
+    },
+    {
+     "id": "mp-05",
+     "type": "choice",
+     "it": "Sei venuto? — No, non ___.",
+     "options": [
+      "ho potuto",
+      "sono potuto",
+      "potuto"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Модальный без второго глагола — avere.",
+      "uk": "Модальне без другого дієслова — avere.",
+      "en": "A modal on its own — avere."
+     }
+    },
+    {
+     "id": "mp-06",
+     "type": "choice",
+     "it": "Abbiamo ___ vedere il film.",
+     "options": [
+      "voluto",
+      "volito",
+      "voluti"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "volere → voluto; с avere не меняется.",
+      "uk": "volere → voluto; з avere не змінюється.",
+      "en": "volere → voluto; no agreement with avere."
+     }
+    },
+    {
+     "id": "mp-07",
+     "type": "choice",
+     "it": "Ho dovuto ___ il treno.",
+     "options": [
+      "prendere",
+      "preso",
+      "di prendere"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "После модального — инфинитив без предлога.",
+      "uk": "Після модального — інфінітив без прийменника.",
+      "en": "After a modal — infinitive, no preposition."
+     }
+    },
+    {
+     "id": "mp-08",
+     "type": "fill",
+     "it": "I ragazzi ___ restare a casa.",
+     "hint": "volere",
+     "answers": [
+      "sono voluti",
+      "hanno voluto"
+     ],
+     "why": {
+      "ru": "restare — essere: sono voluti (в разговоре и hanno voluto).",
+      "uk": "restare — essere: sono voluti (у розмові й hanno voluto).",
+      "en": "restare takes essere: sono voluti (in speech also hanno voluto)."
+     }
+    },
+    {
+     "id": "mp-09",
+     "type": "fill",
+     "it": "Ieri io ___ studiare per l'esame.",
+     "hint": "dovere",
+     "answers": [
+      "ho dovuto"
+     ],
+     "why": {
+      "ru": "studiare — avere.",
+      "uk": "studiare — avere.",
+      "en": "studiare takes avere."
+     }
+    },
+    {
+     "id": "mp-10",
+     "type": "fill",
+     "it": "Lucia ___ andare dal medico.",
+     "hint": "dovere",
+     "answers": [
+      "è dovuta",
+      "ha dovuto"
+     ],
+     "why": {
+      "ru": "andare — essere: è dovuta (в разговоре и ha dovuto).",
+      "uk": "andare — essere: è dovuta (у розмові й ha dovuto).",
+      "en": "andare takes essere: è dovuta (in speech also ha dovuto)."
+     }
+    },
+    {
+     "id": "mp-11",
+     "type": "choice",
+     "it": "Stamattina mi ___ alzare alle sei.",
+     "options": [
+      "sono dovuto",
+      "ho dovuto",
+      "sono dovere"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Возвратный с mi впереди — essere.",
+      "uk": "Зворотне з mi попереду — essere.",
+      "en": "Reflexive with mi in front — essere."
+     }
+    },
+    {
+     "id": "mp-12",
+     "type": "choice",
+     "it": "Dovevo chiamarti, ma ___.",
+     "options": [
+      "ho dimenticato",
+      "dimenticavo",
+      "sono dimenticato"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Событие — passato prossimo с avere.",
+      "uk": "Подія — passato prossimo з avere.",
+      "en": "An event — passato prossimo with avere."
+     }
     }
    ]
   },
@@ -1137,7 +1542,8 @@
      "it": "Io e Anna ___ a Lugano.",
      "hint": "conoscersi (pass. pr.)",
      "answers": [
-      "ci siamo conosciuti"
+      "ci siamo conosciuti",
+      "ci siamo conosciute"
      ],
      "why": {
       "ru": "Смешанная пара — -i: ci siamo conosciuti.",
@@ -1254,22 +1660,6 @@
      }
     },
     {
-     "id": "rc-09",
-     "type": "choice",
-     "it": "Dopo cinque anni ___.",
-     "options": [
-      "hanno divorziato",
-      "si sono divorziati",
-      "sono divorziati"
-     ],
-     "answer": 0,
-     "why": {
-      "ru": "divorziare — avere.",
-      "uk": "divorziare — avere.",
-      "en": "divorziare takes avere."
-     }
-    },
-    {
      "id": "rc-10",
      "type": "fill",
      "it": "Ci ___ alla stazione.",
@@ -1282,6 +1672,162 @@
       "ru": "essere + -i/-e.",
       "uk": "essere + -i/-e.",
       "en": "essere + -i/-e."
+     }
+    },
+    {
+     "id": "ct-01",
+     "type": "choice",
+     "it": "Marco e Anna ___ a una festa.",
+     "options": [
+      "si sono conosciuti",
+      "hanno conosciuto",
+      "si hanno conosciuti"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Возвратный — essere.",
+      "uk": "Зворотне — essere.",
+      "en": "Reflexive — essere."
+     }
+    },
+    {
+     "id": "ct-02",
+     "type": "choice",
+     "it": "Dopo un mese ___.",
+     "options": [
+      "si sono innamorati",
+      "sono innamorato",
+      "hanno innamorati"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "innamorarsi → si sono innamorati.",
+      "uk": "innamorarsi → si sono innamorati.",
+      "en": "innamorarsi → si sono innamorati."
+     }
+    },
+    {
+     "id": "ct-03",
+     "type": "choice",
+     "it": "Nel 2015 ___.",
+     "options": [
+      "si sono sposati",
+      "hanno sposati",
+      "sono sposato"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Событие — si sono sposati.",
+      "uk": "Подія — si sono sposati.",
+      "en": "Event — si sono sposati."
+     }
+    },
+    {
+     "id": "ct-04",
+     "type": "choice",
+     "it": "Dopo dieci anni ___.",
+     "options": [
+      "hanno divorziato",
+      "si sono divorziati",
+      "sono divorziato"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "divorziare — avere.",
+      "uk": "divorziare — avere.",
+      "en": "divorziare takes avere."
+     }
+    },
+    {
+     "id": "ct-05",
+     "type": "choice",
+     "it": "Ora Lucia e Paolo ___ sposati.",
+     "options": [
+      "sono",
+      "si sono",
+      "hanno"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Состояние сейчас — sono sposati.",
+      "uk": "Стан зараз — sono sposati.",
+      "en": "Current state — sono sposati."
+     }
+    },
+    {
+     "id": "ct-06",
+     "type": "choice",
+     "it": "Giulia e Sara ___ all'università.",
+     "options": [
+      "si sono conosciute",
+      "si sono conosciuti",
+      "hanno conosciute"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Две женщины — -e.",
+      "uk": "Дві жінки — -e.",
+      "en": "Two women — -e."
+     }
+    },
+    {
+     "id": "ct-07",
+     "type": "fill",
+     "it": "Io e Marta ci ___ fidanzati a maggio.",
+     "hint": "essere",
+     "answers": [
+      "siamo"
+     ],
+     "why": {
+      "ru": "noi — ci siamo.",
+      "uk": "noi — ci siamo.",
+      "en": "noi — ci siamo."
+     }
+    },
+    {
+     "id": "ct-08",
+     "type": "fill",
+     "it": "Si sono ___ insieme due anni fa.",
+     "hint": "mettere",
+     "answers": [
+      "messi"
+     ],
+     "why": {
+      "ru": "mettere → messo; мн.ч. — messi.",
+      "uk": "mettere → messo; мн. — messi.",
+      "en": "mettere → messo; plural messi."
+     }
+    },
+    {
+     "id": "ct-09",
+     "type": "choice",
+     "it": "Prima l'amore, poi ___.",
+     "options": [
+      "il matrimonio",
+      "la separazione",
+      "il divorzio"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Порядок: любовь → брак.",
+      "uk": "Порядок: кохання → шлюб.",
+      "en": "Order: love → marriage."
+     }
+    },
+    {
+     "id": "ct-10",
+     "type": "choice",
+     "it": "Sono separati: non ___ più insieme.",
+     "options": [
+      "vivono",
+      "vivevano",
+      "hanno vissuto"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Сейчас — presente.",
+      "uk": "Зараз — presente.",
+      "en": "Now — presente."
      }
     }
    ]
@@ -1420,7 +1966,7 @@
     {
      "id": "av-09",
      "type": "choice",
-     "it": "___ mai visto la neve?",
+     "it": "Marco, ___ mai visto la neve?",
      "options": [
       "Hai",
       "Sei",
@@ -1436,7 +1982,7 @@
     {
      "id": "av-10",
      "type": "choice",
-     "it": "___ mai andato in Sicilia?",
+     "it": "Luca, ___ mai andato in Sicilia?",
      "options": [
       "Sei",
       "Hai",
@@ -3078,167 +3624,6 @@
       "ru": "Без десяти десять.",
       "uk": "За десять десята.",
       "en": "Ten to ten."
-     }
-    }
-   ]
-  },
-  {
-   "topic": "g5-coppia-tappe",
-   "items": [
-    {
-     "id": "ct-01",
-     "type": "choice",
-     "it": "Marco e Anna ___ a una festa.",
-     "options": [
-      "si sono conosciuti",
-      "hanno conosciuto",
-      "si hanno conosciuti"
-     ],
-     "answer": 0,
-     "why": {
-      "ru": "Возвратный — essere.",
-      "uk": "Зворотне — essere.",
-      "en": "Reflexive — essere."
-     }
-    },
-    {
-     "id": "ct-02",
-     "type": "choice",
-     "it": "Dopo un mese ___.",
-     "options": [
-      "si sono innamorati",
-      "sono innamorato",
-      "hanno innamorati"
-     ],
-     "answer": 0,
-     "why": {
-      "ru": "innamorarsi → si sono innamorati.",
-      "uk": "innamorarsi → si sono innamorati.",
-      "en": "innamorarsi → si sono innamorati."
-     }
-    },
-    {
-     "id": "ct-03",
-     "type": "choice",
-     "it": "Nel 2015 ___.",
-     "options": [
-      "si sono sposati",
-      "hanno sposati",
-      "sono sposato"
-     ],
-     "answer": 0,
-     "why": {
-      "ru": "Событие — si sono sposati.",
-      "uk": "Подія — si sono sposati.",
-      "en": "Event — si sono sposati."
-     }
-    },
-    {
-     "id": "ct-04",
-     "type": "choice",
-     "it": "Dopo dieci anni ___.",
-     "options": [
-      "hanno divorziato",
-      "si sono divorziati",
-      "sono divorziato"
-     ],
-     "answer": 0,
-     "why": {
-      "ru": "divorziare — avere.",
-      "uk": "divorziare — avere.",
-      "en": "divorziare takes avere."
-     }
-    },
-    {
-     "id": "ct-05",
-     "type": "choice",
-     "it": "Ora Lucia e Paolo ___ sposati.",
-     "options": [
-      "sono",
-      "si sono",
-      "hanno"
-     ],
-     "answer": 0,
-     "why": {
-      "ru": "Состояние сейчас — sono sposati.",
-      "uk": "Стан зараз — sono sposati.",
-      "en": "Current state — sono sposati."
-     }
-    },
-    {
-     "id": "ct-06",
-     "type": "choice",
-     "it": "Giulia e Sara ___ all'università.",
-     "options": [
-      "si sono conosciute",
-      "si sono conosciuti",
-      "hanno conosciute"
-     ],
-     "answer": 0,
-     "why": {
-      "ru": "Две женщины — -e.",
-      "uk": "Дві жінки — -e.",
-      "en": "Two women — -e."
-     }
-    },
-    {
-     "id": "ct-07",
-     "type": "fill",
-     "it": "Io e Marta ci ___ fidanzati a maggio.",
-     "hint": "essere",
-     "answers": [
-      "siamo"
-     ],
-     "why": {
-      "ru": "noi — ci siamo.",
-      "uk": "noi — ci siamo.",
-      "en": "noi — ci siamo."
-     }
-    },
-    {
-     "id": "ct-08",
-     "type": "fill",
-     "it": "Si sono ___ insieme due anni fa.",
-     "hint": "mettere",
-     "answers": [
-      "messi"
-     ],
-     "why": {
-      "ru": "mettere → messo; мн.ч. — messi.",
-      "uk": "mettere → messo; мн. — messi.",
-      "en": "mettere → messo; plural messi."
-     }
-    },
-    {
-     "id": "ct-09",
-     "type": "choice",
-     "it": "Prima l'amore, poi ___.",
-     "options": [
-      "il matrimonio",
-      "la separazione",
-      "il divorzio"
-     ],
-     "answer": 0,
-     "why": {
-      "ru": "Порядок: любовь → брак.",
-      "uk": "Порядок: кохання → шлюб.",
-      "en": "Order: love → marriage."
-     }
-    },
-    {
-     "id": "ct-10",
-     "type": "choice",
-     "it": "Sono separati: non ___ più insieme.",
-     "options": [
-      "vivono",
-      "vivevano",
-      "hanno vissuto"
-     ],
-     "answer": 0,
-     "why": {
-      "ru": "Сейчас — presente.",
-      "uk": "Зараз — presente.",
-      "en": "Now — presente."
      }
     }
    ]

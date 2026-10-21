@@ -3,12 +3,13 @@ import { ConteggioEsercizi } from "@/components/esercizi/FattiEsercizi";
 import { IntestazioneTempo } from "@/components/grammatica/Tempo";
 import { Elenco, RigaElenco, TestoRiga } from "@/components/grammatica/Elenco";
 import { LinkAvanti } from "@/components/grammatica/LinkAvanti";
-import { ConteggioStudiati, PuntoStato } from "@/components/grammatica/Progresso";
+import { BarraUnita, ConteggioStudiati, PuntoStato } from "@/components/grammatica/Progresso";
 import { Tr } from "@/components/Tr";
 import { idEsercizi } from "@/content/a2/esercizi";
 import { getPercorso } from "@/content/a2/grammatica";
 import { DEFAULT_LOCALE } from "@/lib/lingue";
 import { linguaScelta } from "@/lib/lingua-scelta";
+import { STILE_TEMPO } from "@/lib/tempi";
 
 export async function generateStaticParams() {
   const { unita } = await getPercorso(DEFAULT_LOCALE);
@@ -26,20 +27,31 @@ export default async function UnitaPage({ params }: PageProps<"/a2/grammatica/un
   if (posizione < 0) notFound();
   const u = unita[posizione];
   const successiva = unita[posizione + 1];
+  const ids = u.argomenti.map((a) => a.id);
 
+  // Unità di un tempo verbale: --c del tempo per intestazione, barra e punti di stato.
   return (
-    <div className="space-y-6">
+    <div style={u.tempo ? STILE_TEMPO[u.tempo] : undefined} className="space-y-6">
       <header>
-        {/* Unità di un tempo verbale: piastrella e "TEMPO VERBALE" nel colore del tempo. */}
-        {u.tempo && <IntestazioneTempo tempo={u.tempo} />}
-        <h1 className="text-[34px] leading-tight font-bold tracking-tight md:text-5xl">Unità {u.number}</h1>
-        <p className="mt-1 text-[20px] font-semibold">{u.title}</p>
-        <Tr locale={locale} as="p" size="md">
+        {/* In grande il nome dell'unità; sopra, in piccolo, "UNITÀ 3 · TEMPO VERBALE" nel colore
+            del tempo (con la piastrella), oppure solo "UNITÀ 5" in grigio. */}
+        {u.tempo ? (
+          <IntestazioneTempo tempo={u.tempo} unita={u.number} />
+        ) : (
+          <p className="mb-1 text-[12px] font-semibold tracking-wide text-label-2 uppercase">Unità {u.number}</p>
+        )}
+        <h1 className="text-[34px] leading-tight font-bold tracking-tight md:text-5xl">{u.title}</h1>
+        <Tr locale={locale} as="p" size="md" className="mt-1">
           {u.subtitle}
         </Tr>
         <p className="mt-2 text-[15px] text-label-2">
-          <ConteggioStudiati topicIds={u.argomenti.map((a) => a.id)} separatore=" di " /> studiati
+          <ConteggioStudiati topicIds={ids} separatore=" di " /> studiati
         </p>
+        {u.tempo && (
+          <div className="mx-auto mt-2 max-w-60 md:mx-0">
+            <BarraUnita topicIds={ids} />
+          </div>
+        )}
       </header>
 
       <Elenco>

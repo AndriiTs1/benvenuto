@@ -61,7 +61,8 @@ export function RigaEspandibile({
           aperta ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
         }`}
       >
-        <div className="min-h-0 overflow-hidden">{children}</div>
+        {/* relative: anche gli elementi absolute (sr-only) restano tagliati e non allungano la pagina. */}
+        <div className="relative min-h-0 overflow-hidden">{children}</div>
       </div>
     </div>
   );

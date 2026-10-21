@@ -28,7 +28,7 @@ async function Azioni() {
 export default function Home() {
   return (
     <PageTransition>
-      <main className="flex min-h-dvh justify-center bg-bg-grouped text-label">
+      <main className="flex min-h-dvh justify-center text-label">
         <div className="flex w-full max-w-md flex-col px-6 pt-[max(4rem,env(safe-area-inset-top))] pb-[max(2.5rem,env(safe-area-inset-bottom))] md:max-w-xl md:justify-center md:py-16">
           <div className="flex flex-1 flex-col items-center justify-center pt-10 pb-[12dvh] text-center md:flex-none md:p-0">
             {/* Colori della bandiera: solo marchio / schermata iniziale (vedi CLAUDE.md). */}

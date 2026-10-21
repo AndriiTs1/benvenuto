@@ -5,10 +5,11 @@ import { useProgress, type StatoArgomento } from "@/lib/progress";
 const NOMI_STATO = { nessuno: "Non iniziato", seen: "Aperto", studied: "Studiato" };
 
 // Punto di stato dell'argomento: ○ non aperto, ◐ aperto, ● studiato.
+// Colore --c del tempo dell'unità (style di un genitore), altrimenti il blu della grammatica.
 export function PuntoStato({ topicId }: { topicId: string }) {
   const stato: StatoArgomento | undefined = useProgress().topics[topicId];
   return (
-    <svg viewBox="0 0 16 16" className="size-4 shrink-0 text-grammar" role="img" aria-label={NOMI_STATO[stato ?? "nessuno"]}>
+    <svg viewBox="0 0 16 16" className="size-4 shrink-0 text-[var(--c,var(--color-grammar))]" role="img" aria-label={NOMI_STATO[stato ?? "nessuno"]}>
       <circle cx="8" cy="8" r="6.5" fill={stato === "studied" ? "currentColor" : "none"} stroke="currentColor" strokeWidth="1.5" />
       {stato === "seen" && <path d="M8 1.5a6.5 6.5 0 0 1 0 13z" fill="currentColor" />}
     </svg>

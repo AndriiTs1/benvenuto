@@ -22,9 +22,17 @@ export type TabellaCoppie = {
   note?: string;
 };
 
-/** "Essere o avere?": gruppi di verbi per ausiliare (verbs può essere vuoto: solo titolo e testo). */
+/** Formula della forma (solo italiano): parti unite da "+", con esempi divisi nelle stesse parti. */
+export type Formula = {
+  parts: string[];
+  examples: { parts: string[]; it: string; tr: string }[];
+};
+
+/** "Essere o avere?": gruppi di verbi per ausiliare (verbs può essere vuoto: solo titolo e testo).
+ *  intro (facoltativo): un test a passi numerati, in cima al blocco. */
 export type SceltaAusiliare = {
   title: string;
+  intro?: { title: string; steps: string[] };
   groups: {
     aux: "essere" | "avere";
     title: string;
@@ -36,7 +44,8 @@ export type SceltaAusiliare = {
 export type LezioneV2 = {
   id: string;
   inBreve: string[];
-  formation: { steps: string[] };
+  /** Con formula: formula, esempi e passi si vedono subito dopo "In breve" (non in Approfondisci). */
+  formation: { steps: string[]; formula?: Formula };
   tables: (TabellaClassica | TabellaCoppie)[];
   uses: { text: string; it: string; tr: string }[];
   exceptions: { title: string; text: string; examples: EsempioV2[] }[];

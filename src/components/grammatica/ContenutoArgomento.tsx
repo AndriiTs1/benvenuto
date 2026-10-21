@@ -294,15 +294,19 @@ export function GrigliaParticipi({
   righe,
   traduzioni,
   locale,
+  incorporata = false,
 }: {
   righe: Tabella;
   traduzioni: TraduzioniParticipi;
   locale: Locale;
+  /** Dentro una scheda (es. una riga di Approfondisci): senza scheda propria. */
+  incorporata?: boolean;
 }) {
   return (
     <GrigliaVerbi
       voci={righe.map(([it, participle]) => ({ it, participle, tr: traduzioni[it]?.[locale] }))}
       locale={locale}
+      incorporata={incorporata}
     />
   );
 }

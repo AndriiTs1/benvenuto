@@ -22,7 +22,7 @@ export default async function LivelloPage() {
 
   return (
     <PageTransition>
-      <main className="min-h-dvh bg-bg-grouped text-label">
+      <main className="min-h-dvh text-label">
         <div className="mx-auto w-full max-w-[35rem] px-4 pt-[max(1rem,env(safe-area-inset-top))] pb-[max(2rem,env(safe-area-inset-bottom))]">
           <BackButton />
 

@@ -13,12 +13,21 @@ const nextConfig: NextConfig = {
   // /a2 apre la prima sezione del corso (prima del rendering, con un vero 307).
   // Esercizi e Comunicare non sono più schede: i vecchi indirizzi portano al percorso.
   // (?vista=indice di /a2/grammatica si toglie in proxy.ts: qui la query passerebbe alla destinazione.)
+  // Argomenti uniti ad altri: il vecchio slug porta al nuovo (teoria ed esercizi).
   async redirects() {
-    return ["/a2", "/a2/esercizi", "/a2/comunicare"].map((source) => ({
+    const percorso = ["/a2", "/a2/esercizi", "/a2/comunicare"].map((source) => ({
       source,
       destination: "/a2/grammatica",
       permanent: false,
     }));
+    const argomenti = [["le-tappe-della-coppia", "i-verbi-reciproci"]].flatMap(([vecchio, nuovo]) =>
+      ["grammatica", "esercizi"].map((sezione) => ({
+        source: `/a2/${sezione}/${vecchio}`,
+        destination: `/a2/${sezione}/${nuovo}`,
+        permanent: false,
+      })),
+    );
+    return [...percorso, ...argomenti];
   },
   turbopack: {
     rules: {

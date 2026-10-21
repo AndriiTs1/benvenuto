@@ -3,9 +3,11 @@ import { Sezione } from "@/components/grammatica/ContenutoArgomento";
 import { Tr } from "@/components/Tr";
 import { GrigliaVerbi } from "@/components/grammatica/GrigliaVerbi";
 import { RigaEspandibile } from "@/components/grammatica/RigaEspandibile";
+import { VerbiAusiliare } from "@/components/grammatica/VerbiAusiliare";
 import { IconCheck, IconX } from "@/components/lezione/ui";
-import type { EsempioV2, LezioneV2 as Lezione, SceltaAusiliare, TabellaClassica, TabellaCoppie as Coppie } from "@/content/a2/lezioni";
+import type { EsempioV2, Formula, LezioneV2 as Lezione, SceltaAusiliare, TabellaClassica, TabellaCoppie as Coppie } from "@/content/a2/lezioni";
 import type { Locale } from "@/lib/lingue";
+import { STILE_TEMPO, type Tempo } from "@/lib/tempi";
 
 // Lezione di grammatica nel formato v2 (src/content/a2/{locale}/lezioni.json).
 // Testo della lingua delle spiegazioni → <Tr>; italiano (it, wrong, right, celle) nel colore principale.
@@ -47,23 +49,32 @@ function Esempio({ esempio, lingua }: { esempio: EsempioV2; lingua: Locale }) {
   );
 }
 
+type RigaApprofondisci = { titolo: string; numero: number; contenuto: ReactNode };
+
+// Colore della formula: quello del tempo dell'unità (--tempo-*), altrimenti il blu della grammatica.
+const STILE_GRAMMATICA = { "--c": "var(--color-grammar)" } as CSSProperties;
+
 export function LezioneV2({
   lezione,
   lingua,
-  dopoTabelle,
+  tempo,
   paroleChiave,
+  altreRighe = [],
 }: {
   lezione: Lezione;
   lingua: Locale;
-  /** Blocco extra dopo le tabelle (es. la griglia dei participi irregolari). */
-  dopoTabelle?: ReactNode;
+  /** Tempo verbale dell'unità (meta.json): colore della formula. */
+  tempo?: Tempo | null;
   /** "Parole chiave" (contenuto e numero di parole), dentro Approfondisci. */
   paroleChiave?: { contenuto: ReactNode; numero: number };
+  /** Altre righe di Approfondisci, in fondo (es. la griglia dei participi irregolari). */
+  altreRighe?: RigaApprofondisci[];
 }) {
-  // Visibili subito: In breve → Tabelle (con participi ed "Essere o avere?") → Errori frequenti →
-  // In sintesi. Il resto è in "Approfondisci", ogni blocco in una riga chiusa (solo se ha contenuto).
+  const formula = lezione.formation.formula;
+  // Visibili subito: In breve → (Come si forma, se c'è la formula) → "Essere o avere?" → Tabelle →
+  // Errori frequenti → In sintesi. Il resto è in "Approfondisci", ogni blocco in una riga chiusa.
   const approfondisci = [
-    lezione.formation.steps.length > 0 && {
+    !formula && lezione.formation.steps.length > 0 && {
       titolo: "Come si forma",
       numero: lezione.formation.steps.length,
       contenuto: <ComeSiForma passi={lezione.formation.steps} lingua={lingua} />,
@@ -84,7 +95,8 @@ export function LezioneV2({
       contenuto: <Esempi esempi={lezione.examples} lingua={lingua} />,
     },
     paroleChiave && paroleChiave.numero > 0 && { titolo: "Parole chiave", ...paroleChiave },
-  ].filter((r) => !!r);
+    ...altreRighe,
+  ].filter((r): r is RigaApprofondisci => !!r);
 
   return (
     <div className="space-y-6">
@@ -104,6 +116,15 @@ export function LezioneV2({
         </ul>
       </Sezione>
 
+      {formula && (
+        <Sezione titolo="Come si forma">
+          <ComeSiFormaFormula formula={formula} passi={lezione.formation.steps} lingua={lingua} tempo={tempo ?? null} />
+        </Sezione>
+      )}
+
+      {/* "Essere o avere?" subito dopo la formula (aperto): test in passi, poi i gruppi di verbi. */}
+      {lezione.auxChoice && <EssereOAvere scelta={lezione.auxChoice} lingua={lingua} />}
+
       <Sezione titolo="Tabelle">
         <div className="space-y-3">
           {lezione.tables.map((tabella, i) =>
@@ -115,10 +136,6 @@ export function LezioneV2({
           )}
         </div>
       </Sezione>
-
-      {dopoTabelle}
-
-      {lezione.auxChoice && <EssereOAvere scelta={lezione.auxChoice} lingua={lingua} />}
 
       <Sezione titolo="Errori frequenti">
         <ul className="space-y-3 rounded-2xl bg-[color-mix(in_srgb,var(--error)_8%,var(--card))] p-4">
@@ -171,7 +188,76 @@ export function LezioneV2({
 
 // --- Contenuti di "Approfondisci" (dentro la scheda bianca: niente schede proprie) ---
 
-function ComeSiForma({ passi, lingua }: { passi: string[]; lingua: Locale }) {
+// Formula visibile subito (formation.formula): parti grandi unite da "+" nel colore del tempo,
+// esempi divisi nelle stesse parti → frase → traduzione, poi i passi numerati.
+// Da lg formula ed esempi al centro, gli esempi in 3 schede di uguale altezza; i passi a sinistra.
+function ComeSiFormaFormula({
+  formula,
+  passi,
+  lingua,
+  tempo,
+}: {
+  formula: Formula;
+  passi: string[];
+  lingua: Locale;
+  tempo: Tempo | null;
+}) {
+  return (
+    <div style={tempo ? STILE_TEMPO[tempo] : STILE_GRAMMATICA} className="overflow-hidden rounded-2xl bg-card">
+      {/* Ogni parte resta su una riga (nowrap); il "+" è un elemento a sé, grigio e più piccolo,
+          con gli spazi intorno (anche nel testo copiato). */}
+      <p lang="it" className="flex flex-wrap items-baseline gap-y-1 px-4 pt-5 pb-4 leading-tight lg:justify-center">
+        {formula.parts.map((parte, i) => (
+          <span key={i} className="contents">
+            {i > 0 && <span className="text-[22px] font-normal whitespace-pre text-label-2 md:text-[26px]">{" + "}</span>}
+            <span className="text-[26px] font-bold whitespace-nowrap text-(--c) md:text-[32px]">{parte}</span>
+          </span>
+        ))}
+      </p>
+      {formula.examples.length > 0 && (
+        <ul className="border-t border-separator lg:grid lg:grid-cols-3 lg:gap-3 lg:p-4">
+          {formula.examples.map((esempio, i) => (
+            <li
+              key={i}
+              className={`px-4 py-3 lg:rounded-2xl lg:bg-bg-grouped lg:text-center ${i > 0 ? "border-t border-separator lg:border-t-0" : ""}`}
+            >
+              <p lang="it" className="text-[15px] font-semibold text-(--c)">
+                {esempio.parts.map((parte, j) => (
+                  <span key={j}>
+                    {j > 0 && <span className="font-normal whitespace-pre text-label-2">{" + "}</span>}
+                    <span className="whitespace-nowrap">{parte}</span>
+                  </span>
+                ))}
+              </p>
+              <p lang="it" className={`mt-0.5 ${TESTO} font-medium`}>
+                {esempio.it}
+              </p>
+              <Tr locale={lingua} size="sm" className="block">
+                {esempio.tr}
+              </Tr>
+            </li>
+          ))}
+        </ul>
+      )}
+      {passi.length > 0 && (
+        <div className="border-t border-separator pt-4">
+          <ComeSiForma passi={passi} lingua={lingua} colore="border-(--c) text-(--c)" />
+        </div>
+      )}
+    </div>
+  );
+}
+
+// Passi numerati (Come si forma, test di "Essere o avere?").
+function ComeSiForma({
+  passi,
+  lingua,
+  colore = "border-grammar text-grammar",
+}: {
+  passi: string[];
+  lingua: Locale;
+  colore?: string;
+}) {
   return (
     <ol className="space-y-3 px-4 pb-4">
       {passi.map((passo, i) => (
@@ -179,7 +265,7 @@ function ComeSiForma({ passi, lingua }: { passi: string[]; lingua: Locale }) {
         <li key={i} className={`flex gap-3 max-md:flex-col max-md:items-center max-md:gap-1.5 ${TESTO}`}>
           <span
             aria-hidden="true"
-            className="flex size-6 shrink-0 items-center justify-center rounded-full border-[1.5px] border-grammar text-[13px] font-semibold text-grammar tabular-nums md:mt-px"
+            className={`flex size-6 shrink-0 items-center justify-center rounded-full border-[1.5px] text-[13px] font-semibold tabular-nums md:mt-px ${colore}`}
           >
             {i + 1}
           </span>
@@ -319,11 +405,19 @@ const BADGE_AUSILIARE = {
 };
 
 // "Essere o avere?" (auxChoice): ogni gruppo è una scheda con badge, titolo, testo e,
-// se ci sono verbi, la stessa griglia dei participi irregolari.
+// se ci sono verbi, piastrelle compatte (i primi 6, il resto con "Altri N").
 function EssereOAvere({ scelta, lingua }: { scelta: SceltaAusiliare; lingua: Locale }) {
   return (
     <Sezione titolo={scelta.title}>
       <div className="space-y-4">
+        {scelta.intro && (
+          <div className="overflow-hidden rounded-2xl bg-card">
+            <Tr locale={lingua} as="p" className="block px-4 pt-4 pb-3 text-[17px] leading-snug font-semibold">
+              {scelta.intro.title}
+            </Tr>
+            <ComeSiForma passi={scelta.intro.steps} lingua={lingua} />
+          </div>
+        )}
         {scelta.groups.map((gruppo, i) => (
           <div key={i} className="overflow-hidden rounded-2xl bg-card">
             <div className="p-4">
@@ -342,13 +436,7 @@ function EssereOAvere({ scelta, lingua }: { scelta: SceltaAusiliare; lingua: Loc
                 {gruppo.text}
               </Tr>
             </div>
-            {gruppo.verbs.length > 0 && (
-              <GrigliaVerbi
-                voci={gruppo.verbs.map(({ it, participle, tr }) => ({ it, participle, tr }))}
-                locale={lingua}
-                incorporata
-              />
-            )}
+            {gruppo.verbs.length > 0 && <VerbiAusiliare verbi={gruppo.verbs} locale={lingua} />}
           </div>
         ))}
       </div>

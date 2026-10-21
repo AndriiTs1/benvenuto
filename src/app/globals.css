@@ -143,12 +143,15 @@
   --color-translation-soft: var(--color-translation-soft);
 }
 
+/* Lo stesso fondo delle pagine (bg-grouped) anche su html e body: tirando la pagina oltre
+   l'inizio o la fine (overscroll) non compare una striscia di un altro colore. */
 html {
   -webkit-text-size-adjust: 100%;
+  background: var(--bg-grouped);
 }
 
 body {
-  background: var(--bg);
+  background: var(--bg-grouped);
   color: var(--label);
 }
 

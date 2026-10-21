@@ -64,21 +64,30 @@ export default async function ArgomentoPage({ params }: PageProps<"/a2/grammatic
           <LezioneV2
             lezione={v2.lezione}
             lingua={v2.lingua}
+            tempo={argomento.tempo}
             paroleChiave={{
               numero: gruppiParole.reduce((n, g) => n + g.parole.length, 0),
               contenuto: <ParoleChiave gruppi={gruppiParole} nota={dizionario(locale).paroleChiaveNota} locale={locale} />,
             }}
-            dopoTabelle={
-              // Regola generale: se grammar.json ha irregular_participles, la griglia resta anche nel v2.
-              Array.isArray(contenuto.irregular_participles) && (
-                <Sezione titolo="Participi irregolari">
-                  <GrigliaParticipi
-                    righe={contenuto.irregular_participles as string[][]}
-                    traduzioni={(contenuto.irregular_participles_tr ?? {}) as TraduzioniParticipi}
-                    locale={locale}
-                  />
-                </Sezione>
-              )
+            altreRighe={
+              // Se grammar.json ha irregular_participles, l'elenco completo sta in Approfondisci
+              // (i modelli dei participi sono nelle tabelle della lezione).
+              Array.isArray(contenuto.irregular_participles)
+                ? [
+                    {
+                      titolo: "Participi irregolari",
+                      numero: (contenuto.irregular_participles as string[][]).length,
+                      contenuto: (
+                        <GrigliaParticipi
+                          righe={contenuto.irregular_participles as string[][]}
+                          traduzioni={(contenuto.irregular_participles_tr ?? {}) as TraduzioniParticipi}
+                          locale={locale}
+                          incorporata
+                        />
+                      ),
+                    },
+                  ]
+                : []
             }
           />
         </>

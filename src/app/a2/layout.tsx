@@ -20,7 +20,7 @@ export default async function A2Layout({ children }: { children: ReactNode }) {
 
   return (
     <PageTransition>
-      <div className="min-h-dvh bg-bg-grouped text-label">
+      <div className="min-h-dvh text-label">
         {/* Colonna di 752px (Grammatica da lg: 1120px, vedi Colonna.tsx). Da md: Indietro · schede al centro · lingua; su mobile le schede sono la tab bar in basso. */}
         <CourseNavBar>
           <div className="col-start-1 row-start-1 justify-self-start">
@@ -40,7 +40,8 @@ export default async function A2Layout({ children }: { children: ReactNode }) {
             />
           </Colonna>
 
-          {/* Su mobile lascia spazio alla tab bar fissa (49px + safe area). */}
+          {/* Unico margine in basso del corso (le pagine non ne aggiungono): su mobile lo spazio
+              della tab bar fissa (49px + safe area) + 24px, da md (tab bar in alto) 48px. */}
           <Colonna as="main" className="mx-auto w-full px-4 pt-6 pb-[calc(49px+env(safe-area-inset-bottom)+1.5rem)] md:pb-12">
             {children}
           </Colonna>

@@ -675,15 +675,47 @@
    "id": "g5-passato-prossimo-base",
    "inBreve": [
     "{{Passato prossimo}} is the past tense for **completed actions**: {{Ieri ho lavorato}} — “Yesterday I worked.”",
-    "It has two parts: {{avere}} or {{essere}} in the present + the **past participle** ({{participio}}).",
+    "A compound tense: the **auxiliary verb** {{avere}} or {{essere}} in the present tense ({{ho, sono…}}) + the **past participle** ({{participio}}).",
     "With {{essere}} the participle agrees in gender and number: {{Anna è andata}}, {{i ragazzi sono andati}}."
    ],
    "formation": {
+    "formula": {
+     "parts": [
+      "avere / essere",
+      "participio"
+     ],
+     "examples": [
+      {
+       "parts": [
+        "ho",
+        "mangiato"
+       ],
+       "it": "Ho mangiato la pizza.",
+       "tr": "I ate the pizza."
+      },
+      {
+       "parts": [
+        "sono",
+        "andata"
+       ],
+       "it": "Sono andata al mare.",
+       "tr": "I (f.) went to the seaside."
+      },
+      {
+       "parts": [
+        "abbiamo",
+        "preso"
+       ],
+       "it": "Abbiamo preso il treno.",
+       "tr": "We took the train."
+      }
+     ]
+    },
     "steps": [
-     "Choose the auxiliary: {{essere}} for movement, change of state and reflexive verbs; {{avere}} for everything else.",
+     "Choose the auxiliary — {{avere}} or {{essere}} (test below): {{mangiare → ho mangiato}}, {{andare → sono andato}}.",
      "Put it in the present: {{ho, hai, ha…}} or {{sono, sei, è…}}",
-     "Form the participle: {{-are → -ato}}, {{-ere → -uto}}, {{-ire → -ito}}. Many common verbs are irregular (table below).",
-     "With {{essere}}, match the ending to the subject: {{-o, -a, -i, -e}}."
+     "Form the participle: {{parlare → parlato}}, {{vendere → venduto}}, {{dormire → dormito}}.",
+     "With {{essere}}, match the subject: {{Anna è andata}}."
     ]
    },
    "tables": [
@@ -774,6 +806,206 @@
       ]
      ],
      "note": "With {{avere}} the participle **does not change**: {{Anna ha mangiato}}."
+    },
+    {
+     "type": "pairs",
+     "title": "Irregular: -so",
+     "sep": "→",
+     "items": [
+      {
+       "a": "prendere",
+       "b": "preso",
+       "tr": "to take"
+      },
+      {
+       "a": "scendere",
+       "b": "sceso",
+       "tr": "to go down"
+      },
+      {
+       "a": "spendere",
+       "b": "speso",
+       "tr": "to spend"
+      },
+      {
+       "a": "chiudere",
+       "b": "chiuso",
+       "tr": "to close"
+      },
+      {
+       "a": "decidere",
+       "b": "deciso",
+       "tr": "to decide"
+      },
+      {
+       "a": "mettere",
+       "b": "messo",
+       "tr": "to put"
+      },
+      {
+       "a": "smettere",
+       "b": "smesso",
+       "tr": "to quit"
+      }
+     ],
+     "note": "{{-dere}} and {{-ttere}} often give {{-so}}."
+    },
+    {
+     "type": "pairs",
+     "title": "Irregular: -tto",
+     "sep": "→",
+     "items": [
+      {
+       "a": "fare",
+       "b": "fatto",
+       "tr": "to do"
+      },
+      {
+       "a": "dire",
+       "b": "detto",
+       "tr": "to say"
+      },
+      {
+       "a": "leggere",
+       "b": "letto",
+       "tr": "to read"
+      },
+      {
+       "a": "scrivere",
+       "b": "scritto",
+       "tr": "to write"
+      },
+      {
+       "a": "rompere",
+       "b": "rotto",
+       "tr": "to break"
+      }
+     ],
+     "note": "{{-gere}}, {{-vere}} → {{-tto}}: {{letto}}, {{scritto}}."
+    },
+    {
+     "type": "pairs",
+     "title": "Irregular: -sto and -rto",
+     "sep": "→",
+     "items": [
+      {
+       "a": "vedere",
+       "b": "visto",
+       "tr": "to see"
+      },
+      {
+       "a": "rimanere",
+       "b": "rimasto",
+       "tr": "to stay"
+      },
+      {
+       "a": "rispondere",
+       "b": "risposto",
+       "tr": "to answer"
+      },
+      {
+       "a": "chiedere",
+       "b": "chiesto",
+       "tr": "to ask"
+      },
+      {
+       "a": "aprire",
+       "b": "aperto",
+       "tr": "to open"
+      },
+      {
+       "a": "scoprire",
+       "b": "scoperto",
+       "tr": "to discover"
+      },
+      {
+       "a": "offrire",
+       "b": "offerto",
+       "tr": "to offer"
+      },
+      {
+       "a": "morire",
+       "b": "morto",
+       "tr": "to die"
+      }
+     ],
+     "note": "{{-rire}} → {{-rto}}: {{aperto}}, {{offerto}}."
+    },
+    {
+     "type": "pairs",
+     "title": "Learn by heart",
+     "sep": "→",
+     "items": [
+      {
+       "a": "essere",
+       "b": "stato",
+       "tr": "to be"
+      },
+      {
+       "a": "stare",
+       "b": "stato",
+       "tr": "to stay, be"
+      },
+      {
+       "a": "venire",
+       "b": "venuto",
+       "tr": "to come"
+      },
+      {
+       "a": "nascere",
+       "b": "nato",
+       "tr": "to be born"
+      },
+      {
+       "a": "vivere",
+       "b": "vissuto",
+       "tr": "to live"
+      },
+      {
+       "a": "bere",
+       "b": "bevuto",
+       "tr": "to drink"
+      }
+     ],
+     "note": "{{essere}} and {{stare}} share one participle: {{stato}}."
+    },
+    {
+     "type": "pairs",
+     "title": "Two auxiliaries",
+     "sep": "↔",
+     "items": [
+      {
+       "a": "Ho cominciato il corso.",
+       "b": "Il corso è cominciato.",
+       "tr": "I started the course ↔ The course started"
+      },
+      {
+       "a": "Ho finito il lavoro.",
+       "b": "Il film è finito.",
+       "tr": "I finished the work ↔ The film ended"
+      },
+      {
+       "a": "Ho corso un'ora.",
+       "b": "Sono corso a casa.",
+       "tr": "I ran for an hour ↔ I ran home"
+      },
+      {
+       "a": "Ho salito le scale.",
+       "b": "Sono salito sul treno.",
+       "tr": "I climbed the stairs ↔ I got on the train"
+      },
+      {
+       "a": "Ho passato le vacanze al mare.",
+       "b": "Sono passato da Marco.",
+       "tr": "I spent the holidays at the sea ↔ I dropped by Marco's"
+      },
+      {
+       "a": "Ha piovuto.",
+       "b": "È piovuto.",
+       "tr": "It rained — both are correct"
+      }
+     ],
+     "note": "With an object (what?) — {{avere}}; on its own or “where to” — {{essere}}."
     }
    ],
    "uses": [
@@ -805,78 +1037,50 @@
    ],
    "exceptions": [
     {
-     "title": "Reflexive verbs",
-     "text": "Always with {{essere}}.",
-     "examples": [
-      {
-       "it": "Mi sono alzato alle sette.",
-       "tr": "I got up at seven."
-      }
-     ]
-    },
-    {
-     "title": "piacere and mancare",
-     "text": "Always with {{essere}}; the participle agrees with the thing liked.",
-     "examples": [
-      {
-       "it": "Mi è piaciuta la pizza.",
-       "tr": "I liked the pizza."
-      },
-      {
-       "it": "Mi sono piaciuti i film.",
-       "tr": "I liked the films."
-      }
-     ]
-    },
-    {
-     "title": "Mixed groups",
-     "text": "If there is at least one man in the group, the ending is {{-i}}.",
+     "title": "Mixed group",
+     "text": "If the group has at least one man — ending {{-i}}.",
      "examples": [
       {
        "it": "Marco e Anna sono arrivati.",
-       "tr": "Marco and Anna have arrived."
+       "tr": "Marco and Anna arrived."
       }
      ]
     },
     {
-     "title": "cominciare and finire",
-     "text": "With an object — {{avere}}; when something starts by itself — {{essere}}.",
+     "title": "costare, durare, piacere",
+     "text": "Also with {{essere}}: the participle agrees with what cost / lasted / was liked.",
      "examples": [
       {
-       "it": "Ho cominciato il corso.",
-       "tr": "I started the course."
+       "it": "Quanto è costata la borsa?",
+       "tr": "How much did the bag cost?"
       },
       {
-       "it": "Il film è cominciato.",
-       "tr": "The film has started."
-      }
-     ]
-    },
-    {
-     "title": "salire and scendere",
-     "text": "Getting on / off transport — {{essere}}; up or down the stairs — {{avere}}.",
-     "examples": [
-      {
-       "it": "Sono sceso dall'autobus.",
-       "tr": "I got off the bus."
-      },
-      {
-       "it": "Ho salito le scale.",
-       "tr": "I went up the stairs."
+       "it": "Il film è durato due ore.",
+       "tr": "The film lasted two hours."
       }
      ]
     },
     {
      "title": "essere and stare",
-     "text": "They share one participle — {{stato}}.",
+     "text": "One participle for both — {{stato}}.",
      "examples": [
       {
        "it": "Sono stata a Milano.",
-       "tr": "I have been to Milan."
+       "tr": "I (f.) was in Milan."
       },
       {
-       "it": "Sono stato male.",
-       "tr": "I was ill."
+       "it": "Ieri sono stato male.",
+       "tr": "Yesterday I was ill (it's over)."
+      }
+     ]
+    },
+    {
+     "title": "Passato remoto",
+     "text": "In books and fairy tales you'll see {{andò}}, {{fece}} — also the past. Just recognise it for now: in speech in the north and in Ticino people use the {{passato prossimo}}.",
+     "examples": [
+      {
+       "it": "C'era una volta un re che andò nel bosco.",
+       "tr": "Once upon a time a king went into the woods."
       }
      ]
     }
@@ -885,7 +1089,12 @@
     {
      "wrong": "Ho andato al cinema.",
      "right": "Sono andato al cinema.",
-     "why": "andare is a verb of movement, so it takes essere."
+     "why": "“Where to” — movement, use essere."
+    },
+    {
+     "wrong": "Sono camminato molto.",
+     "right": "Ho camminato molto.",
+     "why": "Movement without “where to” — avere."
     },
     {
      "wrong": "Anna è andato.",
@@ -934,15 +1143,25 @@
      "tr": "What happened?"
     }
    ],
-   "summary": "**avere / essere + participle**. With essere it agrees: **è andato / è andata**. Irregular: **fatto, letto, preso, visto**.",
-   "keyWords": [],
+   "summary": "**avere / essere + participle**. With an object — **avere**; “where to”, change, reflexives — **essere** (+ agreement). Irregular: **fatto, preso, visto, rimasto**.",
+   "keyWords": [
+    {
+     "title": "Segnali del passato prossimo",
+     "ids": [
+      "w239",
+      "w217",
+      "w205",
+      "w233"
+     ]
+    }
+   ],
    "auxChoice": {
     "title": "Essere o avere?",
     "groups": [
      {
       "aux": "essere",
-      "title": "Movement",
-      "text": "Going, coming, going out.",
+      "title": "Movement to / from",
+      "text": "There's a direction: went somewhere, came from somewhere.",
       "verbs": [
        {
         "id": "w058",
@@ -979,18 +1198,6 @@
         "it": "entrare",
         "participle": "entrato",
         "tr": "to enter"
-       },
-       {
-        "id": "w056",
-        "it": "salire",
-        "participle": "salito",
-        "tr": "to go up; to get on"
-       },
-       {
-        "id": "w199",
-        "it": "scendere",
-        "participle": "sceso",
-        "tr": "to go down; to get off"
        }
       ]
      },
@@ -1018,22 +1225,10 @@
         "tr": "to stay, to remain"
        },
        {
-        "id": "w274",
-        "it": "restare",
-        "participle": "restato",
-        "tr": "to stay, to remain"
-       },
-       {
         "id": "w005",
         "it": "diventare",
         "participle": "diventato",
         "tr": "to become"
-       },
-       {
-        "id": "w272",
-        "it": "crescere",
-        "participle": "cresciuto",
-        "tr": "to grow"
        },
        {
         "id": "w185",
@@ -1054,6 +1249,18 @@
         "tr": "to happen"
        },
        {
+        "id": "w274",
+        "it": "restare",
+        "participle": "restato",
+        "tr": "to stay, to remain"
+       },
+       {
+        "id": "w272",
+        "it": "crescere",
+        "participle": "cresciuto",
+        "tr": "to grow"
+       },
+       {
         "id": "w504",
         "it": "cadere",
         "participle": "caduto",
@@ -1064,67 +1271,74 @@
      {
       "aux": "essere",
       "title": "Reflexives, piacere and mancare",
-      "text": "All reflexive verbs and piacere / mancare also take essere: {{mi sono alzato}}, {{mi è piaciuto}}.",
-      "verbs": []
+      "text": "Reflexives and {{piacere}} / {{mancare}} take {{essere}}; the participle agrees.",
+      "verbs": [
+       {
+        "id": "w065",
+        "it": "svegliarsi",
+        "participle": "mi sono svegliato",
+        "tr": "to wake up"
+       },
+       {
+        "id": "w062",
+        "it": "alzarsi",
+        "participle": "mi sono alzato",
+        "tr": "to get up"
+       },
+       {
+        "id": "w108",
+        "it": "vestirsi",
+        "participle": "mi sono vestita",
+        "tr": "to get dressed"
+       },
+       {
+        "id": "w096",
+        "it": "divertirsi",
+        "participle": "ci siamo divertiti",
+        "tr": "to have fun"
+       },
+       {
+        "id": "w034",
+        "it": "piacere",
+        "participle": "mi è piaciuto",
+        "tr": "to like"
+       },
+       {
+        "id": "w033",
+        "it": "mancare",
+        "participle": "mi è mancata",
+        "tr": "to miss"
+       }
+      ]
      },
      {
       "aux": "avere",
-      "title": "Everything else",
-      "text": "Verbs with an object ({{ho comprato il pane}}) and most verbs without one ({{ho dormito}}).",
+      "title": "Trap: movement without “where to”",
+      "text": "You move but don't say where → {{avere}}: {{ho camminato}}. Same for all verbs with an object: {{ho comprato il pane}}.",
       "verbs": [
        {
-        "id": "w069",
-        "it": "comprare",
-        "participle": "comprato",
-        "tr": "to buy"
+        "id": "w054",
+        "it": "camminare",
+        "participle": "camminato",
+        "tr": "to walk"
        },
        {
-        "id": "w285",
-        "it": "vendere",
-        "participle": "venduto",
-        "tr": "to sell"
+        "id": "w280",
+        "it": "nuotare",
+        "participle": "nuotato",
+        "tr": "to swim"
        },
        {
-        "id": "w084",
-        "it": "cominciare",
-        "participle": "cominciato",
-        "tr": "to begin"
-       },
-       {
-        "id": "w129",
-        "it": "frequentare",
-        "participle": "frequentato",
-        "tr": "to attend (a course)"
-       },
-       {
-        "id": "w180",
-        "it": "studiare",
-        "participle": "studiato",
-        "tr": "to study"
-       },
-       {
-        "id": "w015",
-        "it": "cenare",
-        "participle": "cenato",
-        "tr": "to have dinner"
-       },
-       {
-        "id": "w222",
-        "it": "pranzare",
-        "participle": "pranzato",
-        "tr": "to have lunch"
+        "id": "w286",
+        "it": "viaggiare",
+        "participle": "viaggiato",
+        "tr": "to travel"
        },
        {
         "id": "w094",
         "it": "ballare",
         "participle": "ballato",
         "tr": "to dance"
-       },
-       {
-        "id": "w054",
-        "it": "camminare",
-        "participle": "camminato",
-        "tr": "to walk"
        },
        {
         "id": "w281",
@@ -1137,35 +1351,248 @@
         "it": "girare",
         "participle": "girato",
         "tr": "to go around"
-       },
-       {
-        "id": "w280",
-        "it": "nuotare",
-        "participle": "nuotato",
-        "tr": "to swim"
-       },
-       {
-        "id": "w278",
-        "it": "giocare",
-        "participle": "giocato",
-        "tr": "to play"
-       },
-       {
-        "id": "w284",
-        "it": "telefonare",
-        "participle": "telefonato",
-        "tr": "to phone"
-       },
-       {
-        "id": "w286",
-        "it": "viaggiare",
-        "participle": "viaggiato",
-        "tr": "to travel"
        }
       ]
      }
-    ]
+    ],
+    "intro": {
+     "title": "The 3-second test",
+     "steps": [
+      "There's an object (what? whom?) → {{avere}}: {{ho comprato il pane}}.",
+      "Movement “where to / from” → {{essere}}: {{sono andato a Roma}}.",
+      "Change of state (born, became, stayed) → {{essere}}: {{è nata}}.",
+      "Reflexive → {{essere}}. Everything else → {{avere}}: {{ho dormito}}."
+     ]
+    }
    }
+  },
+  "g5-modali-passato": {
+   "id": "g5-modali-passato",
+   "inBreve": [
+    "{{dovere}}, {{potere}}, {{volere}} in the past: {{ho dovuto}}, {{ho potuto}}, {{ho voluto}} + infinitive.",
+    "The auxiliary is **the one the second verb takes**: {{ho dovuto lavorare}}, but {{sono dovuto partire}}.",
+    "With {{essere}} the participle agrees: {{Anna è dovuta partire}}."
+   ],
+   "formation": {
+    "formula": {
+     "parts": [
+      "avere / essere",
+      "dovuto · potuto · voluto",
+      "infinito"
+     ],
+     "examples": [
+      {
+       "parts": [
+        "ho",
+        "dovuto",
+        "lavorare"
+       ],
+       "it": "Ieri ho dovuto lavorare.",
+       "tr": "Yesterday I had to work."
+      },
+      {
+       "parts": [
+        "sono",
+        "dovuta",
+        "partire"
+       ],
+       "it": "Sono dovuta partire presto.",
+       "tr": "I (f.) had to leave early."
+      },
+      {
+       "parts": [
+        "non ho",
+        "potuto",
+        "dormire"
+       ],
+       "it": "Non ho potuto dormire.",
+       "tr": "I couldn't sleep."
+      }
+     ]
+    },
+    "steps": [
+     "Look at the **second** verb: {{lavorare → ho lavorato}}, {{partire → sono partito}}.",
+     "Use the same auxiliary: {{ho dovuto lavorare}}, {{sono dovuto partire}}.",
+     "With {{essere}}, make it agree: {{Anna è dovuta partire}}.",
+     "A modal on its own takes {{avere}}: {{Non ho potuto.}}"
+    ]
+   },
+   "tables": [
+    {
+     "title": "With avere and with essere",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "+ avere",
+       "+ essere"
+      ],
+      [
+       "dovere",
+       "ho dovuto lavorare",
+       "sono dovuto/a partire"
+      ],
+      [
+       "potere",
+       "ho potuto dormire",
+       "sono potuto/a uscire"
+      ],
+      [
+       "volere",
+       "ho voluto vedere",
+       "sono voluto/a restare"
+      ]
+     ],
+     "note": "The second verb is always an infinitive, no preposition: {{ho dovuto studiare}}."
+    },
+    {
+     "type": "pairs",
+     "title": "Compare",
+     "sep": "↔",
+     "items": [
+      {
+       "a": "Ho dovuto studiare.",
+       "b": "Sono dovuto andare.",
+       "tr": "I had to study ↔ I had to go"
+      },
+      {
+       "a": "Non ho potuto dormire.",
+       "b": "Non sono potuto uscire.",
+       "tr": "I couldn't sleep ↔ I couldn't go out"
+      },
+      {
+       "a": "Ho voluto provare.",
+       "b": "Sono voluta restare.",
+       "tr": "I wanted to try ↔ I (f.) wanted to stay"
+      }
+     ],
+     "note": "Left: the second verb takes {{avere}}; right: {{essere}}."
+    }
+   ],
+   "uses": [
+    {
+     "text": "Past obligation",
+     "it": "Ieri ho dovuto lavorare fino alle otto.",
+     "tr": "Yesterday I had to work until eight."
+    },
+    {
+     "text": "Couldn't do it",
+     "it": "Non sono potuto venire al corso.",
+     "tr": "I couldn't come to the course."
+    },
+    {
+     "text": "Wish",
+     "it": "Abbiamo voluto vedere il lago.",
+     "tr": "We wanted to see the lake."
+    },
+    {
+     "text": "Short answer",
+     "it": "Sei venuto? — No, non ho potuto.",
+     "tr": "Did you come? — No, I couldn't."
+    }
+   ],
+   "exceptions": [
+    {
+     "title": "avere is also fine",
+     "text": "In speech people often say {{ho dovuto partire}}. It's acceptable, but {{sono dovuto partire}} is the model form.",
+     "examples": [
+      {
+       "it": "Sono dovuto tornare a casa.",
+       "tr": "I had to go back home."
+      }
+     ]
+    },
+    {
+     "title": "Reflexives",
+     "text": "Two correct forms: {{mi sono dovuto alzare}} = {{ho dovuto alzarmi}}.",
+     "examples": [
+      {
+       "it": "Mi sono dovuta alzare alle sei.",
+       "tr": "I (f.) had to get up at six."
+      }
+     ]
+    },
+    {
+     "title": "dovevo or ho dovuto?",
+     "text": "{{ho dovuto}} — had to and did; {{dovevo}} — was supposed to (unclear if done).",
+     "examples": [
+      {
+       "it": "Dovevo chiamarti, ma ho dimenticato.",
+       "tr": "I was supposed to call you, but I forgot."
+      }
+     ]
+    },
+    {
+     "title": "sapere",
+     "text": "{{ho saputo}} means “found out”: {{ho saputo la notizia}}.",
+     "examples": [
+      {
+       "it": "Ieri ho saputo che Anna è incinta.",
+       "tr": "Yesterday I found out Anna is pregnant."
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "Sono dovuto lavorare.",
+     "right": "Ho dovuto lavorare.",
+     "why": "lavorare takes avere."
+    },
+    {
+     "wrong": "Anna è dovuto partire.",
+     "right": "Anna è dovuta partire.",
+     "why": "With essere — agreement: Anna is feminine."
+    },
+    {
+     "wrong": "Ho dovuto di studiare.",
+     "right": "Ho dovuto studiare.",
+     "why": "No preposition after modals."
+    },
+    {
+     "wrong": "Non sono potuto.",
+     "right": "Non ho potuto.",
+     "why": "Without a second verb — avere."
+    },
+    {
+     "wrong": "Ho voluto andato.",
+     "right": "Sono voluto andare.",
+     "why": "The second verb stays in the infinitive."
+    }
+   ],
+   "examples": [
+    {
+     "it": "Ieri ho dovuto prendere il bus.",
+     "tr": "Yesterday I had to take the bus."
+    },
+    {
+     "it": "Non abbiamo potuto pagare con la carta.",
+     "tr": "We couldn't pay by card."
+    },
+    {
+     "it": "Marco è dovuto andare dal medico.",
+     "tr": "Marco had to go to the doctor."
+    },
+    {
+     "it": "I bambini non sono voluti uscire.",
+     "tr": "The children didn't want to go out."
+    },
+    {
+     "it": "Hai potuto finire il lavoro?",
+     "tr": "Were you able to finish the work?"
+    }
+   ],
+   "summary": "**avere / essere + dovuto · potuto · voluto + infinitive**. The auxiliary follows the second verb: **ho dovuto lavorare**, **sono dovuto partire**.",
+   "keyWords": [
+    {
+     "title": "I verbi modali",
+     "ids": [
+      "w126",
+      "w127",
+      "w128"
+     ]
+    }
+   ]
   },
   "g5-presente-tu": {
    "id": "g5-presente-tu",
@@ -3835,7 +4262,7 @@
    "id": "g5-reciproci",
    "inBreve": [
     "In the plural, {{ci, vi, si}} can mean “each other”: {{ci amiamo}} — we love each other.",
-    "The forms are like reflexives: {{ci vediamo}}, {{vi conoscete}}, {{si scrivono}}.",
+    "Relationship stages also take {{essere}}: {{si sono sposati}}. Only {{divorziare}} takes {{avere}}.",
     "In the passato prossimo — {{essere}} with a plural participle: {{ci siamo conosciuti}}."
    ],
    "formation": {
@@ -3900,153 +4327,7 @@
       }
      ],
      "note": "Someone — {{avere}}; each other — {{essere}}."
-    }
-   ],
-   "uses": [
-    {
-     "text": "Relationships",
-     "it": "Ci conosciamo da dieci anni.",
-     "tr": "We've known each other for ten years."
     },
-    {
-     "text": "Meeting up",
-     "it": "Ci vediamo domani!",
-     "tr": "See you tomorrow!"
-    },
-    {
-     "text": "Keeping in touch",
-     "it": "Ci scriviamo ogni giorno.",
-     "tr": "We write to each other every day."
-    },
-    {
-     "text": "Greeting and saying goodbye",
-     "it": "Si salutano e vanno via.",
-     "tr": "They say goodbye and leave."
-    }
-   ],
-   "exceptions": [
-    {
-     "title": "Mixed group",
-     "text": "A man and a woman together — ending {{-i}}.",
-     "examples": [
-      {
-       "it": "Io e mio marito ci siamo conosciuti a Lugano.",
-       "tr": "My husband and I met in Lugano."
-      }
-     ]
-    },
-    {
-     "title": "Two women",
-     "text": "Only women — ending {{-e}}.",
-     "examples": [
-      {
-       "it": "Lucia e Sara si sono viste ieri.",
-       "tr": "Lucia and Sara saw each other yesterday."
-      }
-     ]
-    },
-    {
-     "title": "innamorarsi di",
-     "text": "Fall in love with someone — {{di}}.",
-     "examples": [
-      {
-       "it": "Mi sono innamorato di lei.",
-       "tr": "I fell in love with her."
-      }
-     ]
-    },
-    {
-     "title": "sposarsi con / sposare",
-     "text": "Two correct options.",
-     "examples": [
-      {
-       "it": "Mi sono sposato con Anna. = Ho sposato Anna.",
-       "tr": "I married Anna."
-      }
-     ]
-    }
-   ],
-   "mistakes": [
-    {
-     "wrong": "Abbiamo conosciuti a Lugano.",
-     "right": "Ci siamo conosciuti a Lugano.",
-     "why": "Each other — ci + essere."
-    },
-    {
-     "wrong": "Ci siamo conosciuto.",
-     "right": "Ci siamo conosciuti.",
-     "why": "Plural participle."
-    },
-    {
-     "wrong": "Lucia e Sara si sono visti.",
-     "right": "Lucia e Sara si sono viste.",
-     "why": "Two women — -e."
-    },
-    {
-     "wrong": "Mi sono innamorato in lei.",
-     "right": "Mi sono innamorato di lei.",
-     "why": "innamorarsi di."
-    },
-    {
-     "wrong": "Ci siamo amato molto.",
-     "right": "Ci siamo amati molto.",
-     "why": "Plural: amati."
-    }
-   ],
-   "examples": [
-    {
-     "it": "Ci siamo conosciuti a una festa.",
-     "tr": "We met at a party."
-    },
-    {
-     "it": "Si sono sposati nel 2010.",
-     "tr": "They got married in 2010."
-    },
-    {
-     "it": "Vi vedete spesso?",
-     "tr": "Do you see each other often?"
-    },
-    {
-     "it": "Non ci parliamo più.",
-     "tr": "We don't speak to each other any more."
-    },
-    {
-     "it": "Si telefonano ogni sera.",
-     "tr": "They phone each other every evening."
-    },
-    {
-     "it": "Ci siamo salutati alla stazione.",
-     "tr": "We said goodbye at the station."
-    }
-   ],
-   "summary": "**ci / vi / si** + plural = each other. Past: **ci siamo conosciuti**. Someone — avere, each other — essere.",
-   "keyWords": [
-    {
-     "title": "Incontri",
-     "ids": [
-      "w110",
-      "w389",
-      "w077",
-      "w392"
-     ]
-    }
-   ]
-  },
-  "g5-coppia-tappe": {
-   "id": "g5-coppia-tappe",
-   "inBreve": [
-    "Relationship stages use almost only **reflexive** verbs: {{conoscersi}}, {{innamorarsi}}, {{sposarsi}}.",
-    "In the passato prossimo — {{essere}}: {{si sono sposati}}.",
-    "The exception is {{divorziare}}: with {{avere}}, {{hanno divorziato}}."
-   ],
-   "formation": {
-    "steps": [
-     "Put the events in order — see “Le tappe”.",
-     "Take the verb and use {{essere}}: {{si sono}}, {{ci siamo}}.",
-     "Plural participle: {{-i}} or {{-e}}."
-    ]
-   },
-   "tables": [
     {
      "type": "pairs",
      "title": "Le tappe",
@@ -4121,14 +4402,24 @@
    ],
    "uses": [
     {
-     "text": "Telling a couple's story",
-     "it": "Si sono conosciuti all'università.",
-     "tr": "They met at university."
+     "text": "Relationships",
+     "it": "Ci conosciamo da dieci anni.",
+     "tr": "We've known each other for ten years."
     },
     {
-     "text": "About yourself",
-     "it": "Mi sono sposato nel 2008.",
-     "tr": "I got married in 2008."
+     "text": "Meeting up",
+     "it": "Ci vediamo domani!",
+     "tr": "See you tomorrow!"
+    },
+    {
+     "text": "Keeping in touch",
+     "it": "Ci scriviamo ogni giorno.",
+     "tr": "We write to each other every day."
+    },
+    {
+     "text": "Greeting and saying goodbye",
+     "it": "Si salutano e vanno via.",
+     "tr": "They say goodbye and leave."
     },
     {
      "text": "Now",
@@ -4143,12 +4434,42 @@
    ],
    "exceptions": [
     {
-     "title": "mettersi insieme",
-     "text": "Participle {{messo}}: {{si sono messi insieme}}.",
+     "title": "Mixed group",
+     "text": "A man and a woman together — ending {{-i}}.",
      "examples": [
       {
-       "it": "Si sono messi insieme a giugno.",
-       "tr": "They got together in June."
+       "it": "Io e mio marito ci siamo conosciuti a Lugano.",
+       "tr": "My husband and I met in Lugano."
+      }
+     ]
+    },
+    {
+     "title": "Two women",
+     "text": "Only women — ending {{-e}}.",
+     "examples": [
+      {
+       "it": "Lucia e Sara si sono viste ieri.",
+       "tr": "Lucia and Sara saw each other yesterday."
+      }
+     ]
+    },
+    {
+     "title": "innamorarsi di",
+     "text": "Fall in love with someone — {{di}}.",
+     "examples": [
+      {
+       "it": "Mi sono innamorato di lei.",
+       "tr": "I fell in love with her."
+      }
+     ]
+    },
+    {
+     "title": "sposarsi con / sposare",
+     "text": "Two correct options.",
+     "examples": [
+      {
+       "it": "Mi sono sposato con Anna. = Ho sposato Anna.",
+       "tr": "I married Anna."
       }
      ]
     },
@@ -4173,17 +4494,42 @@
      ]
     },
     {
-     "title": "Just yourself",
-     "text": "Reflexive in the singular: {{mi sono innamorata}}.",
+     "title": "mettersi insieme",
+     "text": "Participle {{messo}}: {{si sono messi insieme}}.",
      "examples": [
       {
-       "it": "Mi sono innamorata di Marco.",
-       "tr": "I fell in love with Marco."
+       "it": "Si sono messi insieme a giugno.",
+       "tr": "They got together in June."
       }
      ]
     }
    ],
    "mistakes": [
+    {
+     "wrong": "Abbiamo conosciuti a Lugano.",
+     "right": "Ci siamo conosciuti a Lugano.",
+     "why": "Each other — ci + essere."
+    },
+    {
+     "wrong": "Ci siamo conosciuto.",
+     "right": "Ci siamo conosciuti.",
+     "why": "Plural participle."
+    },
+    {
+     "wrong": "Lucia e Sara si sono visti.",
+     "right": "Lucia e Sara si sono viste.",
+     "why": "Two women — -e."
+    },
+    {
+     "wrong": "Mi sono innamorato in lei.",
+     "right": "Mi sono innamorato di lei.",
+     "why": "innamorarsi di."
+    },
+    {
+     "wrong": "Ci siamo amato molto.",
+     "right": "Ci siamo amati molto.",
+     "why": "Plural: amati."
+    },
     {
      "wrong": "Si sono divorziati.",
      "right": "Hanno divorziato.",
@@ -4198,22 +4544,28 @@
      "wrong": "Sono sposati nel 2010.",
      "right": "Si sono sposati nel 2010.",
      "why": "An event — sposarsi."
-    },
-    {
-     "wrong": "Hanno sposato nel 2010.",
-     "right": "Si sono sposati nel 2010.",
-     "why": "With each other — essere."
-    },
-    {
-     "wrong": "Si sono fidanzato.",
-     "right": "Si sono fidanzati.",
-     "why": "Plural — -i."
     }
    ],
    "examples": [
     {
-     "it": "Anna e Marco si sono conosciuti al lavoro.",
-     "tr": "Anna and Marco met at work."
+     "it": "Ci siamo conosciuti a una festa.",
+     "tr": "We met at a party."
+    },
+    {
+     "it": "Vi vedete spesso?",
+     "tr": "Do you see each other often?"
+    },
+    {
+     "it": "Non ci parliamo più.",
+     "tr": "We don't speak to each other any more."
+    },
+    {
+     "it": "Si telefonano ogni sera.",
+     "tr": "They phone each other every evening."
+    },
+    {
+     "it": "Ci siamo salutati alla stazione.",
+     "tr": "We said goodbye at the station."
     },
     {
      "it": "Dopo un mese si sono innamorati.",
@@ -4224,20 +4576,21 @@
      "tr": "They got engaged on holiday."
     },
     {
-     "it": "Si sono sposati in chiesa.",
-     "tr": "They got married in church."
-    },
-    {
-     "it": "Hanno due figli.",
-     "tr": "They have two children."
-    },
-    {
      "it": "Dopo dieci anni si sono separati.",
      "tr": "After ten years they separated."
     }
    ],
-   "summary": "**conoscersi → innamorarsi → mettersi insieme → fidanzarsi → sposarsi** — all with essere. **divorziare** — avere.",
+   "summary": "**ci / vi / si** + plural = each other: **ci siamo conosciuti**. Stages: **conoscersi → innamorarsi → fidanzarsi → sposarsi** — essere; **divorziare** — avere.",
    "keyWords": [
+    {
+     "title": "Incontri",
+     "ids": [
+      "w110",
+      "w389",
+      "w077",
+      "w392"
+     ]
+    },
     {
      "title": "La coppia",
      "ids": [

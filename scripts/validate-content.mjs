@@ -211,6 +211,27 @@ for (const lingua of lingue) {
         }
       }
     }
+    // formation.formula (facoltativa): parti e esempi solo in italiano (niente cirillico);
+    // ogni esempio ha parti, frase italiana e traduzione.
+    const CIRILLICO = /[\u0400-\u04FF]/;
+    const formula = lezione?.formation?.formula;
+    if (formula !== undefined) {
+      const dove = `${topicId}.formation.formula`;
+      const parti = (v) => Array.isArray(v) && v.length > 0 && v.every(testo);
+      if (!parti(formula?.parts)) errori.push(`${lingua}/lezioni: ${dove}.parts mancanti o vuote`);
+      else if (formula.parts.some((x) => CIRILLICO.test(x))) errori.push(`${lingua}/lezioni: ${dove}.parts solo in italiano`);
+      if (!Array.isArray(formula?.examples)) errori.push(`${lingua}/lezioni: ${dove}.examples non è un elenco`);
+      else
+        formula.examples.forEach((e, i) => {
+          if (!parti(e?.parts) || !testo(e?.it) || !testo(e?.tr)) errori.push(`${lingua}/lezioni: ${dove}.examples[${i}] senza parts, it o tr`);
+          else if ([...e.parts, e.it].some((x) => CIRILLICO.test(x))) errori.push(`${lingua}/lezioni: ${dove}.examples[${i}] parts e it solo in italiano`);
+        });
+    }
+    // auxChoice.intro (facoltativo): titolo e passi numerati.
+    const intro = lezione?.auxChoice?.intro;
+    if (intro !== undefined && (!testo(intro?.title) || !Array.isArray(intro?.steps) || intro.steps.length === 0 || !intro.steps.every(testo))) {
+      errori.push(`${lingua}/lezioni: ${topicId}.auxChoice.intro senza title o steps`);
+    }
     // auxChoice (facoltativo): gruppi con aux essere|avere; ogni verbo esiste nel vocabolario.
     if (lezione?.auxChoice !== undefined) {
       const ids = vocabPerLingua[lingua] ?? vocabPerLingua.ru ?? new Set();
@@ -264,6 +285,24 @@ for (const [topicId, ru] of Object.entries(lezioniCompletePerLingua.ru ?? {})) {
         errori.push(`${l}/lezioni: ${topicId}.tables[${i}] ha ${altra.items?.length} elementi, ru ne ha ${tabella.items.length}`);
     }
   });
+}
+// Formula e test di "Essere o avere?": stessa forma in ru, uk, en (parti uguali, stesso numero di esempi e di passi).
+for (const [topicId, ru] of Object.entries(lezioniCompletePerLingua.ru ?? {})) {
+  for (const l of ["uk", "en"]) {
+    const altra = lezioniCompletePerLingua[l]?.[topicId];
+    if (!altra) continue;
+    const fr = ru.formation?.formula;
+    const fa = altra.formation?.formula;
+    if (!!fr !== !!fa) errori.push(`${l}/lezioni: ${topicId}.formation.formula ${fr ? "manca" : "c'è solo qui"} (ru)`);
+    else if (fr) {
+      if (JSON.stringify(fr.parts) !== JSON.stringify(fa.parts)) errori.push(`${l}/lezioni: ${topicId}.formation.formula.parts diverse da ru`);
+      if (fr.examples?.length !== fa.examples?.length) errori.push(`${l}/lezioni: ${topicId}.formation.formula.examples: ${fa.examples?.length}, ru ${fr.examples?.length}`);
+    }
+    const ir = ru.auxChoice?.intro;
+    const ia = altra.auxChoice?.intro;
+    if (!!ir !== !!ia) errori.push(`${l}/lezioni: ${topicId}.auxChoice.intro ${ir ? "manca" : "c'è solo qui"} (ru)`);
+    else if (ir && ir.steps?.length !== ia.steps?.length) errori.push(`${l}/lezioni: ${topicId}.auxChoice.intro.steps: ${ia.steps?.length}, ru ${ir.steps?.length}`);
+  }
 }
 const tutte = [...new Set(Object.values(lezioniPerLingua).flat())];
 for (const lingua of ["ru", "uk", "en"]) {

@@ -675,15 +675,47 @@
    "id": "g5-passato-prossimo-base",
    "inBreve": [
     "{{Passato prossimo}} — прошедшее время для **законченных действий**: {{Ieri ho lavorato}} — «Вчера я работал».",
-    "Состоит из двух слов: {{avere}} или {{essere}} в настоящем времени + **причастие** ({{participio}}).",
+    "Сложное время: **вспомогательный глагол** {{avere}} или {{essere}} в настоящем времени ({{ho, sono…}}) + **причастие** ({{participio}}).",
     "С {{essere}} причастие меняет окончание по роду и числу: {{Anna è andata}}, {{i ragazzi sono andati}}."
    ],
    "formation": {
+    "formula": {
+     "parts": [
+      "avere / essere",
+      "participio"
+     ],
+     "examples": [
+      {
+       "parts": [
+        "ho",
+        "mangiato"
+       ],
+       "it": "Ho mangiato la pizza.",
+       "tr": "Я съел пиццу."
+      },
+      {
+       "parts": [
+        "sono",
+        "andata"
+       ],
+       "it": "Sono andata al mare.",
+       "tr": "Я (ж.) поехала на море."
+      },
+      {
+       "parts": [
+        "abbiamo",
+        "preso"
+       ],
+       "it": "Abbiamo preso il treno.",
+       "tr": "Мы сели на поезд."
+      }
+     ]
+    },
     "steps": [
-     "Выбери вспомогательный глагол: {{essere}} — движение, изменение состояния и возвратные; {{avere}} — все остальные.",
+     "Выбери вспомогательный глагол — {{avere}} или {{essere}} (тест ниже): {{mangiare → ho mangiato}}, {{andare → sono andato}}.",
      "Поставь его в presente: {{ho, hai, ha…}} или {{sono, sei, è…}}",
-     "Образуй причастие: {{-are → -ato}}, {{-ere → -uto}}, {{-ire → -ito}}. Многие частые глаголы — неправильные (таблица ниже).",
-     "С {{essere}} согласуй окончание с подлежащим: {{-o, -a, -i, -e}}."
+     "Образуй причастие: {{parlare → parlato}}, {{vendere → venduto}}, {{dormire → dormito}}.",
+     "С {{essere}} согласуй окончание с подлежащим: {{Anna è andata}}."
     ]
    },
    "tables": [
@@ -774,6 +806,206 @@
       ]
      ],
      "note": "С {{avere}} причастие **не меняется**: {{Anna ha mangiato}}."
+    },
+    {
+     "type": "pairs",
+     "title": "Неправильные: -so",
+     "sep": "→",
+     "items": [
+      {
+       "a": "prendere",
+       "b": "preso",
+       "tr": "брать"
+      },
+      {
+       "a": "scendere",
+       "b": "sceso",
+       "tr": "спускаться"
+      },
+      {
+       "a": "spendere",
+       "b": "speso",
+       "tr": "тратить"
+      },
+      {
+       "a": "chiudere",
+       "b": "chiuso",
+       "tr": "закрывать"
+      },
+      {
+       "a": "decidere",
+       "b": "deciso",
+       "tr": "решать"
+      },
+      {
+       "a": "mettere",
+       "b": "messo",
+       "tr": "класть"
+      },
+      {
+       "a": "smettere",
+       "b": "smesso",
+       "tr": "бросать (курить)"
+      }
+     ],
+     "note": "{{-dere}} и {{-ttere}} часто дают {{-so}}."
+    },
+    {
+     "type": "pairs",
+     "title": "Неправильные: -tto",
+     "sep": "→",
+     "items": [
+      {
+       "a": "fare",
+       "b": "fatto",
+       "tr": "делать"
+      },
+      {
+       "a": "dire",
+       "b": "detto",
+       "tr": "говорить"
+      },
+      {
+       "a": "leggere",
+       "b": "letto",
+       "tr": "читать"
+      },
+      {
+       "a": "scrivere",
+       "b": "scritto",
+       "tr": "писать"
+      },
+      {
+       "a": "rompere",
+       "b": "rotto",
+       "tr": "ломать"
+      }
+     ],
+     "note": "{{-gere}}, {{-vere}} → {{-tto}}: {{letto}}, {{scritto}}."
+    },
+    {
+     "type": "pairs",
+     "title": "Неправильные: -sto и -rto",
+     "sep": "→",
+     "items": [
+      {
+       "a": "vedere",
+       "b": "visto",
+       "tr": "видеть"
+      },
+      {
+       "a": "rimanere",
+       "b": "rimasto",
+       "tr": "оставаться"
+      },
+      {
+       "a": "rispondere",
+       "b": "risposto",
+       "tr": "отвечать"
+      },
+      {
+       "a": "chiedere",
+       "b": "chiesto",
+       "tr": "спрашивать"
+      },
+      {
+       "a": "aprire",
+       "b": "aperto",
+       "tr": "открывать"
+      },
+      {
+       "a": "scoprire",
+       "b": "scoperto",
+       "tr": "открывать (узнавать)"
+      },
+      {
+       "a": "offrire",
+       "b": "offerto",
+       "tr": "угощать, предлагать"
+      },
+      {
+       "a": "morire",
+       "b": "morto",
+       "tr": "умирать"
+      }
+     ],
+     "note": "{{-rire}} → {{-rto}}: {{aperto}}, {{offerto}}."
+    },
+    {
+     "type": "pairs",
+     "title": "Запомнить отдельно",
+     "sep": "→",
+     "items": [
+      {
+       "a": "essere",
+       "b": "stato",
+       "tr": "быть"
+      },
+      {
+       "a": "stare",
+       "b": "stato",
+       "tr": "находиться"
+      },
+      {
+       "a": "venire",
+       "b": "venuto",
+       "tr": "приходить"
+      },
+      {
+       "a": "nascere",
+       "b": "nato",
+       "tr": "рождаться"
+      },
+      {
+       "a": "vivere",
+       "b": "vissuto",
+       "tr": "жить"
+      },
+      {
+       "a": "bere",
+       "b": "bevuto",
+       "tr": "пить"
+      }
+     ],
+     "note": "{{essere}} и {{stare}} — одно причастие: {{stato}}."
+    },
+    {
+     "type": "pairs",
+     "title": "Два вспомогательных",
+     "sep": "↔",
+     "items": [
+      {
+       "a": "Ho cominciato il corso.",
+       "b": "Il corso è cominciato.",
+       "tr": "Я начал курс ↔ Курс начался"
+      },
+      {
+       "a": "Ho finito il lavoro.",
+       "b": "Il film è finito.",
+       "tr": "Я закончил работу ↔ Фильм закончился"
+      },
+      {
+       "a": "Ho corso un'ora.",
+       "b": "Sono corso a casa.",
+       "tr": "Я бегал час ↔ Я побежал домой"
+      },
+      {
+       "a": "Ho salito le scale.",
+       "b": "Sono salito sul treno.",
+       "tr": "Я поднялся по лестнице ↔ Я сел в поезд"
+      },
+      {
+       "a": "Ho passato le vacanze al mare.",
+       "b": "Sono passato da Marco.",
+       "tr": "Я провёл отпуск на море ↔ Я зашёл к Марко"
+      },
+      {
+       "a": "Ha piovuto.",
+       "b": "È piovuto.",
+       "tr": "Шёл дождь — оба варианта верны"
+      }
+     ],
+     "note": "Есть объект (что?) — {{avere}}; действие само по себе или «куда» — {{essere}}."
     }
    ],
    "uses": [
@@ -805,30 +1037,6 @@
    ],
    "exceptions": [
     {
-     "title": "Возвратные глаголы",
-     "text": "Всегда с {{essere}}.",
-     "examples": [
-      {
-       "it": "Mi sono alzato alle sette.",
-       "tr": "Я встал в семь."
-      }
-     ]
-    },
-    {
-     "title": "piacere и mancare",
-     "text": "Всегда с {{essere}}; причастие согласуется с тем, что нравится.",
-     "examples": [
-      {
-       "it": "Mi è piaciuta la pizza.",
-       "tr": "Мне понравилась пицца."
-      },
-      {
-       "it": "Mi sono piaciuti i film.",
-       "tr": "Мне понравились фильмы."
-      }
-     ]
-    },
-    {
      "title": "Смешанная группа",
      "text": "Если в группе есть хотя бы один мужчина — окончание {{-i}}.",
      "examples": [
@@ -839,30 +1047,16 @@
      ]
     },
     {
-     "title": "cominciare и finire",
-     "text": "Если есть объект — {{avere}}; если что-то начинается само — {{essere}}.",
+     "title": "costare, durare, piacere",
+     "text": "Тоже с {{essere}}: причастие согласуется с тем, что стоило / длилось / понравилось.",
      "examples": [
       {
-       "it": "Ho cominciato il corso.",
-       "tr": "Я начал курс."
+       "it": "Quanto è costata la borsa?",
+       "tr": "Сколько стоила сумка?"
       },
       {
-       "it": "Il film è cominciato.",
-       "tr": "Фильм начался."
-      }
-     ]
-    },
-    {
-     "title": "salire и scendere",
-     "text": "В транспорт / из транспорта — {{essere}}; по лестнице — {{avere}}.",
-     "examples": [
-      {
-       "it": "Sono sceso dall'autobus.",
-       "tr": "Я вышел из автобуса."
-      },
-      {
-       "it": "Ho salito le scale.",
-       "tr": "Я поднялся по лестнице."
+       "it": "Il film è durato due ore.",
+       "tr": "Фильм длился два часа."
       }
      ]
     },
@@ -872,11 +1066,21 @@
      "examples": [
       {
        "it": "Sono stata a Milano.",
-       "tr": "Я была в Милане."
+       "tr": "Я (ж.) была в Милане."
       },
       {
-       "it": "Sono stato male.",
-       "tr": "Мне было плохо."
+       "it": "Ieri sono stato male.",
+       "tr": "Вчера я болел (и уже прошло)."
+      }
+     ]
+    },
+    {
+     "title": "Passato remoto",
+     "text": "В книгах и сказках встретишь {{andò}}, {{fece}} — тоже прошлое. Пока только узнавай: в разговоре на севере и в Тичино говорят {{passato prossimo}}.",
+     "examples": [
+      {
+       "it": "C'era una volta un re che andò nel bosco.",
+       "tr": "Жил-был король, который пошёл в лес."
       }
      ]
     }
@@ -885,7 +1089,12 @@
     {
      "wrong": "Ho andato al cinema.",
      "right": "Sono andato al cinema.",
-     "why": "andare — глагол движения, нужен essere."
+     "why": "«Куда» — перемещение, нужен essere."
+    },
+    {
+     "wrong": "Sono camminato molto.",
+     "right": "Ho camminato molto.",
+     "why": "Движение без «куда» — avere."
     },
     {
      "wrong": "Anna è andato.",
@@ -923,26 +1132,36 @@
     },
     {
      "it": "Siamo rimasti a casa tutto il giorno.",
-     "tr": "Мы весь день остались дома."
+     "tr": "Мы весь день просидели дома."
     },
     {
      "it": "Ho preso il treno delle otto.",
-     "tr": "Я сел на поезд в восемь."
+     "tr": "Я сел на восьмичасовой поезд."
     },
     {
      "it": "Che cosa è successo?",
      "tr": "Что случилось?"
     }
    ],
-   "summary": "**avere / essere + причастие**. С essere — согласование: **è andato / è andata**. Неправильные: **fatto, letto, preso, visto**.",
-   "keyWords": [],
+   "summary": "**avere / essere + причастие**. Есть объект — **avere**; «куда», изменение, возвратные — **essere** (+ согласование). Неправильные: **fatto, preso, visto, rimasto**.",
+   "keyWords": [
+    {
+     "title": "Segnali del passato prossimo",
+     "ids": [
+      "w239",
+      "w217",
+      "w205",
+      "w233"
+     ]
+    }
+   ],
    "auxChoice": {
     "title": "Essere o avere?",
     "groups": [
      {
       "aux": "essere",
-      "title": "Движение",
-      "text": "Куда-то идти, приходить, выходить.",
+      "title": "Перемещение куда / откуда",
+      "text": "Есть направление: пошёл куда, пришёл откуда.",
       "verbs": [
        {
         "id": "w058",
@@ -979,18 +1198,6 @@
         "it": "entrare",
         "participle": "entrato",
         "tr": "входить"
-       },
-       {
-        "id": "w056",
-        "it": "salire",
-        "participle": "salito",
-        "tr": "подниматься; садиться (в транспорт)"
-       },
-       {
-        "id": "w199",
-        "it": "scendere",
-        "participle": "sceso",
-        "tr": "спускаться; выходить (из транспорта)"
        }
       ]
      },
@@ -1018,22 +1225,10 @@
         "tr": "оставаться"
        },
        {
-        "id": "w274",
-        "it": "restare",
-        "participle": "restato",
-        "tr": "оставаться (= rimanere)"
-       },
-       {
         "id": "w005",
         "it": "diventare",
         "participle": "diventato",
         "tr": "становиться"
-       },
-       {
-        "id": "w272",
-        "it": "crescere",
-        "participle": "cresciuto",
-        "tr": "расти, вырастать"
        },
        {
         "id": "w185",
@@ -1054,6 +1249,18 @@
         "tr": "случаться, происходить"
        },
        {
+        "id": "w274",
+        "it": "restare",
+        "participle": "restato",
+        "tr": "оставаться (= rimanere)"
+       },
+       {
+        "id": "w272",
+        "it": "crescere",
+        "participle": "cresciuto",
+        "tr": "расти, вырастать"
+       },
+       {
         "id": "w504",
         "it": "cadere",
         "participle": "caduto",
@@ -1064,67 +1271,74 @@
      {
       "aux": "essere",
       "title": "Возвратные, piacere и mancare",
-      "text": "Все возвратные и piacere / mancare — тоже с essere: {{mi sono alzato}}, {{mi è piaciuto}}.",
-      "verbs": []
+      "text": "Возвратные и {{piacere}} / {{mancare}} — с {{essere}}; причастие согласуется.",
+      "verbs": [
+       {
+        "id": "w065",
+        "it": "svegliarsi",
+        "participle": "mi sono svegliato",
+        "tr": "просыпаться"
+       },
+       {
+        "id": "w062",
+        "it": "alzarsi",
+        "participle": "mi sono alzato",
+        "tr": "вставать"
+       },
+       {
+        "id": "w108",
+        "it": "vestirsi",
+        "participle": "mi sono vestita",
+        "tr": "одеваться"
+       },
+       {
+        "id": "w096",
+        "it": "divertirsi",
+        "participle": "ci siamo divertiti",
+        "tr": "веселиться"
+       },
+       {
+        "id": "w034",
+        "it": "piacere",
+        "participle": "mi è piaciuto",
+        "tr": "нравиться"
+       },
+       {
+        "id": "w033",
+        "it": "mancare",
+        "participle": "mi è mancata",
+        "tr": "скучать по…"
+       }
+      ]
      },
      {
       "aux": "avere",
-      "title": "Все остальные",
-      "text": "Глаголы с объектом ({{ho comprato il pane}}) и большинство без объекта ({{ho dormito}}).",
+      "title": "Ловушка: движение без «куда»",
+      "text": "Двигаешься, но не говоришь куда → {{avere}}: {{ho camminato}}. Так же все глаголы с объектом: {{ho comprato il pane}}.",
       "verbs": [
        {
-        "id": "w069",
-        "it": "comprare",
-        "participle": "comprato",
-        "tr": "покупать"
+        "id": "w054",
+        "it": "camminare",
+        "participle": "camminato",
+        "tr": "ходить пешком, гулять"
        },
        {
-        "id": "w285",
-        "it": "vendere",
-        "participle": "venduto",
-        "tr": "продавать"
+        "id": "w280",
+        "it": "nuotare",
+        "participle": "nuotato",
+        "tr": "плавать"
        },
        {
-        "id": "w084",
-        "it": "cominciare",
-        "participle": "cominciato",
-        "tr": "начинать"
-       },
-       {
-        "id": "w129",
-        "it": "frequentare",
-        "participle": "frequentato",
-        "tr": "посещать (курс, школу); часто бывать"
-       },
-       {
-        "id": "w180",
-        "it": "studiare",
-        "participle": "studiato",
-        "tr": "учиться, изучать"
-       },
-       {
-        "id": "w015",
-        "it": "cenare",
-        "participle": "cenato",
-        "tr": "ужинать"
-       },
-       {
-        "id": "w222",
-        "it": "pranzare",
-        "participle": "pranzato",
-        "tr": "обедать"
+        "id": "w286",
+        "it": "viaggiare",
+        "participle": "viaggiato",
+        "tr": "путешествовать"
        },
        {
         "id": "w094",
         "it": "ballare",
         "participle": "ballato",
         "tr": "танцевать"
-       },
-       {
-        "id": "w054",
-        "it": "camminare",
-        "participle": "camminato",
-        "tr": "ходить пешком, гулять"
        },
        {
         "id": "w281",
@@ -1137,35 +1351,248 @@
         "it": "girare",
         "participle": "girato",
         "tr": "гулять, ездить по (городу); поворачивать"
-       },
-       {
-        "id": "w280",
-        "it": "nuotare",
-        "participle": "nuotato",
-        "tr": "плавать"
-       },
-       {
-        "id": "w278",
-        "it": "giocare",
-        "participle": "giocato",
-        "tr": "играть (в игру, спорт)"
-       },
-       {
-        "id": "w284",
-        "it": "telefonare",
-        "participle": "telefonato",
-        "tr": "звонить (кому-то)"
-       },
-       {
-        "id": "w286",
-        "it": "viaggiare",
-        "participle": "viaggiato",
-        "tr": "путешествовать"
        }
       ]
      }
-    ]
+    ],
+    "intro": {
+     "title": "Тест за 3 секунды",
+     "steps": [
+      "Есть объект (что? кого?) → {{avere}}: {{ho comprato il pane}}.",
+      "Перемещение «куда / откуда» → {{essere}}: {{sono andato a Roma}}.",
+      "Изменение состояния (родился, стал, остался) → {{essere}}: {{è nata}}.",
+      "Возвратный → {{essere}}. Всё остальное → {{avere}}: {{ho dormito}}."
+     ]
+    }
    }
+  },
+  "g5-modali-passato": {
+   "id": "g5-modali-passato",
+   "inBreve": [
+    "{{dovere}}, {{potere}}, {{volere}} в прошлом: {{ho dovuto}}, {{ho potuto}}, {{ho voluto}} + инфинитив.",
+    "Вспомогательный глагол — **как у второго глагола**: {{ho dovuto lavorare}}, но {{sono dovuto partire}}.",
+    "С {{essere}} причастие согласуется: {{Anna è dovuta partire}}."
+   ],
+   "formation": {
+    "formula": {
+     "parts": [
+      "avere / essere",
+      "dovuto · potuto · voluto",
+      "infinito"
+     ],
+     "examples": [
+      {
+       "parts": [
+        "ho",
+        "dovuto",
+        "lavorare"
+       ],
+       "it": "Ieri ho dovuto lavorare.",
+       "tr": "Вчера мне пришлось работать."
+      },
+      {
+       "parts": [
+        "sono",
+        "dovuta",
+        "partire"
+       ],
+       "it": "Sono dovuta partire presto.",
+       "tr": "Мне (ж.) пришлось уехать рано."
+      },
+      {
+       "parts": [
+        "non ho",
+        "potuto",
+        "dormire"
+       ],
+       "it": "Non ho potuto dormire.",
+       "tr": "Я не смог уснуть."
+      }
+     ]
+    },
+    "steps": [
+     "Посмотри на **второй** глагол: {{lavorare → ho lavorato}}, {{partire → sono partito}}.",
+     "Возьми тот же вспомогательный: {{ho dovuto lavorare}}, {{sono dovuto partire}}.",
+     "С {{essere}} согласуй окончание: {{Anna è dovuta partire}}.",
+     "Модальный без второго глагола — {{avere}}: {{Non ho potuto.}}"
+    ]
+   },
+   "tables": [
+    {
+     "title": "С avere и с essere",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "+ avere",
+       "+ essere"
+      ],
+      [
+       "dovere",
+       "ho dovuto lavorare",
+       "sono dovuto/a partire"
+      ],
+      [
+       "potere",
+       "ho potuto dormire",
+       "sono potuto/a uscire"
+      ],
+      [
+       "volere",
+       "ho voluto vedere",
+       "sono voluto/a restare"
+      ]
+     ],
+     "note": "Второй глагол всегда в инфинитиве, без предлога: {{ho dovuto studiare}}."
+    },
+    {
+     "type": "pairs",
+     "title": "Сравни",
+     "sep": "↔",
+     "items": [
+      {
+       "a": "Ho dovuto studiare.",
+       "b": "Sono dovuto andare.",
+       "tr": "Пришлось учиться ↔ Пришлось уйти"
+      },
+      {
+       "a": "Non ho potuto dormire.",
+       "b": "Non sono potuto uscire.",
+       "tr": "Не смог уснуть ↔ Не смог выйти"
+      },
+      {
+       "a": "Ho voluto provare.",
+       "b": "Sono voluta restare.",
+       "tr": "Захотел попробовать ↔ Захотела остаться"
+      }
+     ],
+     "note": "Слева второй глагол с {{avere}}, справа — с {{essere}}."
+    }
+   ],
+   "uses": [
+    {
+     "text": "Обязанность в прошлом",
+     "it": "Ieri ho dovuto lavorare fino alle otto.",
+     "tr": "Вчера мне пришлось работать до восьми."
+    },
+    {
+     "text": "Не получилось",
+     "it": "Non sono potuto venire al corso.",
+     "tr": "Я не смог прийти на курс."
+    },
+    {
+     "text": "Желание",
+     "it": "Abbiamo voluto vedere il lago.",
+     "tr": "Мы захотели посмотреть на озеро."
+    },
+    {
+     "text": "Короткий ответ",
+     "it": "Sei venuto? — No, non ho potuto.",
+     "tr": "Ты пришёл? — Нет, не смог."
+    }
+   ],
+   "exceptions": [
+    {
+     "title": "avere тоже можно",
+     "text": "В разговоре часто говорят {{ho dovuto partire}}. Это допустимо, но {{sono dovuto partire}} — образцовый вариант.",
+     "examples": [
+      {
+       "it": "Sono dovuto tornare a casa.",
+       "tr": "Мне пришлось вернуться домой."
+      }
+     ]
+    },
+    {
+     "title": "Возвратные",
+     "text": "Две правильные формы: {{mi sono dovuto alzare}} = {{ho dovuto alzarmi}}.",
+     "examples": [
+      {
+       "it": "Mi sono dovuta alzare alle sei.",
+       "tr": "Мне (ж.) пришлось встать в шесть."
+      }
+     ]
+    },
+    {
+     "title": "dovevo или ho dovuto?",
+     "text": "{{ho dovuto}} — пришлось и сделал; {{dovevo}} — должен был (сделал или нет — неясно).",
+     "examples": [
+      {
+       "it": "Dovevo chiamarti, ma ho dimenticato.",
+       "tr": "Я должен был тебе позвонить, но забыл."
+      }
+     ]
+    },
+    {
+     "title": "sapere",
+     "text": "{{ho saputo}} значит «узнал»: {{ho saputo la notizia}}.",
+     "examples": [
+      {
+       "it": "Ieri ho saputo che Anna è incinta.",
+       "tr": "Вчера я узнал, что Анна беременна."
+      }
+     ]
+    }
+   ],
+   "mistakes": [
+    {
+     "wrong": "Sono dovuto lavorare.",
+     "right": "Ho dovuto lavorare.",
+     "why": "lavorare — с avere."
+    },
+    {
+     "wrong": "Anna è dovuto partire.",
+     "right": "Anna è dovuta partire.",
+     "why": "С essere — согласование: Anna — ж.р."
+    },
+    {
+     "wrong": "Ho dovuto di studiare.",
+     "right": "Ho dovuto studiare.",
+     "why": "После модальных — без предлога."
+    },
+    {
+     "wrong": "Non sono potuto.",
+     "right": "Non ho potuto.",
+     "why": "Без второго глагола — avere."
+    },
+    {
+     "wrong": "Ho voluto andato.",
+     "right": "Sono voluto andare.",
+     "why": "Второй глагол — в инфинитиве."
+    }
+   ],
+   "examples": [
+    {
+     "it": "Ieri ho dovuto prendere il bus.",
+     "tr": "Вчера мне пришлось ехать на автобусе."
+    },
+    {
+     "it": "Non abbiamo potuto pagare con la carta.",
+     "tr": "Мы не смогли заплатить картой."
+    },
+    {
+     "it": "Marco è dovuto andare dal medico.",
+     "tr": "Марко пришлось пойти к врачу."
+    },
+    {
+     "it": "I bambini non sono voluti uscire.",
+     "tr": "Дети не захотели выходить."
+    },
+    {
+     "it": "Hai potuto finire il lavoro?",
+     "tr": "Ты смог закончить работу?"
+    }
+   ],
+   "summary": "**avere / essere + dovuto · potuto · voluto + инфинитив**. Вспомогательный — как у второго глагола: **ho dovuto lavorare**, **sono dovuto partire**.",
+   "keyWords": [
+    {
+     "title": "I verbi modali",
+     "ids": [
+      "w126",
+      "w127",
+      "w128"
+     ]
+    }
+   ]
   },
   "g5-presente-tu": {
    "id": "g5-presente-tu",
@@ -3835,7 +4262,7 @@
    "id": "g5-reciproci",
    "inBreve": [
     "Во множественном числе {{ci, vi, si}} могут значить «друг друга»: {{ci amiamo}} — мы любим друг друга.",
-    "Формы — как у возвратных: {{ci vediamo}}, {{vi conoscete}}, {{si scrivono}}.",
+    "Этапы отношений — тоже с {{essere}}: {{si sono sposati}}. Только {{divorziare}} — с {{avere}}.",
     "В passato prossimo — {{essere}} и причастие во множественном: {{ci siamo conosciuti}}."
    ],
    "formation": {
@@ -3900,153 +4327,7 @@
       }
      ],
      "note": "Кого-то — {{avere}}; друг друга — {{essere}}."
-    }
-   ],
-   "uses": [
-    {
-     "text": "Отношения",
-     "it": "Ci conosciamo da dieci anni.",
-     "tr": "Мы знакомы десять лет."
     },
-    {
-     "text": "Встречи",
-     "it": "Ci vediamo domani!",
-     "tr": "Увидимся завтра!"
-    },
-    {
-     "text": "Общение",
-     "it": "Ci scriviamo ogni giorno.",
-     "tr": "Мы пишем друг другу каждый день."
-    },
-    {
-     "text": "Приветствие и прощание",
-     "it": "Si salutano e vanno via.",
-     "tr": "Они прощаются и уходят."
-    }
-   ],
-   "exceptions": [
-    {
-     "title": "Смешанная группа",
-     "text": "Мужчина и женщина вместе — окончание {{-i}}.",
-     "examples": [
-      {
-       "it": "Io e mio marito ci siamo conosciuti a Lugano.",
-       "tr": "Мы с мужем познакомились в Лугано."
-      }
-     ]
-    },
-    {
-     "title": "Две женщины",
-     "text": "Только женщины — окончание {{-e}}.",
-     "examples": [
-      {
-       "it": "Lucia e Sara si sono viste ieri.",
-       "tr": "Лючия и Сара виделись вчера."
-      }
-     ]
-    },
-    {
-     "title": "innamorarsi di",
-     "text": "Влюбиться в кого-то — {{di}}.",
-     "examples": [
-      {
-       "it": "Mi sono innamorato di lei.",
-       "tr": "Я влюбился в неё."
-      }
-     ]
-    },
-    {
-     "title": "sposarsi con / sposare",
-     "text": "Два правильных варианта.",
-     "examples": [
-      {
-       "it": "Mi sono sposato con Anna. = Ho sposato Anna.",
-       "tr": "Я женился на Анне."
-      }
-     ]
-    }
-   ],
-   "mistakes": [
-    {
-     "wrong": "Abbiamo conosciuti a Lugano.",
-     "right": "Ci siamo conosciuti a Lugano.",
-     "why": "Друг друга — ci + essere."
-    },
-    {
-     "wrong": "Ci siamo conosciuto.",
-     "right": "Ci siamo conosciuti.",
-     "why": "Причастие во множественном."
-    },
-    {
-     "wrong": "Lucia e Sara si sono visti.",
-     "right": "Lucia e Sara si sono viste.",
-     "why": "Две женщины — -e."
-    },
-    {
-     "wrong": "Mi sono innamorato in lei.",
-     "right": "Mi sono innamorato di lei.",
-     "why": "innamorarsi di."
-    },
-    {
-     "wrong": "Ci siamo amato molto.",
-     "right": "Ci siamo amati molto.",
-     "why": "Множественное: amati."
-    }
-   ],
-   "examples": [
-    {
-     "it": "Ci siamo conosciuti a una festa.",
-     "tr": "Мы познакомились на вечеринке."
-    },
-    {
-     "it": "Si sono sposati nel 2010.",
-     "tr": "Они поженились в 2010 году."
-    },
-    {
-     "it": "Vi vedete spesso?",
-     "tr": "Вы часто видитесь?"
-    },
-    {
-     "it": "Non ci parliamo più.",
-     "tr": "Мы больше не разговариваем."
-    },
-    {
-     "it": "Si telefonano ogni sera.",
-     "tr": "Они созваниваются каждый вечер."
-    },
-    {
-     "it": "Ci siamo salutati alla stazione.",
-     "tr": "Мы попрощались на вокзале."
-    }
-   ],
-   "summary": "**ci / vi / si** + множественное = друг друга. Прошедшее: **ci siamo conosciuti**. Кого-то — avere, друг друга — essere.",
-   "keyWords": [
-    {
-     "title": "Incontri",
-     "ids": [
-      "w110",
-      "w389",
-      "w077",
-      "w392"
-     ]
-    }
-   ]
-  },
-  "g5-coppia-tappe": {
-   "id": "g5-coppia-tappe",
-   "inBreve": [
-    "Этапы отношений описывают почти только **возвратными** глаголами: {{conoscersi}}, {{innamorarsi}}, {{sposarsi}}.",
-    "В passato prossimo — {{essere}}: {{si sono sposati}}.",
-    "Исключение — {{divorziare}}: с {{avere}}, {{hanno divorziato}}."
-   ],
-   "formation": {
-    "steps": [
-     "Расставь события по порядку — таблица «Le tappe».",
-     "Возьми глагол и поставь {{essere}}: {{si sono}}, {{ci siamo}}.",
-     "Причастие — во множественном: {{-i}} или {{-e}}."
-    ]
-   },
-   "tables": [
     {
      "type": "pairs",
      "title": "Le tappe",
@@ -4121,14 +4402,24 @@
    ],
    "uses": [
     {
-     "text": "Рассказ о паре",
-     "it": "Si sono conosciuti all'università.",
-     "tr": "Они познакомились в университете."
+     "text": "Отношения",
+     "it": "Ci conosciamo da dieci anni.",
+     "tr": "Мы знакомы десять лет."
     },
     {
-     "text": "О себе",
-     "it": "Mi sono sposato nel 2008.",
-     "tr": "Я женился в 2008 году."
+     "text": "Встречи",
+     "it": "Ci vediamo domani!",
+     "tr": "Увидимся завтра!"
+    },
+    {
+     "text": "Общение",
+     "it": "Ci scriviamo ogni giorno.",
+     "tr": "Мы пишем друг другу каждый день."
+    },
+    {
+     "text": "Приветствие и прощание",
+     "it": "Si salutano e vanno via.",
+     "tr": "Они прощаются и уходят."
     },
     {
      "text": "Сейчас",
@@ -4143,12 +4434,42 @@
    ],
    "exceptions": [
     {
-     "title": "mettersi insieme",
-     "text": "Причастие {{messo}}: {{si sono messi insieme}}.",
+     "title": "Смешанная группа",
+     "text": "Мужчина и женщина вместе — окончание {{-i}}.",
      "examples": [
       {
-       "it": "Si sono messi insieme a giugno.",
-       "tr": "Они начали встречаться в июне."
+       "it": "Io e mio marito ci siamo conosciuti a Lugano.",
+       "tr": "Мы с мужем познакомились в Лугано."
+      }
+     ]
+    },
+    {
+     "title": "Две женщины",
+     "text": "Только женщины — окончание {{-e}}.",
+     "examples": [
+      {
+       "it": "Lucia e Sara si sono viste ieri.",
+       "tr": "Лючия и Сара виделись вчера."
+      }
+     ]
+    },
+    {
+     "title": "innamorarsi di",
+     "text": "Влюбиться в кого-то — {{di}}.",
+     "examples": [
+      {
+       "it": "Mi sono innamorato di lei.",
+       "tr": "Я влюбился в неё."
+      }
+     ]
+    },
+    {
+     "title": "sposarsi con / sposare",
+     "text": "Два правильных варианта.",
+     "examples": [
+      {
+       "it": "Mi sono sposato con Anna. = Ho sposato Anna.",
+       "tr": "Я женился на Анне."
       }
      ]
     },
@@ -4173,17 +4494,42 @@
      ]
     },
     {
-     "title": "О себе одном",
-     "text": "Возвратный в единственном: {{mi sono innamorata}}.",
+     "title": "mettersi insieme",
+     "text": "Причастие {{messo}}: {{si sono messi insieme}}.",
      "examples": [
       {
-       "it": "Mi sono innamorata di Marco.",
-       "tr": "Я влюбилась в Марко."
+       "it": "Si sono messi insieme a giugno.",
+       "tr": "Они начали встречаться в июне."
       }
      ]
     }
    ],
    "mistakes": [
+    {
+     "wrong": "Abbiamo conosciuti a Lugano.",
+     "right": "Ci siamo conosciuti a Lugano.",
+     "why": "Друг друга — ci + essere."
+    },
+    {
+     "wrong": "Ci siamo conosciuto.",
+     "right": "Ci siamo conosciuti.",
+     "why": "Причастие во множественном."
+    },
+    {
+     "wrong": "Lucia e Sara si sono visti.",
+     "right": "Lucia e Sara si sono viste.",
+     "why": "Две женщины — -e."
+    },
+    {
+     "wrong": "Mi sono innamorato in lei.",
+     "right": "Mi sono innamorato di lei.",
+     "why": "innamorarsi di."
+    },
+    {
+     "wrong": "Ci siamo amato molto.",
+     "right": "Ci siamo amati molto.",
+     "why": "Множественное: amati."
+    },
     {
      "wrong": "Si sono divorziati.",
      "right": "Hanno divorziato.",
@@ -4198,22 +4544,28 @@
      "wrong": "Sono sposati nel 2010.",
      "right": "Si sono sposati nel 2010.",
      "why": "Событие — sposarsi."
-    },
-    {
-     "wrong": "Hanno sposato nel 2010.",
-     "right": "Si sono sposati nel 2010.",
-     "why": "Друг с другом — essere."
-    },
-    {
-     "wrong": "Si sono fidanzato.",
-     "right": "Si sono fidanzati.",
-     "why": "Множественное — -i."
     }
    ],
    "examples": [
     {
-     "it": "Anna e Marco si sono conosciuti al lavoro.",
-     "tr": "Анна и Марко познакомились на работе."
+     "it": "Ci siamo conosciuti a una festa.",
+     "tr": "Мы познакомились на вечеринке."
+    },
+    {
+     "it": "Vi vedete spesso?",
+     "tr": "Вы часто видитесь?"
+    },
+    {
+     "it": "Non ci parliamo più.",
+     "tr": "Мы больше не разговариваем."
+    },
+    {
+     "it": "Si telefonano ogni sera.",
+     "tr": "Они созваниваются каждый вечер."
+    },
+    {
+     "it": "Ci siamo salutati alla stazione.",
+     "tr": "Мы попрощались на вокзале."
     },
     {
      "it": "Dopo un mese si sono innamorati.",
@@ -4224,20 +4576,21 @@
      "tr": "Они обручились в отпуске."
     },
     {
-     "it": "Si sono sposati in chiesa.",
-     "tr": "Они венчались в церкви."
-    },
-    {
-     "it": "Hanno due figli.",
-     "tr": "У них двое детей."
-    },
-    {
      "it": "Dopo dieci anni si sono separati.",
      "tr": "Через десять лет они расстались."
     }
    ],
-   "summary": "**conoscersi → innamorarsi → mettersi insieme → fidanzarsi → sposarsi** — все с essere. **divorziare** — avere.",
+   "summary": "**ci / vi / si** + множественное = друг друга: **ci siamo conosciuti**. Этапы: **conoscersi → innamorarsi → fidanzarsi → sposarsi** — essere; **divorziare** — avere.",
    "keyWords": [
+    {
+     "title": "Incontri",
+     "ids": [
+      "w110",
+      "w389",
+      "w077",
+      "w392"
+     ]
+    },
     {
      "title": "La coppia",
      "ids": [

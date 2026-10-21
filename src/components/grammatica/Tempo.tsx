@@ -22,12 +22,15 @@ export function PiastrellaTempo({ tempo, grande = false }: { tempo: Tempo; grand
   );
 }
 
-// Pagine dell'unità e dell'argomento: piastrella + "TEMPO VERBALE" sopra il titolo.
-export function IntestazioneTempo({ tempo }: { tempo: Tempo }) {
+// Pagine dell'unità e dell'argomento: piastrella + "TEMPO VERBALE" sopra il titolo
+// (nella pagina dell'unità con il numero davanti: "UNITÀ 3 · TEMPO VERBALE").
+export function IntestazioneTempo({ tempo, unita }: { tempo: Tempo; unita?: number }) {
   return (
     <div style={STILE_TEMPO[tempo]} className="mb-2 flex items-center gap-3">
       <PiastrellaTempo tempo={tempo} />
-      <span className="text-[12px] font-semibold tracking-wide whitespace-nowrap text-(--c) uppercase">Tempo verbale</span>
+      <span className="text-[12px] font-semibold tracking-wide whitespace-nowrap text-(--c) uppercase">
+        {unita !== undefined && `Unità ${unita} · `}Tempo verbale
+      </span>
     </div>
   );
 }
