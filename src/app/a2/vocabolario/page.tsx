@@ -42,7 +42,7 @@ async function Risultati({ query, locale }: { query: string; locale: Awaited<Ret
   );
 }
 
-// 12 gruppi: nome italiano, sottotitolo nella lingua scelta, numero di parole.
+// Gruppi: nome italiano, sottotitolo nella lingua scelta, numero di parole.
 async function Gruppi({ locale }: { locale: Awaited<ReturnType<typeof linguaScelta>> }) {
   const gruppi = await getGruppi(locale);
   return (

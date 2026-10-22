@@ -2632,7 +2632,7 @@
      "id": "fu-01",
      "type": "fill",
      "it": "L'estate prossima io ___ in Spagna.",
-     "hint": "andare",
+     "hint": "andare (futuro)",
      "answers": [
       "andrò"
      ],
@@ -2646,7 +2646,7 @@
      "id": "fu-02",
      "type": "fill",
      "it": "Marta è bravissima: ___ successo.",
-     "hint": "avere",
+     "hint": "avere (futuro)",
      "answers": [
       "avrà"
      ],
@@ -2660,7 +2660,7 @@
      "id": "fu-03",
      "type": "fill",
      "it": "A gennaio noi ___ casa.",
-     "hint": "cambiare",
+     "hint": "cambiare (futuro)",
      "answers": [
       "cambieremo"
      ],
@@ -2674,7 +2674,7 @@
      "id": "fu-04",
      "type": "fill",
      "it": "Il cielo è grigio: fra poco ___ a nevicare.",
-     "hint": "cominciare",
+     "hint": "cominciare (futuro)",
      "answers": [
       "comincerà"
      ],
@@ -2688,7 +2688,7 @@
      "id": "fu-05",
      "type": "fill",
      "it": "Ho perso il bus: ___ prendere un taxi.",
-     "hint": "dovere (io)",
+     "hint": "dovere (futuro, io)",
      "answers": [
       "dovrò"
      ],
@@ -2702,7 +2702,7 @@
      "id": "fu-06",
      "type": "fill",
      "it": "Il mese prossimo Luca ___ l'esame di guida.",
-     "hint": "dare",
+     "hint": "dare (futuro)",
      "answers": [
       "darà"
      ],
@@ -2716,7 +2716,7 @@
      "id": "fu-07",
      "type": "fill",
      "it": "Ho la febbre: stasera ___ il medico.",
-     "hint": "chiamare (io)",
+     "hint": "chiamare (futuro, io)",
      "answers": [
       "chiamerò"
      ],
@@ -2730,7 +2730,7 @@
      "id": "fu-08",
      "type": "fill",
      "it": "Domani il corso ___ alle due.",
-     "hint": "finire",
+     "hint": "finire (futuro)",
      "answers": [
       "finirà"
      ],
@@ -2744,7 +2744,7 @@
      "id": "fu-09",
      "type": "fill",
      "it": "Saremo contenti se tu ___ presto.",
-     "hint": "tornare",
+     "hint": "tornare (futuro)",
      "answers": [
       "tornerai"
      ],
@@ -2758,7 +2758,7 @@
      "id": "fu-10",
      "type": "fill",
      "it": "Voi ___ anche Paola alla festa?",
-     "hint": "invitare",
+     "hint": "invitare (futuro)",
      "answers": [
       "inviterete"
      ],
@@ -2771,36 +2771,36 @@
     {
      "id": "fu-11",
      "type": "fill",
-     "it": "Oggi c'è il sole. Anche domani ___ il sole.",
-     "hint": "esserci",
+     "it": "Quando ___ a Lugano, ti chiamerò.",
+     "hint": "arrivare (futuro, io)",
      "answers": [
-      "ci sarà"
+      "arriverò"
      ],
      "why": {
-      "ru": "c'è → ci sarà.",
-      "uk": "c'è → ci sarà.",
-      "en": "c'è → ci sarà."
+      "ru": "После quando — тоже futuro.",
+      "uk": "Після quando — теж futuro.",
+      "en": "After quando — future too."
      }
     },
     {
      "id": "fu-12",
      "type": "fill",
-     "it": "Oggi piove. Anche domani ___.",
-     "hint": "piovere",
+     "it": "Se ___ tempo, verrò alla festa.",
+     "hint": "avere (futuro, io)",
      "answers": [
-      "pioverà"
+      "avrò"
      ],
      "why": {
-      "ru": "piovere → pioverà.",
-      "uk": "piovere → pioverà.",
-      "en": "piovere → pioverà."
+      "ru": "После se — futuro; avere → avrò.",
+      "uk": "Після se — futuro; avere → avrò.",
+      "en": "After se — future; avere → avrò."
      }
     },
     {
      "id": "fu-13",
      "type": "fill",
      "it": "Oggi posso riposare. Anche domani ___ riposare.",
-     "hint": "potere",
+     "hint": "potere (futuro)",
      "answers": [
       "potrò"
      ],
@@ -2814,7 +2814,7 @@
      "id": "fu-14",
      "type": "fill",
      "it": "Oggi facciamo una passeggiata. Anche domani ___ una passeggiata.",
-     "hint": "fare",
+     "hint": "fare (futuro)",
      "answers": [
       "faremo"
      ],
@@ -2828,7 +2828,7 @@
      "id": "fu-15",
      "type": "fill",
      "it": "Oggi venite da noi. Anche domani ___ da noi.",
-     "hint": "venire",
+     "hint": "venire (futuro)",
      "answers": [
       "verrete"
      ],
@@ -2842,7 +2842,7 @@
      "id": "fu-16",
      "type": "fill",
      "it": "Oggi i ragazzi vanno in piscina. Anche domani ___ in piscina.",
-     "hint": "andare",
+     "hint": "andare (futuro)",
      "answers": [
       "andranno"
      ],
@@ -2951,17 +2951,17 @@
     {
      "id": "fu-23",
      "type": "choice",
-     "it": "Domani ___ bel tempo.",
+     "it": "Dov'è Marco? — ___ al lavoro.",
      "options": [
-      "farà",
-      "facerà",
-      "fererà"
+      "Sarà",
+      "Sarò",
+      "Sara"
      ],
      "answer": 0,
      "why": {
-      "ru": "Погода — fare: farà.",
-      "uk": "Погода — fare: farà.",
-      "en": "Weather uses fare: farà."
+      "ru": "Предположение о «сейчас» — futuro: sarà.",
+      "uk": "Припущення про «зараз» — futuro: sarà.",
+      "en": "A guess about now — future: sarà."
      }
     },
     {
@@ -2978,6 +2978,280 @@
       "ru": "noi — andremo (одна m).",
       "uk": "noi — andremo (одна m).",
       "en": "noi — andremo (one m)."
+     }
+    },
+    {
+     "id": "fu-25",
+     "type": "fill",
+     "it": "Domani io ___ a casa tutto il giorno.",
+     "hint": "stare (futuro)",
+     "answers": [
+      "starò"
+     ],
+     "why": {
+      "ru": "stare — a остаётся: starò.",
+      "uk": "stare — a залишається: starò.",
+      "en": "stare keeps the a: starò."
+     }
+    },
+    {
+     "id": "fu-26",
+     "type": "fill",
+     "it": "Stasera ___ stanco dopo il lavoro.",
+     "hint": "essere (futuro, io)",
+     "answers": [
+      "sarò"
+     ],
+     "why": {
+      "ru": "essere → sarò.",
+      "uk": "essere → sarò.",
+      "en": "essere → sarò."
+     }
+    },
+    {
+     "id": "fu-27",
+     "type": "fill",
+     "it": "Che cosa ___ per il tuo compleanno?",
+     "hint": "volere (futuro, tu)",
+     "answers": [
+      "vorrai"
+     ],
+     "why": {
+      "ru": "volere — rr: vorrai.",
+      "uk": "volere — rr: vorrai.",
+      "en": "volere doubles the r: vorrai."
+     }
+    },
+    {
+     "id": "fu-28",
+     "type": "fill",
+     "it": "Alla festa ___ solo acqua.",
+     "hint": "bere (futuro, io)",
+     "answers": [
+      "berrò"
+     ],
+     "why": {
+      "ru": "bere → berrò.",
+      "uk": "bere → berrò.",
+      "en": "bere → berrò."
+     }
+    },
+    {
+     "id": "fu-29",
+     "type": "fill",
+     "it": "Quanto tempo ___ in Italia?",
+     "hint": "rimanere (futuro, voi)",
+     "answers": [
+      "rimarrete"
+     ],
+     "why": {
+      "ru": "rimanere → rimarr-: rimarrete.",
+      "uk": "rimanere → rimarr-: rimarrete.",
+      "en": "rimanere → rimarr-: rimarrete."
+     }
+    },
+    {
+     "id": "fu-30",
+     "type": "fill",
+     "it": "Domani ___ i risultati dell'esame.",
+     "hint": "sapere (futuro, noi)",
+     "answers": [
+      "sapremo"
+     ],
+     "why": {
+      "ru": "sapere → sapr-: sapremo.",
+      "uk": "sapere → sapr-: sapremo.",
+      "en": "sapere → sapr-: sapremo."
+     }
+    },
+    {
+     "id": "fu-31",
+     "type": "fill",
+     "it": "Ci ___ sabato!",
+     "hint": "vedere (futuro, noi)",
+     "answers": [
+      "vedremo"
+     ],
+     "why": {
+      "ru": "vedere → vedr-: vedremo.",
+      "uk": "vedere → vedr-: vedremo.",
+      "en": "vedere → vedr-: vedremo."
+     }
+    },
+    {
+     "id": "fu-32",
+     "type": "choice",
+     "it": "Domani ___ un nuovo lavoro.",
+     "options": [
+      "cercherò",
+      "cercerò",
+      "cercarò"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "-care + h: cercherò.",
+      "uk": "-care + h: cercherò.",
+      "en": "-care adds h: cercherò."
+     }
+    },
+    {
+     "id": "fu-33",
+     "type": "choice",
+     "it": "Stasera ___ al ristorante.",
+     "options": [
+      "mangeremo",
+      "mangieremo",
+      "mangiaremo"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "-giare теряет i: mangeremo.",
+      "uk": "-giare втрачає i: mangeremo.",
+      "en": "-giare drops the i: mangeremo."
+     }
+    },
+    {
+     "id": "fu-34",
+     "type": "choice",
+     "it": "Chi ___ il conto?",
+     "options": [
+      "pagherà",
+      "pagerà",
+      "pagarà"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "-gare + h: pagherà.",
+      "uk": "-gare + h: pagherà.",
+      "en": "-gare adds h: pagherà."
+     }
+    },
+    {
+     "id": "fu-35",
+     "type": "fill",
+     "it": "Domani ___ alle sei.",
+     "hint": "alzarsi (futuro, io)",
+     "answers": [
+      "mi alzerò"
+     ],
+     "why": {
+      "ru": "Возвратный: mi + alzerò.",
+      "uk": "Зворотне: mi + alzerò.",
+      "en": "Reflexive: mi + alzerò."
+     }
+    },
+    {
+     "id": "fu-36",
+     "type": "choice",
+     "it": "Se ___, resterò a casa.",
+     "options": [
+      "pioverà",
+      "piovrà",
+      "pioverò"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "piovere → pioverà (после se — futuro).",
+      "uk": "piovere → pioverà (після se — futuro).",
+      "en": "piovere → pioverà (future after se)."
+     }
+    },
+    {
+     "id": "fu-37",
+     "type": "fill",
+     "it": "Dove andrai a Natale? — ___ a Palermo a trovare mio fratello.",
+     "hint": "andare (futuro, io)",
+     "answers": [
+      "andrò"
+     ],
+     "why": {
+      "ru": "andare — особая основа: andrò.",
+      "uk": "andare — особлива основа: andrò.",
+      "en": "andare has a special stem: andrò."
+     }
+    },
+    {
+     "id": "fu-38",
+     "type": "fill",
+     "it": "Quanti giorni starai da tua sorella? — ___ da lei tre giorni.",
+     "hint": "stare (futuro, io)",
+     "answers": [
+      "starò"
+     ],
+     "why": {
+      "ru": "stare — a остаётся: starò.",
+      "uk": "stare — a залишається: starò.",
+      "en": "stare keeps the a: starò."
+     }
+    },
+    {
+     "id": "fu-39",
+     "type": "fill",
+     "it": "Con chi festeggerai il Capodanno? — ___ il Capodanno con gli amici.",
+     "hint": "festeggiare (futuro, io)",
+     "answers": [
+      "festeggerò"
+     ],
+     "why": {
+      "ru": "-giare теряет i: festeggerò.",
+      "uk": "-giare втрачає i: festeggerò.",
+      "en": "-giare drops the i: festeggerò."
+     }
+    },
+    {
+     "id": "fu-40",
+     "type": "fill",
+     "it": "Come tornerai a casa dopo l'Epifania? — ___ il treno per Lugano.",
+     "hint": "prendere (futuro, io)",
+     "answers": [
+      "prenderò"
+     ],
+     "why": {
+      "ru": "-ere: prender + ò.",
+      "uk": "-ere: prender + ò.",
+      "en": "-ere: prender + ò."
+     }
+    },
+    {
+     "id": "fu-41",
+     "type": "fill",
+     "it": "Che cosa farai a Ferragosto? — ___ una grigliata al lago.",
+     "hint": "fare (futuro, io)",
+     "answers": [
+      "farò"
+     ],
+     "why": {
+      "ru": "fare — a остаётся: farò.",
+      "uk": "fare — a залишається: farò.",
+      "en": "fare keeps the a: farò."
+     }
+    },
+    {
+     "id": "fu-42",
+     "type": "fill",
+     "it": "Che cosa vedrai a Bologna? — ___ il centro e le Due Torri.",
+     "hint": "vedere (futuro, io)",
+     "answers": [
+      "vedrò"
+     ],
+     "why": {
+      "ru": "vedere — гласная выпадает: vedrò.",
+      "uk": "vedere — голосна випадає: vedrò.",
+      "en": "vedere loses a vowel: vedrò."
+     }
+    },
+    {
+     "id": "fu-43",
+     "type": "fill",
+     "it": "Ti divertirai alla festa? — Sì, ___ molto!",
+     "hint": "divertirsi (futuro, io)",
+     "answers": [
+      "mi divertirò"
+     ],
+     "why": {
+      "ru": "Возвратный: не забудь mi — mi divertirò.",
+      "uk": "Зворотне: не забудь mi — mi divertirò.",
+      "en": "Reflexive: don't forget mi — mi divertirò."
      }
     }
    ]

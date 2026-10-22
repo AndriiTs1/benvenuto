@@ -5930,15 +5930,49 @@
   "g5-futuro-semplice": {
    "id": "g5-futuro-semplice",
    "inBreve": [
-    "{{Futuro semplice}} is the future tense: {{domani partirò}} — “I'll leave tomorrow”.",
-    "One set of endings for all: {{-ò}}, {{-ai}}, {{-à}}, {{-emo}}, {{-ete}}, {{-anno}}.",
-    "In {{-are}} verbs the {{a}} becomes {{e}}: {{parlare → parlerò}}."
+    "{{Futuro semplice}} is the future tense: what **will happen** (plans, promises, forecasts). {{Domani partirò}} — “Tomorrow I'll leave.”",
+    "It's **one word**, no auxiliary verb (unlike the {{passato prossimo}}): **stem + ending**.",
+    "The endings are the same for every verb: {{-ò}} (I), {{-ai}} (you), {{-à}} (he, she), {{-emo}} (we), {{-ete}} (you pl.), {{-anno}} (they).",
+    "The stem is the verb without its final {{-e}}; {{-are}} verbs also change {{a → e}}: {{parlare → parlerò}}, {{prendere → prenderò}}, {{partire → partirò}}."
    ],
    "formation": {
+    "formula": {
+     "parts": [
+      "infinito senza -e",
+      "ò · ai · à · emo · ete · anno"
+     ],
+     "examples": [
+      {
+       "parts": [
+        "parler",
+        "ò"
+       ],
+       "it": "Domani parlerò con il capo.",
+       "tr": "Tomorrow I'll talk to the boss."
+      },
+      {
+       "parts": [
+        "prender",
+        "emo"
+       ],
+       "it": "Prenderemo il treno delle otto.",
+       "tr": "We'll take the eight o'clock train."
+      },
+      {
+       "parts": [
+        "sar",
+        "à"
+       ],
+       "it": "Sarà una bella giornata.",
+       "tr": "It will be a nice day."
+      }
+     ]
+    },
     "steps": [
-     "Drop the final {{-e}}: {{partire → partir-}}, {{prendere → prender-}}.",
-     "For {{-are}}, change {{a}} to {{e}}: {{arrivare → arriver-}}.",
-     "Add the ending: {{-ò}}, {{-ai}}, {{-à}}, {{-emo}}, {{-ete}}, {{-anno}}."
+     "Take the verb and drop the last letter {{-e}}: {{prendere → prender}}, {{partire → partir}}.",
+     "If the verb ends in {{-are}}, change {{a}} to {{e}}: {{parlare → parler}}.",
+     "Add the ending: {{parler + ò = parlerò}} — “I'll talk”.",
+     "A few common verbs change their stem — learn them (tables below): {{andare → andrò}}, {{essere → sarò}}."
     ]
    },
    "tables": [
@@ -5989,11 +6023,11 @@
        "partir|anno"
       ]
      ],
-     "note": "The accent in {{io}} and {{lui}} is written: {{arriverò}}, {{arriverà}}."
+     "note": "The accent mark is written for {{io}} and {{lui / lei}}: {{arriverò}}, {{arriverà}}."
     },
     {
      "type": "pairs",
-     "title": "Special stems",
+     "title": "Special stems: a stays",
      "sep": "→",
      "items": [
       {
@@ -6007,10 +6041,23 @@
        "tr": "to do"
       },
       {
+       "a": "dare",
+       "b": "darò",
+       "tr": "to give"
+      },
+      {
        "a": "stare",
        "b": "starò",
-       "tr": "to stay"
-      },
+       "tr": "to be, to stay"
+      }
+     ],
+     "note": "In {{fare}}, {{dare}}, {{stare}} the {{a}} doesn't become {{e}}."
+    },
+    {
+     "type": "pairs",
+     "title": "Special stems: a vowel drops",
+     "sep": "→",
+     "items": [
       {
        "a": "andare",
        "b": "andrò",
@@ -6037,6 +6084,24 @@
        "tr": "to see"
       },
       {
+       "a": "sapere",
+       "b": "saprò",
+       "tr": "to know"
+      },
+      {
+       "a": "vivere",
+       "b": "vivrò",
+       "tr": "to live"
+      }
+     ],
+     "note": "The stem loses a vowel: {{andare → andr-}}."
+    },
+    {
+     "type": "pairs",
+     "title": "Special stems: double rr",
+     "sep": "→",
+     "items": [
+      {
        "a": "venire",
        "b": "verrò",
        "tr": "to come"
@@ -6049,7 +6114,12 @@
       {
        "a": "rimanere",
        "b": "rimarrò",
-       "tr": "to stay"
+       "tr": "to remain"
+      },
+      {
+       "a": "tenere",
+       "b": "terrò",
+       "tr": "to hold"
       },
       {
        "a": "bere",
@@ -6057,7 +6127,7 @@
        "tr": "to drink"
       }
      ],
-     "note": "Same endings — only the stem changes."
+     "note": "Same endings: {{verrò, verrai, verrà…}}"
     },
     {
      "type": "pairs",
@@ -6066,26 +6136,84 @@
      "items": [
       {
        "a": "cercare",
-       "tr": "to look for",
-       "b": "cercherò"
+       "b": "cercherò",
+       "tr": "to look for"
       },
       {
        "a": "pagare",
-       "tr": "to pay",
-       "b": "pagherò"
+       "b": "pagherò",
+       "tr": "to pay"
       },
       {
        "a": "cominciare",
-       "tr": "to begin",
-       "b": "comincerò"
+       "b": "comincerò",
+       "tr": "to begin"
       },
       {
        "a": "mangiare",
-       "tr": "to eat",
-       "b": "mangerò"
+       "b": "mangerò",
+       "tr": "to eat"
+      },
+      {
+       "a": "cambiare",
+       "b": "cambierò",
+       "tr": "to change"
+      },
+      {
+       "a": "studiare",
+       "b": "studierò",
+       "tr": "to study"
       }
      ],
-     "note": "{{-care}}, {{-gare}} add {{h}}; {{-ciare}}, {{-giare}} drop the {{i}}."
+     "note": "{{-care}}, {{-gare}} add {{h}}; {{-ciare}}, {{-giare}} drop the {{i}}; {{-iare}} keeps it."
+    },
+    {
+     "type": "pairs",
+     "title": "Quando and se + future",
+     "sep": "",
+     "items": [
+      {
+       "a": "Quando arriverò, ti chiamerò.",
+       "tr": "When I arrive, I'll call you."
+      },
+      {
+       "a": "Se pioverà, resterò a casa.",
+       "tr": "If it rains, I'll stay at home."
+      },
+      {
+       "a": "Quando avrò tempo, verrò da te.",
+       "tr": "When I have time, I'll come to you."
+      }
+     ],
+     "note": "{{futuro}} in **both** parts — unlike English “when I arrive”. In speech, {{se}} also takes the {{presente}}: {{Se piove, resto}}."
+    },
+    {
+     "type": "pairs",
+     "title": "Signal words",
+     "sep": "",
+     "items": [
+      {
+       "a": "domani · dopodomani",
+       "tr": "tomorrow · the day after"
+      },
+      {
+       "a": "tra / fra due giorni",
+       "tr": "in two days"
+      },
+      {
+       "a": "la settimana prossima",
+       "tr": "next week"
+      },
+      {
+       "a": "l'anno prossimo",
+       "tr": "next year"
+      },
+      {
+       "a": "in futuro · da grande",
+       "tr": "in the future · when I grow up"
+      }
+     ],
+     "note": "{{tra}} and {{fra}} mean the same."
     }
    ],
    "uses": [
@@ -6110,49 +6238,29 @@
      "tr": "It will rain tomorrow."
     },
     {
-     "text": "Guessing",
-     "it": "Dove sarà Marta? — Sarà al lavoro.",
-     "tr": "Where can Marta be? — She's probably at work."
+     "text": "Guess about “now”",
+     "it": "Dov'è Marta? — Sarà al lavoro.",
+     "tr": "Where's Marta? — She's probably at work."
     }
    ],
    "exceptions": [
     {
      "title": "Present instead of future",
-     "text": "For the near future, Italians often use the {{presente}}.",
+     "text": "In speech, the near future is often in the {{presente}}: {{Domani vado al mare}}.",
      "examples": [
       {
-       "it": "Domani vado al mare.",
-       "tr": "I'm going to the seaside tomorrow."
+       "it": "Stasera ceno da Luca.",
+       "tr": "Tonight I'm having dinner at Luca's."
       }
      ]
     },
     {
-     "title": "Guessing",
-     "text": "The {{futuro}} can mean “probably now”: {{saranno le otto}}.",
+     "title": "Reflexives and modals",
+     "text": "As usual: {{mi alzerò}}, {{dovrò lavorare}}.",
      "examples": [
       {
-       "it": "Che ore sono? — Saranno le otto.",
-       "tr": "What time is it? — It must be about eight."
-      }
-     ]
-    },
-    {
-     "title": "Signal words",
-     "text": "{{domani}}, {{la settimana prossima}}, {{l'anno prossimo}}, {{tra due anni}}, {{in futuro}}.",
-     "examples": [
-      {
-       "it": "Tra due anni parlerò bene l'italiano.",
-       "tr": "In two years I'll speak Italian well."
-      }
-     ]
-    },
-    {
-     "title": "da grande",
-     "text": "“When I grow up” — for children's dreams.",
-     "examples": [
-      {
-       "it": "Da grande farò il medico.",
-       "tr": "When I grow up I'll be a doctor."
+       "it": "Domani mi alzerò alle sei: dovrò lavorare.",
+       "tr": "Tomorrow I'll get up at six: I'll have to work."
       }
      ]
     }
@@ -6174,21 +6282,27 @@
      "why": "-giare drops the i."
     },
     {
-     "wrong": "Essrò felice.",
+     "wrong": "Esserò felice.",
      "right": "Sarò felice.",
-     "why": "essere — sarò."
+     "why": "essere has a special stem: sarò."
     },
     {
-     "wrong": "Venirò.",
-     "right": "Verrò.",
-     "why": "venire — verrò."
+     "wrong": "Venirò domani.",
+     "right": "Verrò domani.",
+     "why": "venire doubles the r: verrò."
+    },
+    {
+     "wrong": "Andarò al mare.",
+     "right": "Andrò al mare.",
+     "why": "andare loses a vowel: andrò."
     },
     {
      "wrong": "Arrivero.",
      "right": "Arriverò.",
-     "why": "Write the accent."
+     "why": "The accent mark is required: -ò."
     }
    ],
+   "summary": "**Stem + -ò, -ai, -à, -emo, -ete, -anno**. For -are **a → e**. Special stems: **sarò, farò, andrò, avrò, verrò, vorrò**. After **quando / se** — future too.",
    "examples": [
     {
      "it": "Domani comincerò un nuovo lavoro.",
@@ -6215,7 +6329,6 @@
      "tr": "You'll see, everything will be fine!"
     }
    ],
-   "summary": "Stem + **-ò, -ai, -à, -emo, -ete, -anno**. In -are **a → e**. Special: **sarò, farò, andrò, avrò, verrò, vorrò**.",
    "keyWords": [
     {
      "title": "Il futuro",

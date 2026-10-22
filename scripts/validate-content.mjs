@@ -118,15 +118,18 @@ for (const lingua of lingue) {
   const ids = new Set(vocab.words.map((w) => w.id));
   vocabPerLingua[lingua] = ids;
   const visti = new Map();
-  // gruppi: tutti i 12, con nome italiano e traduzioni; ogni parola in un gruppo 1–12.
+  // gruppi: numerati 1…N senza buchi, con nome italiano e traduzioni; ogni parola in un gruppo 1…N.
   const gruppi = vocab.gruppi ?? {};
-  for (let n = 1; n <= 12; n++) {
+  const numeroGruppi = Object.keys(gruppi).length;
+  for (let n = 1; n <= numeroGruppi; n++) {
     const g = gruppi[String(n)];
     if (!g) errori.push(`${lingua}/vocab: manca il gruppo ${n} in "gruppi"`);
     else for (const campo of ["it", "ru", "uk", "en"]) if (!testo(g[campo])) errori.push(`${lingua}/vocab: gruppo ${n} senza ${campo}`);
   }
   for (const w of vocab.words) {
-    if (!Number.isInteger(w.group) || w.group < 1 || w.group > 12) errori.push(`${lingua}/vocab: ${w.id}.group = ${w.group} (atteso 1–12)`);
+    if (!Number.isInteger(w.group) || w.group < 1 || w.group > numeroGruppi) {
+      errori.push(`${lingua}/vocab: ${w.id}.group = ${w.group} (atteso 1–${numeroGruppi})`);
+    }
     // Traduzioni: ru, uk, en non vuote; niente lettere solo russe in uk, niente cirillico in en.
     for (const l of ["ru", "uk", "en"]) {
       if (!testo(w[l])) errori.push(`${lingua}/vocab: ${w.id} senza traduzione ${l}`);

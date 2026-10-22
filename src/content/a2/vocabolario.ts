@@ -2,7 +2,7 @@ import { getContent } from "@/content/a2";
 import { semplice, slugGruppo } from "@/content/a2/slug";
 import { DEFAULT_LOCALE, type Locale } from "@/lib/lingue";
 
-// Vocabolario A2 (vocab.json): 12 gruppi, ricerca, scheda di una parola.
+// Vocabolario A2 (vocab.json): gruppi tematici, ricerca, scheda di una parola.
 // Usato dalla scheda Vocabolario e dalle "Parole chiave" delle lezioni.
 
 const CIRILLICO = /[Ѐ-ӿ]/;

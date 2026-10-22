@@ -5930,15 +5930,49 @@
   "g5-futuro-semplice": {
    "id": "g5-futuro-semplice",
    "inBreve": [
-    "{{Futuro semplice}} — майбутній час: {{domani partirò}} — «завтра я поїду».",
-    "Закінчення одні для всіх: {{-ò}}, {{-ai}}, {{-à}}, {{-emo}}, {{-ete}}, {{-anno}}.",
-    "У дієслів на {{-are}} літера {{a}} стає {{e}}: {{parlare → parlerò}}."
+    "{{Futuro semplice}} — майбутній час: про те, що **буде** (плани, обіцянки, прогнози). {{Domani partirò}} — «Завтра я поїду».",
+    "Це **одне слово**, без допоміжного дієслова (не як {{passato prossimo}}): **основа + закінчення**.",
+    "Закінчення однакові для всіх дієслів: {{-ò}} (я), {{-ai}} (ти), {{-à}} (він, вона), {{-emo}} (ми), {{-ete}} (ви), {{-anno}} (вони).",
+    "Основа — дієслово без останнього {{-e}}; у {{-are}} ще {{a → e}}: {{parlare → parlerò}}, {{prendere → prenderò}}, {{partire → partirò}}."
    ],
    "formation": {
+    "formula": {
+     "parts": [
+      "infinito senza -e",
+      "ò · ai · à · emo · ete · anno"
+     ],
+     "examples": [
+      {
+       "parts": [
+        "parler",
+        "ò"
+       ],
+       "it": "Domani parlerò con il capo.",
+       "tr": "Завтра я поговорю з начальником."
+      },
+      {
+       "parts": [
+        "prender",
+        "emo"
+       ],
+       "it": "Prenderemo il treno delle otto.",
+       "tr": "Ми сядемо на восьмигодинний потяг."
+      },
+      {
+       "parts": [
+        "sar",
+        "à"
+       ],
+       "it": "Sarà una bella giornata.",
+       "tr": "Буде гарний день."
+      }
+     ]
+    },
     "steps": [
-     "Прибери останню {{-e}}: {{partire → partir-}}, {{prendere → prender-}}.",
-     "У {{-are}} заміни {{a}} на {{e}}: {{arrivare → arriver-}}.",
-     "Додай закінчення: {{-ò}}, {{-ai}}, {{-à}}, {{-emo}}, {{-ete}}, {{-anno}}."
+     "Візьми дієслово і прибери останню літеру {{-e}}: {{prendere → prender}}, {{partire → partir}}.",
+     "Якщо дієслово на {{-are}}, заміни {{a}} на {{e}}: {{parlare → parler}}.",
+     "Додай закінчення: {{parler + ò = parlerò}} — «я поговорю».",
+     "Кілька частих дієслів змінюють основу — їх треба вивчити (таблиці нижче): {{andare → andrò}}, {{essere → sarò}}."
     ]
    },
    "tables": [
@@ -5989,11 +6023,11 @@
        "partir|anno"
       ]
      ],
-     "note": "Наголос в {{io}} і {{lui}} пишеться: {{arriverò}}, {{arriverà}}."
+     "note": "Знак наголосу пишеться в {{io}} і {{lui / lei}}: {{arriverò}}, {{arriverà}}."
     },
     {
      "type": "pairs",
-     "title": "Особливі основи",
+     "title": "Особливі основи: a залишається",
      "sep": "→",
      "items": [
       {
@@ -6007,10 +6041,23 @@
        "tr": "робити"
       },
       {
+       "a": "dare",
+       "b": "darò",
+       "tr": "давати"
+      },
+      {
        "a": "stare",
        "b": "starò",
-       "tr": "перебувати"
-      },
+       "tr": "бути, перебувати"
+      }
+     ],
+     "note": "У {{fare}}, {{dare}}, {{stare}} {{a}} не змінюється на {{e}}."
+    },
+    {
+     "type": "pairs",
+     "title": "Особливі основи: випадає голосна",
+     "sep": "→",
+     "items": [
       {
        "a": "andare",
        "b": "andrò",
@@ -6037,6 +6084,24 @@
        "tr": "бачити"
       },
       {
+       "a": "sapere",
+       "b": "saprò",
+       "tr": "знати"
+      },
+      {
+       "a": "vivere",
+       "b": "vivrò",
+       "tr": "жити"
+      }
+     ],
+     "note": "Основа без голосної: {{andare → andr-}}."
+    },
+    {
+     "type": "pairs",
+     "title": "Особливі основи: подвійне rr",
+     "sep": "→",
+     "items": [
+      {
        "a": "venire",
        "b": "verrò",
        "tr": "приходити"
@@ -6052,12 +6117,17 @@
        "tr": "залишатися"
       },
       {
+       "a": "tenere",
+       "b": "terrò",
+       "tr": "тримати"
+      },
+      {
        "a": "bere",
        "b": "berrò",
        "tr": "пити"
       }
      ],
-     "note": "Закінчення ті самі — змінюється лише основа."
+     "note": "Закінчення ті самі: {{verrò, verrai, verrà…}}"
     },
     {
      "type": "pairs",
@@ -6066,26 +6136,84 @@
      "items": [
       {
        "a": "cercare",
-       "tr": "шукати",
-       "b": "cercherò"
+       "b": "cercherò",
+       "tr": "шукати"
       },
       {
        "a": "pagare",
-       "tr": "платити",
-       "b": "pagherò"
+       "b": "pagherò",
+       "tr": "платити"
       },
       {
        "a": "cominciare",
-       "tr": "починати",
-       "b": "comincerò"
+       "b": "comincerò",
+       "tr": "починати"
       },
       {
        "a": "mangiare",
-       "tr": "їсти",
-       "b": "mangerò"
+       "b": "mangerò",
+       "tr": "їсти"
+      },
+      {
+       "a": "cambiare",
+       "b": "cambierò",
+       "tr": "змінювати"
+      },
+      {
+       "a": "studiare",
+       "b": "studierò",
+       "tr": "вчитися"
       }
      ],
-     "note": "{{-care}}, {{-gare}} + {{h}}; {{-ciare}}, {{-giare}} втрачають {{i}}."
+     "note": "{{-care}}, {{-gare}} + {{h}}; {{-ciare}}, {{-giare}} втрачають {{i}}; у {{-iare}} {{i}} залишається."
+    },
+    {
+     "type": "pairs",
+     "title": "Quando і se + futuro",
+     "sep": "",
+     "items": [
+      {
+       "a": "Quando arriverò, ti chiamerò.",
+       "tr": "Коли приїду, подзвоню тобі."
+      },
+      {
+       "a": "Se pioverà, resterò a casa.",
+       "tr": "Якщо буде дощ, залишуся вдома."
+      },
+      {
+       "a": "Quando avrò tempo, verrò da te.",
+       "tr": "Коли матиму час, прийду до тебе."
+      }
+     ],
+     "note": "{{futuro}} в **обох** частинах — як в українській «коли приїду, подзвоню». У розмові після {{se}} можна й {{presente}}: {{Se piove, resto}}."
+    },
+    {
+     "type": "pairs",
+     "title": "Слова-сигнали",
+     "sep": "",
+     "items": [
+      {
+       "a": "domani · dopodomani",
+       "tr": "завтра · післязавтра"
+      },
+      {
+       "a": "tra / fra due giorni",
+       "tr": "через два дні"
+      },
+      {
+       "a": "la settimana prossima",
+       "tr": "наступного тижня"
+      },
+      {
+       "a": "l'anno prossimo",
+       "tr": "наступного року"
+      },
+      {
+       "a": "in futuro · da grande",
+       "tr": "у майбутньому · коли виросту"
+      }
+     ],
+     "note": "{{tra}} і {{fra}} — одне й те саме."
     }
    ],
    "uses": [
@@ -6110,49 +6238,29 @@
      "tr": "Завтра буде дощ."
     },
     {
-     "text": "Припущення",
-     "it": "Dove sarà Marta? — Sarà al lavoro.",
-     "tr": "Де ж Марта? — Мабуть, на роботі."
+     "text": "Припущення про «зараз»",
+     "it": "Dov'è Marta? — Sarà al lavoro.",
+     "tr": "Де Марта? — Мабуть, на роботі."
     }
    ],
    "exceptions": [
     {
      "title": "Presente замість futuro",
-     "text": "Про близьке майбутнє в розмові часто кажуть у {{presente}}.",
+     "text": "У розмові про близьке майбутнє часто кажуть у {{presente}}: {{Domani vado al mare}}.",
      "examples": [
       {
-       "it": "Domani vado al mare.",
-       "tr": "Завтра я їду на море."
+       "it": "Stasera ceno da Luca.",
+       "tr": "Сьогодні ввечері я вечеряю в Луки."
       }
      ]
     },
     {
-     "title": "Припущення",
-     "text": "{{futuro}} може означати «мабуть, зараз»: {{saranno le otto}}.",
+     "title": "Зворотні й модальні",
+     "text": "Усе як завжди: {{mi alzerò}}, {{dovrò lavorare}}.",
      "examples": [
       {
-       "it": "Che ore sono? — Saranno le otto.",
-       "tr": "Котра година? — Мабуть, восьма."
-      }
-     ]
-    },
-    {
-     "title": "Маркери",
-     "text": "{{domani}}, {{la settimana prossima}}, {{l'anno prossimo}}, {{tra due anni}}, {{in futuro}}.",
-     "examples": [
-      {
-       "it": "Tra due anni parlerò bene l'italiano.",
-       "tr": "Через два роки я добре говоритиму італійською."
-      }
-     ]
-    },
-    {
-     "title": "da grande",
-     "text": "«Коли виросту» — для мрій і планів дітей.",
-     "examples": [
-      {
-       "it": "Da grande farò il medico.",
-       "tr": "Коли виросту, буду лікарем."
+       "it": "Domani mi alzerò alle sei: dovrò lavorare.",
+       "tr": "Завтра я встану о шостій: мені треба буде працювати."
       }
      ]
     }
@@ -6174,21 +6282,27 @@
      "why": "-giare втрачає i."
     },
     {
-     "wrong": "Essrò felice.",
+     "wrong": "Esserò felice.",
      "right": "Sarò felice.",
-     "why": "essere — sarò."
+     "why": "essere — особлива основа: sarò."
     },
     {
-     "wrong": "Venirò.",
-     "right": "Verrò.",
-     "why": "venire — verrò."
+     "wrong": "Venirò domani.",
+     "right": "Verrò domani.",
+     "why": "venire — подвійне rr: verrò."
+    },
+    {
+     "wrong": "Andarò al mare.",
+     "right": "Andrò al mare.",
+     "why": "andare — голосна випадає: andrò."
     },
     {
      "wrong": "Arrivero.",
      "right": "Arriverò.",
-     "why": "Наголос пишеться."
+     "why": "Знак наголосу обов'язковий: -ò."
     }
    ],
+   "summary": "**Основа + -ò, -ai, -à, -emo, -ete, -anno**. У -are **a → e**. Особливі основи: **sarò, farò, andrò, avrò, verrò, vorrò**. Після **quando / se** — теж futuro.",
    "examples": [
     {
      "it": "Domani comincerò un nuovo lavoro.",
@@ -6215,7 +6329,6 @@
      "tr": "Ось побачиш, усе буде добре!"
     }
    ],
-   "summary": "Основа + **-ò, -ai, -à, -emo, -ete, -anno**. У -are **a → e**. Особливі: **sarò, farò, andrò, avrò, verrò, vorrò**.",
    "keyWords": [
     {
      "title": "Il futuro",

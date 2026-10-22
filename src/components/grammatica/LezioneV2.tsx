@@ -1,4 +1,4 @@
-import type { CSSProperties, ReactNode } from "react";
+import { Fragment, type CSSProperties, type ReactNode } from "react";
 import { Sezione } from "@/components/grammatica/ContenutoArgomento";
 import { Tr } from "@/components/Tr";
 import { GrigliaVerbi } from "@/components/grammatica/GrigliaVerbi";
@@ -15,9 +15,10 @@ import { STILE_TEMPO, type Tempo } from "@/lib/tempi";
 const TESTO = "text-[16px] leading-normal md:text-[17px]";
 
 // Cella: "parl|o" → radice + desinenza in grassetto colorato; "-iamo" → tutta colorata.
+// Colore: --c del tempo dell'unità (style della lezione), altrimenti il blu della grammatica.
 // Senza a capo solo la parola con la desinenza ("mi vest|iamo": "mi" può andare a capo da sola).
 function CellaTabella({ testo }: { testo: string }) {
-  if (testo.startsWith("-")) return <span className="font-semibold whitespace-nowrap text-grammar">{testo}</span>;
+  if (testo.startsWith("-")) return <span className="font-semibold whitespace-nowrap text-[var(--c,var(--color-grammar))]">{testo}</span>;
   const barra = testo.indexOf("|");
   if (barra < 0) return <>{testo}</>;
   const prima = testo.slice(0, barra);
@@ -29,7 +30,7 @@ function CellaTabella({ testo }: { testo: string }) {
       {prima.slice(0, inizioRadice)}
       <span className="whitespace-nowrap">
         {prima.slice(inizioRadice)}
-        <b className="font-semibold text-grammar">{dopo.slice(0, fineDesinenza)}</b>
+        <b className="font-semibold text-[var(--c,var(--color-grammar))]">{dopo.slice(0, fineDesinenza)}</b>
       </span>
       {dopo.slice(fineDesinenza)}
     </>
@@ -63,7 +64,7 @@ export function LezioneV2({
 }: {
   lezione: Lezione;
   lingua: Locale;
-  /** Tempo verbale dell'unità (meta.json): colore della formula. */
+  /** Tempo verbale dell'unità (meta.json): colore della formula, delle desinenze e delle seconde forme. */
   tempo?: Tempo | null;
   /** "Parole chiave" (contenuto e numero di parole), dentro Approfondisci. */
   paroleChiave?: { contenuto: ReactNode; numero: number };
@@ -98,8 +99,9 @@ export function LezioneV2({
     ...altreRighe,
   ].filter((r): r is RigaApprofondisci => !!r);
 
+  // Unità di un tempo verbale: --c (--tempo-*) per tutta la lezione; senza tempo i colori restano quelli della grammatica.
   return (
-    <div className="space-y-6">
+    <div style={tempo ? STILE_TEMPO[tempo] : undefined} className="space-y-6">
       <Sezione titolo="In breve">
         {/* Tinta mescolata con card (non trasparente su bg-grouped): il testo della traduzione resta ≥ 4.5:1. */}
         {/* Sotto md niente pallini: punti separati da una linea sottile (come le righe delle tabelle). */}
@@ -204,13 +206,20 @@ function ComeSiFormaFormula({
 }) {
   return (
     <div style={tempo ? STILE_TEMPO[tempo] : STILE_GRAMMATICA} className="overflow-hidden rounded-2xl bg-card">
-      {/* Ogni parte resta su una riga (nowrap); il "+" è un elemento a sé, grigio e più piccolo,
-          con gli spazi intorno (anche nel testo copiato). */}
+      {/* Il "+" è un elemento a sé, grigio e più piccolo, con gli spazi intorno (anche nel testo copiato).
+          Una parte va a capo solo dopo " · " ("-ò · -ai · -à…" sul telefono); ogni pezzo resta intero. */}
       <p lang="it" className="flex flex-wrap items-baseline gap-y-1 px-4 pt-5 pb-4 leading-tight lg:justify-center">
         {formula.parts.map((parte, i) => (
           <span key={i} className="contents">
             {i > 0 && <span className="text-[22px] font-normal whitespace-pre text-label-2 md:text-[26px]">{" + "}</span>}
-            <span className="text-[26px] font-bold whitespace-nowrap text-(--c) md:text-[32px]">{parte}</span>
+            <span className="text-[26px] font-bold text-(--c) md:text-[32px]">
+              {parte.split(" · ").map((pezzo, j) => (
+                <Fragment key={j}>
+                  {j > 0 && " · "}
+                  <span className="whitespace-nowrap">{pezzo}</span>
+                </Fragment>
+              ))}
+            </span>
           </span>
         ))}
       </p>

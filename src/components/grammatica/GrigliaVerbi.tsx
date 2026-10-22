@@ -1,13 +1,14 @@
 import { Tr } from "@/components/Tr";
 import type { Locale } from "@/lib/lingue";
 
-// it (a) e, se c'è, la parte da ricordare (participle / b): grassetto, colore della grammatica.
+// it (a) e, se c'è, la parte da ricordare (participle / b): grassetto, nel colore --c del tempo
+// dell'unità (style di un genitore, es. LezioneV2), altrimenti in quello della grammatica.
 export type VoceVerbo = { it: string; participle?: string; tr?: string };
 
 // Griglia di schede da memorizzare "infinito → participio" (participi irregolari, essere o avere,
 // tabelle "pairs" delle lezioni v2). sep: separatore tra le due parti ("→", "↔"); vuoto = solo it.
 // 1 colonna, 2 da md, riempita per righe. Il participio è ciò che va ricordato (grassetto,
-// colore della grammatica); sotto la traduzione, se c'è. Contenuto delle celle al centro
+// colore del tempo o della grammatica); sotto la traduzione, se c'è. Contenuto delle celle al centro
 // (eccezione voluta, vedi CLAUDE.md); colonne uguali (grid-cols-2 = minmax(0, 1fr) × 2).
 // incorporata: dentro una scheda già bianca (niente sfondo proprio, linea sopra la prima riga).
 export function GrigliaVerbi({
@@ -40,7 +41,7 @@ export function GrigliaVerbi({
                   {` ${sep} `}
                 </span>
                 <span className="sr-only">: </span>
-                <span className="font-semibold text-grammar">{voce.participle}</span>
+                <span className="font-semibold text-[var(--c,var(--color-grammar))]">{voce.participle}</span>
               </>
             )}
           </p>
