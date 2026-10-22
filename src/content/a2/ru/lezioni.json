@@ -6241,6 +6241,21 @@
      "text": "Предположение о «сейчас»",
      "it": "Dov'è Marta? — Sarà al lavoro.",
      "tr": "Где Марта? — Наверное, на работе."
+    },
+    {
+     "text": "Мечты, надежды, желания",
+     "it": "Un giorno vivrò al mare: è il mio sogno.",
+     "tr": "Однажды я буду жить у моря — это моя мечта."
+    },
+    {
+     "text": "Планы и проекты",
+     "it": "Il mio programma: fra due anni finirò il corso.",
+     "tr": "Мой план: через два года я закончу курс."
+    },
+    {
+     "text": "Обещание навсегда",
+     "it": "Ti amerò sempre. Sarò fedele.",
+     "tr": "Я буду любить тебя всегда. Я буду верным."
     }
    ],
    "exceptions": [
