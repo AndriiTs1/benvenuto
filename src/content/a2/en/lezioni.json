@@ -6640,15 +6640,48 @@
   "g5-esserci": {
    "id": "g5-esserci",
    "inBreve": [
-    "{{Esserci}} = {{essere}} + {{ci}}: “**there is / there are**”.",
-    "The form depends on **what there is**: one — {{c'è}}, several — {{ci sono}}.",
-    "Three tenses: {{c'è}} → {{c'era}} → {{ci sarà}}."
+    "{{Esserci}} = {{ci}} + {{essere}}. It means “**there is / there are**”: {{C'è un bar qui}} — “There's a bar here.”",
+    "Look at the word **after it**: one — {{c'è}}, several — {{ci sono}}. The verb changes with the tense; {{ci}} stays.",
+    "Apostrophe only before {{e}}: {{c'è}}, {{c'era}}. Before {{s}}, write it in full: {{ci sono}}, {{ci sarà}}."
    ],
    "formation": {
+    "formula": {
+     "parts": [
+      "ci",
+      "essere"
+     ],
+     "examples": [
+      {
+       "parts": [
+        "c'",
+        "è"
+       ],
+       "it": "Oggi c'è il sole.",
+       "tr": "It's sunny today."
+      },
+      {
+       "parts": [
+        "c'",
+        "erano"
+       ],
+       "it": "Ieri c'erano tante persone.",
+       "tr": "Yesterday there were lots of people."
+      },
+      {
+       "parts": [
+        "ci",
+        "sarà"
+       ],
+       "it": "Domani ci sarà una festa.",
+       "tr": "There will be a party tomorrow."
+      }
+     ]
+    },
     "steps": [
-     "Find **what** there is: {{un bar}} (one) or {{due bar}} (several).",
-     "Choose the tense: {{oggi}}, {{ieri}}, {{domani}}.",
-     "Take the form from the table: {{c'era}} / {{c'erano}}…"
+     "Find the tense from the signal word: {{oggi}} → present, {{ieri, prima}} → imperfetto, {{domani}} → future.",
+     "See **what** there is: {{un bar}} (one) or {{due bar}} (several).",
+     "Take {{essere}} in that tense, 3rd person: {{è / sono}}, {{era / erano}}, {{sarà / saranno}}.",
+     "Put {{ci}} in front: {{c'è}}, {{ci sono}}, {{c'era}}, {{ci saranno}}."
     ]
    },
    "tables": [
@@ -6806,6 +6839,26 @@
        "tr": "Will you be there tonight? — Yes, I will."
       }
      ]
+    },
+    {
+     "title": "c'è or dov'è?",
+     "text": "{{C'è}} — is there one at all; {{dov'è}} — where is it (we know it exists).",
+     "examples": [
+      {
+       "it": "C'è una banca qui? — Dov'è la banca?",
+       "tr": "Is there a bank here? — Where's the bank?"
+      }
+     ]
+    },
+    {
+     "title": "Che cosa c'è?",
+     "text": "“What's wrong?”, “What's up?”",
+     "examples": [
+      {
+       "it": "Che cosa c'è? Sei triste?",
+       "tr": "What's wrong? Are you sad?"
+      }
+     ]
     }
    ],
    "mistakes": [
@@ -6874,9 +6927,17 @@
    "summary": "**c'è / ci sono** → **c'era / c'erano** → **ci sarà / ci saranno**. One — c'è, several — ci sono. **È** describes, **c'è** means “there is”.",
    "keyWords": [
     {
-     "title": "Esserci",
+     "title": "C'è e ci sono",
      "ids": [
-      "w641"
+      "w378",
+      "w694",
+      "w261",
+      "w147",
+      "w692",
+      "w693",
+      "w606",
+      "w355",
+      "w462"
      ]
     }
    ]

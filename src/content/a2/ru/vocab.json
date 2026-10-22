@@ -9026,6 +9026,44 @@
    "gender": "m",
    "plural": "i piani",
    "note": "anche: piano = lentamente; il piano = l'appartamento al primo piano"
+  },
+  {
+   "id": "w692",
+   "it": "la farmacia",
+   "ru": "аптека",
+   "uk": "аптека",
+   "en": "pharmacy",
+   "pos": "noun",
+   "gender": "f",
+   "plural": "le farmacie",
+   "group": 7,
+   "example": "C'è una farmacia qui vicino?",
+   "lesson": "extra"
+  },
+  {
+   "id": "w693",
+   "it": "il problema",
+   "ru": "проблема",
+   "uk": "проблема",
+   "en": "problem",
+   "pos": "noun",
+   "gender": "m",
+   "plural": "i problemi",
+   "group": 12,
+   "example": "Non c'è problema!",
+   "note": "maschile, anche se finisce in -a",
+   "lesson": "extra"
+  },
+  {
+   "id": "w694",
+   "it": "qui · qua",
+   "ru": "здесь, тут",
+   "uk": "тут",
+   "en": "here",
+   "pos": "adverb",
+   "group": 12,
+   "example": "Qui c'è un bar.",
+   "lesson": "extra"
   }
  ],
  "gruppi": {

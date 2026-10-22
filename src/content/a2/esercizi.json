@@ -4919,6 +4919,314 @@
       "uk": "Подія — c'è stato.",
       "en": "An event — c'è stato."
      }
+    },
+    {
+     "id": "ec-25",
+     "type": "choice",
+     "it": "Oggi in ufficio non ___ nessuno.",
+     "options": [
+      "c'è",
+      "ci sono",
+      "c'era"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Oggi — presente; nessuno — один: non c'è.",
+      "uk": "Oggi — presente; nessuno — один: non c'è.",
+      "en": "Oggi — present; nessuno is singular: non c'è."
+     }
+    },
+    {
+     "id": "ec-26",
+     "type": "fill",
+     "it": "Mi dispiace, non ___ più biglietti.",
+     "hint": "esserci (oggi)",
+     "answers": [
+      "ci sono"
+     ],
+     "why": {
+      "ru": "biglietti — много: non ci sono.",
+      "uk": "biglietti — багато: non ci sono.",
+      "en": "biglietti is plural: non ci sono."
+     }
+    },
+    {
+     "id": "ec-27",
+     "type": "fill",
+     "it": "Ieri non ___ il sole, pioveva.",
+     "hint": "esserci (ieri)",
+     "answers": [
+      "c'era"
+     ],
+     "why": {
+      "ru": "Вчера, одно: non c'era.",
+      "uk": "Учора, одне: non c'era.",
+      "en": "Yesterday, one: non c'era."
+     }
+    },
+    {
+     "id": "ec-28",
+     "type": "fill",
+     "it": "Domani non ___ lezione: è festa.",
+     "hint": "esserci (domani)",
+     "answers": [
+      "ci sarà"
+     ],
+     "why": {
+      "ru": "Завтра, одно: non ci sarà.",
+      "uk": "Завтра, одне: non ci sarà.",
+      "en": "Tomorrow, one: non ci sarà."
+     }
+    },
+    {
+     "id": "ec-29",
+     "type": "choice",
+     "it": "Pronto? ___ Marco? — Sì, te lo passo.",
+     "options": [
+      "C'è",
+      "È",
+      "Ci sono"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "По телефону: «Марко на месте?» — c'è.",
+      "uk": "Телефоном: «Марко на місці?» — c'è.",
+      "en": "On the phone: “Is Marco there?” — c'è."
+     }
+    },
+    {
+     "id": "ec-30",
+     "type": "choice",
+     "it": "Scusi, ___ la stazione?",
+     "options": [
+      "dov'è",
+      "c'è",
+      "ci sono"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Мы знаем, что вокзал есть — спрашиваем, где: dov'è.",
+      "uk": "Ми знаємо, що вокзал є — питаємо де: dov'è.",
+      "en": "We know there is a station — we ask where: dov'è."
+     }
+    },
+    {
+     "id": "ec-31",
+     "type": "choice",
+     "it": "Scusi, ___ una stazione qui vicino?",
+     "options": [
+      "c'è",
+      "dov'è",
+      "è"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Есть ли вообще — c'è.",
+      "uk": "Чи є взагалі — c'è.",
+      "en": "Is there one at all — c'è."
+     }
+    },
+    {
+     "id": "ec-32",
+     "type": "choice",
+     "it": "Che cosa ___? Perché piangi?",
+     "options": [
+      "c'è",
+      "ci sono",
+      "è"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "«Что случилось?» — Che cosa c'è?",
+      "uk": "«Що сталося?» — Che cosa c'è?",
+      "en": "“What's wrong?” — Che cosa c'è?"
+     }
+    },
+    {
+     "id": "ec-33",
+     "type": "choice",
+     "it": "Il frigo ___ vuoto.",
+     "options": [
+      "è",
+      "c'è",
+      "ci sono"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Описание (холодильник пустой) — è без ci.",
+      "uk": "Опис (холодильник порожній) — è без ci.",
+      "en": "Description (the fridge is empty) — è, no ci."
+     }
+    },
+    {
+     "id": "ec-34",
+     "type": "choice",
+     "it": "Nel frigo non ___ niente.",
+     "options": [
+      "c'è",
+      "è",
+      "ci sono"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Существует ли что-то — non c'è niente.",
+      "uk": "Чи існує щось — non c'è niente.",
+      "en": "Is there anything — non c'è niente."
+     }
+    },
+    {
+     "id": "ec-35",
+     "type": "choice",
+     "it": "Ieri ___ una bella festa.",
+     "options": [
+      "c'è stata",
+      "c'è stato",
+      "ci sono state"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Событие — passato; festa — ж.р.: c'è stata.",
+      "uk": "Подія — passato; festa — ж.р.: c'è stata.",
+      "en": "An event — passato; festa is feminine: c'è stata."
+     }
+    },
+    {
+     "id": "ec-36",
+     "type": "choice",
+     "it": "L'anno scorso ___ molti incidenti.",
+     "options": [
+      "ci sono stati",
+      "c'è stato",
+      "ci sono state"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Много, м.р.: ci sono stati.",
+      "uk": "Багато, ч.р.: ci sono stati.",
+      "en": "Plural masculine: ci sono stati."
+     }
+    },
+    {
+     "id": "ec-37",
+     "type": "choice",
+     "it": "Da bambino, nel mio paese ___ solo una scuola.",
+     "options": [
+      "c'era",
+      "ci sarà",
+      "ci sono"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Как было раньше — imperfetto: c'era.",
+      "uk": "Як було раніше — imperfetto: c'era.",
+      "en": "How it used to be — imperfetto: c'era."
+     }
+    },
+    {
+     "id": "ec-38",
+     "type": "choice",
+     "it": "Fra dieci anni ___ più biciclette in città.",
+     "options": [
+      "ci saranno",
+      "ci sarà",
+      "c'erano"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Будущее, много: ci saranno.",
+      "uk": "Майбутнє, багато: ci saranno.",
+      "en": "Future, plural: ci saranno."
+     }
+    },
+    {
+     "id": "ec-39",
+     "type": "choice",
+     "it": "Alla festa ___ molte persone.",
+     "options": [
+      "c'erano",
+      "ci erano",
+      "c'è erano"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Перед e — апостроф: c'erano.",
+      "uk": "Перед e — апостроф: c'erano.",
+      "en": "Before e — apostrophe: c'erano."
+     }
+    },
+    {
+     "id": "ec-40",
+     "type": "choice",
+     "it": "Domani ___ tanti turisti.",
+     "options": [
+      "ci saranno",
+      "c'saranno",
+      "c'è saranno"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Перед s — полностью: ci saranno.",
+      "uk": "Перед s — повністю: ci saranno.",
+      "en": "Before s — in full: ci saranno."
+     }
+    },
+    {
+     "id": "ec-41",
+     "type": "fill",
+     "it": "Stasera ___ anche Luca alla cena?",
+     "hint": "esserci (futuro)",
+     "answers": [
+      "ci sarà"
+     ],
+     "why": {
+      "ru": "Будущее, один (Luca): ci sarà.",
+      "uk": "Майбутнє, один (Luca): ci sarà.",
+      "en": "Future, one (Luca): ci sarà."
+     }
+    },
+    {
+     "id": "ec-42",
+     "type": "fill",
+     "it": "A Lugano ___ un lago bellissimo.",
+     "hint": "esserci (oggi)",
+     "answers": [
+      "c'è"
+     ],
+     "why": {
+      "ru": "Сейчас, одно: c'è.",
+      "uk": "Зараз, одне: c'è.",
+      "en": "Now, one: c'è."
+     }
+    },
+    {
+     "id": "ec-43",
+     "type": "fill",
+     "it": "Prima qui ___ due bar, ora non c'è niente.",
+     "hint": "esserci (prima)",
+     "answers": [
+      "c'erano"
+     ],
+     "why": {
+      "ru": "Раньше, много: c'erano.",
+      "uk": "Раніше, багато: c'erano.",
+      "en": "Before, plural: c'erano."
+     }
+    },
+    {
+     "id": "ec-44",
+     "type": "choice",
+     "it": "Ci sei stasera? — Sì, ___.",
+     "options": [
+      "ci sono",
+      "c'è",
+      "sono io"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "«Будешь?» — «Буду»: ci sono.",
+      "uk": "«Будеш?» — «Буду»: ci sono.",
+      "en": "“Will you be there?” — “Yes”: ci sono."
+     }
     }
    ]
   }

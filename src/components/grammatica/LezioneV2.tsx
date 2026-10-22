@@ -95,7 +95,8 @@ export function LezioneV2({
       numero: lezione.examples.length,
       contenuto: <Esempi esempi={lezione.examples} lingua={lingua} />,
     },
-    paroleChiave && paroleChiave.numero > 0 && { titolo: "Parole chiave", ...paroleChiave },
+    // Meno di 5 parole chiave: la riga non vale la pena.
+    paroleChiave && paroleChiave.numero >= 5 && { titolo: "Parole chiave", ...paroleChiave },
     ...altreRighe,
   ].filter((r): r is RigaApprofondisci => !!r);
 
