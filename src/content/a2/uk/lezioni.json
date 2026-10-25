@@ -5341,21 +5341,62 @@
   "g2-descrizione-persona": {
    "id": "g2-descrizione-persona",
    "inBreve": [
-    "Щоб описати людину, потрібні три дієслова: {{essere}} (який), {{avere}} (що в нього є), {{portare}} (що носить).",
+    "Щоб описати людину, потрібні чотири дієслова: {{essere}} (який), {{avere}} (що в нього є), {{portare}} (що носить), {{fare}} (ким працює).",
     "Прикметник стоїть **після** іменника й узгоджується: {{una ragazza alta}}, {{gli occhi scuri}}.",
     "Професія: {{fa il meccanico}} = {{è meccanico}}."
    ],
    "formation": {
+    "formula": {
+     "parts": [
+      "essere · avere · portare · fare",
+      "aggettivo · nome"
+     ],
+     "examples": [
+      {
+       "parts": [
+        "è",
+        "alto"
+       ],
+       "it": "Marco è alto.",
+       "tr": "Марко високий."
+      },
+      {
+       "parts": [
+        "ha",
+        "gli occhi verdi"
+       ],
+       "it": "Anna ha gli occhi verdi.",
+       "tr": "В Анни зелені очі."
+      },
+      {
+       "parts": [
+        "porta",
+        "gli occhiali"
+       ],
+       "it": "Mio nonno porta gli occhiali.",
+       "tr": "Дідусь носить окуляри."
+      },
+      {
+       "parts": [
+        "fa",
+        "il medico"
+       ],
+       "it": "Luca fa il medico.",
+       "tr": "Лука працює лікарем."
+      }
+     ]
+    },
     "steps": [
      "Статура й характер — {{essere}} + прикметник: {{è alto}}, {{è gentile}}.",
      "Вік, очі, волосся — {{avere}}: {{ha 22 anni}}, {{ha gli occhi verdi}}.",
-     "Окуляри, борода, сережки — {{portare}}: {{porta gli occhiali}}."
+     "Окуляри, борода, сережки — {{portare}}: {{porta gli occhiali}}.",
+     "Професія — {{fare}} + {{il}} / {{la}} + професія: {{fa il meccanico}} = {{è meccanico}}."
     ]
    },
    "tables": [
     {
      "type": "pairs",
-     "title": "Essere, avere, portare",
+     "title": "Essere, avere, portare, fare",
      "sep": "→",
      "items": [
       {
@@ -5398,7 +5439,8 @@
        "tr": "він працює механіком",
        "b": "fa il meccanico"
       }
-     ]
+     ],
+     "note": "Про окуляри частіше кажуть {{porta gli occhiali}}, але {{ha gli occhiali}} теж правильно."
     },
     {
      "title": "Узгодження прикметників",
@@ -5575,11 +5617,6 @@
      "wrong": "Una alta ragazza.",
      "right": "Una ragazza alta.",
      "why": "Прикметник — після іменника."
-    },
-    {
-     "wrong": "Ha gli occhiali.",
-     "right": "Porta gli occhiali.",
-     "why": "Окуляри — portare."
     }
    ],
    "examples": [

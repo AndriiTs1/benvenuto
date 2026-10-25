@@ -5341,21 +5341,62 @@
   "g2-descrizione-persona": {
    "id": "g2-descrizione-persona",
    "inBreve": [
-    "To describe a person you need three verbs: {{essere}} (what they're like), {{avere}} (what they have), {{portare}} (what they wear).",
+    "To describe a person you need four verbs: {{essere}} (what they're like), {{avere}} (what they have), {{portare}} (what they wear), {{fare}} (what they do for a living).",
     "The adjective goes **after** the noun and agrees: {{una ragazza alta}}, {{gli occhi scuri}}.",
     "Job: {{fa il meccanico}} = {{è meccanico}}."
    ],
    "formation": {
+    "formula": {
+     "parts": [
+      "essere · avere · portare · fare",
+      "aggettivo · nome"
+     ],
+     "examples": [
+      {
+       "parts": [
+        "è",
+        "alto"
+       ],
+       "it": "Marco è alto.",
+       "tr": "Marco is tall."
+      },
+      {
+       "parts": [
+        "ha",
+        "gli occhi verdi"
+       ],
+       "it": "Anna ha gli occhi verdi.",
+       "tr": "Anna has green eyes."
+      },
+      {
+       "parts": [
+        "porta",
+        "gli occhiali"
+       ],
+       "it": "Mio nonno porta gli occhiali.",
+       "tr": "My grandfather wears glasses."
+      },
+      {
+       "parts": [
+        "fa",
+        "il medico"
+       ],
+       "it": "Luca fa il medico.",
+       "tr": "Luca is a doctor."
+      }
+     ]
+    },
     "steps": [
      "Build and personality — {{essere}} + adjective: {{è alto}}, {{è gentile}}.",
      "Age, eyes, hair — {{avere}}: {{ha 22 anni}}, {{ha gli occhi verdi}}.",
-     "Glasses, beard, earrings — {{portare}}: {{porta gli occhiali}}."
+     "Glasses, beard, earrings — {{portare}}: {{porta gli occhiali}}.",
+     "Job — {{fare}} + {{il}} / {{la}} + job: {{fa il meccanico}} = {{è meccanico}}."
     ]
    },
    "tables": [
     {
      "type": "pairs",
-     "title": "Essere, avere, portare",
+     "title": "Essere, avere, portare, fare",
      "sep": "→",
      "items": [
       {
@@ -5398,7 +5439,8 @@
        "tr": "he works as a mechanic",
        "b": "fa il meccanico"
       }
-     ]
+     ],
+     "note": "For glasses, {{porta gli occhiali}} is more common, but {{ha gli occhiali}} is also correct."
     },
     {
      "title": "Adjective agreement",
@@ -5575,11 +5617,6 @@
      "wrong": "Una alta ragazza.",
      "right": "Una ragazza alta.",
      "why": "The adjective goes after the noun."
-    },
-    {
-     "wrong": "Ha gli occhiali.",
-     "right": "Porta gli occhiali.",
-     "why": "Glasses — portare."
     }
    ],
    "examples": [

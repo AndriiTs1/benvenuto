@@ -2507,14 +2507,14 @@
      "it": "Marco ___ gli occhiali.",
      "options": [
       "porta",
-      "ha",
-      "è"
+      "è",
+      "sta"
      ],
      "answer": 0,
      "why": {
-      "ru": "Очки — portare.",
-      "uk": "Окуляри — portare.",
-      "en": "Glasses — portare."
+      "ru": "Очки — portare: что человек носит. è — для качеств (è alto), sta — для самочувствия (sta bene).",
+      "uk": "Окуляри — portare: що людина носить. è — для якостей (è alto), sta — про самопочуття (sta bene).",
+      "en": "Glasses — portare: what someone wears. è is for qualities (è alto), sta is for how someone feels (sta bene)."
      }
     },
     {

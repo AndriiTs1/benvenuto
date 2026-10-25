@@ -193,7 +193,7 @@ export function LezioneV2({
 
 // Formula visibile subito (formation.formula): parti grandi unite da "+" nel colore del tempo,
 // esempi divisi nelle stesse parti → frase → traduzione, poi i passi numerati.
-// Da lg formula ed esempi al centro, gli esempi in 3 schede di uguale altezza; i passi a sinistra.
+// Da lg formula ed esempi al centro, gli esempi in schede di uguale altezza (3 in fila, 4 in 2 × 2); i passi a sinistra.
 function ComeSiFormaFormula({
   formula,
   passi,
@@ -207,25 +207,35 @@ function ComeSiFormaFormula({
 }) {
   return (
     <div style={tempo ? STILE_TEMPO[tempo] : STILE_GRAMMATICA} className="overflow-hidden rounded-2xl bg-card">
-      {/* Il "+" è un elemento a sé, grigio e più piccolo, con gli spazi intorno (anche nel testo copiato).
-          Una parte va a capo solo dopo " · " ("-ò · -ai · -à…" sul telefono); ogni pezzo resta intero. */}
+      {/* Ogni parte è un blocco a sé: si va a capo prima tra le parti ("+ aggettivo · nome" sulla riga dopo).
+          Il "+" (grigio, più piccolo, con gli spazi anche nel testo copiato) apre la parte e resta col primo pezzo.
+          Una parte troppo lunga va a capo solo dopo " · ", righe bilanciate (niente "fare" da solo); ogni pezzo resta intero. */}
       <p lang="it" className="flex flex-wrap items-baseline gap-y-1 px-4 pt-5 pb-4 leading-tight lg:justify-center">
-        {formula.parts.map((parte, i) => (
-          <span key={i} className="contents">
-            {i > 0 && <span className="text-[22px] font-normal whitespace-pre text-label-2 md:text-[26px]">{" + "}</span>}
-            <span className="text-[26px] font-bold text-(--c) md:text-[32px]">
-              {parte.split(" · ").map((pezzo, j) => (
+        {formula.parts.map((parte, i) => {
+          const pezzi = parte.split(" · ");
+          return (
+            <span key={i} className="max-w-full text-[26px] font-bold text-balance text-(--c) md:text-[32px]">
+              {pezzi.map((pezzo, j) => (
                 <Fragment key={j}>
-                  {j > 0 && " · "}
-                  <span className="whitespace-nowrap">{pezzo}</span>
+                  {j > 0 && " "}
+                  <span className="whitespace-nowrap">
+                    {i > 0 && j === 0 && (
+                      <span className="text-[22px] font-normal whitespace-pre text-label-2 md:text-[26px]">{" + "}</span>
+                    )}
+                    {pezzo}
+                    {j < pezzi.length - 1 && " ·"}
+                  </span>
                 </Fragment>
               ))}
             </span>
-          </span>
-        ))}
+          );
+        })}
       </p>
       {formula.examples.length > 0 && (
-        <ul className="border-t border-separator lg:grid lg:grid-cols-3 lg:gap-3 lg:p-4">
+        // 4 esempi: 2 × 2 (niente riga con una scheda sola); altrimenti 3 colonne.
+        <ul
+          className={`border-t border-separator lg:grid lg:gap-3 lg:p-4 ${formula.examples.length === 4 ? "lg:grid-cols-2" : "lg:grid-cols-3"}`}
+        >
           {formula.examples.map((esempio, i) => (
             <li
               key={i}

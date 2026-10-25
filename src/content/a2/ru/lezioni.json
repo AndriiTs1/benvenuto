@@ -5341,21 +5341,62 @@
   "g2-descrizione-persona": {
    "id": "g2-descrizione-persona",
    "inBreve": [
-    "Чтобы описать человека, нужны три глагола: {{essere}} (какой), {{avere}} (что у него есть), {{portare}} (что носит).",
+    "Чтобы описать человека, нужны четыре глагола: {{essere}} (какой), {{avere}} (что у него есть), {{portare}} (что носит), {{fare}} (кем работает).",
     "Прилагательное стоит **после** существительного и согласуется: {{una ragazza alta}}, {{gli occhi scuri}}.",
     "Профессия: {{fa il meccanico}} = {{è meccanico}}."
    ],
    "formation": {
+    "formula": {
+     "parts": [
+      "essere · avere · portare · fare",
+      "aggettivo · nome"
+     ],
+     "examples": [
+      {
+       "parts": [
+        "è",
+        "alto"
+       ],
+       "it": "Marco è alto.",
+       "tr": "Марко высокий."
+      },
+      {
+       "parts": [
+        "ha",
+        "gli occhi verdi"
+       ],
+       "it": "Anna ha gli occhi verdi.",
+       "tr": "У Анны зелёные глаза."
+      },
+      {
+       "parts": [
+        "porta",
+        "gli occhiali"
+       ],
+       "it": "Mio nonno porta gli occhiali.",
+       "tr": "Дедушка носит очки."
+      },
+      {
+       "parts": [
+        "fa",
+        "il medico"
+       ],
+       "it": "Luca fa il medico.",
+       "tr": "Лука работает врачом."
+      }
+     ]
+    },
     "steps": [
      "Фигура и характер — {{essere}} + прилагательное: {{è alto}}, {{è gentile}}.",
      "Возраст, глаза, волосы — {{avere}}: {{ha 22 anni}}, {{ha gli occhi verdi}}.",
-     "Очки, борода, серьги — {{portare}}: {{porta gli occhiali}}."
+     "Очки, борода, серьги — {{portare}}: {{porta gli occhiali}}.",
+     "Профессия — {{fare}} + {{il}} / {{la}} + профессия: {{fa il meccanico}} = {{è meccanico}}."
     ]
    },
    "tables": [
     {
      "type": "pairs",
-     "title": "Essere, avere, portare",
+     "title": "Essere, avere, portare, fare",
      "sep": "→",
      "items": [
       {
@@ -5398,7 +5439,8 @@
        "tr": "он работает механиком",
        "b": "fa il meccanico"
       }
-     ]
+     ],
+     "note": "Про очки чаще говорят {{porta gli occhiali}}, но {{ha gli occhiali}} тоже правильно."
     },
     {
      "title": "Согласование прилагательных",
@@ -5575,11 +5617,6 @@
      "wrong": "Una alta ragazza.",
      "right": "Una ragazza alta.",
      "why": "Прилагательное — после существительного."
-    },
-    {
-     "wrong": "Ha gli occhiali.",
-     "right": "Porta gli occhiali.",
-     "why": "Очки — portare."
     }
    ],
    "examples": [
