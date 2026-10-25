@@ -9064,6 +9064,63 @@
    "group": 12,
    "example": "Qui c'è un bar.",
    "lesson": "extra"
+  },
+  {
+   "id": "w695",
+   "it": "la fronte",
+   "ru": "лоб",
+   "pos": "noun",
+   "gender": "f",
+   "plural": "le fronti",
+   "group": 3,
+   "example": "Ha la fronte alta.",
+   "lesson": "extra",
+   "added": true,
+   "uk": "лоб",
+   "en": "forehead"
+  },
+  {
+   "id": "w696",
+   "it": "la guancia",
+   "ru": "щека",
+   "pos": "noun",
+   "gender": "f",
+   "plural": "le guance",
+   "group": 3,
+   "example": "Ha le guance rosse.",
+   "lesson": "extra",
+   "added": true,
+   "uk": "щока",
+   "en": "cheek"
+  },
+  {
+   "id": "w697",
+   "it": "il labbro",
+   "ru": "губа",
+   "pos": "noun",
+   "gender": "m",
+   "plural": "le labbra",
+   "note": "как il sopracciglio → le sopracciglia, il braccio → le braccia",
+   "group": 3,
+   "example": "Ha le labbra sottili.",
+   "lesson": "extra",
+   "added": true,
+   "uk": "губа",
+   "en": "lip"
+  },
+  {
+   "id": "w698",
+   "it": "il mento",
+   "ru": "подбородок",
+   "pos": "noun",
+   "gender": "m",
+   "plural": "i menti",
+   "group": 3,
+   "example": "Ha il mento appuntito.",
+   "lesson": "extra",
+   "added": true,
+   "uk": "підборіддя",
+   "en": "chin"
   }
  ],
  "gruppi": {

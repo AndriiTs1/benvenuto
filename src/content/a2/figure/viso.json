@@ -10,10 +10,11 @@
     { "n": 4,  "side": "left",  "x": 277, "y": 236, "it": "l'occhio",        "plural": "gli occhi",       "irregular": false, "tr": { "ru": "глаз · глаза",  "uk": "око · очі",     "en": "eye · eyes" } },
     { "n": 5,  "side": "left",  "x": 238, "y": 258, "it": "l'orecchio",      "plural": "le orecchie",     "irregular": true,  "tr": { "ru": "ухо · уши",     "uk": "вухо · вуха",   "en": "ear · ears" } },
     { "n": 6,  "side": "left",  "x": 304, "y": 321, "it": "la bocca",        "plural": null,              "irregular": false, "tr": { "ru": "рот",           "uk": "рот",           "en": "mouth" } },
-    { "n": 7,  "side": "right", "x": 321, "y": 262, "it": "il naso",         "plural": null,              "irregular": false, "tr": { "ru": "нос",           "uk": "ніс",           "en": "nose" } },
-    { "n": 8,  "side": "right", "x": 374, "y": 291, "it": "la guancia",      "plural": "le guance",       "irregular": false, "tr": { "ru": "щека · щёки",   "uk": "щока · щоки",   "en": "cheek · cheeks" } },
-    { "n": 9,  "side": "right", "x": 338, "y": 327, "it": "il labbro",       "plural": "le labbra",       "irregular": true,  "tr": { "ru": "губа · губы",   "uk": "губа · губи",   "en": "lip · lips" } },
-    { "n": 10, "side": "right", "x": 320, "y": 374, "it": "il mento",        "plural": null,              "irregular": false, "tr": { "ru": "подбородок",    "uk": "підборіддя",    "en": "chin" } },
-    { "n": 11, "side": "right", "x": 330, "y": 415, "it": "il collo",        "plural": null,              "irregular": false, "tr": { "ru": "шея",           "uk": "шия",           "en": "neck" } }
+    { "n": 7,  "side": "right", "x": 396, "y": 196, "it": "la testa",        "plural": "le teste",        "irregular": false, "tr": { "ru": "голова · головы", "uk": "голова · голови", "en": "head · heads" } },
+    { "n": 8,  "side": "right", "x": 321, "y": 262, "it": "il naso",         "plural": null,              "irregular": false, "tr": { "ru": "нос",           "uk": "ніс",           "en": "nose" } },
+    { "n": 9,  "side": "right", "x": 374, "y": 291, "it": "la guancia",      "plural": "le guance",       "irregular": false, "tr": { "ru": "щека · щёки",   "uk": "щока · щоки",   "en": "cheek · cheeks" } },
+    { "n": 10, "side": "right", "x": 338, "y": 327, "it": "il labbro",       "plural": "le labbra",       "irregular": true,  "tr": { "ru": "губа · губы",   "uk": "губа · губи",   "en": "lip · lips" } },
+    { "n": 11, "side": "right", "x": 320, "y": 374, "it": "il mento",        "plural": null,              "irregular": false, "tr": { "ru": "подбородок",    "uk": "підборіддя",    "en": "chin" } },
+    { "n": 12, "side": "right", "x": 330, "y": 415, "it": "il collo",        "plural": null,              "irregular": false, "tr": { "ru": "шея",           "uk": "шия",           "en": "neck" } }
   ]
 }

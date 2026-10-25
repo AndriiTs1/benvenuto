@@ -1,10 +1,12 @@
 import { expect, test, type Page } from "@playwright/test";
 
-// Figura "Il viso" (FiguraParti) in descrivere-una-persona: posizione nella pagina, 11 parti
+// Figura "Il viso" (FiguraParti) in descrivere-una-persona: posizione nella pagina, le parti
 // da lg (didascalie + linee) e sotto lg (numeri + elenco), plurali irregolari, tocco sul numero.
+// 12 parti: 1–6 a sinistra, 7 la testa … 12 il collo a destra.
 
 const PAGINA = "/a2/grammatica/descrivere-una-persona";
-const IRREGOLARI = [3, 5, 9]; // il sopracciglio, l'orecchio, il labbro
+const PARTI = 12;
+const IRREGOLARI = [3, 5, 10]; // il sopracciglio, l'orecchio, il labbro
 
 const apri = async (page: Page, baseURL: string | undefined) => {
   await page.context().addCookies([{ name: "bv_lang", value: "ru", url: baseURL! }]);
@@ -34,13 +36,13 @@ test.describe("desktop 1280", () => {
     expect(ordine).toEqual({ dopoComeSiForma: true, primaDiTabelle: true });
   });
 
-  test("11 didascalie e 11 linee; plurale irregolare: 3, 5, 9", async ({ page, baseURL }) => {
+  test(`${PARTI} didascalie e ${PARTI} linee; plurale irregolare: ${IRREGOLARI.join(", ")}`, async ({ page, baseURL }) => {
     const blocco = await apri(page, baseURL);
     const vista = blocco.locator("[data-vista='desktop']");
-    await expect(vista.locator("[data-n]")).toHaveCount(11);
+    await expect(vista.locator("[data-n]")).toHaveCount(PARTI);
     for (const d of await vista.locator("[data-n]").all()) await expect(d).toBeVisible();
     // Le linee arrivano dopo la misura (ResizeObserver): una <g> per linea.
-    await expect(vista.locator(":scope > svg g")).toHaveCount(11);
+    await expect(vista.locator(":scope > svg g")).toHaveCount(PARTI);
     expect((await conIrregolare(vista, "[data-n]", "data-n")).sort((a, b) => a - b)).toEqual(IRREGOLARI);
   });
 });
@@ -48,13 +50,13 @@ test.describe("desktop 1280", () => {
 test.describe("mobile 390", () => {
   test.use({ viewport: { width: 390, height: 844 } });
 
-  test("11 numeri e 11 righe; plurale irregolare: 3, 5, 9", async ({ page, baseURL }) => {
+  test(`${PARTI} numeri e ${PARTI} righe; plurale irregolare: ${IRREGOLARI.join(", ")}`, async ({ page, baseURL }) => {
     const blocco = await apri(page, baseURL);
     const vista = blocco.locator("[data-vista='mobile']");
     const numeri = vista.getByRole("button", { name: /^\d+: / });
-    await expect(numeri).toHaveCount(11);
+    await expect(numeri).toHaveCount(PARTI);
     for (const n of await numeri.all()) await expect(n).toBeVisible();
-    await expect(vista.locator("[data-riga]")).toHaveCount(11);
+    await expect(vista.locator("[data-riga]")).toHaveCount(PARTI);
     expect((await conIrregolare(vista, "[data-riga]", "data-riga")).sort((a, b) => a - b)).toEqual(IRREGOLARI);
     await expect(blocco.locator("[data-vista='desktop']")).toBeHidden();
   });
