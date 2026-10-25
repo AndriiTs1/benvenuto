@@ -6448,7 +6448,7 @@
    "pos": "noun",
    "gender": "m",
    "plural": "le braccia",
-   "note": "rompersi il braccio — сломать руку; la mano — кисть",
+   "note": "rompersi il braccio — сломать руку; la mano — кисть; мн. ч. le braccia — как il labbro → le labbra",
    "group": 10,
    "example": "Ha rotto il braccio.",
    "lesson": "L25",
@@ -8088,7 +8088,8 @@
    "lesson": "extra",
    "added": true,
    "gender": "f",
-   "plural": "le mani"
+   "plural": "le mani",
+   "note": "ж. р. на -o: мн. ч. le mani"
   },
   {
    "id": "w618",
@@ -8214,7 +8215,8 @@
    "lesson": "extra",
    "added": true,
    "gender": "m",
-   "plural": "le dita"
+   "plural": "le dita",
+   "note": "как il braccio → le braccia, il labbro → le labbra"
   },
   {
    "id": "w627",
@@ -9121,6 +9123,62 @@
    "added": true,
    "uk": "підборіддя",
    "en": "chin"
+  },
+  {
+   "id": "w699",
+   "it": "il tricipite",
+   "ru": "трицепс",
+   "pos": "noun",
+   "gender": "m",
+   "plural": "i tricipiti",
+   "group": 3,
+   "example": "Allena i tricipiti in palestra.",
+   "lesson": "extra",
+   "added": true,
+   "uk": "трицепс",
+   "en": "triceps"
+  },
+  {
+   "id": "w700",
+   "it": "il gomito",
+   "ru": "локоть",
+   "pos": "noun",
+   "gender": "m",
+   "plural": "i gomiti",
+   "group": 3,
+   "example": "Mi fa male il gomito.",
+   "lesson": "extra",
+   "added": true,
+   "uk": "лікоть",
+   "en": "elbow"
+  },
+  {
+   "id": "w701",
+   "it": "il polso",
+   "ru": "запястье",
+   "pos": "noun",
+   "gender": "m",
+   "plural": "i polsi",
+   "group": 3,
+   "example": "Porta l'orologio al polso.",
+   "lesson": "extra",
+   "added": true,
+   "uk": "зап'ястя",
+   "en": "wrist"
+  },
+  {
+   "id": "w702",
+   "it": "il bicipite",
+   "ru": "бицепс",
+   "pos": "noun",
+   "gender": "m",
+   "plural": "i bicipiti",
+   "group": 3,
+   "example": "Ha i bicipiti forti.",
+   "lesson": "extra",
+   "added": true,
+   "uk": "біцепс",
+   "en": "biceps"
   }
  ],
  "gruppi": {

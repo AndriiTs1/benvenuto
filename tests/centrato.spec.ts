@@ -65,6 +65,8 @@ for (const lingua of ["ru", "en"]) {
             const display = getComputedStyle(el).display;
             if (display === "none" || display === "inline" || display === "contents" || display.startsWith("table")) continue;
             if (el.closest(".sr-only, [aria-hidden='true'], svg, table") || !el.textContent?.trim()) continue;
+            // Elementi in posizione assoluta (numeri sopra le figure, menu): fuori dal flusso, non "attaccati".
+            if (getComputedStyle(el).position === "absolute") continue;
             const genitore = el.parentElement;
             if (!genitore) continue;
             const g = getComputedStyle(genitore);

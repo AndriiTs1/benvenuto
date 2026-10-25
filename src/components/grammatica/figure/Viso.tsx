@@ -6,8 +6,9 @@ import type { SVGProps } from "react";
 export function Viso(props: SVGProps<SVGSVGElement>) {
   return (
     <svg viewBox="170 90 300 440" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" {...props}>
-      <path d="M175,530 C180,478 228,450 292,440 L320,462 L348,440 C412,450 460,478 465,530 Z" fill="#5B8DEF" />
-      <path d="M292,440 L320,462 L348,440" fill="none" stroke="#4776D6" strokeWidth="3" strokeLinejoin="round" />
+      <path d="M175,530 C180,478 228,452 292,442 L348,442 C412,452 460,478 465,530 Z" fill="#F3CBA9" />
+      <path d="M300,440 Q275,452 250,462 M340,440 Q365,452 390,462" fill="none" stroke="#D9A47F" strokeWidth="2" strokeLinecap="round" />
+      <path d="M262,530 L266,478 Q268,462 282,456 L290,452 Q320,500 350,452 L358,456 Q372,462 374,478 L378,530 Z" fill="#5B8DEF" />
       <path d="M300,360 L300,441 Q320,462 340,441 L340,360 Z" fill="#E9B893" />
       <path d="M300,372 Q320,392 340,372 L340,360 L300,360 Z" fill="#D9A47F" />
       <ellipse cx="238" cy="252" rx="12" ry="20" fill="#EFC3A0" />

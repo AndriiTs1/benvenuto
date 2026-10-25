@@ -8,8 +8,8 @@ import type { Locale } from "@/lib/lingue";
 // Da lg: disegno al centro, didascalie a sinistra e a destra (side), ognuna centrata sull'altezza del suo punto
 //   (spostata solo quanto basta per non sovrapporsi). Linea con gomito: orizzontale dalla didascalia,
 //   poi un tratto breve a 45° fino al punto.
-// Sotto lg: disegno tagliato in basso (viewBoxMobile), alto al massimo 45svh; numeri ai lati del viso con la
-//   stessa linea a gomito (i numeri non coprono il viso); sotto, elenco in 2 colonne.
+// Sotto lg: disegno tagliato in basso (viewBoxMobile), alto al massimo 45svh; numeri in due colonne fuori dal
+//   disegno, con la stessa linea a gomito (i numeri non coprono la figura); sotto, elenco in 2 colonne.
 //   Tocco su numero o riga → stessa voce evidenziata; dal numero, la riga fuori schermo scorre in vista.
 
 type Parte = {
@@ -30,7 +30,7 @@ const SPAZIO = 4; // px tra due didascalie (lg)
 const STACCO = 6; // px tra colonna e inizio della linea (lg)
 const NUMERO = 20; // px: diametro dei numeri (sotto lg)
 const SPAZIO_NUMERI = 4; // px tra due numeri dello stesso lato
-const BORDO = 6; // px tra numero e bordo del disegno
+const BORDO = 4; // px tra numero e bordo del disegno (i numeri stanno fuori dal disegno)
 
 const leggiViewBox = (v: string) => v.trim().split(/\s+/).map(Number) as [number, number, number, number];
 
@@ -155,7 +155,10 @@ export function FiguraInterattiva({
   const r = NUMERO / 2 / scalaMobile;
   const numeri = lati.flatMap((voci, l) => {
     const sx = l === 0;
-    const cx = sx ? vx + (BORDO + NUMERO / 2) / scalaMobile : vx + vw - (BORDO + NUMERO / 2) / scalaMobile;
+    // Colonne dei numeri fuori dal disegno (a sinistra e a destra): non coprono mai la figura,
+    // anche quando arriva fino al bordo del viewBox (braccia del busto).
+    const fuori = (BORDO + NUMERO / 2) / scalaMobile;
+    const cx = sx ? vx - fuori : vx + vw + fuori;
     const centri = disponi(
       voci.map((p) => ({ centro: p.y, h: 2 * r })),
       SPAZIO_NUMERI / scalaMobile,
@@ -178,8 +181,11 @@ export function FiguraInterattiva({
     const figM = figuraMobile.current;
     if (!box || !fig || !figM) return;
     const calcola = () => {
-      if (figM.offsetParent !== null) setScalaMobile(figM.getBoundingClientRect().width / vw);
-      if (fig.offsetParent === null) return setSchema(null);
+      // Larghezza 0 (vista nascosta o misura a metà di un ridimensionamento, es. DevTools): si ignora.
+      // Con scala 0 raggi e posizioni diventerebbero Infinity / NaN negli attributi dell'svg.
+      const larghezzaM = figM.offsetParent !== null ? figM.getBoundingClientRect().width : 0;
+      if (larghezzaM > 0) setScalaMobile(larghezzaM / vw);
+      if (fig.offsetParent === null || fig.getBoundingClientRect().width === 0) return setSchema(null);
       const rb = box.getBoundingClientRect();
       const rf = fig.getBoundingClientRect();
       const scala = rf.width / vw;
@@ -275,7 +281,8 @@ export function FiguraInterattiva({
         <div
           ref={figuraMobile}
           className="relative mx-auto"
-          style={{ width: `min(100%, calc(45svh * ${vw} / ${vhM}))`, aspectRatio: `${vw} / ${vhM}` }}
+          // Larghezza: lascia ai lati lo spazio delle due colonne di numeri (BORDO + NUMERO per lato).
+          style={{ width: `min(calc(100% - ${2 * (BORDO + NUMERO)}px), calc(45svh * ${vw} / ${vhM}))`, aspectRatio: `${vw} / ${vhM}` }}
         >
           {disegnoMobile}
           <Linee linee={numeri.map((x) => x.linea)} raggio={2.5 / scalaMobile} viewBox={viewBoxMobile} />
