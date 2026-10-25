@@ -61,6 +61,7 @@ export function LezioneV2({
   tempo,
   paroleChiave,
   altreRighe = [],
+  figure,
 }: {
   lezione: Lezione;
   lingua: Locale;
@@ -70,6 +71,8 @@ export function LezioneV2({
   paroleChiave?: { contenuto: ReactNode; numero: number };
   /** Altre righe di Approfondisci, in fondo (es. la griglia dei participi irregolari). */
   altreRighe?: RigaApprofondisci[];
+  /** Figure con le parti (FiguraParti), dopo "Come si forma" e prima di "Tabelle". */
+  figure?: ReactNode;
 }) {
   const formula = lezione.formation.formula;
   // Visibili subito: In breve → (Come si forma, se c'è la formula) → "Essere o avere?" → Tabelle →
@@ -127,6 +130,8 @@ export function LezioneV2({
 
       {/* "Essere o avere?" subito dopo la formula (aperto): test in passi, poi i gruppi di verbi. */}
       {lezione.auxChoice && <EssereOAvere scelta={lezione.auxChoice} lingua={lingua} />}
+
+      {figure}
 
       <Sezione titolo="Tabelle">
         <div className="space-y-3">

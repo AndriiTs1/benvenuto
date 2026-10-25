@@ -52,7 +52,8 @@ for (const lingua of ["ru", "en"]) {
           for (let n = giro.nextNode(); n; n = giro.nextNode()) {
             const testo = n.textContent?.trim();
             const el = n.parentElement;
-            if (!testo || !el || el.closest(".sr-only, [aria-hidden='true'], svg") || !el.getClientRects().length) continue;
+            // [data-celle-a-sinistra]: elenchi-didascalie delle figure, colonne al centro e testo della cella a sinistra (voluto).
+            if (!testo || !el || el.closest(".sr-only, [aria-hidden='true'], svg, [data-celle-a-sinistra]") || !el.getClientRects().length) continue;
             const allineamento = getComputedStyle(blocco(el)).textAlign;
             if (allineamento !== "center") fuori.add(`${allineamento}: ${testo.slice(0, 40)}`);
           }

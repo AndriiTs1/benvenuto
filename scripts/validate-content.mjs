@@ -1,6 +1,6 @@
 // Controllo dei contenuti A2: node scripts/validate-content.mjs (npm run validate:content).
 // Esce con codice 1 se trova errori.
-import { readdirSync, readFileSync, statSync } from "node:fs";
+import { existsSync, readdirSync, readFileSync, statSync } from "node:fs";
 import path from "node:path";
 
 const CARTELLA = path.join(process.cwd(), "src/content/a2");
@@ -27,7 +27,8 @@ for (const [id, u] of Object.entries(meta.units)) {
 const numeri = Object.values(meta.units).map((u) => u.number);
 if (new Set(numeri).size !== numeri.length) errori.push("meta: numeri di unità ripetuti");
 
-const lingue = readdirSync(CARTELLA).filter((n) => statSync(path.join(CARTELLA, n)).isDirectory());
+// Cartelle delle lingue (ru, uk, en…): due lettere; le altre (figure/) non sono lingue.
+const lingue = readdirSync(CARTELLA).filter((n) => /^[a-z]{2}$/.test(n) && statSync(path.join(CARTELLA, n)).isDirectory());
 for (const lingua of lingue) {
   const file = (nome) => path.join(CARTELLA, lingua, nome);
   let curriculum, grammar;
@@ -274,6 +275,71 @@ for (const lingua of lingue) {
         }
       }
     }
+  }
+}
+// Figure (facoltativo): "figure": ["viso", …] → content/a2/figure/<id>.json con tutti i campi, n senza ripetizioni,
+// punti dentro il viewBox, e il disegno components/grammatica/figure/<Id>.tsx. Stesse figure in ru, uk, en.
+const figureControllate = new Map(); // id → errori già trovati (ogni file si controlla una volta)
+const CARTELLA_FIGURE = path.join(CARTELLA, "figure");
+const DISEGNI = path.join(process.cwd(), "src/components/grammatica/figure");
+function controllaFigura(id) {
+  if (figureControllate.has(id)) return figureControllate.get(id);
+  const err = [];
+  const dove = `figure/${id}.json`;
+  let f;
+  if (!/^[a-z]+$/.test(id)) err.push(`figure: id "${id}" non valido (solo lettere minuscole)`);
+  else {
+    try {
+      f = leggi(path.join(CARTELLA_FIGURE, `${id}.json`));
+    } catch (e) {
+      err.push(e.code === "ENOENT" ? `${dove} non esiste` : `${dove}: JSON non valido (${e.message})`);
+    }
+    const nome = id[0].toUpperCase() + id.slice(1);
+    if (!existsSync(path.join(DISEGNI, `${nome}.tsx`))) err.push(`${dove}: manca il disegno components/grammatica/figure/${nome}.tsx`);
+  }
+  if (f) {
+    const tradotto = (v) => ["ru", "uk", "en"].every((l) => testo(v?.[l]));
+    if (f.id !== id) err.push(`${dove}: id "${f.id}" diverso dal nome del file`);
+    if (!testo(f.title)) err.push(`${dove}: manca title`);
+    if (!tradotto(f.titleTr)) err.push(`${dove}: titleTr senza ru, uk o en`);
+    const vb = String(f.viewBox ?? "").trim().split(/\s+/).map(Number);
+    const vbOk = vb.length === 4 && vb.every(Number.isFinite) && vb[2] > 0 && vb[3] > 0;
+    if (!vbOk) err.push(`${dove}: viewBox non valido "${f.viewBox}" (4 numeri)`);
+    if (!Array.isArray(f.parts) || f.parts.length === 0) err.push(`${dove}: parts mancanti o vuote`);
+    else {
+      const numeri = new Set();
+      f.parts.forEach((p, i) => {
+        const q = `${dove}: parts[${i}]`;
+        if (!Number.isInteger(p?.n) || p.n < 1) err.push(`${q}.n non valido`);
+        else if (numeri.has(p.n)) err.push(`${q}: n ${p.n} ripetuto`);
+        numeri.add(p?.n);
+        if (p?.side !== "left" && p?.side !== "right") err.push(`${q}.side "${p?.side}" (left | right)`);
+        if (!Number.isFinite(p?.x) || !Number.isFinite(p?.y)) err.push(`${q}: x, y devono essere numeri`);
+        else if (vbOk && (p.x < vb[0] || p.x > vb[0] + vb[2] || p.y < vb[1] || p.y > vb[1] + vb[3])) err.push(`${q}: punto (${p.x}, ${p.y}) fuori dal viewBox`);
+        if (!testo(p?.it)) err.push(`${q}.it mancante`);
+        else if (/[\u0400-\u04FF]/.test(p.it)) err.push(`${q}.it con cirillico`);
+        if (p?.plural !== null && !testo(p?.plural)) err.push(`${q}.plural: testo o null`);
+        if (typeof p?.irregular !== "boolean") err.push(`${q}.irregular: true o false`);
+        else if (p.irregular && p.plural === null) err.push(`${q}: irregular senza plural`);
+        if (!tradotto(p?.tr)) err.push(`${q}.tr senza ru, uk o en`);
+      });
+    }
+  }
+  figureControllate.set(id, err);
+  return err;
+}
+for (const [lingua, lezioni] of Object.entries(lezioniCompletePerLingua)) {
+  for (const [topicId, lezione] of Object.entries(lezioni)) {
+    const ru = lezioniCompletePerLingua.ru?.[topicId]?.figure;
+    if (lingua !== "ru" && JSON.stringify(ru) !== JSON.stringify(lezione?.figure)) errori.push(`${lingua}/lezioni: ${topicId}.figure diverso da ru`);
+    if (lezione?.figure === undefined) continue;
+    const fig = lezione.figure;
+    if (!Array.isArray(fig) || fig.length === 0 || !fig.every(testo)) {
+      errori.push(`${lingua}/lezioni: ${topicId}.figure dev'essere un elenco di id ("viso", …)`);
+      continue;
+    }
+    if (new Set(fig).size !== fig.length) errori.push(`${lingua}/lezioni: ${topicId}.figure con id ripetuti`);
+    for (const id of fig) for (const e of controllaFigura(id)) errori.push(`${lingua}/lezioni: ${topicId}.figure → ${e}`);
   }
 }
 // Tabelle "pairs": stesso numero di elementi in ru, uk, en (stessa posizione in tables).

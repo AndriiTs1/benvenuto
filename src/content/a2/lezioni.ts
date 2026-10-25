@@ -55,6 +55,8 @@ export type LezioneV2 = {
   auxChoice?: SceltaAusiliare;
   /** Parole di vocab.json per "Parole chiave", in quest'ordine: elenco di id oppure gruppi con titolo. */
   keyWords?: string[] | GruppoParole[];
+  /** Figure con le parti indicate (content/a2/figure/<id>.json), dopo "Come si forma" e prima di "Tabelle". */
+  figure?: string[];
 };
 
 type FileLezioni = { version: number; lessons: Record<string, LezioneV2> };

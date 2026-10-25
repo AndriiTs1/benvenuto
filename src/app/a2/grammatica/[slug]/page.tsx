@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { FattiEsercizi } from "@/components/esercizi/FattiEsercizi";
 import { IntestazioneTempo } from "@/components/grammatica/Tempo";
 import { HoCapito, SegnaVisto } from "@/components/grammatica/AzioniArgomento";
+import { FiguraParti } from "@/components/grammatica/FiguraParti";
 import { ContenutoArgomento, GrigliaParticipi, Sezione } from "@/components/grammatica/ContenutoArgomento";
 import { LezioneV2 } from "@/components/grammatica/LezioneV2";
 import { LinkAvanti } from "@/components/grammatica/LinkAvanti";
@@ -65,6 +66,7 @@ export default async function ArgomentoPage({ params }: PageProps<"/a2/grammatic
             lezione={v2.lezione}
             lingua={v2.lingua}
             tempo={argomento.tempo}
+            figure={v2.lezione.figure?.map((id) => <FiguraParti key={id} id={id} locale={locale} />)}
             paroleChiave={{
               numero: gruppiParole.reduce((n, g) => n + g.parole.length, 0),
               contenuto: <ParoleChiave gruppi={gruppiParole} nota={dizionario(locale).paroleChiaveNota} locale={locale} />,
