@@ -2,7 +2,7 @@
   "id": "viso",
   "title": "Il viso",
   "titleTr": { "ru": "Лицо", "uk": "Обличчя", "en": "The face" },
-  "viewBox": "170 90 300 440",
+  "viewBox": "115 90 410 380",
   "parts": [
     { "n": 1,  "side": "left",  "x": 330, "y": 118, "it": "i capelli",       "plural": null,              "irregular": false, "tr": { "ru": "волосы",        "uk": "волосся",       "en": "hair" } },
     { "n": 2,  "side": "left",  "x": 320, "y": 188, "it": "la fronte",       "plural": null,              "irregular": false, "tr": { "ru": "лоб",           "uk": "лоб",           "en": "forehead" } },

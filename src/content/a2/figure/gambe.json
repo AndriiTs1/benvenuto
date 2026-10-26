@@ -1,0 +1,15 @@
+{
+  "id": "gambe",
+  "title": "Le gambe e i piedi",
+  "titleTr": { "ru": "Ноги и стопы", "uk": "Ноги і стопи", "en": "Legs and feet" },
+  "viewBox": "115 925 410 550",
+  "parts": [
+    { "n": 1, "side": "left",  "x": 262, "y": 1094, "it": "la coscia",        "plural": "le cosce",          "irregular": false, "tr": { "ru": "бедро · бёдра",           "uk": "стегно · стегна",          "en": "thigh · thighs" } },
+    { "n": 2, "side": "left",  "x": 263, "y": 1150, "it": "il ginocchio",     "plural": "le ginocchia",      "irregular": true,  "tr": { "ru": "колено · колени",         "uk": "коліно · коліна",          "en": "knee · knees" } },
+    { "n": 3, "side": "left",  "x": 230, "y": 1240, "it": "il polpaccio",     "plural": "i polpacci",        "irregular": false, "tr": { "ru": "икра · икры",             "uk": "литка · литки",            "en": "calf · calves" } },
+    { "n": 4, "side": "left",  "x": 244, "y": 1388, "it": "la caviglia",      "plural": "le caviglie",       "irregular": false, "tr": { "ru": "лодыжка · лодыжки",       "uk": "щиколотка · щиколотки",    "en": "ankle · ankles" } },
+    { "n": 5, "side": "right", "x": 378, "y": 1212, "it": "la gamba",         "plural": "le gambe",          "irregular": false, "tr": { "ru": "нога · ноги",             "uk": "нога · ноги",              "en": "leg · legs" } },
+    { "n": 6, "side": "right", "x": 398, "y": 1430, "it": "il piede",         "plural": "i piedi",           "irregular": false, "tr": { "ru": "стопа · стопы",           "uk": "стопа · стопи",            "en": "foot · feet" } },
+    { "n": 7, "side": "right", "x": 378, "y": 1462, "it": "il dito del piede", "plural": "le dita del piede", "irregular": true,  "tr": { "ru": "палец ноги · пальцы ног", "uk": "палець ноги · пальці ніг", "en": "toe · toes" } }
+  ]
+}

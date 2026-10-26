@@ -66,7 +66,7 @@ export default async function ArgomentoPage({ params }: PageProps<"/a2/grammatic
             lezione={v2.lezione}
             lingua={v2.lingua}
             tempo={argomento.tempo}
-            figure={v2.lezione.figure?.map((id) => <FiguraParti key={id} id={id} locale={locale} />)}
+            figure={v2.lezione.figure?.map((id, _, insieme) => <FiguraParti key={id} id={id} insieme={insieme} locale={locale} />)}
             paroleChiave={{
               numero: gruppiParole.reduce((n, g) => n + g.parole.length, 0),
               contenuto: <ParoleChiave gruppi={gruppiParole} nota={dizionario(locale).paroleChiaveNota} locale={locale} />,

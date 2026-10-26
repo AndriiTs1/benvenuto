@@ -2,17 +2,17 @@
   "id": "busto",
   "title": "Il busto e le braccia",
   "titleTr": { "ru": "Туловище и руки", "uk": "Тулуб і руки", "en": "Torso and arms" },
-  "viewBox": "225 0 410 556",
+  "viewBox": "115 440 410 500",
   "parts": [
-    { "n": 1,  "side": "left",  "x": 294, "y": 112, "it": "la spalla",    "plural": "le spalle",   "irregular": false, "tr": { "ru": "плечо · плечи",        "uk": "плече · плечі",        "en": "shoulder · shoulders" } },
-    { "n": 2,  "side": "left",  "x": 276, "y": 190, "it": "il braccio",   "plural": "le braccia",  "irregular": true,  "tr": { "ru": "рука · руки",          "uk": "рука · руки",          "en": "arm · arms" } },
-    { "n": 3,  "side": "left",  "x": 252, "y": 242, "it": "il tricipite", "plural": "i tricipiti", "irregular": false, "tr": { "ru": "трицепс · трицепсы",   "uk": "трицепс · трицепси",   "en": "triceps" } },
-    { "n": 4,  "side": "left",  "x": 252, "y": 310, "it": "il gomito",    "plural": "i gomiti",    "irregular": false, "tr": { "ru": "локоть · локти",       "uk": "лікоть · лікті",       "en": "elbow · elbows" } },
-    { "n": 5,  "side": "left",  "x": 256, "y": 446, "it": "il polso",     "plural": "i polsi",     "irregular": false, "tr": { "ru": "запястье · запястья",  "uk": "зап'ястя · зап'ястя",  "en": "wrist · wrists" } },
-    { "n": 6,  "side": "right", "x": 470, "y": 162, "it": "il petto",     "plural": null,          "irregular": false, "tr": { "ru": "грудь",                "uk": "груди",                "en": "chest" } },
-    { "n": 7,  "side": "right", "x": 546, "y": 214, "it": "il bicipite",  "plural": "i bicipiti",  "irregular": false, "tr": { "ru": "бицепс · бицепсы",     "uk": "біцепс · біцепси",     "en": "biceps" } },
-    { "n": 8,  "side": "right", "x": 432, "y": 388, "it": "la pancia",    "plural": null,          "irregular": false, "tr": { "ru": "живот",                "uk": "живіт",                "en": "belly" } },
-    { "n": 9,  "side": "right", "x": 606, "y": 468, "it": "la mano",      "plural": "le mani",     "irregular": true,  "tr": { "ru": "кисть · кисти",        "uk": "кисть · кисті",        "en": "hand · hands" } },
-    { "n": 10, "side": "right", "x": 616, "y": 526, "it": "il dito",      "plural": "le dita",     "irregular": true,  "tr": { "ru": "палец · пальцы",       "uk": "палець · пальці",      "en": "finger · fingers" } }
+    { "n": 1,  "side": "left",  "x": 184, "y": 496, "it": "la spalla",    "plural": "le spalle",   "irregular": false, "tr": { "ru": "плечо · плечи",        "uk": "плече · плечі",        "en": "shoulder · shoulders" } },
+    { "n": 2,  "side": "left",  "x": 166, "y": 574, "it": "il braccio",   "plural": "le braccia",  "irregular": true,  "tr": { "ru": "рука · руки",          "uk": "рука · руки",          "en": "arm · arms" } },
+    { "n": 3,  "side": "left",  "x": 142, "y": 626, "it": "il tricipite", "plural": "i tricipiti", "irregular": false, "tr": { "ru": "трицепс · трицепсы",   "uk": "трицепс · трицепси",   "en": "triceps" } },
+    { "n": 4,  "side": "left",  "x": 142, "y": 694, "it": "il gomito",    "plural": "i gomiti",    "irregular": false, "tr": { "ru": "локоть · локти",       "uk": "лікоть · лікті",       "en": "elbow · elbows" } },
+    { "n": 5,  "side": "left",  "x": 146, "y": 830, "it": "il polso",     "plural": "i polsi",     "irregular": false, "tr": { "ru": "запястье · запястья",  "uk": "зап'ястя · зап'ястя",  "en": "wrist · wrists" } },
+    { "n": 6,  "side": "right", "x": 360, "y": 546, "it": "il petto",     "plural": null,          "irregular": false, "tr": { "ru": "грудь",                "uk": "груди",                "en": "chest" } },
+    { "n": 7,  "side": "right", "x": 436, "y": 598, "it": "il bicipite",  "plural": "i bicipiti",  "irregular": false, "tr": { "ru": "бицепс · бицепсы",     "uk": "біцепс · біцепси",     "en": "biceps" } },
+    { "n": 8,  "side": "right", "x": 322, "y": 772, "it": "la pancia",    "plural": null,          "irregular": false, "tr": { "ru": "живот",                "uk": "живіт",                "en": "belly" } },
+    { "n": 9,  "side": "right", "x": 496, "y": 852, "it": "la mano",      "plural": "le mani",     "irregular": true,  "tr": { "ru": "кисть · кисти",        "uk": "кисть · кисті",        "en": "hand · hands" } },
+    { "n": 10, "side": "right", "x": 506, "y": 910, "it": "il dito",      "plural": "le dita",     "irregular": true,  "tr": { "ru": "палец · пальцы",       "uk": "палець · пальці",      "en": "finger · fingers" } }
   ]
 }

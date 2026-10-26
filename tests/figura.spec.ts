@@ -4,11 +4,46 @@ import { expect, test, type Page } from "@playwright/test";
 // da lg (didascalie + linee) e sotto lg (numeri + elenco), plurali irregolari, tocco sul numero.
 // Il viso: 12 parti (1–6 a sinistra, 7 la testa … 12 il collo a destra).
 // Il busto e le braccia: 10 parti (1–5 a sinistra, 6 il petto … 10 il dito a destra), subito dopo il viso.
+// Le gambe e i piedi: 7 parti (1–4 a sinistra, 5 la gamba … 7 il dito del piede a destra), dopo il busto.
+// Le tre figure sono finestre della stessa Persona: giunture senza salti (collo, pantaloni).
 
 const PAGINA = "/a2/grammatica/descrivere-una-persona";
 const FIGURE = [
   { id: "viso", titolo: "Il viso", parti: 12, irregolari: [3, 5, 10] }, // il sopracciglio, l'orecchio, il labbro
   { id: "busto", titolo: "Il busto e le braccia", parti: 10, irregolari: [2, 9, 10] }, // il braccio, la mano, il dito
+  { id: "gambe", titolo: "Le gambe e i piedi", parti: 7, irregolari: [2, 7] }, // il ginocchio, il dito del piede
+];
+
+// Larghezza in px di un colore del disegno lungo una riga orizzontale (y in unità della Persona):
+// si percorre la riga e si guarda cosa è dipinto sopra (trasformazioni e finestra comprese).
+const larghezzaColore = (page: Page, id: string, y: number, colore: string) =>
+  page.evaluate(
+    ([id, y, colore]) => {
+      const sezione = document.querySelector(`section[aria-labelledby='figura-${id}']`)!;
+      const disegno = [...sezione.querySelectorAll<SVGSVGElement>("svg[viewBox]")]
+        .filter((s) => s.getBoundingClientRect().width > 0)
+        .sort((a, b) => b.querySelectorAll("*").length - a.querySelectorAll("*").length)[0];
+      disegno.scrollIntoView({ block: "center" });
+      const r = disegno.getBoundingClientRect();
+      const punto = disegno.createSVGPoint();
+      punto.x = 0;
+      punto.y = Number(y);
+      const sy = punto.matrixTransform(disegno.getScreenCTM()!).y;
+      const xs: number[] = [];
+      for (let x = r.left; x <= r.right; x += 0.5) {
+        const el = document.elementFromPoint(x, sy);
+        const fill = el?.closest("svg") === disegno ? (el.getAttribute("fill") ?? el.parentElement?.getAttribute("fill")) : null;
+        if (fill?.toLowerCase() === String(colore).toLowerCase()) xs.push(x);
+      }
+      return xs.length ? Math.max(...xs) - Math.min(...xs) : 0;
+    },
+    [id, y, colore] as const,
+  );
+
+// Giunture: la stessa riga della Persona vista in due finestre (y dentro entrambe le finestre).
+const GIUNTURE = [
+  { sopra: "viso", sotto: "busto", y: 450, colore: "#E9B893", cosa: "collo" }, // viso 90–470, busto 440–940
+  { sopra: "busto", sotto: "gambe", y: 930, colore: "#3E4A61", cosa: "pantaloni / pantaloncini" }, // busto …–940, gambe 925–…
 ];
 
 const apri = async (page: Page, baseURL: string | undefined) => {
@@ -30,7 +65,7 @@ const conIrregolare = (vista: ReturnType<Page["locator"]>, selettore: string, at
 test.describe("desktop 1280", () => {
   test.use({ viewport: { width: 1280, height: 1000 } });
 
-  test("Il viso e Il busto, in quest'ordine, tra Come si forma e Tabelle", async ({ page, baseURL }) => {
+  test("le tre figure, in quest'ordine, tra Come si forma e Tabelle", async ({ page, baseURL }) => {
     await apri(page, baseURL);
     for (const f of FIGURE) await expect(blocco(page, f.id).getByRole("heading", { name: f.titolo })).toBeVisible();
     const ordine = await page.evaluate(() => {
@@ -38,13 +73,15 @@ test.describe("desktop 1280", () => {
       const prima = (a: Node, b: Node) => !!(a.compareDocumentPosition(b) & Node.DOCUMENT_POSITION_FOLLOWING);
       const viso = document.querySelector("section[aria-labelledby='figura-viso']")!;
       const busto = document.querySelector("section[aria-labelledby='figura-busto']")!;
+      const gambe = document.querySelector("section[aria-labelledby='figura-gambe']")!;
       return {
         visoDopoComeSiForma: prima(titolo("come si forma"), viso),
         bustoSubitoDopoViso: viso.nextElementSibling === busto,
-        bustoPrimaDiTabelle: prima(busto, titolo("tabelle")),
+        gambeSubitoDopoBusto: busto.nextElementSibling === gambe,
+        gambePrimaDiTabelle: prima(gambe, titolo("tabelle")),
       };
     });
-    expect(ordine).toEqual({ visoDopoComeSiForma: true, bustoSubitoDopoViso: true, bustoPrimaDiTabelle: true });
+    expect(ordine).toEqual({ visoDopoComeSiForma: true, bustoSubitoDopoViso: true, gambeSubitoDopoBusto: true, gambePrimaDiTabelle: true });
   });
 
   for (const f of FIGURE) {
@@ -74,6 +111,20 @@ for (const larghezza of [1280, 390]) {
     await page.waitForTimeout(300);
     expect(errori).toEqual([]);
   });
+}
+
+for (const larghezza of [1280, 390]) {
+  for (const g of GIUNTURE) {
+    test(`${larghezza}: giuntura ${g.sopra} → ${g.sotto} (${g.cosa}), stessa larghezza ±2px`, async ({ page, baseURL }) => {
+      await page.setViewportSize({ width: larghezza, height: 900 });
+      await apri(page, baseURL);
+      await expect(blocco(page, g.sotto).locator("[data-vista]").first()).toBeAttached();
+      const sopra = await larghezzaColore(page, g.sopra, g.y, g.colore);
+      const sotto = await larghezzaColore(page, g.sotto, g.y, g.colore);
+      expect(sopra).toBeGreaterThan(20);
+      expect(Math.abs(sopra - sotto)).toBeLessThanOrEqual(2);
+    });
+  }
 }
 
 test.describe("mobile 390", () => {

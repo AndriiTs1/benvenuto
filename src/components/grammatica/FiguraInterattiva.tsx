@@ -1,13 +1,13 @@
 "use client";
 
-import { useLayoutEffect, useRef, useState, type ReactNode } from "react";
+import { Fragment, useLayoutEffect, useRef, useState, type ReactNode } from "react";
 import { Tr } from "@/components/Tr";
 import type { Locale } from "@/lib/lingue";
 
 // Figura con le parti (FiguraParti): due viste dello stesso contenuto.
-// Da lg: disegno al centro, didascalie a sinistra e a destra (side), ognuna centrata sull'altezza del suo punto
-//   (spostata solo quanto basta per non sovrapporsi). Linea con gomito: orizzontale dalla didascalia,
-//   poi un tratto breve a 45° fino al punto.
+// Da lg: disegno al centro, didascalie a sinistra e a destra (side): la riga della parola italiana all'altezza
+//   del suo punto (spostata solo quanto basta per non sovrapporsi). Linea con gomito dalla parola:
+//   orizzontale, poi un tratto breve a 45° fino al punto.
 // Sotto lg: disegno tagliato in basso (viewBoxMobile), alto al massimo 45svh; numeri in due colonne fuori dal
 //   disegno, con la stessa linea a gomito (i numeri non coprono la figura); sotto, elenco in 2 colonne.
 //   Tocco su numero o riga → stessa voce evidenziata; dal numero, la riga fuori schermo scorre in vista.
@@ -30,20 +30,26 @@ const SPAZIO = 4; // px tra due didascalie (lg)
 const STACCO = 6; // px tra colonna e inizio della linea (lg)
 const NUMERO = 20; // px: diametro dei numeri (sotto lg)
 const SPAZIO_NUMERI = 4; // px tra due numeri dello stesso lato
+/** Da lg: larghezza della colonna del disegno per la figura più larga della pagina (le altre in proporzione).
+ *  Con la colonna del corso (47rem) lascia 2 × 154px alle didascalie: le più lunghe stanno su una riga
+ *  («палец ноги · пальцы ног», «щиколотка · щиколотки», «le dita del piede !»). */
+const COLONNA = "22.25rem";
 const BORDO = 4; // px tra numero e bordo del disegno (i numeri stanno fuori dal disegno)
 
 const leggiViewBox = (v: string) => v.trim().split(/\s+/).map(Number) as [number, number, number, number];
 
 /**
- * Posizioni (centri) di elementi in colonna: ognuno il più vicino possibile al suo centro desiderato,
- * nell'ordine dato, senza sovrapporsi, dentro [min, max]. Gli elementi che si toccano formano un gruppo
- * centrato sulla media dei desideri: lo spostamento si divide tra tutti, non si accumula sull'ultimo.
+ * Posizioni di elementi in colonna: ognuno con il suo punto d'aggancio (centro) il più vicino possibile
+ * a quello desiderato, nell'ordine dato, senza sovrapporsi, dentro [min, max]. su / giu: quanto l'elemento
+ * si estende sopra e sotto l'aggancio (didascalia: la riga della parola italiana; numero: il centro).
+ * Gli elementi che si toccano formano un gruppo centrato sulla media dei desideri: lo spostamento si
+ * divide tra tutti, non si accumula sull'ultimo.
  */
-function disponi(voci: { centro: number; h: number }[], spazio: number, min: number, max: number): number[] {
+function disponi(voci: { centro: number; su: number; giu: number }[], spazio: number, min: number, max: number): number[] {
   type Gruppo = { da: number; a: number; base: number; off: number[] };
   const gruppi: Gruppo[] = [];
-  const alto = (g: Gruppo) => g.base + g.off[0] - voci[g.da].h / 2;
-  const basso = (g: Gruppo) => g.base + g.off[g.off.length - 1] + voci[g.a].h / 2;
+  const alto = (g: Gruppo) => g.base + g.off[0] - voci[g.da].su;
+  const basso = (g: Gruppo) => g.base + g.off[g.off.length - 1] + voci[g.a].giu;
   const sistema = (g: Gruppo) => {
     g.base = g.off.reduce((s, o, k) => s + voci[g.da + k].centro - o, 0) / g.off.length;
     g.base += Math.max(0, min - alto(g));
@@ -54,7 +60,7 @@ function disponi(voci: { centro: number; h: number }[], spazio: number, min: num
     sistema(g);
     for (let p = gruppi.at(-1); p && basso(p) + spazio > alto(g); p = gruppi.at(-1)) {
       gruppi.pop();
-      const passo = p.off[p.off.length - 1] + voci[p.a].h / 2 + spazio + voci[g.da].h / 2;
+      const passo = p.off[p.off.length - 1] + voci[p.a].giu + spazio + voci[g.da].su;
       g = { da: p.da, a: g.a, base: 0, off: [...p.off, ...g.off.map((o) => o + passo)] };
       sistema(g);
     }
@@ -71,17 +77,35 @@ function gomito(x1: number, y1: number, px: number, py: number) {
   return `${x1},${y1} ${xg},${y1} ${px},${py}`;
 }
 
+// Frasi italiane (articolo + parola, "il dito del piede"): mai spezzate, spazi non divisibili.
+const intero = (testo: string) => testo.replace(/ /g, "\u00A0");
+
+// Traduzione: va a capo solo dopo " · " ("палец ноги · / пальцы ног"), mai dentro una parola o una frase.
+function Traduzione({ testo }: { testo: string }) {
+  const pezzi = testo.split(" · ");
+  return pezzi.map((pezzo, i) => (
+    <Fragment key={i}>
+      {i > 0 && " "}
+      <span className="whitespace-nowrap">
+        {pezzo}
+        {i < pezzi.length - 1 && " ·"}
+      </span>
+    </Fragment>
+  ));
+}
+
+// Plurale: sempre su una riga sua, sotto la parola; grigio se regolare, blu con "!" se irregolare.
 function Plurale({ parte }: { parte: Parte }) {
   if (!parte.plural) return null;
   return parte.irregular ? (
     <span lang="it" className="font-medium text-accent">
-      {parte.plural}
-      <span aria-hidden="true"> !</span>
+      {intero(parte.plural)}
+      <span aria-hidden="true">{"\u00A0!"}</span>
       <span className="sr-only"> (plurale irregolare)</span>
     </span>
   ) : (
     <span lang="it" className="text-label-2">
-      {parte.plural}
+      {intero(parte.plural)}
     </span>
   );
 }
@@ -121,6 +145,7 @@ export function FiguraInterattiva({
   titolo,
   viewBox,
   viewBoxMobile,
+  scala,
   parti,
   locale,
   disegno,
@@ -130,6 +155,8 @@ export function FiguraInterattiva({
   viewBox: string;
   /** Sotto lg: stesso viewBox tagliato in basso. */
   viewBoxMobile: string;
+  /** Stessa scala per tutte le figure della pagina: larghezza massima (unità) e altezza massima sotto lg. */
+  scala: { larghezza: number; altezzaMobile: number };
   parti: Parte[];
   locale: Locale;
   /** Il disegno intero (da lg) e quello tagliato (sotto lg): svg che riempiono il contenitore. */
@@ -160,7 +187,7 @@ export function FiguraInterattiva({
     const fuori = (BORDO + NUMERO / 2) / scalaMobile;
     const cx = sx ? vx - fuori : vx + vw + fuori;
     const centri = disponi(
-      voci.map((p) => ({ centro: p.y, h: 2 * r })),
+      voci.map((p) => ({ centro: p.y, su: r, giu: r })),
       SPAZIO_NUMERI / scalaMobile,
       vy,
       vy + vhM,
@@ -194,14 +221,21 @@ export function FiguraInterattiva({
       for (const colonna of box.querySelectorAll<HTMLElement>("[data-colonna]")) {
         const sx = colonna.dataset.colonna === "left";
         const rc = colonna.getBoundingClientRect();
+        // Aggancio della linea: il centro della riga con la parola italiana (non il centro della didascalia):
+        // la linea indica la parola e il resto (plurale, traduzione) scende sotto. Così una didascalia spinta
+        // in basso non fa passare la sua linea sotto il punto di quella successiva (niente incroci).
         const voci = [...colonna.querySelectorAll<HTMLElement>("[data-n]")].map((el) => {
           const parte = parti.find((p) => p.n === Number(el.dataset.n))!;
-          return { parte, h: el.getBoundingClientRect().height, centro: rf.top - rc.top + (parte.y - vy) * scala };
+          const re = el.getBoundingClientRect();
+          const rp = el.querySelector("[data-parola]")!.getBoundingClientRect();
+          const su = rp.top + rp.height / 2 - re.top;
+          return { parte, su, giu: re.height - su, centro: rf.top - rc.top + (parte.y - vy) * scala };
         });
-        const centri = disponi(voci, SPAZIO, 0, rf.bottom - rc.top);
+        // In alto non oltre il disegno; in basso possono scendere sotto (punti vicini al bordo: dita del piede).
+        const centri = disponi(voci, SPAZIO, 0, Infinity);
         voci.forEach((v, i) => {
-          const alto = centri[i] - v.h / 2;
-          const prima = i === 0 ? 0 : centri[i - 1] + voci[i - 1].h / 2;
+          const alto = centri[i] - v.su;
+          const prima = i === 0 ? 0 : centri[i - 1] + voci[i - 1].giu;
           margini[v.parte.n] = alto - prima;
           const x1 = (sx ? rc.right + STACCO : rc.left - STACCO) - rb.left;
           const y1 = rc.top - rb.top + centri[i];
@@ -238,22 +272,16 @@ export function FiguraInterattiva({
     <div data-colonna={lato} className={`flex flex-col ${schema ? "" : "justify-around"} ${lato === "left" ? "text-right" : "text-left"}`}>
       {voci.map((p) => (
         <div key={p.n} data-n={p.n} style={schema ? { marginTop: schema.margini[p.n] } : undefined}>
-          <p lang="it" className="text-[15px] leading-[1.25] font-semibold">
-            {p.it}
-            {p.plural && !p.irregular && (
-              <span className="text-[13px] font-normal text-label-2">
-                {" · "}
-                {p.plural}
-              </span>
-            )}
+          <p data-parola lang="it" className="text-[15px] leading-[1.25] font-semibold">
+            {intero(p.it)}
           </p>
-          {p.irregular && (
+          {p.plural && (
             <p className="text-[13px] leading-[1.25]">
               <Plurale parte={p} />
             </p>
           )}
           <Tr locale={locale} className="block text-[13px] leading-[1.25]">
-            {p.tr}
+            <Traduzione testo={p.tr} />
           </Tr>
         </div>
       ))}
@@ -266,7 +294,9 @@ export function FiguraInterattiva({
       <div
         ref={contenitore}
         data-vista="desktop"
-        className="relative hidden lg:grid lg:grid-cols-[minmax(0,1fr)_minmax(0,22rem)_minmax(0,1fr)] lg:gap-x-3"
+        className="relative hidden lg:grid lg:gap-x-2"
+        // Colonna del disegno: COLONNA per la figura più larga, in proporzione per le altre (stessa scala).
+        style={{ gridTemplateColumns: `minmax(0,1fr) minmax(0, calc(${COLONNA} * ${vw} / ${scala.larghezza})) minmax(0,1fr)` }}
       >
         {colonna("left", lati[0])}
         <div ref={figura} className="w-full" style={{ aspectRatio: `${vw} / ${vh}` }}>
@@ -282,7 +312,12 @@ export function FiguraInterattiva({
           ref={figuraMobile}
           className="relative mx-auto"
           // Larghezza: lascia ai lati lo spazio delle due colonne di numeri (BORDO + NUMERO per lato).
-          style={{ width: `min(calc(100% - ${2 * (BORDO + NUMERO)}px), calc(45svh * ${vw} / ${vhM}))`, aspectRatio: `${vw} / ${vhM}` }}
+          // Stessa scala per tutte le figure: px per unità = il minimo tra la larghezza disponibile per la
+          // figura più larga e 45svh per la più alta; poi × la larghezza di questa figura.
+          style={{
+            width: `calc(min((100% - ${2 * (BORDO + NUMERO)}px) / ${scala.larghezza}, 45svh / ${scala.altezzaMobile}) * ${vw})`,
+            aspectRatio: `${vw} / ${vhM}`,
+          }}
         >
           {disegnoMobile}
           <Linee linee={numeri.map((x) => x.linea)} raggio={2.5 / scalaMobile} viewBox={viewBoxMobile} />
@@ -333,7 +368,7 @@ export function FiguraInterattiva({
                 </span>
                 <span className="min-w-0">
                   <span lang="it" className="block text-[15px] leading-[1.3] font-medium">
-                    {p.it}
+                    {intero(p.it)}
                   </span>
                   {p.plural && (
                     <span className="block text-[13px] leading-[1.3]">
@@ -341,7 +376,7 @@ export function FiguraInterattiva({
                     </span>
                   )}
                   <Tr locale={locale} className="block text-[13px] leading-[1.3]">
-                    {p.tr}
+                    <Traduzione testo={p.tr} />
                   </Tr>
                 </span>
               </button>
