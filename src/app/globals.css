@@ -29,6 +29,7 @@
   --shadow-tempo-passato: 0 8px 24px color-mix(in srgb, var(--tempo-passato) 22%, transparent);
   --shadow-tempo-imperfetto: 0 8px 24px color-mix(in srgb, var(--tempo-imperfetto) 22%, transparent);
   --shadow-tempo-futuro: 0 8px 24px color-mix(in srgb, var(--tempo-futuro) 22%, transparent);
+  --shadow-modo-condizionale: 0 8px 24px color-mix(in srgb, var(--modo-condizionale) 22%, transparent);
   /* Blu principale: pulsanti principali (capsula) e scheda del corso in /livello.
      Testo sul blu = --bg: bianco 6.95:1, nel tema scuro nero 8.63:1. */
   --primario: var(--tempo-presente);
@@ -43,6 +44,10 @@
   --tempo-passato-soft: color-mix(in srgb, var(--tempo-passato) 18%, var(--card));
   --tempo-imperfetto-soft: color-mix(in srgb, var(--tempo-imperfetto) 18%, var(--card));
   --tempo-futuro-soft: color-mix(in srgb, var(--tempo-futuro) 18%, var(--card));
+  /* Modi verbali (unità con "modo" in meta.json): come i tempi. Condizionale rosa: sul -soft 4.96:1,
+     icona bianca 6.67:1 (stesso calcolo: futuro 4.49 / 5.88, passato 4.63 / 6.07). */
+  --modo-condizionale: #A8266A;
+  --modo-condizionale-soft: color-mix(in srgb, var(--modo-condizionale) 18%, var(--card));
   /* Sezioni (numeri in /livello, parole colorate della schermata iniziale): colore + -soft opaco (12% sulla scheda).
      Cifra sul proprio -soft: 5.75 / 5.30 / 5.00:1; label-2 ≥ 5.3:1. */
   --sezione-grammatica: var(--tempo-presente);
@@ -95,6 +100,9 @@
     --tempo-passato-soft: color-mix(in srgb, var(--tempo-passato) 16%, var(--card));
     --tempo-imperfetto-soft: color-mix(in srgb, var(--tempo-imperfetto) 16%, var(--card));
     --tempo-futuro-soft: color-mix(in srgb, var(--tempo-futuro) 16%, var(--card));
+    /* Condizionale: sul -soft 5.86:1, icona nera 9.76:1 (presente 5.28 / 8.63). */
+    --modo-condizionale: #FF8CC0;
+    --modo-condizionale-soft: color-mix(in srgb, var(--modo-condizionale) 16%, var(--card));
     /* Numeri del corso: -soft 18%; cifra 5.09 / 5.12 / 6.72:1, label-2 ≥ 5.1:1. */
     --sezione-parole: #FF7AA8;
     --sezione-esercizi: #F5C04A;

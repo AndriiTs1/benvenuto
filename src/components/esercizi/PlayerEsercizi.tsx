@@ -155,11 +155,12 @@ function Giro({
 
       {voce ? (
         <div key={`${voce.id}-${pos}`} className="space-y-4">
-          <Tr locale={istruzioni[voce.type].lingua} as="p" size="sm" className="block">
-            {istruzioni[voce.type].testo}
+          {/* Consegna della voce (task) o quella generale del tipo. */}
+          <Tr locale={(voce.task ?? istruzioni[voce.type]).lingua} as="p" size="sm" className="block">
+            {(voce.task ?? istruzioni[voce.type]).testo}
           </Tr>
 
-          <Frase voce={voce} esito={esito} />
+          {voce.type === "choice" && voce.situation ? <Situazione situazione={voce.situation} /> : <Frase voce={voce} esito={esito} />}
 
           {voce.type === "fill" ? (
             <form onSubmit={verificaFill} className="space-y-3">
@@ -260,6 +261,17 @@ function Giro({
         />
       )}
     </div>
+  );
+}
+
+// Situazione (voci choice con situation): testo nella lingua delle spiegazioni, si sceglie cosa dire.
+function Situazione({ situazione }: { situazione: { testo: string; lingua: VoceEsercizio["lingua"] } }) {
+  return (
+    <Tr locale={situazione.lingua} as="p" className="block rounded-2xl bg-card p-4 text-[19px] leading-snug font-medium outline-none md:text-[20px]">
+      <span id="esercizio-frase" tabIndex={-1} className="outline-none">
+        {situazione.testo}
+      </span>
+    </Tr>
   );
 }
 

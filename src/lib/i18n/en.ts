@@ -7,4 +7,5 @@ export const en: Dizionario = {
   },
   paroleChiaveNota: "Words from this topic with translation and example",
   soloInRusso: "This explanation is currently available in Russian only. English version coming soon.",
+  modiVerbali: "Verb moods",
 };

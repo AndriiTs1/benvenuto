@@ -6447,6 +6447,14 @@
       "w542"
      ]
     }
+   ],
+   "links": [
+    {
+     "at": "end",
+     "it": "La stessa base → Il condizionale",
+     "tr": "Та же основа → условное наклонение",
+     "topic": "g5-condizionale-forme"
+    }
    ]
   },
   "g5-meteo": {
@@ -7027,6 +7035,708 @@
      ]
     }
    ]
+  },
+  "g5-condizionale-forme": {
+   "id": "g5-condizionale-forme",
+   "inBreve": [
+    "{{Condizionale}} — это русское **«бы»**: я бы работал, ты бы мог, мне бы хотелось.",
+    "Это не время, а **наклонение** ({{modo}}). В нём два времени:",
+    "**{{condizionale presente}}** (в учебнике: {{semplice}}) — «бы» сейчас или в будущем",
+    "**{{condizionale passato}}** (в учебнике: {{composto}}) — «бы» в прошлом",
+    "{{Io, al tuo posto,}} **{{lavorerei}}** {{meno.}} — Я бы на твоём месте работал меньше.",
+    "{{Io, al tuo posto,}} **{{avrei lavorato}}** {{meno.}} — Я бы на твоём месте работал меньше (тогда).",
+    "На A2 учим **{{condizionale presente}}**. {{Passato}} — только знать, что он есть."
+   ],
+   "formation": {
+    "formula": {
+     "parts": [
+      {
+       "tr": "основа {{futuro}}"
+      },
+      "-ei / -esti / -ebbe / -emmo / -este / -ebbero"
+     ],
+     "examples": [
+      {
+       "parts": [
+        "lavorer",
+        "ei"
+       ],
+       "it": "lavorare → lavorerei",
+       "tr": "я бы работал"
+      },
+      {
+       "parts": [
+        "metter",
+        "ei"
+       ],
+       "it": "mettere → metterei",
+       "tr": "я бы положил"
+      },
+      {
+       "parts": [
+        "partir",
+        "ei"
+       ],
+       "it": "partire → partirei",
+       "tr": "я бы уехал"
+      }
+     ]
+    },
+    "steps": [
+     "Берём инфинитив и убираем последнюю **{{-e}}**: {{lavorar(e)}}, {{metter(e)}}, {{partir(e)}}",
+     "У глаголов на **{{-are}}**: **{{a → e}}** → {{lavor}}**{{e}}**{{r-}}",
+     "Добавляем окончание: {{lavorer}}**{{ei}}**"
+    ],
+    "note": "**Подсказка:** это та же основа, что у {{futuro}}. {{lavorare → lavorerò}} ({{futuro}}) → {{lavorerei}} ({{condizionale}})"
+   },
+   "tables": [
+    {
+     "title": "{{Tabella · verbi regolari}}",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "lavorare",
+       "mettere",
+       "partire"
+      ],
+      [
+       "io",
+       "lavorer|ei",
+       "metter|ei",
+       "partir|ei"
+      ],
+      [
+       "tu",
+       "lavorer|esti",
+       "metter|esti",
+       "partir|esti"
+      ],
+      [
+       "lui/lei/Lei",
+       "lavorer|ebbe",
+       "metter|ebbe",
+       "partir|ebbe"
+      ],
+      [
+       "noi",
+       "lavorer|emmo",
+       "metter|emmo",
+       "partir|emmo"
+      ],
+      [
+       "voi",
+       "lavorer|este",
+       "metter|este",
+       "partir|este"
+      ],
+      [
+       "loro",
+       "lavorer|ebbero",
+       "metter|ebbero",
+       "partir|ebbero"
+      ]
+     ],
+     "note": "Окончания **одинаковые для всех трёх групп** ({{-are}}, {{-ere}}, {{-ire}})."
+    },
+    {
+     "title": "Орфография: {{-care / -gare}} и {{-ciare / -giare}}",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "pagare",
+       "cominciare"
+      ],
+      [
+       "io",
+       "pagher|ei",
+       "comincer|ei"
+      ],
+      [
+       "tu",
+       "pagher|esti",
+       "comincer|esti"
+      ],
+      [
+       "lui/lei",
+       "pagher|ebbe",
+       "comincer|ebbe"
+      ],
+      [
+       "noi",
+       "pagher|emmo",
+       "comincer|emmo"
+      ],
+      [
+       "voi",
+       "pagher|este",
+       "comincer|este"
+      ],
+      [
+       "loro",
+       "pagher|ebbero",
+       "comincer|ebbero"
+      ]
+     ],
+     "note": "**{{-care, -gare}}** → добавляем **h** во всех лицах (чтобы сохранить звук «к», «г»). **{{-ciare, -giare}}** → теряют **i** во всех лицах. Ещё примеры: {{cercare → cercherei}} · {{mangiare → mangerei}}"
+    },
+    {
+     "title": "{{Forme irregolari}} · Особые: {{essere}}, {{dare}}, {{fare}}, {{stare}}",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "essere",
+       "dare"
+      ],
+      [
+       "io",
+       "sar|ei",
+       "dar|ei"
+      ],
+      [
+       "tu",
+       "sar|esti",
+       "dar|esti"
+      ],
+      [
+       "lui/lei",
+       "sar|ebbe",
+       "dar|ebbe"
+      ],
+      [
+       "noi",
+       "sar|emmo",
+       "dar|emmo"
+      ],
+      [
+       "voi",
+       "sar|este",
+       "dar|este"
+      ],
+      [
+       "loro",
+       "sar|ebbero",
+       "dar|ebbero"
+      ]
+     ],
+     "note": "**Правило:** все глаголы, неправильные в {{futuro}}, так же неправильные в {{condizionale}}. {{essere → sarò → sarei}}. Окончания при этом обычные. Внимание: у {{dare}}, {{fare}}, {{stare}} **a остаётся** ({{darei}}, не «{{derei}}»)."
+    },
+    {
+     "title": "{{Forme irregolari}} · Особые: {{essere}}, {{dare}}, {{fare}}, {{stare}}",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "fare",
+       "stare"
+      ],
+      [
+       "io",
+       "far|ei",
+       "star|ei"
+      ],
+      [
+       "tu",
+       "far|esti",
+       "star|esti"
+      ],
+      [
+       "lui/lei",
+       "far|ebbe",
+       "star|ebbe"
+      ],
+      [
+       "noi",
+       "far|emmo",
+       "star|emmo"
+      ],
+      [
+       "voi",
+       "far|este",
+       "star|este"
+      ],
+      [
+       "loro",
+       "far|ebbero",
+       "star|ebbero"
+      ]
+     ]
+    },
+    {
+     "title": "{{Gruppo 1}} — выпадает гласная перед {{-re}}",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "andare",
+       "avere",
+       "potere"
+      ],
+      [
+       "io",
+       "andr|ei",
+       "avr|ei",
+       "potr|ei"
+      ],
+      [
+       "tu",
+       "andr|esti",
+       "avr|esti",
+       "potr|esti"
+      ],
+      [
+       "lui/lei",
+       "andr|ebbe",
+       "avr|ebbe",
+       "potr|ebbe"
+      ],
+      [
+       "noi",
+       "andr|emmo",
+       "avr|emmo",
+       "potr|emmo"
+      ],
+      [
+       "voi",
+       "andr|este",
+       "avr|este",
+       "potr|este"
+      ],
+      [
+       "loro",
+       "andr|ebbero",
+       "avr|ebbero",
+       "potr|ebbero"
+      ]
+     ],
+     "note": "{{andare → andrei}} · {{avere → avrei}} · {{potere → potrei}} · {{dovere → dovrei}} · {{sapere → saprei}} · {{vedere → vedrei}} · {{cadere → cadrei}} · {{vivere → vivrei}}"
+    },
+    {
+     "title": "{{Gruppo 1}} — выпадает гласная перед {{-re}}",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "dovere",
+       "sapere"
+      ],
+      [
+       "io",
+       "dovr|ei",
+       "sapr|ei"
+      ],
+      [
+       "tu",
+       "dovr|esti",
+       "sapr|esti"
+      ],
+      [
+       "lui/lei",
+       "dovr|ebbe",
+       "sapr|ebbe"
+      ],
+      [
+       "noi",
+       "dovr|emmo",
+       "sapr|emmo"
+      ],
+      [
+       "voi",
+       "dovr|este",
+       "sapr|este"
+      ],
+      [
+       "loro",
+       "dovr|ebbero",
+       "sapr|ebbero"
+      ]
+     ]
+    },
+    {
+     "title": "{{Gruppo 1}} — выпадает гласная перед {{-re}}",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "vedere",
+       "cadere",
+       "vivere"
+      ],
+      [
+       "io",
+       "vedr|ei",
+       "cadr|ei",
+       "vivr|ei"
+      ],
+      [
+       "tu",
+       "vedr|esti",
+       "cadr|esti",
+       "vivr|esti"
+      ],
+      [
+       "lui/lei",
+       "vedr|ebbe",
+       "cadr|ebbe",
+       "vivr|ebbe"
+      ],
+      [
+       "noi",
+       "vedr|emmo",
+       "cadr|emmo",
+       "vivr|emmo"
+      ],
+      [
+       "voi",
+       "vedr|este",
+       "cadr|este",
+       "vivr|este"
+      ],
+      [
+       "loro",
+       "vedr|ebbero",
+       "cadr|ebbero",
+       "vivr|ebbero"
+      ]
+     ]
+    },
+    {
+     "title": "{{Gruppo 2}} — двойная {{rr}}",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "venire",
+       "rimanere",
+       "tenere"
+      ],
+      [
+       "io",
+       "verr|ei",
+       "rimarr|ei",
+       "terr|ei"
+      ],
+      [
+       "tu",
+       "verr|esti",
+       "rimarr|esti",
+       "terr|esti"
+      ],
+      [
+       "lui/lei",
+       "verr|ebbe",
+       "rimarr|ebbe",
+       "terr|ebbe"
+      ],
+      [
+       "noi",
+       "verr|emmo",
+       "rimarr|emmo",
+       "terr|emmo"
+      ],
+      [
+       "voi",
+       "verr|este",
+       "rimarr|este",
+       "terr|este"
+      ],
+      [
+       "loro",
+       "verr|ebbero",
+       "rimarr|ebbero",
+       "terr|ebbero"
+      ]
+     ],
+     "note": "{{venire → verrei}} · {{rimanere → rimarrei}} · {{tenere → terrei}} · {{volere → vorrei}} · {{bere → berrei}}"
+    },
+    {
+     "title": "{{Gruppo 2}} — двойная {{rr}}",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "volere",
+       "bere"
+      ],
+      [
+       "io",
+       "vorr|ei",
+       "berr|ei"
+      ],
+      [
+       "tu",
+       "vorr|esti",
+       "berr|esti"
+      ],
+      [
+       "lui/lei",
+       "vorr|ebbe",
+       "berr|ebbe"
+      ],
+      [
+       "noi",
+       "vorr|emmo",
+       "berr|emmo"
+      ],
+      [
+       "voi",
+       "vorr|este",
+       "berr|este"
+      ],
+      [
+       "loro",
+       "vorr|ebbero",
+       "berr|ebbero"
+      ]
+     ]
+    },
+    {
+     "title": "Ударение (произношение)",
+     "header": false,
+     "rows": [
+      [
+       "io",
+       "lavorerèi"
+      ],
+      [
+       "tu",
+       "lavorerésti"
+      ],
+      [
+       "lui/lei",
+       "lavorerèbbe"
+      ],
+      [
+       "noi",
+       "lavorerémmo"
+      ],
+      [
+       "voi",
+       "lavoreréste"
+      ],
+      [
+       "loro",
+       "lavorerèbbero"
+      ]
+     ]
+    }
+   ],
+   "uses": [],
+   "exceptions": [],
+   "mistakes": [
+    {
+     "wrong": "noi lavoreremo",
+     "right": "noi lavoreremmo",
+     "why": "{{-emo}} = {{futuro}} (будем), **{{-emmo}}** = {{condizionale}} (бы)"
+    },
+    {
+     "wrong": "io lavorarei",
+     "right": "io lavorerei",
+     "why": "у {{-are}}: {{a → e}}"
+    },
+    {
+     "wrong": "io ferei / derei",
+     "right": "io farei / darei",
+     "why": "{{dare}}, {{fare}}, {{stare}} сохраняют {{a}}"
+    },
+    {
+     "wrong": "io pagerei",
+     "right": "io pagherei",
+     "why": "{{-gare/-care}}: добавляем {{h}}"
+    },
+    {
+     "wrong": "io mangierei",
+     "right": "io mangerei",
+     "why": "{{-giare/-ciare}}: {{i}} выпадает"
+    },
+    {
+     "wrong": "io venirei / volerei",
+     "right": "io verrei / vorrei",
+     "why": "{{gruppo 2}}: двойная {{rr}}"
+    }
+   ],
+   "examples": [],
+   "links": [
+    {
+     "at": "start",
+     "it": "Stessa base del futuro → Il futuro",
+     "tr": "Та же основа, что у будущего времени",
+     "topic": "g5-futuro-semplice"
+    }
+   ]
+  },
+  "g5-condizionale-uso": {
+   "id": "g5-condizionale-uso",
+   "inBreve": [
+    "{{Condizionale presente}} используем в трёх случаях:",
+    "1. дать **совет** или сказать **мнение** мягче, не так прямо",
+    "2. **вежливо попросить**",
+    "3. выразить **желание** сейчас или в будущем"
+   ],
+   "formation": {
+    "steps": []
+   },
+   "tables": [
+    {
+     "type": "pairs",
+     "title": "1. {{Dare consigli}} {{o esprimere opinioni}} {{in modo meno diretto}} · Совет или мнение — мягче",
+     "sep": "",
+     "items": [
+      {
+       "a": "Fabio, dovresti cambiare lavoro.",
+       "tr": "Фабио, тебе стоило бы сменить работу."
+      },
+      {
+       "a": "Daniela, al posto tuo io andrei da uno specialista.",
+       "tr": "Даниэла, на твоём месте я бы сходил к специалисту."
+      },
+      {
+       "a": "Mi sembrerebbe più giusto dirlo anche a tuo padre.",
+       "tr": "Мне казалось бы правильнее сказать это и твоему отцу."
+      }
+     ]
+    },
+    {
+     "type": "pairs",
+     "title": "Полезные формулы",
+     "sep": "",
+     "items": [
+      {
+       "a": "dovresti + infinito",
+       "tr": "тебе стоило бы…"
+      },
+      {
+       "a": "al posto tuo io + condizionale",
+       "tr": "на твоём месте я бы…"
+      },
+      {
+       "a": "mi sembrerebbe / secondo me sarebbe meglio…",
+       "tr": "мне кажется, было бы лучше…"
+      }
+     ]
+    },
+    {
+     "type": "pairs",
+     "title": "Сравни",
+     "sep": "",
+     "items": [
+      {
+       "a": "Devi cambiare lavoro.",
+       "tr": "Ты должен сменить работу. (прямо, жёстко)"
+      },
+      {
+       "a": "Dovresti cambiare lavoro.",
+       "tr": "Тебе стоило бы сменить работу. (мягко, совет)"
+      }
+     ]
+    },
+    {
+     "type": "pairs",
+     "title": "2. {{Chiedere qualcosa}} {{in modo gentile}} · Вежливая просьба",
+     "sep": "",
+     "items": [
+      {
+       "a": "Mi daresti un altro foglio, per favore?",
+       "tr": "Ты не дашь мне ещё один лист, пожалуйста?"
+      },
+      {
+       "a": "Potresti aiutarmi ad apparecchiare la tavola?",
+       "tr": "Не мог бы ты помочь мне накрыть на стол?"
+      }
+     ]
+    },
+    {
+     "type": "pairs",
+     "title": "Полезные формулы",
+     "sep": "",
+     "items": [
+      {
+       "a": "Potresti / Potrebbe + infinito?",
+       "tr": "Не мог бы ты / Не могли бы Вы…?"
+      },
+      {
+       "a": "Mi daresti / Mi darebbe…?",
+       "tr": "Не дашь мне / Не дадите мне…?"
+      },
+      {
+       "a": "Vorrei + nome / infinito",
+       "tr": "Я бы хотел…"
+      }
+     ]
+    },
+    {
+     "type": "pairs",
+     "title": "Сравни",
+     "sep": "",
+     "items": [
+      {
+       "a": "Dammi un foglio!",
+       "tr": "Дай мне лист! (приказ)"
+      },
+      {
+       "a": "Mi daresti un foglio?",
+       "tr": "Не дашь мне лист? (вежливо)"
+      }
+     ]
+    },
+    {
+     "type": "pairs",
+     "title": "3. {{Esprimere desideri}} {{nel presente}} {{o nel futuro}} · Желание сейчас или в будущем",
+     "sep": "",
+     "items": [
+      {
+       "a": "Mi piacerebbe studiare canto.",
+       "tr": "Мне бы хотелось учиться пению."
+      },
+      {
+       "a": "L'estate prossima verrei volentieri in vacanza.",
+       "tr": "Следующим летом я бы с удовольствием поехал в отпуск."
+      }
+     ]
+    },
+    {
+     "type": "pairs",
+     "title": "Полезные формулы",
+     "sep": "",
+     "items": [
+      {
+       "a": "Mi piacerebbe + infinito",
+       "tr": "мне бы хотелось…"
+      },
+      {
+       "a": "Vorrei + infinito / nome",
+       "tr": "я бы хотел…"
+      },
+      {
+       "a": "… volentieri",
+       "tr": "с удовольствием"
+      }
+     ],
+     "note": "Внимание: {{piacerebbe}} как {{piace}} — согласуется с тем, что нравится: {{Mi piacerebbe}} **{{un viaggio.}}** → {{Mi piacerebbe}}**{{ro}}** **{{due settimane}}** {{di vacanza.}}"
+    }
+   ],
+   "uses": [],
+   "exceptions": [],
+   "mistakes": [
+    {
+     "wrong": "Io piacerei studiare.",
+     "right": "Mi piacerebbe studiare.",
+     "why": "{{piacere}} работает как «мне нравится»"
+    },
+    {
+     "wrong": "Voglio un caffè.",
+     "right": "Vorrei un caffè.",
+     "why": "вежливая форма"
+    },
+    {
+     "wrong": "Mi dai un foglio?",
+     "right": "Mi darebbe un foglio?",
+     "why": "с {{Lei}} — 3-е лицо"
+    }
+   ],
+   "examples": []
   }
  }
 }

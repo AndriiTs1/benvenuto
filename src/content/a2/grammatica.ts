@@ -4,13 +4,13 @@ import { getContent, isVisibile } from "@/content/a2";
 import { getParole, type ParolaVista } from "@/content/a2/vocabolario";
 import meta from "@/content/a2/meta.json";
 import { DEFAULT_LOCALE, type Locale } from "@/lib/lingue";
-import { isTempo, type Tempo } from "@/lib/tempi";
+import { isModo, isTempo, type ColoreUnita, type Modo, type Tempo } from "@/lib/tempi";
 
 // Percorso di grammatica A2: ordine da curriculum.json, nomi e sottotitoli da meta.json
 // (uguale per tutte le lingue). Il campo title di grammar.json non si usa nell'interfaccia.
 
 type Sottotitolo = Record<Locale, string>;
-type MetaUnita = { number: number; title: string; subtitle: Partial<Sottotitolo>; tempo?: string };
+type MetaUnita = { number: number; title: string; subtitle: Partial<Sottotitolo>; tempo?: string; modo?: string };
 type MetaArgomento = { slug: string; title: string; subtitle: Partial<Sottotitolo> };
 
 const UNITA_META = meta.units as Record<string, MetaUnita>;
@@ -26,8 +26,10 @@ export type ArgomentoPercorso = {
   title: string;
   subtitle: string;
   unita: number;
-  /** Tempo verbale dell'unità (meta.json → units[].tempo); null = unità secondaria. */
+  /** Tempo verbale dell'unità (meta.json → units[].tempo); null = non è un tempo. */
   tempo: Tempo | null;
+  /** Colore dell'unità: il tempo o il modo verbale (units[].modo); null = unità secondaria. */
+  colore: ColoreUnita | null;
   /** Posizione nell'unità (da 1) e numero di argomenti dell'unità. */
   indice: number;
   totaleUnita: number;
@@ -39,6 +41,9 @@ export type UnitaPercorso = {
   title: string;
   subtitle: string;
   tempo: Tempo | null;
+  /** Modo verbale dell'unità (meta.json → units[].modo): sezione «I modi verbali». */
+  modo: Modo | null;
+  colore: ColoreUnita | null;
   argomenti: ArgomentoPercorso[];
 };
 
@@ -49,12 +54,16 @@ export async function getPercorso(locale: Locale) {
   const unita: UnitaPercorso[] = curriculum.units.map((u) => {
     const m = UNITA_META[u.id];
     const tempo = isTempo(m.tempo) ? m.tempo : null;
+    const modo = isModo(m.modo) ? m.modo : null;
+    const colore = tempo ?? modo;
     return {
       id: u.id,
       number: m.number,
       title: m.title,
       subtitle: sottotitolo(m.subtitle, locale),
       tempo,
+      modo,
+      colore,
       argomenti: u.topics.map((id, i) => {
         const t = ARGOMENTI_META[id];
         return {
@@ -64,6 +73,7 @@ export async function getPercorso(locale: Locale) {
           subtitle: sottotitolo(t.subtitle, locale),
           unita: m.number,
           tempo,
+          colore,
           indice: i + 1,
           totaleUnita: u.topics.length,
         };

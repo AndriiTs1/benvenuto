@@ -4,11 +4,11 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 import { IconCheck } from "@/components/lezione/ui";
 import { useProgress } from "@/lib/progress";
-import { STILE_TEMPO, type Tempo } from "@/lib/tempi";
+import { STILE_TEMPO, type ColoreUnita } from "@/lib/tempi";
 
 const FOCUS = "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent";
 
-// Scheda di un tempo verbale nel percorso. Il contenuto (piastrella, testi, barra, contatori)
+// Scheda di un tempo (o modo) verbale nel percorso. Il contenuto (piastrella, testi, barra, contatori)
 // arriva dal server come children; qui solo ciò che dipende dal progresso (bv_progress_a2):
 // - "Sei qui" (primo argomento non studiato del percorso, come prima): bordo 2px e ombra nel
 //   colore del tempo, pillola "SEI QUI" e, sotto md, il pulsante "Continua" al primo
@@ -21,7 +21,7 @@ export function CartaTempo({
   ordine,
   children,
 }: {
-  tempo: Tempo;
+  tempo: ColoreUnita;
   href: string;
   argomenti: { id: string; slug: string }[];
   ordine: string[];

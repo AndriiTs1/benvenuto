@@ -6447,6 +6447,14 @@
       "w542"
      ]
     }
+   ],
+   "links": [
+    {
+     "at": "end",
+     "it": "La stessa base → Il condizionale",
+     "tr": "The same stem → the conditional mood",
+     "topic": "g5-condizionale-forme"
+    }
    ]
   },
   "g5-meteo": {
@@ -7027,6 +7035,708 @@
      ]
     }
    ]
+  },
+  "g5-condizionale-forme": {
+   "id": "g5-condizionale-forme",
+   "inBreve": [
+    "The {{conditional}} is English **“would”**: I would work, you could, I would like.",
+    "It is not a tense but a **mood** ({{modo}}). It has two tenses:",
+    "**{{condizionale presente}}** (textbook: {{semplice}}) — “would” now or in the future",
+    "**{{condizionale passato}}** (textbook: {{composto}}) — “would have” in the past",
+    "{{Io, al tuo posto,}} **{{lavorerei}}** {{meno.}} — If I were you, I would work less.",
+    "{{Io, al tuo posto,}} **{{avrei lavorato}}** {{meno.}} — If I were you, I would have worked less.",
+    "At A2 we learn the **{{condizionale presente}}**. For the {{passato}}, just know it exists."
+   ],
+   "formation": {
+    "formula": {
+     "parts": [
+      {
+       "tr": "{{futuro}} stem"
+      },
+      "-ei / -esti / -ebbe / -emmo / -este / -ebbero"
+     ],
+     "examples": [
+      {
+       "parts": [
+        "lavorer",
+        "ei"
+       ],
+       "it": "lavorare → lavorerei",
+       "tr": "I would work"
+      },
+      {
+       "parts": [
+        "metter",
+        "ei"
+       ],
+       "it": "mettere → metterei",
+       "tr": "I would put"
+      },
+      {
+       "parts": [
+        "partir",
+        "ei"
+       ],
+       "it": "partire → partirei",
+       "tr": "I would leave"
+      }
+     ]
+    },
+    "steps": [
+     "Take the infinitive and drop the final **{{-e}}**: {{lavorar(e)}}, {{metter(e)}}, {{partir(e)}}",
+     "For **{{-are}}** verbs: **{{a → e}}** → {{lavor}}**{{e}}**{{r-}}",
+     "Add the ending: {{lavorer}}**{{ei}}**"
+    ],
+    "note": "**Tip:** it’s the same stem as the {{futuro}}. {{lavorare → lavorerò}} ({{futuro}}) → {{lavorerei}} ({{condizionale}})"
+   },
+   "tables": [
+    {
+     "title": "{{Tabella · verbi regolari}}",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "lavorare",
+       "mettere",
+       "partire"
+      ],
+      [
+       "io",
+       "lavorer|ei",
+       "metter|ei",
+       "partir|ei"
+      ],
+      [
+       "tu",
+       "lavorer|esti",
+       "metter|esti",
+       "partir|esti"
+      ],
+      [
+       "lui/lei/Lei",
+       "lavorer|ebbe",
+       "metter|ebbe",
+       "partir|ebbe"
+      ],
+      [
+       "noi",
+       "lavorer|emmo",
+       "metter|emmo",
+       "partir|emmo"
+      ],
+      [
+       "voi",
+       "lavorer|este",
+       "metter|este",
+       "partir|este"
+      ],
+      [
+       "loro",
+       "lavorer|ebbero",
+       "metter|ebbero",
+       "partir|ebbero"
+      ]
+     ],
+     "note": "The endings are **the same for all three groups** ({{-are}}, {{-ere}}, {{-ire}})."
+    },
+    {
+     "title": "Spelling: {{-care / -gare}} and {{-ciare / -giare}}",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "pagare",
+       "cominciare"
+      ],
+      [
+       "io",
+       "pagher|ei",
+       "comincer|ei"
+      ],
+      [
+       "tu",
+       "pagher|esti",
+       "comincer|esti"
+      ],
+      [
+       "lui/lei",
+       "pagher|ebbe",
+       "comincer|ebbe"
+      ],
+      [
+       "noi",
+       "pagher|emmo",
+       "comincer|emmo"
+      ],
+      [
+       "voi",
+       "pagher|este",
+       "comincer|este"
+      ],
+      [
+       "loro",
+       "pagher|ebbero",
+       "comincer|ebbero"
+      ]
+     ],
+     "note": "**{{-care, -gare}}** → add **h** in all persons (to keep the hard “k”, “g” sound). **{{-ciare, -giare}}** → lose the **i** in all persons. More examples: {{cercare → cercherei}} · {{mangiare → mangerei}}"
+    },
+    {
+     "title": "{{Forme irregolari}} · Special verbs: {{essere}}, {{dare}}, {{fare}}, {{stare}}",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "essere",
+       "dare"
+      ],
+      [
+       "io",
+       "sar|ei",
+       "dar|ei"
+      ],
+      [
+       "tu",
+       "sar|esti",
+       "dar|esti"
+      ],
+      [
+       "lui/lei",
+       "sar|ebbe",
+       "dar|ebbe"
+      ],
+      [
+       "noi",
+       "sar|emmo",
+       "dar|emmo"
+      ],
+      [
+       "voi",
+       "sar|este",
+       "dar|este"
+      ],
+      [
+       "loro",
+       "sar|ebbero",
+       "dar|ebbero"
+      ]
+     ],
+     "note": "**Rule:** every verb that is irregular in the {{futuro}} is irregular in the conditional too. {{essere → sarò → sarei}}. The endings stay regular. Note: {{dare}}, {{fare}}, {{stare}} **keep the a** ({{darei}}, not “{{derei}}”)."
+    },
+    {
+     "title": "{{Forme irregolari}} · Special verbs: {{essere}}, {{dare}}, {{fare}}, {{stare}}",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "fare",
+       "stare"
+      ],
+      [
+       "io",
+       "far|ei",
+       "star|ei"
+      ],
+      [
+       "tu",
+       "far|esti",
+       "star|esti"
+      ],
+      [
+       "lui/lei",
+       "far|ebbe",
+       "star|ebbe"
+      ],
+      [
+       "noi",
+       "far|emmo",
+       "star|emmo"
+      ],
+      [
+       "voi",
+       "far|este",
+       "star|este"
+      ],
+      [
+       "loro",
+       "far|ebbero",
+       "star|ebbero"
+      ]
+     ]
+    },
+    {
+     "title": "{{Gruppo 1}} — the vowel before {{-re}} drops",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "andare",
+       "avere",
+       "potere"
+      ],
+      [
+       "io",
+       "andr|ei",
+       "avr|ei",
+       "potr|ei"
+      ],
+      [
+       "tu",
+       "andr|esti",
+       "avr|esti",
+       "potr|esti"
+      ],
+      [
+       "lui/lei",
+       "andr|ebbe",
+       "avr|ebbe",
+       "potr|ebbe"
+      ],
+      [
+       "noi",
+       "andr|emmo",
+       "avr|emmo",
+       "potr|emmo"
+      ],
+      [
+       "voi",
+       "andr|este",
+       "avr|este",
+       "potr|este"
+      ],
+      [
+       "loro",
+       "andr|ebbero",
+       "avr|ebbero",
+       "potr|ebbero"
+      ]
+     ],
+     "note": "{{andare → andrei}} · {{avere → avrei}} · {{potere → potrei}} · {{dovere → dovrei}} · {{sapere → saprei}} · {{vedere → vedrei}} · {{cadere → cadrei}} · {{vivere → vivrei}}"
+    },
+    {
+     "title": "{{Gruppo 1}} — the vowel before {{-re}} drops",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "dovere",
+       "sapere"
+      ],
+      [
+       "io",
+       "dovr|ei",
+       "sapr|ei"
+      ],
+      [
+       "tu",
+       "dovr|esti",
+       "sapr|esti"
+      ],
+      [
+       "lui/lei",
+       "dovr|ebbe",
+       "sapr|ebbe"
+      ],
+      [
+       "noi",
+       "dovr|emmo",
+       "sapr|emmo"
+      ],
+      [
+       "voi",
+       "dovr|este",
+       "sapr|este"
+      ],
+      [
+       "loro",
+       "dovr|ebbero",
+       "sapr|ebbero"
+      ]
+     ]
+    },
+    {
+     "title": "{{Gruppo 1}} — the vowel before {{-re}} drops",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "vedere",
+       "cadere",
+       "vivere"
+      ],
+      [
+       "io",
+       "vedr|ei",
+       "cadr|ei",
+       "vivr|ei"
+      ],
+      [
+       "tu",
+       "vedr|esti",
+       "cadr|esti",
+       "vivr|esti"
+      ],
+      [
+       "lui/lei",
+       "vedr|ebbe",
+       "cadr|ebbe",
+       "vivr|ebbe"
+      ],
+      [
+       "noi",
+       "vedr|emmo",
+       "cadr|emmo",
+       "vivr|emmo"
+      ],
+      [
+       "voi",
+       "vedr|este",
+       "cadr|este",
+       "vivr|este"
+      ],
+      [
+       "loro",
+       "vedr|ebbero",
+       "cadr|ebbero",
+       "vivr|ebbero"
+      ]
+     ]
+    },
+    {
+     "title": "{{Gruppo 2}} — double {{rr}}",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "venire",
+       "rimanere",
+       "tenere"
+      ],
+      [
+       "io",
+       "verr|ei",
+       "rimarr|ei",
+       "terr|ei"
+      ],
+      [
+       "tu",
+       "verr|esti",
+       "rimarr|esti",
+       "terr|esti"
+      ],
+      [
+       "lui/lei",
+       "verr|ebbe",
+       "rimarr|ebbe",
+       "terr|ebbe"
+      ],
+      [
+       "noi",
+       "verr|emmo",
+       "rimarr|emmo",
+       "terr|emmo"
+      ],
+      [
+       "voi",
+       "verr|este",
+       "rimarr|este",
+       "terr|este"
+      ],
+      [
+       "loro",
+       "verr|ebbero",
+       "rimarr|ebbero",
+       "terr|ebbero"
+      ]
+     ],
+     "note": "{{venire → verrei}} · {{rimanere → rimarrei}} · {{tenere → terrei}} · {{volere → vorrei}} · {{bere → berrei}}"
+    },
+    {
+     "title": "{{Gruppo 2}} — double {{rr}}",
+     "header": true,
+     "rows": [
+      [
+       "",
+       "volere",
+       "bere"
+      ],
+      [
+       "io",
+       "vorr|ei",
+       "berr|ei"
+      ],
+      [
+       "tu",
+       "vorr|esti",
+       "berr|esti"
+      ],
+      [
+       "lui/lei",
+       "vorr|ebbe",
+       "berr|ebbe"
+      ],
+      [
+       "noi",
+       "vorr|emmo",
+       "berr|emmo"
+      ],
+      [
+       "voi",
+       "vorr|este",
+       "berr|este"
+      ],
+      [
+       "loro",
+       "vorr|ebbero",
+       "berr|ebbero"
+      ]
+     ]
+    },
+    {
+     "title": "Stress (pronunciation)",
+     "header": false,
+     "rows": [
+      [
+       "io",
+       "lavorerèi"
+      ],
+      [
+       "tu",
+       "lavorerésti"
+      ],
+      [
+       "lui/lei",
+       "lavorerèbbe"
+      ],
+      [
+       "noi",
+       "lavorerémmo"
+      ],
+      [
+       "voi",
+       "lavoreréste"
+      ],
+      [
+       "loro",
+       "lavorerèbbero"
+      ]
+     ]
+    }
+   ],
+   "uses": [],
+   "exceptions": [],
+   "mistakes": [
+    {
+     "wrong": "noi lavoreremo",
+     "right": "noi lavoreremmo",
+     "why": "{{-emo}} = {{futuro}} (we will), **{{-emmo}}** = conditional (we would)"
+    },
+    {
+     "wrong": "io lavorarei",
+     "right": "io lavorerei",
+     "why": "for {{-are}}: {{a → e}}"
+    },
+    {
+     "wrong": "io ferei / derei",
+     "right": "io farei / darei",
+     "why": "{{dare}}, {{fare}}, {{stare}} keep the {{a}}"
+    },
+    {
+     "wrong": "io pagerei",
+     "right": "io pagherei",
+     "why": "{{-gare/-care}}: add {{h}}"
+    },
+    {
+     "wrong": "io mangierei",
+     "right": "io mangerei",
+     "why": "{{-giare/-ciare}}: the {{i}} drops"
+    },
+    {
+     "wrong": "io venirei / volerei",
+     "right": "io verrei / vorrei",
+     "why": "group 2: double {{rr}}"
+    }
+   ],
+   "examples": [],
+   "links": [
+    {
+     "at": "start",
+     "it": "Stessa base del futuro → Il futuro",
+     "tr": "Same stem as the future tense",
+     "topic": "g5-futuro-semplice"
+    }
+   ]
+  },
+  "g5-condizionale-uso": {
+   "id": "g5-condizionale-uso",
+   "inBreve": [
+    "We use the {{condizionale presente}} in three cases:",
+    "1. to give **advice** or an **opinion** more softly, less directly",
+    "2. to **ask politely**",
+    "3. to express a **wish** now or in the future"
+   ],
+   "formation": {
+    "steps": []
+   },
+   "tables": [
+    {
+     "type": "pairs",
+     "title": "1. {{Dare consigli}} {{o esprimere opinioni}} {{in modo meno diretto}} · Advice or opinion — more softly",
+     "sep": "",
+     "items": [
+      {
+       "a": "Fabio, dovresti cambiare lavoro.",
+       "tr": "Fabio, you should change jobs."
+      },
+      {
+       "a": "Daniela, al posto tuo io andrei da uno specialista.",
+       "tr": "Daniela, if I were you, I’d see a specialist."
+      },
+      {
+       "a": "Mi sembrerebbe più giusto dirlo anche a tuo padre.",
+       "tr": "I think it would be fairer to tell your father too."
+      }
+     ]
+    },
+    {
+     "type": "pairs",
+     "title": "Useful phrases",
+     "sep": "",
+     "items": [
+      {
+       "a": "dovresti + infinito",
+       "tr": "you should…"
+      },
+      {
+       "a": "al posto tuo io + condizionale",
+       "tr": "if I were you, I would…"
+      },
+      {
+       "a": "mi sembrerebbe / secondo me sarebbe meglio…",
+       "tr": "I think it would be better…"
+      }
+     ]
+    },
+    {
+     "type": "pairs",
+     "title": "Compare",
+     "sep": "",
+     "items": [
+      {
+       "a": "Devi cambiare lavoro.",
+       "tr": "You must change jobs. (direct, harsh)"
+      },
+      {
+       "a": "Dovresti cambiare lavoro.",
+       "tr": "You should change jobs. (soft, advice)"
+      }
+     ]
+    },
+    {
+     "type": "pairs",
+     "title": "2. {{Chiedere qualcosa}} {{in modo gentile}} · A polite request",
+     "sep": "",
+     "items": [
+      {
+       "a": "Mi daresti un altro foglio, per favore?",
+       "tr": "Could you give me another sheet, please?"
+      },
+      {
+       "a": "Potresti aiutarmi ad apparecchiare la tavola?",
+       "tr": "Could you help me set the table?"
+      }
+     ]
+    },
+    {
+     "type": "pairs",
+     "title": "Useful phrases",
+     "sep": "",
+     "items": [
+      {
+       "a": "Potresti / Potrebbe + infinito?",
+       "tr": "Could you…?"
+      },
+      {
+       "a": "Mi daresti / Mi darebbe…?",
+       "tr": "Would you give me…?"
+      },
+      {
+       "a": "Vorrei + nome / infinito",
+       "tr": "I would like…"
+      }
+     ]
+    },
+    {
+     "type": "pairs",
+     "title": "Compare",
+     "sep": "",
+     "items": [
+      {
+       "a": "Dammi un foglio!",
+       "tr": "Give me a sheet! (order)"
+      },
+      {
+       "a": "Mi daresti un foglio?",
+       "tr": "Could you give me a sheet? (polite)"
+      }
+     ]
+    },
+    {
+     "type": "pairs",
+     "title": "3. {{Esprimere desideri}} {{nel presente}} {{o nel futuro}} · A wish now or in the future",
+     "sep": "",
+     "items": [
+      {
+       "a": "Mi piacerebbe studiare canto.",
+       "tr": "I would like to study singing."
+      },
+      {
+       "a": "L'estate prossima verrei volentieri in vacanza.",
+       "tr": "Next summer I’d gladly come on holiday."
+      }
+     ]
+    },
+    {
+     "type": "pairs",
+     "title": "Useful phrases",
+     "sep": "",
+     "items": [
+      {
+       "a": "Mi piacerebbe + infinito",
+       "tr": "I would like to…"
+      },
+      {
+       "a": "Vorrei + infinito / nome",
+       "tr": "I would like…"
+      },
+      {
+       "a": "… volentieri",
+       "tr": "gladly"
+      }
+     ],
+     "note": "Note: {{piacerebbe}} works like {{piace}} — it agrees with the thing that is liked: {{Mi piacerebbe}} **{{un viaggio.}}** → {{Mi piacerebbe}}**{{ro}}** **{{due settimane}}** {{di vacanza.}}"
+    }
+   ],
+   "uses": [],
+   "exceptions": [],
+   "mistakes": [
+    {
+     "wrong": "Io piacerei studiare.",
+     "right": "Mi piacerebbe studiare.",
+     "why": "{{piacere}} works like “it pleases me”"
+    },
+    {
+     "wrong": "Voglio un caffè.",
+     "right": "Vorrei un caffè.",
+     "why": "polite form"
+    },
+    {
+     "wrong": "Mi dai un foglio?",
+     "right": "Mi darebbe un foglio?",
+     "why": "with {{Lei}} — 3rd person"
+    }
+   ],
+   "examples": []
   }
  }
 }

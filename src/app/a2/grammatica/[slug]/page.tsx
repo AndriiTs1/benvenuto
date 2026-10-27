@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { FattiEsercizi } from "@/components/esercizi/FattiEsercizi";
+import { Collegamento } from "@/components/grammatica/Collegamento";
 import { IntestazioneTempo } from "@/components/grammatica/Tempo";
 import { HoCapito, SegnaVisto } from "@/components/grammatica/AzioniArgomento";
 import { FiguraParti } from "@/components/grammatica/FiguraParti";
@@ -37,13 +38,22 @@ export default async function ArgomentoPage({ params }: PageProps<"/a2/grammatic
   const avvisoSoloRusso = lingua !== locale ? dizionario(locale).soloInRusso : null;
   // Parole chiave scelte a mano per la lezione v2; senza keyWords il blocco non c'è.
   const gruppiParole = v2?.lezione.keyWords ? await getParoleChiave(locale, v2.lezione.keyWords) : [];
+  // Collegamenti ad altri argomenti (links): "start" sotto il titolo, "end" prima di "Ho capito".
+  const { argomenti } = await getPercorso(locale);
+  const collegamenti = (dove: "start" | "end") =>
+    (v2?.lezione.links ?? [])
+      .filter((c) => c.at === dove)
+      .flatMap((c) => {
+        const meta = argomenti.find((a) => a.id === c.topic);
+        return meta ? [<Collegamento key={c.topic} href={`/a2/grammatica/${meta.slug}`} it={c.it} tr={c.tr} locale={v2!.lingua} />] : [];
+      });
 
   return (
     <article className="space-y-6">
       <SegnaVisto topicId={argomento.id} />
 
       <header>
-        {argomento.tempo && <IntestazioneTempo tempo={argomento.tempo} />}
+        {argomento.colore && <IntestazioneTempo tempo={argomento.colore} />}
         <p className="text-[15px] text-label-2">
           Unità {argomento.unita} · Argomento {argomento.indice} di {argomento.totaleUnita}
         </p>
@@ -55,6 +65,8 @@ export default async function ArgomentoPage({ params }: PageProps<"/a2/grammatic
         </Tr>
       </header>
 
+      {collegamenti("start")}
+
       {v2 ? (
         <>
           {v2.lingua !== locale && (
@@ -65,7 +77,7 @@ export default async function ArgomentoPage({ params }: PageProps<"/a2/grammatic
           <LezioneV2
             lezione={v2.lezione}
             lingua={v2.lingua}
-            tempo={argomento.tempo}
+            tempo={argomento.colore}
             figure={v2.lezione.figure?.map((id, _, insieme) => <FiguraParti key={id} id={id} insieme={insieme} locale={locale} />)}
             paroleChiave={{
               numero: gruppiParole.reduce((n, g) => n + g.parole.length, 0),
@@ -145,6 +157,8 @@ export default async function ArgomentoPage({ params }: PageProps<"/a2/grammatic
           </ul>
         </Sezione>
       )}
+
+      {collegamenti("end")}
 
       <div className="space-y-2 pt-2">
         <HoCapito topicId={argomento.id} />

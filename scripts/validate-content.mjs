@@ -21,8 +21,12 @@ for (const [id, t] of Object.entries(meta.topics)) {
 }
 // tempo (facoltativo): l'unità è un tempo verbale principale del percorso (lib/tempi.ts).
 const TEMPI = ["presente", "passato", "imperfetto", "futuro"];
+// modo (facoltativo): l'unità è un modo verbale (sezione «I modi verbali»); non insieme a tempo.
+const MODI = ["condizionale"];
 for (const [id, u] of Object.entries(meta.units)) {
   if (u.tempo !== undefined && !TEMPI.includes(u.tempo)) errori.push(`meta: ${id}.tempo "${u.tempo}" (${TEMPI.join(" | ")})`);
+  if (u.modo !== undefined && !MODI.includes(u.modo)) errori.push(`meta: ${id}.modo "${u.modo}" (${MODI.join(" | ")})`);
+  if (u.tempo !== undefined && u.modo !== undefined) errori.push(`meta: ${id} ha sia tempo sia modo`);
 }
 const numeri = Object.values(meta.units).map((u) => u.number);
 if (new Set(numeri).size !== numeri.length) errori.push("meta: numeri di unità ripetuti");
@@ -151,7 +155,8 @@ const avvisi = [];
 const esempi = (v) => Array.isArray(v) && v.every((e) => testo(e?.it) && testo(e?.tr));
 const CAMPI = {
   inBreve: (v) => Array.isArray(v) && v.length > 0 && v.every(testo),
-  formation: (v) => Array.isArray(v?.steps) && v.steps.length > 0 && v.steps.every(testo),
+  // steps può essere vuoto (argomento senza "Come si forma"); note facoltativa.
+  formation: (v) => Array.isArray(v?.steps) && v.steps.every(testo) && (v.note === undefined || testo(v.note)),
   tables: (v) =>
     Array.isArray(v) &&
     v.every((t) =>
@@ -175,7 +180,8 @@ const CAMPI = {
   exceptions: (v) => Array.isArray(v) && v.every((e) => testo(e?.title) && testo(e?.text) && esempi(e?.examples)),
   mistakes: (v) => Array.isArray(v) && v.every((m) => testo(m?.wrong) && testo(m?.right) && testo(m?.why)),
   examples: esempi,
-  summary: testo,
+  // summary facoltativo: senza, niente "In sintesi".
+  summary: (v) => v === undefined || testo(v),
 };
 const lezioniPerLingua = {};
 const lezioniCompletePerLingua = {};
@@ -215,20 +221,34 @@ for (const lingua of lingue) {
         }
       }
     }
-    // formation.formula (facoltativa): parti e esempi solo in italiano (niente cirillico);
-    // ogni esempio ha parti, frase italiana e traduzione.
+    // formation.formula (facoltativa): parti e esempi solo in italiano (niente cirillico), tranne le parti
+    // { tr } nella lingua delle spiegazioni; ogni esempio ha parti, frase italiana e traduzione.
     const CIRILLICO = /[\u0400-\u04FF]/;
     const formula = lezione?.formation?.formula;
     if (formula !== undefined) {
       const dove = `${topicId}.formation.formula`;
       const parti = (v) => Array.isArray(v) && v.length > 0 && v.every(testo);
-      if (!parti(formula?.parts)) errori.push(`${lingua}/lezioni: ${dove}.parts mancanti o vuote`);
-      else if (formula.parts.some((x) => CIRILLICO.test(x))) errori.push(`${lingua}/lezioni: ${dove}.parts solo in italiano`);
+      const partiFormula = Array.isArray(formula?.parts) && formula.parts.length > 0 && formula.parts.every((x) => testo(x) || testo(x?.tr));
+      if (!partiFormula) errori.push(`${lingua}/lezioni: ${dove}.parts mancanti o vuote`);
+      else if (formula.parts.some((x) => typeof x === "string" && CIRILLICO.test(x))) errori.push(`${lingua}/lezioni: ${dove}.parts solo in italiano`);
       if (!Array.isArray(formula?.examples)) errori.push(`${lingua}/lezioni: ${dove}.examples non è un elenco`);
       else
         formula.examples.forEach((e, i) => {
           if (!parti(e?.parts) || !testo(e?.it) || !testo(e?.tr)) errori.push(`${lingua}/lezioni: ${dove}.examples[${i}] senza parts, it o tr`);
           else if ([...e.parts, e.it].some((x) => CIRILLICO.test(x))) errori.push(`${lingua}/lezioni: ${dove}.examples[${i}] parts e it solo in italiano`);
+        });
+    }
+    // links (facoltativo): collegamenti ad altri argomenti, at start|end, testo italiano, traduzione, argomento esistente.
+    if (lezione?.links !== undefined) {
+      if (!Array.isArray(lezione.links)) errori.push(`${lingua}/lezioni: ${topicId}.links non è un elenco`);
+      else
+        lezione.links.forEach((c, i) => {
+          const dove = `${lingua}/lezioni: ${topicId}.links[${i}]`;
+          if (c?.at !== "start" && c?.at !== "end") errori.push(`${dove}.at "${c?.at}" (start | end)`);
+          if (!testo(c?.it) || !testo(c?.tr)) errori.push(`${dove} senza it o tr`);
+          else if (CIRILLICO.test(c.it)) errori.push(`${dove}.it solo in italiano`);
+          if (!meta.topics[c?.topic]) errori.push(`${dove} → argomento inesistente ${c?.topic}`);
+          else if (c.topic === topicId) errori.push(`${dove} punta all'argomento stesso`);
         });
     }
     // auxChoice.intro (facoltativo): titolo e passi numerati.
@@ -364,7 +384,9 @@ for (const [topicId, ru] of Object.entries(lezioniCompletePerLingua.ru ?? {})) {
     const fa = altra.formation?.formula;
     if (!!fr !== !!fa) errori.push(`${l}/lezioni: ${topicId}.formation.formula ${fr ? "manca" : "c'è solo qui"} (ru)`);
     else if (fr) {
-      if (JSON.stringify(fr.parts) !== JSON.stringify(fa.parts)) errori.push(`${l}/lezioni: ${topicId}.formation.formula.parts diverse da ru`);
+      // Le parti italiane uguali; le parti { tr } sono tradotte (conta solo che siano nello stesso posto).
+      const forma = (parti) => JSON.stringify(parti.map((x) => (typeof x === "string" ? x : { tr: true })));
+      if (forma(fr.parts) !== forma(fa.parts)) errori.push(`${l}/lezioni: ${topicId}.formation.formula.parts diverse da ru`);
       if (fr.examples?.length !== fa.examples?.length) errori.push(`${l}/lezioni: ${topicId}.formation.formula.examples: ${fa.examples?.length}, ru ${fr.examples?.length}`);
     }
     const ir = ru.auxChoice?.intro;
@@ -396,7 +418,14 @@ try {
       if (!testo(v?.id)) errori.push(`esercizi: ${insieme.topic} voce senza id`);
       else if (visti.has(v.id)) errori.push(`${dove} id ripetuto`);
       visti.add(v?.id);
-      if ((String(v?.it ?? "").match(/___/g) ?? []).length !== 1) errori.push(`${dove} "it" deve avere un solo "___"`);
+      // choice con situation (testo nella lingua delle spiegazioni): niente frase italiana con "___".
+      const conSituazione = v?.type === "choice" && v?.situation !== undefined;
+      if (conSituazione) {
+        const mancano = tradotto(v.situation);
+        if (mancano.length) errori.push(`${dove} situation senza ${mancano.join(", ")}`);
+        if (v.it !== undefined) errori.push(`${dove} con situation non serve "it"`);
+      } else if ((String(v?.it ?? "").match(/___/g) ?? []).length !== 1) errori.push(`${dove} "it" deve avere un solo "___"`);
+      if (v?.task !== undefined && tradotto(v.task).length) errori.push(`${dove} task senza ${tradotto(v.task).join(", ")}`);
       const why = tradotto(v?.why);
       if (why.length) errori.push(`${dove} why senza ${why.join(", ")}`);
       if (v?.type === "fill") {

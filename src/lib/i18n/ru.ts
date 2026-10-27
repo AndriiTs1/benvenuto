@@ -9,6 +9,8 @@ export const ru = {
   soloInRusso: null as string | null,
   // Riga sotto il titolo del blocco "Parole chiave".
   paroleChiaveNota: "Слова этой темы с переводом и примером",
+  // Sottotitolo della sezione «I modi verbali» del percorso.
+  modiVerbali: "Наклонения",
 };
 
 export type Dizionario = typeof ru;

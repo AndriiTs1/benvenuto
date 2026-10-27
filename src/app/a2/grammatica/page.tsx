@@ -8,12 +8,14 @@ import { ChevronRight } from "@/components/ListRow";
 import { Tr } from "@/components/Tr";
 import { idEsercizi } from "@/content/a2/esercizi";
 import { getPercorso, type TappaPercorso, type UnitaPercorso } from "@/content/a2/grammatica";
+import { dizionario } from "@/lib/i18n";
 import type { Locale } from "@/lib/lingue";
 import { linguaScelta } from "@/lib/lingua-scelta";
-import { TEMPI, type Tempo } from "@/lib/tempi";
+import { MODI, TEMPI, type ColoreUnita, type Modo, type Tempo } from "@/lib/tempi";
 
 // Percorso: "I tempi verbali" (unità con tempo in meta.json, nell'ordine di TEMPI) come schede:
-// una sotto l'altra su mobile, 2×2 da sm, 4 in fila da lg (colonna di 1120px, vedi Colonna.tsx). Poi "Altri argomenti" (le altre unità,
+// una sotto l'altra su mobile, 2×2 da sm, 4 in fila da lg (colonna di 1120px, vedi Colonna.tsx).
+// Poi "I modi verbali" (unità con modo, ordine di MODI): stesse schede nella stessa griglia. Poi "Altri argomenti" (le altre unità,
 // ordine del curriculum) in un elenco e la "Verifica" (tappe): da md affiancati, 2/3 e 1/3.
 // Il progresso generale sta nell'intestazione (CourseHeader). Il vecchio ?vista=indice lo toglie proxy.ts.
 export const instant = false;
@@ -27,7 +29,10 @@ export default async function GrammaticaPage() {
   const tempi = unita
     .filter((u): u is UnitaPercorso & { tempo: Tempo } => u.tempo !== null)
     .sort((a, b) => TEMPI.indexOf(a.tempo) - TEMPI.indexOf(b.tempo));
-  const altre = unita.filter((u) => u.tempo === null);
+  const modi = unita
+    .filter((u): u is UnitaPercorso & { modo: Modo } => u.modo !== null)
+    .sort((a, b) => MODI.indexOf(a.modo) - MODI.indexOf(b.modo));
+  const altre = unita.filter((u) => u.colore === null);
 
   return (
     <TabContent>
@@ -37,7 +42,24 @@ export default async function GrammaticaPage() {
             <h2 className={TITOLO_SEZIONE}>I tempi verbali</h2>
             <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
               {tempi.map((u) => (
-                <SchedaTempo key={u.id} u={u} ordine={ordine} locale={locale} />
+                <SchedaTempo key={u.id} u={u} colore={u.tempo} ordine={ordine} locale={locale} />
+              ))}
+            </div>
+          </section>
+        )}
+
+        {modi.length > 0 && (
+          <section>
+            <h2 className={TITOLO_SEZIONE}>
+              I modi verbali{" "}
+              <Tr locale={locale} className="tracking-normal normal-case">
+                · {dizionario(locale).modiVerbali}
+              </Tr>
+            </h2>
+            {/* Stessa griglia dei tempi: la scheda ha la larghezza di una scheda dei tempi. */}
+            <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
+              {modi.map((u) => (
+                <SchedaTempo key={u.id} u={u} colore={u.modo} ordine={ordine} locale={locale} />
               ))}
             </div>
           </section>
@@ -71,22 +93,22 @@ export default async function GrammaticaPage() {
   );
 }
 
-// Scheda di un tempo: piastrella, "UNITÀ N", titolo, traduzione, barra, contatori.
+// Scheda di un tempo (o modo): piastrella, "UNITÀ N", titolo, traduzione, barra, contatori.
 // Mobile al centro; da md a sinistra. Bordo, "Sei qui", Continua e spunta: CartaTempo (client).
-function SchedaTempo({ u, ordine, locale }: { u: UnitaPercorso & { tempo: Tempo }; ordine: string[]; locale: Locale }) {
+function SchedaTempo({ u, colore, ordine, locale }: { u: UnitaPercorso; colore: ColoreUnita; ordine: string[]; locale: Locale }) {
   const ids = u.argomenti.map((a) => a.id);
   return (
     <CartaTempo
-      tempo={u.tempo}
+      tempo={colore}
       href={`/a2/grammatica/unita/${u.number}`}
       argomenti={u.argomenti.map(({ id, slug }) => ({ id, slug }))}
       ordine={ordine}
     >
-      <PiastrellaTempo tempo={u.tempo} grande />
+      <PiastrellaTempo tempo={colore} grande />
       <span className="mt-3 block text-[12px] font-semibold tracking-wide text-(--c) uppercase">Unità {u.number}</span>
       <span className="mt-0.5 block text-[19px] leading-tight font-bold tracking-[-0.01em] md:text-[20px]">{u.title}</span>
-      {/* Da lg: 14px, al massimo 2 righe. */}
-      <Tr locale={locale} size="sm" className="mt-1 block lg:line-clamp-2 lg:text-[14px]">
+      {/* Da lg: 14px, sempre 2 righe (min e max): le schede di tempi e modi hanno la stessa altezza anche in righe diverse. */}
+      <Tr locale={locale} size="sm" className="mt-1 block lg:line-clamp-2 lg:min-h-[2lh] lg:text-[14px]">
         {u.subtitle}
       </Tr>
       <span className="mt-auto block w-full pt-4">

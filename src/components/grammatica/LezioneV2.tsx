@@ -7,7 +7,7 @@ import { VerbiAusiliare } from "@/components/grammatica/VerbiAusiliare";
 import { IconCheck, IconX } from "@/components/lezione/ui";
 import type { EsempioV2, Formula, LezioneV2 as Lezione, SceltaAusiliare, TabellaClassica, TabellaCoppie as Coppie } from "@/content/a2/lezioni";
 import type { Locale } from "@/lib/lingue";
-import { STILE_TEMPO, type Tempo } from "@/lib/tempi";
+import { STILE_TEMPO, type ColoreUnita } from "@/lib/tempi";
 
 // Lezione di grammatica nel formato v2 (src/content/a2/{locale}/lezioni.json).
 // Testo della lingua delle spiegazioni → <Tr>; italiano (it, wrong, right, celle) nel colore principale.
@@ -66,7 +66,7 @@ export function LezioneV2({
   lezione: Lezione;
   lingua: Locale;
   /** Tempo verbale dell'unità (meta.json): colore della formula, delle desinenze e delle seconde forme. */
-  tempo?: Tempo | null;
+  tempo?: ColoreUnita | null;
   /** "Parole chiave" (contenuto e numero di parole), dentro Approfondisci. */
   paroleChiave?: { contenuto: ReactNode; numero: number };
   /** Altre righe di Approfondisci, in fondo (es. la griglia dei participi irregolari). */
@@ -124,7 +124,13 @@ export function LezioneV2({
 
       {formula && (
         <Sezione titolo="Come si forma">
-          <ComeSiFormaFormula formula={formula} passi={lezione.formation.steps} lingua={lingua} tempo={tempo ?? null} />
+          <ComeSiFormaFormula
+            formula={formula}
+            passi={lezione.formation.steps}
+            nota={lezione.formation.note}
+            lingua={lingua}
+            tempo={tempo ?? null}
+          />
         </Sezione>
       )}
 
@@ -173,11 +179,13 @@ export function LezioneV2({
         </ul>
       </Sezione>
 
-      <Sezione titolo="In sintesi">
-        <div className={`rounded-2xl border border-grammar bg-card p-4 ${TESTO}`}>
-          <Tr locale={lingua}>{lezione.summary}</Tr>
-        </div>
-      </Sezione>
+      {lezione.summary && (
+        <Sezione titolo="In sintesi">
+          <div className={`rounded-2xl border border-grammar bg-card p-4 ${TESTO}`}>
+            <Tr locale={lingua}>{lezione.summary}</Tr>
+          </div>
+        </Sezione>
+      )}
 
       {approfondisci.length > 0 && (
         <Sezione titolo="Approfondisci">
@@ -202,36 +210,51 @@ export function LezioneV2({
 function ComeSiFormaFormula({
   formula,
   passi,
+  nota,
   lingua,
   tempo,
 }: {
   formula: Formula;
   passi: string[];
+  nota?: string;
   lingua: Locale;
-  tempo: Tempo | null;
+  tempo: ColoreUnita | null;
 }) {
   return (
     <div style={tempo ? STILE_TEMPO[tempo] : STILE_GRAMMATICA} className="overflow-hidden rounded-2xl bg-card">
       {/* Ogni parte è un blocco a sé: si va a capo prima tra le parti ("+ aggettivo · nome" sulla riga dopo).
           Il "+" (grigio, più piccolo, con gli spazi anche nel testo copiato) apre la parte e resta col primo pezzo.
-          Una parte troppo lunga va a capo solo dopo " · ", righe bilanciate (niente "fare" da solo); ogni pezzo resta intero. */}
+          Una parte troppo lunga va a capo solo dopo " · " o " / ", righe bilanciate (niente "fare" da solo); ogni pezzo resta intero.
+          Una parte { tr } è nella lingua delle spiegazioni: <Tr> (colore della traduzione), stessa misura. */}
       <p lang="it" className="flex flex-wrap items-baseline gap-y-1 px-4 pt-5 pb-4 leading-tight lg:justify-center">
         {formula.parts.map((parte, i) => {
-          const pezzi = parte.split(" · ");
+          const piu = i > 0 && <span className="text-[22px] font-normal whitespace-pre text-label-2 md:text-[26px]">{" + "}</span>;
+          if (typeof parte !== "string") {
+            return (
+              <span key={i} className="max-w-full text-[26px] font-bold text-balance md:text-[32px]">
+                <span className="whitespace-nowrap">
+                  {piu}
+                  <Tr locale={lingua}>{parte.tr}</Tr>
+                </span>
+              </span>
+            );
+          }
+          // ["ei", "/", "esti", "/", …]: pezzi e separatori alternati.
+          const pezzi = parte.split(/ (·|\/) /);
           return (
             <span key={i} className="max-w-full text-[26px] font-bold text-balance text-(--c) md:text-[32px]">
-              {pezzi.map((pezzo, j) => (
-                <Fragment key={j}>
-                  {j > 0 && " "}
-                  <span className="whitespace-nowrap">
-                    {i > 0 && j === 0 && (
-                      <span className="text-[22px] font-normal whitespace-pre text-label-2 md:text-[26px]">{" + "}</span>
-                    )}
-                    {pezzo}
-                    {j < pezzi.length - 1 && " ·"}
-                  </span>
-                </Fragment>
-              ))}
+              {pezzi.map((pezzo, j) =>
+                j % 2 === 1 ? null : (
+                  <Fragment key={j}>
+                    {j > 0 && " "}
+                    <span className="whitespace-nowrap">
+                      {j === 0 && piu}
+                      {pezzo}
+                      {j < pezzi.length - 1 && ` ${pezzi[j + 1]}`}
+                    </span>
+                  </Fragment>
+                ),
+              )}
             </span>
           );
         })}
@@ -268,6 +291,11 @@ function ComeSiFormaFormula({
         <div className="border-t border-separator pt-4">
           <ComeSiForma passi={passi} lingua={lingua} colore="border-(--c) text-(--c)" />
         </div>
+      )}
+      {nota && (
+        <Tr locale={lingua} as="p" size="md" className="block border-t border-separator px-4 py-3 max-md:text-center">
+          {nota}
+        </Tr>
       )}
     </div>
   );
@@ -365,7 +393,11 @@ function TabellaV2({ tabella, lingua }: { tabella: TabellaClassica; lingua: Loca
   const corpo = tabella.header ? tabella.rows.slice(1) : tabella.rows;
   const colonne = Math.max(...tabella.rows.map((r) => r.length));
   // Con 4+ colonne, sotto md, celle più strette ai lati: forme come "ascolt|avamo" non vanno a capo.
-  const cella = `py-2.5 align-top max-md:text-center md:px-3 md:text-left ${colonne >= 4 ? "max-md:px-2" : "max-md:px-3"}`;
+  // Tabella fitta: 4+ colonne con forme da 12 lettere in su ("lavorerebbero", "rimarrebbero"): sotto md non sta
+  // nel telefono a 15px; carattere min(15px, 3.5vw) e celle con 4px ai lati (a 375px resta dentro la scheda).
+  const lettere = Math.max(...tabella.rows.flatMap((r) => r.slice(1).map((c) => [...c.replace("|", "")].length)));
+  const fitta = colonne >= 4 && lettere >= 12;
+  const cella = `py-2.5 align-top max-md:text-center md:px-3 md:text-left ${fitta ? "max-md:px-1" : colonne >= 4 ? "max-md:px-2" : "max-md:px-3"}`;
   // Sotto md la prima colonna (persone, etichette) è larga quanto il suo contenuto (width: 1%):
   // le etichette brevi stanno su una riga. Se una è lunga (una frase), la colonna prende il 40%
   // e va a capo. Le altre colonne si dividono il resto in parti uguali. Da md come prima.
@@ -383,7 +415,11 @@ function TabellaV2({ tabella, lingua }: { tabella: TabellaClassica; lingua: Loca
         {tabella.title}
       </Tr>
       <div className="overflow-x-auto overscroll-x-contain">
-        <table lang="it" style={altre} className="w-full border-collapse text-[15px] leading-snug md:text-[17px]">
+        <table
+          lang="it"
+          style={altre}
+          className={`w-full border-collapse leading-snug md:text-[17px] ${fitta ? "text-[length:min(15px,3.5vw)]" : "text-[15px]"}`}
+        >
           {testa && (
             <thead>
               <tr className="border-b border-separator">

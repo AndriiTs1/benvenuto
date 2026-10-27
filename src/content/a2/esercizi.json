@@ -5229,6 +5229,894 @@
      }
     }
    ]
+  },
+  {
+   "topic": "g5-condizionale-forme",
+   "items": [
+    {
+     "id": "cf-01",
+     "type": "fill",
+     "task": {
+      "ru": "Поставь глагол в condizionale presente.",
+      "uk": "Постав дієслово в condizionale presente.",
+      "en": "Put the verb in the condizionale presente."
+     },
+     "it": "Io, al tuo posto, ___ di più.",
+     "hint": "studiare",
+     "answers": [
+      "studierei"
+     ],
+     "why": {
+      "ru": "-are: a → e, + -ei",
+      "uk": "-are: a → e, + -ei",
+      "en": "-are: a → e, + -ei"
+     }
+    },
+    {
+     "id": "cf-02",
+     "type": "fill",
+     "task": {
+      "ru": "Поставь глагол в condizionale presente.",
+      "uk": "Постав дієслово в condizionale presente.",
+      "en": "Put the verb in the condizionale presente."
+     },
+     "it": "Tu ___ un caffè con me?",
+     "hint": "prendere",
+     "answers": [
+      "prenderesti"
+     ],
+     "why": {
+      "ru": "tu: -esti",
+      "uk": "tu: -esti",
+      "en": "tu: -esti"
+     }
+    },
+    {
+     "id": "cf-03",
+     "type": "fill",
+     "task": {
+      "ru": "Поставь глагол в condizionale presente.",
+      "uk": "Постав дієслово в condizionale presente.",
+      "en": "Put the verb in the condizionale presente."
+     },
+     "it": "Marta ___ domani, ma non ha il biglietto.",
+     "hint": "partire",
+     "answers": [
+      "partirebbe"
+     ],
+     "why": {
+      "ru": "lei: -ebbe",
+      "uk": "lei: -ebbe",
+      "en": "lei: -ebbe"
+     }
+    },
+    {
+     "id": "cf-04",
+     "type": "fill",
+     "task": {
+      "ru": "Поставь глагол в condizionale presente.",
+      "uk": "Постав дієслово в condizionale presente.",
+      "en": "Put the verb in the condizionale presente."
+     },
+     "it": "Noi ___ una casa più grande.",
+     "hint": "comprare",
+     "answers": [
+      "compreremmo"
+     ],
+     "why": {
+      "ru": "noi: -emmo (двойная m)",
+      "uk": "noi: -emmo (подвійне m)",
+      "en": "noi: -emmo (double m)"
+     }
+    },
+    {
+     "id": "cf-05",
+     "type": "fill",
+     "task": {
+      "ru": "Поставь глагол в condizionale presente.",
+      "uk": "Постав дієслово в condizionale presente.",
+      "en": "Put the verb in the condizionale presente."
+     },
+     "it": "Voi ___ questo libro?",
+     "hint": "leggere",
+     "answers": [
+      "leggereste"
+     ],
+     "why": {
+      "ru": "voi: -este",
+      "uk": "voi: -este",
+      "en": "voi: -este"
+     }
+    },
+    {
+     "id": "cf-06",
+     "type": "fill",
+     "task": {
+      "ru": "Поставь глагол в condizionale presente.",
+      "uk": "Постав дієслово в condizionale presente.",
+      "en": "Put the verb in the condizionale presente."
+     },
+     "it": "I bambini ___ tutto il giorno.",
+     "hint": "dormire",
+     "answers": [
+      "dormirebbero"
+     ],
+     "why": {
+      "ru": "loro: -ebbero",
+      "uk": "loro: -ebbero",
+      "en": "loro: -ebbero"
+     }
+    },
+    {
+     "id": "cf-07",
+     "type": "fill",
+     "task": {
+      "ru": "Поставь глагол в condizionale presente.",
+      "uk": "Постав дієслово в condizionale presente.",
+      "en": "Put the verb in the condizionale presente."
+     },
+     "it": "Io ___ con la carta.",
+     "hint": "pagare",
+     "answers": [
+      "pagherei"
+     ],
+     "why": {
+      "ru": "-gare: + h",
+      "uk": "-gare: + h",
+      "en": "-gare: add h"
+     }
+    },
+    {
+     "id": "cf-08",
+     "type": "fill",
+     "task": {
+      "ru": "Поставь глагол в condizionale presente.",
+      "uk": "Постав дієслово в condizionale presente.",
+      "en": "Put the verb in the condizionale presente."
+     },
+     "it": "Tu ___ un altro lavoro?",
+     "hint": "cercare",
+     "answers": [
+      "cercheresti"
+     ],
+     "why": {
+      "ru": "-care: + h",
+      "uk": "-care: + h",
+      "en": "-care: add h"
+     }
+    },
+    {
+     "id": "cf-09",
+     "type": "fill",
+     "task": {
+      "ru": "Поставь глагол в condizionale presente.",
+      "uk": "Постав дієслово в condizionale presente.",
+      "en": "Put the verb in the condizionale presente."
+     },
+     "it": "Noi ___ subito.",
+     "hint": "cominciare",
+     "answers": [
+      "cominceremmo"
+     ],
+     "why": {
+      "ru": "-ciare: i выпадает",
+      "uk": "-ciare: i випадає",
+      "en": "-ciare: the i drops"
+     }
+    },
+    {
+     "id": "cf-10",
+     "type": "fill",
+     "task": {
+      "ru": "Поставь глагол в condizionale presente.",
+      "uk": "Постав дієслово в condizionale presente.",
+      "en": "Put the verb in the condizionale presente."
+     },
+     "it": "Loro ___ volentieri la pizza.",
+     "hint": "mangiare",
+     "answers": [
+      "mangerebbero"
+     ],
+     "why": {
+      "ru": "-giare: i выпадает",
+      "uk": "-giare: i випадає",
+      "en": "-giare: the i drops"
+     }
+    },
+    {
+     "id": "cf-11",
+     "type": "fill",
+     "task": {
+      "ru": "Поставь неправильный глагол в condizionale presente.",
+      "uk": "Постав неправильне дієслово в condizionale presente.",
+      "en": "Put the irregular verb in the condizionale presente."
+     },
+     "it": "Io ___ felice di aiutarti.",
+     "hint": "essere",
+     "answers": [
+      "sarei"
+     ],
+     "why": {
+      "ru": "essere → sar-",
+      "uk": "essere → sar-",
+      "en": "essere → sar-"
+     }
+    },
+    {
+     "id": "cf-12",
+     "type": "fill",
+     "task": {
+      "ru": "Поставь неправильный глагол в condizionale presente.",
+      "uk": "Постав неправильне дієслово в condizionale presente.",
+      "en": "Put the irregular verb in the condizionale presente."
+     },
+     "it": "Tu ___ una cosa per me?",
+     "hint": "fare",
+     "answers": [
+      "faresti"
+     ],
+     "why": {
+      "ru": "fare сохраняет a",
+      "uk": "fare зберігає a",
+      "en": "fare keeps the a"
+     }
+    },
+    {
+     "id": "cf-13",
+     "type": "fill",
+     "task": {
+      "ru": "Поставь неправильный глагол в condizionale presente.",
+      "uk": "Постав неправильне дієслово в condizionale presente.",
+      "en": "Put the irregular verb in the condizionale presente."
+     },
+     "it": "Lei ___ meglio al mare.",
+     "hint": "stare",
+     "answers": [
+      "starebbe"
+     ],
+     "why": {
+      "ru": "stare сохраняет a",
+      "uk": "stare зберігає a",
+      "en": "stare keeps the a"
+     }
+    },
+    {
+     "id": "cf-14",
+     "type": "fill",
+     "task": {
+      "ru": "Поставь неправильный глагол в condizionale presente.",
+      "uk": "Постав неправильне дієслово в condizionale presente.",
+      "en": "Put the irregular verb in the condizionale presente."
+     },
+     "it": "Noi ___ volentieri in montagna.",
+     "hint": "andare",
+     "answers": [
+      "andremmo"
+     ],
+     "why": {
+      "ru": "группа 1: andr-",
+      "uk": "група 1: andr-",
+      "en": "group 1: andr-"
+     }
+    },
+    {
+     "id": "cf-15",
+     "type": "fill",
+     "task": {
+      "ru": "Поставь неправильный глагол в condizionale presente.",
+      "uk": "Постав неправильне дієслово в condizionale presente.",
+      "en": "Put the irregular verb in the condizionale presente."
+     },
+     "it": "Io ___ bisogno di un consiglio.",
+     "hint": "avere",
+     "answers": [
+      "avrei"
+     ],
+     "why": {
+      "ru": "группа 1: avr-",
+      "uk": "група 1: avr-",
+      "en": "group 1: avr-"
+     }
+    },
+    {
+     "id": "cf-16",
+     "type": "fill",
+     "task": {
+      "ru": "Поставь неправильный глагол в condizionale presente.",
+      "uk": "Постав неправильне дієслово в condizionale presente.",
+      "en": "Put the irregular verb in the condizionale presente."
+     },
+     "it": "Voi ___ chiudere la porta?",
+     "hint": "potere",
+     "answers": [
+      "potreste"
+     ],
+     "why": {
+      "ru": "группа 1: potr-",
+      "uk": "група 1: potr-",
+      "en": "group 1: potr-"
+     }
+    },
+    {
+     "id": "cf-17",
+     "type": "fill",
+     "task": {
+      "ru": "Поставь неправильный глагол в condizionale presente.",
+      "uk": "Постав неправильне дієслово в condizionale presente.",
+      "en": "Put the irregular verb in the condizionale presente."
+     },
+     "it": "Tu ___ dormire di più.",
+     "hint": "dovere",
+     "answers": [
+      "dovresti"
+     ],
+     "why": {
+      "ru": "группа 1: dovr-",
+      "uk": "група 1: dovr-",
+      "en": "group 1: dovr-"
+     }
+    },
+    {
+     "id": "cf-18",
+     "type": "fill",
+     "task": {
+      "ru": "Поставь неправильный глагол в condizionale presente.",
+      "uk": "Постав неправильне дієслово в condizionale presente.",
+      "en": "Put the irregular verb in the condizionale presente."
+     },
+     "it": "Io non ___ cosa dire.",
+     "hint": "sapere",
+     "answers": [
+      "saprei"
+     ],
+     "why": {
+      "ru": "группа 1: sapr-",
+      "uk": "група 1: sapr-",
+      "en": "group 1: sapr-"
+     }
+    },
+    {
+     "id": "cf-19",
+     "type": "fill",
+     "task": {
+      "ru": "Поставь неправильный глагол в condizionale presente.",
+      "uk": "Постав неправильне дієслово в condizionale presente.",
+      "en": "Put the irregular verb in the condizionale presente."
+     },
+     "it": "Loro ___ con noi?",
+     "hint": "venire",
+     "answers": [
+      "verrebbero"
+     ],
+     "why": {
+      "ru": "группа 2: verr-",
+      "uk": "група 2: verr-",
+      "en": "group 2: verr-"
+     }
+    },
+    {
+     "id": "cf-20",
+     "type": "fill",
+     "task": {
+      "ru": "Поставь неправильный глагол в condizionale presente.",
+      "uk": "Постав неправильне дієслово в condizionale presente.",
+      "en": "Put the irregular verb in the condizionale presente."
+     },
+     "it": "Io ___ un bicchiere d'acqua.",
+     "hint": "volere",
+     "answers": [
+      "vorrei"
+     ],
+     "why": {
+      "ru": "группа 2: vorr-",
+      "uk": "група 2: vorr-",
+      "en": "group 2: vorr-"
+     }
+    },
+    {
+     "id": "cf-21",
+     "type": "fill",
+     "task": {
+      "ru": "Поставь неправильный глагол в condizionale presente.",
+      "uk": "Постав неправильне дієслово в condizionale presente.",
+      "en": "Put the irregular verb in the condizionale presente."
+     },
+     "it": "Noi ___ qui ancora un'ora.",
+     "hint": "rimanere",
+     "answers": [
+      "rimarremmo"
+     ],
+     "why": {
+      "ru": "группа 2: rimarr-",
+      "uk": "група 2: rimarr-",
+      "en": "group 2: rimarr-"
+     }
+    },
+    {
+     "id": "cf-22",
+     "type": "fill",
+     "task": {
+      "ru": "Поставь неправильный глагол в condizionale presente.",
+      "uk": "Постав неправильне дієслово в condizionale presente.",
+      "en": "Put the irregular verb in the condizionale presente."
+     },
+     "it": "Lui ___ volentieri una birra.",
+     "hint": "bere",
+     "answers": [
+      "berrebbe"
+     ],
+     "why": {
+      "ru": "группа 2: berr-",
+      "uk": "група 2: berr-",
+      "en": "group 2: berr-"
+     }
+    },
+    {
+     "id": "cf-23",
+     "type": "choice",
+     "task": {
+      "ru": "Выбери правильную форму.",
+      "uk": "Обери правильну форму.",
+      "en": "Choose the correct form."
+     },
+     "it": "Domani ___ al mare: abbiamo già i biglietti.",
+     "options": [
+      "andremo",
+      "andremmo",
+      "andaremmo"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "План точно будет → futuro (-emo)",
+      "uk": "План точно буде → futuro (-emo)",
+      "en": "Definite plan → futuro (-emo)"
+     }
+    },
+    {
+     "id": "cf-24",
+     "type": "choice",
+     "task": {
+      "ru": "Выбери правильную форму.",
+      "uk": "Обери правильну форму.",
+      "en": "Choose the correct form."
+     },
+     "it": "___ al mare, ma piove.",
+     "options": [
+      "andremo",
+      "andremmo",
+      "andaremo"
+     ],
+     "answer": 1,
+     "why": {
+      "ru": "«Пошли бы, но…» → condizionale (-emmo)",
+      "uk": "«Пішли б, але…» → condizionale (-emmo)",
+      "en": "“We would go, but…” → conditional (-emmo)"
+     }
+    },
+    {
+     "id": "cf-25",
+     "type": "choice",
+     "task": {
+      "ru": "Выбери правильную форму.",
+      "uk": "Обери правильну форму.",
+      "en": "Choose the correct form."
+     },
+     "it": "Al posto vostro, noi ___ meno.",
+     "options": [
+      "lavoreremo",
+      "lavoreremmo",
+      "lavoraremmo"
+     ],
+     "answer": 1,
+     "why": {
+      "ru": "на вашем месте мы бы… → -emmo",
+      "uk": "на вашому місці ми б… → -emmo",
+      "en": "if we were you, we would… → -emmo"
+     }
+    },
+    {
+     "id": "cf-26",
+     "type": "choice",
+     "task": {
+      "ru": "Выбери правильную форму.",
+      "uk": "Обери правильну форму.",
+      "en": "Choose the correct form."
+     },
+     "it": "Io ___ con la carta.",
+     "options": [
+      "pagerei",
+      "pagherei",
+      "pagarei"
+     ],
+     "answer": 1,
+     "why": {
+      "ru": "-gare: + h",
+      "uk": "-gare: + h",
+      "en": "-gare: add h"
+     }
+    },
+    {
+     "id": "cf-27",
+     "type": "choice",
+     "task": {
+      "ru": "Выбери правильную форму.",
+      "uk": "Обери правильну форму.",
+      "en": "Choose the correct form."
+     },
+     "it": "Lei ___ subito.",
+     "options": [
+      "comincerebbe",
+      "cominciarebbe",
+      "comincierebbe"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "-ciare: i выпадает, a → e",
+      "uk": "-ciare: i випадає, a → e",
+      "en": "-ciare: i drops, a → e"
+     }
+    },
+    {
+     "id": "cf-28",
+     "type": "choice",
+     "task": {
+      "ru": "Выбери правильную форму.",
+      "uk": "Обери правильну форму.",
+      "en": "Choose the correct form."
+     },
+     "it": "Tu ___ una torta per la festa?",
+     "options": [
+      "faresti",
+      "feresti",
+      "fareresti"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "fare сохраняет a",
+      "uk": "fare зберігає a",
+      "en": "fare keeps the a"
+     }
+    },
+    {
+     "id": "cf-29",
+     "type": "choice",
+     "task": {
+      "ru": "Выбери правильную форму.",
+      "uk": "Обери правильну форму.",
+      "en": "Choose the correct form."
+     },
+     "it": "Loro ___ volentieri.",
+     "options": [
+      "verrebbero",
+      "venirebbero",
+      "venerebbero"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "группа 2: verr-",
+      "uk": "група 2: verr-",
+      "en": "group 2: verr-"
+     }
+    },
+    {
+     "id": "cf-30",
+     "type": "choice",
+     "task": {
+      "ru": "Выбери правильную форму.",
+      "uk": "Обери правильну форму.",
+      "en": "Choose the correct form."
+     },
+     "it": "___ aiutarmi, per favore?",
+     "options": [
+      "Potresti",
+      "Poteresti",
+      "Potreresti"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "группа 1: potr-",
+      "uk": "група 1: potr-",
+      "en": "group 1: potr-"
+     }
+    },
+    {
+     "id": "cf-31",
+     "type": "choice",
+     "task": {
+      "ru": "Выбери правильную форму.",
+      "uk": "Обери правильну форму.",
+      "en": "Choose the correct form."
+     },
+     "it": "Mi ___ studiare canto.",
+     "options": [
+      "piacerei",
+      "piacerebbe",
+      "piaccerebbe"
+     ],
+     "answer": 1,
+     "why": {
+      "ru": "piacere как «мне нравится» → 3-е лицо",
+      "uk": "piacere як «мені подобається» → 3-тя особа",
+      "en": "piacere works like “it pleases me” → 3rd person"
+     }
+    },
+    {
+     "id": "cf-32",
+     "type": "choice",
+     "task": {
+      "ru": "Выбери правильную форму.",
+      "uk": "Обери правильну форму.",
+      "en": "Choose the correct form."
+     },
+     "it": "Io ___ un caffè, per favore.",
+     "options": [
+      "voglio",
+      "vorrei",
+      "volerei"
+     ],
+     "answer": 1,
+     "why": {
+      "ru": "вежливо → vorrei",
+      "uk": "ввічливо → vorrei",
+      "en": "polite → vorrei"
+     }
+    }
+   ]
+  },
+  {
+   "topic": "g5-condizionale-uso",
+   "items": [
+    {
+     "id": "cu-01",
+     "type": "choice",
+     "task": {
+      "ru": "Прочитай ситуацию и выбери, что сказать.",
+      "uk": "Прочитай ситуацію та обери, що сказати.",
+      "en": "Read the situation and choose what to say."
+     },
+     "situation": {
+      "ru": "Друг всегда уставший. Дай мягкий совет.",
+      "uk": "Друг завжди втомлений. Дай м’яку пораду.",
+      "en": "Your friend is always tired. Give gentle advice."
+     },
+     "options": [
+      "Dovresti dormire di più.",
+      "Dovrai dormire di più.",
+      "Hai dovuto dormire di più."
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Совет мягко → dovresti",
+      "uk": "Порада м’яко → dovresti",
+      "en": "Soft advice → dovresti"
+     }
+    },
+    {
+     "id": "cu-02",
+     "type": "choice",
+     "task": {
+      "ru": "Прочитай ситуацию и выбери, что сказать.",
+      "uk": "Прочитай ситуацію та обери, що сказати.",
+      "en": "Read the situation and choose what to say."
+     },
+     "situation": {
+      "ru": "В баре вежливо просишь кофе.",
+      "uk": "У барі ввічливо просиш каву.",
+      "en": "At the bar you politely ask for a coffee."
+     },
+     "options": [
+      "Voglio un caffè.",
+      "Vorrei un caffè.",
+      "Vorrò un caffè."
+     ],
+     "answer": 1,
+     "why": {
+      "ru": "Вежливая просьба → vorrei",
+      "uk": "Ввічливе прохання → vorrei",
+      "en": "Polite request → vorrei"
+     }
+    },
+    {
+     "id": "cu-03",
+     "type": "choice",
+     "task": {
+      "ru": "Прочитай ситуацию и выбери, что сказать.",
+      "uk": "Прочитай ситуацію та обери, що сказати.",
+      "en": "Read the situation and choose what to say."
+     },
+     "situation": {
+      "ru": "Просишь незнакомого человека (Lei) закрыть окно.",
+      "uk": "Просиш незнайому людину (Lei) зачинити вікно.",
+      "en": "You ask a stranger (Lei) to close the window."
+     },
+     "options": [
+      "Chiudi la finestra!",
+      "Potresti chiudere la finestra?",
+      "Potrebbe chiudere la finestra?"
+     ],
+     "answer": 2,
+     "why": {
+      "ru": "С незнакомым — Lei, 3-е лицо → potrebbe",
+      "uk": "З незнайомим — Lei, 3-тя особа → potrebbe",
+      "en": "With a stranger use Lei, 3rd person → potrebbe"
+     }
+    },
+    {
+     "id": "cu-04",
+     "type": "choice",
+     "task": {
+      "ru": "Прочитай ситуацию и выбери, что сказать.",
+      "uk": "Прочитай ситуацію та обери, що сказати.",
+      "en": "Read the situation and choose what to say."
+     },
+     "situation": {
+      "ru": "Говоришь о мечте: хочешь посетить Рим.",
+      "uk": "Говориш про мрію: хочеш відвідати Рим.",
+      "en": "You talk about a dream: you want to visit Rome."
+     },
+     "options": [
+      "Mi piacerebbe visitare Roma.",
+      "Mi è piaciuto visitare Roma.",
+      "Io piacerei visitare Roma."
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Желание → mi piacerebbe + инфинитив",
+      "uk": "Бажання → mi piacerebbe + інфінітив",
+      "en": "Wish → mi piacerebbe + infinitive"
+     }
+    },
+    {
+     "id": "cu-05",
+     "type": "choice",
+     "task": {
+      "ru": "Прочитай ситуацию и выбери, что сказать.",
+      "uk": "Прочитай ситуацію та обери, що сказати.",
+      "en": "Read the situation and choose what to say."
+     },
+     "situation": {
+      "ru": "Подруга плохо себя чувствует. Совет: «На твоём месте я бы пошёл к врачу».",
+      "uk": "Подруга погано почувається. Порада: «На твоєму місці я б пішов до лікаря».",
+      "en": "Your friend feels unwell. Advice: “If I were you, I’d see a doctor.”"
+     },
+     "options": [
+      "Al posto tuo io andrò dal medico.",
+      "Al posto tuo io andrei dal medico.",
+      "Al posto tuo io vado dal medico."
+     ],
+     "answer": 1,
+     "why": {
+      "ru": "«На твоём месте я бы» → al posto tuo + condizionale",
+      "uk": "«На твоєму місці я б» → al posto tuo + condizionale",
+      "en": "“If I were you” → al posto tuo + conditional"
+     }
+    },
+    {
+     "id": "cu-06",
+     "type": "choice",
+     "task": {
+      "ru": "Прочитай ситуацию и выбери, что сказать.",
+      "uk": "Прочитай ситуацію та обери, що сказати.",
+      "en": "Read the situation and choose what to say."
+     },
+     "situation": {
+      "ru": "На уроке просишь одноклассника дать лист.",
+      "uk": "На уроці просиш однокласника дати аркуш.",
+      "en": "In class you ask a classmate for a sheet of paper."
+     },
+     "options": [
+      "Mi daresti un foglio?",
+      "Mi darai un foglio?",
+      "Mi hai dato un foglio?"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Вежливая просьба к «tu» → mi daresti",
+      "uk": "Ввічливе прохання до «tu» → mi daresti",
+      "en": "Polite request with tu → mi daresti"
+     }
+    },
+    {
+     "id": "cu-07",
+     "type": "choice",
+     "task": {
+      "ru": "Прочитай ситуацию и выбери, что сказать.",
+      "uk": "Прочитай ситуацію та обери, що сказати.",
+      "en": "Read the situation and choose what to say."
+     },
+     "situation": {
+      "ru": "Мягко говоришь своё мнение: лучше подождать.",
+      "uk": "М’яко висловлюєш думку: краще почекати.",
+      "en": "You softly give your opinion: it’s better to wait."
+     },
+     "options": [
+      "Mi sembrerebbe meglio aspettare.",
+      "Mi sembrerà meglio aspettare.",
+      "Mi è sembrato meglio aspettare."
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Мнение мягко → mi sembrerebbe",
+      "uk": "Думка м’яко → mi sembrerebbe",
+      "en": "Soft opinion → mi sembrerebbe"
+     }
+    },
+    {
+     "id": "cu-08",
+     "type": "choice",
+     "task": {
+      "ru": "Прочитай ситуацию и выбери, что сказать.",
+      "uk": "Прочитай ситуацію та обери, що сказати.",
+      "en": "Read the situation and choose what to say."
+     },
+     "situation": {
+      "ru": "Желание: следующим летом с удовольствием поехал бы на Сицилию.",
+      "uk": "Бажання: наступного літа охоче поїхав би на Сицилію.",
+      "en": "A wish: next summer you’d gladly go to Sicily."
+     },
+     "options": [
+      "L'estate prossima andrei volentieri in Sicilia.",
+      "L'estate prossima andavo volentieri in Sicilia.",
+      "L'estate prossima sono andato volentieri in Sicilia."
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Желание в будущем → condizionale",
+      "uk": "Бажання в майбутньому → condizionale",
+      "en": "Wish about the future → conditional"
+     }
+    },
+    {
+     "id": "cu-09",
+     "type": "choice",
+     "task": {
+      "ru": "Прочитай ситуацию и выбери, что сказать.",
+      "uk": "Прочитай ситуацію та обери, що сказати.",
+      "en": "Read the situation and choose what to say."
+     },
+     "situation": {
+      "ru": "Вежливо просишь учителя (Lei) повторить.",
+      "uk": "Ввічливо просиш учителя (Lei) повторити.",
+      "en": "You politely ask the teacher (Lei) to repeat."
+     },
+     "options": [
+      "Ripeti!",
+      "Potrebbe ripetere, per favore?",
+      "Potrà ripetere?"
+     ],
+     "answer": 1,
+     "why": {
+      "ru": "Вежливо, Lei → potrebbe",
+      "uk": "Ввічливо, Lei → potrebbe",
+      "en": "Polite, Lei → potrebbe"
+     }
+    },
+    {
+     "id": "cu-10",
+     "type": "choice",
+     "task": {
+      "ru": "Прочитай ситуацию и выбери, что сказать.",
+      "uk": "Прочитай ситуацію та обери, що сказати.",
+      "en": "Read the situation and choose what to say."
+     },
+     "situation": {
+      "ru": "Фабио хочет уйти с работы. Мягкий совет.",
+      "uk": "Фабіо хоче звільнитися. М’яка порада.",
+      "en": "Fabio wants to quit his job. Gentle advice."
+     },
+     "options": [
+      "Fabio, dovresti parlare con il capo.",
+      "Fabio, dovrai parlare con il capo.",
+      "Fabio, hai dovuto parlare con il capo."
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Совет мягко → dovresti",
+      "uk": "Порада м’яко → dovresti",
+      "en": "Soft advice → dovresti"
+     }
+    }
+   ]
   }
  ]
 }
