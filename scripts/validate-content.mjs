@@ -180,8 +180,7 @@ const CAMPI = {
   exceptions: (v) => Array.isArray(v) && v.every((e) => testo(e?.title) && testo(e?.text) && esempi(e?.examples)),
   mistakes: (v) => Array.isArray(v) && v.every((m) => testo(m?.wrong) && testo(m?.right) && testo(m?.why)),
   examples: esempi,
-  // summary facoltativo: senza, niente "In sintesi".
-  summary: (v) => v === undefined || testo(v),
+  summary: testo,
 };
 const lezioniPerLingua = {};
 const lezioniCompletePerLingua = {};

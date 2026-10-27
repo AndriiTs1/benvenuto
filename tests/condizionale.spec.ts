@@ -55,7 +55,7 @@ test("esercizi le forme: 32 voci, risposta con maiuscole e spazi giusta", async 
 test("esercizi uso: situazione nella lingua scelta, 3 opzioni, spiegazione", async ({ page, context, baseURL }) => {
   await context.addCookies([{ name: "bv_lang", value: "en", url: baseURL! }]);
   await page.goto("/a2/esercizi/uso-del-condizionale");
-  await expect(page.getByText("1 / 10", { exact: true })).toBeVisible();
+  await expect(page.getByText("1 / 28", { exact: true })).toBeVisible();
   await expect(page.getByText("Read the situation and choose what to say.")).toBeVisible();
   await expect(page.locator("#esercizio-frase")).toHaveText("Your friend is always tired. Give gentle advice.");
   await expect(page.locator("main li button")).toHaveCount(3);

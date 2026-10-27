@@ -7557,6 +7557,7 @@
      "why": "група 2: подвійне {{rr}}"
     }
    ],
+   "summary": "Основа **{{futuro}}** + **{{-ei}}, {{-esti}}, {{-ebbe}}, {{-emmo}}, {{-este}}, {{-ebbero}}**: {{andrò}} → **{{andrei}}**. Неправильні дієслова — як у {{futuro}}: **{{sarei}}, {{avrei}}, {{farei}}, {{vorrei}}**. Не плутай **{{-emo}}** ({{futuro}}) і **{{-emmo}}** ({{condizionale}}).",
    "examples": [],
    "links": [
     {
@@ -7683,6 +7684,39 @@
     },
     {
      "type": "pairs",
+     "title": "{{Tu o Lei?}} · З другом чи на «Ви»?",
+     "sep": "·",
+     "items": [
+      {
+       "a": "Apriresti la finestra?",
+       "b": "tu",
+       "tr": "Ти б не відчинив вікно?"
+      },
+      {
+       "a": "Aprirebbe la finestra?",
+       "b": "Lei",
+       "tr": "Ви б не відчинили вікно?"
+      },
+      {
+       "a": "Potresti aiutarmi?",
+       "b": "tu",
+       "tr": "Ти не міг би мені допомогти?"
+      },
+      {
+       "a": "Potrebbe aiutarmi?",
+       "b": "Lei",
+       "tr": "Чи не могли б Ви мені допомогти?"
+      },
+      {
+       "a": "Mi scusi, saprebbe dov'è la stazione?",
+       "b": "Lei",
+       "tr": "Перепрошую, Ви не підкажете, де вокзал?"
+      }
+     ],
+     "note": "З другом — форма {{tu}} (закінчення **{{-esti}}**). Ввічливо, на «Ви», — форма {{Lei}}: закінчення **{{-ebbe}}**, як у {{lui/lei}}."
+    },
+    {
+     "type": "pairs",
      "title": "3. {{Esprimere desideri}} {{nel presente}} {{o nel futuro}} · Бажання зараз або в майбутньому",
      "sep": "",
      "items": [
@@ -7736,7 +7770,16 @@
      "why": "з {{Lei}} — 3-тя особа"
     }
    ],
-   "examples": []
+   "summary": "{{Condizionale}} — це «б/би»: **бажання** ({{vorrei un caffè}}), **порада** ({{dovresti}} + інфінітив), **ввічливе прохання** ({{potresti…?}} / на «Ви»: {{potrebbe…?}}).",
+   "examples": [],
+   "links": [
+    {
+     "at": "start",
+     "it": "Le forme → Condizionale presente",
+     "tr": "Як утворюються форми",
+     "topic": "g5-condizionale-forme"
+    }
+   ]
   }
  }
 }

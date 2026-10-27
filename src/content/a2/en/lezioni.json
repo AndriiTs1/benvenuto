@@ -7557,6 +7557,7 @@
      "why": "group 2: double {{rr}}"
     }
    ],
+   "summary": "**{{futuro}}** stem + **{{-ei}}, {{-esti}}, {{-ebbe}}, {{-emmo}}, {{-este}}, {{-ebbero}}**: {{andrò}} → **{{andrei}}**. Irregular verbs match the {{futuro}}: **{{sarei}}, {{avrei}}, {{farei}}, {{vorrei}}**. Don't mix up **{{-emo}}** ({{futuro}}) and **{{-emmo}}** ({{condizionale}}).",
    "examples": [],
    "links": [
     {
@@ -7683,6 +7684,39 @@
     },
     {
      "type": "pairs",
+     "title": "{{Tu o Lei?}} · Friend or formal?",
+     "sep": "·",
+     "items": [
+      {
+       "a": "Apriresti la finestra?",
+       "b": "tu",
+       "tr": "Would you open the window? (informal)"
+      },
+      {
+       "a": "Aprirebbe la finestra?",
+       "b": "Lei",
+       "tr": "Would you open the window? (formal)"
+      },
+      {
+       "a": "Potresti aiutarmi?",
+       "b": "tu",
+       "tr": "Could you help me? (informal)"
+      },
+      {
+       "a": "Potrebbe aiutarmi?",
+       "b": "Lei",
+       "tr": "Could you help me? (formal)"
+      },
+      {
+       "a": "Mi scusi, saprebbe dov'è la stazione?",
+       "b": "Lei",
+       "tr": "Excuse me, would you know where the station is?"
+      }
+     ],
+     "note": "With a friend use {{tu}} (ending **{{-esti}}**). Formally use {{Lei}}: ending **{{-ebbe}}**, like {{lui/lei}}."
+    },
+    {
+     "type": "pairs",
      "title": "3. {{Esprimere desideri}} {{nel presente}} {{o nel futuro}} · A wish now or in the future",
      "sep": "",
      "items": [
@@ -7736,7 +7770,16 @@
      "why": "with {{Lei}} — 3rd person"
     }
    ],
-   "examples": []
+   "summary": "The {{condizionale}} means \"would\": **wishes** ({{vorrei un caffè}}), **advice** ({{dovresti}} + infinitive), **polite requests** ({{potresti…?}} / formally: {{potrebbe…?}}).",
+   "examples": [],
+   "links": [
+    {
+     "at": "start",
+     "it": "Le forme → Condizionale presente",
+     "tr": "How the forms are made",
+     "topic": "g5-condizionale-forme"
+    }
+   ]
   }
  }
 }

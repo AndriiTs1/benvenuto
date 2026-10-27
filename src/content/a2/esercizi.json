@@ -6115,6 +6115,348 @@
       "uk": "Порада м’яко → dovresti",
       "en": "Soft advice → dovresti"
      }
+    },
+    {
+     "id": "cu-11",
+     "type": "fill",
+     "task": {
+      "ru": "Ответь по образцу: «Я бы с удовольствием…» (condizionale + volentieri).",
+      "uk": "Відповідай за зразком: «Я б із задоволенням…» (condizionale + volentieri).",
+      "en": "Answer following the model: \"I'd gladly…\" (condizionale + volentieri)."
+     },
+     "it": "Ho voglia di ascoltare la musica. → ___ volentieri la musica.",
+     "hint": "ascoltare",
+     "answers": [
+      "ascolterei"
+     ],
+     "why": {
+      "ru": "«Мне хочется послушать музыку» → «Я бы с удовольствием послушал музыку». -are: a → e.",
+      "uk": "«Мені хочеться послухати музику» → «Я б із задоволенням послухав музику». -are: a → e.",
+      "en": "\"I feel like listening to music\" → \"I'd gladly listen to music\". -are: a → e."
+     }
+    },
+    {
+     "id": "cu-12",
+     "type": "fill",
+     "task": {
+      "ru": "Ответь по образцу: «Я бы с удовольствием…» (condizionale + volentieri).",
+      "uk": "Відповідай за зразком: «Я б із задоволенням…» (condizionale + volentieri).",
+      "en": "Answer following the model: \"I'd gladly…\" (condizionale + volentieri)."
+     },
+     "it": "Ho voglia di giocare a carte. → ___ volentieri a carte.",
+     "hint": "giocare",
+     "answers": [
+      "giocherei"
+     ],
+     "why": {
+      "ru": "«Мне хочется поиграть в карты» → «Я бы с удовольствием поиграл в карты». -care: + h.",
+      "uk": "«Мені хочеться пограти в карти» → «Я б із задоволенням пограв у карти». -care: + h.",
+      "en": "\"I feel like playing cards\" → \"I'd gladly play cards\". -care: add h."
+     }
+    },
+    {
+     "id": "cu-13",
+     "type": "fill",
+     "task": {
+      "ru": "Ответь по образцу: «Я бы с удовольствием…» (condizionale + volentieri).",
+      "uk": "Відповідай за зразком: «Я б із задоволенням…» (condizionale + volentieri).",
+      "en": "Answer following the model: \"I'd gladly…\" (condizionale + volentieri)."
+     },
+     "it": "Ho voglia di leggere un libro. → ___ volentieri un libro.",
+     "hint": "leggere",
+     "answers": [
+      "leggerei"
+     ],
+     "why": {
+      "ru": "«Мне хочется почитать книгу» → «Я бы с удовольствием почитал книгу».",
+      "uk": "«Мені хочеться почитати книжку» → «Я б із задоволенням почитав книжку».",
+      "en": "\"I feel like reading a book\" → \"I'd gladly read a book\"."
+     }
+    },
+    {
+     "id": "cu-14",
+     "type": "fill",
+     "task": {
+      "ru": "Ответь по образцу: «Я бы с удовольствием…» (condizionale + volentieri).",
+      "uk": "Відповідай за зразком: «Я б із задоволенням…» (condizionale + volentieri).",
+      "en": "Answer following the model: \"I'd gladly…\" (condizionale + volentieri)."
+     },
+     "it": "Ho voglia di prendere un caffè. → ___ volentieri un caffè.",
+     "hint": "prendere",
+     "answers": [
+      "prenderei"
+     ],
+     "why": {
+      "ru": "«Мне хочется выпить кофе» → «Я бы с удовольствием выпил кофе».",
+      "uk": "«Мені хочеться випити кави» → «Я б із задоволенням випив кави».",
+      "en": "\"I feel like having a coffee\" → \"I'd gladly have a coffee\"."
+     }
+    },
+    {
+     "id": "cu-15",
+     "type": "fill",
+     "task": {
+      "ru": "Ответь по образцу: «Я бы с удовольствием…» (condizionale + volentieri).",
+      "uk": "Відповідай за зразком: «Я б із задоволенням…» (condizionale + volentieri).",
+      "en": "Answer following the model: \"I'd gladly…\" (condizionale + volentieri)."
+     },
+     "it": "Ho voglia di partire. → ___ volentieri.",
+     "hint": "partire",
+     "answers": [
+      "partirei"
+     ],
+     "why": {
+      "ru": "«Мне хочется уехать» → «Я бы с удовольствием уехал».",
+      "uk": "«Мені хочеться поїхати» → «Я б із задоволенням поїхав».",
+      "en": "\"I feel like leaving\" → \"I'd gladly leave\"."
+     }
+    },
+    {
+     "id": "cu-16",
+     "type": "fill",
+     "task": {
+      "ru": "Ответь по образцу: «Я бы с удовольствием…» (condizionale + volentieri).",
+      "uk": "Відповідай за зразком: «Я б із задоволенням…» (condizionale + volentieri).",
+      "en": "Answer following the model: \"I'd gladly…\" (condizionale + volentieri)."
+     },
+     "it": "Ho voglia di uscire con gli amici. → ___ volentieri con gli amici.",
+     "hint": "uscire",
+     "answers": [
+      "uscirei"
+     ],
+     "why": {
+      "ru": "«Мне хочется сходить куда-нибудь с друзьями» → «Я бы с удовольствием сходил куда-нибудь с друзьями».",
+      "uk": "«Мені хочеться піти кудись із друзями» → «Я б із задоволенням пішов кудись із друзями».",
+      "en": "\"I feel like going out with friends\" → \"I'd gladly go out with friends\"."
+     }
+    },
+    {
+     "id": "cu-17",
+     "type": "fill",
+     "task": {
+      "ru": "Ответь по образцу: «Я бы с удовольствием…» (condizionale + volentieri).",
+      "uk": "Відповідай за зразком: «Я б із задоволенням…» (condizionale + volentieri).",
+      "en": "Answer following the model: \"I'd gladly…\" (condizionale + volentieri)."
+     },
+     "it": "Ho sete. → ___ volentieri una birra.",
+     "hint": "bere",
+     "answers": [
+      "berrei"
+     ],
+     "why": {
+      "ru": "«Я хочу пить» → «Я бы с удовольствием выпил пива». bere → berr- (двойная rr).",
+      "uk": "«Я хочу пити» → «Я б із задоволенням випив пива». bere → berr- (подвійне rr).",
+      "en": "\"I'm thirsty\" → \"I'd gladly have a beer\". bere → berr- (double rr)."
+     }
+    },
+    {
+     "id": "cu-18",
+     "type": "fill",
+     "task": {
+      "ru": "Ответь по образцу: «Я бы с удовольствием…» (condizionale + volentieri).",
+      "uk": "Відповідай за зразком: «Я б із задоволенням…» (condizionale + volentieri).",
+      "en": "Answer following the model: \"I'd gladly…\" (condizionale + volentieri)."
+     },
+     "it": "Ho sonno. → ___ volentieri ancora un po'.",
+     "hint": "dormire",
+     "answers": [
+      "dormirei"
+     ],
+     "why": {
+      "ru": "«Я хочу спать» → «Я бы с удовольствием поспал ещё немного».",
+      "uk": "«Я хочу спати» → «Я б із задоволенням поспав ще трохи».",
+      "en": "\"I'm sleepy\" → \"I'd gladly sleep a bit longer\"."
+     }
+    },
+    {
+     "id": "cu-19",
+     "type": "fill",
+     "task": {
+      "ru": "Ответь по образцу: «Я бы с удовольствием…» (condizionale + volentieri).",
+      "uk": "Відповідай за зразком: «Я б із задоволенням…» (condizionale + volentieri).",
+      "en": "Answer following the model: \"I'd gladly…\" (condizionale + volentieri)."
+     },
+     "it": "Sono stanco. → ___ volentieri un pisolino.",
+     "hint": "fare",
+     "answers": [
+      "farei"
+     ],
+     "why": {
+      "ru": "«Я устал» → «Я бы с удовольствием вздремнул». fare → far- (a остаётся).",
+      "uk": "«Я втомився» → «Я б із задоволенням подрімав». fare → far- (a залишається).",
+      "en": "\"I'm tired\" → \"I'd gladly take a nap\". fare → far- (the a stays)."
+     }
+    },
+    {
+     "id": "cu-20",
+     "type": "fill",
+     "task": {
+      "ru": "Ответь по образцу: «Я бы с удовольствием…» (condizionale + volentieri).",
+      "uk": "Відповідай за зразком: «Я б із задоволенням…» (condizionale + volentieri).",
+      "en": "Answer following the model: \"I'd gladly…\" (condizionale + volentieri)."
+     },
+     "it": "Sto male. → ___ volentieri a casa.",
+     "hint": "restare",
+     "answers": [
+      "resterei"
+     ],
+     "why": {
+      "ru": "«Мне плохо» → «Я бы с удовольствием остался дома». -are: a → e.",
+      "uk": "«Мені погано» → «Я б із задоволенням залишився вдома». -are: a → e.",
+      "en": "\"I feel unwell\" → \"I'd gladly stay at home\". -are: a → e."
+     }
+    },
+    {
+     "id": "cu-21",
+     "type": "fill",
+     "task": {
+      "ru": "Ответь по образцу: «Я бы с удовольствием…» (condizionale + volentieri).",
+      "uk": "Відповідай за зразком: «Я б із задоволенням…» (condizionale + volentieri).",
+      "en": "Answer following the model: \"I'd gladly…\" (condizionale + volentieri)."
+     },
+     "it": "È una bella giornata. → ___ volentieri una passeggiata.",
+     "hint": "fare",
+     "answers": [
+      "farei"
+     ],
+     "why": {
+      "ru": "«Сегодня прекрасный день» → «Я бы с удовольствием прогулялся». fare → far-.",
+      "uk": "«Сьогодні чудовий день» → «Я б із задоволенням прогулявся». fare → far-.",
+      "en": "\"It's a lovely day\" → \"I'd gladly go for a walk\". fare → far-."
+     }
+    },
+    {
+     "id": "cu-22",
+     "type": "fill",
+     "task": {
+      "ru": "Ответь по образцу: «Я бы с удовольствием…» (condizionale + volentieri).",
+      "uk": "Відповідай за зразком: «Я б із задоволенням…» (condizionale + volentieri).",
+      "en": "Answer following the model: \"I'd gladly…\" (condizionale + volentieri)."
+     },
+     "it": "È freddo. → ___ volentieri a letto.",
+     "hint": "rimanere",
+     "answers": [
+      "rimarrei"
+     ],
+     "why": {
+      "ru": "«Холодно» → «Я бы с удовольствием остался в постели». rimanere → rimarr-.",
+      "uk": "«Холодно» → «Я б із задоволенням залишився в ліжку». rimanere → rimarr-.",
+      "en": "\"It's cold\" → \"I'd gladly stay in bed\". rimanere → rimarr-."
+     }
+    },
+    {
+     "id": "cu-23",
+     "type": "fill",
+     "task": {
+      "ru": "Ответь по образцу: «Я бы с удовольствием…» (condizionale + volentieri).",
+      "uk": "Відповідай за зразком: «Я б із задоволенням…» (condizionale + volentieri).",
+      "en": "Answer following the model: \"I'd gladly…\" (condizionale + volentieri)."
+     },
+     "it": "Ho voglia di mangiare qualcosa di speciale. → ___ volentieri al ristorante.",
+     "hint": "andare",
+     "answers": [
+      "andrei"
+     ],
+     "why": {
+      "ru": "«Мне хочется съесть что-нибудь особенное» → «Я бы с удовольствием пошёл в ресторан». andare → andr-.",
+      "uk": "«Мені хочеться з'їсти щось особливе» → «Я б із задоволенням пішов до ресторану». andare → andr-.",
+      "en": "\"I feel like eating something special\" → \"I'd gladly go to a restaurant\". andare → andr-."
+     }
+    },
+    {
+     "id": "cu-24",
+     "type": "fill",
+     "task": {
+      "ru": "Ответь по образцу: «Я бы с удовольствием…» (condizionale + volentieri).",
+      "uk": "Відповідай за зразком: «Я б із задоволенням…» (condizionale + volentieri).",
+      "en": "Answer following the model: \"I'd gladly…\" (condizionale + volentieri)."
+     },
+     "it": "Stasera c'è una festa. → ___ volentieri un vestito nuovo.",
+     "hint": "comprare",
+     "answers": [
+      "comprerei"
+     ],
+     "why": {
+      "ru": "«Сегодня вечером вечеринка» → «Я бы с удовольствием купил новую одежду». -are: a → e.",
+      "uk": "«Сьогодні ввечері вечірка» → «Я б із задоволенням купив новий одяг». -are: a → e.",
+      "en": "\"There's a party tonight\" → \"I'd gladly buy a new outfit\". -are: a → e."
+     }
+    },
+    {
+     "id": "cu-25",
+     "type": "fill",
+     "task": {
+      "ru": "Ответь по образцу: «Я бы с удовольствием…» (condizionale + volentieri).",
+      "uk": "Відповідай за зразком: «Я б із задоволенням…» (condizionale + volentieri).",
+      "en": "Answer following the model: \"I'd gladly…\" (condizionale + volentieri)."
+     },
+     "it": "Ho studiato troppo. → ___ volentieri un po' di TV.",
+     "hint": "guardare",
+     "answers": [
+      "guarderei"
+     ],
+     "why": {
+      "ru": "«Я слишком много занимался» → «Я бы с удовольствием немного посмотрел телевизор».",
+      "uk": "«Я забагато вчився» → «Я б із задоволенням трохи подивився телевізор».",
+      "en": "\"I've studied too much\" → \"I'd gladly watch a bit of TV\"."
+     }
+    },
+    {
+     "id": "cu-26",
+     "type": "fill",
+     "task": {
+      "ru": "Ответь по образцу: «Я бы с удовольствием…» (condizionale + volentieri).",
+      "uk": "Відповідай за зразком: «Я б із задоволенням…» (condizionale + volentieri).",
+      "en": "Answer following the model: \"I'd gladly…\" (condizionale + volentieri)."
+     },
+     "it": "Ho bisogno di rilassarmi. → ___ volentieri un po' di musica.",
+     "hint": "ascoltare",
+     "answers": [
+      "ascolterei"
+     ],
+     "why": {
+      "ru": "«Мне нужно расслабиться» → «Я бы с удовольствием послушал немного музыки».",
+      "uk": "«Мені треба розслабитися» → «Я б із задоволенням послухав трохи музики».",
+      "en": "\"I need to relax\" → \"I'd gladly listen to some music\"."
+     }
+    },
+    {
+     "id": "cu-27",
+     "type": "fill",
+     "task": {
+      "ru": "Ответь по образцу: «Я бы с удовольствием…» (condizionale + volentieri).",
+      "uk": "Відповідай за зразком: «Я б із задоволенням…» (condizionale + volentieri).",
+      "en": "Answer following the model: \"I'd gladly…\" (condizionale + volentieri)."
+     },
+     "it": "Ho voglia di parlare con qualcuno. → ___ volentieri quattro chiacchiere con Anna.",
+     "hint": "fare",
+     "answers": [
+      "farei"
+     ],
+     "why": {
+      "ru": "«Мне хочется с кем-нибудь поговорить» → «Я бы с удовольствием поболтал с Анной». fare → far-.",
+      "uk": "«Мені хочеться з кимось поговорити» → «Я б із задоволенням побалакав з Анною». fare → far-.",
+      "en": "\"I feel like talking to someone\" → \"I'd gladly have a chat with Anna\". fare → far-."
+     }
+    },
+    {
+     "id": "cu-28",
+     "type": "fill",
+     "task": {
+      "ru": "Ответь по образцу: «Я бы с удовольствием…» (condizionale + volentieri).",
+      "uk": "Відповідай за зразком: «Я б із задоволенням…» (condizionale + volentieri).",
+      "en": "Answer following the model: \"I'd gladly…\" (condizionale + volentieri)."
+     },
+     "it": "È molto caldo. → ___ volentieri al mare.",
+     "hint": "andare",
+     "answers": [
+      "andrei"
+     ],
+     "why": {
+      "ru": "«Очень жарко» → «Я бы с удовольствием поехал на море». andare → andr-.",
+      "uk": "«Дуже спекотно» → «Я б із задоволенням поїхав на море». andare → andr-.",
+      "en": "\"It's very hot\" → \"I'd gladly go to the seaside\". andare → andr-."
+     }
     }
    ]
   }
