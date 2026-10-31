@@ -188,3 +188,50 @@ export function useProgressoEsercizi(): ProgressoEsercizi {
     }
   }, [raw]);
 }
+
+// --- Esercizi A2: giro in corso (per riprendere da dove ci si è fermati) ---
+
+const GIRO_A2_KEY = "benvenuto.giro.a2";
+
+export type EsitoSalvato = { ok: boolean; data: string; accento?: string; scelta?: number };
+
+export type GiroSalvato = {
+  ids: string[];
+  pos: number;
+  esiti: Record<string, EsitoSalvato>;
+  ordini: Record<string, number[]>;
+  completo: boolean;
+};
+
+function leggiGiri(): Record<string, unknown> {
+  const dati = leggi(GIRO_A2_KEY);
+  return dati && typeof dati === "object" && !Array.isArray(dati) ? (dati as Record<string, unknown>) : {};
+}
+
+export function leggiGiro(topicId: string): GiroSalvato | null {
+  const g = leggiGiri()[topicId] as Partial<GiroSalvato> | undefined;
+  if (
+    !g ||
+    !Array.isArray(g.ids) ||
+    !g.ids.every((id) => typeof id === "string") ||
+    !Number.isInteger(g.pos) ||
+    !g.esiti ||
+    typeof g.esiti !== "object" ||
+    !g.ordini ||
+    typeof g.ordini !== "object" ||
+    typeof g.completo !== "boolean"
+  )
+    return null;
+  return g as GiroSalvato;
+}
+
+export function salvaGiro(topicId: string, giro: GiroSalvato) {
+  scrivi(GIRO_A2_KEY, { ...leggiGiri(), [topicId]: giro });
+}
+
+export function cancellaGiro(topicId: string) {
+  const giri = leggiGiri();
+  if (!(topicId in giri)) return;
+  delete giri[topicId];
+  scrivi(GIRO_A2_KEY, giri);
+}

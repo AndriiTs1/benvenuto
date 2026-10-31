@@ -5,7 +5,7 @@ import { useEffect, useRef, useState, useSyncExternalStore, type FormEvent } fro
 import { IconCheck, IconX } from "@/components/lezione/ui";
 import { Tr } from "@/components/Tr";
 import type { Istruzioni, VoceEsercizio } from "@/content/a2/esercizi";
-import { salvaMigliore, salvaRisposta } from "@/lib/progress";
+import { cancellaGiro, leggiGiro, salvaGiro, salvaMigliore, salvaRisposta, type GiroSalvato } from "@/lib/progress";
 import { verificaRisposta } from "@/lib/verifica";
 
 // Player degli esercizi: una voce alla volta, poi il risultato finale.
@@ -35,6 +35,22 @@ function ordini(voci: VoceEsercizio[]) {
 
 const nessuno = () => () => {};
 
+// Il giro salvato vale solo se combacia con le voci di adesso (il contenuto può essere cambiato).
+function giroValido(g: GiroSalvato | null, voci: VoceEsercizio[]): g is GiroSalvato {
+  if (!g || g.ids.length === 0) return false;
+  const perId = new Map(voci.map((v) => [v.id, v]));
+  const risposte = Object.keys(g.esiti).length;
+  return (
+    g.ids.every((id) => {
+      const v = perId.get(id);
+      return v !== undefined && (v.type !== "choice" || g.ordini[id]?.length === v.options.length);
+    }) &&
+    g.pos >= 0 &&
+    g.pos < g.ids.length &&
+    (g.pos > 0 || risposte > 0)
+  );
+}
+
 export function PlayerEsercizi(props: {
   topicId: string;
   titolo: string;
@@ -50,6 +66,7 @@ export function PlayerEsercizi(props: {
 }
 
 // Nello stato solo gli id: i testi arrivano sempre da `voci`, così dopo il cambio di lingua (router.refresh) si vedono nella lingua nuova.
+// Il giro in corso si salva in localStorage (benvenuto.giro.a2): riaprendo la pagina si sceglie Continua o Ricomincia.
 function Giro({
   topicId,
   titolo,
@@ -63,6 +80,13 @@ function Giro({
   voci: VoceEsercizio[];
   istruzioni: Istruzioni;
 }) {
+  // Solo al primo rendering (il componente gira solo nel browser): giro salvato da riprendere, se vale ancora.
+  const [salvato, setSalvato] = useState(() => {
+    const g = leggiGiro(topicId);
+    if (giroValido(g, voci)) return g;
+    if (g) cancellaGiro(topicId);
+    return null;
+  });
   const [giroIds, setGiroIds] = useState(() => voci.map((v) => v.id));
   const perId = new Map(voci.map((v) => [v.id, v]));
   const giro = giroIds.map((id) => perId.get(id)).filter((v): v is VoceEsercizio => v !== undefined);
@@ -79,6 +103,15 @@ function Giro({
   const voce = finito ? null : giro[pos];
   const esito = voce ? esiti[voce.id] : undefined;
   const giuste = giro.filter((v) => esiti[v.id]?.ok).length;
+
+  const risposte = Object.keys(esiti).length;
+
+  // Si salva il giro in corso (non la schermata di scelta); a giro finito si cancella.
+  useEffect(() => {
+    if (salvato) return;
+    if (finito) cancellaGiro(topicId);
+    else if (pos > 0 || risposte > 0) salvaGiro(topicId, { ids: giroIds, pos, esiti, ordini: ordiniOpzioni, completo });
+  }, [salvato, finito, topicId, giroIds, pos, esiti, risposte, ordiniOpzioni, completo]);
 
   // Dopo la verifica il fuoco va su "Avanti"; passando alla voce dopo, sul campo di risposta.
   useEffect(() => {
@@ -117,6 +150,7 @@ function Giro({
   }
 
   function ricomincia(soloErrori: boolean) {
+    cancellaGiro(topicId);
     const nuovo = soloErrori ? giro.filter((v) => !esiti[v.id]?.ok) : voci;
     setGiroIds(nuovo.map((v) => v.id));
     setCompleto(!soloErrori);
@@ -127,7 +161,21 @@ function Giro({
     setPos(0);
   }
 
-  const risposte = Object.keys(esiti).length;
+  function continua(g: GiroSalvato) {
+    setGiroIds(g.ids);
+    setCompleto(g.completo);
+    setOrdiniOpzioni(g.ordini);
+    setEsiti(g.esiti);
+    setTesto("");
+    setSalvato(null);
+    dopoAvanti.current = true;
+    setPos(g.pos);
+  }
+
+  function daCapo() {
+    setSalvato(null);
+    ricomincia(false);
+  }
 
   return (
     <div className="mx-auto w-full max-w-xl space-y-5">
@@ -136,7 +184,7 @@ function Giro({
           {titolo}
         </h1>
         {/* Nella schermata finale il numero grande è il punteggio: qui niente "12 / 12" che confonde. */}
-        {!finito && (
+        {!finito && !salvato && (
           <p className="mt-2 text-[15px] text-label-2 tabular-nums" aria-live="polite">
             {pos + 1} / {giro.length}
           </p>
@@ -156,7 +204,9 @@ function Giro({
         </div>
       </header>
 
-      {voce ? (
+      {salvato ? (
+        <Ripresa fatti={salvato.pos} totale={salvato.ids.length} onContinua={() => continua(salvato)} onRicomincia={daCapo} />
+      ) : voce ? (
         <div key={`${voce.id}-${pos}`} className="space-y-4">
           {/* Consegna della voce (task) o quella generale del tipo. */}
           <Tr locale={(voce.task ?? istruzioni[voce.type]).lingua} as="p" size="sm" className="block">
@@ -313,6 +363,36 @@ function Frase({ voce, esito }: { voce: VoceEsercizio; esito?: Esito }) {
       {voce.type === "fill" && <span className="text-label-2">({voce.hint})</span>}
       {dopo}
     </p>
+  );
+}
+
+// Riaprendo la pagina con un giro a metà: continuare da lì o ricominciare da 1.
+function Ripresa({
+  fatti,
+  totale,
+  onContinua,
+  onRicomincia,
+}: {
+  fatti: number;
+  totale: number;
+  onContinua: () => void;
+  onRicomincia: () => void;
+}) {
+  return (
+    <div className="space-y-4 text-center">
+      <div className="rounded-3xl bg-card px-4 py-8 text-center">
+        <p id="esercizio-frase" tabIndex={-1} className="text-[48px] leading-none font-bold tabular-nums outline-none">
+          {fatti} / {totale}
+        </p>
+        <p className="mt-2 text-[17px] text-label-2">esercizi fatti</p>
+      </div>
+      <button type="button" onClick={onContinua} className={CAPSULA}>
+        Continua dal {fatti + 1}
+      </button>
+      <button type="button" onClick={onRicomincia} className={CAPSULA_2}>
+        Ricomincia
+      </button>
+    </div>
   );
 }
 

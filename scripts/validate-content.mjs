@@ -447,6 +447,22 @@ try {
   if (e.code !== "ENOENT") errori.push(`esercizi.json non valido (${e.message})`);
 }
 
+// Gli studenti non hanno il nostro libro: nei testi visibili niente rimandi al libro di testo (pagine, esercizi).
+// Il campo "source" non arriva allo schermo e resta fuori dal controllo.
+const LIBRO = /учебник|підручник|textbook|libro di testo|(?<![а-яёіїєґ])стр\.\s*\d|(?<![а-яёіїєґ])упр\.|\bp\.\s*\d|\bpag\.\s*\d/i;
+function cercaLibro(nome, v, chiave) {
+  if (chiave === "source") return;
+  if (typeof v === "string") {
+    const m = v.match(LIBRO);
+    if (m) errori.push(`${nome}: riferimento al libro di testo — "${v.slice(Math.max(0, m.index - 20)).slice(0, 60)}"`);
+  } else if (Array.isArray(v)) v.forEach((x) => cercaLibro(nome, x));
+  else if (v && typeof v === "object") for (const [k, x] of Object.entries(v)) cercaLibro(nome, x, k);
+}
+for (const nome of [...lingue.map((l) => `${l}/lezioni.json`), "esercizi.json"]) {
+  const file = path.join(CARTELLA, nome);
+  if (existsSync(file)) cercaLibro(nome, leggi(file));
+}
+
 if (avvisi.length) console.warn(`Avvisi:\n- ${avvisi.join("\n- ")}`);
 
 if (errori.length) {
