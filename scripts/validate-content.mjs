@@ -145,8 +145,9 @@ for (const lingua of lingue) {
     if (/[\u0400-\u04FF]/.test(w.it ?? "")) errori.push(`${lingua}/vocab: ${w.id}.it con cirillico: "${w.it}"`);
     if (w.base !== undefined && !ids.has(w.base)) errori.push(`${lingua}/vocab: ${w.id}.base → parola inesistente ${w.base}`);
     if (w.base === w.id) errori.push(`${lingua}/vocab: ${w.id}.base punta a se stessa`);
-    if (visti.has(w.it)) errori.push(`${lingua}/vocab: "${w.it}" ripetuta (${visti.get(w.it)}, ${w.id})`);
-    visti.set(w.it, w.id);
+    const chiave = w.it.toLowerCase();
+    if (visti.has(chiave)) errori.push(`${lingua}/vocab: "${w.it}" ripetuta (${visti.get(chiave)}, ${w.id})`);
+    visti.set(chiave, w.id);
   }
 }
 
@@ -423,10 +424,14 @@ try {
         const mancano = tradotto(v.situation);
         if (mancano.length) errori.push(`${dove} situation senza ${mancano.join(", ")}`);
         if (v.it !== undefined) errori.push(`${dove} con situation non serve "it"`);
+        if (!testo(v.situationIt)) errori.push(`${dove} situation senza situationIt`);
+        else if (/[\u0400-\u04FF]/.test(v.situationIt)) errori.push(`${dove} situationIt non è in italiano`);
       } else if ((String(v?.it ?? "").match(/___/g) ?? []).length !== 1) errori.push(`${dove} "it" deve avere un solo "___"`);
+      if (v?.situationIt !== undefined && v?.situation === undefined) errori.push(`${dove} situationIt senza situation`);
       if (v?.task !== undefined && tradotto(v.task).length) errori.push(`${dove} task senza ${tradotto(v.task).join(", ")}`);
       const why = tradotto(v?.why);
       if (why.length) errori.push(`${dove} why senza ${why.join(", ")}`);
+      if (v?.tr !== undefined && tradotto(v.tr).length) errori.push(`${dove} tr senza ${tradotto(v.tr).join(", ")}`);
       if (v?.type === "fill") {
         if (!testo(v.hint)) errori.push(`${dove} fill senza hint`);
         if (!Array.isArray(v.answers) || v.answers.length === 0 || !v.answers.every(testo)) errori.push(`${dove} fill senza answers`);

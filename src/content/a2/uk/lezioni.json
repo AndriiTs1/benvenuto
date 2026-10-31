@@ -7596,6 +7596,14 @@
       {
        "a": "Mi sembrerebbe più giusto dirlo anche a tuo padre.",
        "tr": "Мені здавалося б правильніше сказати це й твоєму батькові."
+      },
+      {
+       "a": "Dove posso trovare l'ultimo libro di Wilbur Smith? — Potresti provare alla Libreria Feltrinelli.",
+       "tr": "Де мені знайти останню книжку Вілбура Сміта? — Ти міг би спробувати в книгарні Feltrinelli."
+      },
+      {
+       "a": "Avrei bisogno di tagliare i capelli: conosci un buon parrucchiere? — Io andrei da Aldo Coppola.",
+       "tr": "Мені треба підстригтися: знаєш доброго перукаря? — Я б пішла до Альдо Копполи."
       }
      ]
     },
@@ -7615,8 +7623,13 @@
       {
        "a": "mi sembrerebbe / secondo me sarebbe meglio…",
        "tr": "мені здається, було б краще…"
+      },
+      {
+       "a": "potresti + infinito",
+       "tr": "ти міг би… (порада)"
       }
-     ]
+     ],
+     "note": "{{Potresti}} — і порада, і прохання: {{Potresti provare}} {{alla libreria.}} (порада) · {{Potresti aiutarmi?}} (прохання). Увага: {{la libreria}} — книгарня, {{la biblioteca}} — бібліотека."
     },
     {
      "type": "pairs",
@@ -7766,8 +7779,8 @@
     },
     {
      "wrong": "Mi dai un foglio?",
-     "right": "Mi darebbe un foglio?",
-     "why": "з {{Lei}} — 3-тя особа"
+     "right": "Mi daresti un foglio?",
+     "why": "ввічливіше — {{condizionale}}: {{dai}} → {{daresti}}"
     }
    ],
    "summary": "{{Condizionale}} — це «б/би»: **бажання** ({{vorrei un caffè}}), **порада** ({{dovresti}} + інфінітив), **ввічливе прохання** ({{potresti…?}} / на «Ви»: {{potrebbe…?}}).",

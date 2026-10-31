@@ -5250,6 +5250,11 @@
       "ru": "-are: a → e, + -ei",
       "uk": "-are: a → e, + -ei",
       "en": "-are: a → e, + -ei"
+     },
+     "tr": {
+      "ru": "Я на твоём месте учился бы больше.",
+      "uk": "Я на твоєму місці вчився б більше.",
+      "en": "If I were you, I'd study more."
      }
     },
     {
@@ -5269,6 +5274,11 @@
       "ru": "tu: -esti",
       "uk": "tu: -esti",
       "en": "tu: -esti"
+     },
+     "tr": {
+      "ru": "Ты бы выпил со мной кофе?",
+      "uk": "Ти випив би зі мною кави?",
+      "en": "Would you have a coffee with me?"
      }
     },
     {
@@ -5288,6 +5298,11 @@
       "ru": "lei: -ebbe",
       "uk": "lei: -ebbe",
       "en": "lei: -ebbe"
+     },
+     "tr": {
+      "ru": "Марта уехала бы завтра, но у неё нет билета.",
+      "uk": "Марта поїхала б завтра, але в неї немає квитка.",
+      "en": "Marta would leave tomorrow, but she has no ticket."
      }
     },
     {
@@ -5307,6 +5322,11 @@
       "ru": "noi: -emmo (двойная m)",
       "uk": "noi: -emmo (подвійне m)",
       "en": "noi: -emmo (double m)"
+     },
+     "tr": {
+      "ru": "Мы бы купили дом побольше.",
+      "uk": "Ми б купили більший будинок.",
+      "en": "We would buy a bigger house."
      }
     },
     {
@@ -5326,6 +5346,11 @@
       "ru": "voi: -este",
       "uk": "voi: -este",
       "en": "voi: -este"
+     },
+     "tr": {
+      "ru": "Вы бы прочитали эту книгу?",
+      "uk": "Ви б прочитали цю книжку?",
+      "en": "Would you (all) read this book?"
      }
     },
     {
@@ -5345,6 +5370,11 @@
       "ru": "loro: -ebbero",
       "uk": "loro: -ebbero",
       "en": "loro: -ebbero"
+     },
+     "tr": {
+      "ru": "Дети спали бы весь день.",
+      "uk": "Діти спали б цілий день.",
+      "en": "The children would sleep all day."
      }
     },
     {
@@ -5364,6 +5394,11 @@
       "ru": "-gare: + h",
       "uk": "-gare: + h",
       "en": "-gare: add h"
+     },
+     "tr": {
+      "ru": "Я бы заплатил картой.",
+      "uk": "Я б заплатив карткою.",
+      "en": "I'd pay by card."
      }
     },
     {
@@ -5383,6 +5418,11 @@
       "ru": "-care: + h",
       "uk": "-care: + h",
       "en": "-care: add h"
+     },
+     "tr": {
+      "ru": "Ты бы искал другую работу?",
+      "uk": "Ти шукав би іншу роботу?",
+      "en": "Would you look for another job?"
      }
     },
     {
@@ -5402,6 +5442,11 @@
       "ru": "-ciare: i выпадает",
       "uk": "-ciare: i випадає",
       "en": "-ciare: the i drops"
+     },
+     "tr": {
+      "ru": "Мы бы начали сразу.",
+      "uk": "Ми б почали одразу.",
+      "en": "We would start right away."
      }
     },
     {
@@ -5421,6 +5466,11 @@
       "ru": "-giare: i выпадает",
       "uk": "-giare: i випадає",
       "en": "-giare: the i drops"
+     },
+     "tr": {
+      "ru": "Они бы с удовольствием поели пиццу.",
+      "uk": "Вони б охоче з'їли піцу.",
+      "en": "They would gladly eat pizza."
      }
     },
     {
@@ -5440,6 +5490,11 @@
       "ru": "essere → sar-",
       "uk": "essere → sar-",
       "en": "essere → sar-"
+     },
+     "tr": {
+      "ru": "Я был бы рад тебе помочь.",
+      "uk": "Я був би радий тобі допомогти.",
+      "en": "I'd be happy to help you."
      }
     },
     {
@@ -5459,6 +5514,11 @@
       "ru": "fare сохраняет a",
       "uk": "fare зберігає a",
       "en": "fare keeps the a"
+     },
+     "tr": {
+      "ru": "Ты бы сделал кое-что для меня?",
+      "uk": "Ти зробив би дещо для мене?",
+      "en": "Would you do something for me?"
      }
     },
     {
@@ -5478,6 +5538,11 @@
       "ru": "stare сохраняет a",
       "uk": "stare зберігає a",
       "en": "stare keeps the a"
+     },
+     "tr": {
+      "ru": "Ей было бы лучше на море.",
+      "uk": "Їй було б краще на морі.",
+      "en": "She would feel better at the seaside."
      }
     },
     {
@@ -5497,6 +5562,11 @@
       "ru": "группа 1: andr-",
       "uk": "група 1: andr-",
       "en": "group 1: andr-"
+     },
+     "tr": {
+      "ru": "Мы бы с удовольствием поехали в горы.",
+      "uk": "Ми б охоче поїхали в гори.",
+      "en": "We would gladly go to the mountains."
      }
     },
     {
@@ -5516,6 +5586,11 @@
       "ru": "группа 1: avr-",
       "uk": "група 1: avr-",
       "en": "group 1: avr-"
+     },
+     "tr": {
+      "ru": "Мне нужен был бы совет.",
+      "uk": "Мені потрібна була б порада.",
+      "en": "I would need some advice."
      }
     },
     {
@@ -5535,6 +5610,11 @@
       "ru": "группа 1: potr-",
       "uk": "група 1: potr-",
       "en": "group 1: potr-"
+     },
+     "tr": {
+      "ru": "Вы не могли бы закрыть дверь?",
+      "uk": "Ви не могли б зачинити двері?",
+      "en": "Could you (all) close the door?"
      }
     },
     {
@@ -5554,6 +5634,11 @@
       "ru": "группа 1: dovr-",
       "uk": "група 1: dovr-",
       "en": "group 1: dovr-"
+     },
+     "tr": {
+      "ru": "Тебе стоило бы больше спать.",
+      "uk": "Тобі варто було б більше спати.",
+      "en": "You should sleep more."
      }
     },
     {
@@ -5573,6 +5658,11 @@
       "ru": "группа 1: sapr-",
       "uk": "група 1: sapr-",
       "en": "group 1: sapr-"
+     },
+     "tr": {
+      "ru": "Я бы не знал, что сказать.",
+      "uk": "Я б не знав, що сказати.",
+      "en": "I wouldn't know what to say."
      }
     },
     {
@@ -5592,6 +5682,11 @@
       "ru": "группа 2: verr-",
       "uk": "група 2: verr-",
       "en": "group 2: verr-"
+     },
+     "tr": {
+      "ru": "Они бы пошли с нами?",
+      "uk": "Вони б пішли з нами?",
+      "en": "Would they come with us?"
      }
     },
     {
@@ -5611,6 +5706,11 @@
       "ru": "группа 2: vorr-",
       "uk": "група 2: vorr-",
       "en": "group 2: vorr-"
+     },
+     "tr": {
+      "ru": "Я бы хотел стакан воды.",
+      "uk": "Я б хотів склянку води.",
+      "en": "I'd like a glass of water."
      }
     },
     {
@@ -5630,6 +5730,11 @@
       "ru": "группа 2: rimarr-",
       "uk": "група 2: rimarr-",
       "en": "group 2: rimarr-"
+     },
+     "tr": {
+      "ru": "Мы бы остались здесь ещё на час.",
+      "uk": "Ми б залишилися тут ще на годину.",
+      "en": "We would stay here another hour."
      }
     },
     {
@@ -5649,6 +5754,11 @@
       "ru": "группа 2: berr-",
       "uk": "група 2: berr-",
       "en": "group 2: berr-"
+     },
+     "tr": {
+      "ru": "Он бы с удовольствием выпил пива.",
+      "uk": "Він би охоче випив пива.",
+      "en": "He would gladly have a beer."
      }
     },
     {
@@ -5670,6 +5780,11 @@
       "ru": "План точно будет → futuro (-emo)",
       "uk": "План точно буде → futuro (-emo)",
       "en": "Definite plan → futuro (-emo)"
+     },
+     "tr": {
+      "ru": "Завтра мы поедем на море: билеты у нас уже есть.",
+      "uk": "Завтра ми поїдемо на море: квитки в нас уже є.",
+      "en": "Tomorrow we'll go to the seaside: we already have the tickets."
      }
     },
     {
@@ -5682,15 +5797,20 @@
      },
      "it": "___ al mare, ma piove.",
      "options": [
-      "andremo",
-      "andremmo",
-      "andaremo"
+      "Andremo",
+      "Andremmo",
+      "Andaremo"
      ],
      "answer": 1,
      "why": {
       "ru": "«Пошли бы, но…» → condizionale (-emmo)",
       "uk": "«Пішли б, але…» → condizionale (-emmo)",
       "en": "“We would go, but…” → conditional (-emmo)"
+     },
+     "tr": {
+      "ru": "Мы бы поехали на море, но идёт дождь.",
+      "uk": "Ми б поїхали на море, але йде дощ.",
+      "en": "We would go to the seaside, but it's raining."
      }
     },
     {
@@ -5712,6 +5832,11 @@
       "ru": "на вашем месте мы бы… → -emmo",
       "uk": "на вашому місці ми б… → -emmo",
       "en": "if we were you, we would… → -emmo"
+     },
+     "tr": {
+      "ru": "На вашем месте мы бы работали меньше.",
+      "uk": "На вашому місці ми б працювали менше.",
+      "en": "If we were you, we'd work less."
      }
     },
     {
@@ -5733,6 +5858,11 @@
       "ru": "-gare: + h",
       "uk": "-gare: + h",
       "en": "-gare: add h"
+     },
+     "tr": {
+      "ru": "Я бы заплатил картой.",
+      "uk": "Я б заплатив карткою.",
+      "en": "I'd pay by card."
      }
     },
     {
@@ -5754,6 +5884,11 @@
       "ru": "-ciare: i выпадает, a → e",
       "uk": "-ciare: i випадає, a → e",
       "en": "-ciare: i drops, a → e"
+     },
+     "tr": {
+      "ru": "Она бы начала сразу.",
+      "uk": "Вона б почала одразу.",
+      "en": "She would start right away."
      }
     },
     {
@@ -5775,6 +5910,11 @@
       "ru": "fare сохраняет a",
       "uk": "fare зберігає a",
       "en": "fare keeps the a"
+     },
+     "tr": {
+      "ru": "Ты бы испёк торт к празднику?",
+      "uk": "Ти спік би торт на свято?",
+      "en": "Would you make a cake for the party?"
      }
     },
     {
@@ -5796,6 +5936,11 @@
       "ru": "группа 2: verr-",
       "uk": "група 2: verr-",
       "en": "group 2: verr-"
+     },
+     "tr": {
+      "ru": "Они бы пришли с удовольствием.",
+      "uk": "Вони б охоче прийшли.",
+      "en": "They would gladly come."
      }
     },
     {
@@ -5817,6 +5962,11 @@
       "ru": "группа 1: potr-",
       "uk": "група 1: potr-",
       "en": "group 1: potr-"
+     },
+     "tr": {
+      "ru": "Не мог бы ты мне помочь, пожалуйста?",
+      "uk": "Не міг би ти мені допомогти, будь ласка?",
+      "en": "Could you help me, please?"
      }
     },
     {
@@ -5838,6 +5988,11 @@
       "ru": "piacere как «мне нравится» → 3-е лицо",
       "uk": "piacere як «мені подобається» → 3-тя особа",
       "en": "piacere works like “it pleases me” → 3rd person"
+     },
+     "tr": {
+      "ru": "Мне бы хотелось учиться пению.",
+      "uk": "Мені хотілося б учитися співу.",
+      "en": "I'd like to study singing."
      }
     },
     {
@@ -5859,6 +6014,11 @@
       "ru": "вежливо → vorrei",
       "uk": "ввічливо → vorrei",
       "en": "polite → vorrei"
+     },
+     "tr": {
+      "ru": "Я бы хотел кофе, пожалуйста.",
+      "uk": "Я б хотів каву, будь ласка.",
+      "en": "I'd like a coffee, please."
      }
     }
    ]
@@ -5879,6 +6039,7 @@
       "uk": "Друг завжди втомлений. Дай м’яку пораду.",
       "en": "Your friend is always tired. Give gentle advice."
      },
+     "situationIt": "Il tuo amico è sempre stanco. Dagli un consiglio gentile.",
      "options": [
       "Dovresti dormire di più.",
       "Dovrai dormire di più.",
@@ -5889,6 +6050,11 @@
       "ru": "Совет мягко → dovresti",
       "uk": "Порада м’яко → dovresti",
       "en": "Soft advice → dovresti"
+     },
+     "tr": {
+      "ru": "Тебе стоило бы больше спать.",
+      "uk": "Тобі варто було б більше спати.",
+      "en": "You should sleep more."
      }
     },
     {
@@ -5900,10 +6066,11 @@
       "en": "Read the situation and choose what to say."
      },
      "situation": {
-      "ru": "В баре вежливо просишь кофе.",
-      "uk": "У барі ввічливо просиш каву.",
-      "en": "At the bar you politely ask for a coffee."
+      "ru": "Ты в баре. Вежливо попроси кофе.",
+      "uk": "Ти в барі. Ввічливо попроси каву.",
+      "en": "You're at the bar. Politely ask for a coffee."
      },
+     "situationIt": "Sei al bar. Chiedi un caffè in modo gentile.",
      "options": [
       "Voglio un caffè.",
       "Vorrei un caffè.",
@@ -5914,6 +6081,11 @@
       "ru": "Вежливая просьба → vorrei",
       "uk": "Ввічливе прохання → vorrei",
       "en": "Polite request → vorrei"
+     },
+     "tr": {
+      "ru": "Я бы хотел кофе.",
+      "uk": "Я б хотів каву.",
+      "en": "I'd like a coffee."
      }
     },
     {
@@ -5925,10 +6097,11 @@
       "en": "Read the situation and choose what to say."
      },
      "situation": {
-      "ru": "Просишь незнакомого человека (Lei) закрыть окно.",
-      "uk": "Просиш незнайому людину (Lei) зачинити вікно.",
-      "en": "You ask a stranger (Lei) to close the window."
+      "ru": "Попроси незнакомого человека (Lei) закрыть окно.",
+      "uk": "Попроси незнайому людину (Lei) зачинити вікно.",
+      "en": "Ask a stranger (Lei) to close the window."
      },
+     "situationIt": "Chiedi a una persona che non conosci (Lei) di chiudere la finestra.",
      "options": [
       "Chiudi la finestra!",
       "Potresti chiudere la finestra?",
@@ -5939,6 +6112,11 @@
       "ru": "С незнакомым — Lei, 3-е лицо → potrebbe",
       "uk": "З незнайомим — Lei, 3-тя особа → potrebbe",
       "en": "With a stranger use Lei, 3rd person → potrebbe"
+     },
+     "tr": {
+      "ru": "Не могли бы Вы закрыть окно?",
+      "uk": "Чи не могли б Ви зачинити вікно?",
+      "en": "Could you close the window?"
      }
     },
     {
@@ -5954,6 +6132,7 @@
       "uk": "Говориш про мрію: хочеш відвідати Рим.",
       "en": "You talk about a dream: you want to visit Rome."
      },
+     "situationIt": "Parli di un sogno: vuoi visitare Roma.",
      "options": [
       "Mi piacerebbe visitare Roma.",
       "Mi è piaciuto visitare Roma.",
@@ -5964,6 +6143,11 @@
       "ru": "Желание → mi piacerebbe + инфинитив",
       "uk": "Бажання → mi piacerebbe + інфінітив",
       "en": "Wish → mi piacerebbe + infinitive"
+     },
+     "tr": {
+      "ru": "Мне бы хотелось побывать в Риме.",
+      "uk": "Мені хотілося б побувати в Римі.",
+      "en": "I'd like to visit Rome."
      }
     },
     {
@@ -5975,10 +6159,11 @@
       "en": "Read the situation and choose what to say."
      },
      "situation": {
-      "ru": "Подруга плохо себя чувствует. Совет: «На твоём месте я бы пошёл к врачу».",
-      "uk": "Подруга погано почувається. Порада: «На твоєму місці я б пішов до лікаря».",
-      "en": "Your friend feels unwell. Advice: “If I were you, I’d see a doctor.”"
+      "ru": "Подруге плохо. Дай ей совет: «на твоём месте…»",
+      "uk": "Подрузі погано. Дай їй пораду: «на твоєму місці…»",
+      "en": "Your friend feels unwell. Give her advice: “if I were you…”"
      },
+     "situationIt": "La tua amica sta male. Dalle un consiglio: «al posto tuo…»",
      "options": [
       "Al posto tuo io andrò dal medico.",
       "Al posto tuo io andrei dal medico.",
@@ -5989,6 +6174,11 @@
       "ru": "«На твоём месте я бы» → al posto tuo + condizionale",
       "uk": "«На твоєму місці я б» → al posto tuo + condizionale",
       "en": "“If I were you” → al posto tuo + conditional"
+     },
+     "tr": {
+      "ru": "На твоём месте я бы сходил к врачу.",
+      "uk": "На твоєму місці я б пішов до лікаря.",
+      "en": "If I were you, I'd go to the doctor."
      }
     },
     {
@@ -6000,10 +6190,11 @@
       "en": "Read the situation and choose what to say."
      },
      "situation": {
-      "ru": "На уроке просишь одноклассника дать лист.",
-      "uk": "На уроці просиш однокласника дати аркуш.",
+      "ru": "На уроке просишь у одноклассника лист.",
+      "uk": "На уроці просиш в однокласника аркуш.",
       "en": "In class you ask a classmate for a sheet of paper."
      },
+     "situationIt": "In classe chiedi un foglio a un compagno.",
      "options": [
       "Mi daresti un foglio?",
       "Mi darai un foglio?",
@@ -6014,6 +6205,11 @@
       "ru": "Вежливая просьба к «tu» → mi daresti",
       "uk": "Ввічливе прохання до «tu» → mi daresti",
       "en": "Polite request with tu → mi daresti"
+     },
+     "tr": {
+      "ru": "Ты не дашь мне лист?",
+      "uk": "Даси мені аркуш?",
+      "en": "Would you give me a sheet of paper?"
      }
     },
     {
@@ -6029,6 +6225,7 @@
       "uk": "М’яко висловлюєш думку: краще почекати.",
       "en": "You softly give your opinion: it’s better to wait."
      },
+     "situationIt": "Dici la tua opinione in modo gentile: è meglio aspettare.",
      "options": [
       "Mi sembrerebbe meglio aspettare.",
       "Mi sembrerà meglio aspettare.",
@@ -6039,6 +6236,11 @@
       "ru": "Мнение мягко → mi sembrerebbe",
       "uk": "Думка м’яко → mi sembrerebbe",
       "en": "Soft opinion → mi sembrerebbe"
+     },
+     "tr": {
+      "ru": "Мне кажется, лучше было бы подождать.",
+      "uk": "Мені здається, краще було б почекати.",
+      "en": "I think it would be better to wait."
      }
     },
     {
@@ -6050,10 +6252,11 @@
       "en": "Read the situation and choose what to say."
      },
      "situation": {
-      "ru": "Желание: следующим летом с удовольствием поехал бы на Сицилию.",
-      "uk": "Бажання: наступного літа охоче поїхав би на Сицилію.",
-      "en": "A wish: next summer you’d gladly go to Sicily."
+      "ru": "Вырази желание: следующим летом — поездка на Сицилию.",
+      "uk": "Вислови бажання: наступного літа — поїздка на Сицилію.",
+      "en": "Express a wish: next summer, a trip to Sicily."
      },
+     "situationIt": "Esprimi un desiderio: l'estate prossima, un viaggio in Sicilia.",
      "options": [
       "L'estate prossima andrei volentieri in Sicilia.",
       "L'estate prossima andavo volentieri in Sicilia.",
@@ -6064,6 +6267,11 @@
       "ru": "Желание в будущем → condizionale",
       "uk": "Бажання в майбутньому → condizionale",
       "en": "Wish about the future → conditional"
+     },
+     "tr": {
+      "ru": "Следующим летом я бы с удовольствием поехал на Сицилию.",
+      "uk": "Наступного літа я б охоче поїхав на Сицилію.",
+      "en": "Next summer I'd gladly go to Sicily."
      }
     },
     {
@@ -6075,10 +6283,11 @@
       "en": "Read the situation and choose what to say."
      },
      "situation": {
-      "ru": "Вежливо просишь учителя (Lei) повторить.",
-      "uk": "Ввічливо просиш учителя (Lei) повторити.",
-      "en": "You politely ask the teacher (Lei) to repeat."
+      "ru": "Вежливо попроси учителя (Lei) повторить.",
+      "uk": "Ввічливо попроси вчителя (Lei) повторити.",
+      "en": "Politely ask the teacher (Lei) to repeat."
      },
+     "situationIt": "Chiedi all'insegnante (Lei) di ripetere, in modo gentile.",
      "options": [
       "Ripeti!",
       "Potrebbe ripetere, per favore?",
@@ -6089,6 +6298,11 @@
       "ru": "Вежливо, Lei → potrebbe",
       "uk": "Ввічливо, Lei → potrebbe",
       "en": "Polite, Lei → potrebbe"
+     },
+     "tr": {
+      "ru": "Не могли бы Вы повторить, пожалуйста?",
+      "uk": "Чи не могли б Ви повторити, будь ласка?",
+      "en": "Could you repeat that, please?"
      }
     },
     {
@@ -6100,10 +6314,11 @@
       "en": "Read the situation and choose what to say."
      },
      "situation": {
-      "ru": "Фабио хочет уйти с работы. Мягкий совет.",
-      "uk": "Фабіо хоче звільнитися. М’яка порада.",
-      "en": "Fabio wants to quit his job. Gentle advice."
+      "ru": "Фабио хочет уйти с работы. Дай ему мягкий совет.",
+      "uk": "Фабіо хоче піти з роботи. Дай йому м’яку пораду.",
+      "en": "Fabio wants to quit his job. Give him gentle advice."
      },
+     "situationIt": "Fabio vuole lasciare il lavoro. Dagli un consiglio gentile.",
      "options": [
       "Fabio, dovresti parlare con il capo.",
       "Fabio, dovrai parlare con il capo.",
@@ -6114,6 +6329,11 @@
       "ru": "Совет мягко → dovresti",
       "uk": "Порада м’яко → dovresti",
       "en": "Soft advice → dovresti"
+     },
+     "tr": {
+      "ru": "Фабио, тебе стоило бы поговорить с начальником.",
+      "uk": "Фабіо, тобі варто було б поговорити з начальником.",
+      "en": "Fabio, you should talk to the boss."
      }
     },
     {
@@ -6333,7 +6553,7 @@
       "uk": "Відповідай за зразком: «Я б із задоволенням…» (condizionale + volentieri).",
       "en": "Answer following the model: \"I'd gladly…\" (condizionale + volentieri)."
      },
-     "it": "È freddo. → ___ volentieri a letto.",
+     "it": "Fa freddo. → ___ volentieri a letto.",
      "hint": "rimanere",
      "answers": [
       "rimarrei"
@@ -6447,7 +6667,7 @@
       "uk": "Відповідай за зразком: «Я б із задоволенням…» (condizionale + volentieri).",
       "en": "Answer following the model: \"I'd gladly…\" (condizionale + volentieri)."
      },
-     "it": "È molto caldo. → ___ volentieri al mare.",
+     "it": "Fa molto caldo. → ___ volentieri al mare.",
      "hint": "andare",
      "answers": [
       "andrei"
@@ -6456,6 +6676,306 @@
       "ru": "«Очень жарко» → «Я бы с удовольствием поехал на море». andare → andr-.",
       "uk": "«Дуже спекотно» → «Я б із задоволенням поїхав на море». andare → andr-.",
       "en": "\"It's very hot\" → \"I'd gladly go to the seaside\". andare → andr-."
+     }
+    },
+    {
+     "id": "cu-29",
+     "type": "fill",
+     "task": {
+      "ru": "Поставь глагол в condizionale (учебник, стр. 46, упр. C).",
+      "uk": "Постав дієслово в condizionale (підручник, с. 46, вправа C).",
+      "en": "Put the verb in the condizionale (textbook, p. 46, ex. C)."
+     },
+     "it": "Chi mi ___ a spostare questo tavolo?",
+     "hint": "aiutare",
+     "answers": [
+      "aiuterebbe"
+     ],
+     "why": {
+      "ru": "Chi = 3-е лицо (как lui/lei) → -ebbe. -are: a → e.",
+      "uk": "Chi = 3-тя особа (як lui/lei) → -ebbe. -are: a → e.",
+      "en": "Chi = 3rd person (like lui/lei) → -ebbe. -are: a → e."
+     },
+     "tr": {
+      "ru": "Кто помог бы мне передвинуть этот стол?",
+      "uk": "Хто допоміг би мені пересунути цей стіл?",
+      "en": "Who would help me move this table?"
+     }
+    },
+    {
+     "id": "cu-30",
+     "type": "fill",
+     "task": {
+      "ru": "Поставь глагол в condizionale (учебник, стр. 46, упр. C).",
+      "uk": "Постав дієслово в condizionale (підручник, с. 46, вправа C).",
+      "en": "Put the verb in the condizionale (textbook, p. 46, ex. C)."
+     },
+     "it": "Scusate, ___ la finestra?",
+     "hint": "chiudere",
+     "answers": [
+      "chiudereste"
+     ],
+     "why": {
+      "ru": "Scusate → обращаемся к voi → -este.",
+      "uk": "Scusate → звертаємося до voi → -este.",
+      "en": "Scusate → we're speaking to voi → -este."
+     },
+     "tr": {
+      "ru": "Извините, не закрыли бы вы окно?",
+      "uk": "Вибачте, чи не зачинили б ви вікно?",
+      "en": "Excuse me, would you (all) close the window?"
+     }
+    },
+    {
+     "id": "cu-31",
+     "type": "fill",
+     "task": {
+      "ru": "Поставь глагол в condizionale (учебник, стр. 46, упр. C).",
+      "uk": "Постав дієслово в condizionale (підручник, с. 46, вправа C).",
+      "en": "Put the verb in the condizionale (textbook, p. 46, ex. C)."
+     },
+     "it": "Oggi ___ volentieri un piatto di gnocchi, ma sono a dieta.",
+     "hint": "io, mangiare",
+     "answers": [
+      "mangerei"
+     ],
+     "why": {
+      "ru": "-giare: i выпадает → manger- + -ei.",
+      "uk": "-giare: i випадає → manger- + -ei.",
+      "en": "-giare: the i drops → manger- + -ei."
+     },
+     "tr": {
+      "ru": "Сегодня я бы с удовольствием съел тарелку ньокки, но я на диете.",
+      "uk": "Сьогодні я б охоче з'їв тарілку ньокі, але я на дієті.",
+      "en": "Today I'd gladly eat a plate of gnocchi, but I'm on a diet."
+     }
+    },
+    {
+     "id": "cu-32",
+     "type": "fill",
+     "task": {
+      "ru": "Поставь глагол в condizionale (учебник, стр. 46, упр. C).",
+      "uk": "Постав дієслово в condizionale (підручник, с. 46, вправа C).",
+      "en": "Put the verb in the condizionale (textbook, p. 46, ex. C)."
+     },
+     "it": "Scusa, mi ___ un bicchiere d'acqua?",
+     "hint": "portare",
+     "answers": [
+      "porteresti"
+     ],
+     "why": {
+      "ru": "Scusa → обращаемся к tu → -esti (к Lei было бы: porterebbe).",
+      "uk": "Scusa → звертаємося до tu → -esti (до Lei було б: porterebbe).",
+      "en": "Scusa → we're speaking to tu → -esti (to Lei it would be: porterebbe)."
+     },
+     "tr": {
+      "ru": "Слушай, не принёс бы ты мне стакан воды?",
+      "uk": "Слухай, чи не приніс би ти мені склянку води?",
+      "en": "Excuse me, would you bring me a glass of water?"
+     }
+    },
+    {
+     "id": "cu-33",
+     "type": "fill",
+     "task": {
+      "ru": "Поставь глагол в condizionale (учебник, стр. 46, упр. C).",
+      "uk": "Постав дієслово в condizionale (підручник, с. 46, вправа C).",
+      "en": "Put the verb in the condizionale (textbook, p. 46, ex. C)."
+     },
+     "it": "Ci ___ volentieri a casa vostra, ma abbiamo un impegno urgente.",
+     "hint": "fermarsi",
+     "answers": [
+      "fermeremmo"
+     ],
+     "why": {
+      "ru": "Ci = noi (возвратный fermarsi) → -emmo.",
+      "uk": "Ci = noi (зворотне fermarsi) → -emmo.",
+      "en": "Ci = noi (reflexive fermarsi) → -emmo."
+     },
+     "tr": {
+      "ru": "Мы бы с удовольствием задержались у вас, но у нас срочное дело.",
+      "uk": "Ми б охоче затрималися у вас, але в нас термінова справа.",
+      "en": "We would gladly stay at your place, but we have something urgent to do."
+     }
+    },
+    {
+     "id": "cu-34",
+     "type": "fill",
+     "task": {
+      "ru": "Поставь глагол в condizionale (учебник, стр. 46, упр. C).",
+      "uk": "Постав дієслово в condizionale (підручник, с. 46, вправа C).",
+      "en": "Put the verb in the condizionale (textbook, p. 46, ex. C)."
+     },
+     "it": "Luca, ___ libero domenica sera per andare al cinema?",
+     "hint": "essere",
+     "answers": [
+      "saresti"
+     ],
+     "why": {
+      "ru": "Обращаемся к Луке на tu; essere → sar- + -esti.",
+      "uk": "Звертаємося до Луки на tu; essere → sar- + -esti.",
+      "en": "Speaking to Luca with tu; essere → sar- + -esti."
+     },
+     "tr": {
+      "ru": "Лука, ты был бы свободен в воскресенье вечером, чтобы сходить в кино?",
+      "uk": "Луко, ти був би вільний у неділю ввечері, щоб піти в кіно?",
+      "en": "Luca, would you be free on Sunday evening to go to the cinema?"
+     }
+    },
+    {
+     "id": "cu-35",
+     "type": "choice",
+     "task": {
+      "ru": "Выбери подходящий ответ.",
+      "uk": "Обери відповідну відповідь.",
+      "en": "Choose the right reply."
+     },
+     "it": "Chi mi aiuterebbe a spostare questo tavolo? — ___",
+     "options": [
+      "Mi dispiace, ma domenica sono già impegnato.",
+      "Non ti preoccupare: ti do una mano io!",
+      "ma sono a dieta."
+     ],
+     "answer": 1,
+     "why": {
+      "ru": "Просят помочь → «Не волнуйся, я помогу». dare una mano = помочь.",
+      "uk": "Просять допомогти → «Не хвилюйся, я допоможу». dare una mano = допомогти.",
+      "en": "Someone asks for help → \"Don't worry, I'll help\". dare una mano = to help."
+     },
+     "tr": {
+      "ru": "Кто помог бы мне передвинуть этот стол? — Не волнуйся: я тебе помогу!",
+      "uk": "Хто допоміг би мені пересунути цей стіл? — Не хвилюйся: я тобі допоможу!",
+      "en": "Who would help me move this table? — Don't worry: I'll give you a hand!"
+     }
+    },
+    {
+     "id": "cu-36",
+     "type": "choice",
+     "task": {
+      "ru": "Выбери подходящий ответ.",
+      "uk": "Обери відповідну відповідь.",
+      "en": "Choose the right reply."
+     },
+     "it": "Scusate, chiudereste la finestra? — ___",
+     "options": [
+      "Mi dispiace, ma domenica sono già impegnato.",
+      "ma sono a dieta.",
+      "Sì, subito."
+     ],
+     "answer": 2,
+     "why": {
+      "ru": "Вежливая просьба → короткое согласие: «Да, сейчас».",
+      "uk": "Ввічливе прохання → коротка згода: «Так, зараз».",
+      "en": "Polite request → short yes: \"Yes, right away\"."
+     },
+     "tr": {
+      "ru": "Извините, не закрыли бы вы окно? — Да, сейчас.",
+      "uk": "Вибачте, чи не зачинили б ви вікно? — Так, зараз.",
+      "en": "Excuse me, would you close the window? — Yes, right away."
+     }
+    },
+    {
+     "id": "cu-37",
+     "type": "choice",
+     "task": {
+      "ru": "Выбери подходящий ответ.",
+      "uk": "Обери відповідну відповідь.",
+      "en": "Choose the right reply."
+     },
+     "it": "Oggi mangerei volentieri un piatto di gnocchi, ___",
+     "options": [
+      "Sì, certamente! La vuoi gasata?",
+      "ma sono a dieta.",
+      "Sì, subito."
+     ],
+     "answer": 1,
+     "why": {
+      "ru": "Желание + «но…»: съел бы, но я на диете.",
+      "uk": "Бажання + «але…»: з'їв би, але я на дієті.",
+      "en": "Wish + \"but…\": I'd eat them, but I'm on a diet."
+     },
+     "tr": {
+      "ru": "Сегодня я бы с удовольствием съел тарелку ньокки, но я на диете.",
+      "uk": "Сьогодні я б охоче з'їв тарілку ньокі, але я на дієті.",
+      "en": "Today I'd gladly eat a plate of gnocchi, but I'm on a diet."
+     }
+    },
+    {
+     "id": "cu-38",
+     "type": "choice",
+     "task": {
+      "ru": "Выбери подходящий ответ.",
+      "uk": "Обери відповідну відповідь.",
+      "en": "Choose the right reply."
+     },
+     "it": "Scusa, mi porteresti un bicchiere d'acqua? — ___",
+     "options": [
+      "Sì, certamente! La vuoi gasata?",
+      "ma abbiamo un impegno urgente.",
+      "Mi dispiace, ma domenica sono già impegnato."
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "La = l'acqua: «Тебе газированную?» подходит только к воде.",
+      "uk": "La = l'acqua: «Тобі газовану?» пасує лише до води.",
+      "en": "La = l'acqua: \"Do you want it sparkling?\" only fits water."
+     },
+     "tr": {
+      "ru": "Слушай, не принёс бы ты мне стакан воды? — Да, конечно! Тебе газированную?",
+      "uk": "Слухай, чи не приніс би ти мені склянку води? — Так, звичайно! Тобі газовану?",
+      "en": "Would you bring me a glass of water? — Yes, of course! Do you want it sparkling?"
+     }
+    },
+    {
+     "id": "cu-39",
+     "type": "choice",
+     "task": {
+      "ru": "Выбери подходящий ответ.",
+      "uk": "Обери відповідну відповідь.",
+      "en": "Choose the right reply."
+     },
+     "it": "Ci fermeremmo volentieri a casa vostra, ___",
+     "options": [
+      "Non ti preoccupare: ti do una mano io!",
+      "Sì, certamente! La vuoi gasata?",
+      "ma abbiamo un impegno urgente."
+     ],
+     "answer": 2,
+     "why": {
+      "ru": "Желание + «но…»: остались бы, но есть срочное дело.",
+      "uk": "Бажання + «але…»: залишилися б, але є термінова справа.",
+      "en": "Wish + \"but…\": we'd stay, but we have something urgent."
+     },
+     "tr": {
+      "ru": "Мы бы с удовольствием задержались у вас, но у нас срочное дело.",
+      "uk": "Ми б охоче затрималися у вас, але в нас термінова справа.",
+      "en": "We would gladly stay at your place, but we have something urgent to do."
+     }
+    },
+    {
+     "id": "cu-40",
+     "type": "choice",
+     "task": {
+      "ru": "Выбери подходящий ответ.",
+      "uk": "Обери відповідну відповідь.",
+      "en": "Choose the right reply."
+     },
+     "it": "Luca, saresti libero domenica sera per andare al cinema? — ___",
+     "options": [
+      "Mi dispiace, ma domenica sono già impegnato.",
+      "ma sono a dieta.",
+      "Sì, certamente! La vuoi gasata?"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Спрашивают про воскресенье → «Жаль, в воскресенье я уже занят».",
+      "uk": "Питають про неділю → «Шкода, у неділю я вже зайнятий».",
+      "en": "The question is about Sunday → \"Sorry, I'm already busy on Sunday\"."
+     },
+     "tr": {
+      "ru": "Лука, ты был бы свободен в воскресенье вечером, чтобы сходить в кино? — Жаль, но в воскресенье я уже занят.",
+      "uk": "Луко, ти був би вільний у неділю ввечері, щоб піти в кіно? — Шкода, але в неділю я вже зайнятий.",
+      "en": "Luca, would you be free on Sunday evening to go to the cinema? — Sorry, but I'm already busy on Sunday."
      }
     }
    ]

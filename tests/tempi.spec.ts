@@ -46,7 +46,7 @@ test("percorso: il condizionale in «I modi verbali», scheda come quelle dei te
   const scheda = blocco(page, MODI_TITOLO).locator("a").first();
   await expect(scheda).toContainText("Unità 9");
   await expect(scheda).toContainText("Il condizionale");
-  await expect(scheda).toContainText("Studiati 0/2 · Esercizi 0/60");
+  await expect(scheda).toContainText("Studiati 0/2 · Esercizi 0/72");
   await expect(page.getByText("0 di 25 argomenti")).toBeVisible();
 });
 

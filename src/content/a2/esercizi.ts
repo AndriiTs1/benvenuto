@@ -6,21 +6,23 @@ import { DEFAULT_LOCALE, type Locale } from "@/lib/lingue";
 // Esercizi interattivi (esercizi.json): un insieme per argomento, voci "fill" e "choice".
 // Al browser arriva solo l'insieme aperto, con i testi già nella lingua scelta.
 // task (facoltativo): consegna della voce al posto di quella generale (istruzioni del tipo).
-// situation (solo choice, facoltativa): situazione nella lingua delle spiegazioni al posto della frase
-// italiana con "___" (si sceglie la frase intera da dire).
+// situation (solo choice, facoltativa): situationIt — la situazione in italiano; situation — la sua traduzione
+// nella lingua delle spiegazioni (al posto della frase italiana con "___": si sceglie la frase intera da dire).
 
 type Tradotto = { ru: string } & Partial<Record<Exclude<Locale, "ru">, string>>;
 
-type VoceFill = { id: string; type: "fill"; task?: Tradotto; it: string; hint: string; answers: string[]; why: Tradotto };
+type VoceFill = { id: string; type: "fill"; task?: Tradotto; it: string; hint: string; answers: string[]; why: Tradotto; tr?: Tradotto };
 type VoceChoice = {
   id: string;
   type: "choice";
   task?: Tradotto;
   it?: string;
   situation?: Tradotto;
+  situationIt?: string;
   options: string[];
   answer: number;
   why: Tradotto;
+  tr?: Tradotto;
 };
 type Insieme = { topic: string; items: (VoceFill | VoceChoice)[] };
 type FileEsercizi = { version: number; istruzioni: Record<"fill" | "choice", Tradotto>; sets: Insieme[] };
@@ -35,13 +37,14 @@ function tradotto(testo: Tradotto, locale: Locale): { testo: string; lingua: Loc
 type TestoTradotto = { testo: string; lingua: Locale };
 
 /** Una voce pronta per il player (testi di spiegazione già nella lingua scelta). */
-export type VoceEsercizio = { task?: TestoTradotto } & (
+export type VoceEsercizio = { task?: TestoTradotto; tr?: TestoTradotto } & (
   | { id: string; type: "fill"; it: string; hint: string; answers: string[]; why: string; lingua: Locale }
   | {
       id: string;
       type: "choice";
       it: string;
       situation?: TestoTradotto;
+      situationIt?: string;
       options: string[];
       answer: number;
       why: string;
@@ -77,14 +80,17 @@ export async function getEsercizi(locale: Locale, slug: string) {
   const voci: VoceEsercizio[] = insieme.items.map((v) => {
     const { testo, lingua } = tradotto(v.why, locale);
     const task = v.task && tradotto(v.task, locale);
+    const tr = v.tr && tradotto(v.tr, locale);
     return v.type === "fill"
-      ? { id: v.id, type: "fill", task, it: v.it, hint: v.hint, answers: v.answers, why: testo, lingua }
+      ? { id: v.id, type: "fill", task, tr, it: v.it, hint: v.hint, answers: v.answers, why: testo, lingua }
       : {
           id: v.id,
           type: "choice",
           task,
+          tr,
           it: v.it ?? "",
           situation: v.situation && tradotto(v.situation, locale),
+          situationIt: v.situationIt,
           options: v.options,
           answer: v.answer,
           why: testo,

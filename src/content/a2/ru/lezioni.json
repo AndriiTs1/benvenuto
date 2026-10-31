@@ -7596,6 +7596,14 @@
       {
        "a": "Mi sembrerebbe più giusto dirlo anche a tuo padre.",
        "tr": "Мне казалось бы правильнее сказать это и твоему отцу."
+      },
+      {
+       "a": "Dove posso trovare l'ultimo libro di Wilbur Smith? — Potresti provare alla Libreria Feltrinelli.",
+       "tr": "Где мне найти последнюю книгу Уилбура Смита? — Ты мог бы попробовать в книжном магазине Feltrinelli."
+      },
+      {
+       "a": "Avrei bisogno di tagliare i capelli: conosci un buon parrucchiere? — Io andrei da Aldo Coppola.",
+       "tr": "Мне нужно подстричься: знаешь хорошего парикмахера? — Я бы пошла к Альдо Копполе."
       }
      ]
     },
@@ -7615,8 +7623,13 @@
       {
        "a": "mi sembrerebbe / secondo me sarebbe meglio…",
        "tr": "мне кажется, было бы лучше…"
+      },
+      {
+       "a": "potresti + infinito",
+       "tr": "ты мог бы… (совет)"
       }
-     ]
+     ],
+     "note": "{{Potresti}} — и совет, и просьба: {{Potresti provare}} {{alla libreria.}} (совет) · {{Potresti aiutarmi?}} (просьба). Внимание: {{la libreria}} — книжный магазин, {{la biblioteca}} — библиотека."
     },
     {
      "type": "pairs",
@@ -7766,8 +7779,8 @@
     },
     {
      "wrong": "Mi dai un foglio?",
-     "right": "Mi darebbe un foglio?",
-     "why": "с {{Lei}} — 3-е лицо"
+     "right": "Mi daresti un foglio?",
+     "why": "вежливее — {{condizionale}}: {{dai}} → {{daresti}}"
     }
    ],
    "summary": "{{Condizionale}} — это «бы»: **желание** ({{vorrei un caffè}}), **совет** ({{dovresti}} + инфинитив), **вежливая просьба** ({{potresti…?}} / на «Вы»: {{potrebbe…?}}).",

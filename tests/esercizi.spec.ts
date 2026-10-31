@@ -66,6 +66,21 @@ test("passato prossimo: «e andata» senza accento è giusta, con l'avviso", asy
   await expect(page.getByRole("status")).toContainText("Attenzione all'accento: è andata");
 });
 
+test("cambio lingua durante il giro: testi nella lingua nuova, risposte conservate", async ({ page, context, baseURL }) => {
+  await context.addCookies([{ name: "bv_lang", value: "ru", url: baseURL! }]);
+  await page.goto("/a2/esercizi/uso-del-condizionale");
+  await expect(page.getByText("Прочитай ситуацию и выбери, что сказать.")).toBeVisible();
+  await page.getByRole("button", { name: "Dovresti dormire di più.", exact: true }).click();
+  await expect(page.getByRole("status")).toContainText("Giusto");
+
+  await page.getByRole("button", { name: /Lingua delle spiegazioni/ }).click();
+  await page.getByRole("option", { name: "English" }).click();
+
+  await expect(page.getByText("Read the situation and choose what to say.")).toBeVisible();
+  await expect(page.getByRole("status")).toContainText("Soft advice → dovresti");
+  await expect(page.getByText("1 / 40", { exact: true })).toBeVisible();
+});
+
 test("argomento senza esercizi → 404", async ({ page }) => {
   const risposta = await page.goto("/a2/esercizi/xyz");
   expect(risposta?.status()).toBe(404);

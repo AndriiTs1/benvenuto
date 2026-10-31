@@ -49,6 +49,7 @@ export function PlayerEsercizi(props: {
   return <Giro {...props} />;
 }
 
+// Nello stato solo gli id: i testi arrivano sempre da `voci`, così dopo il cambio di lingua (router.refresh) si vedono nella lingua nuova.
 function Giro({
   topicId,
   titolo,
@@ -62,7 +63,9 @@ function Giro({
   voci: VoceEsercizio[];
   istruzioni: Istruzioni;
 }) {
-  const [giro, setGiro] = useState(voci);
+  const [giroIds, setGiroIds] = useState(() => voci.map((v) => v.id));
+  const perId = new Map(voci.map((v) => [v.id, v]));
+  const giro = giroIds.map((id) => perId.get(id)).filter((v): v is VoceEsercizio => v !== undefined);
   const [completo, setCompleto] = useState(true);
   const [ordiniOpzioni, setOrdiniOpzioni] = useState(() => ordini(voci));
   const [pos, setPos] = useState(0);
@@ -115,7 +118,7 @@ function Giro({
 
   function ricomincia(soloErrori: boolean) {
     const nuovo = soloErrori ? giro.filter((v) => !esiti[v.id]?.ok) : voci;
-    setGiro(nuovo);
+    setGiroIds(nuovo.map((v) => v.id));
     setCompleto(!soloErrori);
     setOrdiniOpzioni(ordini(nuovo));
     setEsiti({});
@@ -160,7 +163,11 @@ function Giro({
             {(voce.task ?? istruzioni[voce.type]).testo}
           </Tr>
 
-          {voce.type === "choice" && voce.situation ? <Situazione situazione={voce.situation} /> : <Frase voce={voce} esito={esito} />}
+          {voce.type === "choice" && voce.situation && voce.situationIt ? (
+            <Situazione situazioneIt={voce.situationIt} traduzione={voce.situation} />
+          ) : (
+            <Frase voce={voce} esito={esito} />
+          )}
 
           {voce.type === "fill" ? (
             <form onSubmit={verificaFill} className="space-y-3">
@@ -240,6 +247,11 @@ function Giro({
                     </strong>
                   </p>
                 )}
+                {voce.tr && (
+                  <Tr locale={voce.tr.lingua} as="p" size="sm" className="mt-2 block">
+                    {voce.tr.testo}
+                  </Tr>
+                )}
                 <Tr locale={voce.lingua} as="p" size="sm" className="mt-2 block">
                   {voce.why}
                 </Tr>
@@ -265,13 +277,22 @@ function Giro({
 }
 
 // Situazione (voci choice con situation): testo nella lingua delle spiegazioni, si sceglie cosa dire.
-function Situazione({ situazione }: { situazione: { testo: string; lingua: VoceEsercizio["lingua"] } }) {
+function Situazione({
+  situazioneIt,
+  traduzione,
+}: {
+  situazioneIt: string;
+  traduzione: { testo: string; lingua: VoceEsercizio["lingua"] };
+}) {
   return (
-    <Tr locale={situazione.lingua} as="p" className="block rounded-2xl bg-card p-4 text-[19px] leading-snug font-medium outline-none md:text-[20px]">
-      <span id="esercizio-frase" tabIndex={-1} className="outline-none">
-        {situazione.testo}
-      </span>
-    </Tr>
+    <div className="rounded-2xl bg-card p-4">
+      <p lang="it" id="esercizio-frase" tabIndex={-1} className="text-[19px] leading-snug font-medium outline-none md:text-[20px]">
+        {situazioneIt}
+      </p>
+      <Tr locale={traduzione.lingua} as="p" size="sm" className="mt-1.5 block">
+        {traduzione.testo}
+      </Tr>
+    </div>
   );
 }
 

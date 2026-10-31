@@ -7596,6 +7596,14 @@
       {
        "a": "Mi sembrerebbe più giusto dirlo anche a tuo padre.",
        "tr": "I think it would be fairer to tell your father too."
+      },
+      {
+       "a": "Dove posso trovare l'ultimo libro di Wilbur Smith? — Potresti provare alla Libreria Feltrinelli.",
+       "tr": "Where can I find Wilbur Smith's latest book? — You could try the Feltrinelli bookshop."
+      },
+      {
+       "a": "Avrei bisogno di tagliare i capelli: conosci un buon parrucchiere? — Io andrei da Aldo Coppola.",
+       "tr": "I need a haircut: do you know a good hairdresser? — I'd go to Aldo Coppola."
       }
      ]
     },
@@ -7615,8 +7623,13 @@
       {
        "a": "mi sembrerebbe / secondo me sarebbe meglio…",
        "tr": "I think it would be better…"
+      },
+      {
+       "a": "potresti + infinito",
+       "tr": "you could… (advice)"
       }
-     ]
+     ],
+     "note": "{{Potresti}} is both advice and a request: {{Potresti provare}} {{alla libreria.}} (advice) · {{Potresti aiutarmi?}} (request). Careful: {{la libreria}} is a bookshop, {{la biblioteca}} is a library."
     },
     {
      "type": "pairs",
@@ -7766,8 +7779,8 @@
     },
     {
      "wrong": "Mi dai un foglio?",
-     "right": "Mi darebbe un foglio?",
-     "why": "with {{Lei}} — 3rd person"
+     "right": "Mi daresti un foglio?",
+     "why": "more polite — {{condizionale}}: {{dai}} → {{daresti}}"
     }
    ],
    "summary": "The {{condizionale}} means \"would\": **wishes** ({{vorrei un caffè}}), **advice** ({{dovresti}} + infinitive), **polite requests** ({{potresti…?}} / formally: {{potrebbe…?}}).",
