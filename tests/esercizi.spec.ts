@@ -78,7 +78,7 @@ test("cambio lingua durante il giro: testi nella lingua nuova, risposte conserva
 
   await expect(page.getByText("Read the situation and choose what to say.")).toBeVisible();
   await expect(page.getByRole("status")).toContainText("Soft advice → dovresti");
-  await expect(page.getByText("1 / 40", { exact: true })).toBeVisible();
+  await expect(page.getByText("1 / 47", { exact: true })).toBeVisible();
 });
 
 test("riapro la pagina: Continua dal punto giusto, Ricomincia da 1", async ({ page, context, baseURL }) => {
@@ -88,21 +88,21 @@ test("riapro la pagina: Continua dal punto giusto, Ricomincia da 1", async ({ pa
   await page.getByRole("button", { name: "Avanti" }).click();
   await page.getByRole("button", { name: "Vorrei un caffè.", exact: true }).click();
   await page.getByRole("button", { name: "Avanti" }).click();
-  await expect(page.getByText("3 / 40", { exact: true })).toBeVisible();
+  await expect(page.getByText("3 / 47", { exact: true })).toBeVisible();
 
   await page.reload();
-  await expect(page.getByText("2 / 40", { exact: true })).toBeVisible();
+  await expect(page.getByText("2 / 47", { exact: true })).toBeVisible();
   await expect(page.getByText("esercizi fatti")).toBeVisible();
   await expect(page.getByRole("button", { name: "Ricomincia" })).toBeVisible();
   await page.getByRole("button", { name: "Continua dal 3" }).click();
-  await expect(page.getByText("3 / 40", { exact: true })).toBeVisible();
+  await expect(page.getByText("3 / 47", { exact: true })).toBeVisible();
 
   await page.reload();
   await page.getByRole("button", { name: "Ricomincia" }).click();
-  await expect(page.getByText("1 / 40", { exact: true })).toBeVisible();
+  await expect(page.getByText("1 / 47", { exact: true })).toBeVisible();
 
   await page.reload();
-  await expect(page.getByText("1 / 40", { exact: true })).toBeVisible();
+  await expect(page.getByText("1 / 47", { exact: true })).toBeVisible();
   await expect(page.getByRole("button", { name: /Continua dal/ })).toHaveCount(0);
 });
 

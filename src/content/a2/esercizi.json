@@ -6020,6 +6020,486 @@
       "uk": "Я б хотів каву, будь ласка.",
       "en": "I'd like a coffee, please."
      }
+    },
+    {
+     "id": "cf-33",
+     "type": "fill",
+     "task": {
+      "ru": "Поставь глагол в condizionale (правильные глаголы).",
+      "uk": "Постав дієслово в condizionale (правильні дієслова).",
+      "en": "Put the verb in the condizionale (regular verbs)."
+     },
+     "it": "E tu ___ una casa in Italia o nel tuo paese?",
+     "hint": "comprare",
+     "answers": [
+      "compreresti"
+     ],
+     "why": {
+      "ru": "tu → -esti; -are: a → e.",
+      "uk": "tu → -esti; -are: a → e.",
+      "en": "tu → -esti; -are: a → e."
+     },
+     "tr": {
+      "ru": "А ты купил бы дом в Италии или в своей стране?",
+      "uk": "А ти купив би дім в Італії чи у своїй країні?",
+      "en": "And would you buy a house in Italy or in your own country?"
+     }
+    },
+    {
+     "id": "cf-34",
+     "type": "fill",
+     "task": {
+      "ru": "Поставь глагол в condizionale (правильные глаголы).",
+      "uk": "Постав дієслово в condizionale (правильні дієслова).",
+      "en": "Put the verb in the condizionale (regular verbs)."
+     },
+     "it": "Mi piacciono molto le lingue, le ___ tutte.",
+     "hint": "studiare (io)",
+     "answers": [
+      "studierei"
+     ],
+     "why": {
+      "ru": "io → -ei; studiare → studier-.",
+      "uk": "io → -ei; studiare → studier-.",
+      "en": "io → -ei; studiare → studier-."
+     },
+     "tr": {
+      "ru": "Мне очень нравятся языки, я бы выучил их все.",
+      "uk": "Мені дуже подобаються мови, я б вивчив їх усі.",
+      "en": "I really like languages, I'd study them all."
+     }
+    },
+    {
+     "id": "cf-35",
+     "type": "fill",
+     "task": {
+      "ru": "Поставь глагол в condizionale (правильные глаголы).",
+      "uk": "Постав дієслово в condizionale (правильні дієслова).",
+      "en": "Put the verb in the condizionale (regular verbs)."
+     },
+     "it": "Adesso non hanno soldi, altrimenti ___ in Africa.",
+     "hint": "tornare",
+     "answers": [
+      "tornerebbero"
+     ],
+     "why": {
+      "ru": "loro → -ebbero; -are: a → e.",
+      "uk": "loro → -ebbero; -are: a → e.",
+      "en": "loro → -ebbero; -are: a → e."
+     },
+     "tr": {
+      "ru": "Сейчас у них нет денег, иначе они вернулись бы в Африку.",
+      "uk": "Зараз у них немає грошей, інакше вони повернулися б до Африки.",
+      "en": "They have no money now, otherwise they'd go back to Africa."
+     }
+    },
+    {
+     "id": "cf-36",
+     "type": "fill",
+     "task": {
+      "ru": "Поставь глагол в condizionale (правильные глаголы).",
+      "uk": "Постав дієслово в condizionale (правильні дієслова).",
+      "en": "Put the verb in the condizionale (regular verbs)."
+     },
+     "it": "Qui guadagniamo poco, in nord Europa ___ di più.",
+     "hint": "guadagnare (noi)",
+     "answers": [
+      "guadagneremmo"
+     ],
+     "why": {
+      "ru": "noi → -emmo (две m). С одной m (guadagneremo) — это futuro.",
+      "uk": "noi → -emmo (дві m). З однією m (guadagneremo) — це futuro.",
+      "en": "noi → -emmo (double m). With one m (guadagneremo) it's the futuro."
+     },
+     "tr": {
+      "ru": "Здесь мы зарабатываем мало, на севере Европы мы зарабатывали бы больше.",
+      "uk": "Тут ми заробляємо мало, на півночі Європи ми заробляли б більше.",
+      "en": "We earn little here; in northern Europe we'd earn more."
+     }
+    },
+    {
+     "id": "cf-37",
+     "type": "fill",
+     "task": {
+      "ru": "Поставь глагол в condizionale (правильные глаголы).",
+      "uk": "Постав дієслово в condizionale (правильні дієслова).",
+      "en": "Put the verb in the condizionale (regular verbs)."
+     },
+     "it": "Voi ___ un appartamento in affitto con me e Leo?",
+     "hint": "prendere",
+     "answers": [
+      "prendereste"
+     ],
+     "why": {
+      "ru": "voi → -este; у -ere e остаётся: prender-.",
+      "uk": "voi → -este; у -ere e лишається: prender-.",
+      "en": "voi → -este; -ere keeps the e: prender-."
+     },
+     "tr": {
+      "ru": "Вы бы сняли квартиру вместе со мной и Лео?",
+      "uk": "Ви б винайняли квартиру разом зі мною та Лео?",
+      "en": "Would you rent a flat with me and Leo?"
+     }
+    },
+    {
+     "id": "cf-38",
+     "type": "fill",
+     "task": {
+      "ru": "Поставь глагол в condizionale (правильные глаголы).",
+      "uk": "Постав дієслово в condizionale (правильні дієслова).",
+      "en": "Put the verb in the condizionale (regular verbs)."
+     },
+     "it": "Con una moto migliore tu ___ tutte le gare.",
+     "hint": "vincere",
+     "answers": [
+      "vinceresti"
+     ],
+     "why": {
+      "ru": "tu → -esti; vincere → vincer-.",
+      "uk": "tu → -esti; vincere → vincer-.",
+      "en": "tu → -esti; vincere → vincer-."
+     },
+     "tr": {
+      "ru": "С мотоциклом получше ты выигрывал бы все гонки.",
+      "uk": "З кращим мотоциклом ти вигравав би всі перегони.",
+      "en": "With a better motorbike you'd win every race."
+     }
+    },
+    {
+     "id": "cf-39",
+     "type": "fill",
+     "task": {
+      "ru": "Поставь глагол в condizionale (правильные глаголы).",
+      "uk": "Постав дієслово в condizionale (правильні дієслова).",
+      "en": "Put the verb in the condizionale (regular verbs)."
+     },
+     "it": "Io ___ sempre, lei non uscirebbe mai.",
+     "hint": "uscire",
+     "answers": [
+      "uscirei"
+     ],
+     "why": {
+      "ru": "io → -ei; -ire: uscir-.",
+      "uk": "io → -ei; -ire: uscir-.",
+      "en": "io → -ei; -ire: uscir-."
+     },
+     "tr": {
+      "ru": "Я бы всё время куда-то ходил, а она не выходила бы никогда.",
+      "uk": "Я б весь час кудись ходив, а вона не виходила б ніколи.",
+      "en": "I'd always go out, she'd never go out."
+     }
+    },
+    {
+     "id": "cf-40",
+     "type": "fill",
+     "task": {
+      "ru": "Поставь глагол в condizionale (правильные глаголы).",
+      "uk": "Постав дієслово в condizionale (правильні дієслова).",
+      "en": "Put the verb in the condizionale (regular verbs)."
+     },
+     "it": "Io uscirei sempre, lei non ___ mai.",
+     "hint": "uscire",
+     "answers": [
+      "uscirebbe"
+     ],
+     "why": {
+      "ru": "lei → -ebbe.",
+      "uk": "lei → -ebbe.",
+      "en": "lei → -ebbe."
+     },
+     "tr": {
+      "ru": "Я бы всё время куда-то ходил, а она не выходила бы никогда.",
+      "uk": "Я б весь час кудись ходив, а вона не виходила б ніколи.",
+      "en": "I'd always go out, she'd never go out."
+     }
+    },
+    {
+     "id": "cf-41",
+     "type": "fill",
+     "task": {
+      "ru": "Поставь глагол в condizionale. У dare, fare, stare остаётся a.",
+      "uk": "Постав дієслово в condizionale. У dare, fare, stare лишається a.",
+      "en": "Put the verb in the condizionale. dare, fare, stare keep the a."
+     },
+     "it": "Penso che Giorgio ti ___ tutte le informazioni utili.",
+     "hint": "dare",
+     "answers": [
+      "darebbe"
+     ],
+     "why": {
+      "ru": "dare → dar- (a остаётся) + -ebbe.",
+      "uk": "dare → dar- (a лишається) + -ebbe.",
+      "en": "dare → dar- (keeps the a) + -ebbe."
+     },
+     "tr": {
+      "ru": "Думаю, Джорджо дал бы тебе всю полезную информацию.",
+      "uk": "Думаю, Джорджо дав би тобі всю корисну інформацію.",
+      "en": "I think Giorgio would give you all the useful information."
+     }
+    },
+    {
+     "id": "cf-42",
+     "type": "fill",
+     "task": {
+      "ru": "Поставь глагол в condizionale. У dare, fare, stare остаётся a.",
+      "uk": "Постав дієслово в condizionale. У dare, fare, stare лишається a.",
+      "en": "Put the verb in the condizionale. dare, fare, stare keep the a."
+     },
+     "it": "Gli studenti ___ volentieri una piccola pausa.",
+     "hint": "fare",
+     "answers": [
+      "farebbero"
+     ],
+     "why": {
+      "ru": "fare → far- (a остаётся) + -ebbero.",
+      "uk": "fare → far- (a лишається) + -ebbero.",
+      "en": "fare → far- (keeps the a) + -ebbero."
+     },
+     "tr": {
+      "ru": "Студенты с удовольствием сделали бы небольшой перерыв.",
+      "uk": "Студенти охоче зробили б невелику перерву.",
+      "en": "The students would gladly take a short break."
+     }
+    },
+    {
+     "id": "cf-43",
+     "type": "fill",
+     "task": {
+      "ru": "Поставь глагол в condizionale. У dare, fare, stare остаётся a.",
+      "uk": "Постав дієслово в condizionale. У dare, fare, stare лишається a.",
+      "en": "Put the verb in the condizionale. dare, fare, stare keep the a."
+     },
+     "it": "Sto così bene qui, che ci ___ tutta la vita.",
+     "hint": "stare (io)",
+     "answers": [
+      "starei"
+     ],
+     "why": {
+      "ru": "stare → star- (a остаётся) + -ei.",
+      "uk": "stare → star- (a лишається) + -ei.",
+      "en": "stare → star- (keeps the a) + -ei."
+     },
+     "tr": {
+      "ru": "Мне здесь так хорошо, что я остался бы тут на всю жизнь.",
+      "uk": "Мені тут так добре, що я залишився б тут на все життя.",
+      "en": "I feel so good here that I'd stay here all my life."
+     }
+    },
+    {
+     "id": "cf-44",
+     "type": "fill",
+     "task": {
+      "ru": "Поставь глагол в condizionale. У dare, fare, stare остаётся a.",
+      "uk": "Постав дієслово в condizionale. У dare, fare, stare лишається a.",
+      "en": "Put the verb in the condizionale. dare, fare, stare keep the a."
+     },
+     "it": "Sono sicura che Giovanni ___ un ottimo padre.",
+     "hint": "essere",
+     "answers": [
+      "sarebbe"
+     ],
+     "why": {
+      "ru": "essere → sar- + -ebbe.",
+      "uk": "essere → sar- + -ebbe.",
+      "en": "essere → sar- + -ebbe."
+     },
+     "tr": {
+      "ru": "Я уверена, что Джованни был бы отличным отцом.",
+      "uk": "Я впевнена, що Джованні був би чудовим батьком.",
+      "en": "I'm sure Giovanni would be an excellent father."
+     }
+    },
+    {
+     "id": "cf-45",
+     "type": "fill",
+     "task": {
+      "ru": "Поставь глагол в condizionale. У dare, fare, stare остаётся a.",
+      "uk": "Постав дієслово в condizionale. У dare, fare, stare лишається a.",
+      "en": "Put the verb in the condizionale. dare, fare, stare keep the a."
+     },
+     "it": "Voi ___ tutta la vita con una persona che non vi ama?",
+     "hint": "stare",
+     "answers": [
+      "stareste"
+     ],
+     "why": {
+      "ru": "stare → star- + -este.",
+      "uk": "stare → star- + -este.",
+      "en": "stare → star- + -este."
+     },
+     "tr": {
+      "ru": "Вы бы прожили всю жизнь с человеком, который вас не любит?",
+      "uk": "Ви б прожили все життя з людиною, яка вас не кохає?",
+      "en": "Would you spend your whole life with someone who doesn't love you?"
+     }
+    },
+    {
+     "id": "cf-46",
+     "type": "fill",
+     "task": {
+      "ru": "Поставь глагол в condizionale. У dare, fare, stare остаётся a.",
+      "uk": "Постав дієслово в condizionale. У dare, fare, stare лишається a.",
+      "en": "Put the verb in the condizionale. dare, fare, stare keep the a."
+     },
+     "it": "Io e Anna ___ il bagno al mare tutti i giorni.",
+     "hint": "fare",
+     "answers": [
+      "faremmo"
+     ],
+     "why": {
+      "ru": "Io e Anna = noi → far- + -emmo.",
+      "uk": "Io e Anna = noi → far- + -emmo.",
+      "en": "Io e Anna = noi → far- + -emmo."
+     },
+     "tr": {
+      "ru": "Мы с Анной купались бы в море каждый день.",
+      "uk": "Ми з Анною купалися б у морі щодня.",
+      "en": "Anna and I would swim in the sea every day."
+     }
+    },
+    {
+     "id": "cf-47",
+     "type": "fill",
+     "task": {
+      "ru": "Поставь глагол в condizionale. У dare, fare, stare остаётся a.",
+      "uk": "Постав дієслово в condizionale. У dare, fare, stare лишається a.",
+      "en": "Put the verb in the condizionale. dare, fare, stare keep the a."
+     },
+     "it": "Tu ___ contento di fare un viaggio in Cina con me?",
+     "hint": "essere",
+     "answers": [
+      "saresti"
+     ],
+     "why": {
+      "ru": "essere → sar- + -esti.",
+      "uk": "essere → sar- + -esti.",
+      "en": "essere → sar- + -esti."
+     },
+     "tr": {
+      "ru": "Ты был бы рад съездить со мной в Китай?",
+      "uk": "Ти був би радий поїхати зі мною до Китаю?",
+      "en": "Would you be happy to take a trip to China with me?"
+     }
+    },
+    {
+     "id": "cf-48",
+     "type": "fill",
+     "task": {
+      "ru": "Ответь на вопрос в condizionale. Внимание: лицо меняется (tu → io, voi → noi, io → tu).",
+      "uk": "Дай відповідь у condizionale. Увага: особа змінюється (tu → io, voi → noi, io → tu).",
+      "en": "Answer in the condizionale. Careful: the person changes (tu → io, voi → noi, io → tu)."
+     },
+     "it": "Dove andresti in vacanza d'estate? — ___ al mare in Sardegna.",
+     "hint": "andare",
+     "answers": [
+      "andrei"
+     ],
+     "why": {
+      "ru": "Вопрос на tu → ответ io. andare → andr- + -ei.",
+      "uk": "Питання на tu → відповідь io. andare → andr- + -ei.",
+      "en": "Question with tu → answer with io. andare → andr- + -ei."
+     },
+     "tr": {
+      "ru": "Куда бы ты поехал летом в отпуск? — Я бы поехал на море на Сардинию.",
+      "uk": "Куди б ти поїхав улітку у відпустку? — Я б поїхав на море на Сардинію.",
+      "en": "Where would you go on holiday in summer? — I'd go to the seaside in Sardinia."
+     }
+    },
+    {
+     "id": "cf-49",
+     "type": "fill",
+     "task": {
+      "ru": "Ответь на вопрос в condizionale. Внимание: лицо меняется (tu → io, voi → noi, io → tu).",
+      "uk": "Дай відповідь у condizionale. Увага: особа змінюється (tu → io, voi → noi, io → tu).",
+      "en": "Answer in the condizionale. Careful: the person changes (tu → io, voi → noi, io → tu)."
+     },
+     "it": "Voi vorreste un gattino? — Lo ___, ma non possiamo tenerlo in casa.",
+     "hint": "volere",
+     "answers": [
+      "vorremmo"
+     ],
+     "why": {
+      "ru": "Вопрос на voi → ответ noi. volere → vorr- + -emmo.",
+      "uk": "Питання на voi → відповідь noi. volere → vorr- + -emmo.",
+      "en": "Question with voi → answer with noi. volere → vorr- + -emmo."
+     },
+     "tr": {
+      "ru": "Вы бы хотели котёнка? — Хотели бы, но нам нельзя держать его дома.",
+      "uk": "Ви б хотіли кошеня? — Хотіли б, але нам не можна тримати його вдома.",
+      "en": "Would you like a kitten? — We would, but we can't keep it at home."
+     }
+    },
+    {
+     "id": "cf-50",
+     "type": "fill",
+     "task": {
+      "ru": "Ответь на вопрос в condizionale. Внимание: лицо меняется (tu → io, voi → noi, io → tu).",
+      "uk": "Дай відповідь у condizionale. Увага: особа змінюється (tu → io, voi → noi, io → tu).",
+      "en": "Answer in the condizionale. Careful: the person changes (tu → io, voi → noi, io → tu)."
+     },
+     "it": "Quando potrei venire a trovarti? — ___ venire sabato prossimo.",
+     "hint": "potere",
+     "answers": [
+      "potresti"
+     ],
+     "why": {
+      "ru": "Вопрос про io → ответ tu. potere → potr- + -esti.",
+      "uk": "Питання про io → відповідь tu. potere → potr- + -esti.",
+      "en": "Question about io → answer with tu. potere → potr- + -esti."
+     },
+     "tr": {
+      "ru": "Когда я мог бы зайти к тебе в гости? — Ты мог бы прийти в следующую субботу.",
+      "uk": "Коли я міг би прийти до тебе в гості? — Ти міг би прийти наступної суботи.",
+      "en": "When could I come and visit you? — You could come next Saturday."
+     }
+    },
+    {
+     "id": "cf-51",
+     "type": "fill",
+     "task": {
+      "ru": "Ответь на вопрос в condizionale. Внимание: лицо меняется (tu → io, voi → noi, io → tu).",
+      "uk": "Дай відповідь у condizionale. Увага: особа змінюється (tu → io, voi → noi, io → tu).",
+      "en": "Answer in the condizionale. Careful: the person changes (tu → io, voi → noi, io → tu)."
+     },
+     "it": "Quanti giorni di ferie avresti? — ___ quattro settimane all'anno.",
+     "hint": "avere",
+     "answers": [
+      "avrei"
+     ],
+     "why": {
+      "ru": "Вопрос на tu → ответ io. avere → avr- + -ei.",
+      "uk": "Питання на tu → відповідь io. avere → avr- + -ei.",
+      "en": "Question with tu → answer with io. avere → avr- + -ei."
+     },
+     "tr": {
+      "ru": "Сколько дней отпуска у тебя было бы? — У меня было бы четыре недели в год.",
+      "uk": "Скільки днів відпустки в тебе було б? — У мене було б чотири тижні на рік.",
+      "en": "How many days off would you have? — I'd have four weeks a year."
+     }
+    },
+    {
+     "id": "cf-52",
+     "type": "fill",
+     "task": {
+      "ru": "Ответь на вопрос в condizionale. Внимание: лицо меняется (tu → io, voi → noi, io → tu).",
+      "uk": "Дай відповідь у condizionale. Увага: особа змінюється (tu → io, voi → noi, io → tu).",
+      "en": "Answer in the condizionale. Careful: the person changes (tu → io, voi → noi, io → tu)."
+     },
+     "it": "Chi potrebbe fare questo lavoro? — Ivan ___ farlo molto bene.",
+     "hint": "potere",
+     "answers": [
+      "potrebbe"
+     ],
+     "why": {
+      "ru": "Ivan = lui → potr- + -ebbe.",
+      "uk": "Ivan = lui → potr- + -ebbe.",
+      "en": "Ivan = lui → potr- + -ebbe."
+     },
+     "tr": {
+      "ru": "Кто мог бы сделать эту работу? — Иван мог бы сделать её очень хорошо.",
+      "uk": "Хто міг би зробити цю роботу? — Іван міг би зробити її дуже добре.",
+      "en": "Who could do this job? — Ivan could do it very well."
+     }
     }
    ]
   },
@@ -6976,6 +7456,223 @@
       "ru": "Лука, ты был бы свободен в воскресенье вечером, чтобы сходить в кино? — Жаль, но в воскресенье я уже занят.",
       "uk": "Луко, ти був би вільний у неділю ввечері, щоб піти в кіно? — Шкода, але в неділю я вже зайнятий.",
       "en": "Luca, would you be free on Sunday evening to go to the cinema? — Sorry, but I'm already busy on Sunday."
+     }
+    },
+    {
+     "id": "cu-41",
+     "type": "choice",
+     "task": {
+      "ru": "Прочитай ситуацию и выбери, что сказать.",
+      "uk": "Прочитай ситуацію та обери, що сказати.",
+      "en": "Read the situation and choose what to say."
+     },
+     "situation": {
+      "ru": "Попроси незнакомого мужчину (Lei) немного опустить окно.",
+      "uk": "Попроси незнайомого чоловіка (Lei) трохи опустити вікно.",
+      "en": "Ask a gentleman (Lei) to lower the window a little."
+     },
+     "situationIt": "Chiedi a un signore (Lei) di abbassare un po' il finestrino.",
+     "options": [
+      "Scusi, potrebbe abbassare un po' il finestrino?",
+      "Scusa, potresti abbassare un po' il finestrino?",
+      "Abbassa il finestrino!"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Незнакомый signore → Lei: potrebbe.",
+      "uk": "Незнайомий signore → Lei: potrebbe.",
+      "en": "A gentleman you don't know → Lei: potrebbe."
+     },
+     "tr": {
+      "ru": "Извините, не могли бы Вы немного опустить окно?",
+      "uk": "Вибачте, чи не могли б Ви трохи опустити вікно?",
+      "en": "Excuse me, could you lower the window a little?"
+     }
+    },
+    {
+     "id": "cu-42",
+     "type": "choice",
+     "task": {
+      "ru": "Прочитай ситуацию и выбери, что сказать.",
+      "uk": "Прочитай ситуацію та обери, що сказати.",
+      "en": "Read the situation and choose what to say."
+     },
+     "situation": {
+      "ru": "Попроси друга сделать тебе одолжение.",
+      "uk": "Попроси друга зробити тобі послугу.",
+      "en": "Ask a friend to do you a favour."
+     },
+     "situationIt": "Chiedi a un amico di farti un favore.",
+     "options": [
+      "Mi faresti un favore?",
+      "Mi farebbe un favore?",
+      "Mi fareste un favore?"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Друг → tu: faresti. Mi = мне.",
+      "uk": "Друг → tu: faresti. Mi = мені.",
+      "en": "A friend → tu: faresti. Mi = me."
+     },
+     "tr": {
+      "ru": "Не сделаешь мне одолжение?",
+      "uk": "Чи не зробиш мені послугу?",
+      "en": "Would you do me a favour?"
+     }
+    },
+    {
+     "id": "cu-43",
+     "type": "choice",
+     "task": {
+      "ru": "Прочитай ситуацию и выбери, что сказать.",
+      "uk": "Прочитай ситуацію та обери, що сказати.",
+      "en": "Read the situation and choose what to say."
+     },
+     "situation": {
+      "ru": "Спроси директора своего банка (Lei), сколько тебе платить каждый месяц.",
+      "uk": "Запитай директора свого банку (Lei), скільки тобі платити щомісяця.",
+      "en": "Ask your bank manager (Lei) how much you have to pay each month."
+     },
+     "situationIt": "Chiedi al direttore della tua banca (Lei) quanto devi pagare ogni mese.",
+     "options": [
+      "Scusi, quanto dovrei pagare ogni mese?",
+      "Scusi, quanto dovrebbe pagare ogni mese?",
+      "Scusi, quanto dovresti pagare ogni mese?"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Платишь ты → dovrei (io). Вежливость к директору — в «Scusi».",
+      "uk": "Платиш ти → dovrei (io). Ввічливість до директора — у «Scusi».",
+      "en": "You are the one paying → dovrei (io). The politeness is in «Scusi»."
+     },
+     "tr": {
+      "ru": "Извините, сколько мне нужно было бы платить каждый месяц?",
+      "uk": "Вибачте, скільки мені треба було б платити щомісяця?",
+      "en": "Excuse me, how much would I have to pay each month?"
+     }
+    },
+    {
+     "id": "cu-44",
+     "type": "choice",
+     "task": {
+      "ru": "Прочитай ситуацию и выбери, что сказать.",
+      "uk": "Прочитай ситуацію та обери, що сказати.",
+      "en": "Read the situation and choose what to say."
+     },
+     "situation": {
+      "ru": "Спроси друга, куда он хочет пойти ужинать сегодня вечером.",
+      "uk": "Запитай друга, куди він хоче піти вечеряти сьогодні ввечері.",
+      "en": "Ask a friend where he wants to go for dinner tonight."
+     },
+     "situationIt": "Chiedi a un amico dove vuole andare a cena stasera.",
+     "options": [
+      "Dove vorresti andare a cena stasera?",
+      "Dove vorrebbe andare a cena stasera?",
+      "Dove vorrei andare a cena stasera?"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Друг → tu: vorresti.",
+      "uk": "Друг → tu: vorresti.",
+      "en": "A friend → tu: vorresti."
+     },
+     "tr": {
+      "ru": "Куда бы ты хотел пойти ужинать сегодня вечером?",
+      "uk": "Куди б ти хотів піти вечеряти сьогодні ввечері?",
+      "en": "Where would you like to go for dinner tonight?"
+     }
+    },
+    {
+     "id": "cu-45",
+     "type": "choice",
+     "task": {
+      "ru": "Прочитай ситуацию и выбери, что сказать.",
+      "uk": "Прочитай ситуацію та обери, що сказати.",
+      "en": "Read the situation and choose what to say."
+     },
+     "situation": {
+      "ru": "Попроси подругу одолжить тебе телефон, чтобы позвонить.",
+      "uk": "Попроси подругу позичити тобі телефон, щоб подзвонити.",
+      "en": "Ask a friend to lend you her phone to make a call."
+     },
+     "situationIt": "Chiedi a un'amica se ti presta il suo cellulare per fare una chiamata.",
+     "options": [
+      "Mi presteresti il tuo cellulare per fare una chiamata?",
+      "Mi presterebbe il suo cellulare per fare una chiamata?",
+      "Ti presterei il mio cellulare per fare una chiamata?"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Подруга → tu: presteresti. Mi = мне.",
+      "uk": "Подруга → tu: presteresti. Mi = мені.",
+      "en": "A friend → tu: presteresti. Mi = me."
+     },
+     "tr": {
+      "ru": "Не одолжишь мне свой телефон позвонить?",
+      "uk": "Чи не позичиш мені свій телефон подзвонити?",
+      "en": "Would you lend me your phone to make a call?"
+     }
+    },
+    {
+     "id": "cu-46",
+     "type": "choice",
+     "task": {
+      "ru": "Прочитай ситуацию и выбери, что сказать.",
+      "uk": "Прочитай ситуацію та обери, що сказати.",
+      "en": "Read the situation and choose what to say."
+     },
+     "situation": {
+      "ru": "Попроси одноклассников (voi) говорить медленнее.",
+      "uk": "Попроси однокласників (voi) говорити повільніше.",
+      "en": "Ask your classmates (voi) to speak more slowly."
+     },
+     "situationIt": "Chiedi ai tuoi compagni (voi) di parlare più lentamente.",
+     "options": [
+      "Potreste parlare più lentamente?",
+      "Potresti parlare più lentamente?",
+      "Potrebbero parlare più lentamente?"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "Несколько человек → voi: potreste.",
+      "uk": "Кілька людей → voi: potreste.",
+      "en": "Several people → voi: potreste."
+     },
+     "tr": {
+      "ru": "Не могли бы вы говорить помедленнее?",
+      "uk": "Чи не могли б ви говорити повільніше?",
+      "en": "Could you speak more slowly?"
+     }
+    },
+    {
+     "id": "cu-47",
+     "type": "choice",
+     "task": {
+      "ru": "Прочитай ситуацию и выбери, что сказать.",
+      "uk": "Прочитай ситуацію та обери, що сказати.",
+      "en": "Read the situation and choose what to say."
+     },
+     "situation": {
+      "ru": "Спроси друзей, кто пойдёт с тобой в кино сегодня вечером.",
+      "uk": "Запитай друзів, хто піде з тобою в кіно сьогодні ввечері.",
+      "en": "Ask your friends who's coming to the cinema with you tonight."
+     },
+     "situationIt": "Chiedi ai tuoi amici chi viene con te al cinema stasera.",
+     "options": [
+      "Chi verrebbe con me al cinema stasera?",
+      "Chi verreste con me al cinema stasera?",
+      "Chi verrei con me al cinema stasera?"
+     ],
+     "answer": 0,
+     "why": {
+      "ru": "После chi — всегда 3-е лицо ед. ч.: verrebbe.",
+      "uk": "Після chi — завжди 3-тя особа одн.: verrebbe.",
+      "en": "After chi always use the 3rd person singular: verrebbe."
+     },
+     "tr": {
+      "ru": "Кто пошёл бы со мной в кино сегодня вечером?",
+      "uk": "Хто пішов би зі мною в кіно сьогодні ввечері?",
+      "en": "Who would come to the cinema with me tonight?"
      }
     }
    ]

@@ -7627,6 +7627,10 @@
       {
        "a": "potresti + infinito",
        "tr": "ти міг би… (порада)"
+      },
+      {
+       "a": "Non saprei.",
+       "tr": "не знаю (м'яко, ввічливо)"
       }
      ],
      "note": "{{Potresti}} — і порада, і прохання: {{Potresti provare}} {{alla libreria.}} (порада) · {{Potresti aiutarmi?}} (прохання). Увага: {{la libreria}} — книгарня, {{la biblioteca}} — бібліотека."
@@ -7762,6 +7766,42 @@
       }
      ],
      "note": "Увага: {{piacerebbe}} як {{piace}} — узгоджується з тим, що подобається: {{Mi piacerebbe}} **{{un viaggio.}}** → {{Mi piacerebbe}}**{{ro}}** **{{due settimane}}** {{di vacanza.}}"
+    },
+    {
+     "type": "pairs",
+     "title": "{{Dialogo}} · {{Cosa faresti?}} · Що б ти зробив?",
+     "sep": "",
+     "items": [
+      {
+       "a": "Sara: Hai visto? Un signore ha vinto 100.000 franchi a un gioco televisivo!",
+       "tr": "Сара: Бачив? Один чоловік виграв 100 000 франків у телегрі!"
+      },
+      {
+       "a": "Marco: Beato lui! Tu cosa faresti con tutti quei soldi?",
+       "tr": "Марко: Щастить же йому! А ти що б зробила з усіма цими грошима?"
+      },
+      {
+       "a": "Sara: Prima di tutto smetterei di lavorare per un anno e viaggerei in Sud America.",
+       "tr": "Сара: Насамперед я б перестала працювати на рік і подорожувала б Південною Америкою."
+      },
+      {
+       "a": "Marco: Io invece comprerei un piccolo appartamento e regalerei qualcosa ai miei genitori.",
+       "tr": "Марко: А я б купив невелику квартиру й подарував би щось батькам."
+      },
+      {
+       "a": "Sara: E dove vivresti? In città o in montagna?",
+       "tr": "Сара: А де б ти жив? У місті чи в горах?"
+      },
+      {
+       "a": "Marco: Non saprei… Magari in un paese vicino al lago. E tu torneresti a casa dopo il viaggio?",
+       "tr": "Марко: Не знаю… Можливо, у містечку біля озера. А ти повернулася б додому після подорожі?"
+      },
+      {
+       "a": "Sara: Sì, ma prima farei un corso di cucina in Italia!",
+       "tr": "Сара: Так, але спочатку я б пройшла курс кулінарії в Італії!"
+      }
+     ],
+     "note": "Усі дієслова «б» — у {{condizionale}}: {{faresti}}, {{smetterei}}, {{viaggerei}}, {{comprerei}}, {{vivresti}}, {{torneresti}}, {{farei}}. {{Non saprei}} — м'яке «не знаю»."
     }
    ],
    "uses": [],
@@ -7781,6 +7821,11 @@
      "wrong": "Mi dai un foglio?",
      "right": "Mi daresti un foglio?",
      "why": "ввічливіше — {{condizionale}}: {{dai}} → {{daresti}}"
+    },
+    {
+     "wrong": "Chi verreste con me al cinema?",
+     "right": "Chi verrebbe con me al cinema?",
+     "why": "після {{chi}} — завжди 3-тя особа одн., як {{lui/lei}}"
     }
    ],
    "summary": "{{Condizionale}} — це «б/би»: **бажання** ({{vorrei un caffè}}), **порада** ({{dovresti}} + інфінітив), **ввічливе прохання** ({{potresti…?}} / на «Ви»: {{potrebbe…?}}).",

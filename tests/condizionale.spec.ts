@@ -42,10 +42,10 @@ test("futuro: in fondo il collegamento al condizionale", async ({ page }) => {
   await expect(page).toHaveURL(FORME);
 });
 
-test("esercizi le forme: 32 voci, risposta con maiuscole e spazi giusta", async ({ page, context, baseURL }) => {
+test("esercizi le forme: 52 voci, risposta con maiuscole e spazi giusta", async ({ page, context, baseURL }) => {
   await context.addCookies([{ name: "bv_lang", value: "ru", url: baseURL! }]);
   await page.goto("/a2/esercizi/condizionale-presente-le-forme");
-  await expect(page.getByText("1 / 32", { exact: true })).toBeVisible();
+  await expect(page.getByText("1 / 52", { exact: true })).toBeVisible();
   await expect(page.getByText("Поставь глагол в condizionale presente.")).toBeVisible();
   await page.getByRole("textbox", { name: "Risposta" }).fill("  Studierei ");
   await page.keyboard.press("Enter");
@@ -63,7 +63,7 @@ test("esercizi le forme: dopo la risposta la traduzione della frase", async ({ p
 test("esercizi uso: situazione nella lingua scelta, 3 opzioni, spiegazione", async ({ page, context, baseURL }) => {
   await context.addCookies([{ name: "bv_lang", value: "en", url: baseURL! }]);
   await page.goto("/a2/esercizi/uso-del-condizionale");
-  await expect(page.getByText("1 / 40", { exact: true })).toBeVisible();
+  await expect(page.getByText("1 / 47", { exact: true })).toBeVisible();
   await expect(page.getByText("Read the situation and choose what to say.")).toBeVisible();
   await expect(page.locator("#esercizio-frase")).toHaveText("Il tuo amico è sempre stanco. Dagli un consiglio gentile.");
   await expect(page.getByText("Your friend is always tired. Give gentle advice.", { exact: true })).toBeVisible();
