@@ -7662,6 +7662,14 @@
       {
        "a": "Potresti aiutarmi ad apparecchiare la tavola?",
        "tr": "Could you help me set the table?"
+      },
+      {
+       "a": "Scusi, saprebbe dirmi dov'è il Museo Archeologico?",
+       "tr": "Excuse me, could you tell me where the Archaeological Museum is?"
+      },
+      {
+       "a": "Scusi, Le dispiacerebbe non fumare?",
+       "tr": "Excuse me, would you mind not smoking?"
       }
      ]
     },
@@ -7681,8 +7689,25 @@
       {
        "a": "Vorrei + nome / infinito",
        "tr": "I would like…"
+      },
+      {
+       "a": "Saprebbe dirmi…?",
+       "tr": "Could you tell me…?"
+      },
+      {
+       "a": "Le dispiacerebbe + infinito?",
+       "tr": "Would you mind…?"
+      },
+      {
+       "a": "Sarebbe così gentile da + infinito?",
+       "tr": "Would you be so kind as to…?"
+      },
+      {
+       "a": "Vorrei sapere…",
+       "tr": "I'd like to know…"
       }
-     ]
+     ],
+     "note": "{{dispiacere}} works like {{piacere}}: {{Ti dispiacerebbe…?}} (tu) · {{Le dispiacerebbe…?}} (Lei) · {{Vi dispiacerebbe…?}} (voi)."
     },
     {
      "type": "pairs",
@@ -7826,6 +7851,16 @@
      "wrong": "Chi verreste con me al cinema?",
      "right": "Chi verrebbe con me al cinema?",
      "why": "after {{chi}} always the 3rd person singular, like {{lui/lei}}"
+    },
+    {
+     "wrong": "Scusi, saprebbe dov'è il museo?",
+     "right": "Scusi, saprebbe dirmi dov'è il museo?",
+     "why": "the polite formula is {{saprebbe dirmi…?}} (“could you tell me…?”)"
+    },
+    {
+     "wrong": "Dové il museo?",
+     "right": "Dov'è il museo?",
+     "why": "{{dov'è}} = {{dove}} + {{è}}: apostrophe and {{è}}"
     }
    ],
    "summary": "The {{condizionale}} means \"would\": **wishes** ({{vorrei un caffè}}), **advice** ({{dovresti}} + infinitive), **polite requests** ({{potresti…?}} / formally: {{potrebbe…?}}).",

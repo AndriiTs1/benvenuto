@@ -7662,6 +7662,14 @@
       {
        "a": "Potresti aiutarmi ad apparecchiare la tavola?",
        "tr": "Не мог бы ты помочь мне накрыть на стол?"
+      },
+      {
+       "a": "Scusi, saprebbe dirmi dov'è il Museo Archeologico?",
+       "tr": "Извините, не подскажете, где Археологический музей?"
+      },
+      {
+       "a": "Scusi, Le dispiacerebbe non fumare?",
+       "tr": "Извините, Вас не затруднит не курить?"
       }
      ]
     },
@@ -7681,8 +7689,25 @@
       {
        "a": "Vorrei + nome / infinito",
        "tr": "Я бы хотел…"
+      },
+      {
+       "a": "Saprebbe dirmi…?",
+       "tr": "Не подскажете…?"
+      },
+      {
+       "a": "Le dispiacerebbe + infinito?",
+       "tr": "Вас не затруднит…?"
+      },
+      {
+       "a": "Sarebbe così gentile da + infinito?",
+       "tr": "Не будете ли Вы так любезны…?"
+      },
+      {
+       "a": "Vorrei sapere…",
+       "tr": "Я хотел бы узнать…"
       }
-     ]
+     ],
+     "note": "{{dispiacere}} работает как {{piacere}}: {{Ti dispiacerebbe…?}} (tu) · {{Le dispiacerebbe…?}} (Lei) · {{Vi dispiacerebbe…?}} (voi)."
     },
     {
      "type": "pairs",
@@ -7826,6 +7851,16 @@
      "wrong": "Chi verreste con me al cinema?",
      "right": "Chi verrebbe con me al cinema?",
      "why": "после {{chi}} — всегда 3-е лицо ед. ч., как {{lui/lei}}"
+    },
+    {
+     "wrong": "Scusi, saprebbe dov'è il museo?",
+     "right": "Scusi, saprebbe dirmi dov'è il museo?",
+     "why": "вежливая формула — {{saprebbe dirmi…?}} («не подскажете…?»)"
+    },
+    {
+     "wrong": "Dové il museo?",
+     "right": "Dov'è il museo?",
+     "why": "{{dov'è}} = {{dove}} + {{è}}: апостроф и {{è}}"
     }
    ],
    "summary": "{{Condizionale}} — это «бы»: **желание** ({{vorrei un caffè}}), **совет** ({{dovresti}} + инфинитив), **вежливая просьба** ({{potresti…?}} / на «Вы»: {{potrebbe…?}}).",
