@@ -1,11 +1,13 @@
+import { Fragment } from "react";
 import { notFound } from "next/navigation";
+import { RigheBlocchi } from "@/components/esercizi/ElencoBlocchi";
 import { ConteggioEsercizi } from "@/components/esercizi/FattiEsercizi";
 import { IntestazioneTempo } from "@/components/grammatica/Tempo";
 import { Elenco, RigaElenco, TestoRiga } from "@/components/grammatica/Elenco";
 import { LinkAvanti } from "@/components/grammatica/LinkAvanti";
 import { BarraUnita, ConteggioStudiati, PuntoStato } from "@/components/grammatica/Progresso";
 import { Tr } from "@/components/Tr";
-import { idEsercizi } from "@/content/a2/esercizi";
+import { blocchi, idEsercizi } from "@/content/a2/esercizi";
 import { getPercorso } from "@/content/a2/grammatica";
 import { DEFAULT_LOCALE } from "@/lib/lingue";
 import { linguaScelta } from "@/lib/lingua-scelta";
@@ -55,22 +57,25 @@ export default async function UnitaPage({ params }: PageProps<"/a2/grammatica/un
       </header>
 
       <Elenco>
+        {/* Sotto un argomento diviso in blocchi, le righe dei suoi blocchi (con rientro). */}
         {u.argomenti.map((a, i) => (
-          <RigaElenco
-            key={a.id}
-            href={`/a2/grammatica/${a.slug}`}
-            leading={<PuntoStato topicId={a.id} />}
-            trailing={
-              idEsercizi(a.id).length > 0 && (
-                <span className="shrink-0 text-[13px] text-label-2">
-                  <ConteggioEsercizi ids={idEsercizi(a.id)} />
-                </span>
-              )
-            }
-            first={i === 0}
-          >
-            <TestoRiga sopra={`Argomento ${a.indice}`} titolo={a.title} sotto={<Tr locale={locale}>{a.subtitle}</Tr>} />
-          </RigaElenco>
+          <Fragment key={a.id}>
+            <RigaElenco
+              href={`/a2/grammatica/${a.slug}`}
+              leading={<PuntoStato topicId={a.id} />}
+              trailing={
+                idEsercizi(a.id).length > 0 && (
+                  <span className="shrink-0 text-[13px] text-label-2">
+                    <ConteggioEsercizi ids={idEsercizi(a.id)} />
+                  </span>
+                )
+              }
+              first={i === 0}
+            >
+              <TestoRiga sopra={`Argomento ${a.indice}`} titolo={a.title} sotto={<Tr locale={locale}>{a.subtitle}</Tr>} />
+            </RigaElenco>
+            <RigheBlocchi slug={a.slug} blocchi={blocchi(a.id, locale)} rientro />
+          </Fragment>
         ))}
       </Elenco>
 

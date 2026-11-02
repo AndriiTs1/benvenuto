@@ -24,7 +24,9 @@ type VoceChoice = {
   why: Tradotto;
   tr?: Tradotto;
 };
-type Insieme = { topic: string; items: (VoceFill | VoceChoice)[] };
+/** Blocco di una tema grande (> 20 voci): voci di un solo argomento, nell'ordine del blocco. */
+type Blocco = { id: string; titolo: { it: string } & Tradotto; items: string[] };
+type Insieme = { topic: string; items: (VoceFill | VoceChoice)[]; blocchi?: Blocco[] };
 type FileEsercizi = { version: number; istruzioni: Record<"fill" | "choice", Tradotto>; sets: Insieme[] };
 
 const FILE = dati as FileEsercizi;
@@ -52,6 +54,15 @@ export type VoceEsercizio = { task?: TestoTradotto; tr?: TestoTradotto } & (
     }
 );
 
+/** Il blocco aperto nel player: posizione, titolo e il blocco dopo (se c'è). */
+export type InfoBlocco = {
+  numero: number;
+  totale: number;
+  titoloIt: string;
+  titolo: TestoTradotto;
+  successivo?: { numero: number; titoloIt: string };
+};
+
 export type Istruzioni = Record<"fill" | "choice", { testo: string; lingua: Locale }>;
 
 const SLUG_PER_ARGOMENTO = meta.topics as Record<string, { slug: string; title: string }>;
@@ -68,16 +79,50 @@ export function idEsercizi(topicId: string): string[] {
   return FILE.sets.find((s) => s.topic === topicId)?.items.map((i) => i.id) ?? [];
 }
 
+/** Blocchi di un argomento (numero da 1, titolo italiano e tradotto, id delle voci); [] senza blocchi. */
+export function blocchi(topicId: string, locale: Locale) {
+  const insieme = FILE.sets.find((s) => s.topic === topicId);
+  return (insieme?.blocchi ?? []).map((b, i) => ({
+    numero: i + 1,
+    titoloIt: b.titolo.it,
+    titolo: tradotto(b.titolo, locale),
+    ids: b.items,
+  }));
+}
+
+/** Pagine /a2/esercizi/[slug]/[blocco] (generateStaticParams e proxy.ts). */
+export const PARAMETRI_BLOCCHI: { slug: string; blocco: string }[] = FILE.sets.flatMap((s) =>
+  (s.blocchi ?? []).map((_, i) => ({ slug: SLUG_PER_ARGOMENTO[s.topic]?.slug, blocco: String(i + 1) })).filter((p) => p.slug),
+);
+
 export function istruzioni(locale: Locale): Istruzioni {
   return { fill: tradotto(FILE.istruzioni.fill, locale), choice: tradotto(FILE.istruzioni.choice, locale) };
 }
 
-export async function getEsercizi(locale: Locale, slug: string) {
+/** Con `blocco` (numero da 1) solo le voci di quel blocco, nell'ordine del blocco; numero sbagliato → null. */
+export async function getEsercizi(locale: Locale, slug: string, blocco?: number) {
   const { argomenti } = await getPercorso(locale);
   const argomento = argomenti.find((a) => a.slug === slug);
   const insieme = argomento && FILE.sets.find((s) => s.topic === argomento.id);
   if (!argomento || !insieme) return null;
-  const voci: VoceEsercizio[] = insieme.items.map((v) => {
+  let scelte = insieme.items;
+  let infoBlocco: InfoBlocco | undefined;
+  if (blocco !== undefined) {
+    const elenco = blocchi(argomento.id, locale);
+    const b = elenco[blocco - 1];
+    if (!Number.isInteger(blocco) || !b) return null;
+    const perId = new Map(insieme.items.map((v) => [v.id, v]));
+    scelte = b.ids.map((id) => perId.get(id)).filter((v) => v !== undefined);
+    const dopo = elenco[blocco];
+    infoBlocco = {
+      numero: b.numero,
+      totale: elenco.length,
+      titoloIt: b.titoloIt,
+      titolo: b.titolo,
+      successivo: dopo && { numero: dopo.numero, titoloIt: dopo.titoloIt },
+    };
+  }
+  const voci: VoceEsercizio[] = scelte.map((v) => {
     const { testo, lingua } = tradotto(v.why, locale);
     const task = v.task && tradotto(v.task, locale);
     const tr = v.tr && tradotto(v.tr, locale);
@@ -97,5 +142,5 @@ export async function getEsercizi(locale: Locale, slug: string) {
           lingua,
         };
   });
-  return { argomento, voci, istruzioni: istruzioni(locale) };
+  return { argomento, voci, istruzioni: istruzioni(locale), blocco: infoBlocco };
 }

@@ -18,6 +18,7 @@ export function RigaElenco({
   children,
   trailing,
   first,
+  rientro = false,
 }: {
   /** Senza href la riga non si tocca e non ha il chevron. */
   href?: string;
@@ -25,10 +26,12 @@ export function RigaElenco({
   children: ReactNode;
   trailing?: ReactNode;
   first: boolean;
+  /** Riga figlia (i blocchi di esercizi sotto il loro argomento): più spazio a sinistra. */
+  rientro?: boolean;
 }) {
   const contenuto = (
     <>
-      <span className="flex min-w-9 shrink-0 justify-center">{leading}</span>
+      <span className={`flex shrink-0 justify-center ${rientro ? "min-w-14" : "min-w-9"}`}>{leading}</span>
       <span
         className={`flex min-h-[60px] min-w-0 flex-1 items-center gap-3 self-stretch py-2.5 pr-4 ${
           first ? "" : "border-t border-separator"
@@ -55,7 +58,7 @@ export function RigaElenco({
 }
 
 // Titolo + sottotitolo nella lingua delle spiegazioni, dentro una riga.
-export function TestoRiga({ sopra, titolo, sotto }: { sopra?: ReactNode; titolo: string; sotto?: ReactNode }) {
+export function TestoRiga({ sopra, titolo, sotto }: { sopra?: ReactNode; titolo: ReactNode; sotto?: ReactNode }) {
   return (
     <>
       {sopra && <span className="block text-[13px] text-label-2">{sopra}</span>}

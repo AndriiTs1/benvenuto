@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useEffect, useRef, useState, useSyncExternalStore, type FormEvent } from "react";
 import { IconCheck, IconX } from "@/components/lezione/ui";
 import { Tr } from "@/components/Tr";
-import type { Istruzioni, VoceEsercizio } from "@/content/a2/esercizi";
+import type { InfoBlocco, Istruzioni, VoceEsercizio } from "@/content/a2/esercizi";
 import { cancellaGiro, leggiGiro, salvaGiro, salvaMigliore, salvaRisposta, type GiroSalvato } from "@/lib/progress";
 import { verificaRisposta } from "@/lib/verifica";
 
@@ -51,40 +51,49 @@ function giroValido(g: GiroSalvato | null, voci: VoceEsercizio[]): g is GiroSalv
   );
 }
 
+// chiave: dove si salva il giro (topicId, o `${topicId}#${n}` per un blocco); blocco: il blocco aperto, se c'è.
 export function PlayerEsercizi(props: {
   topicId: string;
+  chiave: string;
   titolo: string;
   slug: string;
   voci: VoceEsercizio[];
   istruzioni: Istruzioni;
+  blocco?: InfoBlocco;
 }) {
   const nelBrowser = useSyncExternalStore(nessuno, () => true, () => false);
   if (!nelBrowser) {
     return <div aria-hidden="true" className="mx-auto h-80 max-w-md rounded-3xl bg-card" />;
   }
-  return <Giro {...props} />;
+  return <Giro key={props.chiave} {...props} />;
 }
 
 // Nello stato solo gli id: i testi arrivano sempre da `voci`, così dopo il cambio di lingua (router.refresh) si vedono nella lingua nuova.
 // Il giro in corso si salva in localStorage (benvenuto.giro.a2): riaprendo la pagina si sceglie Continua o Ricomincia.
 function Giro({
   topicId,
+  chiave,
   titolo,
   slug,
   voci,
   istruzioni,
+  blocco,
 }: {
   topicId: string;
+  chiave: string;
   titolo: string;
   slug: string;
   voci: VoceEsercizio[];
   istruzioni: Istruzioni;
+  blocco?: InfoBlocco;
 }) {
   // Solo al primo rendering (il componente gira solo nel browser): giro salvato da riprendere, se vale ancora.
   const [salvato, setSalvato] = useState(() => {
-    const g = leggiGiro(topicId);
+    // Argomento a blocchi: il vecchio giro salvato "su tutto l'argomento" non serve più.
+    if (blocco) cancellaGiro(topicId);
+    const g = leggiGiro(chiave);
     if (giroValido(g, voci)) return g;
-    if (g) cancellaGiro(topicId);
+    if (g) cancellaGiro(chiave);
     return null;
   });
   const [giroIds, setGiroIds] = useState(() => voci.map((v) => v.id));
@@ -109,9 +118,9 @@ function Giro({
   // Si salva il giro in corso (non la schermata di scelta); a giro finito si cancella.
   useEffect(() => {
     if (salvato) return;
-    if (finito) cancellaGiro(topicId);
-    else if (pos > 0 || risposte > 0) salvaGiro(topicId, { ids: giroIds, pos, esiti, ordini: ordiniOpzioni, completo });
-  }, [salvato, finito, topicId, giroIds, pos, esiti, risposte, ordiniOpzioni, completo]);
+    if (finito) cancellaGiro(chiave);
+    else if (pos > 0 || risposte > 0) salvaGiro(chiave, { ids: giroIds, pos, esiti, ordini: ordiniOpzioni, completo });
+  }, [salvato, finito, chiave, giroIds, pos, esiti, risposte, ordiniOpzioni, completo]);
 
   // Dopo la verifica il fuoco va su "Avanti"; passando alla voce dopo, sul campo di risposta.
   useEffect(() => {
@@ -143,14 +152,14 @@ function Giro({
 
   function prossima() {
     const nuova = pos + 1;
-    if (nuova >= giro.length && completo) salvaMigliore(topicId, giro.filter((v) => esiti[v.id]?.ok).length);
+    if (nuova >= giro.length && completo) salvaMigliore(chiave, giro.filter((v) => esiti[v.id]?.ok).length);
     dopoAvanti.current = true;
     setTesto("");
     setPos(nuova);
   }
 
   function ricomincia(soloErrori: boolean) {
-    cancellaGiro(topicId);
+    cancellaGiro(chiave);
     const nuovo = soloErrori ? giro.filter((v) => !esiti[v.id]?.ok) : voci;
     setGiroIds(nuovo.map((v) => v.id));
     setCompleto(!soloErrori);
@@ -183,6 +192,16 @@ function Giro({
         <h1 lang="it" className="text-[24px] leading-[1.2] font-bold tracking-[-0.02em] md:text-[32px]">
           {titolo}
         </h1>
+        {blocco && (
+          <>
+            <p lang="it" className="mt-1 text-[15px] text-label-2">
+              Blocco {blocco.numero} di {blocco.totale} · {blocco.titoloIt}
+            </p>
+            <Tr locale={blocco.titolo.lingua} as="p" size="sm" className="block">
+              {blocco.titolo.testo}
+            </Tr>
+          </>
+        )}
         {/* Nella schermata finale il numero grande è il punteggio: qui niente "12 / 12" che confonde. */}
         {!finito && !salvato && (
           <p className="mt-2 text-[15px] text-label-2 tabular-nums" aria-live="polite">
@@ -318,6 +337,7 @@ function Giro({
           totale={giro.length}
           errori={giro.length - giuste}
           slug={slug}
+          successivo={blocco?.successivo}
           onRipeti={() => ricomincia(false)}
           onErrori={() => ricomincia(true)}
         />
@@ -401,6 +421,7 @@ function Finale({
   totale,
   errori,
   slug,
+  successivo,
   onRipeti,
   onErrori,
 }: {
@@ -408,6 +429,7 @@ function Finale({
   totale: number;
   errori: number;
   slug: string;
+  successivo?: { numero: number; titoloIt: string };
   onRipeti: () => void;
   onErrori: () => void;
 }) {
@@ -419,7 +441,13 @@ function Finale({
         </p>
         <p className="mt-2 text-[17px] text-label-2">risposte giuste</p>
       </div>
-      <button type="button" onClick={onRipeti} className={CAPSULA}>
+      {/* Blocco con un seguito: prima il blocco successivo, "Ripeti" diventa secondario. */}
+      {successivo && (
+        <Link href={`/a2/esercizi/${slug}/${successivo.numero}`} transitionTypes={["nav-forward"]} className={CAPSULA}>
+          Blocco successivo →
+        </Link>
+      )}
+      <button type="button" onClick={onRipeti} className={successivo ? CAPSULA_2 : CAPSULA}>
         Ripeti
       </button>
       {errori > 0 && (

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { ElencoBlocchi } from "@/components/esercizi/ElencoBlocchi";
 import { FattiEsercizi } from "@/components/esercizi/FattiEsercizi";
 import { Collegamento } from "@/components/grammatica/Collegamento";
 import { IntestazioneTempo } from "@/components/grammatica/Tempo";
@@ -12,7 +13,7 @@ import { ParoleChiave } from "@/components/grammatica/ParoleChiave";
 import { ChevronRight } from "@/components/ListRow";
 import { Tr } from "@/components/Tr";
 import { getArgomento, getParoleChiave, getPercorso, type TraduzioniParticipi } from "@/content/a2/grammatica";
-import { idEsercizi } from "@/content/a2/esercizi";
+import { blocchi, idEsercizi } from "@/content/a2/esercizi";
 import { getLezioneV2 } from "@/content/a2/lezioni";
 import { DEFAULT_LOCALE } from "@/lib/lingue";
 import { dizionario } from "@/lib/i18n";
@@ -48,6 +49,29 @@ export default async function ArgomentoPage({ params }: PageProps<"/a2/grammatic
         return meta ? [<Collegamento key={c.topic} href={`/a2/grammatica/${meta.slug}`} it={c.it} tr={c.tr} locale={v2!.lingua} />] : [];
       });
 
+  // Esercizi interattivi: i blocchi (argomenti grandi) o una scheda; in cima, prima della spiegazione, e in fondo.
+  const elencoBlocchi = blocchi(argomento.id, locale);
+  const schedaEsercizi =
+    elencoBlocchi.length > 0 ? (
+      <ElencoBlocchi slug={argomento.slug} blocchi={elencoBlocchi} />
+    ) : idInterattivi.length > 0 ? (
+      <Link
+        href={`/a2/esercizi/${argomento.slug}`}
+        transitionTypes={["nav-forward"]}
+        className="flex min-h-[60px] items-center gap-3 rounded-2xl bg-card px-4 py-3 transition active:scale-[0.99] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+      >
+        <span className="flex-1">
+          <span lang="it" className="block text-[17px] font-semibold">
+            Esercizi <span className="font-normal text-label-2 tabular-nums">· {idInterattivi.length}</span>
+          </span>
+          <span className="block text-[13px] text-label-2">
+            <FattiEsercizi ids={idInterattivi} />
+          </span>
+        </span>
+        <ChevronRight />
+      </Link>
+    ) : null;
+
   return (
     <article className="space-y-6">
       <SegnaVisto topicId={argomento.id} />
@@ -64,6 +88,8 @@ export default async function ArgomentoPage({ params }: PageProps<"/a2/grammatic
           {argomento.subtitle}
         </Tr>
       </header>
+
+      {schedaEsercizi}
 
       {collegamenti("start")}
 
@@ -118,24 +144,8 @@ export default async function ArgomentoPage({ params }: PageProps<"/a2/grammatic
         </>
       )}
 
-      {/* Con un insieme interattivo (esercizi.json): una scheda che porta al player; altrimenti i vecchi esercizi. */}
-      {idInterattivi.length > 0 ? (
-        <Link
-          href={`/a2/esercizi/${argomento.slug}`}
-          transitionTypes={["nav-forward"]}
-          className="flex min-h-[60px] items-center gap-3 rounded-2xl bg-card px-4 py-3 transition active:scale-[0.99] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
-        >
-          <span className="flex-1">
-            <span lang="it" className="block text-[17px] font-semibold">
-              Esercizi <span className="font-normal text-label-2 tabular-nums">· {idInterattivi.length}</span>
-            </span>
-            <span className="block text-[13px] text-label-2">
-              <FattiEsercizi ids={idInterattivi} />
-            </span>
-          </span>
-          <ChevronRight />
-        </Link>
-      ) : esercizi.length > 0 && (
+      {/* Con un insieme interattivo (esercizi.json): la scheda (o i blocchi) che porta al player; altrimenti i vecchi esercizi. */}
+      {schedaEsercizi ?? (esercizi.length > 0 && (
         <Sezione titolo={`Esercizi (${esercizi.length})`}>
           <ul className="space-y-3">
             {esercizi.map((esercizio) => (
@@ -156,7 +166,7 @@ export default async function ArgomentoPage({ params }: PageProps<"/a2/grammatic
             ))}
           </ul>
         </Sezione>
-      )}
+      ))}
 
       {collegamenti("end")}
 

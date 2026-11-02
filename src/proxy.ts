@@ -15,6 +15,14 @@ const SLUG_GRUPPI = new Set(Object.values(vocab.gruppi).map((g) => slugGruppo(g.
 const SLUG_ESERCIZI = new Set(
   esercizi.sets.map((s) => (meta.topics as Record<string, { slug: string }>)[s.topic]?.slug).filter(Boolean),
 );
+// Blocchi degli esercizi (temi grandi): slug → numero di blocchi.
+const BLOCCHI_ESERCIZI = new Map(
+  esercizi.sets.flatMap((s) => {
+    const slug = (meta.topics as Record<string, { slug: string }>)[s.topic]?.slug;
+    const blocchi = (s as { blocchi?: unknown[] }).blocchi;
+    return slug && blocchi?.length ? [[slug, blocchi.length] as const] : [];
+  }),
+);
 const ID_MODULI = new Set(MODULI_A1.map((m) => String(m.id)));
 const ID_LEZIONI = new Set(MODULI_A1.flatMap((m) => m.lezioni.map((l) => l.id)));
 
@@ -34,7 +42,10 @@ function esiste(pathname: string): boolean {
     return parti.length === 3 && SLUG_GRUPPI.has(parti[2]);
   }
   if (parti[0] === "a2" && parti[1] === "esercizi" && parti.length > 2) {
-    return parti.length === 3 && SLUG_ESERCIZI.has(parti[2]);
+    if (parti.length === 3) return SLUG_ESERCIZI.has(parti[2]);
+    // /a2/esercizi/<slug>/<n>: solo per argomenti con blocchi, n da 1 al numero di blocchi.
+    const numero = /^[1-9]\d*$/.test(parti[3] ?? "") ? Number(parti[3]) : 0;
+    return parti.length === 4 && numero >= 1 && numero <= (BLOCCHI_ESERCIZI.get(parti[2]) ?? 0);
   }
   if (parti[0] === "modulo") return parti.length === 2 && ID_MODULI.has(parti[1]);
   if (parti[0] === "lezione") return parti.length === 2 && ID_LEZIONI.has(parti[1]);

@@ -442,6 +442,29 @@ try {
         if (!Number.isInteger(v.answer) || v.answer < 0 || v.answer >= opzioni.length) errori.push(`${dove} choice: answer fuori dalle opzioni`);
       } else errori.push(`${dove} type "${v?.type}" (fill | choice)`);
     }
+    // Blocchi (temi con > 20 voci): ogni voce in un solo blocco, 5–20 voci, id "1", "2", …, titolo in it/ru/uk/en.
+    const idVoci = (insieme.items ?? []).map((v) => v?.id);
+    if (idVoci.length > 20 && !Array.isArray(insieme.blocchi)) errori.push(`esercizi: ${insieme.topic} con ${idVoci.length} voci senza blocchi`);
+    if (insieme.blocchi !== undefined) {
+      const blocchi = Array.isArray(insieme.blocchi) ? insieme.blocchi : [];
+      if (!blocchi.length) errori.push(`esercizi: ${insieme.topic} blocchi vuoti`);
+      const inBlocco = new Map();
+      blocchi.forEach((b, i) => {
+        const dove = `esercizi: ${insieme.topic} blocco ${b?.id}`;
+        if (b?.id !== String(i + 1)) errori.push(`${dove}: id deve essere "${i + 1}"`);
+        const mancano = ["it", "ru", "uk", "en"].filter((l) => !testo(b?.titolo?.[l]));
+        if (mancano.length) errori.push(`${dove}: titolo senza ${mancano.join(", ")}`);
+        const voci = Array.isArray(b?.items) ? b.items : [];
+        if (voci.length < 5 || voci.length > 20) errori.push(`${dove}: ${voci.length} voci (5–20)`);
+        for (const id of voci) {
+          if (!idVoci.includes(id)) errori.push(`${dove}: voce sconosciuta ${id}`);
+          else if (inBlocco.has(id)) errori.push(`${dove}: ${id} già nel blocco ${inBlocco.get(id)}`);
+          else inBlocco.set(id, b.id);
+        }
+      });
+      const fuori = idVoci.filter((id) => !inBlocco.has(id));
+      if (fuori.length) errori.push(`esercizi: ${insieme.topic} voci fuori dai blocchi: ${fuori.join(", ")}`);
+    }
   }
 } catch (e) {
   if (e.code !== "ENOENT") errori.push(`esercizi.json non valido (${e.message})`);

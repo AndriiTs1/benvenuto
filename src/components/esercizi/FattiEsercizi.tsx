@@ -28,3 +28,13 @@ export function ConteggioEsercizi({ ids }: { ids: string[] }) {
     </span>
   );
 }
+
+// "X/N" accanto a un blocco di esercizi (elenco dei blocchi, pagina dell'unità).
+export function ConteggioBlocco({ ids }: { ids: string[] }) {
+  const fatti = useFatti(ids);
+  return (
+    <span className="tabular-nums">
+      {fatti}/{ids.length}
+    </span>
+  );
+}
