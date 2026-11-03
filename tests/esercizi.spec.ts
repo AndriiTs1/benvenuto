@@ -120,7 +120,7 @@ test("riapro la pagina: Continua dal punto giusto, Ricomincia da 1", async ({ pa
 test("blocco 1 di uso: alla fine «Blocco successivo →» porta al blocco 2", async ({ page }) => {
   const voci = blocco("g5-condizionale-uso", 1);
   await page.goto("/a2/esercizi/uso-del-condizionale/1");
-  await expect(page.getByText("Blocco 1 di 4 · Consigli e opinioni")).toBeVisible();
+  await expect(page.getByText("Blocco 1 di 5 · Consigli e opinioni")).toBeVisible();
   for (const voce of voci) {
     await rispondi(page, voce);
     await page.getByRole("button", { name: "Avanti" }).click();
@@ -128,7 +128,7 @@ test("blocco 1 di uso: alla fine «Blocco successivo →» porta al blocco 2", a
   await expect(page.getByText(`${voci.length} / ${voci.length}`, { exact: true })).toBeVisible();
   await page.getByRole("link", { name: "Blocco successivo →" }).click();
   await expect(page).toHaveURL(/\/a2\/esercizi\/uso-del-condizionale\/2$/);
-  await expect(page.getByText("Blocco 2 di 4 · Desideri")).toBeVisible();
+  await expect(page.getByText("Blocco 2 di 5 · Desideri")).toBeVisible();
   await expect(page.getByText(`1 / ${blocco("g5-condizionale-uso", 2).length}`, { exact: true })).toBeVisible();
 });
 
@@ -138,11 +138,11 @@ test("blocco inesistente → 404", async ({ page }) => {
   expect((await page.goto(`/a2/esercizi/${slug("g5-presente-regular")}/1`))?.status()).toBe(404);
 });
 
-test("argomento uso: i 4 blocchi prima della spiegazione", async ({ page }) => {
+test("argomento uso: i 5 blocchi prima della spiegazione", async ({ page }) => {
   await page.goto("/a2/grammatica/uso-del-condizionale");
   const primo = page.locator('a[href="/a2/esercizi/uso-del-condizionale/1"]').first();
   await expect(primo).toBeVisible();
-  for (const n of [1, 2, 3, 4]) {
+  for (const n of [1, 2, 3, 4, 5]) {
     await expect(page.locator(`a[href="/a2/esercizi/uso-del-condizionale/${n}"]`)).toHaveCount(2); // in cima e in fondo
   }
   const sopra = await primo.evaluate((a) => {
@@ -154,7 +154,7 @@ test("argomento uso: i 4 blocchi prima della spiegazione", async ({ page }) => {
 
 test("unità 9: sotto gli argomenti le righe dei blocchi", async ({ page }) => {
   await page.goto("/a2/grammatica/unita/9");
-  for (const [s, n] of [["condizionale-presente-le-forme", 3], ["uso-del-condizionale", 4]] as const) {
+  for (const [s, n] of [["condizionale-presente-le-forme", 3], ["uso-del-condizionale", 5]] as const) {
     for (let i = 1; i <= n; i++) await expect(page.locator(`a[href="/a2/esercizi/${s}/${i}"]`)).toHaveCount(1);
   }
   const riga = page.locator('a[href="/a2/esercizi/uso-del-condizionale/1"]');
