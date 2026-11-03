@@ -10408,6 +10408,68 @@
    "group": 6,
    "example": "Mangerei meno dolci.",
    "lesson": "L33"
+  },
+  {
+   "id": "w801",
+   "it": "il panino",
+   "ru": "бутерброд, булочка",
+   "uk": "бутерброд, булочка",
+   "en": "sandwich, roll",
+   "pos": "noun",
+   "gender": "m",
+   "plural": "i panini",
+   "group": 6,
+   "example": "Ho fame: mangerei volentieri un panino.",
+   "lesson": "L34"
+  },
+  {
+   "id": "w802",
+   "it": "giocare a carte",
+   "ru": "играть в карты",
+   "uk": "грати в карти",
+   "en": "to play cards",
+   "pos": "expression",
+   "aux": "avere",
+   "participle": "giocato",
+   "group": 1,
+   "example": "Giocherei volentieri a carte.",
+   "lesson": "L34"
+  },
+  {
+   "id": "w803",
+   "it": "la birra",
+   "ru": "пиво",
+   "uk": "пиво",
+   "en": "beer",
+   "pos": "noun",
+   "gender": "f",
+   "plural": "le birre",
+   "group": 6,
+   "example": "Ho sete: berrei volentieri una birra.",
+   "lesson": "L34"
+  },
+  {
+   "id": "w804",
+   "it": "qualcosa (di + agg.)",
+   "ru": "что-нибудь, что-то (+ какое)",
+   "uk": "щось (+ яке)",
+   "en": "something",
+   "pos": "pronoun",
+   "group": 12,
+   "example": "Ho voglia di mangiare qualcosa di speciale.",
+   "lesson": "L34"
+  },
+  {
+   "id": "w805",
+   "it": "speciale",
+   "ru": "особенный, особый",
+   "uk": "особливий",
+   "en": "special",
+   "pos": "adjective",
+   "forms": "speciale (м/ж) – speciali (мн.)",
+   "group": 12,
+   "example": "Ho voglia di mangiare qualcosa di speciale.",
+   "lesson": "L34"
   }
  ],
  "gruppi": {
